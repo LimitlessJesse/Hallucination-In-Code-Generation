@@ -1,0 +1,117 @@
+Sample: 0 AbstractScriptEngine
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.script.AbstractScriptEngine package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean compile(String script)`: This method compiles the script.
+2. `Object eval(String script)`: This method evaluates the script.
+3. `Object eval(String script, ScriptContext context)`: This method evaluates the script with the specified context.
+4. `Object invokeMethod(Object thiz, String name, Object... args)`: This method invokes the method with the specified name and arguments.
+5. `Object invokeFunction(String name, Object... args)`: This method invokes the function with the specified name and arguments.
+================================================================
+
+Sample: 1 CompiledScript
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.script.CompiledScript package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CompiledScript compile(String script)`: This method compiles the script.
+
+2. `Object eval(Object... args)`: This method evaluates the script.
+
+3. `Object call(Object... args)`: This method calls the script.
+
+4. `Bindings getBindings()`: This method returns the bindings.
+
+5. `ScriptEngine getEngine()`: This method returns the script engine.
+================================================================
+
+Sample: 2 ScriptEngineManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.script.ScriptEngineManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ScriptEngineManager()`: This is a constructor of ScriptEngineManager class. It creates a new instance of ScriptEngineManager.
+
+2. `getEngineByName(String engineName)`: This method returns a ScriptEngine instance for the specified engine name.
+
+3. `getEngineByExtension(String extension)`: This method returns a ScriptEngine instance for the specified file extension.
+
+4. `getEngineByMimeType(String mimeType)`: This method returns a ScriptEngine instance for the specified MIME type.
+
+5. `getAllEngines()`: This method returns a List of all available ScriptEngine instances.
+================================================================
+
+Sample: 3 SimpleBindings
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.script.SimpleBindings package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `int size()`: This method returns the number of elements in this list.
+
+4. `Object get(int index)`: This method returns the element at the specified position in this list.
+
+5. `void put(String name, Object value)`: This method associates the specified value with the specified name in this bindings.
+================================================================
+
+Sample: 4 SimpleScriptContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.script.SimpleScriptContext package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+

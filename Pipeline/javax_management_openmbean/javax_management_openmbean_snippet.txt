@@ -1,0 +1,164 @@
+Sample: 0 OpenType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object o) from javax.management.openmbean.OpenType
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object o)` method in `java.lang.Object` is used to compare the equality of two objects. It is overridden in the `java.lang.String`, `java.util.Date`, `java.awt.Rectangle`, and other classes to provide more meaningful results.
+
+In the case of `java.lang.Object`, it checks if the two objects are the same instance. If they are, it returns `true`. If they are not, it returns `false`.
+
+Here is the complete code snippet of the `equals(Object o)` method from `java.lang.Object`:
+
+```java
+public boolean equals(Object obj) {
+    return (this == obj);
+}
+```
+
+In the case of `javax.management.openmbean.OpenType`, it checks if the two objects are the same instance. If they are, it returns `true`. If they are not, it returns `false`.
+
+Here is the complete code snippet of the `equals(Object o)` method from `javax.management.openmbean.OpenType`:
+
+```java
+public boolean equals(Object o) {
+    return (this == o);
+}
+```
+
+In both cases, the `equals(Object o)` method is used to compare the equality of two objects. The `==` operator is used to compare the references of the two objects, not their content.
+================================================================
+
+Sample: 1 SimpleType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isValue(Object value) from javax.management.openmbean.SimpleType
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isValue(Object value)` method from `javax.management.openmbean.SimpleType` is used to check if the given value is valid for the type.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.openmbean.SimpleType;
+
+public class Main {
+    public static void main(String[] args) {
+        Object value = "Hello";
+        System.out.println(SimpleType.STRING.isValue(value));
+    }
+}
+```
+
+In this code snippet, we are checking if the value "Hello" is a valid string value for the `SimpleType.STRING`. The `isValue(Object value)` method returns `true` if the value is valid for the type, and `false` otherwise.
+
+Please note that the `javax.management.openmbean.SimpleType` package is not part of the standard Java API. It's a part of the JMX (Java Management Extensions) API, which is used for managing and monitoring Java applications.
+================================================================
+
+Sample: 2 TabularDataSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from javax.management.openmbean.TabularDataSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `clear()` method in `TabularDataSupport` is used to remove all the elements from the `TabularDataSupport`.
+
+Here is the complete code snippet:
+
+```java
+import javax.management.openmbean.TabularDataSupport;
+import javax.management.openmbean.CompositeData;
+
+public class Main {
+    public static void main(String[] args) {
+        TabularDataSupport tabularDataSupport = new TabularDataSupport();
+
+        // Add some data
+        tabularDataSupport.put("key1", "value1");
+        tabularDataSupport.put("key2", "value2");
+
+        System.out.println("Before clear: " + tabularDataSupport);
+
+        // Clear all data
+        tabularDataSupport.clear();
+
+        System.out.println("After clear: " + tabularDataSupport);
+    }
+}
+```
+
+In this code, we first create a `TabularDataSupport` object and add some data to it. Then we print the data before and after calling the `clear()` method. As expected, after calling `clear()`, the `TabularDataSupport` is empty.
+================================================================
+

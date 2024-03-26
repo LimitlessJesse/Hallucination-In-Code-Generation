@@ -1,0 +1,112 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AsynchronousChannelGroup,1,AsynchronousChannelGroup newInstance(),False
+0,AsynchronousChannelGroup,2,AsynchronousChannelGroup withThreadPool(ExecutorService executor),True
+0,AsynchronousChannelGroup,3,"AsynchronousChannelGroup withThreadPool(ExecutorService executor, int initialSize, int maximumSize)",False
+0,AsynchronousChannelGroup,4,AsynchronousChannelGroup withCachedThreadPool(),False
+0,AsynchronousChannelGroup,5,AsynchronousChannelGroup withFixedThreadPool(int nThreads),False
+0,AsynchronousChannelGroup,6,void shutdown(),True
+0,AsynchronousChannelGroup,7,void shutdownNow(),True
+0,AsynchronousChannelGroup,8,boolean isShutdown(),True
+0,AsynchronousChannelGroup,9,boolean isTerminated(),True
+0,AsynchronousChannelGroup,10,"boolean awaitTermination(long timeout, TimeUnit unit)",True
+0,AsynchronousChannelGroup,11,"<T> Future<T> submit(Runnable task, T result)",False
+0,AsynchronousChannelGroup,12,"<T> Future<T> submit(Runnable task, T result, Executor executor)",False
+0,AsynchronousChannelGroup,13,<T> Future<T> submit(Callable<T> task),False
+0,AsynchronousChannelGroup,14,"<T> Future<T> submit(Runnable task, T result, Executor executor, long timeout, TimeUnit unit)",False
+0,AsynchronousChannelGroup,15,"<T> Future<T> submit(Callable<T> task, long timeout, TimeUnit unit)",False
+1,AsynchronousFileChannel,1,"int read(ByteBuffer dst, long position)",False
+1,AsynchronousFileChannel,2,"int write(ByteBuffer src, long position)",False
+1,AsynchronousFileChannel,3,long size(),True
+1,AsynchronousFileChannel,4,void force(boolean metaData),True
+1,AsynchronousFileChannel,5,void close(),False
+2,AsynchronousServerSocketChannel,1,AsynchronousServerSocketChannel open(),True
+2,AsynchronousServerSocketChannel,2,"void bind(SocketAddress local, Handler<AsynchronousChannel> handler)",False
+2,AsynchronousServerSocketChannel,3,void accept(Handler<AsynchronousSocketChannel> handler),False
+2,AsynchronousServerSocketChannel,4,void close(),False
+2,AsynchronousServerSocketChannel,5,"void setOption(SocketOption<T> name, T value)",False
+3,AsynchronousSocketChannel,1,AsynchronousSocketChannel open(),True
+3,AsynchronousSocketChannel,2,void bind(SocketAddress local),False
+3,AsynchronousSocketChannel,3,void connect(SocketAddress remote),False
+3,AsynchronousSocketChannel,4,"void read(ByteBuffer dst, A attachment, CompletionHandler<Integer,? super A> handler)",False
+3,AsynchronousSocketChannel,5,"void write(ByteBuffer src, A attachment, CompletionHandler<Integer,? super A> handler)",False
+4,Channels,1,"FileChannel.map(FileChannel.MapMode mode, long position, long size)",False
+4,Channels,2,"FileChannel.transferTo(long position, long count, WritableByteChannel target)",False
+4,Channels,3,"FileChannel.transferFrom(ReadableByteChannel src, long position, long count)",False
+4,Channels,4,FileChannel.force(boolean metaData),False
+4,Channels,5,FileChannel.position(long newPosition),False
+5,DatagramChannel,1,DatagramChannel open(),True
+5,DatagramChannel,2,DatagramChannel bind(SocketAddress local),True
+5,DatagramChannel,3,int read(ByteBuffer dst),True
+5,DatagramChannel,4,int write(ByteBuffer src),True
+5,DatagramChannel,5,"long read(ByteBuffer[] dsts, int offset, int length)",True
+5,DatagramChannel,6,"long write(ByteBuffer[] srcs, int offset, int length)",True
+5,DatagramChannel,7,SocketAddress receive(ByteBuffer dst),True
+5,DatagramChannel,8,"SocketAddress send(ByteBuffer src, SocketAddress target)",False
+5,DatagramChannel,9,"long read(ByteBuffer dst, SocketAddress target)",False
+5,DatagramChannel,10,"long write(ByteBuffer src, SocketAddress target)",False
+6,FileChannel,1,FileChannel.position(long newPosition),False
+6,FileChannel,2,FileChannel.size(),False
+6,FileChannel,3,FileChannel.truncate(long size),False
+6,FileChannel,4,FileChannel.read(ByteBuffer dst),False
+6,FileChannel,5,FileChannel.write(ByteBuffer src),False
+7,FileChannel.MapMode,1,"FileChannel.map(FileChannel.MapMode mode, long position, long size)",False
+7,FileChannel.MapMode,2,FileChannel.force(boolean metaData),False
+7,FileChannel.MapMode,3,FileChannel.position(long newPosition),False
+7,FileChannel.MapMode,4,FileChannel.size(),False
+7,FileChannel.MapMode,5,FileChannel.truncate(long size),False
+8,FileLock,1,"FileLock tryLock(long position, long size, boolean shared)",False
+8,FileLock,2,void release(),True
+8,FileLock,3,boolean isShared(),True
+8,FileLock,4,long position(),True
+8,FileLock,5,long size(),True
+9,MembershipKey,1,boolean isValid(),True
+9,MembershipKey,2,boolean drop(),False
+9,MembershipKey,3,InetAddress getAddress(),False
+9,MembershipKey,4,NetworkInterface getInterface(),False
+9,MembershipKey,5,byte[] getKey(),False
+10,Pipe,1,Pipe.SourceChannel source(),True
+10,Pipe,2,Pipe.SinkChannel sink(),True
+10,Pipe,3,void closeSource(),False
+10,Pipe,4,void closeSink(),False
+10,Pipe,5,void source().setReadMode(ReadMode mode),False
+10,Pipe,6,void sink().setWriteMode(WriteMode mode),False
+11,Pipe.SinkChannel,1,Pipe.SinkChannel.open(),False
+11,Pipe.SinkChannel,2,Pipe.SinkChannel.write(ByteBuffer src),False
+11,Pipe.SinkChannel,3,Pipe.SinkChannel.finishWriting(),False
+11,Pipe.SinkChannel,4,Pipe.SinkChannel.close(),False
+11,Pipe.SinkChannel,5,Pipe.SinkChannel.validOps(),False
+12,Pipe.SourceChannel,1,Pipe.SourceChannel.open(),False
+12,Pipe.SourceChannel,2,Pipe.SourceChannel.read(ByteBuffer dst),False
+12,Pipe.SourceChannel,3,"Pipe.SourceChannel.read(ByteBuffer dst, long position)",False
+12,Pipe.SourceChannel,4,Pipe.SourceChannel.read(ByteBuffer[] dsts),False
+12,Pipe.SourceChannel,5,"Pipe.SourceChannel.read(ByteBuffer[] dsts, int offset, int length)",False
+13,SelectableChannel,1,Selector openSelector(),False
+13,SelectableChannel,2,SelectorProvider provider(),True
+13,SelectableChannel,3,void configureBlocking(boolean block),False
+13,SelectableChannel,4,"void register(Selector sel, int ops, Selector.Watcher w)",False
+13,SelectableChannel,5,"SelectionKey register(Selector sel, int ops)",True
+14,SelectionKey,1,int interestOps(),True
+14,SelectionKey,2,void interestOps(int ops),False
+14,SelectionKey,3,boolean isAcceptable(),True
+14,SelectionKey,4,boolean isConnectable(),True
+14,SelectionKey,5,boolean isReadable(),True
+14,SelectionKey,6,boolean isWritable(),True
+14,SelectionKey,7,void cancel(),True
+14,SelectionKey,8,SelectableChannel channel(),True
+14,SelectionKey,9,Selector selector(),True
+14,SelectionKey,10,void cancel(Selector sel),False
+15,Selector,1,Selector.open(),False
+15,Selector,2,Selector.select(),False
+15,Selector,3,Selector.selectNow(),False
+15,Selector,4,Selector.wakeup(),False
+15,Selector,5,Selector.select(long timeout),False
+16,ServerSocketChannel,1,ServerSocketChannel open(),True
+16,ServerSocketChannel,2,ServerSocketChannel bind(SocketAddress local),True
+16,ServerSocketChannel,3,"SelectionKey register(Selector sel, int ops, Object att)",False
+16,ServerSocketChannel,4,ServerSocketChannel accept(),False
+16,ServerSocketChannel,5,void close(),False
+17,SocketChannel,1,SocketChannel.open(),False
+17,SocketChannel,2,SocketChannel.connect(SocketAddress remote),False
+17,SocketChannel,3,SocketChannel.read(ByteBuffer dst),False
+17,SocketChannel,4,SocketChannel.write(ByteBuffer src),False
+17,SocketChannel,5,SocketChannel.close(),False

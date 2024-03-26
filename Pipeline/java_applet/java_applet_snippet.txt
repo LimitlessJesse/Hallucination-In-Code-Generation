@@ -1,0 +1,120 @@
+Sample: 0 Applet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void destroy() from java.applet.Applet
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `destroy()` method is a part of the `Applet` class in Java. It is used to clean up resources that the applet has used.
+
+Here is a complete code snippet of the `destroy()` method:
+
+```java
+import java.applet.Applet;
+
+public class Main {
+    public static void main(String[] args) {
+        Applet applet = new Applet() {
+            public void destroy() {
+                // Clean up resources here
+            }
+        };
+        applet.destroy();
+    }
+}
+```
+
+In the above code, we are creating an anonymous inner class of `Applet` and overriding the `destroy()` method. Inside the `destroy()` method, we can put the code to clean up resources that the applet has used.
+
+Please note that the `destroy()` method is not typically called directly by the programmer. It is called by the Java Virtual Machine when the applet is being removed from the display.
+================================================================
+
+Sample: 1 Applet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void init() from java.applet.Applet
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void init()` method in Java Applet is used to initialize the applet. It is called automatically by the Java Virtual Machine when the applet is first created.
+
+Here is a complete code snippet of the `void init()` method:
+
+```java
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class MyApplet extends Applet {
+    public void init() {
+        // Initialization code
+    }
+
+    public void start() {
+        // Start or resume execution of the applet
+    }
+
+    public void stop() {
+        // Stop execution of the applet
+    }
+
+    public void destroy() {
+        // Prepare for a subsequent life-cycle
+    }
+
+    public void paint(Graphics g) {
+        // Paint the applet
+    }
+}
+```
+
+In the above code, `MyApplet` is a subclass of `Applet`. The `init()` method is overridden to provide the initialization code for the applet.
+
+Please note that the `init()` method is not a part of the `main()` method. It is a method in the `Applet` class that is used to initialize the applet. The `main()` method is a method in the `Main` class that is used to start the execution of the program.
+================================================================
+

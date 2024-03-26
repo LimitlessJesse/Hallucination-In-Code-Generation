@@ -1,0 +1,52 @@
+Sample: Configuration_1
+----------------------------------------------------------------
+output:
+./javax_security_auth_login/javaFiles/Configuration_1.java:5: error: Configuration is abstract; cannot be instantiated
+        Configuration config = new Configuration();
+                               ^
+1 error
+
+
+================================================================
+
+Sample: LoginContext_1
+----------------------------------------------------------------
+stdout:
+Login failed: No LoginModules configured for MyLoginContext
+
+================================================================
+
+Sample: LoginContext_2
+----------------------------------------------------------------
+stderr:
+javax.security.auth.login.LoginException: No LoginModules configured for MyLoginContext
+	at java.base/javax.security.auth.login.LoginContext.init(LoginContext.java:269)
+	at java.base/javax.security.auth.login.LoginContext.<init>(LoginContext.java:357)
+	at LoginContext_2.main(LoginContext_2.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: LoginContext_3
+----------------------------------------------------------------
+stderr:
+javax.security.auth.login.LoginException: No LoginModules configured for MyLoginContext
+	at java.base/javax.security.auth.login.LoginContext.init(LoginContext.java:269)
+	at java.base/javax.security.auth.login.LoginContext.<init>(LoginContext.java:357)
+	at LoginContext_3.main(LoginContext_3.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+

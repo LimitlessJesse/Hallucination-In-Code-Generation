@@ -1,0 +1,425 @@
+Sample: 0 CallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodType type() from java.lang.invoke.CallSite
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `MethodType` class in `java.lang.invoke` is used to represent the type of a method. It is used to check the type of a method at runtime.
+
+Here is an example of how to use `MethodType`:
+
+```java
+import java.lang.invoke.MethodType;
+import java.lang.reflect.Method;
+
+public class Main {
+    public static void main(String[] args) throws NoSuchMethodException {
+        Method method = Main.class.getMethod("add", String.class);
+        MethodType methodType = MethodType.methodType(void.class, String.class);
+        System.out.println(methodType.equals(MethodType.methodType(method)));
+    }
+
+    public void add(String s) {
+        System.out.println("Added: " + s);
+    }
+}
+```
+
+In this example, we first get the `add` method from the `Main` class. Then we create a `MethodType` for the `add` method, which takes a `String` as a parameter and returns `void`. Finally, we check if the `MethodType` for the `add` method is equal to the `MethodType` of the `add` method itself.
+
+Please note that the `MethodType` for a method is determined by the method's return type and parameter types. It does not include the method's name or the class it belongs to. Therefore, two methods with the same return type and parameter types but different names or classes will have the same `MethodType`.
+================================================================
+
+Sample: 1 ConstantCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodHandle getTarget() from java.lang.invoke.ConstantCallSite
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTarget()` method from `java.lang.invoke.ConstantCallSite` is used to get the target method handle of the call site.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.lang.invoke.ConstantCallSite;
+import java.lang.invoke.MethodHandle;
+import java.lang.invoke.MethodHandles;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        ArrayList<String> list = new ArrayList<>();
+        Method method = ArrayList.class.getMethod("add", Object.class);
+        MethodHandles.Lookup lookup = MethodHandles.lookup();
+        MethodHandle methodHandle = lookup.unreflect(method);
+        ConstantCallSite callSite = ConstantCallSite.create(methodHandle);
+        MethodHandle target = callSite.getTarget();
+        target.invokeExact(list, "Hello");
+        System.out.println(list);
+    }
+}
+```
+
+In this code snippet, we first get the `add` method from `ArrayList` class. Then we create a `MethodHandles.Lookup` object to get a `MethodHandle` for the `add` method. We create a `ConstantCallSite` object with the `MethodHandle` and then get the target `MethodHandle` from the `ConstantCallSite` object. Finally, we invoke the target `MethodHandle` with the list and the string "Hello". The string "Hello" is added to the list.
+================================================================
+
+Sample: 2 MethodHandles.Lookup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodHandle findStatic(Class<?> owner, String name, MethodType type) from java.lang.invoke.MethodHandles.Lookup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `findStatic` method is used to find a static method in a class. It takes three parameters:
+
+1. `Class<?> owner`: The class that contains the static method.
+2. `String name`: The name of the static method.
+3. `MethodType type`: The type of the static method.
+
+Here is an example of how to use it:
+
+```java
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.MethodType;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MethodHandles.Lookup lookup = MethodHandles.lookup();
+            MethodType type = MethodType.methodType(void.class, String.class);
+            MethodHandles.StaticMethodHandle handle = lookup.findStatic(System.class, "out", type.insertArgument(0, String.class));
+            handle.invokeExact("Hello, World!");
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are finding the static method `out` in the `System` class and invoking it with the string "Hello, World!".
+
+Please note that the `insertArgument` method is used to insert the type of the argument that the method expects. In this case, it's a string. If the method expects more arguments, you can add them in the same way.
+================================================================
+
+Sample: 3 MethodHandles.Lookup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodHandle findVirtual(Class<?> owner, String name, MethodType type) from java.lang.invoke.MethodHandles.Lookup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `findVirtual` method is used to find a virtual method in a class hierarchy. It takes three parameters:
+
+- `owner`: The class that declares the method.
+- `name`: The name of the method.
+- `type`: The method's parameter and return types.
+
+Here is an example of how to use it:
+
+```java
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.MethodType;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        MethodHandles.Lookup lookup = MethodHandles.lookup();
+        MethodType type = MethodType.methodType(boolean.class, Object.class);
+        MethodHandle handle = lookup.findVirtual(ArrayList.class, "add", type);
+        ArrayList<String> list = new ArrayList<>();
+        handle.invoke(list, "Hello");
+        System.out.println(list);
+    }
+}
+```
+
+In this example, we are finding the `add` method in the `ArrayList` class and invoking it using the `MethodHandle`. The `invoke` method is used to call the method represented by the `MethodHandle`. The `invoke` method takes the object on which the method should be invoked and the arguments to the method as parameters.
+================================================================
+
+Sample: 4 MutableCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodHandle getTarget() from java.lang.invoke.MutableCallSite
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTarget()` method in `java.lang.invoke.MutableCallSite` is used to get the target method handle of the call site.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.lang.invoke.MethodHandle;
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.MethodType;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        ArrayList<String> list = new ArrayList<>();
+        MethodHandle addMethodHandle = MethodHandles.lookup().findVirtual(ArrayList.class, "add", MethodType.methodType(boolean.class, Object.class));
+        MethodHandle getTargetMethodHandle = MethodHandles.lookup().findVirtual(MethodHandle.class, "getTarget", MethodType.methodType(MethodHandle.class));
+        MethodHandle targetMethodHandle = (MethodHandle) getTargetMethodHandle.invokeExact(addMethodHandle);
+        targetMethodHandle.invokeExact(list, "Hello");
+        System.out.println(list);
+    }
+}
+```
+
+In this code snippet, we first create a `MethodHandle` for the `add` method of `ArrayList`. Then we create a `MethodHandle` for the `getTarget` method of `MethodHandle`. We then invoke the `getTarget` method on the `add` method handle to get the target method handle. Finally, we invoke the target method handle on the `ArrayList` instance to add the string "Hello".
+================================================================
+
+Sample: 5 MutableCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTarget(MethodHandle target) from java.lang.invoke.MutableCallSite
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTarget(MethodHandle target)` method in `java.lang.invoke.MutableCallSite` is used to set the target method handle of the call site.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.lang.invoke.MethodHandle;
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.MutableCallSite;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        ArrayList<String> list = new ArrayList<>();
+        Method method = ArrayList.class.getMethod("add", Object.class);
+        MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+        MutableCallSite callSite = new MutableCallSite(methodHandle);
+        callSite.setTarget(methodHandle);
+        callSite.dynamicInvoker().invokeExact(list, "Hello");
+        System.out.println(list);
+    }
+}
+```
+
+In this code snippet, we first create an instance of `ArrayList` and a `MethodHandle` for the `add` method. Then we create a `MutableCallSite` and set its target to the `MethodHandle`. Finally, we use the `dynamicInvoker()` method to invoke the `add` method on the `ArrayList` instance.
+
+Please note that this code snippet is for demonstration purposes and may not work as expected in a real-world scenario.
+================================================================
+
+Sample: 6 VolatileCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MethodHandle getTarget() from java.lang.invoke.VolatileCallSite
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTarget()` method in `java.lang.invoke.VolatileCallSite` is used to get the target method handle of the call site.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.lang.invoke.MethodHandle;
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.VarHandle;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) throws Throwable {
+        ArrayList<String> list = new ArrayList<>();
+        Method method = ArrayList.class.getMethod("add", Object.class);
+        MethodHandle methodHandle = MethodHandles.lookup().unreflect(method);
+        VarHandle varHandle = MethodHandles.lookup().findVarHandle(ArrayList.class, "elementData", Object[].class);
+        MethodHandle methodHandle1 = MethodHandles.filterReturnValue(methodHandle, varHandle);
+        MethodHandle methodHandle2 = MethodHandles.filterArguments(methodHandle1, 0, Object.class);
+        MethodHandle methodHandle3 = MethodHandles.filterArguments(methodHandle2, 1, int.class);
+        MethodHandle methodHandle4 = MethodHandles.filterArguments(methodHandle3, 2, int.class);
+        MethodHandle methodHandle5 = MethodHandles.filterArguments(methodHandle4, 3, int.class);
+        MethodHandle methodHandle6 = MethodHandles.filterArguments(methodHandle5, 4, int.class);
+        MethodHandle methodHandle7 = MethodHandles.filterArguments(methodHandle6, 5, int.class);
+        MethodHandle methodHandle8 = MethodHandles.filterArguments(methodHandle7, 6, int.class);
+        MethodHandle methodHandle9 = MethodHandles.filterArguments(methodHandle8, 7, int.class);
+        MethodHandle methodHandle10 = MethodHandles.filterArguments(methodHandle9, 8, int.class);
+        MethodHandle methodHandle11 = MethodHandles.filterArguments(methodHandle10, 9, int.class);
+        MethodHandle methodHandle12 = MethodHandles.filterArguments(methodHandle11, 10, int.class);
+        MethodHandle methodHandle13 = MethodHandles.filterArguments(methodHandle12, 11, int.class);
+        MethodHandle methodHandle14 = MethodHandles.filterArguments(methodHandle13, 12, int.class);
+        MethodHandle methodHandle15 = MethodHandles.filterArguments(methodHandle14, 13, int.class);
+        MethodHandle methodHandle16 = MethodHandles.filterArguments(methodHandle15, 14, int.class);
+        MethodHandle methodHandle17 = MethodHandles.filterArguments(methodHandle16, 15, int.class);
+        MethodHandle methodHandle18 = MethodHandles.filterArguments(methodHandle17, 16, int.class);
+        MethodHandle methodHandle19 = MethodHandles.filterArguments(methodHandle18, 17, int.class);
+        MethodHandle methodHandle20 = MethodHandles.filterArguments(methodHandle19, 18, int.class);
+        MethodHandle methodHandle21 = MethodHandles.filterArguments(methodHandle20, 19, int.class);
+        MethodHandle methodHandle22 = MethodHandles.filterArguments(methodHandle21, 20, int.class);
+        MethodHandle methodHandle23 = MethodHandles.filterArguments(methodHandle22, 21, int.class);
+        MethodHandle methodHandle24 = MethodHandles.filterArguments(methodHandle23, 22, int.class);
+        MethodHandle methodHandle25 = MethodHandles.filterArguments(methodHandle24, 23, int.class);
+        MethodHandle methodHandle26 = MethodHandles.filterArguments(methodHandle25, 24, int.class);
+        MethodHandle methodHandle27 = MethodHandles.filterArguments(methodHandle26, 25, int.class);
+        MethodHandle methodHandle28 = MethodHandles.filterArguments(methodHandle27, 26, int.class);
+        MethodHandle methodHandle29 = MethodHandles.filter
+================================================================
+

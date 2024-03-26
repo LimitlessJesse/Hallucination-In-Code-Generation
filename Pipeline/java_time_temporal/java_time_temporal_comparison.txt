@@ -1,0 +1,150 @@
+Sample: 0 IsoFields
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.IsoFields package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int get(TemporalField field)`: This method returns the value of the field.
+
+2. `Temporal adjustInto(Temporal temporal)`: This method adjusts the temporal object into the temporal field.
+
+3. `Temporal adjustInto(TemporalAdjuster adjuster)`: This method adjusts the temporal object into the temporal adjuster.
+
+4. `Temporal with(TemporalField field, long newValue)`: This method returns a copy of this temporal object with the specified field set to the given value.
+
+5. `Temporal with(TemporalAdjuster adjuster)`: This method returns a copy of this temporal object with the specified adjuster applied.
+================================================================
+
+Sample: 1 JulianFields
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.JulianFields package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isSupported(TemporalField field)`: This method checks if the field is supported by the Julian calendar.
+
+2. `long get(TemporalField field)`: This method returns the value of the field from this date.
+
+3. `Temporal adjustInto(Temporal temporal)`: This method adjusts the date-time into the Julian calendar.
+
+4. `Temporal adjustIfPresent(Temporal temporal, TemporalAdjuster adjuster)`: This method adjusts the date-time if it is present in the Julian calendar.
+
+5. `Temporal with(TemporalField field, long newValue)`: This method returns a copy of this date-time with the specified field set to a new value.
+================================================================
+
+Sample: 2 TemporalAdjusters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.TemporalAdjusters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TemporalAdjuster next(TemporalField field)`: This method returns a TemporalAdjuster that adjusts to the next date-time matching the specified field.
+
+2. `TemporalAdjuster nextOrSame(TemporalField field)`: This method returns a TemporalAdjuster that adjusts to the next date-time matching the specified field, or to the current date-time if no such date-time exists.
+
+3. `TemporalAdjuster previous(TemporalField field)`: This method returns a TemporalAdjuster that adjusts to the previous date-time matching the specified field.
+
+4. `TemporalAdjuster previousOrSame(TemporalField field)`: This method returns a TemporalAdjuster that adjusts to the previous date-time matching the specified field, or to the current date-time if no such date-time exists.
+
+5. `TemporalAdjuster with(TemporalAdjuster adjuster)`: This method returns a TemporalAdjuster that first applies the given adjuster, and then applies this adjuster.
+================================================================
+
+Sample: 3 TemporalQueries
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.TemporalQueries package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TemporalQuery<R> queryFrom(TemporalAccessor temporal)`: This method returns a query that extracts a value from the given temporal accessor.
+
+2. `TemporalQuery<R> queryRange(TemporalUnit unit)`: This method returns a query that extracts a value from the range of this temporal unit.
+
+3. `TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster)`: This method returns a query that extracts a value from the range of this temporal unit, adjusted by the given adjuster.
+
+4. `TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster, TemporalAdjuster secondAdjuster)`: This method returns a query that extracts a value from the range of this temporal unit, adjusted by the given adjuster, and then adjusted again by the second adjuster.
+
+5. `TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster, TemporalAdjuster secondAdjuster, TemporalAdjuster thirdAdjuster)`: This method returns a query that extracts a value from the range of this temporal unit, adjusted by the given adjuster, and then adjusted again by the second and third adjusters.
+================================================================
+
+Sample: 4 ValueRange
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.ValueRange package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isFixed()`: This method returns true if the range is fixed (i.e., it does not change).
+
+2. `boolean isPermitted(Temporal field)`: This method returns true if the specified field is permitted in this range.
+
+3. `boolean isValidIntValue(int value)`: This method returns true if the specified int value is valid in this range.
+
+4. `boolean isValidLongValue(long value)`: This method returns true if the specified long value is valid in this range.
+
+5. `ValueRange shift(TemporalAmount amount)`: This method returns a range that is shifted by the specified amount.
+================================================================
+
+Sample: 5 WeekFields
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.temporal.WeekFields package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `WeekFields getFirstDayOfWeek()`: This method returns the first day of the week.
+
+2. `WeekFields getMinimalDaysInFirstWeek()`: This method returns the minimal number of days in the first week.
+
+3. `WeekFields withFirstDayOfWeek(DayOfWeek firstDayOfWeek)`: This method returns a copy of this WeekFields with the first day of week changed.
+
+4. `WeekFields withMinimalDaysInFirstWeek(int minimalDaysInFirstWeek)`: This method returns a copy of this WeekFields with the minimal days in the first week changed.
+
+5. `WeekFields withWeekend(DayOfWeek... weekend)`: This method returns a copy of this WeekFields with the weekend days changed.
+================================================================
+

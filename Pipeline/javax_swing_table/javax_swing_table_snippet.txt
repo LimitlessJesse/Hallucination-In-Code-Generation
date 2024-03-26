@@ -1,0 +1,751 @@
+Sample: 0 AbstractTableModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setValueAt(Object aValue, int rowIndex, int columnIndex) from javax.swing.table.AbstractTableModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setValueAt(Object aValue, int rowIndex, int columnIndex)` method is part of the `AbstractTableModel` class and it is used to set the value of the cell at the specified row and column.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.AbstractTableModel;
+
+public class MyTableModel extends AbstractTableModel {
+    private String[] columnNames = {"Column1", "Column2"};
+    private Object[][] data = {{"Value1", "Value2"}, {"Value3", "Value4"}};
+
+    public int getColumnCount() {
+        return columnNames.length;
+    }
+
+    public int getRowCount() {
+        return data.length;
+    }
+
+    public String getColumnName(int col) {
+        return columnNames[col];
+    }
+
+    public Object getValueAt(int row, int col) {
+        return data[row][col];
+    }
+
+    public Class getColumnClass(int c) {
+        return getValueAt(0, c).getClass();
+    }
+
+    public boolean isCellEditable(int row, int col) {
+        return true;
+    }
+
+    public void setValueAt(Object value, int row, int col) {
+        if (value == null) {
+            data[row][col] = null;
+        } else {
+            data[row][col] = value.toString();
+        }
+        fireTableCellUpdated(row, col);
+    }
+}
+```
+
+In this example, we create a custom `TableModel` that extends `AbstractTableModel`. We override the `setValueAt(Object aValue, int rowIndex, int columnIndex)` method to set the value of the cell at the specified row and column.
+
+Please note that this is a simple example and does not include error checking or other important aspects of a real-world table model.
+================================================================
+
+Sample: 1 AbstractTableModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isCellEditable(int rowIndex, int columnIndex) from javax.swing.table.AbstractTableModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isCellEditable(int rowIndex, int columnIndex)` method in `AbstractTableModel` is used to determine whether a cell in the table is editable or not. It returns a boolean value indicating whether the cell is editable or not.
+
+Here is a simple example of how to use this method:
+
+```java
+import javax.swing.table.AbstractTableModel;
+
+public class MyTableModel extends AbstractTableModel {
+    private String[] columnNames = {"Column1", "Column2"};
+    private Object[][] data = {{"Data1", "Data2"}, {"Data3", "Data4"}};
+
+    @Override
+    public int getRowCount() {
+        return data.length;
+    }
+
+    @Override
+    public int getColumnCount() {
+        return columnNames.length;
+    }
+
+    @Override
+    public String getColumnName(int col) {
+        return columnNames[col];
+    }
+
+    @Override
+    public Object getValueAt(int row, int col) {
+        return data[row][col];
+    }
+
+    @Override
+    public boolean isCellEditable(int row, int col) {
+        // Here you can set which cells are editable
+        // For example, only the first column is editable
+        if (col == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+```
+
+In this example, only the first column is editable. If you try to edit a cell in the second column, it will not be possible.
+================================================================
+
+Sample: 2 DefaultTableCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setBackground(Color c) from javax.swing.table.DefaultTableCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setBackground(Color c)` method is a part of `DefaultTableCellRenderer` class in Java Swing. It sets the background color of the cell.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.DefaultTableCellRenderer;
+import java.awt.Color;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableCellRenderer renderer = new DefaultTableCellRenderer();
+        renderer.setBackground(Color.RED);
+    }
+}
+```
+
+In this code snippet, we create a new instance of `DefaultTableCellRenderer` and then call the `setBackground(Color c)` method on it, passing in a `Color` object that represents the color we want to set as the background.
+
+Please note that this code snippet is a simple example and does not involve any GUI components. If you want to see this method in action, you would need to create a GUI application that uses a `JTable` and sets the cell renderer for the table.
+================================================================
+
+Sample: 3 DefaultTableCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setForeground(Color c) from javax.swing.table.DefaultTableCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setForeground(Color c)` method is a part of `DefaultTableCellRenderer` class in Java Swing. It sets the foreground color of the text in the cell.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.table.*;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Table Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        String[] columnNames = {"Name", "Surname", "Age"};
+        Object[][] data = {
+            {"John", "Doe", 25},
+            {"Jane", "Doe", 30},
+            {"Jim", "Smith", 35}
+        };
+
+        DefaultTableModel model = new DefaultTableModel(data, columnNames);
+        JTable table = new JTable(model);
+
+        // Set the foreground color of the text in the cell
+        table.getColumnModel().getColumn(0).setCellRenderer(new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+                Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                setForeground(Color.RED);
+                return c;
+            }
+        });
+
+        JScrollPane scrollPane = new JScrollPane(table);
+        frame.getContentPane().add(scrollPane);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a table with three columns: "Name", "Surname", and "Age". We then set the foreground color of the text in the "Name" column to red. The `getTableCellRendererComponent` method is overridden to set the foreground color of the text in the cell.
+================================================================
+
+Sample: 4 DefaultTableCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setValue(Object value) from javax.swing.table.DefaultTableCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setValue(Object value)` method in `DefaultTableCellRenderer` class is used to set the value of the cell. It is a part of the `javax.swing.table` package.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.JFrame;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("Column1");
+        model.addColumn("Column2");
+        model.addRow(new Object[] {"Value1", "Value2"});
+
+        JTable table = new JTable(model);
+        DefaultTableCellRenderer renderer = new DefaultTableCellRenderer();
+        renderer.setValue("New Value");
+
+        table.getColumnModel().getColumn(0).setCellRenderer(renderer);
+
+        JFrame frame = new JFrame();
+        frame.add(table);
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code snippet, we first create a `DefaultTableModel` and add two columns and a row. Then we create a `JTable` with this model. We create a `DefaultTableCellRenderer` and set a value to it. We then set this renderer to the first column of the table. Finally, we create a `JFrame` and add the table to it, and make it visible.
+
+Please note that this code snippet is a simple example and may not work as expected in your specific scenario. You may need to adjust it according to your needs.
+================================================================
+
+Sample: 5 JTableHeader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setReorderingAllowed(boolean reorderingAllowed) from javax.swing.table.JTableHeader
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setReorderingAllowed(boolean reorderingAllowed)` method is a part of `JTableHeader` class in `javax.swing.table` package. It is used to set whether the header can be reordered by the user.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumnModel;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JTable;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableModel model = new DefaultTableModel();
+        JTable table = new JTable(model);
+        JTableHeader header = table.getTableHeader();
+        header.setReorderingAllowed(false);
+    }
+}
+```
+
+In this code snippet, we first create a `DefaultTableModel` and a `JTable` with this model. Then we get the `JTableHeader` from the table and set the reordering to be not allowed.
+
+Please note that this code snippet is a simple example and may not work as expected in your specific use case. You need to replace `DefaultTableModel` and `JTable` with your actual classes and objects.
+================================================================
+
+Sample: 6 JTableHeader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setResizingAllowed(boolean resizingAllowed) from javax.swing.table.JTableHeader
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setResizingAllowed(boolean resizingAllowed)` method is a part of `JTableHeader` class in the `javax.swing.table` package. It is used to set whether the header can be resized by the user.
+
+Here is a complete code snippet that demonstrates the usage of this method:
+
+```java
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.JTableHeader;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a JTable
+        String[] columnNames = {"Name", "Surname", "Age"};
+        Object[][] data = {
+            {"John", "Doe", 25},
+            {"Jane", "Doe", 22},
+            {"Bob", "Smith", 30}
+        };
+        JTable table = new JTable(data, columnNames);
+
+        // Get the JTableHeader
+        JTableHeader header = table.getTableHeader();
+
+        // Set whether the header can be resized by the user
+        header.setResizingAllowed(false);
+
+        // Create a JFrame to display the table
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(new JScrollPane(table));
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we first create a JTable with some data. Then we get the JTableHeader from the JTable. We set the resizingAllowed property of the JTableHeader to false, which means the user cannot resize the columns of the table. Finally, we create a JFrame to display the table.
+================================================================
+
+Sample: 7 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setHeaderValue(Object value) from javax.swing.table.TableColumn
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setHeaderValue(Object value)` method is not a part of the `TableColumn` class in Java Swing. It is a part of the `TableColumnModel` class.
+
+Here is an example of how you can use the `setHeaderValue(Object value)` method from the `TableColumnModel` class:
+
+```java
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableModel model = new DefaultTableModel();
+        TableColumn column = new TableColumn(0);
+        model.addColumn(column);
+
+        // Set the header value
+        column.setHeaderValue("Column Header");
+
+        // Get the header value
+        Object headerValue = column.getHeaderValue();
+        System.out.println("Header Value: " + headerValue);
+    }
+}
+```
+
+In this example, we create a `DefaultTableModel` and a `TableColumn`. We then set the header value of the column using the `setHeaderValue(Object value)` method and print the header value to the console.
+================================================================
+
+Sample: 8 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setCellRenderer(TableCellRenderer renderer) from javax.swing.table.TableColumn
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setCellRenderer(TableCellRenderer renderer)` method is used to set the renderer for the cells in the column. The renderer is responsible for painting the cell.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumn;
+import javax.swing.table.DefaultTableCellRenderer;
+
+public class Main {
+    public static void main(String[] args) {
+        TableColumn column = new TableColumn();
+        TableCellRenderer renderer = new DefaultTableCellRenderer();
+        column.setCellRenderer(renderer);
+    }
+}
+```
+
+In this code snippet, we first create a `TableColumn` object. Then, we create a `TableCellRenderer` object using `DefaultTableCellRenderer`. Finally, we set the renderer for the column using the `setCellRenderer(TableCellRenderer renderer)` method.
+
+Please note that this code snippet is a simple example and may not work as expected without additional setup or configuration. It is also important to note that this method is part of the `TableColumn` class and is not available in all versions of Java.
+================================================================
+
+Sample: 9 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setCellEditor(TableCellEditor editor) from javax.swing.table.TableColumn
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setCellEditor(TableCellEditor editor)` method is used to set the editor for the cells in the column. The `TableCellEditor` is an interface that provides methods for editing the cell value.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.TableColumn;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.JTextField;
+
+public class Main {
+    public static void main(String[] args) {
+        TableColumn column = new TableColumn();
+        JTextField textField = new JTextField();
+        DefaultTableCellRenderer renderer = new DefaultTableCellRenderer();
+        renderer.setHorizontalAlignment(JTextField.CENTER);
+        textField.setHorizontalAlignment(JTextField.CENTER);
+        textField.setBorder(null);
+        column.setCellEditor(new DefaultCellEditor(textField));
+        column.setCellRenderer(renderer);
+    }
+}
+```
+
+In this code snippet, we first create a `TableColumn` object. Then, we create a `JTextField` object and set its alignment to center. We also create a `DefaultTableCellRenderer` object and set its alignment to center. We then set the cell editor of the column to a `DefaultCellEditor` that uses the `JTextField` object. Finally, we set the cell renderer of the column to the `DefaultTableCellRenderer` object.
+
+Please note that this is a simple example and may not work as expected in a real-world application. You would need to replace `TableColumn`, `DefaultCellEditor`, `JTextField`, and `DefaultTableCellRenderer` with the actual classes and methods you are using in your application.
+================================================================
+
+Sample: 10 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setPreferredWidth(int width) from javax.swing.table.TableColumn
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setPreferredWidth(int width)` method is a part of `TableColumn` class in Java Swing. It sets the preferred width of the column.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.TableColumn;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JTable;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableModel model = new DefaultTableModel();
+        JTable table = new JTable(model);
+        TableColumn column = table.getColumnModel().getColumn(0);
+        column.setPreferredWidth(100);
+    }
+}
+```
+
+In this code snippet, we first create a `DefaultTableModel` and a `JTable` with this model. Then we get the first column of the table using `getColumnModel().getColumn(0)`. After that, we set the preferred width of the column using `setPreferredWidth(100)`.
+
+Please note that this code snippet assumes that you have a table with at least one column. If you have a table with multiple columns, you need to replace `0` with the index of the column you want to set the preferred width for.
+================================================================
+
+Sample: 11 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setMaxWidth(int width) from javax.swing.table.TableColumn
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setMaxWidth(int width)` method in `javax.swing.table.TableColumn` is used to set the maximum width of the column.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.table.TableColumn;
+import javax.swing.table.DefaultTableModel;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTableModel model = new DefaultTableModel();
+        TableColumn column = new TableColumn(0);
+        column.setMaxWidth(100);
+        model.addColumn(column);
+    }
+}
+```
+
+In this code snippet, we first create a `DefaultTableModel` and a `TableColumn`. We then set the maximum width of the column to 100 using the `setMaxWidth(int width)` method. Finally, we add the column to the table model.
+
+Please note that this code snippet is a simplified example and may not work as expected in a real-world application. The `setMaxWidth(int width)` method is typically used in conjunction with other methods to control the appearance and behavior of the table column.
+================================================================
+

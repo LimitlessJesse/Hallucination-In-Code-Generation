@@ -1,0 +1,152 @@
+Sample: Copies_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Destination_4
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/Destination_4.java:5: error: constructor Destination in class Destination cannot be applied to given types;
+        Destination destination = new Destination("Printer1", "print://localhost/Printer1", "RAW");
+                                  ^
+  required: URI
+  found:    String,String,String
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: Destination_7
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/Destination_7.java:5: error: constructor Destination in class Destination cannot be applied to given types;
+        Destination dest1 = new Destination("Destination1", "1234567890", "1234567890");
+                            ^
+  required: URI
+  found:    String,String,String
+  reason: actual and formal argument lists differ in length
+./javax_print_attribute_standard/javaFiles/Destination_7.java:6: error: constructor Destination in class Destination cannot be applied to given types;
+        Destination dest2 = new Destination("Destination2", "0987654321", "0987654321");
+                            ^
+  required: URI
+  found:    String,String,String
+  reason: actual and formal argument lists differ in length
+2 errors
+
+
+================================================================
+
+Sample: DocumentName_4
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/DocumentName_4.java:5: error: constructor DocumentName in class DocumentName cannot be applied to given types;
+        DocumentName doc1 = new DocumentName("Document1", null, null);
+                            ^
+  required: String,Locale
+  found:    String,<null>,<null>
+  reason: actual and formal argument lists differ in length
+./javax_print_attribute_standard/javaFiles/DocumentName_4.java:6: error: constructor DocumentName in class DocumentName cannot be applied to given types;
+        DocumentName doc2 = new DocumentName("Document1", null, null);
+                            ^
+  required: String,Locale
+  found:    String,<null>,<null>
+  reason: actual and formal argument lists differ in length
+./javax_print_attribute_standard/javaFiles/DocumentName_4.java:7: error: constructor DocumentName in class DocumentName cannot be applied to given types;
+        DocumentName doc3 = new DocumentName("Document2", null, null);
+                            ^
+  required: String,Locale
+  found:    String,<null>,<null>
+  reason: actual and formal argument lists differ in length
+3 errors
+
+
+================================================================
+
+Sample: JobKOctets_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: JobName_2
+----------------------------------------------------------------
+stdout:
+Job Name: job-name
+
+================================================================
+
+Sample: JobName_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: PrinterInfo_2
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/PrinterInfo_2.java:5: error: constructor PrinterInfo in class PrinterInfo cannot be applied to given types;
+        PrinterInfo printerInfo = new PrinterInfo("PrinterName", null, null);
+                                  ^
+  required: String,Locale
+  found:    String,<null>,<null>
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: PrinterName_2
+----------------------------------------------------------------
+stdout:
+Printer Name: printer-name
+
+================================================================
+
+Sample: PrinterName_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: PrinterResolution_3
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/PrinterResolution_3.java:5: error: cannot find symbol
+        PrinterResolution resolution1 = new PrinterResolution(100, 200, PrinterResolution.DIN_UNITS);
+                                                                                         ^
+  symbol:   variable DIN_UNITS
+  location: class PrinterResolution
+./javax_print_attribute_standard/javaFiles/PrinterResolution_3.java:6: error: cannot find symbol
+        PrinterResolution resolution2 = new PrinterResolution(100, 200, PrinterResolution.DIN_UNITS);
+                                                                                         ^
+  symbol:   variable DIN_UNITS
+  location: class PrinterResolution
+2 errors
+
+
+================================================================
+
+Sample: RequestingUserName_2
+----------------------------------------------------------------
+output:
+./javax_print_attribute_standard/javaFiles/RequestingUserName_2.java:5: error: constructor RequestingUserName in class RequestingUserName cannot be applied to given types;
+        RequestingUserName userName = new RequestingUserName("John Doe");
+                                      ^
+  required: String,Locale
+  found:    String
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+

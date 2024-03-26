@@ -1,0 +1,168 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Certificate,1,Certificate getCertificate(int index),False
+0,Certificate,2,Certificate getCertificate(String alias),False
+0,Certificate,3,Certificate[] getCertificates(),False
+0,Certificate,4,Certificate[] getCertificates(String type),False
+0,Certificate,5,int size(),False
+1,Certificate.CertificateRep,1,boolean add(E e),False
+1,Certificate.CertificateRep,2,"void add(int index, E element)",False
+1,Certificate.CertificateRep,3,boolean addAll(Collection<? extends E> c),False
+1,Certificate.CertificateRep,4,"boolean addAll(int index, Collection<? extends E> c)",False
+1,Certificate.CertificateRep,5,void clear(),False
+2,CertificateFactory,1,CertificateFactory getInstance(String type),True
+2,CertificateFactory,2,Certificate generateCertificate(InputStream in),True
+2,CertificateFactory,3,"CertPath getInstance(CertPath certPath, String type)",False
+2,CertificateFactory,4,CertPath generateCertPath(CertPathParameters params),False
+2,CertificateFactory,5,CertPathParameters getInstance(InputStream in),False
+3,CertificateFactorySpi,1,CertificateFactorySpi(),False
+3,CertificateFactorySpi,2,CertificateFactorySpi(String provider),False
+3,CertificateFactorySpi,3,"CertificateFactorySpi(String provider, String type)",False
+3,CertificateFactorySpi,4,"CertificateFactorySpi(String provider, String type, String algorithm)",False
+3,CertificateFactorySpi,5,"CertificateFactorySpi(String provider, String type, String algorithm, String format)",False
+4,CertPath,1,CertPath getInstance(CertPathParameters parameters),False
+4,CertPath,2,"CertPath getInstance(CertPathParameters parameters, String provider)",False
+4,CertPath,3,CertPath getInstance(InputStream inStream),False
+4,CertPath,4,"CertPath getInstance(InputStream inStream, String provider)",False
+4,CertPath,5,"CertPath getInstance(String type, InputStream inStream)",False
+5,CertPath.CertPathRep,1,boolean add(E e),False
+5,CertPath.CertPathRep,2,"void add(int index, E element)",False
+5,CertPath.CertPathRep,3,boolean addAll(Collection<? extends E> c),False
+5,CertPath.CertPathRep,4,"boolean addAll(int index, Collection<? extends E> c)",False
+5,CertPath.CertPathRep,5,void clear(),False
+6,CertPathBuilder,1,CertPathBuilder.build(CertPathParameters params),False
+6,CertPathBuilder,2,CertPathBuilderResult getResult(),False
+6,CertPathBuilder,3,CertPathBuilderResult build(CertPathParameters params),True
+6,CertPathBuilder,4,"CertPathBuilderResult build(CertPathParameters params, PKIXParameters pkixParams)",False
+6,CertPathBuilder,5,"CertPathBuilderResult build(CertPathParameters params, PKIXParameters pkixParams, CertStoreParameters storeParams)",False
+7,CertPathBuilderSpi,1,CertPathBuilderSpi(),False
+7,CertPathBuilderSpi,2,Engine getEngine(),False
+7,CertPathBuilderSpi,3,CertPathBuilderResult build(CertPathParameters params),False
+7,CertPathBuilderSpi,4,"CertPathBuilderResult build(CertPathParameters params, Collection<? extends CertPath> endCerts)",False
+7,CertPathBuilderSpi,5,"CertPathBuilderResult build(CertPathParameters params, CertPath endCertPath)",False
+8,CertPathValidator,1,"CertPathValidator.validate(CertPath, PKIXParameters)",False
+8,CertPathValidator,2,"CertPathValidator.validate(CertPath, PKIXParameters, CertPathChecker)",False
+8,CertPathValidator,3,"CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters)",False
+8,CertPathValidator,4,"CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters, CertPathChecker)",False
+8,CertPathValidator,5,"CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters, CertPathChecker, PKIXRevocationChecker)",False
+9,CertPathValidatorSpi,1,CertPathValidatorSpi(),False
+9,CertPathValidatorSpi,2,void engineInit(CertPathParameters parameters),False
+9,CertPathValidatorSpi,3,Set<String> engineGetSupportedExtensions(),False
+9,CertPathValidatorSpi,4,"CertPathValidatorResult engineValidate(CertPath certPath, CertPathParameters parameters)",True
+9,CertPathValidatorSpi,5,CertPathChecker engineGetRevocationChecker(),True
+10,CertStore,1,CertStore getCertStores(Collection<? extends Name> types),False
+10,CertStore,2,CertStore getCertStores(String type),False
+10,CertStore,3,"CertStore getCertStores(String type, String provider)",False
+10,CertStore,4,"CertStore getCertStores(String type, String provider, String algorithm)",False
+10,CertStore,5,"CertStore getCertStores(String type, String provider, String algorithm, String parameter)",False
+11,CertStoreSpi,1,CertStoreSpi(),False
+11,CertStoreSpi,2,CertStoreSpi(Provider provider),False
+11,CertStoreSpi,3,"CertStoreSpi(Provider provider, String type)",False
+11,CertStoreSpi,4,CertStoreSpi(String type),False
+11,CertStoreSpi,5,"CertStoreSpi(String type, String providerName)",False
+11,CertStoreSpi,6,"CertStoreSpi(String type, Provider provider)",False
+11,CertStoreSpi,7,"CertStoreSpi(String type, String providerName, String providerInfo)",False
+11,CertStoreSpi,8,"CertStoreSpi(String type, Provider provider, String providerInfo)",False
+11,CertStoreSpi,9,"CertStoreSpi(String type, String providerName, String providerInfo, String algorithm)",False
+11,CertStoreSpi,10,"CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm)",False
+11,CertStoreSpi,11,"CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter)",False
+11,CertStoreSpi,12,"CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter)",False
+11,CertStoreSpi,13,"CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter, String parameterSpec)",False
+11,CertStoreSpi,14,"CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter, String parameterSpec)",False
+11,CertStoreSpi,15,"CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter, String parameterSpec, String parameterSpec)",False
+11,CertStoreSpi,16,"CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter, String parameterSpec, String parameterSpec)",False
+12,CollectionCertStoreParameters,1,boolean add(E e),False
+12,CollectionCertStoreParameters,2,"void add(int index, E element)",False
+12,CollectionCertStoreParameters,3,boolean addAll(Collection<? extends E> c),False
+12,CollectionCertStoreParameters,4,"boolean addAll(int index, Collection<? extends E> c)",False
+12,CollectionCertStoreParameters,5,void clear(),False
+13,CRL,1,boolean isRevoked(Certificate cert),True
+13,CRL,2,boolean isRevoked(PublicKey key),False
+13,CRL,3,boolean isRevoked(CertificateHolder certHolder),False
+13,CRL,4,boolean isRevoked(CertificateID certID),False
+13,CRL,5,boolean isRevoked(CertificateStatus certStatus),False
+14,LDAPCertStoreParameters,1,LDAPCertStoreParameters(String url),False
+14,LDAPCertStoreParameters,2,"LDAPCertStoreParameters(String url, String base)",False
+14,LDAPCertStoreParameters,3,"LDAPCertStoreParameters(String url, String base, String filter)",False
+14,LDAPCertStoreParameters,4,"LDAPCertStoreParameters(String url, String base, String filter, String scope)",False
+14,LDAPCertStoreParameters,5,"LDAPCertStoreParameters(String url, String base, String filter, String scope, String derefAliases)",False
+15,PKIXBuilderParameters,1,PKIXBuilderParameters(),False
+15,PKIXBuilderParameters,2,void addCertPath(CertPath certPath),False
+15,PKIXBuilderParameters,3,void setTrustAnchors(TrustAnchor[] trustAnchors),False
+15,PKIXBuilderParameters,4,void setRevocationEnabled(boolean revocationEnabled),False
+15,PKIXBuilderParameters,5,void setMaxPathLength(int maxPathLength),True
+16,PKIXCertPathBuilderResult,1,getTrustAnchors(),False
+16,PKIXCertPathBuilderResult,2,getCertPath(),False
+16,PKIXCertPathBuilderResult,3,getPolicyTree(),False
+16,PKIXCertPathBuilderResult,4,getPublicKey(),False
+16,PKIXCertPathBuilderResult,5,getPrivateKey(),False
+17,PKIXCertPathChecker,1,"boolean check(Certificate cert, CertPath certPath, Principal paramPrincipal)",False
+17,PKIXCertPathChecker,2,void init(boolean forward),True
+17,PKIXCertPathChecker,3,"void check(Certificate cert, CertPath certPath, Principal paramPrincipal)",False
+17,PKIXCertPathChecker,4,void init(boolean forward),True
+17,PKIXCertPathChecker,5,"void check(Certificate cert, CertPath certPath, Principal paramPrincipal)",False
+18,PKIXCertPathValidatorResult,1,getTrustAnchors(),False
+18,PKIXCertPathValidatorResult,2,getPolicyTree(),False
+18,PKIXCertPathValidatorResult,3,getCertPath(),False
+18,PKIXCertPathValidatorResult,4,getPolicyQualifiers(),False
+18,PKIXCertPathValidatorResult,5,getValidity(),False
+19,PKIXParameters,1,setCertPathChecker(CertPathChecker checker),False
+19,PKIXParameters,2,setCertPathParameters(CertPathParameters parameters),False
+19,PKIXParameters,3,setDisabledAlgorithms(Set<String> algorithms),False
+19,PKIXParameters,4,setInitialPolicies(List<PolicyNode> policies),False
+19,PKIXParameters,5,setMaxPathLength(int maxPathLength),False
+20,PKIXRevocationChecker,1,boolean checkRevocation(Certificate cert),False
+20,PKIXRevocationChecker,2,void checkRevocation(Certificate[] certs),False
+20,PKIXRevocationChecker,3,void checkRevocation(Collection<Certificate> certs),False
+20,PKIXRevocationChecker,4,void checkRevocation(CertPath certPath),False
+20,PKIXRevocationChecker,5,void checkRevocation(CertPath[] certPaths),False
+20,PKIXRevocationChecker,6,void checkRevocation(Collection<CertPath> certPaths),False
+21,PolicyQualifierInfo,1,boolean equals(Object obj),False
+21,PolicyQualifierInfo,2,int hashCode(),False
+21,PolicyQualifierInfo,3,boolean remove(Object o),False
+21,PolicyQualifierInfo,4,boolean removeAll(Collection<?> c),False
+21,PolicyQualifierInfo,5,boolean retainAll(Collection<?> c),False
+22,TrustAnchor,1,"TrustAnchor(X509Certificate cert, Principal issuer)",False
+22,TrustAnchor,2,X509Certificate getTrustedCert(),True
+22,TrustAnchor,3,Principal getCA(),False
+22,TrustAnchor,4,boolean equals(Object obj),False
+22,TrustAnchor,5,int hashCode(),False
+23,X509Certificate,1,getIssuerDN(),False
+23,X509Certificate,2,getNotAfter(),False
+23,X509Certificate,3,getNotBefore(),False
+23,X509Certificate,4,getPublicKey(),False
+23,X509Certificate,5,getSerialNumber(),False
+23,X509Certificate,6,getSubjectDN(),False
+23,X509Certificate,7,getType(),False
+23,X509Certificate,8,getVersion(),False
+23,X509Certificate,9,getIssuerX500Principal(),False
+23,X509Certificate,10,getSubjectX500Principal(),False
+23,X509Certificate,11,getSigAlgName(),False
+23,X509Certificate,12,getSigAlgOID(),False
+23,X509Certificate,13,getSigAlgParams(),False
+23,X509Certificate,14,getSigAlgParams(),False
+23,X509Certificate,15,getSigAlgParams(),False
+23,X509Certificate,16,getSigAlgParams(),False
+23,X509Certificate,17,getSigAlgParams(),False
+23,X509Certificate,18,getSigAlgParams(),False
+23,X509Certificate,19,getSigAlgParams(),False
+23,X509Certificate,20,getSigAlgParams(),False
+24,X509CertSelector,1,X509CertSelector(),False
+24,X509CertSelector,2,void setCertificate(X509Certificate cert),True
+24,X509CertSelector,3,X509Certificate getCertificate(),True
+24,X509CertSelector,4,void setCertPathChecker(CertPathChecker checker),False
+24,X509CertSelector,5,CertPathChecker getCertPathChecker(),False
+25,X509CRL,1,X509CRL getRevokedCertificates(),False
+25,X509CRL,2,Date getNextUpdate(),True
+25,X509CRL,3,Date getLastUpdate(),False
+25,X509CRL,4,boolean isRevoked(Certificate cert),False
+25,X509CRL,5,boolean isValid(Date date),False
+26,X509CRLEntry,1,getRevocationDate(),False
+26,X509CRLEntry,2,getSerialNumber(),False
+26,X509CRLEntry,3,getStatus(),False
+26,X509CRLEntry,4,getCertificate(),False
+26,X509CRLEntry,5,getExtensions(),False
+27,X509CRLSelector,1,boolean isRevoked(Certificate cert),False
+27,X509CRLSelector,2,boolean match(Certificate cert),False
+27,X509CRLSelector,3,boolean match(CRL crl),True
+27,X509CRLSelector,4,"boolean match(Certificate cert, CRL crl)",False
+27,X509CRLSelector,5,void setCertSelector(CertSelector certSelector),False

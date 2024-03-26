@@ -1,0 +1,175 @@
+Sample: 0 AddressHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPackage.AddressHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AddressHelper.narrow(org.omg.CORBA.Object obj)`: This method narrows the given object reference to the specified interface type.
+
+2. `AddressHelper.narrow(org.omg.CORBA.Object obj, int timeout)`: This method narrows the given object reference to the specified interface type with a timeout.
+
+3. `AddressHelper.unbind(org.omg.CORBA.Object obj)`: This method unbinds the object reference from the naming service.
+
+4. `AddressHelper.unbind_many(org.omg.CORBA.Object[] objs)`: This method unbinds the object references from the naming service.
+
+5. `AddressHelper.string_to_object(String name)`: This method resolves the name to an object reference.
+================================================================
+
+Sample: 1 InvalidAddressHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPackage.InvalidAddressHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `InvalidAddressHelper.string_to_cos_address(String name)`: This method converts a string to a CosAddress object.
+
+2. `InvalidAddressHelper.cos_address_to_string(CosAddress cos_address)`: This method converts a CosAddress object to a string.
+
+3. `InvalidAddressHelper.get_port(CosAddress cos_address)`: This method returns the port number of the specified CosAddress object.
+
+4. `InvalidAddressHelper.get_host(CosAddress cos_address)`: This method returns the host name of the specified CosAddress object.
+
+5. `InvalidAddressHelper.get_type(CosAddress cos_address)`: This method returns the type of the specified CosAddress object.
+================================================================
+
+Sample: 2 InvalidAddressHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPackage.InvalidAddressHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `InvalidAddressHolder`: This is a class that holds the InvalidAddress exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+2. `InvalidAddress`: This is a class that represents an InvalidAddress exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+3. `InvalidName`: This is a class that represents an InvalidName exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+4. `AlreadyBound`: This is a class that represents an AlreadyBound exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+5. `NotEmpty`: This is a class that represents a NotEmpty exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+6. `InvalidNameComponent`: This is a class that represents an InvalidNameComponent exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+7. `InvalidAddress`: This is a class that represents an InvalidAddress exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+8. `AlreadyBound`: This is a class that represents an AlreadyBound exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+9. `NotEmpty`: This is a class that represents a NotEmpty exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+
+10. `InvalidNameComponent`: This is a class that represents an InvalidNameComponent exception.
+
+    Return Type: `void`
+
+    Parameters: `None`
+================================================================
+
+Sample: 3 StringNameHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPackage.StringNameHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StringNameHelper.string_to_name(String name)`: This method converts a string to a name.
+
+2. `StringNameHelper.name_to_string(Name name)`: This method converts a name to a string.
+
+3. `StringNameHelper.string_to_name_component(String name)`: This method converts a string to a name component.
+
+4. `StringNameHelper.name_component_to_string(NameComponent name)`: This method converts a name component to a string.
+
+5. `StringNameHelper.string_to_name_component_ext(String name)`: This method converts a string to a name component with extended information.
+================================================================
+
+Sample: 4 URLStringHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPackage.URLStringHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `String toURLString(String name)`: This method converts a string to a URL string.
+
+2. `String toName(String urlString)`: This method converts a URL string to a name string.
+
+3. `String toURLString(String name, String type)`: This method converts a name and type to a URL string.
+
+4. `String toName(String urlString, String type)`: This method converts a URL string and type to a name string.
+
+5. `String toURLString(String name, String type, String kind)`: This method converts a name, type, and kind to a URL string.
+================================================================
+

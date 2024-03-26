@@ -1,0 +1,156 @@
+Sample: 0 Book
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.print.Book package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 PageFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.print.PageFormat package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PageFormat getPaper()`: This method returns the PageFormat object that describes the size and orientation of the paper.
+
+2. `void setOrientation(int orientation)`: This method sets the orientation of the paper.
+
+3. `void setPaper(Paper paper)`: This method sets the size and orientation of the paper.
+
+4. `void setTrimMargin(float trimMargin)`: This method sets the trim margin for the paper.
+
+5. `void setImageableArea(float x, float y, float width, float height)`: This method sets the imageable area of the paper.
+================================================================
+
+Sample: 2 Paper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.print.Paper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Paper(float width, float height)`: This constructor creates a new Paper object with the specified width and height.
+
+2. `float getImageableHeight()`: This method returns the height of the imageable area of this Paper object.
+
+3. `float getImageableWidth()`: This method returns the width of the imageable area of this Paper object.
+
+4. `float getHeight()`: This method returns the height of this Paper object.
+
+5. `float getWidth()`: This method returns the width of this Paper object.
+
+6. `void setImageableArea(float x, float y, float width, float height)`: This method sets the imageable area of this Paper object to the specified values.
+
+7. `void setSize(float width, float height)`: This method sets the size of this Paper object to the specified width and height.
+
+8. `void setOrientation(int orientation)`: This method sets the orientation of this Paper object to the specified orientation.
+
+9. `int getOrientation()`: This method returns the orientation of this Paper object.
+
+10. `void setMediaSize(float width, float height)`: This method sets the media size of this Paper object to the specified width and height.
+
+11. `float getMediaWidth()`: This method returns the width of the media size of this Paper object.
+
+12. `float getMediaHeight()`: This method returns the height of the media size of this Paper object.
+
+13. `void setMediaType(int mediaType)`: This method sets the media type of this Paper object to the specified media type.
+
+14. `int getMediaType()`: This method returns the media type of this Paper object.
+
+15. `void setCopies(int copies)`: This method sets the number of copies of this Paper object to the specified number of copies.
+
+16. `int getCopies()`: This method returns the number of copies of this Paper object.
+
+17. `void setFinishings(int finishings)`: This method sets the finishings of this Paper object to the specified finishings.
+
+18. `int getFinishings()`: This method returns the finishings of this Paper object.
+
+19. `void setBin(int bin)`: This method sets the bin of this Paper object to the specified bin.
+
+20. `int getBin()`: This method returns the bin of this Paper object.
+================================================================
+
+Sample: 3 PrinterJob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.print.PrinterJob package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrinterJob printJob = PrinterJob.getPrinterJob()`: This method returns a PrinterJob object that represents the print job.
+
+2. `boolean printDialog()`: This method displays a print dialog box.
+
+3. `boolean print()`: This method prints the document.
+
+4. `PageFormat getPageFormat()`: This method returns the PageFormat object that represents the page format.
+
+5. `Printable getPrintable()`: This method returns the Printable object that represents the printable object.
+
+6. `PrintService getPrintService()`: This method returns the PrintService object that represents the print service.
+
+7. `PrintServiceLookup getPrintServiceLookup()`: This method returns the PrintServiceLookup object that represents the print service lookup.
+
+8. `PrintService[] getPrintServices()`: This method returns an array of PrintService objects that represents the print services.
+
+9. `PrintService getPrintService(String name)`: This method returns the PrintService object that represents the print service with the specified name.
+
+10. `PrintServiceLookup getPrintServiceLookup(Locale locale)`: This method returns the PrintServiceLookup object that represents the print service lookup with the specified locale.
+
+11. `PrintService[] getPrintServices(Locale locale)`: This method returns an array of PrintService objects that represents the print services with the specified locale.
+
+12. `PrintService getPrintService(String name, Locale locale)`: This method returns the PrintService object that represents the print service with the specified name and locale.
+
+13. `PrintServiceLookup getPrintServiceLookup(String name)`: This method returns the PrintServiceLookup object that represents the print service lookup with the specified name.
+
+14. `PrintService[] getPrintServices(String name)`: This method returns an array of PrintService objects that represents the print services with the specified name.
+
+15. `PrintService getPrintService(String name, Locale locale, ClassLoader loader)`: This method returns the PrintService object that represents the print service with the specified name, locale, and class loader.
+
+16. `PrintServiceLookup getPrintServiceLookup(String name, Locale locale)`: This method returns the PrintServiceLookup object that represents the print service lookup with the specified name and locale.
+
+17. `PrintService[] getPrintServices(String name, Locale locale)`: This method returns an array of PrintService objects that represents the print services with the specified name and locale.
+
+18. `PrintService getPrintService(String name, Locale locale, ClassLoader loader, Class<?>[] types)`: This method returns the PrintService object that represents the print service with the specified name, locale, class loader, and types.
+
+19. `PrintServiceLookup getPrintServiceLookup(String name, Locale locale, ClassLoader loader)`: This method returns the PrintServiceLookup object that represents the print service lookup with the specified name, locale, and class loader.
+
+20. `PrintService[] getPrintServices(String name, Locale locale, ClassLoader loader)`: This method returns an array of PrintService objects that represents the print services with the specified name, locale, and class loader.
+================================================================
+

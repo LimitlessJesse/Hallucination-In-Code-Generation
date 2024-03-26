@@ -1,0 +1,19 @@
+ClassName,Method,Return Type
+SyncFactory,getInstance(String providerID),static SyncProvider
+SyncFactory,getLogger(),static Logger
+SyncFactory,getRegisteredProviders(),static Enumeration<SyncProvider>
+SyncFactory,getSyncFactory(),static SyncFactory
+SyncFactory,registerProvider(String providerID),static void
+SyncFactory,setJNDIContext(Context ctx),static void
+SyncFactory,setLogger(Logger logger),static void
+SyncFactory,"setLogger(Logger logger, Level level)",static void
+SyncFactory,unregisterProvider(String providerID),static void
+SyncProvider,getDataSourceLock(),abstract int
+SyncProvider,getProviderGrade(),abstract int
+SyncProvider,getProviderID(),abstract String
+SyncProvider,getRowSetReader(),abstract RowSetReader
+SyncProvider,getRowSetWriter(),abstract RowSetWriter
+SyncProvider,getVendor(),abstract String
+SyncProvider,getVersion(),abstract String
+SyncProvider,setDataSourceLock(int datasource_lock),abstract void
+SyncProvider,supportsUpdatableView(),abstract int

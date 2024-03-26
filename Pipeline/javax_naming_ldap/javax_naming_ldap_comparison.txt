@@ -1,0 +1,426 @@
+Sample: 0 BasicControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.BasicControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasValue()`: This method returns true if the control has a value.
+
+2. `Object getValue()`: This method returns the value of the control.
+
+3. `void setID(int id)`: This method sets the ID of the control.
+
+4. `int getID()`: This method returns the ID of the control.
+
+5. `String getCriticality()`: This method returns the criticality of the control.
+================================================================
+
+Sample: 1 ControlFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.ControlFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ControlFactory.createControl(String oid)`: This method creates a new control with the specified OID.
+
+2. `ControlFactory.createSimpleBinaryValueControl(String oid, byte[] value)`: This method creates a new control with the specified OID and binary value.
+
+3. `ControlFactory.createSimpleStringValueControl(String oid, String value)`: This method creates a new control with the specified OID and string value.
+
+4. `ControlFactory.createPresentationControl(String oid, int criticality, byte[] value)`: This method creates a new control with the specified OID, criticality, and binary value.
+
+5. `ControlFactory.createContextSpecificControl(String oid, int criticality, byte[] value)`: This method creates a new control with the specified OID, criticality, and binary value.
+================================================================
+
+Sample: 2 InitialLdapContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.InitialLdapContext package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `InitialLdapContext(Hashtable<?,?> environment)`: This constructor creates an LDAP context using the specified environment properties.
+
+2. `Object lookup(Name name)`: This method performs a lookup operation on the LDAP server.
+
+3. `void close()`: This method closes the LDAP context.
+
+4. `void reconnect(int retry)`: This method attempts to reconnect to the LDAP server.
+
+5. `void setRequestControls(Control[] controls)`: This method sets the request controls for the LDAP context.
+================================================================
+
+Sample: 3 LdapName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.LdapName package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LdapName(String name)`: This constructor creates a new LdapName instance from the specified string.
+
+2. `String getRdn()`: This method returns the relative distinguished name (RDN) of this LdapName instance.
+
+3. `String getRemainder()`: This method returns the remainder of this LdapName instance.
+
+4. `String getPrefix()`: This method returns the prefix of this LdapName instance.
+
+5. `String getSuffix()`: This method returns the suffix of this LdapName instance.
+
+6. `String getCommonName()`: This method returns the common name of this LdapName instance.
+
+7. `String getSerialNumber()`: This method returns the serial number of this LdapName instance.
+
+8. `String getOrganizationName()`: This method returns the organization name of this LdapName instance.
+
+9. `String getOrganizationalUnitName()`: This method returns the organizational unit name of this LdapName instance.
+
+10. `String getLocalityName()`: This method returns the locality name of this LdapName instance.
+
+11. `String getStateOrProvinceName()`: This method returns the state or province name of this LdapName instance.
+
+12. `String getCountryName()`: This method returns the country name of this LdapName instance.
+
+13. `String getPostalCode()`: This method returns the postal code of this LdapName instance.
+
+14. `String getStreet()`: This method returns the street of this LdapName instance.
+
+15. `String getTitle()`: This method returns the title of this LdapName instance.
+
+16. `String getDescription()`: This method returns the description of this LdapName instance.
+
+17. `String getDomainComponent()`: This method returns the domain component of this LdapName instance.
+
+18. `String getIncludeInase()`: This method returns the include inase of this LdapName instance.
+
+19. `String getChairPerson()`: This method returns the chair person of this LdapName instance.
+
+20. `String getManager()`: This method returns the manager of this LdapName instance.
+
+21. `String getMember()`: This method returns the member of this LdapName instance.
+
+22. `String getOwner()`: This method returns the owner of this LdapName instance.
+
+23. `String getSubschemaSubentry()`: This method returns the subschema subentry of this LdapName instance.
+
+24. `String getSubordinateName()`: This method returns the subordinate name of this LdapName instance.
+
+25. `String getSuperiorName()`: This method returns the superior name of this LdapName instance.
+
+26. `String getDSAQuality()`: This method returns the DSA quality of this LdapName instance.
+
+27. `String getDSAState()`: This method returns the DSA state of this LdapName instance.
+
+28. `String getDSAUsage()`: This method returns the DSA usage of this LdapName instance.
+
+29. `String getDNQualifier()`: This method returns the DN qualifier of this LdapName instance.
+
+30. `String getDSAName()`: This method returns the DSA name of this LdapName instance.
+
+31. `String getDSAReference()`: This method returns the DSA reference of this LdapName instance.
+
+32. `String getDSAReferenceURL()`: This method returns the DSA reference URL of this LdapName instance.
+
+33. `String getDSAReferenceTelephoneNumber()`: This method returns the DSA reference telephone number of this LdapName instance.
+
+34. `String getDSAReferenceMailMessaging()`: This method returns the DSA reference mail messaging of this LdapName instance.
+
+35. `String getDSAReferencePostalAddress()`: This method returns the DSA reference postal address of this LdapName instance.
+
+36. `String getDSAReferenceHours()`: This method returns the DSA reference hours of this LdapName instance.
+
+37. `String getDSAReferenceTransport()`: This method returns the DSA reference transport of this LdapName instance.
+
+38. `String getDSAReferenceFax()`: This method returns the DSA reference fax of this LdapName instance.
+
+39. `String getDSAReferencePager()`: This method returns the DSA reference pager of this LdapName instance.
+
+40. `String getDSAReferenceOther()`: This method returns the DSA reference other of this LdapName instance.
+
+41. `String getDSAReferenceRules()`: This method returns the DSA reference rules of this LdapName instance.
+
+42. `String getDSAReferenceAuthority()`: This method returns the DSA reference authority of this LdapName instance.
+
+43. `String getDSAReferenceAuthorityName()`: This method returns the DSA reference authority name of this LdapName instance.
+
+44. `String getDSAReferenceAuthorityURL()`: This method returns the DSA reference authority URL of this LdapName instance.
+
+45. `String getDSAReferenceAuthorityTelephoneNumber()`: This method returns the DSA reference authority telephone number of this LdapName instance.
+
+46. `String getDSAReferenceAuthorityMailMessaging()`: This method returns the DSA reference authority mail messaging of this LdapName instance.
+
+
+================================================================
+
+Sample: 4 ManageReferralControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.ManageReferralControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 PagedResultsControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.PagedResultsControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PagedResultsControl(int size, boolean criticality)`: This constructor creates a new PagedResultsControl with the specified size and criticality.
+
+2. `int getSize()`: This method returns the size of the PagedResultsControl.
+
+3. `boolean isCriticality()`: This method returns the criticality of the PagedResultsControl.
+
+4. `void setSize(int size)`: This method sets the size of the PagedResultsControl.
+
+5. `void setCriticality(boolean criticality)`: This method sets the criticality of the PagedResultsControl.
+================================================================
+
+Sample: 6 PagedResultsResponseControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.PagedResultsResponseControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasMore()`: This method returns true if there are more results to be fetched.
+
+2. `int getResultSizeEstimate()`: This method returns an estimate of the number of results that would be returned if getResult() were called.
+
+3. `Object getResult(int start, int size)`: This method returns the results from the specified start index up to the specified size.
+
+4. `void close()`: This method closes the control.
+
+5. `void setSizeLimit(int size)`: This method sets the size limit for the results.
+================================================================
+
+Sample: 7 Rdn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.Rdn package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 8 SortControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.SortControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SortControl(String sortKey, boolean reverseOrder)`: This constructor creates a new SortControl object with the specified sort key and reverse order.
+
+2. `String getSortKey()`: This method returns the sort key for this SortControl.
+
+3. `boolean isReverseOrder()`: This method returns the reverse order for this SortControl.
+
+4. `void setSortKey(String sortKey)`: This method sets the sort key for this SortControl.
+
+5. `void setReverseOrder(boolean reverseOrder)`: This method sets the reverse order for this SortControl.
+================================================================
+
+Sample: 9 SortKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.SortKey package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SortKey(String attribute, boolean reverse)`: This constructor creates a new SortKey object with the specified attribute and reverse order.
+
+2. `String getAttribute()`: This method returns the attribute used for sorting.
+
+3. `boolean isReverse()`: This method returns true if the sort order is reverse, false otherwise.
+
+4. `void setAttribute(String attribute)`: This method sets the attribute used for sorting.
+
+5. `void setReverse(boolean reverse)`: This method sets the reverse order flag. If true, the sort order is reversed.
+================================================================
+
+Sample: 10 SortResponseControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.SortResponseControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SortResponseControl(String id, boolean reverseOrder, String sortKey)`: This is the constructor of the SortResponseControl class. It takes three parameters: id, reverseOrder, and sortKey.
+
+2. `String getSortKey()`: This method returns the sort key.
+
+3. `boolean isReverseOrder()`: This method returns true if the order is reversed, false otherwise.
+
+4. `void setReverseOrder(boolean reverseOrder)`: This method sets the reverse order.
+
+5. `void setSortKey(String sortKey)`: This method sets the sort key.
+================================================================
+
+Sample: 11 StartTlsRequest
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.StartTlsRequest package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void process(TlsClientProtocol tlsClientProtocol)`: This method processes the TLS client protocol.
+
+2. `void addHandshakeCompletedListener(HandshakeCompletedListener listener)`: This method adds a listener for handshake completion events.
+
+3. `void removeHandshakeCompletedListener(HandshakeCompletedListener listener)`: This method removes a listener for handshake completion events.
+
+4. `void addTlsHandshakeCompletedListener(TlsHandshakeCompletedListener listener)`: This method adds a listener for TLS handshake completion events.
+
+5. `void removeTlsHandshakeCompletedListener(TlsHandshakeCompletedListener listener)`: This method removes a listener for TLS handshake completion events.
+================================================================
+
+Sample: 12 StartTlsResponse
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.StartTlsResponse package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StartTlsResponse(Context ctx)`: This is the constructor of the StartTlsResponse class. It takes a Context object as a parameter.
+
+2. `void setResponse(byte[] response)`: This method sets the response to the StartTlsResponse object. It takes a byte array as a parameter.
+
+3. `byte[] getResponse()`: This method returns the response of the StartTlsResponse object. It returns a byte array.
+
+4. `void setResponseCode(int responseCode)`: This method sets the response code to the StartTlsResponse object. It takes an integer as a parameter.
+
+5. `int getResponseCode()`: This method returns the response code of the StartTlsResponse object. It returns an integer.
+================================================================
+
+Sample: 13 UnsolicitedNotificationEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.naming.ldap.UnsolicitedNotificationEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `UnsolicitedNotificationEvent(String id, String type, String message)`: This constructor creates a new UnsolicitedNotificationEvent with the specified id, type, and message.
+
+2. `String getID()`: This method returns the id of this UnsolicitedNotificationEvent.
+
+3. `String getType()`: This method returns the type of this UnsolicitedNotificationEvent.
+
+4. `String getMessage()`: This method returns the message of this UnsolicitedNotificationEvent.
+
+5. `String toString()`: This method returns a string representation of this UnsolicitedNotificationEvent.
+================================================================
+

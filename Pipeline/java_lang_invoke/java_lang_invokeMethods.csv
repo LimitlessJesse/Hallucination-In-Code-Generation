@@ -1,0 +1,121 @@
+ClassName,Method,Return Type
+CallSite,dynamicInvoker(),abstract MethodHandle
+CallSite,getTarget(),abstract MethodHandle
+CallSite,setTarget(MethodHandle newTarget),abstract void
+CallSite,type(),MethodType
+ConstantCallSite,dynamicInvoker(),MethodHandle
+ConstantCallSite,getTarget(),MethodHandle
+ConstantCallSite,setTarget(MethodHandle ignore),void
+LambdaMetafactory,"altMetafactory(MethodHandles.Lookup caller, String invokedName, MethodType invokedType, Object... args)",static CallSite
+LambdaMetafactory,"metafactory(MethodHandles.Lookup caller, String invokedName, MethodType invokedType, MethodType samMethodType, MethodHandle implMethod, MethodType instantiatedMethodType)",static CallSite
+MethodHandle,"asCollector(Class<?> arrayType, int arrayLength)",MethodHandle
+MethodHandle,asFixedArity(),MethodHandle
+MethodHandle,"asSpreader(Class<?> arrayType, int arrayLength)",MethodHandle
+MethodHandle,asType(MethodType newType),MethodHandle
+MethodHandle,asVarargsCollector(Class<?> arrayType),MethodHandle
+MethodHandle,bindTo(Object x),MethodHandle
+MethodHandle,invoke(Object... args),Object
+MethodHandle,invokeExact(Object... args),Object
+MethodHandle,invokeWithArguments(List<?> arguments),Object
+MethodHandle,invokeWithArguments(Object... arguments),Object
+MethodHandle,isVarargsCollector(),boolean
+MethodHandle,toString(),String
+MethodHandle,type(),MethodType
+MethodHandleProxies,"asInterfaceInstance(Class<T> intfc, MethodHandle target)",static <T> T
+MethodHandleProxies,isWrapperInstance(Object x),static boolean
+MethodHandleProxies,wrapperInstanceTarget(Object x),static MethodHandle
+MethodHandleProxies,wrapperInstanceType(Object x),static Class<?>
+MethodHandles,arrayElementGetter(Class<?> arrayClass),static MethodHandle
+MethodHandles,arrayElementSetter(Class<?> arrayClass),static MethodHandle
+MethodHandles,"catchException(MethodHandle target, Class<? extends Throwable> exType, MethodHandle handler)",static MethodHandle
+MethodHandles,"collectArguments(MethodHandle target, int pos, MethodHandle filter)",static MethodHandle
+MethodHandles,"constant(Class<?> type, Object value)",static MethodHandle
+MethodHandles,"dropArguments(MethodHandle target, int pos, Class<?>... valueTypes)",static MethodHandle
+MethodHandles,"dropArguments(MethodHandle target, int pos, List<Class<?>> valueTypes)",static MethodHandle
+MethodHandles,exactInvoker(MethodType type),static MethodHandle
+MethodHandles,"explicitCastArguments(MethodHandle target, MethodType newType)",static MethodHandle
+MethodHandles,"filterArguments(MethodHandle target, int pos, MethodHandle... filters)",static MethodHandle
+MethodHandles,"filterReturnValue(MethodHandle target, MethodHandle filter)",static MethodHandle
+MethodHandles,"foldArguments(MethodHandle target, MethodHandle combiner)",static MethodHandle
+MethodHandles,"guardWithTest(MethodHandle test, MethodHandle target, MethodHandle fallback)",static MethodHandle
+MethodHandles,identity(Class<?> type),static MethodHandle
+MethodHandles,"insertArguments(MethodHandle target, int pos, Object... values)",static MethodHandle
+MethodHandles,invoker(MethodType type),static MethodHandle
+MethodHandles,lookup(),static MethodHandles.Lookup
+MethodHandles,"permuteArguments(MethodHandle target, MethodType newType, int... reorder)",static MethodHandle
+MethodHandles,publicLookup(),static MethodHandles.Lookup
+MethodHandles,"reflectAs(Class<T> expected, MethodHandle target)",static <T extends Member>T
+MethodHandles,"spreadInvoker(MethodType type, int leadingArgCount)",static MethodHandle
+MethodHandles,"throwException(Class<?> returnType, Class<? extends Throwable> exType)",static MethodHandle
+MethodHandles.Lookup,"bind(Object receiver, String name, MethodType type)",MethodHandle
+MethodHandles.Lookup,"findConstructor(Class<?> refc, MethodType type)",MethodHandle
+MethodHandles.Lookup,"findGetter(Class<?> refc, String name, Class<?> type)",MethodHandle
+MethodHandles.Lookup,"findSetter(Class<?> refc, String name, Class<?> type)",MethodHandle
+MethodHandles.Lookup,"findSpecial(Class<?> refc, String name, MethodType type, Class<?> specialCaller)",MethodHandle
+MethodHandles.Lookup,"findStatic(Class<?> refc, String name, MethodType type)",MethodHandle
+MethodHandles.Lookup,"findStaticGetter(Class<?> refc, String name, Class<?> type)",MethodHandle
+MethodHandles.Lookup,"findStaticSetter(Class<?> refc, String name, Class<?> type)",MethodHandle
+MethodHandles.Lookup,"findVirtual(Class<?> refc, String name, MethodType type)",MethodHandle
+MethodHandles.Lookup,in(Class<?> requestedLookupClass),MethodHandles.Lookup
+MethodHandles.Lookup,lookupClass(),Class<?>
+MethodHandles.Lookup,lookupModes(),int
+MethodHandles.Lookup,revealDirect(MethodHandle target),MethodHandleInfo
+MethodHandles.Lookup,toString(),String
+MethodHandles.Lookup,unreflect(Method m),MethodHandle
+MethodHandles.Lookup,unreflectConstructor(Constructor<?> c),MethodHandle
+MethodHandles.Lookup,unreflectGetter(Field f),MethodHandle
+MethodHandles.Lookup,unreflectSetter(Field f),MethodHandle
+MethodHandles.Lookup,"unreflectSpecial(Method m, Class<?> specialCaller)",MethodHandle
+MethodType,appendParameterTypes(Class<?>... ptypesToInsert),MethodType
+MethodType,appendParameterTypes(List<Class<?>> ptypesToInsert),MethodType
+MethodType,"changeParameterType(int num, Class<?> nptype)",MethodType
+MethodType,changeReturnType(Class<?> nrtype),MethodType
+MethodType,"dropParameterTypes(int start, int end)",MethodType
+MethodType,equals(Object x),boolean
+MethodType,erase(),MethodType
+MethodType,"fromMethodDescriptorString(String descriptor, ClassLoader loader)",static MethodType
+MethodType,generic(),MethodType
+MethodType,genericMethodType(int objectArgCount),static MethodType
+MethodType,"genericMethodType(int objectArgCount, boolean finalArray)",static MethodType
+MethodType,hashCode(),int
+MethodType,hasPrimitives(),boolean
+MethodType,hasWrappers(),boolean
+MethodType,"insertParameterTypes(int num, Class<?>... ptypesToInsert)",MethodType
+MethodType,"insertParameterTypes(int num, List<Class<?>> ptypesToInsert)",MethodType
+MethodType,methodType(Class<?> rtype),static MethodType
+MethodType,"methodType(Class<?> rtype, Class<?> ptype0)",static MethodType
+MethodType,"methodType(Class<?> rtype, Class<?>[] ptypes)",static MethodType
+MethodType,"methodType(Class<?> rtype, Class<?> ptype0, Class<?>... ptypes)",static MethodType
+MethodType,"methodType(Class<?> rtype, List<Class<?>> ptypes)",static MethodType
+MethodType,"methodType(Class<?> rtype, MethodType ptypes)",static MethodType
+MethodType,parameterArray(),Class<?>[]
+MethodType,parameterCount(),int
+MethodType,parameterList(),List<Class<?>>
+MethodType,parameterType(int num),Class<?>
+MethodType,returnType(),Class<?>
+MethodType,toMethodDescriptorString(),String
+MethodType,toString(),String
+MethodType,unwrap(),MethodType
+MethodType,wrap(),MethodType
+MutableCallSite,dynamicInvoker(),MethodHandle
+MutableCallSite,getTarget(),MethodHandle
+MutableCallSite,setTarget(MethodHandle newTarget),void
+MutableCallSite,syncAll(MutableCallSite[] sites),static void
+SerializedLambda,getCapturedArg(int i),Object
+SerializedLambda,getCapturedArgCount(),int
+SerializedLambda,getCapturingClass(),String
+SerializedLambda,getFunctionalInterfaceClass(),String
+SerializedLambda,getFunctionalInterfaceMethodName(),String
+SerializedLambda,getFunctionalInterfaceMethodSignature(),String
+SerializedLambda,getImplClass(),String
+SerializedLambda,getImplMethodKind(),int
+SerializedLambda,getImplMethodName(),String
+SerializedLambda,getImplMethodSignature(),String
+SerializedLambda,getInstantiatedMethodType(),String
+SerializedLambda,toString(),String
+SwitchPoint,"guardWithTest(MethodHandle target, MethodHandle fallback)",MethodHandle
+SwitchPoint,hasBeenInvalidated(),boolean
+SwitchPoint,invalidateAll(SwitchPoint[] switchPoints),static void
+VolatileCallSite,dynamicInvoker(),MethodHandle
+VolatileCallSite,getTarget(),MethodHandle
+VolatileCallSite,setTarget(MethodHandle newTarget),void

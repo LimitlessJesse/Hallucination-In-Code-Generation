@@ -1,0 +1,29 @@
+Sample: ForwardingFileObject_2
+----------------------------------------------------------------
+output:
+./javax_tools/javaFiles/ForwardingFileObject_2.java:8: error: constructor ForwardingFileObject in class ForwardingFileObject<F> cannot be applied to given types;
+        ForwardingFileObject fileObject = new ForwardingFileObject() {
+                                          ^
+  required: FileObject
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+  where F is a type-variable:
+    F extends FileObject declared in class ForwardingFileObject
+1 error
+
+
+================================================================
+
+Sample: ForwardingFileObject_3
+----------------------------------------------------------------
+output:
+./javax_tools/javaFiles/ForwardingFileObject_3.java:5: error: class MyFileObject is public, should be declared in a file named MyFileObject.java
+public class MyFileObject extends ForwardingFileObject {
+       ^
+Note: ./javax_tools/javaFiles/ForwardingFileObject_3.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+
+
+================================================================
+

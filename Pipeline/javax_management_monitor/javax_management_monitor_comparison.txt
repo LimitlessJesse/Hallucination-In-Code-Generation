@@ -1,0 +1,123 @@
+Sample: 0 CounterMonitor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.monitor.CounterMonitor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CounterMonitor()`: This is the constructor of the CounterMonitor class.
+
+2. `void add(long value)`: This method adds the specified value to the counter.
+
+3. `long getCount()`: This method returns the current value of the counter.
+
+4. `void reset()`: This method resets the counter to zero.
+
+5. `void setCount(long value)`: This method sets the counter to the specified value.
+================================================================
+
+Sample: 1 GaugeMonitor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.monitor.GaugeMonitor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `GaugeMonitor(ObjectName name, MBeanServer server, Gauge gauge, long interval)`: This constructor creates a new GaugeMonitor with the specified name, MBean server, gauge, and interval.
+
+2. `GaugeMonitor(ObjectName name, MBeanServer server, Gauge gauge)`: This constructor creates a new GaugeMonitor with the specified name, MBean server, and gauge.
+
+3. `Gauge getGauge()`: This method returns the gauge associated with this GaugeMonitor.
+
+4. `long getInterval()`: This method returns the interval at which the gauge is sampled.
+
+5. `ObjectName getName()`: This method returns the name of this GaugeMonitor.
+
+6. `MBeanServer getServer()`: This method returns the MBean server associated with this GaugeMonitor.
+
+7. `void setGauge(Gauge gauge)`: This method sets the gauge associated with this GaugeMonitor.
+
+8. `void setInterval(long interval)`: This method sets the interval at which the gauge is sampled.
+
+9. `void setName(ObjectName name)`: This method sets the name of this GaugeMonitor.
+
+10. `void setServer(MBeanServer server)`: This method sets the MBean server associated with this GaugeMonitor.
+================================================================
+
+Sample: 2 Monitor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.monitor.Monitor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+================================================================
+
+Sample: 3 MonitorNotification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.monitor.MonitorNotification package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 4 StringMonitor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.monitor.StringMonitor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+

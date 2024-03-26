@@ -1,0 +1,342 @@
+Sample: 0 AbstractInterruptibleChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isOpen() from java.nio.channels.spi.AbstractInterruptibleChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isOpen()` method in `java.nio.channels.spi.AbstractInterruptibleChannel` is a boolean method that returns true if the channel is open and false otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.spi.AbstractInterruptibleChannel;
+import java.nio.channels.spi.AbstractSelectionKey;
+
+public class Main {
+    public static void main(String[] args) {
+        AbstractInterruptibleChannel channel = new AbstractInterruptibleChannel() {
+            @Override
+            protected void implCloseChannel() throws java.io.IOException {
+                // Implementation not needed for this example
+            }
+
+            @Override
+            protected boolean isOpen() {
+                // Implementation not needed for this example
+                return false;
+            }
+
+            @Override
+            protected void implCloseSelectedKeys() throws java.io.IOException {
+                // Implementation not needed for this example
+            }
+
+            @Override
+            protected void implCancel(AbstractSelectionKey.SelectorKey key) {
+                // Implementation not needed for this example
+            }
+        };
+
+        System.out.println(channel.isOpen());
+    }
+}
+```
+
+In this example, we are creating an anonymous class that extends `AbstractInterruptibleChannel` and overrides the `isOpen()` method. The `isOpen()` method always returns `false` in this example, but you can replace it with your own implementation.
+
+The `isOpen()` method is used to check if the channel is open or not. If the channel is open, the method returns `true`; otherwise, it returns `false`.
+================================================================
+
+Sample: 1 AbstractInterruptibleChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void close() from java.nio.channels.spi.AbstractInterruptibleChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void close()` method in `java.nio.channels.spi.AbstractInterruptibleChannel` is used to close the channel. It is a part of the `java.nio.channels` package and is used to close the channel.
+
+Here is a complete code snippet of the `void close()` method:
+
+```java
+import java.nio.channels.spi.AbstractInterruptibleChannel;
+import java.nio.channels.Channel;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a channel
+            Channel channel = new AbstractInterruptibleChannel() {
+                @Override
+                protected void implCloseChannel() throws IOException {
+                    // Implementation of close method
+                }
+            };
+
+            // Close the channel
+            channel.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In the above code, we are creating a `Channel` object and then calling the `close()` method on it. The `close()` method is implemented in the anonymous inner class that extends `AbstractInterruptibleChannel`.
+
+Please note that the `close()` method is not a part of the `java.nio.channels.spi.AbstractInterruptibleChannel` class. It is a part of the `java.nio.channels.Channel` interface. The `close()` method is used to close the channel.
+================================================================
+
+Sample: 2 AbstractSelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException from java.nio.channels.spi.AbstractSelectableChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException` method is part of the `java.nio.channels.spi.AbstractSelectableChannel` class. It is used to register a channel with a selector.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+
+        Selector selector = Selector.open();
+        SelectionKey key = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            Set<SelectionKey> selectedKeys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = selectedKeys.iterator();
+
+            while (iterator.hasNext()) {
+                SelectionKey selectedKey = iterator.next();
+
+                if (selectedKey.isAcceptable()) {
+                    // Handle accept event
+                } else if (selectedKey.isReadable()) {
+                    // Handle read event
+                } else if (selectedKey.isWritable()) {
+                    // Handle write event
+                }
+
+                iterator.remove();
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a server socket channel and registering it with a selector. The selector is then used to monitor the channel for events such as accept, read, and write. The `selector.select()` method blocks until at least one channel is ready for I/O operations. The `selector.selectedKeys()` method returns a set of keys whose corresponding channels are ready for I/O operations. We then iterate over this set and handle the events accordingly.
+================================================================
+
+Sample: 3 AbstractSelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectionKey keyFor(Selector sel) from java.nio.channels.spi.AbstractSelectableChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SelectionKey keyFor(Selector sel)` method is not a part of the `java.nio.channels.spi.AbstractSelectableChannel` class. It is a part of the `java.nio.channels.Selector` class.
+
+Here is an example of how you can use it:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Selector selector = Selector.open();
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            Set<SelectionKey> selectedKeys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = selectedKeys.iterator();
+
+            while (iterator.hasNext()) {
+                SelectionKey key = iterator.next();
+
+                if (key.isAcceptable()) {
+                    // handle accept event
+                } else if (key.isReadable()) {
+                    // handle read event
+                } else if (key.isWritable()) {
+                    // handle write event
+                }
+
+                iterator.remove();
+            }
+        }
+    }
+}
+```
+
+In the above code, we are creating a server socket channel and registering it with a selector. The selector is then used to monitor the channel for events such as accept, read, and write. The `selector.select()` method blocks until at least one channel is ready for I/O operations. The `selector.selectedKeys()` method returns a set of keys whose corresponding channels are ready for I/O operations. We then iterate over this set and handle the events accordingly.
+================================================================
+
+Sample: 4 AbstractSelector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectorProvider provider() from java.nio.channels.spi.AbstractSelector
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SelectorProvider.provider()` method is a static method that returns the default `SelectorProvider`. This method is part of the `java.nio.channels.spi.AbstractSelector` class.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.spi.AbstractSelector;
+
+public class Main {
+    public static void main(String[] args) {
+        AbstractSelector selector = AbstractSelector.provider();
+        System.out.println(selector);
+    }
+}
+```
+
+In this code snippet, we are importing the `AbstractSelector` class from the `java.nio.channels.spi` package. We then create an instance of `AbstractSelector` by calling the `provider()` method. Finally, we print the `selector` object to the console.
+
+Please note that the `provider()` method is static, so we don't need to create an instance of `AbstractSelector` to call the method. We can directly call the method on the class itself.
+================================================================
+

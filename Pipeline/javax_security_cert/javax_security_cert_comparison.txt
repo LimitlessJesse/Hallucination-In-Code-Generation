@@ -1,0 +1,50 @@
+Sample: 0 Certificate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.cert.Certificate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Certificate getCertificate(int index)`: This method returns the certificate at the specified position in this certificate array.
+
+2. `Certificate[] getCertificates()`: This method returns an array containing all of the certificates in this certificate array.
+
+3. `Certificate[] getTBSCertificates()`: This method returns an array containing all of the TBSCertificates in this certificate array.
+
+4. `Certificate[] getCertificates(String type)`: This method returns an array containing all of the certificates of the specified type in this certificate array.
+
+5. `Certificate[] getTBSCertificates(String type)`: This method returns an array containing all of the TBSCertificates of the specified type in this certificate array.
+================================================================
+
+Sample: 1 X509Certificate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.cert.X509Certificate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean verify(PublicKey key)`: This method verifies the signature of the certificate.
+
+2. `boolean verify(PublicKey key, String sigProvider)`: This method verifies the signature of the certificate using the specified signature provider.
+
+3. `boolean verify(PublicKey key, String sigAlgName, byte[] encodedSig)`: This method verifies the signature of the certificate using the specified signature algorithm and encoded signature.
+
+4. `boolean verify(PublicKey key, String sigAlgName, byte[] encodedSig, String provider)`: This method verifies the signature of the certificate using the specified signature algorithm, encoded signature, and provider.
+
+5. `boolean verify(Certificate cert)`: This method verifies the signature of the certificate.
+================================================================
+

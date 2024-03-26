@@ -1,0 +1,612 @@
+ClassName,Method,Return Type
+_IDLTypeStub,_ids(),String[]
+_IDLTypeStub,def_kind(),DefinitionKind
+_IDLTypeStub,destroy(),void
+_IDLTypeStub,type(),TypeCode
+_PolicyStub,_ids(),String[]
+_PolicyStub,copy(),Policy
+_PolicyStub,destroy(),void
+_PolicyStub,policy_type(),int
+Any,create_input_stream(),abstract InputStream
+Any,create_output_stream(),abstract OutputStream
+Any,equal(Any a),abstract boolean
+Any,extract_any(),abstract Any
+Any,extract_boolean(),abstract boolean
+Any,extract_char(),abstract char
+Any,extract_double(),abstract double
+Any,extract_fixed(),BigDecimal
+Any,extract_float(),abstract float
+Any,extract_long(),abstract int
+Any,extract_longlong(),abstract long
+Any,extract_Object(),abstract Object
+Any,extract_octet(),abstract byte
+Any,extract_Principal(),Principal
+Any,extract_short(),abstract short
+Any,extract_Streamable(),Streamable
+Any,extract_string(),abstract String
+Any,extract_TypeCode(),abstract TypeCode
+Any,extract_ulong(),abstract int
+Any,extract_ulonglong(),abstract long
+Any,extract_ushort(),abstract short
+Any,extract_Value(),abstract Serializable
+Any,extract_wchar(),abstract char
+Any,extract_wstring(),abstract String
+Any,insert_any(Any a),abstract void
+Any,insert_boolean(boolean b),abstract void
+Any,insert_char(char c),abstract void
+Any,insert_double(double d),abstract void
+Any,insert_fixed(BigDecimal value),void
+Any,"insert_fixed(BigDecimal value, TypeCode type)",void
+Any,insert_float(float f),abstract void
+Any,insert_long(int l),abstract void
+Any,insert_longlong(long l),abstract void
+Any,insert_Object(Object o),abstract void
+Any,"insert_Object(Object o, TypeCode t)",abstract void
+Any,insert_octet(byte b),abstract void
+Any,insert_Principal(Principal p),void
+Any,insert_short(short s),abstract void
+Any,insert_Streamable(Streamable s),void
+Any,insert_string(String s),abstract void
+Any,insert_TypeCode(TypeCode t),abstract void
+Any,insert_ulong(int l),abstract void
+Any,insert_ulonglong(long l),abstract void
+Any,insert_ushort(short s),abstract void
+Any,insert_Value(Serializable v),abstract void
+Any,"insert_Value(Serializable v, TypeCode t)",abstract void
+Any,insert_wchar(char c),abstract void
+Any,insert_wstring(String s),abstract void
+Any,"read_value(InputStream is, TypeCode t)",abstract void
+Any,type(),abstract TypeCode
+Any,type(TypeCode t),abstract void
+Any,write_value(OutputStream os),abstract void
+AnyHolder,_read(InputStream input),void
+AnyHolder,_type(),TypeCode
+AnyHolder,_write(OutputStream output),void
+AnySeqHelper,extract(Any a),static Any[]
+AnySeqHelper,id(),static String
+AnySeqHelper,"insert(Any a, Any[] that)",static void
+AnySeqHelper,read(InputStream istream),static Any[]
+AnySeqHelper,type(),static TypeCode
+AnySeqHelper,"write(OutputStream ostream, Any[] value)",static void
+AnySeqHolder,_read(InputStream i),void
+AnySeqHolder,_type(),TypeCode
+AnySeqHolder,_write(OutputStream o),void
+BooleanHolder,_read(InputStream input),void
+BooleanHolder,_type(),TypeCode
+BooleanHolder,_write(OutputStream output),void
+BooleanSeqHelper,extract(Any a),static boolean[]
+BooleanSeqHelper,id(),static String
+BooleanSeqHelper,"insert(Any a, boolean[] that)",static void
+BooleanSeqHelper,read(InputStream istream),static boolean[]
+BooleanSeqHelper,type(),static TypeCode
+BooleanSeqHelper,"write(OutputStream ostream, boolean[] value)",static void
+BooleanSeqHolder,_read(InputStream i),void
+BooleanSeqHolder,_type(),TypeCode
+BooleanSeqHolder,_write(OutputStream o),void
+ByteHolder,_read(InputStream input),void
+ByteHolder,_type(),TypeCode
+ByteHolder,_write(OutputStream output),void
+CharHolder,_read(InputStream input),void
+CharHolder,_type(),TypeCode
+CharHolder,_write(OutputStream output),void
+CharSeqHelper,extract(Any a),static char[]
+CharSeqHelper,id(),static String
+CharSeqHelper,"insert(Any a, char[] that)",static void
+CharSeqHelper,read(InputStream istream),static char[]
+CharSeqHelper,type(),static TypeCode
+CharSeqHelper,"write(OutputStream ostream, char[] value)",static void
+CharSeqHolder,_read(InputStream i),void
+CharSeqHolder,_type(),TypeCode
+CharSeqHolder,_write(OutputStream o),void
+CompletionStatus,from_int(int i),static CompletionStatus
+CompletionStatus,value(),int
+CompletionStatusHelper,extract(Any a),static CompletionStatus
+CompletionStatusHelper,id(),static String
+CompletionStatusHelper,"insert(Any a, CompletionStatus that)",static void
+CompletionStatusHelper,read(InputStream istream),static CompletionStatus
+CompletionStatusHelper,type(),static TypeCode
+CompletionStatusHelper,"write(OutputStream ostream, CompletionStatus value)",static void
+Context,context_name(),abstract String
+Context,create_child(String child_ctx_name),abstract Context
+Context,delete_values(String propname),abstract void
+Context,"get_values(String start_scope, int op_flags, String pattern)",abstract NVList
+Context,parent(),abstract Context
+Context,"set_one_value(String propname, Any propvalue)",abstract void
+Context,set_values(NVList values),abstract void
+ContextList,add(String ctx),abstract void
+ContextList,count(),abstract int
+ContextList,item(int index),abstract String
+ContextList,remove(int index),abstract void
+CurrentHelper,extract(Any a),static Current
+CurrentHelper,id(),static String
+CurrentHelper,"insert(Any a, Current that)",static void
+CurrentHelper,narrow(Object obj),static Current
+CurrentHelper,read(InputStream istream),static Current
+CurrentHelper,type(),static TypeCode
+CurrentHelper,"write(OutputStream ostream, Current value)",static void
+CurrentHolder,_read(InputStream i),void
+CurrentHolder,_type(),TypeCode
+CurrentHolder,_write(OutputStream o),void
+DefinitionKind,from_int(int i),static DefinitionKind
+DefinitionKind,value(),int
+DefinitionKindHelper,extract(Any a),static DefinitionKind
+DefinitionKindHelper,id(),static String
+DefinitionKindHelper,"insert(Any a, DefinitionKind that)",static void
+DefinitionKindHelper,read(InputStream istream),static DefinitionKind
+DefinitionKindHelper,type(),static TypeCode
+DefinitionKindHelper,"write(OutputStream ostream, DefinitionKind value)",static void
+DoubleHolder,_read(InputStream input),void
+DoubleHolder,_type(),TypeCode
+DoubleHolder,_write(OutputStream output),void
+DoubleSeqHelper,extract(Any a),static double[]
+DoubleSeqHelper,id(),static String
+DoubleSeqHelper,"insert(Any a, double[] that)",static void
+DoubleSeqHelper,read(InputStream istream),static double[]
+DoubleSeqHelper,type(),static TypeCode
+DoubleSeqHelper,"write(OutputStream ostream, double[] value)",static void
+DoubleSeqHolder,_read(InputStream i),void
+DoubleSeqHolder,_type(),TypeCode
+DoubleSeqHolder,_write(OutputStream o),void
+DynamicImplementation,_ids(),String[]
+DynamicImplementation,invoke(ServerRequest request),void
+Environment,clear(),abstract void
+Environment,exception(),abstract Exception
+Environment,exception(Exception except),abstract void
+ExceptionList,add(TypeCode exc),abstract void
+ExceptionList,count(),abstract int
+ExceptionList,item(int index),abstract TypeCode
+ExceptionList,remove(int index),abstract void
+FieldNameHelper,extract(Any a),static String
+FieldNameHelper,id(),static String
+FieldNameHelper,"insert(Any a, String that)",static void
+FieldNameHelper,read(InputStream istream),static String
+FieldNameHelper,type(),static TypeCode
+FieldNameHelper,"write(OutputStream ostream, String value)",static void
+FixedHolder,_read(InputStream input),void
+FixedHolder,_type(),TypeCode
+FixedHolder,_write(OutputStream output),void
+FloatHolder,_read(InputStream input),void
+FloatHolder,_type(),TypeCode
+FloatHolder,_write(OutputStream output),void
+FloatSeqHelper,extract(Any a),static float[]
+FloatSeqHelper,id(),static String
+FloatSeqHelper,"insert(Any a, float[] that)",static void
+FloatSeqHelper,read(InputStream istream),static float[]
+FloatSeqHelper,type(),static TypeCode
+FloatSeqHelper,"write(OutputStream ostream, float[] value)",static void
+FloatSeqHolder,_read(InputStream i),void
+FloatSeqHolder,_type(),TypeCode
+FloatSeqHolder,_write(OutputStream o),void
+IdentifierHelper,extract(Any a),static String
+IdentifierHelper,id(),static String
+IdentifierHelper,"insert(Any a, String that)",static void
+IdentifierHelper,read(InputStream istream),static String
+IdentifierHelper,type(),static TypeCode
+IdentifierHelper,"write(OutputStream ostream, String value)",static void
+IDLTypeHelper,extract(Any a),static IDLType
+IDLTypeHelper,id(),static String
+IDLTypeHelper,"insert(Any a, IDLType that)",static void
+IDLTypeHelper,narrow(Object obj),static IDLType
+IDLTypeHelper,read(InputStream istream),static IDLType
+IDLTypeHelper,type(),static TypeCode
+IDLTypeHelper,"write(OutputStream ostream, IDLType value)",static void
+IntHolder,_read(InputStream input),void
+IntHolder,_type(),TypeCode
+IntHolder,_write(OutputStream output),void
+LocalObject,"_create_request(Context ctx, String operation, NVList arg_list, NamedValue result)",Request
+LocalObject,"_create_request(Context ctx, String operation, NVList arg_list, NamedValue result, ExceptionList exceptions, ContextList contexts)",Request
+LocalObject,_duplicate(),Object
+LocalObject,_get_domain_managers(),DomainManager[]
+LocalObject,_get_interface_def(),Object
+LocalObject,_get_interface(),Object
+LocalObject,_get_policy(int policy_type),Policy
+LocalObject,_hash(int maximum),int
+LocalObject,_invoke(OutputStream output),InputStream
+LocalObject,_is_a(String repository_id),boolean
+LocalObject,_is_equivalent(Object that),boolean
+LocalObject,_is_local(),boolean
+LocalObject,_non_existent(),boolean
+LocalObject,_orb(),ORB
+LocalObject,_release(),void
+LocalObject,_releaseReply(InputStream input),void
+LocalObject,_request(String operation),Request
+LocalObject,"_request(String operation, boolean responseExpected)",OutputStream
+LocalObject,_servant_postinvoke(ServantObject servant),void
+LocalObject,"_servant_preinvoke(String operation, Class expectedType)",ServantObject
+LocalObject,"_set_policy_override(Policy[] policies, SetOverrideType set_add)",Object
+LocalObject,validate_connection(),boolean
+LongHolder,_read(InputStream input),void
+LongHolder,_type(),TypeCode
+LongHolder,_write(OutputStream output),void
+LongLongSeqHelper,extract(Any a),static long[]
+LongLongSeqHelper,id(),static String
+LongLongSeqHelper,"insert(Any a, long[] that)",static void
+LongLongSeqHelper,read(InputStream istream),static long[]
+LongLongSeqHelper,type(),static TypeCode
+LongLongSeqHelper,"write(OutputStream ostream, long[] value)",static void
+LongLongSeqHolder,_read(InputStream i),void
+LongLongSeqHolder,_type(),TypeCode
+LongLongSeqHolder,_write(OutputStream o),void
+LongSeqHelper,extract(Any a),static int[]
+LongSeqHelper,id(),static String
+LongSeqHelper,"insert(Any a, int[] that)",static void
+LongSeqHelper,read(InputStream istream),static int[]
+LongSeqHelper,type(),static TypeCode
+LongSeqHelper,"write(OutputStream ostream, int[] value)",static void
+LongSeqHolder,_read(InputStream i),void
+LongSeqHolder,_type(),TypeCode
+LongSeqHolder,_write(OutputStream o),void
+NamedValue,flags(),abstract int
+NamedValue,name(),abstract String
+NamedValue,value(),abstract Any
+NameValuePairHelper,extract(Any a),static NameValuePair
+NameValuePairHelper,id(),static String
+NameValuePairHelper,"insert(Any a, NameValuePair that)",static void
+NameValuePairHelper,read(InputStream istream),static NameValuePair
+NameValuePairHelper,type(),static TypeCode
+NameValuePairHelper,"write(OutputStream ostream, NameValuePair value)",static void
+NVList,"add_item(String item_name, int flags)",abstract NamedValue
+NVList,"add_value(String item_name, Any val, int flags)",abstract NamedValue
+NVList,add(int flags),abstract NamedValue
+NVList,count(),abstract int
+NVList,item(int index),abstract NamedValue
+NVList,remove(int index),abstract void
+ObjectHelper,extract(Any a),static Object
+ObjectHelper,id(),static String
+ObjectHelper,"insert(Any a, Object that)",static void
+ObjectHelper,read(InputStream istream),static Object
+ObjectHelper,type(),static TypeCode
+ObjectHelper,"write(OutputStream ostream, Object value)",static void
+ObjectHolder,_read(InputStream input),void
+ObjectHolder,_type(),TypeCode
+ObjectHolder,_write(OutputStream output),void
+OctetSeqHelper,extract(Any a),static byte[]
+OctetSeqHelper,id(),static String
+OctetSeqHelper,"insert(Any a, byte[] that)",static void
+OctetSeqHelper,read(InputStream istream),static byte[]
+OctetSeqHelper,type(),static TypeCode
+OctetSeqHelper,"write(OutputStream ostream, byte[] value)",static void
+OctetSeqHolder,_read(InputStream i),void
+OctetSeqHolder,_type(),TypeCode
+OctetSeqHolder,_write(OutputStream o),void
+ORB,connect(Object obj),void
+ORB,"create_abstract_interface_tc(String id, String name)",TypeCode
+ORB,"create_alias_tc(String id, String name, TypeCode original_type)",abstract TypeCode
+ORB,create_any(),abstract Any
+ORB,"create_array_tc(int length, TypeCode element_type)",abstract TypeCode
+ORB,create_basic_dyn_any(TypeCode type),DynAny
+ORB,create_context_list(),abstract ContextList
+ORB,create_dyn_any(Any value),DynAny
+ORB,create_dyn_array(TypeCode type),DynArray
+ORB,create_dyn_enum(TypeCode type),DynEnum
+ORB,create_dyn_sequence(TypeCode type),DynSequence
+ORB,create_dyn_struct(TypeCode type),DynStruct
+ORB,create_dyn_union(TypeCode type),DynUnion
+ORB,"create_enum_tc(String id, String name, String[] members)",abstract TypeCode
+ORB,create_environment(),abstract Environment
+ORB,create_exception_list(),abstract ExceptionList
+ORB,"create_exception_tc(String id, String name, StructMember[] members)",abstract TypeCode
+ORB,"create_fixed_tc(short digits, short scale)",TypeCode
+ORB,"create_interface_tc(String id, String name)",abstract TypeCode
+ORB,create_list(int count),abstract NVList
+ORB,"create_named_value(String s, Any any, int flags)",abstract NamedValue
+ORB,"create_native_tc(String id, String name)",TypeCode
+ORB,create_operation_list(Object oper),NVList
+ORB,create_output_stream(),abstract OutputStream
+ORB,"create_policy(int type, Any val)",Policy
+ORB,"create_recursive_sequence_tc(int bound, int offset)",abstract TypeCode
+ORB,create_recursive_tc(String id),TypeCode
+ORB,"create_sequence_tc(int bound, TypeCode element_type)",abstract TypeCode
+ORB,create_string_tc(int bound),abstract TypeCode
+ORB,"create_struct_tc(String id, String name, StructMember[] members)",abstract TypeCode
+ORB,"create_union_tc(String id, String name, TypeCode discriminator_type, UnionMember[] members)",abstract TypeCode
+ORB,"create_value_box_tc(String id, String name, TypeCode boxed_type)",TypeCode
+ORB,"create_value_tc(String id, String name, short type_modifier, TypeCode concrete_base, ValueMember[] members)",TypeCode
+ORB,create_wstring_tc(int bound),abstract TypeCode
+ORB,destroy(),void
+ORB,disconnect(Object obj),void
+ORB,get_current(),Current
+ORB,get_default_context(),abstract Context
+ORB,get_next_response(),abstract Request
+ORB,get_primitive_tc(TCKind tcKind),abstract TypeCode
+ORB,"get_service_information(short service_type, ServiceInformationHolder service_info)",boolean
+ORB,init(),static ORB
+ORB,"init(Applet app, Properties props)",static ORB
+ORB,"init(String[] args, Properties props)",static ORB
+ORB,list_initial_services(),abstract String[]
+ORB,object_to_string(Object obj),abstract String
+ORB,perform_work(),void
+ORB,poll_next_response(),abstract boolean
+ORB,resolve_initial_references(String object_name),abstract Object
+ORB,run(),void
+ORB,send_multiple_requests_deferred(Request[] req),abstract void
+ORB,send_multiple_requests_oneway(Request[] req),abstract void
+ORB,"set_parameters(Applet app, Properties props)",protected abstract void
+ORB,"set_parameters(String[] args, Properties props)",protected abstract void
+ORB,shutdown(boolean wait_for_completion),void
+ORB,string_to_object(String str),abstract Object
+ORB,work_pending(),boolean
+ParameterMode,from_int(int value),static ParameterMode
+ParameterMode,value(),int
+ParameterModeHelper,extract(Any a),static ParameterMode
+ParameterModeHelper,id(),static String
+ParameterModeHelper,"insert(Any a, ParameterMode that)",static void
+ParameterModeHelper,read(InputStream istream),static ParameterMode
+ParameterModeHelper,type(),static TypeCode
+ParameterModeHelper,"write(OutputStream ostream, ParameterMode value)",static void
+ParameterModeHolder,_read(InputStream i),void
+ParameterModeHolder,_type(),TypeCode
+ParameterModeHolder,_write(OutputStream o),void
+PolicyErrorCodeHelper,extract(Any a),static short
+PolicyErrorCodeHelper,id(),static String
+PolicyErrorCodeHelper,"insert(Any a, short that)",static void
+PolicyErrorCodeHelper,read(InputStream istream),static short
+PolicyErrorCodeHelper,type(),static TypeCode
+PolicyErrorCodeHelper,"write(OutputStream ostream, short value)",static void
+PolicyErrorHelper,extract(Any a),static PolicyError
+PolicyErrorHelper,id(),static String
+PolicyErrorHelper,"insert(Any a, PolicyError that)",static void
+PolicyErrorHelper,read(InputStream istream),static PolicyError
+PolicyErrorHelper,type(),static TypeCode
+PolicyErrorHelper,"write(OutputStream ostream, PolicyError value)",static void
+PolicyErrorHolder,_read(InputStream i),void
+PolicyErrorHolder,_type(),TypeCode
+PolicyErrorHolder,_write(OutputStream o),void
+PolicyHelper,extract(Any a),static Policy
+PolicyHelper,id(),static String
+PolicyHelper,"insert(Any a, Policy that)",static void
+PolicyHelper,narrow(Object obj),static Policy
+PolicyHelper,read(InputStream istream),static Policy
+PolicyHelper,type(),static TypeCode
+PolicyHelper,"write(OutputStream ostream, Policy value)",static void
+PolicyHolder,_read(InputStream i),void
+PolicyHolder,_type(),TypeCode
+PolicyHolder,_write(OutputStream o),void
+PolicyListHelper,extract(Any a),static Policy[]
+PolicyListHelper,id(),static String
+PolicyListHelper,"insert(Any a, Policy[] that)",static void
+PolicyListHelper,read(InputStream istream),static Policy[]
+PolicyListHelper,type(),static TypeCode
+PolicyListHelper,"write(OutputStream ostream, Policy[] value)",static void
+PolicyListHolder,_read(InputStream i),void
+PolicyListHolder,_type(),TypeCode
+PolicyListHolder,_write(OutputStream o),void
+PolicyTypeHelper,extract(Any a),static int
+PolicyTypeHelper,id(),static String
+PolicyTypeHelper,"insert(Any a, int that)",static void
+PolicyTypeHelper,read(InputStream istream),static int
+PolicyTypeHelper,type(),static TypeCode
+PolicyTypeHelper,"write(OutputStream ostream, int value)",static void
+Principal,name(),byte[]
+Principal,name(byte[] value),void
+PrincipalHolder,_read(InputStream input),void
+PrincipalHolder,_type(),TypeCode
+PrincipalHolder,_write(OutputStream output),void
+RepositoryIdHelper,extract(Any a),static String
+RepositoryIdHelper,id(),static String
+RepositoryIdHelper,"insert(Any a, String that)",static void
+RepositoryIdHelper,read(InputStream istream),static String
+RepositoryIdHelper,type(),static TypeCode
+RepositoryIdHelper,"write(OutputStream ostream, String value)",static void
+Request,add_in_arg(),abstract Any
+Request,add_inout_arg(),abstract Any
+Request,add_named_in_arg(String name),abstract Any
+Request,add_named_inout_arg(String name),abstract Any
+Request,add_named_out_arg(String name),abstract Any
+Request,add_out_arg(),abstract Any
+Request,arguments(),abstract NVList
+Request,contexts(),abstract ContextList
+Request,ctx(),abstract Context
+Request,ctx(Context c),abstract void
+Request,env(),abstract Environment
+Request,exceptions(),abstract ExceptionList
+Request,get_response(),abstract void
+Request,invoke(),abstract void
+Request,operation(),abstract String
+Request,poll_response(),abstract boolean
+Request,result(),abstract NamedValue
+Request,return_value(),abstract Any
+Request,send_deferred(),abstract void
+Request,send_oneway(),abstract void
+Request,set_return_type(TypeCode tc),abstract void
+Request,target(),abstract Object
+ServerRequest,arguments(NVList args),void
+ServerRequest,ctx(),abstract Context
+ServerRequest,except(Any any),void
+ServerRequest,op_name(),String
+ServerRequest,operation(),String
+ServerRequest,params(NVList params),void
+ServerRequest,result(Any any),void
+ServerRequest,set_exception(Any any),void
+ServerRequest,set_result(Any any),void
+ServiceDetailHelper,extract(Any a),static ServiceDetail
+ServiceDetailHelper,id(),static String
+ServiceDetailHelper,"insert(Any a, ServiceDetail that)",static void
+ServiceDetailHelper,read(InputStream in),static ServiceDetail
+ServiceDetailHelper,type(),static TypeCode
+ServiceDetailHelper,"write(OutputStream out, ServiceDetail that)",static void
+ServiceInformationHelper,extract(Any a),static ServiceInformation
+ServiceInformationHelper,id(),static String
+ServiceInformationHelper,"insert(Any a, ServiceInformation that)",static void
+ServiceInformationHelper,read(InputStream in),static ServiceInformation
+ServiceInformationHelper,type(),static TypeCode
+ServiceInformationHelper,"write(OutputStream out, ServiceInformation that)",static void
+ServiceInformationHolder,_read(InputStream in),void
+ServiceInformationHolder,_type(),TypeCode
+ServiceInformationHolder,_write(OutputStream out),void
+SetOverrideType,from_int(int i),static SetOverrideType
+SetOverrideType,value(),int
+SetOverrideTypeHelper,extract(Any a),static SetOverrideType
+SetOverrideTypeHelper,id(),static String
+SetOverrideTypeHelper,"insert(Any a, SetOverrideType that)",static void
+SetOverrideTypeHelper,read(InputStream istream),static SetOverrideType
+SetOverrideTypeHelper,type(),static TypeCode
+SetOverrideTypeHelper,"write(OutputStream ostream, SetOverrideType value)",static void
+ShortHolder,_read(InputStream input),void
+ShortHolder,_type(),TypeCode
+ShortHolder,_write(OutputStream output),void
+ShortSeqHelper,extract(Any a),static short[]
+ShortSeqHelper,id(),static String
+ShortSeqHelper,"insert(Any a, short[] that)",static void
+ShortSeqHelper,read(InputStream istream),static short[]
+ShortSeqHelper,type(),static TypeCode
+ShortSeqHelper,"write(OutputStream ostream, short[] value)",static void
+ShortSeqHolder,_read(InputStream i),void
+ShortSeqHolder,_type(),TypeCode
+ShortSeqHolder,_write(OutputStream o),void
+StringHolder,_read(InputStream input),void
+StringHolder,_type(),TypeCode
+StringHolder,_write(OutputStream output),void
+StringSeqHelper,extract(Any a),static String[]
+StringSeqHelper,id(),static String
+StringSeqHelper,"insert(Any a, String[] that)",static void
+StringSeqHelper,read(InputStream istream),static String[]
+StringSeqHelper,type(),static TypeCode
+StringSeqHelper,"write(OutputStream ostream, String[] value)",static void
+StringSeqHolder,_read(InputStream i),void
+StringSeqHolder,_type(),TypeCode
+StringSeqHolder,_write(OutputStream o),void
+StringValueHelper,extract(Any a),static String
+StringValueHelper,get_id(),String
+StringValueHelper,id(),static String
+StringValueHelper,"insert(Any a, String that)",static void
+StringValueHelper,read_value(InputStream istream),Serializable
+StringValueHelper,read(InputStream istream),static String
+StringValueHelper,type(),static TypeCode
+StringValueHelper,"write_value(OutputStream ostream, Serializable value)",void
+StringValueHelper,"write(OutputStream ostream, String value)",static void
+StructMemberHelper,extract(Any a),static StructMember
+StructMemberHelper,id(),static String
+StructMemberHelper,"insert(Any a, StructMember that)",static void
+StructMemberHelper,read(InputStream istream),static StructMember
+StructMemberHelper,type(),static TypeCode
+StructMemberHelper,"write(OutputStream ostream, StructMember value)",static void
+TCKind,from_int(int i),static TCKind
+TCKind,value(),int
+TypeCode,concrete_base_type(),abstract TypeCode
+TypeCode,content_type(),abstract TypeCode
+TypeCode,default_index(),abstract int
+TypeCode,discriminator_type(),abstract TypeCode
+TypeCode,equal(TypeCode tc),abstract boolean
+TypeCode,equivalent(TypeCode tc),abstract boolean
+TypeCode,fixed_digits(),abstract short
+TypeCode,fixed_scale(),abstract short
+TypeCode,get_compact_typecode(),abstract TypeCode
+TypeCode,id(),abstract String
+TypeCode,kind(),abstract TCKind
+TypeCode,length(),abstract int
+TypeCode,member_count(),abstract int
+TypeCode,member_label(int index),abstract Any
+TypeCode,member_name(int index),abstract String
+TypeCode,member_type(int index),abstract TypeCode
+TypeCode,member_visibility(int index),abstract short
+TypeCode,name(),abstract String
+TypeCode,type_modifier(),abstract short
+TypeCodeHolder,_read(InputStream input),void
+TypeCodeHolder,_type(),TypeCode
+TypeCodeHolder,_write(OutputStream output),void
+ULongLongSeqHelper,extract(Any a),static long[]
+ULongLongSeqHelper,id(),static String
+ULongLongSeqHelper,"insert(Any a, long[] that)",static void
+ULongLongSeqHelper,read(InputStream istream),static long[]
+ULongLongSeqHelper,type(),static TypeCode
+ULongLongSeqHelper,"write(OutputStream ostream, long[] value)",static void
+ULongLongSeqHolder,_read(InputStream i),void
+ULongLongSeqHolder,_type(),TypeCode
+ULongLongSeqHolder,_write(OutputStream o),void
+ULongSeqHelper,extract(Any a),static int[]
+ULongSeqHelper,id(),static String
+ULongSeqHelper,"insert(Any a, int[] that)",static void
+ULongSeqHelper,read(InputStream istream),static int[]
+ULongSeqHelper,type(),static TypeCode
+ULongSeqHelper,"write(OutputStream ostream, int[] value)",static void
+ULongSeqHolder,_read(InputStream i),void
+ULongSeqHolder,_type(),TypeCode
+ULongSeqHolder,_write(OutputStream o),void
+UnionMemberHelper,extract(Any a),static UnionMember
+UnionMemberHelper,id(),static String
+UnionMemberHelper,"insert(Any a, UnionMember that)",static void
+UnionMemberHelper,read(InputStream istream),static UnionMember
+UnionMemberHelper,type(),static TypeCode
+UnionMemberHelper,"write(OutputStream ostream, UnionMember value)",static void
+UnknownUserExceptionHelper,extract(Any a),static UnknownUserException
+UnknownUserExceptionHelper,id(),static String
+UnknownUserExceptionHelper,"insert(Any a, UnknownUserException that)",static void
+UnknownUserExceptionHelper,read(InputStream istream),static UnknownUserException
+UnknownUserExceptionHelper,type(),static TypeCode
+UnknownUserExceptionHelper,"write(OutputStream ostream, UnknownUserException value)",static void
+UnknownUserExceptionHolder,_read(InputStream i),void
+UnknownUserExceptionHolder,_type(),TypeCode
+UnknownUserExceptionHolder,_write(OutputStream o),void
+UShortSeqHelper,extract(Any a),static short[]
+UShortSeqHelper,id(),static String
+UShortSeqHelper,"insert(Any a, short[] that)",static void
+UShortSeqHelper,read(InputStream istream),static short[]
+UShortSeqHelper,type(),static TypeCode
+UShortSeqHelper,"write(OutputStream ostream, short[] value)",static void
+UShortSeqHolder,_read(InputStream i),void
+UShortSeqHolder,_type(),TypeCode
+UShortSeqHolder,_write(OutputStream o),void
+ValueBaseHelper,extract(Any a),static Serializable
+ValueBaseHelper,id(),static String
+ValueBaseHelper,"insert(Any a, Serializable that)",static void
+ValueBaseHelper,read(InputStream istream),static Serializable
+ValueBaseHelper,type(),static TypeCode
+ValueBaseHelper,"write(OutputStream ostream, Serializable value)",static void
+ValueBaseHolder,_read(InputStream input),void
+ValueBaseHolder,_type(),TypeCode
+ValueBaseHolder,_write(OutputStream output),void
+ValueMemberHelper,extract(Any a),static ValueMember
+ValueMemberHelper,id(),static String
+ValueMemberHelper,"insert(Any a, ValueMember that)",static void
+ValueMemberHelper,read(InputStream istream),static ValueMember
+ValueMemberHelper,type(),static TypeCode
+ValueMemberHelper,"write(OutputStream ostream, ValueMember value)",static void
+VersionSpecHelper,extract(Any a),static String
+VersionSpecHelper,id(),static String
+VersionSpecHelper,"insert(Any a, String that)",static void
+VersionSpecHelper,read(InputStream istream),static String
+VersionSpecHelper,type(),static TypeCode
+VersionSpecHelper,"write(OutputStream ostream, String value)",static void
+VisibilityHelper,extract(Any a),static short
+VisibilityHelper,id(),static String
+VisibilityHelper,"insert(Any a, short that)",static void
+VisibilityHelper,read(InputStream istream),static short
+VisibilityHelper,type(),static TypeCode
+VisibilityHelper,"write(OutputStream ostream, short value)",static void
+WCharSeqHelper,extract(Any a),static char[]
+WCharSeqHelper,id(),static String
+WCharSeqHelper,"insert(Any a, char[] that)",static void
+WCharSeqHelper,read(InputStream istream),static char[]
+WCharSeqHelper,type(),static TypeCode
+WCharSeqHelper,"write(OutputStream ostream, char[] value)",static void
+WCharSeqHolder,_read(InputStream i),void
+WCharSeqHolder,_type(),TypeCode
+WCharSeqHolder,_write(OutputStream o),void
+WrongTransactionHelper,extract(Any a),static WrongTransaction
+WrongTransactionHelper,id(),static String
+WrongTransactionHelper,"insert(Any a, WrongTransaction that)",static void
+WrongTransactionHelper,read(InputStream istream),static WrongTransaction
+WrongTransactionHelper,type(),static TypeCode
+WrongTransactionHelper,"write(OutputStream ostream, WrongTransaction value)",static void
+WrongTransactionHolder,_read(InputStream i),void
+WrongTransactionHolder,_type(),TypeCode
+WrongTransactionHolder,_write(OutputStream o),void
+WStringSeqHelper,extract(Any a),static String[]
+WStringSeqHelper,id(),static String
+WStringSeqHelper,"insert(Any a, String[] that)",static void
+WStringSeqHelper,read(InputStream istream),static String[]
+WStringSeqHelper,type(),static TypeCode
+WStringSeqHelper,"write(OutputStream ostream, String[] value)",static void
+WStringSeqHolder,_read(InputStream i),void
+WStringSeqHolder,_type(),TypeCode
+WStringSeqHolder,_write(OutputStream o),void
+WStringValueHelper,extract(Any a),static String
+WStringValueHelper,get_id(),String
+WStringValueHelper,id(),static String
+WStringValueHelper,"insert(Any a, String that)",static void
+WStringValueHelper,read_value(InputStream istream),Serializable
+WStringValueHelper,read(InputStream istream),static String
+WStringValueHelper,type(),static TypeCode
+WStringValueHelper,"write_value(OutputStream ostream, Serializable value)",void
+WStringValueHelper,"write(OutputStream ostream, String value)",static void

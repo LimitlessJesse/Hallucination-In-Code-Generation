@@ -1,0 +1,50 @@
+Sample: 0 EventReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.stream.util.EventReaderDelegate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the underlying event reader has more events.
+
+2. `boolean nextEvent()`: This method moves the underlying event reader to the next event.
+
+3. `boolean nextTag()`: This method moves the underlying event reader to the next start tag.
+
+4. `boolean next()`: This method moves the underlying event reader to the next event.
+
+5. `boolean nextToken()`: This method moves the underlying event reader to the next token.
+================================================================
+
+Sample: 1 StreamReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.stream.util.StreamReaderDelegate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the underlying stream has more elements.
+
+2. `boolean next()`: This method advances the cursor position to the next element in the stream and returns true if the cursor position is modified.
+
+3. `int nextTag()`: This method returns the next tag in the stream.
+
+4. `String getText()`: This method returns the text of the current event.
+
+5. `int getAttributeCount()`: This method returns the number of attributes on the current event.
+================================================================
+

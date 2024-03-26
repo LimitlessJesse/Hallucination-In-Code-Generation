@@ -1,0 +1,234 @@
+Sample: 0 Clipboard
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setContents(Transferable contents, ClipboardOwner owner) from java.awt.datatransfer.Clipboard
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setContents(Transferable contents, ClipboardOwner owner)` method is used to set the contents of the clipboard. It takes two parameters:
+
+1. `Transferable contents`: This is the data to be set on the clipboard.
+2. `ClipboardOwner owner`: This is the owner of the clipboard.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.datatransfer.*;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+
+public class Main {
+    public static void main(String[] args) {
+        StringSelection stringSelection = new StringSelection("Hello World");
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+    }
+}
+```
+
+In this code snippet, we first create a `StringSelection` object with the string "Hello World". Then we get the system clipboard using `Toolkit.getDefaultToolkit().getSystemClipboard()`. Finally, we set the contents of the clipboard using `clipboard.setContents(stringSelection, null)`.
+
+Please note that the `setContents(Transferable contents, ClipboardOwner owner)` method is a native method and it is not part of the Java Collections Framework. It is a part of the `java.awt.datatransfer` package.
+================================================================
+
+Sample: 1 Clipboard
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Transferable getContents(Object requestor) from java.awt.datatransfer.Clipboard
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getContents(Object requestor)` method from `java.awt.datatransfer.Clipboard`:
+
+```java
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        Transferable contents = clipboard.getContents(null);
+
+        if (contents!= null) {
+            if (contents.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+                try {
+                    String result = (String) contents.getTransferData(DataFlavor.stringFlavor);
+                    System.out.println(result);
+                } catch (UnsupportedFlavorException | IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+```
+
+This code snippet gets the system clipboard, gets the contents, and if the contents are a string, it prints it out. If the contents are not a string, it catches the `UnsupportedFlavorException` or `IOException` and prints the stack trace.
+
+Please note that this code snippet is for demonstration purposes and may not work as expected in your specific environment.
+================================================================
+
+Sample: 2 DataFlavor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getHumanPresentableName() from java.awt.datatransfer.DataFlavor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getHumanPresentableName()` method in `java.awt.datatransfer.DataFlavor` class is used to get the human-readable name of the data flavor.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        DataFlavor flavor = DataFlavor.stringFlavor;
+        try {
+            String humanPresentableName = flavor.getHumanPresentableName();
+            System.out.println("Human-readable name: " + humanPresentableName);
+        } catch (UnsupportedFlavorException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a `DataFlavor` object for string data flavor. Then we are calling the `getHumanPresentableName()` method on this flavor object. This method returns the human-readable name of the data flavor.
+
+Please note that this method can throw `UnsupportedFlavorException` if the flavor is not supported by the JVM. In the above code, we are catching this exception and printing the stack trace.
+================================================================
+
+Sample: 3 DataFlavor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getMimeType() from java.awt.datatransfer.DataFlavor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getMimeType()` method in `java.awt.datatransfer.DataFlavor` class is used to get the MIME type of the data flavor.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        DataFlavor dataFlavor = DataFlavor.stringFlavor;
+        try {
+            String mimeType = dataFlavor.getMimeType();
+            System.out.println("MIME Type: " + mimeType);
+        } catch (UnsupportedFlavorException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a `DataFlavor` object for string data. Then we are calling the `getMimeType()` method on this `DataFlavor` object. The MIME type of the string data flavor is printed to the console.
+
+Please note that the `getMimeType()` method can throw `UnsupportedFlavorException` if the flavor is not supported by the JVM. In this case, we are catching the exception and printing the stack trace.
+================================================================
+

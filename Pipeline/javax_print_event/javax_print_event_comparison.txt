@@ -1,0 +1,143 @@
+Sample: 0 PrintEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.print.event.PrintEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrintEvent printEvent`: This method returns the PrintEvent object.
+
+2. `PrintJob printJob`: This method returns the PrintJob object.
+
+3. `PrintService printService`: This method returns the PrintService object.
+
+4. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+
+5. `PrintServiceLookup printServiceLookup`: This method returns the PrintServiceLookup object.
+
+6. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+
+7. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+
+8. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+
+9. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+
+10. `PrintServiceAttributeSet printServiceAttributeSet`: This method returns the PrintServiceAttributeSet object.
+================================================================
+
+Sample: 1 PrintJobAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.print.event.PrintJobAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrintJobAdapter()`: This is a constructor. It creates a new instance of PrintJobAdapter.
+
+2. `void printDataTransferCompleted(PrintJobEvent pje)`: This method is called when the data transfer for the print job is completed.
+
+3. `void printJobCanceled(PrintJobEvent pje)`: This method is called when the print job is canceled.
+
+4. `void printJobCompleted(PrintJobEvent pje)`: This method is called when the print job is completed.
+
+5. `void printJobFailed(PrintJobEvent pje)`: This method is called when the print job fails.
+
+6. `void printJobNoMoreEvents(PrintJobEvent pje)`: This method is called when there are no more events for the print job.
+
+7. `void printJobRequiresAttention(PrintJobEvent pje)`: This method is called when the print job requires attention.
+
+8. `void printJobSuspended(PrintJobEvent pje)`: This method is called when the print job is suspended.
+
+9. `void printJobWaited(PrintJobEvent pje)`: This method is called when the print job is waiting.
+================================================================
+
+Sample: 2 PrintJobAttributeEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.print.event.PrintJobAttributeEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrintJobAttributeEvent getPrintJobAttributeEvent()`: This method returns the PrintJobAttributeEvent object.
+
+2. `PrintRequestAttribute getRequestAttribute()`: This method returns the PrintRequestAttribute object.
+
+3. `PrintRequestAttribute getOldRequestAttribute()`: This method returns the old PrintRequestAttribute object.
+
+4. `PrintRequestAttribute getNewRequestAttribute()`: This method returns the new PrintRequestAttribute object.
+
+5. `PrintServiceAttribute getServiceAttribute()`: This method returns the PrintServiceAttribute object.
+================================================================
+
+Sample: 3 PrintJobEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.print.event.PrintJobEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrintJobEvent.getPrintJob()`: This method returns the PrintJob that generated this event.
+
+2. `PrintJobEvent.getSource()`: This method returns the object on which the Event initially occurred.
+
+3. `PrintJobEvent.getType()`: This method returns the type of this event.
+
+4. `PrintJobEvent.getWhen()`: This method returns the time when this event occurred.
+
+5. `PrintJobEvent.isConsumed()`: This method returns true if this event has been consumed.
+================================================================
+
+Sample: 4 PrintServiceAttributeEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.print.event.PrintServiceAttributeEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrintServiceAttributeEvent(PrintServiceAttributeEvent source, PrintServiceAttributeSet attributeSet)`: This constructor creates a new PrintServiceAttributeEvent object.
+
+2. `PrintServiceAttributeSet getAttributes()`: This method returns the attribute set associated with this event.
+
+3. `PrintService getPrintService()`: This method returns the print service associated with this event.
+
+4. `PrintServiceAttributeEvent.Source getSource()`: This method returns the source of this event.
+
+5. `PrintServiceAttributeEvent.Type getType()`: This method returns the type of this event.
+================================================================
+

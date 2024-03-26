@@ -1,0 +1,25 @@
+Sample: 0 KeyInfoFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.crypto.dsig.keyinfo.KeyInfoFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyInfoFactory.getInstance(String algorithm)`: This method returns a KeyInfoFactory object that implements the specified algorithm.
+
+2. `KeyInfoFactory.getInstance(String algorithm, String provider)`: This method returns a KeyInfoFactory object that implements the specified algorithm and provider.
+
+3. `KeyInfoFactory.getInstance(String algorithm, String provider, ClassLoader loader)`: This method returns a KeyInfoFactory object that implements the specified algorithm, provider, and class loader.
+
+4. `KeyInfoFactory.getInstance(String algorithm, String provider, ClassLoader loader, java.security.PrivilegedAction<java.security.AccessController> action)`: This method returns a KeyInfoFactory object that implements the specified algorithm, provider, class loader, and privileged action.
+
+5. `KeyInfoFactory.getInstance(String algorithm, String provider, java.security.PrivilegedAction<java.security.AccessController> action)`: This method returns a KeyInfoFactory object that implements the specified algorithm, provider, and privileged action.
+================================================================
+

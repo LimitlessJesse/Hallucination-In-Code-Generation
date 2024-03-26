@@ -1,0 +1,105 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AtomicBoolean,1,AtomicBoolean(boolean initialValue),False
+0,AtomicBoolean,2,"boolean compareAndSet(boolean expect, boolean update)",True
+0,AtomicBoolean,3,boolean get(),True
+0,AtomicBoolean,4,void set(boolean newValue),True
+0,AtomicBoolean,5,"boolean weakCompareAndSet(boolean expect, boolean update)",True
+1,AtomicInteger,1,int incrementAndGet(),True
+1,AtomicInteger,2,int getAndIncrement(),True
+1,AtomicInteger,3,int getAndAdd(int delta),True
+1,AtomicInteger,4,"boolean compareAndSet(int expect, int update)",True
+1,AtomicInteger,5,int get(),True
+2,AtomicIntegerArray,1,AtomicIntegerArray(int length),False
+2,AtomicIntegerArray,2,int get(int i),True
+2,AtomicIntegerArray,3,"int getAndSet(int i, int newValue)",True
+2,AtomicIntegerArray,4,int getAndIncrement(int i),True
+2,AtomicIntegerArray,5,int getAndDecrement(int i),True
+2,AtomicIntegerArray,6,"int getAndAdd(int i, int delta)",True
+2,AtomicIntegerArray,7,"void set(int i, int newValue)",True
+2,AtomicIntegerArray,8,"boolean compareAndSet(int i, int expect, int update)",True
+2,AtomicIntegerArray,9,"void lazySet(int i, int newValue)",True
+2,AtomicIntegerArray,10,int incrementAndGet(int i),True
+2,AtomicIntegerArray,11,int decrementAndGet(int i),True
+2,AtomicIntegerArray,12,"int addAndGet(int i, int delta)",True
+2,AtomicIntegerArray,13,"boolean weakCompareAndSet(int i, int expect, int update)",True
+3,AtomicIntegerFieldUpdater,1,"boolean compareAndSet(Object expect, Object update)",False
+3,AtomicIntegerFieldUpdater,2,"boolean weakCompareAndSet(Object expect, Object update)",False
+3,AtomicIntegerFieldUpdater,3,"void set(Object obj, int newValue)",False
+3,AtomicIntegerFieldUpdater,4,int get(Object obj),False
+3,AtomicIntegerFieldUpdater,5,"int getAndSet(Object obj, int newValue)",False
+4,AtomicLong,1,AtomicLong(long initialValue),False
+4,AtomicLong,2,long get(),True
+4,AtomicLong,3,long getAndSet(long newValue),True
+4,AtomicLong,4,long getAndIncrement(),True
+4,AtomicLong,5,long getAndDecrement(),True
+4,AtomicLong,6,long incrementAndGet(),True
+4,AtomicLong,7,long decrementAndGet(),True
+4,AtomicLong,8,void lazySet(long newValue),True
+4,AtomicLong,9,"boolean compareAndSet(long expect, long update)",True
+4,AtomicLong,10,long addAndGet(long delta),True
+4,AtomicLong,11,long getAndAdd(long delta),True
+4,AtomicLong,12,long getAndUpdate(LongUnaryOperator updateFunction),True
+4,AtomicLong,13,long updateAndGet(LongUnaryOperator updateFunction),True
+4,AtomicLong,14,"long getAndAccumulate(long x, LongBinaryOperator accumulatorFunction)",True
+4,AtomicLong,15,"long accumulateAndGet(long x, LongBinaryOperator accumulatorFunction)",True
+5,AtomicLongArray,1,AtomicLongArray(int length),False
+5,AtomicLongArray,2,AtomicLongArray(long[] array),False
+5,AtomicLongArray,3,long get(int index),True
+5,AtomicLongArray,4,"void set(int index, long newValue)",True
+5,AtomicLongArray,5,"long getAndSet(int index, long newValue)",True
+6,AtomicLongFieldUpdater,1,"AtomicLongFieldUpdater<T> newUpdater(Class<T> tClass, String fieldName)",False
+6,AtomicLongFieldUpdater,2,"boolean compareAndSet(T t, long expect, long update)",True
+6,AtomicLongFieldUpdater,3,long get(T t),True
+6,AtomicLongFieldUpdater,4,"void set(T t, long newValue)",True
+6,AtomicLongFieldUpdater,5,"long getAndSet(T t, long newValue)",True
+6,AtomicLongFieldUpdater,6,long getAndIncrement(T t),True
+6,AtomicLongFieldUpdater,7,long getAndDecrement(T t),True
+6,AtomicLongFieldUpdater,8,"long getAndAdd(T t, long delta)",True
+6,AtomicLongFieldUpdater,9,long incrementAndGet(T t),True
+6,AtomicLongFieldUpdater,10,long decrementAndGet(T t),True
+6,AtomicLongFieldUpdater,11,"long addAndGet(T t, long delta)",True
+7,AtomicMarkableReference,1,"AtomicMarkableReference(V initialValue, boolean initialMark)",False
+7,AtomicMarkableReference,2,V getReference(),True
+7,AtomicMarkableReference,3,boolean isMarked(),True
+7,AtomicMarkableReference,4,"boolean compareAndSet(V expectedReference, V newReference, boolean expectedMark, boolean newMark)",True
+7,AtomicMarkableReference,5,"void set(V newReference, boolean newMark)",True
+8,AtomicReference,1,AtomicReference(V initialValue),False
+8,AtomicReference,2,V get(),True
+8,AtomicReference,3,V getAndSet(V newValue),True
+8,AtomicReference,4,"boolean compareAndSet(V expect, V update)",True
+8,AtomicReference,5,void lazySet(V newValue),True
+9,AtomicReferenceArray,1,AtomicReferenceArray(int length),False
+9,AtomicReferenceArray,2,get(int index),False
+9,AtomicReferenceArray,3,"set(int index, V newValue)",False
+9,AtomicReferenceArray,4,"lazySet(int index, V newValue)",False
+9,AtomicReferenceArray,5,"compareAndSet(int index, V expect, V update)",False
+10,AtomicReferenceFieldUpdater,1,"boolean compareAndSet(Object expect, Object update)",False
+10,AtomicReferenceFieldUpdater,2,"boolean weakCompareAndSet(Object expect, Object update)",False
+10,AtomicReferenceFieldUpdater,3,void set(Object newValue),False
+10,AtomicReferenceFieldUpdater,4,Object get(),False
+10,AtomicReferenceFieldUpdater,5,Object getAndSet(Object newValue),False
+11,AtomicStampedReference,1,"AtomicStampedReference(V initialRef, int initialStamp)",False
+11,AtomicStampedReference,2,"boolean compareAndSet(V expectedReference, V newReference, int expectedStamp, int newStamp)",True
+11,AtomicStampedReference,3,V getReference(),True
+11,AtomicStampedReference,4,int getStamp(),True
+11,AtomicStampedReference,5,"void set(V newReference, int newStamp)",True
+12,DoubleAccumulator,1,"DoubleAccumulator(DoubleBinaryOperator accumulatorFunction, double identity)",False
+12,DoubleAccumulator,2,double get(),True
+12,DoubleAccumulator,3,void accumulate(double x),True
+12,DoubleAccumulator,4,DoubleAccumulator combine(DoubleAccumulator other),False
+12,DoubleAccumulator,5,DoubleBinaryOperator getFunction(),False
+13,DoubleAdder,1,DoubleAdder(),False
+13,DoubleAdder,2,void add(double x),True
+13,DoubleAdder,3,void increment(),False
+13,DoubleAdder,4,void reset(),True
+13,DoubleAdder,5,double sum(),True
+14,LongAccumulator,1,"LongAccumulator(LongBinaryOperator accumulatorFunction, long identity)",False
+14,LongAccumulator,2,void accumulate(long x),True
+14,LongAccumulator,3,long get(),True
+14,LongAccumulator,4,void reset(),True
+14,LongAccumulator,5,LongBinaryOperator getFunction(),False
+15,LongAdder,1,LongAdder add(long x),False
+15,LongAdder,2,long sum(),True
+15,LongAdder,3,void reset(),True
+15,LongAdder,4,LongAdder increment(),False
+15,LongAdder,5,LongAdder add(long x),False

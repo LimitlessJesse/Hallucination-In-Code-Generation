@@ -1,0 +1,494 @@
+Sample: AffineTransformOp_2
+----------------------------------------------------------------
+================================================================
+
+Sample: AffineTransformOp_3
+----------------------------------------------------------------
+stdout:
+AffineTransform[[1.0, 0.0, 0.0], [0.0, 1.0, 0.0]]
+
+================================================================
+
+Sample: BufferedImage_1
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at BufferedImage_1.main(BufferedImage_1.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BufferedImage_2
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at BufferedImage_2.main(BufferedImage_2.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BufferedImage_3
+----------------------------------------------------------------
+stdout:
+Image type: 2
+
+================================================================
+
+Sample: BufferedImage_4
+----------------------------------------------------------------
+stdout:
+DirectColorModel: rmask=ff0000 gmask=ff00 bmask=ff amask=0
+
+================================================================
+
+Sample: BufferedImage_5
+----------------------------------------------------------------
+stdout:
+Pixel at (0, 0) is: 255, 0, 0
+
+================================================================
+
+Sample: BufferStrategy_1
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/BufferStrategy_1.java:6: error: cannot find symbol
+        BufferStrategy bs = getBufferStrategy(); // Assume this method returns a BufferStrategy
+                            ^
+  symbol:   method getBufferStrategy()
+  location: class BufferStrategy_1
+1 error
+
+
+================================================================
+
+Sample: BufferStrategy_2
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/BufferStrategy_2.java:6: error: cannot find symbol
+        BufferStrategy bs = getBufferStrategy(); // Assume this method returns a BufferStrategy
+                            ^
+  symbol:   method getBufferStrategy()
+  location: class BufferStrategy_2
+./java_awt_image/javaFiles/BufferStrategy_2.java:8: error: cannot find symbol
+            createBufferStrategy(2);
+            ^
+  symbol:   method createBufferStrategy(int)
+  location: class BufferStrategy_2
+./java_awt_image/javaFiles/BufferStrategy_2.java:9: error: cannot find symbol
+            bs = getBufferStrategy();
+                 ^
+  symbol:   method getBufferStrategy()
+  location: class BufferStrategy_2
+3 errors
+
+
+================================================================
+
+Sample: BufferStrategy_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at BufferStrategy_3.main(BufferStrategy_3.java:7)
+
+================================================================
+
+Sample: ColorConvertOp_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: ColorSpaces cannot be null
+	at java.desktop/java.awt.image.ColorConvertOp.<init>(ColorConvertOp.java:154)
+	at ColorConvertOp_1.main(ColorConvertOp_1.java:11)
+
+================================================================
+
+Sample: ColorConvertOp_2
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ColorConvertOp_2.java:6: error: cannot find symbol
+        ColorConvertOp colorConvertOp = new ColorConvertOp(RenderingHints.VALUE_COLOR_BURN, null);
+                                                                         ^
+  symbol:   variable VALUE_COLOR_BURN
+  location: class RenderingHints
+1 error
+
+
+================================================================
+
+Sample: ColorModel_1
+----------------------------------------------------------------
+stdout:
+255
+
+================================================================
+
+Sample: ColorModel_2
+----------------------------------------------------------------
+stdout:
+0
+
+================================================================
+
+Sample: ColorModel_3
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ColorModel_3.java:8: error: no suitable method found for getRGB(int,int,int,<null>)
+        int pixel = cm.getRGB(0, 0, 0, null);
+                      ^
+    method ColorModel.getRGB(int) is not applicable
+      (actual and formal argument lists differ in length)
+    method ColorModel.getRGB(Object) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: ColorModel_4
+----------------------------------------------------------------
+stdout:
+Red component of pixel: 0
+
+================================================================
+
+Sample: ColorModel_5
+----------------------------------------------------------------
+stdout:
+Transparency: 3
+
+================================================================
+
+Sample: ComponentColorModel_1
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ComponentColorModel_1.java:6: error: incompatible types: int[] cannot be converted to ColorSpace
+            new int[] { 0, 1 }, // red, green
+            ^
+./java_awt_image/javaFiles/ComponentColorModel_1.java:13: error: no suitable method found for getRGB(int,int,int,int)
+        int pixel = colorModel.getRGB(0, 0, 0, 0); // black pixel
+                              ^
+    method ComponentColorModel.getRGB(int) is not applicable
+      (actual and formal argument lists differ in length)
+    method ComponentColorModel.getRGB(Object) is not applicable
+      (actual and formal argument lists differ in length)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: ComponentColorModel_2
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ComponentColorModel_2.java:11: error: cannot find symbol
+                Transparency.OPAQUE,
+                ^
+  symbol:   variable Transparency
+  location: class ComponentColorModel_2
+1 error
+
+
+================================================================
+
+Sample: ComponentColorModel_3
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ComponentColorModel_3.java:6: error: RGBImageFilter is abstract; cannot be instantiated
+        ComponentColorModel model = new ComponentColorModel(new RGBImageFilter(), true, true, Transparency.OPAQUE, 0);
+                                                            ^
+./java_awt_image/javaFiles/ComponentColorModel_3.java:6: error: cannot find symbol
+        ComponentColorModel model = new ComponentColorModel(new RGBImageFilter(), true, true, Transparency.OPAQUE, 0);
+                                                                                              ^
+  symbol:   variable Transparency
+  location: class ComponentColorModel_3
+./java_awt_image/javaFiles/ComponentColorModel_3.java:7: error: no suitable method found for getRGB(int,int)
+        int pixel = model.getRGB(0, 0);
+                         ^
+    method ComponentColorModel.getRGB(int) is not applicable
+      (actual and formal argument lists differ in length)
+    method ComponentColorModel.getRGB(Object) is not applicable
+      (actual and formal argument lists differ in length)
+3 errors
+
+
+================================================================
+
+Sample: ComponentColorModel_4
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/ComponentColorModel_4.java:6: error: RGBImageFilter is abstract; cannot be instantiated
+        ComponentColorModel colorModel = new ComponentColorModel(new RGBImageFilter(), true, true, Transparency.OPAQUE, 0);
+                                                                 ^
+./java_awt_image/javaFiles/ComponentColorModel_4.java:6: error: cannot find symbol
+        ComponentColorModel colorModel = new ComponentColorModel(new RGBImageFilter(), true, true, Transparency.OPAQUE, 0);
+                                                                                                   ^
+  symbol:   variable Transparency
+  location: class ComponentColorModel_4
+2 errors
+
+
+================================================================
+
+Sample: ComponentColorModel_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class java.awt.image.DirectColorModel cannot be cast to class java.awt.image.ComponentColorModel (java.awt.image.DirectColorModel and java.awt.image.ComponentColorModel are in module java.desktop of loader 'bootstrap')
+	at ComponentColorModel_5.main(ComponentColorModel_5.java:8)
+
+================================================================
+
+Sample: ConvolveOp_2
+----------------------------------------------------------------
+================================================================
+
+Sample: DataBuffer_1
+----------------------------------------------------------------
+stdout:
+ff0000
+
+================================================================
+
+Sample: DataBuffer_2
+----------------------------------------------------------------
+stdout:
+1
+
+================================================================
+
+Sample: DataBuffer_3
+----------------------------------------------------------------
+stdout:
+Size of the data buffer: 5
+
+================================================================
+
+Sample: DataBuffer_4
+----------------------------------------------------------------
+stdout:
+1
+2
+10
+4
+5
+
+================================================================
+
+Sample: DataBuffer_9
+----------------------------------------------------------------
+stdout:
+1
+2
+10
+4
+5
+
+================================================================
+
+Sample: DataBufferInt_1
+----------------------------------------------------------------
+stdout:
+3
+
+================================================================
+
+Sample: DataBufferInt_2
+----------------------------------------------------------------
+stdout:
+12345678
+
+================================================================
+
+Sample: DataBufferUShort_2
+----------------------------------------------------------------
+stdout:
+100
+
+================================================================
+
+Sample: DirectColorModel_2
+----------------------------------------------------------------
+stdout:
+Red Mask: 16711680
+
+================================================================
+
+Sample: DirectColorModel_3
+----------------------------------------------------------------
+stdout:
+Green Mask: 65280
+
+================================================================
+
+Sample: DirectColorModel_4
+----------------------------------------------------------------
+stdout:
+Blue Mask: 255
+
+================================================================
+
+Sample: DirectColorModel_5
+----------------------------------------------------------------
+stdout:
+Alpha Mask: -16777216
+
+================================================================
+
+Sample: DirectColorModel_7
+----------------------------------------------------------------
+stdout:
+Alpha value: 170
+
+================================================================
+
+Sample: DirectColorModel_8
+----------------------------------------------------------------
+stdout:
+Red: 255
+
+================================================================
+
+Sample: DirectColorModel_9
+----------------------------------------------------------------
+stdout:
+Green component: 255
+
+================================================================
+
+Sample: DirectColorModel_10
+----------------------------------------------------------------
+stdout:
+Blue: 0
+
+================================================================
+
+Sample: Kernel_2
+----------------------------------------------------------------
+stdout:
+Width of the kernel: 3
+
+================================================================
+
+Sample: Kernel_3
+----------------------------------------------------------------
+stdout:
+Height of the kernel: 3
+
+================================================================
+
+Sample: Raster_1
+----------------------------------------------------------------
+stdout:
+Number of bands: 3
+
+================================================================
+
+Sample: Raster_2
+----------------------------------------------------------------
+stdout:
+Number of data elements: 1
+
+================================================================
+
+Sample: Raster_8
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 50 out of bounds for length 3
+	at java.desktop/java.awt.image.SinglePixelPackedSampleModel.getSample(SinglePixelPackedSampleModel.java:515)
+	at java.desktop/java.awt.image.Raster.getSample(Raster.java:1851)
+	at Raster_8.main(Raster_8.java:10)
+
+================================================================
+
+Sample: RGBImageFilter_1
+----------------------------------------------------------------
+================================================================
+
+Sample: SampleModel_1
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/SampleModel_1.java:6: error: DataBuffer is abstract; cannot be instantiated
+        SampleModel sampleModel = new DataBuffer(10, 10, 10, 10);
+                                  ^
+1 error
+
+
+================================================================
+
+Sample: SampleModel_2
+----------------------------------------------------------------
+stdout:
+Number of bands: 3
+
+================================================================
+
+Sample: SinglePixelPackedSampleModel_1
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/SinglePixelPackedSampleModel_1.java:5: error: incompatible types: int cannot be converted to int[]
+        SinglePixelPackedSampleModel model = new SinglePixelPackedSampleModel(16, 1, 1, 1);
+                                                                                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: VolatileImage_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getDefaultScreenDevice(HeadlessGraphicsEnvironment.java:58)
+	at VolatileImage_1.main(VolatileImage_1.java:9)
+
+================================================================
+
+Sample: VolatileImage_2
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/VolatileImage_2.java:12: error: cannot find symbol
+        VolatileImage volatileImage = bufferedImage.getVolatileImage();
+                                                   ^
+  symbol:   method getVolatileImage()
+  location: variable bufferedImage of type BufferedImage
+1 error
+
+
+================================================================
+
+Sample: VolatileImage_3
+----------------------------------------------------------------
+output:
+./java_awt_image/javaFiles/VolatileImage_3.java:6: error: cannot find symbol
+        VolatileImage vi = VolatileImage.createVolatileImage(100, 100, VolatileImage.TRANSLUCENT, null);
+                                        ^
+  symbol:   method createVolatileImage(int,int,int,<null>)
+  location: class VolatileImage
+1 error
+
+
+================================================================
+
+Sample: WritableRaster_5
+----------------------------------------------------------------
+================================================================
+

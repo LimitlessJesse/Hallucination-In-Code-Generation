@@ -1,0 +1,349 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Boolean,1,boolean equals(Object obj),True
+0,Boolean,2,int hashCode(),True
+0,Boolean,3,boolean parseBoolean(String s),True
+0,Boolean,4,boolean valueOf(String s),False
+0,Boolean,5,boolean valueOf(boolean b),False
+1,Byte,1,byte parseByte(String s),True
+1,Byte,2,"byte parseByte(String s, int radix)",True
+1,Byte,3,byte[] decode(String s),False
+1,Byte,4,"byte[] decode(String s, int offset, int length)",False
+1,Byte,5,String toString(byte b),True
+2,Character,1,boolean isDigit(char ch),True
+2,Character,2,boolean isLetter(char ch),True
+2,Character,3,boolean isLetterOrDigit(char ch),True
+2,Character,4,boolean isLowerCase(char ch),True
+2,Character,5,boolean isUpperCase(char ch),True
+3,Character.Subset,1,boolean isDefined(char ch),False
+3,Character.Subset,2,int getType(char ch),False
+3,Character.Subset,3,int getNumericValue(char ch),False
+3,Character.Subset,4,int toUpperCase(char ch),False
+3,Character.Subset,5,int toLowerCase(char ch),False
+4,Character.UnicodeBlock,1,Character.UnicodeBlock get(char codePoint),False
+4,Character.UnicodeBlock,2,boolean isAlphabetic(char ch),False
+4,Character.UnicodeBlock,3,boolean isCased(char ch),False
+4,Character.UnicodeBlock,4,boolean isLowerCase(char ch),False
+4,Character.UnicodeBlock,5,boolean isTitleCase(char ch),False
+4,Character.UnicodeBlock,6,boolean isUpperCase(char ch),False
+4,Character.UnicodeBlock,7,boolean isIdeographic(char ch),False
+4,Character.UnicodeBlock,8,boolean isDigit(char ch),False
+4,Character.UnicodeBlock,9,boolean isMath(char ch),False
+4,Character.UnicodeBlock,10,boolean isOtherNeutral(char ch),False
+4,Character.UnicodeBlock,11,boolean isOtherAlphabetic(char ch),False
+4,Character.UnicodeBlock,12,boolean isOtherLowerCase(char ch),False
+4,Character.UnicodeBlock,13,boolean isOtherUpperCase(char ch),False
+4,Character.UnicodeBlock,14,boolean isOtherGraphemeExtend(char ch),False
+4,Character.UnicodeBlock,15,boolean isOtherIDStart(char ch),False
+4,Character.UnicodeBlock,16,boolean isOtherIDContinue(char ch),False
+4,Character.UnicodeBlock,17,boolean isOtherJoinControl(char ch),False
+4,Character.UnicodeBlock,18,boolean isOtherRadical(char ch),False
+4,Character.UnicodeBlock,19,boolean isOtherDefaultIgnorableCodePoint(char ch),False
+4,Character.UnicodeBlock,20,boolean isOtherBidiControl(char ch),False
+4,Character.UnicodeBlock,21,boolean isOtherSpatialSeparator(char ch),False
+4,Character.UnicodeBlock,22,boolean isOtherLineSeparator(char ch),False
+4,Character.UnicodeBlock,23,boolean isOtherParagraphSeparator(char ch),False
+4,Character.UnicodeBlock,24,boolean isOtherPrivateUse(char ch),False
+4,Character.UnicodeBlock,25,boolean isOtherSurrogate(char ch),False
+4,Character.UnicodeBlock,26,boolean isOtherOther(char ch),False
+5,Class,1,boolean add(E e),False
+5,Class,2,E get(int index),False
+5,Class,3,E remove(int index),False
+5,Class,4,boolean remove(Object o),False
+5,Class,5,int size(),False
+6,ClassLoader,1,ClassLoader findClass(String name),False
+6,ClassLoader,2,ClassLoader loadClass(String name),False
+6,ClassLoader,3,URL[] getURLs(),False
+6,ClassLoader,4,URL getResource(String name),True
+6,ClassLoader,5,InputStream getResourceAsStream(String name),True
+7,ClassValue,1,boolean add(E e),False
+7,ClassValue,2,"void add(int index, E element)",False
+7,ClassValue,3,boolean addAll(Collection<? extends E> c),False
+7,ClassValue,4,"boolean addAll(int index, Collection<? extends E> c)",False
+7,ClassValue,5,void clear(),False
+8,Compiler,1,boolean add(E e),False
+8,Compiler,2,boolean addAll(Collection<? extends E> c),False
+8,Compiler,3,void clear(),False
+8,Compiler,4,boolean contains(Object o),False
+8,Compiler,5,boolean containsAll(Collection<?> c),False
+9,Double,1,"double compare(double d1, double d2)",False
+9,Double,2,"double copySign(double magnitude, double sign)",False
+9,Double,3,double decode(String nm),False
+9,Double,4,"double divide(double dividend, double divisor)",False
+9,Double,5,"double max(double a, double b)",True
+9,Double,6,"double min(double a, double b)",True
+9,Double,7,"double nextAfter(double start, double direction)",False
+9,Double,8,double nextDown(double d),False
+9,Double,9,double nextUp(double d),False
+9,Double,10,double parseDouble(String s),True
+9,Double,11,double random(),False
+9,Double,12,double rint(double d),False
+9,Double,13,double round(double d),False
+9,Double,14,"double sum(double a, double b)",True
+9,Double,15,double toDegrees(double angrad),False
+9,Double,16,double toHexString(double d),False
+9,Double,17,double toIntExact(long x),False
+9,Double,18,double toString(double d),False
+9,Double,19,double ulp(double d),False
+9,Double,20,double up(double d),False
+10,Enum,1,E getValue(),False
+10,Enum,2,"<T extends Enum<T>> T valueOf(Class<T> enumType, String name)",False
+10,Enum,3,"<T extends Enum<T>> T valueOf(Class<T> enumType, String name, Class<? extends Enum<T>> enumConstantClass)",False
+10,Enum,4,<T extends Enum<T>> T[] values(),False
+10,Enum,5,<T extends Enum<T>> T[] valuesOf(Class<T> enumType),False
+11,Float,1,float floatToRawIntBits(float value),False
+11,Float,2,float intBitsToFloat(int bits),True
+11,Float,3,"float max(float a, float b)",True
+11,Float,4,"float min(float a, float b)",True
+11,Float,5,"float sum(float a, float b)",True
+11,Float,6,"float subtract(float a, float b)",False
+11,Float,7,"float multiply(float a, float b)",False
+11,Float,8,"float divide(float a, float b)",False
+11,Float,9,"float remainder(float a, float b)",False
+11,Float,10,float increment(float a),False
+11,Float,11,float decrement(float a),False
+11,Float,12,float negate(float a),False
+11,Float,13,float abs(float a),False
+11,Float,14,float sqrt(float a),False
+11,Float,15,"float pow(float a, float b)",False
+11,Float,16,float log(float a),False
+11,Float,17,float exp(float a),False
+11,Float,18,float sin(float a),False
+11,Float,19,float cos(float a),False
+11,Float,20,float tan(float a),False
+11,Float,21,float asin(float a),False
+11,Float,22,float acos(float a),False
+11,Float,23,float atan(float a),False
+11,Float,24,float toDegrees(float angrad),False
+11,Float,25,float toRadians(float angdeg),False
+12,InheritableThreadLocal,1,void set(T value),False
+12,InheritableThreadLocal,2,T get(),False
+12,InheritableThreadLocal,3,void remove(),False
+12,InheritableThreadLocal,4,protected T childValue(T parentValue),False
+12,InheritableThreadLocal,5,protected T initialValue(),False
+13,Integer,1,int compareTo(Integer anotherInteger),True
+13,Integer,2,"int compare(int x, int y)",True
+13,Integer,3,"int divideUnsigned(int dividend, int divisor)",True
+13,Integer,4,"int max(int a, int b)",True
+13,Integer,5,"int min(int a, int b)",True
+14,Long,1,long sum(),False
+14,Long,2,long max(),False
+14,Long,3,long min(),False
+14,Long,4,long get(int index),False
+14,Long,5,"long set(int index, long element)",False
+15,Math,1,double abs(double a),True
+15,Math,2,double ceil(double a),True
+15,Math,3,double floor(double a),True
+15,Math,4,"double max(double a, double b)",True
+15,Math,5,"double min(double a, double b)",True
+15,Math,6,"double pow(double a, double b)",True
+15,Math,7,double random(),True
+15,Math,8,double round(double a),False
+15,Math,9,double sqrt(double a),True
+15,Math,10,double toDegrees(double angrad),True
+15,Math,11,double toRadians(double angdeg),True
+15,Math,12,"double copySign(double magnitude, double sign)",True
+15,Math,13,double exp(double a),True
+15,Math,14,double expm1(double a),True
+15,Math,15,double log(double a),True
+15,Math,16,double log10(double a),True
+15,Math,17,double log1p(double a),True
+15,Math,18,"double IEEEremainder(double f1, double f2)",True
+15,Math,19,"double nextAfter(double start, direction)",False
+15,Math,20,double nextDown(double d),True
+15,Math,21,double nextUp(double d),True
+15,Math,22,double rint(double a),True
+15,Math,23,"double scalb(double a, int scaleFactor)",True
+15,Math,24,"double scalb(double a, long scaleFactor)",False
+15,Math,25,double sin(double a),True
+15,Math,26,double cos(double a),True
+15,Math,27,double tan(double a),True
+15,Math,28,double asin(double a),True
+15,Math,29,double acos(double a),True
+15,Math,30,double atan(double a),True
+15,Math,31,"double atan2(double y, double x)",True
+15,Math,32,double toDegrees(double angrad),True
+15,Math,33,double toRadians(double angdeg),True
+15,Math,34,double sinh(double x),True
+15,Math,35,double cosh(double x),True
+15,Math,36,double tanh(double x),True
+15,Math,37,"double hypot(double x, double y)",True
+15,Math,38,double cbrt(double a),True
+15,Math,39,"double copySign(double magnitude, double sign)",True
+15,Math,40,double ulp(double a),True
+16,Number,1,byte byteValue(),True
+16,Number,2,double doubleValue(),True
+16,Number,3,float floatValue(),True
+16,Number,4,int intValue(),True
+16,Number,5,long longValue(),True
+16,Number,6,short shortValue(),True
+17,Object,1,boolean add(E e),False
+17,Object,2,"void add(int index, E element)",False
+17,Object,3,boolean addAll(Collection<? extends E> c),False
+17,Object,4,void clear(),False
+17,Object,5,boolean contains(Object o),False
+18,Package,1,boolean add(E e),False
+18,Package,2,boolean addAll(Collection<? extends E> c),False
+18,Package,3,void clear(),False
+18,Package,4,boolean contains(Object o),False
+18,Package,5,boolean containsAll(Collection<?> c),False
+19,Process,1,ProcessBuilder(String... command),False
+19,Process,2,ProcessBuilder(List<String> command),False
+19,Process,3,Process start(),False
+19,Process,4,int waitFor(),True
+19,Process,5,void destroy(),True
+20,ProcessBuilder,1,ProcessBuilder(String... command),False
+20,ProcessBuilder,2,ProcessBuilder(List<String> command),False
+20,ProcessBuilder,3,ProcessBuilder redirectError(File file),True
+20,ProcessBuilder,4,ProcessBuilder redirectError(OutputStream out),False
+20,ProcessBuilder,5,ProcessBuilder redirectInput(File file),True
+20,ProcessBuilder,6,ProcessBuilder redirectInput(InputStream in),False
+20,ProcessBuilder,7,ProcessBuilder redirectOutput(File file),True
+20,ProcessBuilder,8,ProcessBuilder redirectOutput(OutputStream out),False
+20,ProcessBuilder,9,ProcessBuilder start(),False
+20,ProcessBuilder,10,"ProcessBuilder start(Map<String, String> environment)",False
+20,ProcessBuilder,11,ProcessBuilder directory(File dir),True
+20,ProcessBuilder,12,ProcessBuilder command(List<String> commands),True
+20,ProcessBuilder,13,ProcessBuilder command(String... commands),True
+20,ProcessBuilder,14,ProcessBuilder command(String command),False
+20,ProcessBuilder,15,ProcessBuilder inheritIO(),True
+20,ProcessBuilder,16,ProcessBuilder redirectError(),False
+20,ProcessBuilder,17,ProcessBuilder redirectInput(),False
+20,ProcessBuilder,18,ProcessBuilder redirectOutput(),False
+20,ProcessBuilder,19,ProcessBuilder redirectOutput(Appendable out),False
+20,ProcessBuilder,20,ProcessBuilder redirectOutput(FileAppendable out),False
+20,ProcessBuilder,21,ProcessBuilder redirectOutput(OutputStream out),False
+20,ProcessBuilder,22,ProcessBuilder redirectOutput(PrintStream out),False
+20,ProcessBuilder,23,ProcessBuilder redirectOutput(PrintWriter out),False
+20,ProcessBuilder,24,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,25,ProcessBuilder redirectOutput(File file),True
+20,ProcessBuilder,26,ProcessBuilder redirectOutput(FileDescriptor out),False
+20,ProcessBuilder,27,ProcessBuilder redirectOutput(FileOutputStream out),False
+20,ProcessBuilder,28,ProcessBuilder redirectOutput(PipedOutputStream out),False
+20,ProcessBuilder,29,ProcessBuilder redirectOutput(PipedWriter out),False
+20,ProcessBuilder,30,ProcessBuilder redirectOutput(StringBuilder out),False
+20,ProcessBuilder,31,ProcessBuilder redirectOutput(StringWriter out),False
+20,ProcessBuilder,32,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,33,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,34,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,35,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,36,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,37,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,38,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,39,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,40,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,41,ProcessBuilder redirectOutput(Writer out),False
+20,ProcessBuilder,42,ProcessBuilder redirectOutput(Writer out),False
+21,ProcessBuilder.Redirect,1,Redirect.Type redirectType(),False
+21,ProcessBuilder.Redirect,2,Redirect.Type redirectType(String type),False
+21,ProcessBuilder.Redirect,3,File file(),True
+21,ProcessBuilder.Redirect,4,File file(File file),False
+21,ProcessBuilder.Redirect,5,File file(String file),False
+21,ProcessBuilder.Redirect,6,File file(Path path),False
+21,ProcessBuilder.Redirect,7,File file(String path),False
+21,ProcessBuilder.Redirect,8,File file(URI uri),False
+21,ProcessBuilder.Redirect,9,File file(URL url),False
+21,ProcessBuilder.Redirect,10,"File file(URI uri, String path)",False
+21,ProcessBuilder.Redirect,11,"File file(URL url, String path)",False
+21,ProcessBuilder.Redirect,12,"File file(String uri, String path)",False
+21,ProcessBuilder.Redirect,13,"File file(String url, String path)",False
+21,ProcessBuilder.Redirect,14,"File file(File file, String path)",False
+21,ProcessBuilder.Redirect,15,"File file(Path path, String path)",False
+21,ProcessBuilder.Redirect,16,"File file(String path, String path)",False
+21,ProcessBuilder.Redirect,17,"File file(File file, String path, String path)",False
+21,ProcessBuilder.Redirect,18,"File file(Path path, String path, String path)",False
+21,ProcessBuilder.Redirect,19,"File file(String path, String path, String path)",False
+21,ProcessBuilder.Redirect,20,"File file(File file, String path, String path, String path)",False
+21,ProcessBuilder.Redirect,21,"File file(Path path, String path, String path, String path)",False
+21,ProcessBuilder.Redirect,22,"File file(String path, String path, String path, String path)",False
+22,Runtime,1,boolean add(E e),False
+22,Runtime,2,boolean addAll(Collection<? extends E> c),False
+22,Runtime,3,void clear(),False
+22,Runtime,4,boolean contains(Object o),False
+22,Runtime,5,boolean containsAll(Collection<?> c),False
+23,RuntimePermission,1,boolean implies(Permission permission),False
+23,RuntimePermission,2,boolean equals(Object obj),False
+23,RuntimePermission,3,int hashCode(),False
+23,RuntimePermission,4,String getActions(),False
+23,RuntimePermission,5,String getName(),False
+24,SecurityManager,1,void checkPermission(Permission perm),True
+24,SecurityManager,2,"void checkPermission(Permission perm, Object context)",True
+24,SecurityManager,3,void checkExit(int status),True
+24,SecurityManager,4,void checkRead(String file),True
+24,SecurityManager,5,void checkWrite(String file),True
+25,Short,1,shortValue(),False
+25,Short,2,compareTo(Short anotherShort),False
+25,Short,3,equals(Object obj),False
+25,Short,4,hashCode(),False
+25,Short,5,toString(),False
+26,StackTraceElement,1,int getLineNumber(),True
+26,StackTraceElement,2,String getClassName(),True
+26,StackTraceElement,3,String getMethodName(),True
+26,StackTraceElement,4,String getFileName(),True
+26,StackTraceElement,5,String getModuleName(),False
+26,StackTraceElement,6,boolean isNativeMethod(),True
+27,StrictMath,1,double acos(double a),True
+27,StrictMath,2,double asin(double a),True
+27,StrictMath,3,double atan(double a),True
+27,StrictMath,4,"double atan2(double y, double x)",True
+27,StrictMath,5,double ceil(double a),True
+28,String,1,int length(),True
+28,String,2,char charAt(int index),True
+28,String,3,boolean equals(Object another),True
+28,String,4,boolean contains(CharSequence s),True
+28,String,5,String[] split(String regex),True
+29,StringBuffer,1,StringBuffer append(String str),True
+29,StringBuffer,2,"StringBuffer insert(int offset, String str)",True
+29,StringBuffer,3,"StringBuffer delete(int start, int end)",True
+29,StringBuffer,4,StringBuffer reverse(),True
+29,StringBuffer,5,int capacity(),True
+30,StringBuilder,1,StringBuilder append(String str),True
+30,StringBuilder,2,"StringBuilder insert(int offset, String str)",True
+30,StringBuilder,3,"StringBuilder delete(int start, int end)",True
+30,StringBuilder,4,"StringBuilder replace(int start, int end, String str)",True
+30,StringBuilder,5,String toString(),True
+31,System,1,long currentTimeMillis(),True
+31,System,2,"void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)",True
+31,System,3,void exit(int status),True
+31,System,4,void gc(),True
+31,System,5,String getProperty(String key),True
+32,Thread,1,void start(),True
+32,Thread,2,void run(),True
+32,Thread,3,void yield(),True
+32,Thread,4,void join(),True
+32,Thread,5,void interrupt(),True
+33,ThreadGroup,1,int activeCount(),True
+33,ThreadGroup,2,int activeGroupCount(),True
+33,ThreadGroup,3,int activeGroupCount(boolean recursive),False
+33,ThreadGroup,4,int activeCount(boolean recursive),False
+33,ThreadGroup,5,"void uncaughtException(Thread t, Throwable e)",True
+34,ThreadLocal,1,void set(T value),True
+34,ThreadLocal,2,T get(),True
+34,ThreadLocal,3,void remove(),True
+34,ThreadLocal,4,protected T initialValue(),False
+34,ThreadLocal,5,<S> ThreadLocal<S> withInitial(Supplier<? extends S> supplier),True
+35,Throwable,1,Throwable fillInStackTrace(),True
+35,Throwable,2,String getMessage(),True
+35,Throwable,3,synchronized Throwable getCause(),False
+35,Throwable,4,synchronized Throwable initCause(Throwable cause),False
+35,Throwable,5,String toString(),True
+36,Void,1,"Void add(int index, E element)",False
+36,Void,2,boolean addAll(Collection<? extends E> c),False
+36,Void,3,"boolean addAll(int index, Collection<? extends E> c)",False
+36,Void,4,void clear(),False
+36,Void,5,boolean contains(Object o),False
+36,Void,6,E get(int index),False
+36,Void,7,int indexOf(Object o),False
+36,Void,8,boolean isEmpty(),False
+36,Void,9,int lastIndexOf(Object o),False
+36,Void,10,E remove(int index),False
+36,Void,11,boolean remove(Object o),False
+36,Void,12,boolean removeAll(Collection<?> c),False
+36,Void,13,void replaceAll(UnaryOperator<E> operator),False
+36,Void,14,"E set(int index, E element)",False
+36,Void,15,int size(),False
+36,Void,16,"List<E> subList(int fromIndex, int toIndex)",False
+36,Void,17,Object[] toArray(),False
+36,Void,18,<T> T[] toArray(T[] a),False
+36,Void,19,void trimToSize(),False
+36,Void,20,ListIterator<E> listIterator(),False
+36,Void,21,ListIterator<E> listIterator(int index),False

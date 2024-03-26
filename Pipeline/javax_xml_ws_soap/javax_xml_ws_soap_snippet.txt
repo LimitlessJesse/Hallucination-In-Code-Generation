@@ -1,0 +1,51 @@
+Sample: 0 MTOMFeature
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getID() from javax.xml.ws.soap.MTOMFeature
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getID()` method is not part of the `javax.xml.ws.soap.MTOMFeature` class. It is part of the `javax.xml.ws.soap.SOAPBinding` class.
+
+Here is a complete code snippet of the `getID()` method:
+
+```java
+import javax.xml.ws.soap.SOAPBinding;
+
+public class Main {
+    public static void main(String[] args) {
+        SOAPBinding binding = new SOAPBinding();
+        String id = binding.getID();
+        System.out.println("ID: " + id);
+    }
+}
+```
+
+In this code snippet, we create a new instance of `SOAPBinding` and call the `getID()` method. The `getID()` method returns a string that represents the ID of the SOAPBinding object.
+
+Please note that the `getID()` method is not commonly used in web service programming and is not typically part of the standard Java API. It is more likely to be used in custom implementations or in specific scenarios where the ID of a SOAPBinding object is needed.
+================================================================
+

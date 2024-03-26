@@ -1,0 +1,78 @@
+ClassName,Method,Return Type
+_ServantActivatorStub,_ids(),String[]
+_ServantActivatorStub,"etherealize(byte[] oid, POA adapter, Servant serv, boolean cleanup_in_progress, boolean remaining_activations)",void
+_ServantActivatorStub,"incarnate(byte[] oid, POA adapter)",Servant
+_ServantLocatorStub,_ids(),String[]
+_ServantLocatorStub,"postinvoke(byte[] oid, POA adapter, String operation, Object the_cookie, Servant the_servant)",void
+_ServantLocatorStub,"preinvoke(byte[] oid, POA adapter, String operation, CookieHolder the_cookie)",Servant
+CurrentHelper,extract(Any a),static Current
+CurrentHelper,id(),static String
+CurrentHelper,"insert(Any a, Current that)",static void
+CurrentHelper,narrow(Object obj),static Current
+CurrentHelper,read(InputStream istream),static Current
+CurrentHelper,type(),static TypeCode
+CurrentHelper,"write(OutputStream ostream, Current value)",static void
+DynamicImplementation,invoke(ServerRequest request),abstract void
+ForwardRequestHelper,extract(Any a),static ForwardRequest
+ForwardRequestHelper,id(),static String
+ForwardRequestHelper,"insert(Any a, ForwardRequest that)",static void
+ForwardRequestHelper,read(InputStream istream),static ForwardRequest
+ForwardRequestHelper,type(),static TypeCode
+ForwardRequestHelper,"write(OutputStream ostream, ForwardRequest value)",static void
+IdAssignmentPolicyValue,from_int(int value),static IdAssignmentPolicyValue
+IdAssignmentPolicyValue,value(),int
+IdUniquenessPolicyValue,from_int(int value),static IdUniquenessPolicyValue
+IdUniquenessPolicyValue,value(),int
+ImplicitActivationPolicyValue,from_int(int value),static ImplicitActivationPolicyValue
+ImplicitActivationPolicyValue,value(),int
+LifespanPolicyValue,from_int(int value),static LifespanPolicyValue
+LifespanPolicyValue,value(),int
+POAHelper,extract(Any a),static POA
+POAHelper,id(),static String
+POAHelper,"insert(Any a, POA that)",static void
+POAHelper,narrow(Object obj),static POA
+POAHelper,read(InputStream istream),static POA
+POAHelper,type(),static TypeCode
+POAHelper,"write(OutputStream ostream, POA value)",static void
+RequestProcessingPolicyValue,from_int(int value),static RequestProcessingPolicyValue
+RequestProcessingPolicyValue,value(),int
+Servant,"_all_interfaces(POA poa, byte[] objectId)",abstract String[]
+Servant,_default_POA(),POA
+Servant,_get_delegate(),Delegate
+Servant,_get_interface_def(),Object
+Servant,_is_a(String repository_id),boolean
+Servant,_non_existent(),boolean
+Servant,_object_id(),byte[]
+Servant,_orb(),ORB
+Servant,_poa(),POA
+Servant,_set_delegate(Delegate delegate),void
+Servant,_this_object(),Object
+Servant,_this_object(ORB orb),Object
+ServantActivatorHelper,extract(Any a),static ServantActivator
+ServantActivatorHelper,id(),static String
+ServantActivatorHelper,"insert(Any a, ServantActivator that)",static void
+ServantActivatorHelper,narrow(Object obj),static ServantActivator
+ServantActivatorHelper,read(InputStream istream),static ServantActivator
+ServantActivatorHelper,type(),static TypeCode
+ServantActivatorHelper,unchecked_narrow(Object obj),static ServantActivator
+ServantActivatorHelper,"write(OutputStream ostream, ServantActivator value)",static void
+ServantActivatorPOA,"_all_interfaces(POA poa, byte[] objectId)",String[]
+ServantActivatorPOA,"_invoke(String $method, InputStream in, ResponseHandler $rh)",OutputStream
+ServantActivatorPOA,_this(),ServantActivator
+ServantActivatorPOA,_this(ORB orb),ServantActivator
+ServantLocatorHelper,extract(Any a),static ServantLocator
+ServantLocatorHelper,id(),static String
+ServantLocatorHelper,"insert(Any a, ServantLocator that)",static void
+ServantLocatorHelper,narrow(Object obj),static ServantLocator
+ServantLocatorHelper,read(InputStream istream),static ServantLocator
+ServantLocatorHelper,type(),static TypeCode
+ServantLocatorHelper,unchecked_narrow(Object obj),static ServantLocator
+ServantLocatorHelper,"write(OutputStream ostream, ServantLocator value)",static void
+ServantLocatorPOA,"_all_interfaces(POA poa, byte[] objectId)",String[]
+ServantLocatorPOA,"_invoke(String $method, InputStream in, ResponseHandler $rh)",OutputStream
+ServantLocatorPOA,_this(),ServantLocator
+ServantLocatorPOA,_this(ORB orb),ServantLocator
+ServantRetentionPolicyValue,from_int(int value),static ServantRetentionPolicyValue
+ServantRetentionPolicyValue,value(),int
+ThreadPolicyValue,from_int(int value),static ThreadPolicyValue
+ThreadPolicyValue,value(),int

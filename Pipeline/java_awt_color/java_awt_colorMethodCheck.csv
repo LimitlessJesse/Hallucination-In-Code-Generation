@@ -1,0 +1,26 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,ColorSpace,1,float[] fromRGB(float[] rgbval),True
+0,ColorSpace,2,float[] fromCIEXYZ(float[] colorvalue),True
+0,ColorSpace,3,float[] fromYUV(float[] yuvval),False
+0,ColorSpace,4,float[] fromYCC(float[] yccval),False
+0,ColorSpace,5,float[] fromYUV(float[] yuvval),False
+1,ICC_ColorSpace,1,float[] fromRGB(float[] rgbval),True
+1,ICC_ColorSpace,2,float[] fromCIEXYZ(float[] xyzval),True
+1,ICC_ColorSpace,3,"float[] fromCIEXYZ(float x, float y, float z)",False
+1,ICC_ColorSpace,4,float[] fromCIELab(float[] labval),False
+1,ICC_ColorSpace,5,"float[] fromCIELab(float l, float a, float b)",False
+2,ICC_Profile,1,ICC_Profile.getInstance(byte[] data),False
+2,ICC_Profile,2,ICC_Profile.getInstance(File file),False
+2,ICC_Profile,3,ICC_Profile.getInstance(InputStream in),False
+2,ICC_Profile,4,ICC_Profile.getInstance(URL url),False
+2,ICC_Profile,5,ICC_Profile.getInstance(String filename),False
+3,ICC_ProfileGray,1,ICC_ProfileGray(byte[] data),False
+3,ICC_ProfileGray,2,ICC_ProfileGray(InputStream in),False
+3,ICC_ProfileGray,3,ICC_ProfileGray(String filename),False
+3,ICC_ProfileGray,4,int getNumberOfGrayComponents(),False
+3,ICC_ProfileGray,5,int getGrayComponent(int index),False
+4,ICC_ProfileRGB,1,ICC_ProfileRGB(String filename),False
+4,ICC_ProfileRGB,2,ICC_ProfileRGB(InputStream in),False
+4,ICC_ProfileRGB,3,ICC_ProfileRGB(byte[] data),False
+4,ICC_ProfileRGB,4,"ICC_ProfileRGB(byte[] data, int offset, int length)",False
+4,ICC_ProfileRGB,5,int getNumberOfComponents(),False

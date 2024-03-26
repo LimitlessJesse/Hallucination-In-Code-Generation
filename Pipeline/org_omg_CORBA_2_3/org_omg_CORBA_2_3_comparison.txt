@@ -1,0 +1,25 @@
+Sample: 0 ORB
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CORBA_2_3.ORB package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void destroy()`: This method destroys the ORB instance.
+
+2. `void initialize(int argc, String[] argv)`: This method initializes the ORB instance with the specified command-line arguments.
+
+3. `String to_string()`: This method returns a string representation of the ORB instance.
+
+4. `void run()`: This method runs the ORB instance.
+
+5. `void shutdown(boolean wait_for_completion)`: This method shuts down the ORB instance. If `wait_for_completion` is `true`, the method waits for all outstanding requests to complete before returning.
+================================================================
+

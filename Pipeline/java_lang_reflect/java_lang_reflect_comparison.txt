@@ -1,0 +1,298 @@
+Sample: 0 AccessibleObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.AccessibleObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setAccessible(boolean flag)`: This method sets the accessible flag of this object.
+
+2. `boolean isAccessible()`: This method returns the accessible flag of this object.
+
+3. `void set(Object obj, Object[] args)`: This method sets the value of the field represented by this object.
+
+4. `Object get(Object obj)`: This method returns the value of the field represented by this object.
+
+5. `void setBoolean(Object obj, boolean value)`: This method sets the boolean value of the field represented by this object.
+
+6. `void setByte(Object obj, byte value)`: This method sets the byte value of the field represented by this object.
+
+7. `void setChar(Object obj, char value)`: This method sets the char value of the field represented by this object.
+
+8. `void setShort(Object obj, short value)`: This method sets the short value of the field represented by this object.
+
+9. `void setInt(Object obj, int value)`: This method sets the int value of the field represented by this object.
+
+10. `void setLong(Object obj, long value)`: This method sets the long value of the field represented by this object.
+
+11. `void setFloat(Object obj, float value)`: This method sets the float value of the field represented by this object.
+
+12. `void setDouble(Object obj, double value)`: This method sets the double value of the field represented by this object.
+
+13. `void set(Object obj, Object value)`: This method sets the value of the field represented by this object.
+
+14. `Object get(Object obj)`: This method returns the value of the field represented by this object.
+
+15. `void setBoolean(Object obj, boolean value)`: This method sets the boolean value of the field represented by this object.
+
+16. `void setByte(Object obj, byte value)`: This method sets the byte value of the field represented by this object.
+
+17. `void setChar(Object obj, char value)`: This method sets the char value of the field represented by this object.
+
+18. `void setShort(Object obj, short value)`: This method sets the short value of the field represented by this object.
+
+19. `void setInt(Object obj, int value)`: This method sets the int value of the field represented by this object.
+
+20. `void setLong(Object obj, long value)`: This method sets the long value of the field represented by this object.
+
+21. `void setFloat(Object obj, float value)`: This method sets the float value of the field represented by this object.
+
+22. `void setDouble(Object obj, double value)`: This method sets the double value of the field represented by this object.
+
+23. `void set(Object obj, Object value)`: This method sets the value of the field represented by this object.
+
+24. `Object get(Object obj)`: This method returns the value of the field represented by this object.
+
+25. `void setBoolean(Object obj, boolean value)`: This method sets the boolean value of the field represented by this object.
+================================================================
+
+Sample: 1 Array
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Array package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static Object get(Object array, int index)`: This method returns the element at the specified position in the specified array.
+
+2. `public static int getLength(Object array)`: This method returns the length of the specified array.
+
+3. `public static Object newInstance(Class<?> componentType, int length)`: This method creates a new array with the specified component type and length.
+
+4. `public static void set(Object array, int index, Object a)`: This method sets the element at the specified position in the specified array to the specified value.
+
+5. `public static boolean getBoolean(Object array, int index)`: This method returns the boolean value at the specified position in the specified array.
+================================================================
+
+Sample: 2 Constructor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Constructor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Constructor<T> getDeclaredConstructor(Class<?>... parameterTypes)`: This method returns a Constructor object that reflects the specified constructor of the class or interface represented by this Class object.
+
+2. `T newInstance(Object... initargs)`: This method creates a new instance of the class represented by this Class object.
+
+3. `T newInstance(Object... initargs) throws InstantiationException, IllegalAccessException, InvocationTargetException`: This method creates a new instance of the class represented by this Class object.
+
+4. `T newInstance()`: This method creates a new instance of the class represented by this Class object.
+
+5. `T newInstance() throws InstantiationException, IllegalAccessException`: This method creates a new instance of the class represented by this Class object.
+================================================================
+
+Sample: 3 Executable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Executable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 4 Field
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Field package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canAccess(Object obj)`: This method checks if this field can be accessed by the given object.
+
+2. `void set(Object obj, Object value)`: This method sets the value of the field represented by this `Field` object.
+
+3. `Object get(Object obj)`: This method returns the value of the field represented by this `Field` object.
+
+4. `void setAccessible(boolean flag)`: This method sets the accessible flag for this field.
+
+5. `Class<?> getType()`: This method returns the Class object that represents the type of the field.
+================================================================
+
+Sample: 5 Method
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Method package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 6 Modifier
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Modifier package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getModifiers()`: This method returns the Java language modifiers for this field or method, as a bit mask.
+
+2. `boolean isAbstract()`: This method returns true if and only if the underlying field or method is abstract.
+
+3. `boolean isFinal()`: This method returns true if and only if the underlying field or method is final.
+
+4. `boolean isInterface()`: This method returns true if and only if the underlying field or method is an interface.
+
+5. `boolean isNative()`: This method returns true if and only if the underlying field or method is native.
+
+6. `boolean isPrivate()`: This method returns true if and only if the underlying field or method is private.
+
+7. `boolean isProtected()`: This method returns true if and only if the underlying field or method is protected.
+
+8. `boolean isPublic()`: This method returns true if and only if the underlying field or method is public.
+
+9. `boolean isStatic()`: This method returns true if and only if the underlying field or method is static.
+
+10. `boolean isStrict()`: This method returns true if and only if the underlying field or method is strictfp.
+
+11. `boolean isSynchronized()`: This method returns true if and only if the underlying field or method is synchronized.
+
+12. `boolean isTransient()`: This method returns true if and only if the underlying field or method is transient.
+
+13. `boolean isVolatile()`: This method returns true if and only if the underlying field or method is volatile.
+================================================================
+
+Sample: 7 Parameter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Parameter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 8 Proxy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.Proxy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static Object newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)`: This method creates a new proxy instance.
+
+2. `public Object invoke(Object proxy, Method method, Object[] args)`: This method is used to invoke a method on the proxy instance.
+
+3. `public boolean equals(Object obj)`: This method is used to compare the equality of two proxy instances.
+
+4. `public int hashCode()`: This method is used to get the hash code of the proxy instance.
+
+5. `public String toString()`: This method is used to get a string representation of the proxy instance.
+================================================================
+
+Sample: 9 ReflectPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.reflect.ReflectPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.lang.reflect.ReflectPermission` package:
+
+1. `public ReflectPermission(String name)`: This constructor creates a new `ReflectPermission` object with the specified name.
+
+2. `public ReflectPermission(String name, String actions)`: This constructor creates a new `ReflectPermission` object with the specified name and actions.
+
+3. `public String getActions()`: This method returns the actions associated with this `ReflectPermission` object.
+
+4. `public String getName()`: This method returns the name of this `ReflectPermission` object.
+
+5. `public boolean implies(Permission p)`: This method checks if the specified permission implies this permission.
+
+Each method has a return type and parameters as specified in the format you provided.
+================================================================
+

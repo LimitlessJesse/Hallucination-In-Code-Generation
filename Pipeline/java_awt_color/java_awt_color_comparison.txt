@@ -1,0 +1,125 @@
+Sample: 0 ColorSpace
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.color.ColorSpace package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `float[] fromRGB(float[] rgbval)`: This method converts the given RGB color value to a color value in this color space.
+
+2. `float[] fromCIEXYZ(float[] colorvalue)`: This method converts the given CIE XYZ color value to a color value in this color space.
+
+3. `float[] fromYUV(float[] yuvval)`: This method converts the given YUV color value to a color value in this color space.
+
+4. `float[] fromYCC(float[] yccval)`: This method converts the given YCC color value to a color value in this color space.
+
+5. `float[] fromYUV(float[] yuvval)`: This method converts the given YUV color value to a color value in this color space.
+================================================================
+
+Sample: 1 ICC_ColorSpace
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.color.ICC_ColorSpace package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `float[] fromRGB(float[] rgbval)`: This method converts the given RGB color value to the color space.
+
+2. `float[] fromCIEXYZ(float[] xyzval)`: This method converts the given CIE XYZ color value to the color space.
+
+3. `float[] fromCIEXYZ(float x, float y, float z)`: This method converts the given CIE XYZ color value to the color space.
+
+4. `float[] fromCIELab(float[] labval)`: This method converts the given CIE L*a*b* color value to the color space.
+
+5. `float[] fromCIELab(float l, float a, float b)`: This method converts the given CIE L*a*b* color value to the color space.
+================================================================
+
+Sample: 2 ICC_Profile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.color.ICC_Profile package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ICC_Profile.getInstance(byte[] data)`: This method returns an instance of ICC_Profile from the given byte array.
+
+2. `ICC_Profile.getInstance(File file)`: This method returns an instance of ICC_Profile from the given file.
+
+3. `ICC_Profile.getInstance(InputStream in)`: This method returns an instance of ICC_Profile from the given input stream.
+
+4. `ICC_Profile.getInstance(URL url)`: This method returns an instance of ICC_Profile from the given URL.
+
+5. `ICC_Profile.getInstance(String filename)`: This method returns an instance of ICC_Profile from the given filename.
+================================================================
+
+Sample: 3 ICC_ProfileGray
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.color.ICC_ProfileGray package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ICC_ProfileGray(byte[] data)`: This constructor creates a new ICC_ProfileGray object from the given byte array.
+
+2. `ICC_ProfileGray(InputStream in)`: This constructor creates a new ICC_ProfileGray object from the given input stream.
+
+3. `ICC_ProfileGray(String filename)`: This constructor creates a new ICC_ProfileGray object from the given file.
+
+4. `int getNumberOfGrayComponents()`: This method returns the number of gray components in the profile.
+
+5. `int getGrayComponent(int index)`: This method returns the gray component at the specified index.
+================================================================
+
+Sample: 4 ICC_ProfileRGB
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.color.ICC_ProfileRGB package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ICC_ProfileRGB(String filename)`: This constructor creates an ICC_ProfileRGB object from the specified file.
+
+2. `ICC_ProfileRGB(InputStream in)`: This constructor creates an ICC_ProfileRGB object from the specified input stream.
+
+3. `ICC_ProfileRGB(byte[] data)`: This constructor creates an ICC_ProfileRGB object from the specified byte array.
+
+4. `ICC_ProfileRGB(byte[] data, int offset, int length)`: This constructor creates an ICC_ProfileRGB object from the specified byte array, starting at the specified offset and continuing for the specified length.
+
+5. `int getNumberOfComponents()`: This method returns the number of components in the ICC_ProfileRGB object.
+================================================================
+

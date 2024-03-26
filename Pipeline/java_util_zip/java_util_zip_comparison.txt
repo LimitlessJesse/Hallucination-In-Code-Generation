@@ -1,0 +1,474 @@
+Sample: 0 Adler32
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.Adler32 package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long update(byte[] buffer)`: This method updates the Adler-32 checksum with the bytes from the specified buffer.
+
+2. `long update(byte[] buffer, int offset, int len)`: This method updates the Adler-32 checksum with the bytes from the specified buffer, starting at the specified offset, and continuing for the specified length.
+
+3. `long update(int b)`: This method updates the Adler-32 checksum with the specified byte.
+
+4. `long getValue()`: This method returns the current value of the Adler-32 checksum.
+
+5. `void reset()`: This method resets the Adler-32 checksum to its initial value.
+================================================================
+
+Sample: 1 CheckedInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.CheckedInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+4. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 2 CheckedOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.CheckedOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CheckedOutputStream(OutputStream out, Checksum ck)`: This is the constructor of CheckedOutputStream class. It takes an OutputStream and a Checksum as parameters.
+
+2. `void write(int b)`: This method writes the specified byte to this output stream.
+
+3. `void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+
+4. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+5. `void flush()`: This method flushes this output stream and forces any buffered output bytes to be written out.
+================================================================
+
+Sample: 3 CRC32
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.CRC32 package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void update(int b)`: This method updates the current checksum with the byte.
+2. `void update(byte[] b, int off, int len)`: This method updates the current checksum with the bytes.
+3. `void reset()`: This method resets the checksum to initial value.
+4. `long getValue()`: This method returns the current checksum value.
+5. `void setValue(long value)`: This method sets the current checksum value.
+================================================================
+
+Sample: 4 Deflater
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.Deflater package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setInput(byte[] input)`: This method sets the input data for the deflater.
+2. `public void setDictionary(byte[] dictionary)`: This method sets the preset dictionary for the deflater.
+3. `public void setLevel(int level)`: This method sets the compression level for the deflater.
+4. `public void setStrategy(int strategy)`: This method sets the compression strategy for the deflater.
+5. `public int deflate(byte[] output)`: This method compresses the input data and stores the output in the specified byte array.
+
+Note: The `add()` method is not a direct method of the `Deflater` class and is not recommended to be used. It is a method of the `List` interface, which `Deflater` extends.
+================================================================
+
+Sample: 5 DeflaterInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.DeflaterInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int deflate(byte[] buf)`: This method compresses the data in the input buffer and stores the compressed data in the output buffer.
+
+2. `public int deflate(byte[] buf, int off, int len)`: This method compresses the data in the input buffer and stores the compressed data in the output buffer.
+
+3. `public void end()`: This method indicates the end of the input data.
+
+4. `public boolean finished()`: This method returns true if the input data has been completely processed.
+
+5. `public void reset()`: This method resets the DeflaterInputStream to its initial state.
+================================================================
+
+Sample: 6 DeflaterOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.DeflaterOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setLevel(int level)`: This method sets the compression level for this deflater. The level parameter must be a value between 1 (least compression) and 9 (most compression).
+
+2. `public void setDictionary(byte[] dictionary)`: This method sets the preset dictionary for this deflater.
+
+3. `public void finish()`: This method finishes the current compression, flushes the remaining compressed data to the output stream, and then resets the deflater.
+
+4. `public void reset()`: This method resets the deflater.
+
+5. `public boolean finished()`: This method returns true if the deflater has been finished.
+================================================================
+
+Sample: 7 GZIPInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.GZIPInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream.
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+4. `void close()`: This method closes the input stream and releases any system resources associated with it.
+5. `boolean eof()`: This method tests if the input stream has reached the end of the file.
+================================================================
+
+Sample: 8 GZIPOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.GZIPOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `GZIPOutputStream(OutputStream out)`: This constructor creates a new GZIPOutputStream to write data to the specified output stream.
+
+2. `void write(int b)`: This method writes the specified byte to this output stream.
+
+3. `void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+
+4. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+5. `void finish()`: This method finishes writing to the GZIP output stream. This should be called when all the input has been written.
+================================================================
+
+Sample: 9 Inflater
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.Inflater package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setInput(byte[] input)`: This method sets the input data for the inflater.
+2. `public void setInput(byte[] input, int offset, int count)`: This method sets the input data for the inflater.
+3. `public int inflate(byte[] output)`: This method inflates the input data and stores the result in the output array.
+4. `public int inflate(byte[] output, int offset, int count)`: This method inflates the input data and stores the result in the output array.
+5. `public void end()`: This method ends the inflation process.
+================================================================
+
+Sample: 10 InflaterInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.InflaterInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the compressed stream into the byte array b starting at index off.
+
+2. `public int read(byte[] b)`: This method reads some number of bytes from the compressed stream and stores them into the byte array b.
+
+3. `public long skip(long n)`: This method skips over and discards n bytes of data from the compressed stream.
+
+4. `public int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the compressed stream without blocking.
+
+5. `public void reset()`: This method resets the stream to its initial state.
+================================================================
+
+Sample: 11 InflaterOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.InflaterOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setInput(byte[] input)`: This method sets the input data for the decompression.
+2. `public void setInput(byte[] input, int offset, int count)`: This method sets the input data for the decompression.
+3. `public void setDictionary(byte[] dictionary)`: This method sets the dictionary for the decompression.
+4. `public void setDictionary(byte[] dictionary, int offset, int count)`: This method sets the dictionary for the decompression.
+5. `public void finish()`: This method finishes the decompression.
+================================================================
+
+Sample: 12 ZipEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.ZipEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ZipEntry(String name)`: This constructor creates a new ZipEntry with the specified name.
+
+2. `String getName()`: This method returns the name of this ZipEntry.
+
+3. `void setMethod(int method)`: This method sets the method of this ZipEntry.
+
+4. `int getMethod()`: This method returns the method of this ZipEntry.
+
+5. `void setSize(long size)`: This method sets the size of this ZipEntry.
+
+6. `long getSize()`: This method returns the size of this ZipEntry.
+
+7. `void setCrc(long crc)`: This method sets the CRC-32 checksum of this ZipEntry.
+
+8. `long getCrc()`: This method returns the CRC-32 checksum of this ZipEntry.
+
+9. `void setCompressedSize(long size)`: This method sets the compressed size of this ZipEntry.
+
+10. `long getCompressedSize()`: This method returns the compressed size of this ZipEntry.
+
+11. `void setCompressedMethod(int method)`: This method sets the method used to compress this ZipEntry.
+
+12. `int getCompressedMethod()`: This method returns the method used to compress this ZipEntry.
+
+13. `void setExtra(byte[] extra)`: This method sets the extra field of this ZipEntry.
+
+14. `byte[] getExtra()`: This method returns the extra field of this ZipEntry.
+
+15. `void setComment(String comment)`: This method sets the comment of this ZipEntry.
+
+16. `String getComment()`: This method returns the comment of this ZipEntry.
+
+17. `void setLastModifiedTime(long time)`: This method sets the last modified time of this ZipEntry.
+
+18. `long getLastModifiedTime()`: This method returns the last modified time of this ZipEntry.
+
+19. `void setLastAccessTime(long time)`: This method sets the last access time of this ZipEntry.
+
+20. `long getLastAccessTime()`: This method returns the last access time of this ZipEntry.
+
+21. `void setCreationTime(long time)`: This method sets the creation time of this ZipEntry.
+
+22. `long getCreationTime()`: This method returns the creation time of this ZipEntry.
+
+23. `void setDataOffset(long offset)`: This method sets the data offset of this ZipEntry.
+
+24. `long getDataOffset()`: This method returns the data offset of this ZipEntry.
+
+25. `void setInflater(Inflater inflater)`: This method sets the Inflater for this ZipEntry.
+
+26. `Inflater getInflater()`: This method returns the Inflater for this ZipEntry.
+
+27. `void setInflater(Inflater inflater, int level)`: This method sets the Inflater for this ZipEntry.
+
+28. `void setMethod(int method)`: This method sets the method of this ZipEntry.
+
+29. `int getMethod()`: This method returns the method of this ZipEntry.
+
+30. `void setSize(long size)`: This method sets the size of this ZipEntry.
+
+31. `long getSize()`: This method returns the size of this ZipEntry.
+
+32. `void setCrc(long crc)`: This method sets the CRC-32 checksum of this ZipEntry.
+
+33. `long getCrc()`: This method returns the CRC-32 checksum of this ZipEntry.
+
+34. `void setCompressedSize(long size)`: This method sets the compressed size of this ZipEntry.
+
+35. `long getCompressedSize()`: This method returns the compressed size of this ZipEntry.
+
+36. `void setCompressedMethod(int method)`: This method sets the method used to compress this ZipEntry.
+
+37. `int getCompressedMethod()`: This method returns the method used to compress this ZipEntry.
+
+38. `void setExtra(byte[] extra)`: This method sets the extra field of this ZipEntry.
+
+39. `byte[] getExtra()`: This method returns the extra field of this ZipEntry.
+
+40. `void setComment(String comment)`: This method sets the comment of this ZipEntry.
+
+41. `String getComment()`: This method returns the comment of this ZipEntry.
+
+42. `void setLastModifiedTime(long time)`: This method sets the last modified time of this ZipEntry.
+
+43. `long getLastModifiedTime()`: This method returns the last modified time of this ZipEntry.
+
+44. `void setLastAccessTime(long time)`: This method sets the last access time of this ZipEntry.
+
+45. `long getLastAccessTime()`: This method returns the last access time of this ZipEntry.
+
+46. `void setCreationTime(long time)`: This method sets the creation time of this ZipEntry.
+
+47. `long getCreationTime()`: This method returns the creation time of this ZipEntry.
+
+48. `void setDataOffset(long offset)`: This method sets the data offset of this ZipEntry.
+
+49. `long getDataOffset()`: This method returns the data offset of this ZipEntry.
+
+50. `void setInflater(Inflater inflater)`: This method sets the Inflater for this ZipEntry.
+
+51. `Inflater getInflater()`: This method returns the
+================================================================
+
+Sample: 13 ZipFile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.ZipFile package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ZipFile(File file)`: This constructor creates a new ZipFile instance for the specified file.
+
+2. `ZipEntry getEntry(String name)`: This method returns a ZipEntry for the specified name.
+
+3. `Enumeration<? extends ZipEntry> entries()`: This method returns an Enumeration of the ZipEntries in this ZipFile.
+
+4. `InputStream getInputStream(ZipEntry e)`: This method returns an InputStream for the specified ZipEntry.
+
+5. `void close()`: This method closes the ZipFile.
+================================================================
+
+Sample: 14 ZipInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.ZipInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ZipInputStream(InputStream in)`: This constructor creates a new ZipInputStream and associates it with the specified InputStream.
+
+2. `int read()`: This method reads the next byte of data from the input stream.
+
+3. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+4. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+5. `void closeEntry()`: This method closes the current ZIP file entry and positions the stream at the beginning of the next entry.
+================================================================
+
+Sample: 15 ZipOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.zip.ZipOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void putNextEntry(ZipEntry ze)`: This method sets the current entry in the ZipOutputStream to the specified ZipEntry.
+
+2. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to the entry in the ZipOutputStream.
+
+3. `void closeEntry()`: This method closes the current ZipEntry and positions the stream to write the local file header of the next entry.
+
+4. `void finish()`: This method finishes writing the ZipOutputStream.
+
+5. `void write(int b)`: This method writes the specified byte to the ZipOutputStream.
+================================================================
+

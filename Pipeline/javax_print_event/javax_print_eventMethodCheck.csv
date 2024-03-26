@@ -1,0 +1,35 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,PrintEvent,1,PrintEvent printEvent,False
+0,PrintEvent,2,PrintJob printJob,False
+0,PrintEvent,3,PrintService printService,False
+0,PrintEvent,4,PrintServiceAttributeSet printServiceAttributeSet,False
+0,PrintEvent,5,PrintServiceLookup printServiceLookup,False
+0,PrintEvent,6,PrintServiceAttributeSet printServiceAttributeSet,False
+0,PrintEvent,7,PrintServiceAttributeSet printServiceAttributeSet,False
+0,PrintEvent,8,PrintServiceAttributeSet printServiceAttributeSet,False
+0,PrintEvent,9,PrintServiceAttributeSet printServiceAttributeSet,False
+0,PrintEvent,10,PrintServiceAttributeSet printServiceAttributeSet,False
+1,PrintJobAdapter,1,PrintJobAdapter(),False
+1,PrintJobAdapter,2,void printDataTransferCompleted(PrintJobEvent pje),True
+1,PrintJobAdapter,3,void printJobCanceled(PrintJobEvent pje),True
+1,PrintJobAdapter,4,void printJobCompleted(PrintJobEvent pje),True
+1,PrintJobAdapter,5,void printJobFailed(PrintJobEvent pje),True
+1,PrintJobAdapter,6,void printJobNoMoreEvents(PrintJobEvent pje),True
+1,PrintJobAdapter,7,void printJobRequiresAttention(PrintJobEvent pje),True
+1,PrintJobAdapter,8,void printJobSuspended(PrintJobEvent pje),False
+1,PrintJobAdapter,9,void printJobWaited(PrintJobEvent pje),False
+2,PrintJobAttributeEvent,1,PrintJobAttributeEvent getPrintJobAttributeEvent(),False
+2,PrintJobAttributeEvent,2,PrintRequestAttribute getRequestAttribute(),False
+2,PrintJobAttributeEvent,3,PrintRequestAttribute getOldRequestAttribute(),False
+2,PrintJobAttributeEvent,4,PrintRequestAttribute getNewRequestAttribute(),False
+2,PrintJobAttributeEvent,5,PrintServiceAttribute getServiceAttribute(),False
+3,PrintJobEvent,1,PrintJobEvent.getPrintJob(),False
+3,PrintJobEvent,2,PrintJobEvent.getSource(),False
+3,PrintJobEvent,3,PrintJobEvent.getType(),False
+3,PrintJobEvent,4,PrintJobEvent.getWhen(),False
+3,PrintJobEvent,5,PrintJobEvent.isConsumed(),False
+4,PrintServiceAttributeEvent,1,"PrintServiceAttributeEvent(PrintServiceAttributeEvent source, PrintServiceAttributeSet attributeSet)",False
+4,PrintServiceAttributeEvent,2,PrintServiceAttributeSet getAttributes(),True
+4,PrintServiceAttributeEvent,3,PrintService getPrintService(),True
+4,PrintServiceAttributeEvent,4,PrintServiceAttributeEvent.Source getSource(),False
+4,PrintServiceAttributeEvent,5,PrintServiceAttributeEvent.Type getType(),False

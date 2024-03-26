@@ -1,0 +1,207 @@
+Sample: 0 BeanContextMembershipEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean contains(Object o) from java.beans.beancontext.BeanContextMembershipEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `contains(Object o)` method in `java.beans.beancontext.BeanContextMembershipEvent` is used to check if the specified object is present in the list or not. It returns `true` if the object is found in the list, else it returns `false`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+
+        System.out.println(list.contains("Hello"));  // Output: true
+        System.out.println(list.contains("Java"));  // Output: false
+    }
+}
+```
+
+In this code snippet, we first create an `ArrayList` of `String` objects. We then add two strings to the list. We then use the `contains()` method to check if the list contains "Hello" and "Java". The output will be `true` for "Hello" and `false` for "Java".
+================================================================
+
+Sample: 1 BeanContextMembershipEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from java.beans.beancontext.BeanContextMembershipEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `java.beans.beancontext.BeanContextMembershipEvent` is used to get the number of elements in the BeanContextMembershipEvent.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.beans.beancontext.BeanContextMembershipEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        BeanContextMembershipEvent event = new BeanContextMembershipEvent(new Object(), "test");
+        event.addBeanContextMembershipListener(e -> System.out.println("BeanContextMembershipEvent: " + e.getID()));
+        event.addBeanContextMembershipListener(e -> System.out.println("BeanContextMembershipEvent size: " + e.size()));
+    }
+}
+```
+
+In this code snippet, we create a new `BeanContextMembershipEvent` object and add two `BeanContextMembershipListener`. The first one is a lambda function that prints the ID of the event. The second one is also a lambda function that prints the size of the event.
+
+Please note that the `BeanContextMembershipEvent` class is not part of the standard Java API and is likely a custom class or a part of a third-party library. The `size()` method is a method of the `BeanContextMembershipEvent` class and it is not a part of the standard Java API.
+================================================================
+
+Sample: 2 BeanContextSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from java.beans.beancontext.BeanContextSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void clear()` method in `java.beans.beancontext.BeanContextSupport` is used to remove all of the elements from this list.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+        System.out.println("Before clear: " + list);
+        list.clear();
+        System.out.println("After clear: " + list);
+    }
+}
+```
+
+In this code snippet, we first create an `ArrayList` of `String` and add two elements to it. Then we print the list before and after calling the `clear()` method. After calling the `clear()` method, the list is empty.
+================================================================
+
+Sample: 3 BeanContextSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean contains(Object o) from java.beans.beancontext.BeanContextSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `contains(Object o)` method in `java.beans.beancontext.BeanContextSupport` is used to check if the specified element is present in the list or not. It returns `true` if the element is found in the list, otherwise `false`.
+
+Here is the complete code snippet:
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        list.add("World");
+
+        System.out.println(list.contains("Hello"));  // Output: true
+        System.out.println(list.contains("Java"));  // Output: false
+    }
+}
+```
+
+In this code snippet, we first create an `ArrayList` of `String` type and add some elements to it. Then we use the `contains()` method to check if the list contains the specified elements. The output will be `true` for the first `contains()` call and `false` for the second one.
+================================================================
+

@@ -1,0 +1,100 @@
+Sample: 0 AudioFileReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.spi.AudioFileReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioFileReader.getAudioFileFormat(File file)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+
+2. `AudioFileReader.getAudioFileFormat(URL url)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+
+3. `AudioFileReader.getAudioFileFormat(InputStream stream)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+
+4. `AudioFileReader.getAudioFileFormat(byte[] data)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+
+5. `AudioFileReader.getAudioFileFormat(byte[] data, int offset, int length)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+================================================================
+
+Sample: 1 AudioFileWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.spi.AudioFileWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canWrite(AudioFileFormat.Type fileType)`: This method returns true if this AudioFileWriter can write files of the specified type.
+
+2. `boolean write(AudioInputStream stream, AudioFileFormat.Type fileType, File out)`: This method writes the specified AudioInputStream to the specified file.
+
+3. `boolean write(AudioInputStream stream, AudioFileFormat.Type fileType, OutputStream out)`: This method writes the specified AudioInputStream to the specified OutputStream.
+
+4. `boolean write(AudioFileFormat audioFileFormat, OutputStream out)`: This method writes the specified AudioFileFormat to the specified OutputStream.
+
+5. `boolean write(AudioFileFormat audioFileFormat, File out)`: This method writes the specified AudioFileFormat to the specified file.
+================================================================
+
+Sample: 2 FormatConversionProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.spi.FormatConversionProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canConvertInput(AudioFormat sourceFormat)`: This method checks if the provider can convert the given source format to a target format.
+
+2. `boolean canConvertOutput(AudioFormat targetFormat)`: This method checks if the provider can convert the given source format to a target format.
+
+3. `AudioFormat[] getTargetFormats(AudioFormat sourceFormat)`: This method returns an array of AudioFormat objects that the provider can convert the source format to.
+
+4. `AudioFormat[] getSourceFormats(AudioFormat targetFormat)`: This method returns an array of AudioFormat objects that the provider can convert to the target format.
+
+5. `AudioInputStream getAudioInputStream(AudioFormat targetFormat, AudioInputStream sourceStream)`: This method converts the given source stream to the target format and returns an AudioInputStream.
+================================================================
+
+Sample: 3 MixerProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.spi.MixerProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MixerProvider getDefault()`: This method returns the default MixerProvider.
+
+2. `Mixer.Info[] getMixerInfo()`: This method returns an array of Mixer.Info objects describing the mixers provided by this MixerProvider.
+
+3. `Mixer getMixer(Mixer.Info info)`: This method returns a Mixer object for the specified Mixer.Info object.
+
+4. `boolean isMixerSupported(Mixer.Info info)`: This method returns true if the specified Mixer.Info object is supported by this MixerProvider.
+
+5. `ObjectProperty[] getObjectProperties()`: This method returns an array of ObjectProperty objects describing the properties of this MixerProvider.
+================================================================
+

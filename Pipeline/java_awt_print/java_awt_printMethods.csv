@@ -1,0 +1,53 @@
+ClassName,Method,Return Type
+Book,"append(Printable painter, PageFormat page)",void
+Book,"append(Printable painter, PageFormat page, int numPages)",void
+Book,getNumberOfPages(),int
+Book,getPageFormat(int pageIndex),PageFormat
+Book,getPrintable(int pageIndex),Printable
+Book,"setPage(int pageIndex, Printable painter, PageFormat page)",void
+PageFormat,clone(),Object
+PageFormat,getHeight(),double
+PageFormat,getImageableHeight(),double
+PageFormat,getImageableWidth(),double
+PageFormat,getImageableX(),double
+PageFormat,getImageableY(),double
+PageFormat,getMatrix(),double[]
+PageFormat,getOrientation(),int
+PageFormat,getPaper(),Paper
+PageFormat,getWidth(),double
+PageFormat,setOrientation(int orientation),void
+PageFormat,setPaper(Paper paper),void
+Paper,clone(),Object
+Paper,getHeight(),double
+Paper,getImageableHeight(),double
+Paper,getImageableWidth(),double
+Paper,getImageableX(),double
+Paper,getImageableY(),double
+Paper,getWidth(),double
+Paper,"setImageableArea(double x, double y, double width, double height)",void
+Paper,"setSize(double width, double height)",void
+PrinterJob,cancel(),abstract void
+PrinterJob,defaultPage(),PageFormat
+PrinterJob,defaultPage(PageFormat page),abstract PageFormat
+PrinterJob,getCopies(),abstract int
+PrinterJob,getJobName(),abstract String
+PrinterJob,getPageFormat(PrintRequestAttributeSet attributes),PageFormat
+PrinterJob,getPrinterJob(),static PrinterJob
+PrinterJob,getPrintService(),PrintService
+PrinterJob,getUserName(),abstract String
+PrinterJob,isCancelled(),abstract boolean
+PrinterJob,lookupPrintServices(),static PrintService[]
+PrinterJob,lookupStreamPrintServices(String mimeType),static StreamPrintServiceFactory[]
+PrinterJob,pageDialog(PageFormat page),abstract PageFormat
+PrinterJob,pageDialog(PrintRequestAttributeSet attributes),PageFormat
+PrinterJob,print(),abstract void
+PrinterJob,print(PrintRequestAttributeSet attributes),void
+PrinterJob,printDialog(),abstract boolean
+PrinterJob,printDialog(PrintRequestAttributeSet attributes),boolean
+PrinterJob,setCopies(int copies),abstract void
+PrinterJob,setJobName(String jobName),abstract void
+PrinterJob,setPageable(Pageable document),abstract void
+PrinterJob,setPrintable(Printable painter),abstract void
+PrinterJob,"setPrintable(Printable painter, PageFormat format)",abstract void
+PrinterJob,setPrintService(PrintService service),void
+PrinterJob,validatePage(PageFormat page),abstract PageFormat

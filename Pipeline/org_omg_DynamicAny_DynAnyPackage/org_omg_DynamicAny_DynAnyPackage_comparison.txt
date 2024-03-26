@@ -1,0 +1,50 @@
+Sample: 0 InvalidValueHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.DynamicAny.DynAnyPackage.InvalidValueHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isInvalidValue(DynAny dynAny)`: This method checks if the specified DynAny is an invalid value.
+
+2. `DynAny createInvalidValue(String invalidValue)`: This method creates an invalid value with the specified string.
+
+3. `DynAny createInvalidValue(DynAny dynAny)`: This method creates an invalid value with the specified DynAny.
+
+4. `DynAny createInvalidValue(DynAny dynAny, String invalidValue)`: This method creates an invalid value with the specified DynAny and string.
+
+5. `DynAny createInvalidValue(DynAny dynAny, DynAny invalidValue)`: This method creates an invalid value with the specified DynAny and DynAny.
+================================================================
+
+Sample: 1 TypeMismatchHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.DynamicAny.DynAnyPackage.TypeMismatchHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isTypeMismatch(DynAny dynAny)`: This method checks if the given DynAny object is of type mismatch.
+
+2. `DynAny toDynAny(Object obj)`: This method converts the given object to a DynAny object.
+
+3. `Object toObject(DynAny dynAny)`: This method converts the given DynAny object to an Object.
+
+4. `DynAny toDynAny(Object obj, String typeName)`: This method converts the given object to a DynAny object with the specified type name.
+
+5. `Object toObject(DynAny dynAny, String typeName)`: This method converts the given DynAny object to an Object with the specified type name.
+================================================================
+

@@ -1,0 +1,352 @@
+Sample: FeatureDescriptor_2
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/FeatureDescriptor_2.java:7: error: constructor FeatureDescriptor in class FeatureDescriptor cannot be applied to given types;
+        FeatureDescriptor fd = new FeatureDescriptor(null, null);
+                               ^
+  required: FeatureDescriptor,FeatureDescriptor
+  found:    <null>,<null>
+  reason: FeatureDescriptor(FeatureDescriptor,FeatureDescriptor) is not public in FeatureDescriptor; cannot be accessed from outside package
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: FeatureDescriptor_3
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/FeatureDescriptor_3.java:7: error: constructor FeatureDescriptor in class FeatureDescriptor cannot be applied to given types;
+        FeatureDescriptor fd = new FeatureDescriptor(null, null);
+                               ^
+  required: FeatureDescriptor,FeatureDescriptor
+  found:    <null>,<null>
+  reason: FeatureDescriptor(FeatureDescriptor,FeatureDescriptor) is not public in FeatureDescriptor; cannot be accessed from outside package
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: PropertyChangeEvent_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PropertyChangeEvent_3
+----------------------------------------------------------------
+================================================================
+
+Sample: PropertyChangeEvent_4
+----------------------------------------------------------------
+================================================================
+
+Sample: PropertyChangeSupport_1
+----------------------------------------------------------------
+stdout:
+Property changed: name old value: oldValue new value: newValue
+
+================================================================
+
+Sample: PropertyChangeSupport_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PropertyChangeSupport_3
+----------------------------------------------------------------
+stdout:
+Property changed: propertyName, old value: old, new value: new
+
+================================================================
+
+Sample: PropertyChangeSupport_4
+----------------------------------------------------------------
+stdout:
+Property changed: myProperty
+Old value: 10
+New value: 20
+
+================================================================
+
+Sample: PropertyChangeSupport_5
+----------------------------------------------------------------
+stdout:
+Property changed: myProperty
+Old value: false
+New value: true
+
+================================================================
+
+Sample: PropertyDescriptor_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.beans.IntrospectionException: Method not found: isSize
+	at java.desktop/java.beans.PropertyDescriptor.<init>(PropertyDescriptor.java:110)
+	at java.desktop/java.beans.PropertyDescriptor.<init>(PropertyDescriptor.java:74)
+	at PropertyDescriptor_5.main(PropertyDescriptor_5.java:10)
+
+================================================================
+
+Sample: PropertyDescriptor_6
+----------------------------------------------------------------
+stdout:
+John Doe
+
+================================================================
+
+Sample: PropertyDescriptor_7
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_8
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_8.main(PropertyDescriptor_8.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_9
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_10.main(PropertyDescriptor_10.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_11
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_12
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_12.main(PropertyDescriptor_12.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_13
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_14
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_14.main(PropertyDescriptor_14.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_15
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_16
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_16.main(PropertyDescriptor_16.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_17
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_18
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_18.main(PropertyDescriptor_18.java:11)
+
+================================================================
+
+Sample: PropertyDescriptor_19
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: PropertyDescriptor_20
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot read the array length because "<local3>" is null
+	at PropertyDescriptor_20.main(PropertyDescriptor_20.java:11)
+
+================================================================
+
+Sample: PropertyEditorSupport_1
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PropertyEditorSupport_2
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PropertyEditorSupport_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PropertyEditorSupport_4
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PropertyEditorSupport_5
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: SimpleBeanInfo_3
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/SimpleBeanInfo_3.java:3: error: class MyBeanInfo is public, should be declared in a file named MyBeanInfo.java
+public class MyBeanInfo extends SimpleBeanInfo {
+       ^
+./java_beans/javaFiles/SimpleBeanInfo_3.java:8: error: cannot find symbol
+            bd.setValue(BeanDescriptor.PROPERTY_COUNT_PROPERTY, "propertyCount");
+                                      ^
+  symbol:   variable PROPERTY_COUNT_PROPERTY
+  location: class BeanDescriptor
+./java_beans/javaFiles/SimpleBeanInfo_3.java:9: error: cannot find symbol
+            bd.setValue(BeanDescriptor.PROPERTY_SUPPORT_PROPERTY, "propertySupport");
+                                      ^
+  symbol:   variable PROPERTY_SUPPORT_PROPERTY
+  location: class BeanDescriptor
+./java_beans/javaFiles/SimpleBeanInfo_3.java:15: error: cannot find symbol
+                beanInfos[i] = new PropertyDescriptor(pds[i].getName(), getBeanClass());
+                                                                        ^
+  symbol:   method getBeanClass()
+  location: class MyBeanInfo
+./java_beans/javaFiles/SimpleBeanInfo_3.java:15: error: incompatible types: PropertyDescriptor cannot be converted to BeanInfo
+                beanInfos[i] = new PropertyDescriptor(pds[i].getName(), getBeanClass());
+                               ^
+5 errors
+
+
+================================================================
+
+Sample: SimpleBeanInfo_4
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/SimpleBeanInfo_4.java:10: error: cannot find symbol
+                    Method[] methods = getBeanClass().getMethods();
+                                       ^
+  symbol: method getBeanClass()
+1 error
+
+
+================================================================
+
+Sample: SimpleBeanInfo_5
+----------------------------------------------------------------
+================================================================
+
+Sample: VetoableChangeSupport_1
+----------------------------------------------------------------
+stdout:
+Vetoed
+
+================================================================
+
+Sample: VetoableChangeSupport_2
+----------------------------------------------------------------
+================================================================
+
+Sample: VetoableChangeSupport_3
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/VetoableChangeSupport_3.java:21: error: cannot find symbol
+        Main main = new Main();
+        ^
+  symbol:   class Main
+  location: class VetoableChangeSupport_3
+./java_beans/javaFiles/VetoableChangeSupport_3.java:21: error: cannot find symbol
+        Main main = new Main();
+                        ^
+  symbol:   class Main
+  location: class VetoableChangeSupport_3
+./java_beans/javaFiles/VetoableChangeSupport_3.java:25: error: cannot find symbol
+            public void vetoableChange(PropertyChangeEvent evt) throws PropertyVetoException {
+                                                                       ^
+  symbol: class PropertyVetoException
+./java_beans/javaFiles/VetoableChangeSupport_3.java:27: error: cannot find symbol
+                    throw new PropertyVetoException("Vetoed change to 'Hello'", evt);
+                              ^
+  symbol: class PropertyVetoException
+./java_beans/javaFiles/VetoableChangeSupport_3.java:34: error: cannot find symbol
+        } catch (PropertyVetoException e) {
+                 ^
+  symbol:   class PropertyVetoException
+  location: class VetoableChangeSupport_3
+5 errors
+
+
+================================================================
+
+Sample: XMLDecoder_2
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at XMLDecoder_2.main(XMLDecoder_2.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: XMLDecoder_3
+----------------------------------------------------------------
+output:
+./java_beans/javaFiles/XMLDecoder_3.java:10: error: unreported exception FileNotFoundException; must be caught or declared to be thrown
+            decoder = new XMLDecoder(new BufferedInputStream(new FileInputStream("file.xml")));
+                                                             ^
+1 error
+
+
+================================================================
+

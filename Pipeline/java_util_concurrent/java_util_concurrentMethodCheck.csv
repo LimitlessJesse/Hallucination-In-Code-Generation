@@ -1,0 +1,226 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractExecutorService,1,boolean add(E e),False
+0,AbstractExecutorService,2,void execute(Runnable command),False
+0,AbstractExecutorService,3,List<Runnable> shutdownNow(),False
+0,AbstractExecutorService,4,boolean isShutdown(),False
+0,AbstractExecutorService,5,boolean isTerminated(),False
+1,ArrayBlockingQueue,1,boolean add(E e),True
+1,ArrayBlockingQueue,2,boolean offer(E e),True
+1,ArrayBlockingQueue,3,E take(),True
+1,ArrayBlockingQueue,4,E poll(),True
+1,ArrayBlockingQueue,5,E peek(),True
+2,CompletableFuture,1,CompletableFuture<Void> runAsync(Runnable runnable),True
+2,CompletableFuture,2,"<U> CompletableFuture<U> thenApply(Function<? super T,? extends U> fn)",True
+2,CompletableFuture,3,CompletableFuture<Void> thenAccept(Consumer<? super T> action),True
+2,CompletableFuture,4,"CompletableFuture<T> thenCompose(Function<? super T,? extends CompletionStage<U>> fn)",False
+2,CompletableFuture,5,"CompletableFuture<T> exceptionally(Function<Throwable,? extends T> fn)",True
+3,ConcurrentHashMap,1,"boolean putIfAbsent(K key, V value)",False
+3,ConcurrentHashMap,2,"V put(K key, V value)",True
+3,ConcurrentHashMap,3,V get(Object key),True
+3,ConcurrentHashMap,4,V remove(Object key),True
+3,ConcurrentHashMap,5,"boolean replace(K key, V oldValue, V newValue)",True
+4,ConcurrentHashMap.KeySetView,1,boolean add(E e),False
+4,ConcurrentHashMap.KeySetView,2,boolean remove(Object o),True
+4,ConcurrentHashMap.KeySetView,3,void clear(),True
+4,ConcurrentHashMap.KeySetView,4,boolean contains(Object o),True
+4,ConcurrentHashMap.KeySetView,5,boolean isEmpty(),True
+5,ConcurrentLinkedDeque,1,boolean add(E e),True
+5,ConcurrentLinkedDeque,2,boolean addFirst(E e),False
+5,ConcurrentLinkedDeque,3,boolean addLast(E e),False
+5,ConcurrentLinkedDeque,4,E getFirst(),True
+5,ConcurrentLinkedDeque,5,E getLast(),True
+6,ConcurrentLinkedQueue,1,boolean add(E e),True
+6,ConcurrentLinkedQueue,2,boolean offer(E e),True
+6,ConcurrentLinkedQueue,3,E poll(),True
+6,ConcurrentLinkedQueue,4,E peek(),True
+6,ConcurrentLinkedQueue,5,boolean remove(Object o),True
+7,ConcurrentSkipListMap,1,ConcurrentSkipListMap(),False
+7,ConcurrentSkipListMap,2,boolean containsKey(Object key),True
+7,ConcurrentSkipListMap,3,V get(Object key),True
+7,ConcurrentSkipListMap,4,"V put(K key, V value)",True
+7,ConcurrentSkipListMap,5,V remove(Object key),True
+8,ConcurrentSkipListSet,1,boolean add(E e),True
+8,ConcurrentSkipListSet,2,void clear(),True
+8,ConcurrentSkipListSet,3,boolean contains(Object o),True
+8,ConcurrentSkipListSet,4,boolean remove(Object o),True
+8,ConcurrentSkipListSet,5,int size(),True
+9,CopyOnWriteArrayList,1,boolean add(E e),True
+9,CopyOnWriteArrayList,2,E get(int index),True
+9,CopyOnWriteArrayList,3,"E set(int index, E element)",True
+9,CopyOnWriteArrayList,4,"void add(int index, E element)",True
+9,CopyOnWriteArrayList,5,E remove(int index),True
+10,CopyOnWriteArraySet,1,boolean add(E e),True
+10,CopyOnWriteArraySet,2,boolean addIfAbsent(E e),False
+10,CopyOnWriteArraySet,3,void clear(),True
+10,CopyOnWriteArraySet,4,boolean contains(Object o),True
+10,CopyOnWriteArraySet,5,boolean containsAll(Collection<?> c),True
+11,CountDownLatch,1,CountDownLatch(int count),False
+11,CountDownLatch,2,void await(),True
+11,CountDownLatch,3,void countDown(),True
+11,CountDownLatch,4,long getCount(),True
+11,CountDownLatch,5,"void await(long timeout, TimeUnit unit)",False
+12,CountedCompleter,1,CountedCompleter(),False
+12,CountedCompleter,2,addToCompletionCount(int value),False
+12,CountedCompleter,3,decrementCompletionCount(),False
+12,CountedCompleter,4,getCompletionCount(),False
+12,CountedCompleter,5,forceCompletion(),False
+13,CyclicBarrier,1,CyclicBarrier(int parties),False
+13,CyclicBarrier,2,int await(),True
+13,CyclicBarrier,3,"int await(long timeout, TimeUnit unit)",True
+13,CyclicBarrier,4,int getNumberWaiting(),True
+13,CyclicBarrier,5,int getParties(),True
+14,DelayQueue,1,boolean add(E e),True
+14,DelayQueue,2,E take(),True
+14,DelayQueue,3,E poll(),True
+14,DelayQueue,4,E peek(),True
+14,DelayQueue,5,long size(),False
+15,Exchanger,1,Exchanger(),False
+15,Exchanger,2,exchange(V x),False
+15,Exchanger,3,"exchange(V x, long timeout, TimeUnit unit)",False
+15,Exchanger,4,"V exchange(V x, long timeout, TimeUnit unit) throws InterruptedException, TimeoutException",True
+15,Exchanger,5,V exchange(V x) throws InterruptedException,True
+16,ExecutorCompletionService,1,boolean add(E e),False
+16,ExecutorCompletionService,2,E remove(int index),False
+16,ExecutorCompletionService,3,boolean remove(Object o),False
+16,ExecutorCompletionService,4,E get(int index),False
+16,ExecutorCompletionService,5,"E set(int index, E element)",False
+17,Executors,1,ExecutorService newFixedThreadPool(int nThreads),True
+17,Executors,2,void execute(Runnable command),False
+17,Executors,3,Future<?> submit(Runnable task),False
+17,Executors,4,<T> Future<T> submit(Callable<T> task),False
+17,Executors,5,void shutdown(),False
+18,ForkJoinPool,1,ForkJoinPool(),False
+18,ForkJoinPool,2,submit(ForkJoinTask<V> task),False
+18,ForkJoinPool,3,invoke(ForkJoinTask<V> task),False
+18,ForkJoinPool,4,execute(Runnable task),False
+18,ForkJoinPool,5,execute(ForkJoinTask<?> task),False
+18,ForkJoinPool,6,submit(Runnable task),False
+18,ForkJoinPool,7,submit(Callable<V> task),False
+18,ForkJoinPool,8,invoke(Runnable task),False
+18,ForkJoinPool,9,invoke(Callable<V> task),False
+18,ForkJoinPool,10,"execute(ForkJoinTask<?> task, ForkJoinWorkerThread wt)",False
+18,ForkJoinPool,11,"submit(ForkJoinTask<V> task, ForkJoinWorkerThread wt)",False
+18,ForkJoinPool,12,"execute(Runnable task, ForkJoinWorkerThread wt)",False
+18,ForkJoinPool,13,"submit(Callable<V> task, ForkJoinWorkerThread wt)",False
+18,ForkJoinPool,14,"submit(Runnable task, ForkJoinWorkerThread wt)",False
+18,ForkJoinPool,15,"submit(Callable<V> task, ForkJoinPool pool)",False
+18,ForkJoinPool,16,"submit(Runnable task, ForkJoinPool pool)",False
+18,ForkJoinPool,17,"submit(ForkJoinTask<V> task, ForkJoinPool pool)",False
+18,ForkJoinPool,18,"submit(Callable<V> task, ForkJoinPool pool)",False
+18,ForkJoinPool,19,"submit(Runnable task, ForkJoinPool pool)",False
+18,ForkJoinPool,20,"submit(ForkJoinTask<V> task, ForkJoinWorkerThread wt, int priority)",False
+19,ForkJoinTask,1,ForkJoinTask<V> fork(),True
+19,ForkJoinTask,2,V getRawResult(),True
+19,ForkJoinTask,3,void setRawResult(V value),True
+19,ForkJoinTask,4,boolean isCancelled(),True
+19,ForkJoinTask,5,void cancel(boolean mayInterruptIfRunning),False
+20,ForkJoinWorkerThread,1,ForkJoinWorkerThread(ForkJoinPool pool),False
+20,ForkJoinWorkerThread,2,void start(),False
+20,ForkJoinWorkerThread,3,void run(),True
+20,ForkJoinWorkerThread,4,void join(),False
+20,ForkJoinWorkerThread,5,void interrupt(),False
+21,FutureTask,1,boolean cancel(boolean mayInterruptIfRunning),True
+21,FutureTask,2,boolean isCancelled(),True
+21,FutureTask,3,boolean isDone(),True
+21,FutureTask,4,V get(),True
+21,FutureTask,5,"V get(long timeout, TimeUnit unit)",True
+22,LinkedBlockingDeque,1,boolean add(E e),True
+22,LinkedBlockingDeque,2,boolean offer(E e),True
+22,LinkedBlockingDeque,3,boolean offerFirst(E e),True
+22,LinkedBlockingDeque,4,boolean offerLast(E e),True
+22,LinkedBlockingDeque,5,E remove(),True
+22,LinkedBlockingDeque,6,E poll(),True
+22,LinkedBlockingDeque,7,E pollFirst(),True
+22,LinkedBlockingDeque,8,E pollLast(),True
+22,LinkedBlockingDeque,9,E getFirst(),True
+22,LinkedBlockingDeque,10,E getLast(),True
+22,LinkedBlockingDeque,11,E peek(),True
+22,LinkedBlockingDeque,12,E peekFirst(),True
+22,LinkedBlockingDeque,13,E peekLast(),True
+22,LinkedBlockingDeque,14,boolean removeFirstOccurrence(Object o),True
+22,LinkedBlockingDeque,15,boolean removeLastOccurrence(Object o),True
+22,LinkedBlockingDeque,16,boolean remove(Object o),True
+22,LinkedBlockingDeque,17,boolean contains(Object o),True
+22,LinkedBlockingDeque,18,int size(),True
+22,LinkedBlockingDeque,19,boolean isEmpty(),False
+22,LinkedBlockingDeque,20,void clear(),True
+23,LinkedBlockingQueue,1,boolean add(E e),False
+23,LinkedBlockingQueue,2,E remove(),False
+23,LinkedBlockingQueue,3,boolean offer(E e),True
+23,LinkedBlockingQueue,4,E poll(),True
+23,LinkedBlockingQueue,5,E peek(),True
+24,LinkedTransferQueue,1,boolean add(E e),True
+24,LinkedTransferQueue,2,E take(),True
+24,LinkedTransferQueue,3,boolean tryTransfer(E e),True
+24,LinkedTransferQueue,4,boolean hasWaitingConsumer(),True
+24,LinkedTransferQueue,5,int size(),True
+25,Phaser,1,int register(),True
+25,Phaser,2,int arrive(),True
+25,Phaser,3,int arriveAndAwaitAdvance(),True
+25,Phaser,4,int arriveAndDeregister(),True
+25,Phaser,5,boolean forceTermination(),False
+26,PriorityBlockingQueue,1,boolean add(E e),True
+26,PriorityBlockingQueue,2,E poll(),True
+26,PriorityBlockingQueue,3,E peek(),True
+26,PriorityBlockingQueue,4,boolean remove(Object o),True
+26,PriorityBlockingQueue,5,boolean contains(Object o),True
+27,RecursiveAction,1,RecursiveAction,False
+27,RecursiveAction,2,RecursiveAction.compute(),False
+27,RecursiveAction,3,RecursiveAction.fork(),False
+27,RecursiveAction,4,RecursiveAction.join(),False
+27,RecursiveAction,5,RecursiveAction.invoke(),False
+28,RecursiveTask,1,E get(int index),False
+28,RecursiveTask,2,"E set(int index, E element)",False
+28,RecursiveTask,3,boolean add(E e),False
+28,RecursiveTask,4,E remove(int index),False
+28,RecursiveTask,5,boolean addAll(Collection<? extends E> c),False
+29,ScheduledThreadPoolExecutor,1,ScheduledThreadPoolExecutor(int corePoolSize),False
+29,ScheduledThreadPoolExecutor,2,"void schedule(Runnable command, long delay, TimeUnit unit)",False
+29,ScheduledThreadPoolExecutor,3,"ScheduledFuture<?> scheduleAtFixedRate(Runnable command, long initialDelay, long period, TimeUnit unit)",True
+29,ScheduledThreadPoolExecutor,4,"ScheduledFuture<?> scheduleWithFixedDelay(Runnable command, long initialDelay, long delay, TimeUnit unit)",True
+29,ScheduledThreadPoolExecutor,5,void shutdown(),True
+30,Semaphore,1,Semaphore(int permits),False
+30,Semaphore,2,void acquire(),True
+30,Semaphore,3,void acquire(int permits),True
+30,Semaphore,4,void release(),True
+30,Semaphore,5,void release(int permits),True
+30,Semaphore,6,int availablePermits(),True
+30,Semaphore,7,boolean tryAcquire(),True
+30,Semaphore,8,"boolean tryAcquire(long timeout, TimeUnit unit)",True
+30,Semaphore,9,boolean tryAcquire(int permits),True
+30,Semaphore,10,"boolean tryAcquire(int permits, long timeout, TimeUnit unit)",True
+31,SynchronousQueue,1,boolean offer(E e),True
+31,SynchronousQueue,2,E take(),True
+31,SynchronousQueue,3,E poll(),True
+31,SynchronousQueue,4,boolean isEmpty(),True
+31,SynchronousQueue,5,int size(),True
+32,ThreadLocalRandom,1,int nextInt(),True
+32,ThreadLocalRandom,2,long nextLong(),True
+32,ThreadLocalRandom,3,double nextDouble(),True
+32,ThreadLocalRandom,4,boolean nextBoolean(),True
+32,ThreadLocalRandom,5,double nextGaussian(),True
+33,ThreadPoolExecutor,1,int getCorePoolSize(),True
+33,ThreadPoolExecutor,2,int getMaximumPoolSize(),True
+33,ThreadPoolExecutor,3,int getPoolSize(),True
+33,ThreadPoolExecutor,4,int getActiveCount(),True
+33,ThreadPoolExecutor,5,void execute(Runnable command),True
+34,ThreadPoolExecutor.AbortPolicy,1,void execute(Runnable command),False
+34,ThreadPoolExecutor.AbortPolicy,2,<T> Future<T> submit(Callable<T> task),False
+34,ThreadPoolExecutor.AbortPolicy,3,"void execute(Runnable command, long startTimeout)",False
+34,ThreadPoolExecutor.AbortPolicy,4,"<T> Future<T> submit(Runnable task, T result)",False
+34,ThreadPoolExecutor.AbortPolicy,5,"void execute(Runnable command, long startTimeout, TimeUnit unit)",False
+35,ThreadPoolExecutor.CallerRunsPolicy,1,boolean add(E e),False
+35,ThreadPoolExecutor.CallerRunsPolicy,2,void execute(Runnable command),False
+35,ThreadPoolExecutor.CallerRunsPolicy,3,void shutdown(),False
+35,ThreadPoolExecutor.CallerRunsPolicy,4,List<Runnable> shutdownNow(),False
+35,ThreadPoolExecutor.CallerRunsPolicy,5,boolean isShutdown(),False
+36,ThreadPoolExecutor.DiscardOldestPolicy,1,boolean add(E e),False
+36,ThreadPoolExecutor.DiscardOldestPolicy,2,void execute(Runnable command),False
+36,ThreadPoolExecutor.DiscardOldestPolicy,3,"void execute(Runnable command, long delay, TimeUnit unit)",False
+36,ThreadPoolExecutor.DiscardOldestPolicy,4,Future<?> submit(Runnable task),False
+36,ThreadPoolExecutor.DiscardOldestPolicy,5,<T> Future<T> submit(Callable<T> task),False
+37,ThreadPoolExecutor.DiscardPolicy,1,boolean add(E e),False
+37,ThreadPoolExecutor.DiscardPolicy,2,void execute(Runnable command),False
+37,ThreadPoolExecutor.DiscardPolicy,3,"void execute(Runnable command, long delay, TimeUnit unit)",False
+37,ThreadPoolExecutor.DiscardPolicy,4,Future<?> submit(Runnable task),False
+37,ThreadPoolExecutor.DiscardPolicy,5,<T> Future<T> submit(Callable<T> task),False

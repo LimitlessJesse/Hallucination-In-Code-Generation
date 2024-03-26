@@ -1,0 +1,30 @@
+ClassName,Method,Return Type
+Policy,"getPermissions(Subject subject, CodeSource cs)",abstract PermissionCollection
+Policy,getPolicy(),static Policy
+Policy,refresh(),abstract void
+Policy,setPolicy(Policy policy),static void
+PrivateCredentialPermission,equals(Object obj),boolean
+PrivateCredentialPermission,getActions(),String
+PrivateCredentialPermission,getCredentialClass(),String
+PrivateCredentialPermission,getPrincipals(),String[][]
+PrivateCredentialPermission,hashCode(),int
+PrivateCredentialPermission,implies(Permission p),boolean
+PrivateCredentialPermission,newPermissionCollection(),PermissionCollection
+Subject,"doAs(Subject subject, PrivilegedAction<T> action)",static <T> T
+Subject,"doAs(Subject subject, PrivilegedExceptionAction<T> action)",static <T> T
+Subject,"doAsPrivileged(Subject subject, PrivilegedAction<T> action, AccessControlContext acc)",static <T> T
+Subject,"doAsPrivileged(Subject subject, PrivilegedExceptionAction<T> action, AccessControlContext acc)",static <T> T
+Subject,equals(Object o),boolean
+Subject,getPrincipals(),Set<Principal>
+Subject,getPrincipals(Class<T> c),<T extends Principal>Set<T>
+Subject,getPrivateCredentials(),Set<Object>
+Subject,getPrivateCredentials(Class<T> c),<T> Set<T>
+Subject,getPublicCredentials(),Set<Object>
+Subject,getPublicCredentials(Class<T> c),<T> Set<T>
+Subject,getSubject(AccessControlContext acc),static Subject
+Subject,hashCode(),int
+Subject,isReadOnly(),boolean
+Subject,setReadOnly(),void
+Subject,toString(),String
+SubjectDomainCombiner,"combine(ProtectionDomain[] currentDomains, ProtectionDomain[] assignedDomains)",ProtectionDomain[]
+SubjectDomainCombiner,getSubject(),Subject

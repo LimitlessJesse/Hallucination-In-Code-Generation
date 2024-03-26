@@ -1,0 +1,207 @@
+Sample: GlyphVector_2
+----------------------------------------------------------------
+stdout:
+Number of glyphs: 5
+
+================================================================
+
+Sample: GlyphVector_3
+----------------------------------------------------------------
+stdout:
+Glyph 0 bounds: java.awt.geom.Rectangle2D$Float[x=1.171875,y=-8.75,w=6.671875,h=8.75]
+Glyph 1 bounds: java.awt.geom.Rectangle2D$Float[x=0.65625,y=-6.71875,w=6.09375,h=6.890625]
+Glyph 2 bounds: java.awt.geom.Rectangle2D$Float[x=1.125,y=-9.125,w=1.078125,h=9.125]
+Glyph 3 bounds: java.awt.geom.Rectangle2D$Float[x=1.125,y=-9.125,w=1.078125,h=9.125]
+Glyph 4 bounds: java.awt.geom.Rectangle2D$Float[x=0.65625,y=-6.71875,w=6.03125,h=6.890625]
+
+================================================================
+
+Sample: LineBreakMeasurer_1
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineBreakMeasurer_1.java:15: error: cannot find symbol
+        FontMetrics fontMetrics = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration().getFontMetrics(font);
+                                                                                                                                      ^
+  symbol:   method getFontMetrics(Font)
+  location: class GraphicsConfiguration
+./java_awt_font/javaFiles/LineBreakMeasurer_1.java:21: error: incompatible types: BreakIterator cannot be converted to FontRenderContext
+        LineBreakMeasurer measurer = new LineBreakMeasurer(iterator, breakIterator);
+                                                                     ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_1
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_1.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_1.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_2
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_2.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_2.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_3
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_3.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_3.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_4
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_4.java:12: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+1 error
+
+
+================================================================
+
+Sample: LineMetrics_5
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_5.java:13: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./java_awt_font/javaFiles/LineMetrics_5.java:15: error: cannot find symbol
+                return super.getStrikethroughOffset();
+                            ^
+  symbol: method getStrikethroughOffset()
+./java_awt_font/javaFiles/LineMetrics_5.java:18: error: incompatible types: FontRenderContext cannot be converted to Graphics
+        LineMetrics lm = fm.getLineMetrics(text, frc);
+                                                 ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: LineMetrics_6
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_6.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_6.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_7
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_7.java:11: error: cannot find symbol
+        LineMetrics lm = layout.getLineMetrics(0);
+                               ^
+  symbol:   method getLineMetrics(int)
+  location: variable layout of type TextLayout
+1 error
+
+
+================================================================
+
+Sample: LineMetrics_8
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_8.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_8.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+
+Sample: LineMetrics_9
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_9.java:13: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./java_awt_font/javaFiles/LineMetrics_9.java:15: error: cannot find symbol
+                return super.getStrikethroughOffset();
+                            ^
+  symbol: method getStrikethroughOffset()
+./java_awt_font/javaFiles/LineMetrics_9.java:18: error: incompatible types: FontRenderContext cannot be converted to Graphics
+        LineMetrics lm = fm.getLineMetrics(text, frc);
+                                                 ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: LineMetrics_10
+----------------------------------------------------------------
+output:
+./java_awt_font/javaFiles/LineMetrics_10.java:11: error: cannot find symbol
+        FontRenderContext frc = g.getFontRenderContext();
+                                 ^
+  symbol:   method getFontRenderContext()
+  location: variable g of type Graphics
+./java_awt_font/javaFiles/LineMetrics_10.java:13: error: cannot find symbol
+        LineMetrics lm = font.getStringMetrics(text, frc);
+                             ^
+  symbol:   method getStringMetrics(String,FontRenderContext)
+  location: variable font of type Font
+2 errors
+
+
+================================================================
+

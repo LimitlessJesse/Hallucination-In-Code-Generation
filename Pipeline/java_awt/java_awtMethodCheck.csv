@@ -1,0 +1,268 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AlphaComposite,1,"AlphaComposite getInstance(int rule, float alpha)",True
+0,AlphaComposite,2,"AlphaComposite getInstance(int rule, float alpha, int hints)",False
+0,AlphaComposite,3,"AlphaComposite getInstance(int rule, float[] color)",False
+0,AlphaComposite,4,"AlphaComposite getInstance(int rule, float[] color, int hints)",False
+0,AlphaComposite,5,"AlphaComposite getInstance(int rule, float[] color1, float[] color2)",False
+1,AWTEvent,1,void addActionListener(ActionListener l),False
+1,AWTEvent,2,void addComponentListener(ComponentListener l),False
+1,AWTEvent,3,void addFocusListener(FocusListener l),False
+1,AWTEvent,4,void addKeyListener(KeyListener l),False
+1,AWTEvent,5,void addMouseListener(MouseListener l),False
+2,AWTEventMulticaster,1,boolean add(E e),False
+2,AWTEventMulticaster,2,boolean addAll(Collection<? extends E> c),False
+2,AWTEventMulticaster,3,void addListener(AWTEventListener l),False
+2,AWTEventMulticaster,4,boolean remove(Object o),False
+2,AWTEventMulticaster,5,boolean removeAll(Collection<?> c),False
+3,AWTKeyStroke,1,AWTKeyStroke.getAWTKeyStrokeForEvent(KeyEvent e),False
+3,AWTKeyStroke,2,AWTKeyStroke.getKeyStrokeForEvent(KeyEvent e),False
+3,AWTKeyStroke,3,AWTKeyStroke.getKeyStroke(String keyStroke),False
+3,AWTKeyStroke,4,"AWTKeyStroke.getKeyStroke(char keyChar, int modifiers)",False
+3,AWTKeyStroke,5,"AWTKeyStroke.getKeyStroke(int keyCode, int modifiers)",False
+4,AWTPermission,1,boolean add(E e),False
+4,AWTPermission,2,boolean addAll(Collection<? extends E> c),False
+4,AWTPermission,3,void clear(),False
+4,AWTPermission,4,boolean contains(Object o),False
+4,AWTPermission,5,boolean containsAll(Collection<?> c),False
+5,BasicStroke,1,"BasicStroke(float width, int cap, int join)",False
+5,BasicStroke,2,float getLineWidth(),True
+5,BasicStroke,3,int getEndCap(),True
+5,BasicStroke,4,int getLineJoin(),True
+5,BasicStroke,5,Shape createStrokedShape(Shape shape),True
+6,BorderLayout,1,"add(Component comp, Object constraints)",False
+6,BorderLayout,2,"addLayoutComponent(String name, Component comp)",False
+6,BorderLayout,3,getLayoutAlignmentX(Container target),False
+6,BorderLayout,4,getLayoutAlignmentY(Container target),False
+6,BorderLayout,5,getLayoutInsets(Container target),False
+7,BufferCapabilities,1,boolean isFullBuffer(),False
+7,BufferCapabilities,2,boolean isPageFlipping(),True
+7,BufferCapabilities,3,boolean isSwapped(),False
+7,BufferCapabilities,4,boolean isDoubleBuffered(),False
+7,BufferCapabilities,5,boolean isFlipContents(),False
+8,BufferCapabilities.FlipContents,1,boolean isPageFlipping(),False
+8,BufferCapabilities.FlipContents,2,boolean isFullPage(),False
+8,BufferCapabilities.FlipContents,3,boolean isPageFlippingSupported(),False
+8,BufferCapabilities.FlipContents,4,boolean isPageFlippingSupported(int page),False
+8,BufferCapabilities.FlipContents,5,"boolean isPageFlippingSupported(int page, int type)",False
+9,Button,1,Button(String label),False
+9,Button,2,void setLabel(String label),True
+9,Button,3,String getLabel(),True
+9,Button,4,void setEnabled(boolean b),False
+9,Button,5,boolean isEnabled(),False
+10,Canvas,1,void update(Graphics g),True
+10,Canvas,2,void paint(Graphics g),True
+10,Canvas,3,void setSize(Dimension d),False
+10,Canvas,4,"void setSize(int width, int height)",False
+10,Canvas,5,void setBackground(Color c),False
+11,CardLayout,1,"void addLayoutComponent(String name, Component comp)",True
+11,CardLayout,2,"void addLayoutComponent(Component comp, Object constraints)",True
+11,CardLayout,3,Component get(String name),False
+11,CardLayout,4,void next(Container parent),True
+11,CardLayout,5,void previous(Container parent),True
+12,Checkbox,1,boolean isSelected(),False
+12,Checkbox,2,void setState(boolean b),True
+12,Checkbox,3,void setCheckboxGroup(CheckboxGroup g),True
+12,Checkbox,4,CheckboxGroup getCheckboxGroup(),True
+12,Checkbox,5,void setLabel(Label l),False
+13,CheckboxGroup,1,boolean add(E e),False
+13,CheckboxGroup,2,void addItem(Checkbox item),False
+13,CheckboxGroup,3,Checkbox getItem(int index),False
+13,CheckboxGroup,4,int getItemCount(),False
+13,CheckboxGroup,5,Checkbox getSelectedCheckbox(),True
+14,CheckboxMenuItem,1,boolean isSelected(),False
+14,CheckboxMenuItem,2,void setState(boolean b),True
+14,CheckboxMenuItem,3,void setSelected(boolean b),False
+14,CheckboxMenuItem,4,void toggle(),False
+14,CheckboxMenuItem,5,void setActionCommand(String command),False
+15,Choice,1,boolean add(E e),False
+15,Choice,2,void addItem(String item),True
+15,Choice,3,void addItemListener(ItemListener l),True
+15,Choice,4,int getItemCount(),True
+15,Choice,5,String getItem(int index),True
+16,Color,1,int getBlue(),True
+16,Color,2,int getGreen(),True
+16,Color,3,int getRed(),True
+16,Color,4,int getRGB(),True
+16,Color,5,boolean equals(Object obj),True
+17,Component,1,void addNotify(),True
+17,Component,2,void removeNotify(),True
+17,Component,3,void repaint(),True
+17,Component,4,void revalidate(),True
+17,Component,5,void setEnabled(boolean b),True
+18,ComponentOrientation,1,getComponentOrientation(),False
+18,ComponentOrientation,2,setComponentOrientation(ComponentOrientation newOrientation),False
+18,ComponentOrientation,3,"getItemRect(int index, Rectangle r)",False
+18,ComponentOrientation,4,getItemCount(),False
+18,ComponentOrientation,5,getItem(int index),False
+19,Container,1,boolean add(E e),False
+19,Container,2,"void add(int index, E element)",False
+19,Container,3,boolean addAll(Collection<? extends E> c),False
+19,Container,4,void clear(),False
+19,Container,5,boolean contains(Object o),False
+20,ContainerOrderFocusTraversalPolicy,1,boolean isOrderFocusTraversalPolicy(),False
+20,ContainerOrderFocusTraversalPolicy,2,void setContainerOrderFocusTraversalPolicy(Container container),False
+20,ContainerOrderFocusTraversalPolicy,3,"void setOrderFocusTraversalPolicy(Container container, boolean orderFocusTraversalPolicy)",False
+20,ContainerOrderFocusTraversalPolicy,4,void setOrderFocusTraversalPolicy(boolean orderFocusTraversalPolicy),False
+20,ContainerOrderFocusTraversalPolicy,5,void setOrderFocusTraversalPolicy(Container container),False
+21,Cursor,1,void setCursor(Cursor c),False
+21,Cursor,2,"void setCursor(Cursor c, Component view)",False
+21,Cursor,3,void setDefaultCursor(Cursor c),False
+21,Cursor,4,"void setDefaultCursor(Cursor c, Component view)",False
+21,Cursor,5,"void setDefaultCursor(Cursor c, Component view, int modifiers)",False
+22,DefaultFocusTraversalPolicy,1,"boolean isFocusTraversable(Component c, boolean focused)",False
+22,DefaultFocusTraversalPolicy,2,Component getDefaultComponent(Container focusCycleRoot),False
+22,DefaultFocusTraversalPolicy,3,"Component getComponentAfter(Container focusCycleRoot, Component aComponent)",False
+22,DefaultFocusTraversalPolicy,4,"Component getComponentBefore(Container focusCycleRoot, Component aComponent)",False
+22,DefaultFocusTraversalPolicy,5,Component getFirstComponent(Container focusCycleRoot),False
+23,DefaultKeyboardFocusManager,1,void setDefaultFocusOwner(Component aComponent),False
+23,DefaultKeyboardFocusManager,2,Component getDefaultFocusOwner(),False
+23,DefaultKeyboardFocusManager,3,void addFocusListener(FocusListener l),False
+23,DefaultKeyboardFocusManager,4,void removeFocusListener(FocusListener l),False
+23,DefaultKeyboardFocusManager,5,void addKeyEventDispatcher(KeyEventDispatcher e),False
+24,Desktop,1,boolean isSupported(URI uri),False
+24,Desktop,2,void browse(URI uri),True
+24,Desktop,3,void mail(URI uri),True
+24,Desktop,4,void print(URI uri),False
+24,Desktop,5,void edit(URI uri),False
+25,Dialog,1,boolean add(E e),False
+25,Dialog,2,"void setLocation(int x, int y)",False
+25,Dialog,3,"void setSize(int width, int height)",False
+25,Dialog,4,void setVisible(boolean b),True
+25,Dialog,5,void dispose(),False
+26,Dimension,1,int getHeight(),False
+26,Dimension,2,int getWidth(),False
+26,Dimension,3,"void setSize(int width, int height)",True
+26,Dimension,4,void setSize(Dimension d),True
+26,Dimension,5,"void setSize(double width, double height)",True
+27,DisplayMode,1,DisplayMode getDisplayMode(),False
+27,DisplayMode,2,DisplayMode[] getDisplayModes(),False
+27,DisplayMode,3,void setDisplayMode(DisplayMode newMode),False
+27,DisplayMode,4,void setFullScreenWindow(Window w),False
+27,DisplayMode,5,Window getFullScreenWindow(),False
+28,Event,1,boolean add(E e),False
+28,Event,2,"void add(int index, E element)",False
+28,Event,3,boolean addAll(Collection<? extends E> c),False
+28,Event,4,"boolean addAll(int index, Collection<? extends E> c)",False
+28,Event,5,void clear(),False
+29,EventQueue,1,boolean add(E e),False
+29,EventQueue,2,"void add(int index, E element)",False
+29,EventQueue,3,boolean addAll(Collection<? extends E> c),False
+29,EventQueue,4,"boolean addAll(int index, Collection<? extends E> c)",False
+29,EventQueue,5,void clear(),False
+30,FileDialog,1,FileDialog(Frame owner),False
+30,FileDialog,2,void setDirectory(String directory),True
+30,FileDialog,3,String getDirectory(),True
+30,FileDialog,4,void setFile(String file),True
+30,FileDialog,5,String getFile(),True
+30,FileDialog,6,void setVisible(boolean b),False
+30,FileDialog,7,void dispose(),False
+30,FileDialog,8,String[] getFileList(),False
+30,FileDialog,9,String getFileList(),False
+30,FileDialog,10,String getFile(),True
+30,FileDialog,11,String getDirectory(),True
+30,FileDialog,12,String getPath(),False
+30,FileDialog,13,String getSelectedFile(),False
+30,FileDialog,14,String getSelectedDirectory(),False
+30,FileDialog,15,String getSelectedPath(),False
+31,FlowLayout,1,Component add(Component comp),False
+31,FlowLayout,2,"Component add(Component comp, int index)",False
+31,FlowLayout,3,void remove(int index),False
+31,FlowLayout,4,void setAlignment(int alignment),True
+31,FlowLayout,5,void setHgap(int hgap),True
+31,FlowLayout,6,void setVgap(int vgap),True
+31,FlowLayout,7,"void setComponentAlignment(Component comp, int alignment, int axis)",False
+31,FlowLayout,8,void setMaximumSize(Dimension max),False
+31,FlowLayout,9,void setMinimumSize(Dimension min),False
+31,FlowLayout,10,void setPreferredSize(Dimension pref),False
+31,FlowLayout,11,void setSize(Dimension d),False
+31,FlowLayout,12,"void setSize(int width, int height)",False
+31,FlowLayout,13,void setVisible(boolean b),False
+31,FlowLayout,14,void validate(),False
+31,FlowLayout,15,"void addLayoutComponent(String name, Component comp)",True
+31,FlowLayout,16,void layoutContainer(Container target),True
+31,FlowLayout,17,Dimension maximumLayoutSize(Container target),False
+31,FlowLayout,18,float getLayoutAlignmentX(Container target),False
+31,FlowLayout,19,float getLayoutAlignmentY(Container target),False
+31,FlowLayout,20,void invalidateLayout(Container target),False
+32,FocusTraversalPolicy,1,"boolean isFocusTraversable(Component c, boolean focused)",False
+32,FocusTraversalPolicy,2,"Component getComponentAfter(Container rootp, Component a)",True
+32,FocusTraversalPolicy,3,"Component getComponentBefore(Container rootp, Component a)",True
+32,FocusTraversalPolicy,4,Component getFirstComponent(Container rootp),True
+32,FocusTraversalPolicy,5,Component getLastComponent(Container rootp),True
+32,FocusTraversalPolicy,6,Component getDefaultComponent(Container rootp),True
+32,FocusTraversalPolicy,7,"void setComponentAfter(Container rootp, Component a, Component b)",False
+32,FocusTraversalPolicy,8,"void setComponentBefore(Container rootp, Component a, Component b)",False
+32,FocusTraversalPolicy,9,void addComponentListener(ComponentListener l),False
+32,FocusTraversalPolicy,10,void removeComponentListener(ComponentListener l),False
+33,Font,1,"Font(String name, int style, int size)",False
+33,Font,2,"Font(String name, int style, int size, int transform)",False
+33,Font,3,Font deriveFont(float size),True
+33,Font,4,"Font deriveFont(float size, int style)",False
+33,Font,5,"Font deriveFont(float size, int style, int transform)",False
+33,Font,6,"Font deriveFont(float size, int style, int transform, boolean isBold, boolean isItalic)",False
+33,Font,7,"Font deriveFont(float size, int style, int transform, boolean isBold, boolean isItalic, boolean isUnderlined, boolean isStrikeThrough)",False
+33,Font,8,"Font deriveFont(float size, int style, int transform, boolean isBold, boolean isItalic, boolean isUnderlined, boolean isStrikeThrough, boolean isMonospaced)",False
+33,Font,9,"Font deriveFont(float size, int style, int transform, boolean isBold, boolean isItalic, boolean isUnderlined, boolean isStrikeThrough, boolean isMonospaced, int[] offsets)",False
+33,Font,10,"Font deriveFont(float size, int style, int transform, boolean isBold, boolean isItalic, boolean isUnderlined, boolean isStrikeThrough, boolean isMonospaced, int[] offsets, int[] advances)",False
+34,FontMetrics,1,int getAscent(),True
+34,FontMetrics,2,int getDescent(),True
+34,FontMetrics,3,int getHeight(),True
+34,FontMetrics,4,int stringWidth(String s),True
+34,FontMetrics,5,"Rectangle getStringBounds(String s, Rectangle r)",False
+35,Frame,1,"void setSize(int width, int height)",False
+35,Frame,2,"void setLocation(int x, int y)",False
+35,Frame,3,void setTitle(String title),True
+35,Frame,4,void setVisible(boolean b),False
+35,Frame,5,void dispose(),False
+36,GradientPaint,1,"GradientPaint(float x1, float y1, Color color1, float x2, float y2, Color color2)",False
+36,GradientPaint,2,"GradientPaint(float x1, float y1, Color color1, float x2, float y2, Color color2, boolean cycle)",False
+36,GradientPaint,3,Color getColor1(),True
+36,GradientPaint,4,Color getColor2(),True
+36,GradientPaint,5,float getPoint1(),False
+36,GradientPaint,6,float getPoint2(),False
+36,GradientPaint,7,boolean isCycle(),False
+36,GradientPaint,8,void setCycle(boolean cycle),False
+36,GradientPaint,9,void setColor1(Color color1),False
+36,GradientPaint,10,void setColor2(Color color2),False
+36,GradientPaint,11,"void setPoint1(float x1, float y1)",False
+36,GradientPaint,12,"void setPoint2(float x2, float y2)",False
+37,Graphics,1,"void drawLine(int x1, int y1, int x2, int y2)",True
+37,Graphics,2,"void drawRect(int x, int y, int width, int height)",True
+37,Graphics,3,"void drawOval(int x, int y, int width, int height)",True
+37,Graphics,4,"void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)",True
+37,Graphics,5,"void drawPolygon(int[] xPoints, int[] yPoints, int nPoints)",True
+38,Graphics2D,1,"void drawLine(int x1, int y1, int x2, int y2)",False
+38,Graphics2D,2,"void drawRect(int x, int y, int width, int height)",False
+38,Graphics2D,3,"void drawOval(int x, int y, int width, int height)",False
+38,Graphics2D,4,"void drawArc(int x, int y, int width, int height, int startAngle, int arcAngle)",False
+38,Graphics2D,5,"void drawString(String str, int x, int y)",True
+39,GraphicsConfigTemplate,1,boolean add(E e),False
+39,GraphicsConfigTemplate,2,"void add(int index, E element)",False
+39,GraphicsConfigTemplate,3,boolean addAll(Collection<? extends E> c),False
+39,GraphicsConfigTemplate,4,"boolean addAll(int index, Collection<? extends E> c)",False
+39,GraphicsConfigTemplate,5,void clear(),False
+40,GraphicsConfiguration,1,GraphicsConfiguration getDeviceConfiguration(),False
+40,GraphicsConfiguration,2,Rectangle getBounds(),True
+40,GraphicsConfiguration,3,ColorModel getColorModel(),True
+40,GraphicsConfiguration,4,ColorModel getColorModel(int transparency),True
+40,GraphicsConfiguration,5,"BufferedImage createCompatibleImage(int width, int height)",True
+41,GraphicsDevice,1,GraphicsDevice getDefaultConfiguration(),False
+41,GraphicsDevice,2,GraphicsConfiguration[] getConfigurations(),True
+41,GraphicsDevice,3,"GraphicsConfiguration getBestConfiguration(Rectangle targetBounds, GraphicsConfiguration[] configurations)",False
+41,GraphicsDevice,4,GraphicsConfiguration getDefaultConfiguration(),True
+41,GraphicsDevice,5,GraphicsConfiguration[] getConfigurations(),True
+41,GraphicsDevice,6,"GraphicsConfiguration getBestConfiguration(Rectangle targetBounds, GraphicsConfiguration[] configurations)",False
+41,GraphicsDevice,7,GraphicsConfiguration getDefaultConfiguration(),True
+41,GraphicsDevice,8,GraphicsConfiguration[] getConfigurations(),True
+41,GraphicsDevice,9,"GraphicsConfiguration getBestConfiguration(Rectangle targetBounds, GraphicsConfiguration[] configurations)",False
+41,GraphicsDevice,10,GraphicsConfiguration getDefaultConfiguration(),True
+41,GraphicsDevice,11,GraphicsConfiguration[] getConfigurations(),True
+41,GraphicsDevice,12,"GraphicsConfiguration getBestConfiguration(Rectangle targetBounds, GraphicsConfiguration[] configurations)",False
+41,GraphicsDevice,13,GraphicsConfiguration getDefaultConfiguration(),True
+41,GraphicsDevice,14,GraphicsConfiguration[] getConfigurations(),True
+41,GraphicsDevice,15,"GraphicsConfiguration getBestConfiguration(Rectangle targetBounds, GraphicsConfiguration[] configurations)",False
+42,GraphicsEnvironment,1,getAllFonts(),False
+42,GraphicsEnvironment,2,getAvailableFontFamilyNames(),False
+42,GraphicsEnvironment,3,getMaximumWindowBounds(),False
+42,GraphicsEnvironment,4,getNumGraphicsConfigs(),False
+42,GraphicsEnvironment,5,getScreenDevices(),False

@@ -1,0 +1,36 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,LockInfo,1,boolean isSynchronized(),False
+0,LockInfo,2,boolean isReentrant(),False
+0,LockInfo,3,boolean isClassLock(),False
+0,LockInfo,4,String getClassName(),True
+0,LockInfo,5,String getIdentityHashCode(),False
+1,ManagementFactory,1,List<GarbageCollectorMXBean> getGarbageCollectorMXBeans(),True
+1,ManagementFactory,2,MemoryMXBean getMemoryMXBean(),True
+1,ManagementFactory,3,OperatingSystemMXBean getOperatingSystemMXBean(),True
+1,ManagementFactory,4,ThreadMXBean getThreadMXBean(),True
+1,ManagementFactory,5,com.sun.management.Unsafe getUnsafe(),False
+2,ManagementPermission,1,boolean add(E e),False
+2,ManagementPermission,2,boolean addAll(Collection<? extends E> c),False
+2,ManagementPermission,3,void clear(),False
+2,ManagementPermission,4,boolean contains(Object o),False
+2,ManagementPermission,5,boolean containsAll(Collection<?> c),False
+3,MemoryNotificationInfo,1,long getCommitted(),False
+3,MemoryNotificationInfo,2,long getInit(),False
+3,MemoryNotificationInfo,3,long getMax(),False
+3,MemoryNotificationInfo,4,long getUsed(),False
+3,MemoryNotificationInfo,5,long getSwapUsed(),False
+4,MemoryUsage,1,long getInit(),True
+4,MemoryUsage,2,long getUsed(),True
+4,MemoryUsage,3,long getCommitted(),True
+4,MemoryUsage,4,long getMax(),True
+4,MemoryUsage,5,boolean isValid(),False
+5,MonitorInfo,1,int getCount(),False
+5,MonitorInfo,2,ThreadInfo[] getThreads(),False
+5,MonitorInfo,3,boolean isSynchronizer(),False
+5,MonitorInfo,4,boolean isWait(),False
+5,MonitorInfo,5,boolean isReentrant(),False
+6,ThreadInfo,1,"ThreadInfo[] dumpAllThreads(boolean live, boolean sanitize)",False
+6,ThreadInfo,2,"ThreadInfo[] dumpThreads(long[] ids, boolean live, boolean sanitize)",False
+6,ThreadInfo,3,"ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize)",False
+6,ThreadInfo,4,"ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize, long[] ids)",False
+6,ThreadInfo,5,"ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize, long[] ids, boolean lockedMonitors)",False

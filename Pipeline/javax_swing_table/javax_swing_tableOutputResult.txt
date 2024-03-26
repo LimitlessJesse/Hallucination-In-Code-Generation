@@ -1,0 +1,108 @@
+Sample: AbstractTableModel_4
+----------------------------------------------------------------
+output:
+./javax_swing_table/javaFiles/AbstractTableModel_4.java:3: error: class MyTableModel is public, should be declared in a file named MyTableModel.java
+public class MyTableModel extends AbstractTableModel {
+       ^
+1 error
+
+
+================================================================
+
+Sample: AbstractTableModel_5
+----------------------------------------------------------------
+output:
+./javax_swing_table/javaFiles/AbstractTableModel_5.java:3: error: class MyTableModel is public, should be declared in a file named MyTableModel.java
+public class MyTableModel extends AbstractTableModel {
+       ^
+1 error
+
+
+================================================================
+
+Sample: DefaultTableCellRenderer_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTableCellRenderer_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at DefaultTableCellRenderer_4.main(DefaultTableCellRenderer_4.java:7)
+
+================================================================
+
+Sample: DefaultTableCellRenderer_5
+----------------------------------------------------------------
+output:
+./javax_swing_table/javaFiles/DefaultTableCellRenderer_5.java:15: error: setValue(Object) has protected access in DefaultTableCellRenderer
+        renderer.setValue("New Value");
+                ^
+1 error
+
+
+================================================================
+
+Sample: JTableHeader_1
+----------------------------------------------------------------
+================================================================
+
+Sample: JTableHeader_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JTableHeader_3.main(JTableHeader_3.java:24)
+
+================================================================
+
+Sample: TableColumn_1
+----------------------------------------------------------------
+stdout:
+Header Value: Column Header
+
+================================================================
+
+Sample: TableColumn_2
+----------------------------------------------------------------
+================================================================
+
+Sample: TableColumn_3
+----------------------------------------------------------------
+output:
+./javax_swing_table/javaFiles/TableColumn_3.java:13: error: cannot find symbol
+        column.setCellEditor(new DefaultCellEditor(textField));
+                                 ^
+  symbol:   class DefaultCellEditor
+  location: class TableColumn_3
+1 error
+
+
+================================================================
+
+Sample: TableColumn_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0 >= 0
+	at java.base/java.util.Vector.elementAt(Vector.java:466)
+	at java.desktop/javax.swing.table.DefaultTableColumnModel.getColumn(DefaultTableColumnModel.java:295)
+	at TableColumn_4.main(TableColumn_4.java:9)
+
+================================================================
+
+Sample: TableColumn_5
+----------------------------------------------------------------
+================================================================
+

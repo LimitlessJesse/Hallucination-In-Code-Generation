@@ -1,0 +1,155 @@
+Sample: 0 SAXResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setHandler(ContentHandler handler) from javax.xml.transform.sax.SAXResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setHandler(ContentHandler handler)` method in `SAXResult` is used to set the `ContentHandler` that will handle the SAX events.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.transform.sax.SAXResult;
+import javax.xml.transform.sax.SAXSource;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a SAXSource
+            SAXSource source = new SAXSource(new DefaultHandler() {
+                @Override
+                public void startDocument() throws SAXException {
+                    System.out.println("Start document");
+                }
+
+                @Override
+                public void endDocument() throws SAXException {
+                    System.out.println("End document");
+                }
+            }, new InputSource(new StringReader("<root><element>Content</element></root>")));
+
+            // Create a SAXResult
+            SAXResult result = new SAXResult();
+
+            // Set the ContentHandler
+            result.setHandler(new DefaultHandler() {
+                @Override
+                public void startDocument() throws SAXException {
+                    System.out.println("Start document");
+                }
+
+                @Override
+                public void endDocument() throws SAXException {
+                    System.out.println("End document");
+                }
+            });
+
+            // Transform
+            source.getTransformer().transform(source.getXMLReader(), result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a `SAXSource` and a `SAXResult`. We set a `ContentHandler` in the `SAXResult`. The `ContentHandler` is a SAX event handler that receives notifications from the `SAXParser`.
+
+The `ContentHandler` is a simple implementation that prints "Start document" and "End document" when the document starts and ends, respectively.
+
+Finally, we use the `Transformer` to transform the `SAXSource` into the `SAXResult`, which will trigger the `ContentHandler` to handle the SAX events.
+================================================================
+
+Sample: 1 SAXResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setLexicalHandler(LexicalHandler handler) from javax.xml.transform.sax.SAXResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setLexicalHandler(LexicalHandler handler)` method is part of the `SAXResult` class in the `javax.xml.transform.sax` package. This method sets the lexical handler for the SAX event reader.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.transform.sax.SAXResult;
+import javax.xml.transform.sax.SAXSource;
+import javax.xml.transform.sax.SAXTransformerFactory;
+import javax.xml.transform.sax.TransformerHandler;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SAXTransformerFactory factory = (SAXTransformerFactory) SAXTransformerFactory.newInstance();
+            TransformerHandler handler = factory.newTransformerHandler();
+            ContentHandler contentHandler = new DefaultHandler();
+            handler.setResult(new SAXResult(contentHandler));
+            handler.setLexicalHandler(new DefaultHandler());
+        } catch (SAXException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `SAXTransformerFactory`, creating a new `TransformerHandler`, setting the result to a new `SAXResult` with a `ContentHandler`, and setting the lexical handler to a new `DefaultHandler`.
+
+Please note that the `DefaultHandler` is a simple implementation of the `ContentHandler` and `LexicalHandler` interfaces, and it does nothing. You would need to replace it with your own implementation if you want to handle SAX events or lexical events.
+================================================================
+

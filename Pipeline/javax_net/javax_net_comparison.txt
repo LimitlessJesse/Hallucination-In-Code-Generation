@@ -1,0 +1,50 @@
+Sample: 0 ServerSocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.net.ServerSocketFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ServerSocketFactory.createServerSocket()`: This method creates a new server socket.
+
+2. `ServerSocketFactory.getDefault()`: This method returns the default ServerSocketFactory.
+
+3. `ServerSocketFactory.setDefault(ServerSocketFactory factory)`: This method sets the default ServerSocketFactory.
+
+4. `ServerSocketFactory.create()`: This method creates a new ServerSocket.
+
+5. `ServerSocketFactory.getSupportedSchemes()`: This method returns an array of the supported schemes.
+================================================================
+
+Sample: 1 SocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.net.SocketFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SocketFactory.getDefault()`: This method returns the default SocketFactory.
+
+2. `SocketFactory.getSocketFactory()`: This method returns a SocketFactory that uses the default security properties.
+
+3. `SocketFactory.getSocketFactory(InetAddress localAddress, int localPort)`: This method returns a SocketFactory that uses the specified local address and port.
+
+4. `SocketFactory.getSocketFactory(InetAddress localAddress, int localPort, InetAddress clientAddress, int clientPort)`: This method returns a SocketFactory that uses the specified local address, port, client address, and port.
+
+5. `SocketFactory.getSocketFactory(SSLParameters sslparams)`: This method returns a SocketFactory that uses the specified SSL parameters.
+================================================================
+

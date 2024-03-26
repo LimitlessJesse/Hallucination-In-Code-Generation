@@ -1,0 +1,142 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AncestorEvent,1,"AncestorEvent(Object source, int id)",False
+0,AncestorEvent,2,int getID(),False
+0,AncestorEvent,3,Object getSource(),False
+0,AncestorEvent,4,Component getComponent(),False
+0,AncestorEvent,5,Component getChanged(),False
+1,CaretEvent,1,void addCaretListener(CaretListener l),False
+1,CaretEvent,2,int getDot(),True
+1,CaretEvent,3,int getMark(),True
+1,CaretEvent,4,void setDot(int dot),False
+1,CaretEvent,5,void setMark(int mark),False
+2,ChangeEvent,1,void addChangeListener(ChangeListener l),False
+2,ChangeEvent,2,void removeChangeListener(ChangeListener l),False
+2,ChangeEvent,3,ChangeEvent getChangeEvent(),False
+2,ChangeEvent,4,Object getSource(),False
+2,ChangeEvent,5,void fireStateChanged(),False
+3,DocumentEvent.EventType,1,void insertUpdate(DocumentEvent e),False
+3,DocumentEvent.EventType,2,void removeUpdate(DocumentEvent e),False
+3,DocumentEvent.EventType,3,void changedUpdate(DocumentEvent e),False
+3,DocumentEvent.EventType,4,void attributeChanged(DocumentEvent e),False
+3,DocumentEvent.EventType,5,"void insertUpdate(DocumentEvent e, int offs, int len)",False
+3,DocumentEvent.EventType,6,"void removeUpdate(DocumentEvent e, int offs, int len)",False
+3,DocumentEvent.EventType,7,"void changedUpdate(DocumentEvent e, int offs, int len)",False
+3,DocumentEvent.EventType,8,"void attributeChanged(DocumentEvent e, int offs, int len)",False
+4,EventListenerList,1,boolean add(E e),False
+4,EventListenerList,2,E get(int index),False
+4,EventListenerList,3,"E set(int index, E element)",False
+4,EventListenerList,4,boolean remove(Object o),False
+4,EventListenerList,5,void clear(),False
+5,HyperlinkEvent,1,HyperlinkEvent.EventType getEventType(),True
+5,HyperlinkEvent,2,URL getURL(),True
+5,HyperlinkEvent,3,MouseEvent getMouseEvent(),False
+5,HyperlinkEvent,4,Object getSource(),False
+5,HyperlinkEvent,5,void setHandled(boolean handled),False
+6,HyperlinkEvent.EventType,1,HyperlinkEvent.EventType.ACTIVATED,False
+6,HyperlinkEvent.EventType,2,HyperlinkEvent.EventType.CHANGED,False
+6,HyperlinkEvent.EventType,3,HyperlinkEvent.EventType.ENTERED,False
+6,HyperlinkEvent.EventType,4,HyperlinkEvent.EventType.EXITED,False
+6,HyperlinkEvent.EventType,5,HyperlinkEvent.EventType.VISITED,False
+7,InternalFrameAdapter,1,void internalFrameActivated(InternalFrameEvent e),True
+7,InternalFrameAdapter,2,void internalFrameClosed(InternalFrameEvent e),True
+7,InternalFrameAdapter,3,void internalFrameClosing(InternalFrameEvent e),True
+7,InternalFrameAdapter,4,void internalFrameDeactivated(InternalFrameEvent e),True
+7,InternalFrameAdapter,5,void internalFrameDeiconified(InternalFrameEvent e),True
+7,InternalFrameAdapter,6,void internalFrameIconified(InternalFrameEvent e),True
+7,InternalFrameAdapter,7,void internalFrameOpened(InternalFrameEvent e),True
+7,InternalFrameAdapter,8,void internalFrameResized(InternalFrameEvent e),False
+7,InternalFrameAdapter,9,void internalFrameClosed(InternalFrameEvent e),True
+7,InternalFrameAdapter,10,void internalFrameClosing(InternalFrameEvent e),True
+8,InternalFrameEvent,1,void setSelected(boolean b),False
+8,InternalFrameEvent,2,void setClosed(boolean b),False
+8,InternalFrameEvent,3,void setIconified(boolean b),False
+8,InternalFrameEvent,4,void setMaximized(boolean b),False
+8,InternalFrameEvent,5,void setIcon(boolean b),False
+9,ListDataEvent,1,"ListDataEvent(Object source, int type, int index0, int index1)",False
+9,ListDataEvent,2,int getIndex0(),True
+9,ListDataEvent,3,int getIndex1(),True
+9,ListDataEvent,4,int getType(),True
+9,ListDataEvent,5,Object getSource(),False
+10,ListSelectionEvent,1,void addListSelectionListener(ListSelectionListener l),False
+10,ListSelectionEvent,2,void removeListSelectionListener(ListSelectionListener l),False
+10,ListSelectionEvent,3,boolean getValueIsAdjusting(),True
+10,ListSelectionEvent,4,int getFirstIndex(),True
+10,ListSelectionEvent,5,int getLastIndex(),True
+10,ListSelectionEvent,6,int getLeadSelectionIndex(),False
+10,ListSelectionEvent,7,int getValueIsAdjusting(),False
+10,ListSelectionEvent,8,int getValueIsAdjusting(),False
+10,ListSelectionEvent,9,int getValueIsAdjusting(),False
+10,ListSelectionEvent,10,int getValueIsAdjusting(),False
+11,MenuDragMouseEvent,1,void setDragPoint(Point dragPoint),False
+11,MenuDragMouseEvent,2,Point getDragPoint(),False
+11,MenuDragMouseEvent,3,void setDropPoint(Point dropPoint),False
+11,MenuDragMouseEvent,4,Point getDropPoint(),False
+11,MenuDragMouseEvent,5,void setDropLocation(int dropLocation),False
+11,MenuDragMouseEvent,6,int getDropLocation(),False
+12,MenuEvent,1,MenuEvent.getID(),False
+12,MenuEvent,2,MenuEvent.getSource(),False
+12,MenuEvent,3,MenuEvent.getWhen(),False
+12,MenuEvent,4,MenuEvent.getMenu(),False
+12,MenuEvent,5,MenuEvent.getPath(),False
+13,MenuKeyEvent,1,boolean isPopupTrigger(),False
+13,MenuKeyEvent,2,boolean isMenuKey(),False
+13,MenuKeyEvent,3,boolean isMenuShortcut(),False
+13,MenuKeyEvent,4,boolean isMenuAccelerator(),False
+13,MenuKeyEvent,5,boolean isMenuSelected(),False
+14,MouseInputAdapter,1,void mouseClicked(MouseEvent e),False
+14,MouseInputAdapter,2,void mousePressed(MouseEvent e),False
+14,MouseInputAdapter,3,void mouseReleased(MouseEvent e),False
+14,MouseInputAdapter,4,void mouseEntered(MouseEvent e),False
+14,MouseInputAdapter,5,void mouseExited(MouseEvent e),False
+15,PopupMenuEvent,1,"PopupMenuEvent(Object source, int id)",False
+15,PopupMenuEvent,2,Object getSource(),False
+15,PopupMenuEvent,3,int getID(),False
+15,PopupMenuEvent,4,void setID(int id),False
+15,PopupMenuEvent,5,void consume(),False
+16,RowSorterEvent,1,"RowSorterEvent(Object source, int type, int row)",False
+16,RowSorterEvent,2,int getType(),False
+16,RowSorterEvent,3,int getRow(),False
+16,RowSorterEvent,4,Object getSource(),False
+16,RowSorterEvent,5,void setSource(Object source),False
+17,SwingPropertyChangeSupport,1,boolean add(E e),False
+17,SwingPropertyChangeSupport,2,void addPropertyChangeListener(PropertyChangeListener listener),False
+17,SwingPropertyChangeSupport,3,"void firePropertyChange(String propertyName, Object oldValue, Object newValue)",False
+17,SwingPropertyChangeSupport,4,void removePropertyChangeListener(PropertyChangeListener listener),False
+17,SwingPropertyChangeSupport,5,void setValue(Object value),False
+18,TableColumnModelEvent,1,void columnMoved(TableColumnModelEvent e),False
+18,TableColumnModelEvent,2,void columnMarginChanged(TableColumnModelEvent e),False
+18,TableColumnModelEvent,3,void columnSelectionChanged(TableColumnModelEvent e),False
+18,TableColumnModelEvent,4,void columnAdded(TableColumnModelEvent e),False
+18,TableColumnModelEvent,5,void columnRemoved(TableColumnModelEvent e),False
+19,TableModelEvent,1,"TableModelEvent(Object source, int firstRow, int lastRow, int column)",False
+19,TableModelEvent,2,int getFirstRow(),True
+19,TableModelEvent,3,int getLastRow(),True
+19,TableModelEvent,4,int getColumn(),True
+19,TableModelEvent,5,Object getSource(),False
+20,TreeExpansionEvent,1,"TreeExpansionEvent(Object source, int path[], boolean collapsed)",False
+20,TreeExpansionEvent,2,int[] getPath(),False
+20,TreeExpansionEvent,3,boolean isCollapsed(),False
+20,TreeExpansionEvent,4,Object getSource(),False
+20,TreeExpansionEvent,5,void setPath(int path[]),False
+21,TreeModelEvent,1,"TreeModelEvent(Object source, int[] path, int[] childIndices, int type)",False
+21,TreeModelEvent,2,int[] getChildIndices(),True
+21,TreeModelEvent,3,int getType(),False
+21,TreeModelEvent,4,int[] getPath(),False
+21,TreeModelEvent,5,Object getSource(),False
+22,TreeSelectionEvent,1,TreePath getPath(),True
+22,TreeSelectionEvent,2,TreeModel getModel(),False
+22,TreeSelectionEvent,3,TreeSelectionModel getSelectionModel(),False
+22,TreeSelectionEvent,4,TreePath getOldLeadSelectionPath(),True
+22,TreeSelectionEvent,5,TreePath getNewLeadSelectionPath(),True
+23,UndoableEditEvent,1,void addEdit(UndoableEdit e),False
+23,UndoableEditEvent,2,boolean canRedo(),False
+23,UndoableEditEvent,3,boolean canUndo(),False
+23,UndoableEditEvent,4,void discardAllEdits(),False
+23,UndoableEditEvent,5,void end(),False
+23,UndoableEditEvent,6,UndoableEdit getUndoableEdit(),False
+23,UndoableEditEvent,7,void redo(),False
+23,UndoableEditEvent,8,void undo(),False
+23,UndoableEditEvent,9,void undoableEditHappened(UndoableEditEvent e),False
+23,UndoableEditEvent,10,void undoableEditRedone(UndoableEditEvent e),False
+23,UndoableEditEvent,11,void undoableEditDone(UndoableEditEvent e),False
+23,UndoableEditEvent,12,void undoableEditCanceled(UndoableEditEvent e),False

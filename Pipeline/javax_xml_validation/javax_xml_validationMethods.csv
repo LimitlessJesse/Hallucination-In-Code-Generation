@@ -1,0 +1,46 @@
+ClassName,Method,Return Type
+Schema,newValidator(),abstract Validator
+Schema,newValidatorHandler(),abstract ValidatorHandler
+SchemaFactory,getErrorHandler(),abstract ErrorHandler
+SchemaFactory,getFeature(String name),boolean
+SchemaFactory,getProperty(String name),Object
+SchemaFactory,getResourceResolver(),abstract LSResourceResolver
+SchemaFactory,isSchemaLanguageSupported(String schemaLanguage),abstract boolean
+SchemaFactory,newInstance(String schemaLanguage),static SchemaFactory
+SchemaFactory,"newInstance(String schemaLanguage, String factoryClassName, ClassLoader classLoader)",static SchemaFactory
+SchemaFactory,newSchema(),abstract Schema
+SchemaFactory,newSchema(File schema),Schema
+SchemaFactory,newSchema(Source schema),Schema
+SchemaFactory,newSchema(Source[] schemas),abstract Schema
+SchemaFactory,newSchema(URL schema),Schema
+SchemaFactory,setErrorHandler(ErrorHandler errorHandler),abstract void
+SchemaFactory,"setFeature(String name, boolean value)",void
+SchemaFactory,"setProperty(String name, Object object)",void
+SchemaFactory,setResourceResolver(LSResourceResolver resourceResolver),abstract void
+SchemaFactoryLoader,newFactory(String schemaLanguage),abstract SchemaFactory
+TypeInfoProvider,getAttributeTypeInfo(int index),abstract TypeInfo
+TypeInfoProvider,getElementTypeInfo(),abstract TypeInfo
+TypeInfoProvider,isIdAttribute(int index),abstract boolean
+TypeInfoProvider,isSpecified(int index),abstract boolean
+Validator,getErrorHandler(),abstract ErrorHandler
+Validator,getFeature(String name),boolean
+Validator,getProperty(String name),Object
+Validator,getResourceResolver(),abstract LSResourceResolver
+Validator,reset(),abstract void
+Validator,setErrorHandler(ErrorHandler errorHandler),abstract void
+Validator,"setFeature(String name, boolean value)",void
+Validator,"setProperty(String name, Object object)",void
+Validator,setResourceResolver(LSResourceResolver resourceResolver),abstract void
+Validator,validate(Source source),void
+Validator,"validate(Source source, Result result)",abstract void
+ValidatorHandler,getContentHandler(),abstract ContentHandler
+ValidatorHandler,getErrorHandler(),abstract ErrorHandler
+ValidatorHandler,getFeature(String name),boolean
+ValidatorHandler,getProperty(String name),Object
+ValidatorHandler,getResourceResolver(),abstract LSResourceResolver
+ValidatorHandler,getTypeInfoProvider(),abstract TypeInfoProvider
+ValidatorHandler,setContentHandler(ContentHandler receiver),abstract void
+ValidatorHandler,setErrorHandler(ErrorHandler errorHandler),abstract void
+ValidatorHandler,"setFeature(String name, boolean value)",void
+ValidatorHandler,"setProperty(String name, Object object)",void
+ValidatorHandler,setResourceResolver(LSResourceResolver resourceResolver),abstract void

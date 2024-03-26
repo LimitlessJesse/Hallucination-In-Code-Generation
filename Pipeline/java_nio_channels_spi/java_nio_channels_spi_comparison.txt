@@ -1,0 +1,146 @@
+Sample: 0 AbstractInterruptibleChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.AbstractInterruptibleChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isOpen()`: This method returns true if and only if this channel is open.
+
+2. `void close()`: This method closes this channel.
+
+3. `void closeForWriting()`: This method closes this channel for writing.
+
+4. `void closeForReading()`: This method closes this channel for reading.
+
+5. `void finishConnect()`: This method completes the connection-based channel.
+================================================================
+
+Sample: 1 AbstractSelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.AbstractSelectableChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean isOpen()`: This method returns true if and only if this channel is open.
+
+2. `public void close() throws IOException`: This method closes this channel.
+
+3. `public boolean isConnected()`: This method returns true if and only if this channel is connected.
+
+4. `public SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException`: This method registers this channel with the given selector.
+
+5. `public SelectionKey keyFor(Selector sel)`: This method returns the key for this channel that is registered on the given selector.
+================================================================
+
+Sample: 2 AbstractSelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.AbstractSelectionKey package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 3 AbstractSelector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.AbstractSelector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SelectorProvider open()`: This method returns a new instance of the default selector provider.
+
+2. `SelectorProvider provider()`: This method returns the provider of this selector.
+
+3. `Selector openSelector()`: This method opens a new selector.
+
+4. `SelectorProvider select(Selector selector)`: This method selects the given selector.
+
+5. `SelectorProvider close()`: This method closes this selector provider.
+================================================================
+
+Sample: 4 AsynchronousChannelProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.AsynchronousChannelProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AsynchronousChannelProvider.openAsynchronousChannel(AsynchronousChannelType channelType)`: This method opens a new asynchronous channel of the specified type.
+
+2. `AsynchronousChannelProvider.openAsynchronousServerSocketChannel()`: This method opens a new asynchronous server socket channel.
+
+3. `AsynchronousChannelProvider.openAsynchronousSocketChannel(InetSocketAddress remoteAddress)`: This method opens a new asynchronous socket channel connected to the specified remote address.
+
+4. `AsynchronousChannelProvider.provider()`: This method returns the default asynchronous channel provider.
+
+5. `AsynchronousChannelProvider.supportedChannelTypes()`: This method returns a set of the channel types supported by this channel provider.
+================================================================
+
+Sample: 5 SelectorProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.spi.SelectorProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SelectorProvider newSelector()`: This method creates a new Selector.
+
+2. `SelectorProvider openSelector()`: This method opens a new Selector.
+
+3. `SelectorProvider openServerSocketChannel()`: This method opens a new ServerSocketChannel.
+
+4. `SelectorProvider openSocketChannel()`: This method opens a new SocketChannel.
+
+5. `SelectorProvider openDatagramChannel()`: This method opens a new DatagramChannel.
+================================================================
+

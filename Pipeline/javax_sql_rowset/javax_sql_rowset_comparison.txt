@@ -1,0 +1,111 @@
+Sample: 0 BaseRowSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.BaseRowSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+================================================================
+
+Sample: 1 RowSetMetaDataImpl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.RowSetMetaDataImpl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean next()`: This method moves the cursor to the next row in the row set.
+
+2. `boolean previous()`: This method moves the cursor to the previous row in the row set.
+
+3. `boolean first()`: This method moves the cursor to the first row in the row set.
+
+4. `boolean last()`: This method moves the cursor to the last row in the row set.
+
+5. `int getRow()`: This method returns the current row number.
+
+6. `int getColumnCount()`: This method returns the number of columns in the row set.
+
+7. `String getColumnName(int column)`: This method returns the name of the specified column.
+
+8. `int getColumnType(int column)`: This method returns the SQL type of the specified column.
+
+9. `String getColumnLabel(int column)`: This method returns the label of the specified column.
+
+10. `String getColumnClassName(int column)`: This method returns the fully qualified class name of the specified column.
+
+11. `boolean readOnly()`: This method returns true if the row set is read-only.
+
+12. `boolean isAfterLast()`: This method returns true if the cursor is after the last row.
+
+13. `boolean isBeforeFirst()`: This method returns true if the cursor is before the first row.
+
+14. `boolean isFirst()`: This method returns true if the cursor is on the first row.
+
+15. `boolean isLast()`: This method returns true if the cursor is on the last row.
+
+16. `boolean isAfterFirst()`: This method returns true if the cursor is after the first row.
+
+17. `boolean isBeforeLast()`: This method returns true if the cursor is before the last row.
+
+18. `boolean isConcurrencyCheckingEnabled()`: This method returns true if concurrency checking is enabled.
+
+19. `boolean isDeleted()`: This method returns true if the current row has been deleted.
+
+20. `boolean isInserted()`: This method returns true if the current row has been inserted.
+
+21. `boolean isRowChanged()`: This method returns true if the current row has been changed.
+
+22. `boolean isRowDeleted()`: This method returns true if the current row has been deleted.
+
+23. `boolean isRowInserted()`: This method returns true if the current row has been inserted.
+
+24. `boolean isRowSetChanged()`: This method returns true if the row set has been changed.
+
+25. `boolean isUpdated()`: This method returns true if the current row has been updated.
+================================================================
+
+Sample: 2 RowSetProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.RowSetProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RowSetProvider.createRowSet(String rowSetType)`: This method creates a RowSet object of the specified type.
+
+2. `RowSetProvider.getRowSetFactory(String rowSetType)`: This method returns a RowSetFactory object for the specified type.
+
+3. `RowSetProvider.getRowSetWriter(String rowSetType)`: This method returns a RowSetWriter object for the specified type.
+
+4. `RowSetProvider.getRowSetReader(String rowSetType)`: This method returns a RowSetReader object for the specified type.
+
+5. `RowSetProvider.getRowSetFactory(String rowSetType, String providerName)`: This method returns a RowSetFactory object for the specified type and provider.
+================================================================
+

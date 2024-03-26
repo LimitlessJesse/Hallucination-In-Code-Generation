@@ -1,0 +1,101 @@
+ClassName,Method,Return Type
+AttachmentPart,"addMimeHeader(String name, String value)",abstract void
+AttachmentPart,clearContent(),abstract void
+AttachmentPart,getAllMimeHeaders(),abstract Iterator
+AttachmentPart,getBase64Content(),abstract InputStream
+AttachmentPart,getContent(),abstract Object
+AttachmentPart,getContentId(),String
+AttachmentPart,getContentLocation(),String
+AttachmentPart,getContentType(),String
+AttachmentPart,getDataHandler(),abstract DataHandler
+AttachmentPart,getMatchingMimeHeaders(String[] names),abstract Iterator
+AttachmentPart,getMimeHeader(String name),abstract String[]
+AttachmentPart,getNonMatchingMimeHeaders(String[] names),abstract Iterator
+AttachmentPart,getRawContent(),abstract InputStream
+AttachmentPart,getRawContentBytes(),abstract byte[]
+AttachmentPart,getSize(),abstract int
+AttachmentPart,removeAllMimeHeaders(),abstract void
+AttachmentPart,removeMimeHeader(String header),abstract void
+AttachmentPart,"setBase64Content(InputStream content, String contentType)",abstract void
+AttachmentPart,"setContent(Object object, String contentType)",abstract void
+AttachmentPart,setContentId(String contentId),void
+AttachmentPart,setContentLocation(String contentLocation),void
+AttachmentPart,setContentType(String contentType),void
+AttachmentPart,setDataHandler(DataHandler dataHandler),abstract void
+AttachmentPart,"setMimeHeader(String name, String value)",abstract void
+AttachmentPart,"setRawContent(InputStream content, String contentType)",abstract void
+AttachmentPart,"setRawContentBytes(byte[] content, int offset, int len, String contentType)",abstract void
+MessageFactory,createMessage(),abstract SOAPMessage
+MessageFactory,"createMessage(MimeHeaders headers, InputStream in)",abstract SOAPMessage
+MessageFactory,newInstance(),static MessageFactory
+MessageFactory,newInstance(String protocol),static MessageFactory
+MimeHeader,getName(),String
+MimeHeader,getValue(),String
+MimeHeaders,"addHeader(String name, String value)",void
+MimeHeaders,getAllHeaders(),Iterator
+MimeHeaders,getHeader(String name),String[]
+MimeHeaders,getMatchingHeaders(String[] names),Iterator
+MimeHeaders,getNonMatchingHeaders(String[] names),Iterator
+MimeHeaders,removeAllHeaders(),void
+MimeHeaders,removeHeader(String name),void
+MimeHeaders,"setHeader(String name, String value)",void
+SAAJMetaFactory,newMessageFactory(String protocol),protected abstract MessageFactory
+SAAJMetaFactory,newSOAPFactory(String protocol),protected abstract SOAPFactory
+SAAJResult,getResult(),Node
+SOAPConnection,"call(SOAPMessage request, Object to)",abstract SOAPMessage
+SOAPConnection,close(),abstract void
+SOAPConnection,get(Object to),SOAPMessage
+SOAPConnectionFactory,createConnection(),abstract SOAPConnection
+SOAPConnectionFactory,newInstance(),static SOAPConnectionFactory
+SOAPElementFactory,create(Name name),SOAPElement
+SOAPElementFactory,create(String localName),SOAPElement
+SOAPElementFactory,"create(String localName, String prefix, String uri)",SOAPElement
+SOAPElementFactory,newInstance(),static SOAPElementFactory
+SOAPFactory,createDetail(),abstract Detail
+SOAPFactory,createElement(Element domElement),SOAPElement
+SOAPFactory,createElement(Name name),abstract SOAPElement
+SOAPFactory,createElement(QName qname),SOAPElement
+SOAPFactory,createElement(String localName),abstract SOAPElement
+SOAPFactory,"createElement(String localName, String prefix, String uri)",abstract SOAPElement
+SOAPFactory,createFault(),abstract SOAPFault
+SOAPFactory,"createFault(String reasonText, QName faultCode)",abstract SOAPFault
+SOAPFactory,createName(String localName),abstract Name
+SOAPFactory,"createName(String localName, String prefix, String uri)",abstract Name
+SOAPFactory,newInstance(),static SOAPFactory
+SOAPFactory,newInstance(String protocol),static SOAPFactory
+SOAPMessage,addAttachmentPart(AttachmentPart AttachmentPart),abstract void
+SOAPMessage,countAttachments(),abstract int
+SOAPMessage,createAttachmentPart(),abstract AttachmentPart
+SOAPMessage,createAttachmentPart(DataHandler dataHandler),AttachmentPart
+SOAPMessage,"createAttachmentPart(Object content, String contentType)",AttachmentPart
+SOAPMessage,getAttachment(SOAPElement element),abstract AttachmentPart
+SOAPMessage,getAttachments(),abstract Iterator
+SOAPMessage,getAttachments(MimeHeaders headers),abstract Iterator
+SOAPMessage,getContentDescription(),abstract String
+SOAPMessage,getMimeHeaders(),abstract MimeHeaders
+SOAPMessage,getProperty(String property),Object
+SOAPMessage,getSOAPBody(),SOAPBody
+SOAPMessage,getSOAPHeader(),SOAPHeader
+SOAPMessage,getSOAPPart(),abstract SOAPPart
+SOAPMessage,removeAllAttachments(),abstract void
+SOAPMessage,removeAttachments(MimeHeaders headers),abstract void
+SOAPMessage,saveChanges(),abstract void
+SOAPMessage,saveRequired(),abstract boolean
+SOAPMessage,setContentDescription(String description),abstract void
+SOAPMessage,"setProperty(String property, Object value)",void
+SOAPMessage,writeTo(OutputStream out),abstract void
+SOAPPart,"addMimeHeader(String name, String value)",abstract void
+SOAPPart,getAllMimeHeaders(),abstract Iterator
+SOAPPart,getContent(),abstract Source
+SOAPPart,getContentId(),String
+SOAPPart,getContentLocation(),String
+SOAPPart,getEnvelope(),abstract SOAPEnvelope
+SOAPPart,getMatchingMimeHeaders(String[] names),abstract Iterator
+SOAPPart,getMimeHeader(String name),abstract String[]
+SOAPPart,getNonMatchingMimeHeaders(String[] names),abstract Iterator
+SOAPPart,removeAllMimeHeaders(),abstract void
+SOAPPart,removeMimeHeader(String header),abstract void
+SOAPPart,setContent(Source source),abstract void
+SOAPPart,setContentId(String contentId),void
+SOAPPart,setContentLocation(String contentLocation),void
+SOAPPart,"setMimeHeader(String name, String value)",abstract void

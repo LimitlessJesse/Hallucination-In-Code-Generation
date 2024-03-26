@@ -1,0 +1,56 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,ActivationDataFlavor,1,boolean add(E e),False
+0,ActivationDataFlavor,2,"void add(int index, E element)",False
+0,ActivationDataFlavor,3,boolean addAll(Collection<? extends E> c),False
+0,ActivationDataFlavor,4,"boolean addAll(int index, Collection<? extends E> c)",False
+0,ActivationDataFlavor,5,void clear(),False
+1,CommandInfo,1,boolean isCommand(),False
+1,CommandInfo,2,String getCommandName(),True
+1,CommandInfo,3,String getCommandClassName(),False
+1,CommandInfo,4,String getMimeType(),False
+1,CommandInfo,5,String getParameter(String name),False
+2,CommandMap,1,boolean containsKey(Object key),False
+2,CommandMap,2,Object get(Object key),False
+2,CommandMap,3,"Object put(Object key, Object value)",False
+2,CommandMap,4,Object remove(Object key),False
+2,CommandMap,5,int size(),False
+3,DataHandler,1,DataHandler getDataHandler(),False
+3,DataHandler,2,void setDataHandler(DataHandler dataHandler),False
+3,DataHandler,3,String getContentType(),True
+3,DataHandler,4,void setContentType(String type),False
+3,DataHandler,5,String getName(),True
+4,FileDataSource,1,FileDataSource(File file),False
+4,FileDataSource,2,String getContentType(),True
+4,FileDataSource,3,InputStream getInputStream() throws IOException,True
+4,FileDataSource,4,String getName(),True
+4,FileDataSource,5,OutputStream getOutputStream() throws IOException,True
+5,FileTypeMap,1,FileTypeMap getDefaultFileTypeMap(),True
+5,FileTypeMap,2,String getContentType(File file),True
+5,FileTypeMap,3,String getContentType(String fileName),True
+5,FileTypeMap,4,"void setContentTypeForExtension(String extension, String type)",False
+5,FileTypeMap,5,void setDefaultFileTypeMap(FileTypeMap map),True
+6,MailcapCommandMap,1,boolean add(E e),False
+6,MailcapCommandMap,2,"void add(int index, E element)",False
+6,MailcapCommandMap,3,boolean addAll(Collection<? extends E> c),False
+6,MailcapCommandMap,4,"boolean addAll(int index, Collection<? extends E> c)",False
+6,MailcapCommandMap,5,void clear(),False
+7,MimeType,1,boolean isMimeType(String type),False
+7,MimeType,2,"boolean isMimeType(String type, String subType)",False
+7,MimeType,3,String getPrimaryType(String type),False
+7,MimeType,4,String getSubType(String type),False
+7,MimeType,5,"String getParameter(String type, String parameterName)",False
+8,MimeTypeParameterList,1,boolean add(E e),False
+8,MimeTypeParameterList,2,"void add(int index, E element)",False
+8,MimeTypeParameterList,3,boolean addAll(Collection<? extends E> c),False
+8,MimeTypeParameterList,4,boolean contains(Object o),False
+8,MimeTypeParameterList,5,E get(int index),False
+9,MimetypesFileTypeMap,1,getContentType(String filename),False
+9,MimetypesFileTypeMap,2,getContentTypeFor(String url),False
+9,MimetypesFileTypeMap,3,getDefaultContentType(),False
+9,MimetypesFileTypeMap,4,setDefaultContentType(String type),False
+9,MimetypesFileTypeMap,5,useCaches(boolean useCaches),False
+10,URLDataSource,1,URL getURL(),True
+10,URLDataSource,2,InputStream getInputStream(),True
+10,URLDataSource,3,OutputStream getOutputStream(),True
+10,URLDataSource,4,String getContentType(),True
+10,URLDataSource,5,String getName(),True

@@ -1,0 +1,52 @@
+Sample: 0 StAXResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.stax.StAXResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setResult(Source source)`: This method sets the Source object to be used as the result of the transformation.
+
+2. `boolean setResult(Result result)`: This method sets the Result object to be used as the result of the transformation.
+
+3. `boolean setResult(StreamResult streamResult)`: This method sets the StreamResult object to be used as the result of the transformation.
+
+4. `boolean setResult(Writer writer)`: This method sets the Writer object to be used as the result of the transformation.
+
+5. `boolean setResult(OutputStream outputStream)`: This method sets the OutputStream object to be used as the result of the transformation.
+================================================================
+
+Sample: 1 StAXSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.stax.StAXSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setBaseURI(String baseURI)`: This method sets the base URI of the StAXSource.
+
+2. `boolean setSystemId(String systemId)`: This method sets the system identifier of the StAXSource.
+
+3. `boolean setEventReader(XMLStreamReader eventReader)`: This method sets the XMLStreamReader of the StAXSource.
+
+4. `XMLStreamReader getEventReader()`: This method returns the XMLStreamReader of the StAXSource.
+
+5. `String getBaseURI()`: This method returns the base URI of the StAXSource.
+
+6. `String getSystemId()`: This method returns the system identifier of the StAXSource.
+================================================================
+

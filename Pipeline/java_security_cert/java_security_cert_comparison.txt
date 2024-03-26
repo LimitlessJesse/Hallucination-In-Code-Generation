@@ -1,0 +1,742 @@
+Sample: 0 Certificate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.Certificate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Certificate getCertificate(int index)`: This method returns the certificate at the specified position in this certificate list.
+
+2. `Certificate getCertificate(String alias)`: This method returns the certificate with the specified alias in this certificate list.
+
+3. `Certificate[] getCertificates()`: This method returns an array containing all of the certificates in this certificate list.
+
+4. `Certificate[] getCertificates(String type)`: This method returns an array containing all of the certificates in this certificate list that match the specified type.
+
+5. `int size()`: This method returns the number of certificates in this certificate list.
+================================================================
+
+Sample: 1 Certificate.CertificateRep
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.Certificate.CertificateRep package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 2 CertificateFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertificateFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertificateFactory getInstance(String type)`: This method returns a CertificateFactory object that is used to generate Certificate objects. The parameter type specifies the type of CertificateFactory to be returned.
+
+2. `Certificate generateCertificate(InputStream in)`: This method generates a Certificate object from the given InputStream.
+
+3. `CertPath getInstance(CertPath certPath, String type)`: This method returns a CertPath object that is used to represent a sequence of certificates. The parameter type specifies the type of CertPath to be returned.
+
+4. `CertPath generateCertPath(CertPathParameters params)`: This method generates a CertPath object from the given CertPathParameters.
+
+5. `CertPathParameters getInstance(InputStream in)`: This method returns a CertPathParameters object that is used to specify parameters for generating a CertPath.
+================================================================
+
+Sample: 3 CertificateFactorySpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertificateFactorySpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertificateFactorySpi()`: This is a constructor of the CertificateFactorySpi class. It creates a new CertificateFactorySpi object.
+
+2. `CertificateFactorySpi(String provider)`: This is a constructor of the CertificateFactorySpi class. It creates a new CertificateFactorySpi object with the specified provider.
+
+3. `CertificateFactorySpi(String provider, String type)`: This is a constructor of the CertificateFactorySpi class. It creates a new CertificateFactorySpi object with the specified provider and type.
+
+4. `CertificateFactorySpi(String provider, String type, String algorithm)`: This is a constructor of the CertificateFactorySpi class. It creates a new CertificateFactorySpi object with the specified provider, type, and algorithm.
+
+5. `CertificateFactorySpi(String provider, String type, String algorithm, String format)`: This is a constructor of the CertificateFactorySpi class. It creates a new CertificateFactorySpi object with the specified provider, type, algorithm, and format.
+================================================================
+
+Sample: 4 CertPath
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPath package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertPath getInstance(CertPathParameters parameters)`: This method returns a new CertPath instance that is initialized with the specified parameters.
+
+2. `CertPath getInstance(CertPathParameters parameters, String provider)`: This method returns a new CertPath instance that is initialized with the specified parameters and provider.
+
+3. `CertPath getInstance(InputStream inStream)`: This method returns a new CertPath instance that is initialized with the specified input stream.
+
+4. `CertPath getInstance(InputStream inStream, String provider)`: This method returns a new CertPath instance that is initialized with the specified input stream and provider.
+
+5. `CertPath getInstance(String type, InputStream inStream)`: This method returns a new CertPath instance that is initialized with the specified type and input stream.
+================================================================
+
+Sample: 5 CertPath.CertPathRep
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPath.CertPathRep package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 6 CertPathBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPathBuilder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertPathBuilder.build(CertPathParameters params)`: This method builds a CertPath using the specified parameters.
+
+2. `CertPathBuilderResult getResult()`: This method returns the result of the build operation.
+
+3. `CertPathBuilderResult build(CertPathParameters params)`: This method builds a CertPath using the specified parameters.
+
+4. `CertPathBuilderResult build(CertPathParameters params, PKIXParameters pkixParams)`: This method builds a CertPath using the specified parameters and PKIX parameters.
+
+5. `CertPathBuilderResult build(CertPathParameters params, PKIXParameters pkixParams, CertStoreParameters storeParams)`: This method builds a CertPath using the specified parameters, PKIX parameters, and CertStore parameters.
+================================================================
+
+Sample: 7 CertPathBuilderSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPathBuilderSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertPathBuilderSpi()`: Constructs a CertPathBuilderSpi object.
+
+2. `Engine getEngine()`: Returns the engine for this CertPathBuilderSpi.
+
+3. `CertPathBuilderResult build(CertPathParameters params)`: Builds a CertPath from the given parameters.
+
+4. `CertPathBuilderResult build(CertPathParameters params, Collection<? extends CertPath> endCerts)`: Builds a CertPath from the given parameters and end certificates.
+
+5. `CertPathBuilderResult build(CertPathParameters params, CertPath endCertPath)`: Builds a CertPath from the given parameters and end certificate path.
+================================================================
+
+Sample: 8 CertPathValidator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPathValidator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertPathValidator.validate(CertPath, PKIXParameters)`: This method validates the given CertPath using the specified PKIXParameters.
+
+2. `CertPathValidator.validate(CertPath, PKIXParameters, CertPathChecker)`: This method validates the given CertPath using the specified PKIXParameters and CertPathChecker.
+
+3. `CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters)`: This method validates the given CertPath using the specified PKIXParameters and CertPathParameters.
+
+4. `CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters, CertPathChecker)`: This method validates the given CertPath using the specified PKIXParameters, CertPathParameters and CertPathChecker.
+
+5. `CertPathValidator.validate(CertPath, PKIXParameters, CertPathParameters, CertPathChecker, PKIXRevocationChecker)`: This method validates the given CertPath using the specified PKIXParameters, CertPathParameters, CertPathChecker and PKIXRevocationChecker.
+================================================================
+
+Sample: 9 CertPathValidatorSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertPathValidatorSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertPathValidatorSpi()`: This is a constructor of the CertPathValidatorSpi class.
+
+2. `void engineInit(CertPathParameters parameters)`: This method initializes the CertPathValidatorSpi object.
+
+3. `Set<String> engineGetSupportedExtensions()`: This method returns a set of the names of the extensions supported by this CertPathValidatorSpi object.
+
+4. `CertPathValidatorResult engineValidate(CertPath certPath, CertPathParameters parameters)`: This method validates the given CertPath.
+
+5. `CertPathChecker engineGetRevocationChecker()`: This method returns a CertPathChecker that can be used to check revocation status of certificates in the given CertPath.
+================================================================
+
+Sample: 10 CertStore
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertStore package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertStore getCertStores(Collection<? extends Name> types)`: This method returns a collection of CertStore objects that contain certificates of the specified types.
+
+2. `CertStore getCertStores(String type)`: This method returns a collection of CertStore objects that contain certificates of the specified type.
+
+3. `CertStore getCertStores(String type, String provider)`: This method returns a collection of CertStore objects that contain certificates of the specified type and provider.
+
+4. `CertStore getCertStores(String type, String provider, String algorithm)`: This method returns a collection of CertStore objects that contain certificates of the specified type, provider, and algorithm.
+
+5. `CertStore getCertStores(String type, String provider, String algorithm, String parameter)`: This method returns a collection of CertStore objects that contain certificates of the specified type, provider, algorithm, and parameter.
+================================================================
+
+Sample: 11 CertStoreSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CertStoreSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CertStoreSpi()`: Constructs a CertStoreSpi object.
+
+2. `CertStoreSpi(Provider provider)`: Constructs a CertStoreSpi object with the specified provider.
+
+3. `CertStoreSpi(Provider provider, String type)`: Constructs a CertStoreSpi object with the specified provider and type.
+
+4. `CertStoreSpi(String type)`: Constructs a CertStoreSpi object with the specified type.
+
+5. `CertStoreSpi(String type, String providerName)`: Constructs a CertStoreSpi object with the specified type and provider name.
+
+6. `CertStoreSpi(String type, Provider provider)`: Constructs a CertStoreSpi object with the specified type and provider.
+
+7. `CertStoreSpi(String type, String providerName, String providerInfo)`: Constructs a CertStoreSpi object with the specified type, provider name, and provider info.
+
+8. `CertStoreSpi(String type, Provider provider, String providerInfo)`: Constructs a CertStoreSpi object with the specified type, provider, and provider info.
+
+9. `CertStoreSpi(String type, String providerName, String providerInfo, String algorithm)`: Constructs a CertStoreSpi object with the specified type, provider name, provider info, and algorithm.
+
+10. `CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm)`: Constructs a CertStoreSpi object with the specified type, provider, provider info, and algorithm.
+
+11. `CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter)`: Constructs a CertStoreSpi object with the specified type, provider name, provider info, algorithm, and parameter.
+
+12. `CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter)`: Constructs a CertStoreSpi object with the specified type, provider, provider info, algorithm, and parameter.
+
+13. `CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter, String parameterSpec)`: Constructs a CertStoreSpi object with the specified type, provider name, provider info, algorithm, parameter, and parameter spec.
+
+14. `CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter, String parameterSpec)`: Constructs a CertStoreSpi object with the specified type, provider, provider info, algorithm, parameter, and parameter spec.
+
+15. `CertStoreSpi(String type, String providerName, String providerInfo, String algorithm, String parameter, String parameterSpec, String parameterSpec)`: Constructs a CertStoreSpi object with the specified type, provider name, provider info, algorithm, parameter, parameter spec, and parameter spec.
+
+16. `CertStoreSpi(String type, Provider provider, String providerInfo, String algorithm, String parameter, String parameterSpec, String parameterSpec)`: Constructs a CertStoreSpi object with the specified type, provider, provider info, algorithm, parameter, parameter spec, and parameter spec.
+================================================================
+
+Sample: 12 CollectionCertStoreParameters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CollectionCertStoreParameters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 13 CRL
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.CRL package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isRevoked(Certificate cert)`: This method checks if the specified certificate is revoked.
+
+2. `boolean isRevoked(PublicKey key)`: This method checks if the specified public key is revoked.
+
+3. `boolean isRevoked(CertificateHolder certHolder)`: This method checks if the specified certificate holder is revoked.
+
+4. `boolean isRevoked(CertificateID certID)`: This method checks if the specified certificate ID is revoked.
+
+5. `boolean isRevoked(CertificateStatus certStatus)`: This method checks if the specified certificate status is revoked.
+================================================================
+
+Sample: 14 LDAPCertStoreParameters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.LDAPCertStoreParameters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LDAPCertStoreParameters(String url)`: This constructor creates a new LDAPCertStoreParameters object with the specified URL.
+
+2. `LDAPCertStoreParameters(String url, String base)`: This constructor creates a new LDAPCertStoreParameters object with the specified URL and base.
+
+3. `LDAPCertStoreParameters(String url, String base, String filter)`: This constructor creates a new LDAPCertStoreParameters object with the specified URL, base, and filter.
+
+4. `LDAPCertStoreParameters(String url, String base, String filter, String scope)`: This constructor creates a new LDAPCertStoreParameters object with the specified URL, base, filter, and scope.
+
+5. `LDAPCertStoreParameters(String url, String base, String filter, String scope, String derefAliases)`: This constructor creates a new LDAPCertStoreParameters object with the specified URL, base, filter, scope, and derefAliases.
+================================================================
+
+Sample: 15 PKIXBuilderParameters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXBuilderParameters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PKIXBuilderParameters()`: Constructs a new PKIXBuilderParameters object.
+
+2. `void addCertPath(CertPath certPath)`: Adds the specified CertPath to the list of CertPaths.
+
+3. `void setTrustAnchors(TrustAnchor[] trustAnchors)`: Sets the array of TrustAnchors.
+
+4. `void setRevocationEnabled(boolean revocationEnabled)`: Sets whether revocation checking is enabled.
+
+5. `void setMaxPathLength(int maxPathLength)`: Sets the maximum path length.
+================================================================
+
+Sample: 16 PKIXCertPathBuilderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXCertPathBuilderResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getTrustAnchors()`: This method returns a set of trust anchors.
+
+2. `getCertPath()`: This method returns the certificate path.
+
+3. `getPolicyTree()`: This method returns the policy tree.
+
+4. `getPublicKey()`: This method returns the public key.
+
+5. `getPrivateKey()`: This method returns the private key.
+================================================================
+
+Sample: 17 PKIXCertPathChecker
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXCertPathChecker package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean check(Certificate cert, CertPath certPath, Principal paramPrincipal)`: This method checks whether the specified certificate is trusted by the specified certificate path.
+
+2. `void init(boolean forward)`: This method initializes this checker with the specified forward checking mode.
+
+3. `void check(Certificate cert, CertPath certPath, Principal paramPrincipal)`: This method checks whether the specified certificate is trusted by the specified certificate path.
+
+4. `void init(boolean forward)`: This method initializes this checker with the specified forward checking mode.
+
+5. `void check(Certificate cert, CertPath certPath, Principal paramPrincipal)`: This method checks whether the specified certificate is trusted by the specified certificate path.
+================================================================
+
+Sample: 18 PKIXCertPathValidatorResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXCertPathValidatorResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getTrustAnchors()`: This method returns a set of trusted certificate issuers.
+
+2. `getPolicyTree()`: This method returns the policy tree that was used to validate the certification path.
+
+3. `getCertPath()`: This method returns the certification path that was validated.
+
+4. `getPolicyQualifiers()`: This method returns the policy qualifiers that were used to validate the certification path.
+
+5. `getValidity()`: This method returns the validity period of the certification path.
+================================================================
+
+Sample: 19 PKIXParameters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXParameters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setCertPathChecker(CertPathChecker checker)`: This method sets the CertPathChecker to use for checking the validity of certificates.
+
+2. `setCertPathParameters(CertPathParameters parameters)`: This method sets the CertPathParameters to use for checking the validity of certificates.
+
+3. `setDisabledAlgorithms(Set<String> algorithms)`: This method sets the set of algorithms to be disabled.
+
+4. `setInitialPolicies(List<PolicyNode> policies)`: This method sets the initial set of policies.
+
+5. `setMaxPathLength(int maxPathLength)`: This method sets the maximum path length.
+================================================================
+
+Sample: 20 PKIXRevocationChecker
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PKIXRevocationChecker package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean checkRevocation(Certificate cert)`: This method checks whether the certificate is revoked.
+
+2. `void checkRevocation(Certificate[] certs)`: This method checks whether the certificates are revoked.
+
+3. `void checkRevocation(Collection<Certificate> certs)`: This method checks whether the certificates are revoked.
+
+4. `void checkRevocation(CertPath certPath)`: This method checks whether the certificates in the path are revoked.
+
+5. `void checkRevocation(CertPath[] certPaths)`: This method checks whether the certificates in the paths are revoked.
+
+6. `void checkRevocation(Collection<CertPath> certPaths)`: This method checks whether the certificates in the paths are revoked.
+================================================================
+
+Sample: 21 PolicyQualifierInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.PolicyQualifierInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object obj)`: This method compares the specified object with this list for equality.
+
+2. `int hashCode()`: This method returns the hash code value for this list.
+
+3. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+4. `boolean removeAll(Collection<?> c)`: This method removes all of the elements of the specified collection from this list.
+
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+
+Sample: 22 TrustAnchor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.TrustAnchor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TrustAnchor(X509Certificate cert, Principal issuer)`: This constructor creates a new TrustAnchor with the specified certificate and issuer.
+
+2. `X509Certificate getTrustedCert()`: This method returns the trusted certificate.
+
+3. `Principal getCA()`: This method returns the issuer of the trusted certificate.
+
+4. `boolean equals(Object obj)`: This method compares this TrustAnchor with the specified object for equality.
+
+5. `int hashCode()`: This method returns the hash code value for this TrustAnchor.
+================================================================
+
+Sample: 23 X509Certificate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.X509Certificate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getIssuerDN()`: This method returns the distinguished name of the issuer of the certificate.
+
+2. `getNotAfter()`: This method returns the date after which the certificate is not valid.
+
+3. `getNotBefore()`: This method returns the date before which the certificate is not valid.
+
+4. `getPublicKey()`: This method returns the public key of the certificate.
+
+5. `getSerialNumber()`: This method returns the serial number of the certificate.
+
+6. `getSubjectDN()`: This method returns the distinguished name of the subject of the certificate.
+
+7. `getType()`: This method returns the type of the certificate.
+
+8. `getVersion()`: This method returns the version of the certificate.
+
+9. `getIssuerX500Principal()`: This method returns the issuer of the certificate as an X500Principal.
+
+10. `getSubjectX500Principal()`: This method returns the subject of the certificate as an X500Principal.
+
+11. `getSigAlgName()`: This method returns the signature algorithm name of the certificate.
+
+12. `getSigAlgOID()`: This method returns the signature algorithm OID of the certificate.
+
+13. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+14. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+15. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+16. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+17. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+18. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+19. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+
+20. `getSigAlgParams()`: This method returns the signature algorithm parameters of the certificate.
+================================================================
+
+Sample: 24 X509CertSelector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.X509CertSelector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `X509CertSelector()`: This is a constructor of X509CertSelector class.
+
+2. `void setCertificate(X509Certificate cert)`: This method sets the certificate to be used in the selection.
+
+3. `X509Certificate getCertificate()`: This method returns the certificate used in the selection.
+
+4. `void setCertPathChecker(CertPathChecker checker)`: This method sets the CertPathChecker to be used in the selection.
+
+5. `CertPathChecker getCertPathChecker()`: This method returns the CertPathChecker used in the selection.
+================================================================
+
+Sample: 25 X509CRL
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.X509CRL package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `X509CRL getRevokedCertificates()`: This method returns a set of revoked certificates.
+
+2. `Date getNextUpdate()`: This method returns the date after which the next update of the CRL is expected.
+
+3. `Date getLastUpdate()`: This method returns the date of the last update of the CRL.
+
+4. `boolean isRevoked(Certificate cert)`: This method checks if the specified certificate is revoked.
+
+5. `boolean isValid(Date date)`: This method checks if the CRL is valid on the specified date.
+================================================================
+
+Sample: 26 X509CRLEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.X509CRLEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getRevocationDate()`: This method returns the revocation date of the certificate.
+
+2. `getSerialNumber()`: This method returns the serial number of the certificate.
+
+3. `getStatus()`: This method returns the status of the certificate.
+
+4. `getCertificate()`: This method returns the certificate.
+
+5. `getExtensions()`: This method returns the extensions of the certificate.
+================================================================
+
+Sample: 27 X509CRLSelector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.cert.X509CRLSelector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isRevoked(Certificate cert)`: This method checks if the specified certificate is revoked.
+
+2. `boolean match(Certificate cert)`: This method checks if the specified certificate matches the selector.
+
+3. `boolean match(CRL crl)`: This method checks if the specified CRL matches the selector.
+
+4. `boolean match(Certificate cert, CRL crl)`: This method checks if the specified certificate and CRL match the selector.
+
+5. `void setCertSelector(CertSelector certSelector)`: This method sets the certificate selector.
+================================================================
+

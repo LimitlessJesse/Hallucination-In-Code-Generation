@@ -1,0 +1,25 @@
+Sample: 0 CharsetProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.spi.CharsetProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CharsetProvider.charsets()`: This method returns a set of Charset objects that are available to this provider.
+
+2. `CharsetProvider.charsetForName(String charsetName)`: This method returns the Charset object for the named charset.
+
+3. `CharsetProvider.iterator()`: This method returns an iterator over the Charset objects that are available to this provider.
+
+4. `CharsetProvider.aliases()`: This method returns a set of aliases for the Charset objects that are available to this provider.
+
+5. `CharsetProvider.charsetNames()`: This method returns a set of the names of the Charset objects that are available to this provider.
+================================================================
+

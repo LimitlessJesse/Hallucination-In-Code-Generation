@@ -1,0 +1,44 @@
+Sample: Clipboard_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getSystemClipboard(HeadlessToolkit.java:216)
+	at Clipboard_1.main(Clipboard_1.java:8)
+
+================================================================
+
+Sample: Clipboard_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.awt.HeadlessToolkit.getSystemClipboard(HeadlessToolkit.java:216)
+	at Clipboard_2.main(Clipboard_2.java:10)
+
+================================================================
+
+Sample: DataFlavor_4
+----------------------------------------------------------------
+output:
+./java_awt_datatransfer/javaFiles/DataFlavor_4.java:11: error: exception UnsupportedFlavorException is never thrown in body of corresponding try statement
+        } catch (UnsupportedFlavorException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: DataFlavor_5
+----------------------------------------------------------------
+output:
+./java_awt_datatransfer/javaFiles/DataFlavor_5.java:11: error: exception UnsupportedFlavorException is never thrown in body of corresponding try statement
+        } catch (UnsupportedFlavorException e) {
+          ^
+1 error
+
+
+================================================================
+

@@ -1,0 +1,64 @@
+ClassName,Method,Return Type
+IIORegistry,getDefaultInstance(),static IIORegistry
+IIORegistry,registerApplicationClasspathSpis(),void
+IIOServiceProvider,getDescription(Locale locale),abstract String
+IIOServiceProvider,getVendorName(),String
+IIOServiceProvider,getVersion(),String
+IIOServiceProvider,"onDeregistration(ServiceRegistry registry, Class<?> category)",void
+IIOServiceProvider,"onRegistration(ServiceRegistry registry, Class<?> category)",void
+ImageInputStreamSpi,canUseCacheFile(),boolean
+ImageInputStreamSpi,createInputStreamInstance(Object input),ImageInputStream
+ImageInputStreamSpi,"createInputStreamInstance(Object input, boolean useCache, File cacheDir)",abstract ImageInputStream
+ImageInputStreamSpi,getInputClass(),Class<?>
+ImageInputStreamSpi,needsCacheFile(),boolean
+ImageOutputStreamSpi,canUseCacheFile(),boolean
+ImageOutputStreamSpi,createOutputStreamInstance(Object output),ImageOutputStream
+ImageOutputStreamSpi,"createOutputStreamInstance(Object output, boolean useCache, File cacheDir)",abstract ImageOutputStream
+ImageOutputStreamSpi,getOutputClass(),Class<?>
+ImageOutputStreamSpi,needsCacheFile(),boolean
+ImageReaderSpi,canDecodeInput(Object source),abstract boolean
+ImageReaderSpi,createReaderInstance(),ImageReader
+ImageReaderSpi,createReaderInstance(Object extension),abstract ImageReader
+ImageReaderSpi,getImageWriterSpiNames(),String[]
+ImageReaderSpi,getInputTypes(),Class[]
+ImageReaderSpi,isOwnReader(ImageReader reader),boolean
+ImageReaderWriterSpi,getExtraImageMetadataFormatNames(),String[]
+ImageReaderWriterSpi,getExtraStreamMetadataFormatNames(),String[]
+ImageReaderWriterSpi,getFileSuffixes(),String[]
+ImageReaderWriterSpi,getFormatNames(),String[]
+ImageReaderWriterSpi,getImageMetadataFormat(String formatName),IIOMetadataFormat
+ImageReaderWriterSpi,getMIMETypes(),String[]
+ImageReaderWriterSpi,getNativeImageMetadataFormatName(),String
+ImageReaderWriterSpi,getNativeStreamMetadataFormatName(),String
+ImageReaderWriterSpi,getPluginClassName(),String
+ImageReaderWriterSpi,getStreamMetadataFormat(String formatName),IIOMetadataFormat
+ImageReaderWriterSpi,isStandardImageMetadataFormatSupported(),boolean
+ImageReaderWriterSpi,isStandardStreamMetadataFormatSupported(),boolean
+ImageTranscoderSpi,createTranscoderInstance(),abstract ImageTranscoder
+ImageTranscoderSpi,getReaderServiceProviderName(),abstract String
+ImageTranscoderSpi,getWriterServiceProviderName(),abstract String
+ImageWriterSpi,canEncodeImage(ImageTypeSpecifier type),abstract boolean
+ImageWriterSpi,canEncodeImage(RenderedImage im),boolean
+ImageWriterSpi,createWriterInstance(),ImageWriter
+ImageWriterSpi,createWriterInstance(Object extension),abstract ImageWriter
+ImageWriterSpi,getImageReaderSpiNames(),String[]
+ImageWriterSpi,getOutputTypes(),Class[]
+ImageWriterSpi,isFormatLossless(),boolean
+ImageWriterSpi,isOwnWriter(ImageWriter writer),boolean
+ServiceRegistry,contains(Object provider),boolean
+ServiceRegistry,deregisterAll(),void
+ServiceRegistry,deregisterAll(Class<?> category),void
+ServiceRegistry,deregisterServiceProvider(Object provider),void
+ServiceRegistry,"deregisterServiceProvider(T provider, Class<T> category)",<T> boolean
+ServiceRegistry,finalize(),void
+ServiceRegistry,getCategories(),Iterator<Class<?>>
+ServiceRegistry,getServiceProviderByClass(Class<T> providerClass),<T> T
+ServiceRegistry,"getServiceProviders(Class<T> category, boolean useOrdering)",<T> Iterator<T>
+ServiceRegistry,"getServiceProviders(Class<T> category, ServiceRegistry.Filter filter, boolean useOrdering)",<T> Iterator<T>
+ServiceRegistry,lookupProviders(Class<T> providerClass),static <T> Iterator<T>
+ServiceRegistry,"lookupProviders(Class<T> providerClass, ClassLoader loader)",static <T> Iterator<T>
+ServiceRegistry,registerServiceProvider(Object provider),void
+ServiceRegistry,"registerServiceProvider(T provider, Class<T> category)",<T> boolean
+ServiceRegistry,registerServiceProviders(Iterator<?> providers),void
+ServiceRegistry,"setOrdering(Class<T> category, T firstProvider, T secondProvider)",<T> boolean
+ServiceRegistry,"unsetOrdering(Class<T> category, T firstProvider, T secondProvider)",<T> boolean

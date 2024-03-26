@@ -1,0 +1,158 @@
+Sample: CertificateFactory_1
+----------------------------------------------------------------
+stdout:
+java.security.cert.CertificateFactory@1e4a7dd4
+
+================================================================
+
+Sample: CertificateFactory_2
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: path_to_your_certificate.cer (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at CertificateFactory_2.main(CertificateFactory_2.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: CertPathValidatorSpi_4
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/CertPathValidatorSpi_4.java:6: error: cannot find symbol
+import java.security.cert.PKIXCertPathValidatorSpi;
+                         ^
+  symbol:   class PKIXCertPathValidatorSpi
+  location: package java.security.cert
+./java_security_cert/javaFiles/CertPathValidatorSpi_4.java:22: error: no suitable method found for generateCertPath(Certificate[])
+            CertPath certPath = cf.generateCertPath(new Certificate[]{cert});
+                                  ^
+    method CertificateFactory.generateCertPath(InputStream) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to InputStream)
+    method CertificateFactory.generateCertPath(List<? extends Certificate>) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to List<? extends Certificate>)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: CRL_1
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: crl.pem (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at CRL_1.main(CRL_1.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: PKIXBuilderParameters_5
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/PKIXBuilderParameters_5.java:5: error: no suitable constructor found for PKIXBuilderParameters(no arguments)
+        PKIXBuilderParameters pkixBuilderParameters = new PKIXBuilderParameters();
+                                                      ^
+    constructor PKIXBuilderParameters.PKIXBuilderParameters(Set<TrustAnchor>,CertSelector) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor PKIXBuilderParameters.PKIXBuilderParameters(KeyStore,CertSelector) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: PKIXCertPathChecker_2
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/PKIXCertPathChecker_2.java:19: error: no suitable method found for generateCertPath(Certificate[])
+            CertPath path = cf.generateCertPath(new Certificate[]{cert});
+                              ^
+    method CertificateFactory.generateCertPath(InputStream) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to InputStream)
+    method CertificateFactory.generateCertPath(List<? extends Certificate>) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to List<? extends Certificate>)
+./java_security_cert/javaFiles/PKIXCertPathChecker_2.java:21: error: <anonymous PKIXCertPathChecker_2$1> is not abstract and does not override abstract method check(Certificate,Collection<String>) in PKIXCertPathChecker
+            PKIXCertPathChecker checker = new PKIXCertPathChecker() {
+                                                                    ^
+./java_security_cert/javaFiles/PKIXCertPathChecker_2.java:27: error: incompatible types: PKIXCertPathChecker cannot be converted to CertPathParameters
+            validator.validate(path, checker);
+                                     ^
+./java_security_cert/javaFiles/PKIXCertPathChecker_2.java:28: error: Alternatives in a multi-catch statement cannot be related by subclassing
+        } catch (CertificateException | IOException | CertPathValidatorException | GeneralSecurityException e) {
+                                                                                   ^
+  Alternative CertificateException is a subclass of alternative GeneralSecurityException
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+
+================================================================
+
+Sample: PKIXCertPathChecker_4
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/PKIXCertPathChecker_4.java:19: error: no suitable method found for generateCertPath(Certificate[])
+            CertPath path = cf.generateCertPath(new Certificate[]{cert});
+                              ^
+    method CertificateFactory.generateCertPath(InputStream) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to InputStream)
+    method CertificateFactory.generateCertPath(List<? extends Certificate>) is not applicable
+      (argument mismatch; Certificate[] cannot be converted to List<? extends Certificate>)
+./java_security_cert/javaFiles/PKIXCertPathChecker_4.java:21: error: <anonymous PKIXCertPathChecker_4$1> is not abstract and does not override abstract method check(Certificate,Collection<String>) in PKIXCertPathChecker
+            PKIXCertPathChecker checker = new PKIXCertPathChecker() {
+                                                                    ^
+./java_security_cert/javaFiles/PKIXCertPathChecker_4.java:27: error: incompatible types: PKIXCertPathChecker cannot be converted to CertPathParameters
+            validator.validate(path, checker);
+                                     ^
+./java_security_cert/javaFiles/PKIXCertPathChecker_4.java:28: error: Alternatives in a multi-catch statement cannot be related by subclassing
+        } catch (CertificateException | IOException | CertPathValidatorException | GeneralSecurityException e) {
+                                                                                   ^
+  Alternative CertificateException is a subclass of alternative GeneralSecurityException
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+
+================================================================
+
+Sample: X509CertSelector_3
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/X509CertSelector_3.java:24: error: method getCertificate in class X509CertSelector cannot be applied to given types;
+            X509Certificate certificate = selector.getCertificate(cert);
+                                                  ^
+  required: no arguments
+  found:    X509Certificate
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: X509CRL_2
+----------------------------------------------------------------
+output:
+./java_security_cert/javaFiles/X509CRL_2.java:12: error: unreported exception CRLException; must be caught or declared to be thrown
+            X509CRL crl = (X509CRL) cf.generateCRL(new FileInputStream("path_to_your_crl_file"));
+                                                  ^
+1 error
+
+
+================================================================
+

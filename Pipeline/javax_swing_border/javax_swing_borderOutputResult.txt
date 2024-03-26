@@ -1,0 +1,123 @@
+Sample: AbstractBorder_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at AbstractBorder_2.main(AbstractBorder_2.java:9)
+
+================================================================
+
+Sample: AbstractBorder_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at AbstractBorder_3.main(AbstractBorder_3.java:7)
+
+================================================================
+
+Sample: AbstractBorder_4
+----------------------------------------------------------------
+output:
+./javax_swing_border/javaFiles/AbstractBorder_4.java:18: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+1 error
+
+
+================================================================
+
+Sample: AbstractBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_border/javaFiles/AbstractBorder_5.java:18: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+1 error
+
+
+================================================================
+
+Sample: SoftBevelBorder_9
+----------------------------------------------------------------
+stdout:
+Is border opaque? false
+
+================================================================
+
+Sample: SoftBevelBorder_10
+----------------------------------------------------------------
+output:
+./javax_swing_border/javaFiles/SoftBevelBorder_10.java:14: error: method paintBorder in class JComponent cannot be applied to given types;
+        panel.paintBorder(panel, panel.getGraphics(), 0, 0, panel.getWidth(), panel.getHeight());
+             ^
+  required: Graphics
+  found:    JPanel,Graphics,int,int,int,int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: TitledBorder_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at TitledBorder_2.main(TitledBorder_2.java:8)
+
+================================================================
+
+Sample: TitledBorder_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at TitledBorder_3.main(TitledBorder_3.java:8)
+
+================================================================
+
+Sample: TitledBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at TitledBorder_4.main(TitledBorder_4.java:6)
+
+================================================================
+
+Sample: TitledBorder_5
+----------------------------------------------------------------
+stdout:
+Title position: 0
+
+================================================================
+

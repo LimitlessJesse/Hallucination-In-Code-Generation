@@ -1,0 +1,2527 @@
+Sample: 0 AttributeChangeNotificationFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isNotificationEnabled(Notification n) from javax.management.AttributeChangeNotificationFilter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isNotificationEnabled(Notification n)` method is not a part of the `java.util.ArrayList` class. It is a part of the `javax.management.AttributeChangeNotificationFilter` class.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.management.AttributeChangeNotification;
+import javax.management.AttributeChangeNotificationFilter;
+import javax.management.Notification;
+
+public class Main {
+    public static void main(String[] args) {
+        AttributeChangeNotificationFilter filter = new AttributeChangeNotificationFilter();
+        Notification notification = new AttributeChangeNotification(
+                this,
+                0,
+                System.currentTimeMillis(),
+                "Attribute change",
+                "Attribute",
+                "String",
+                "oldValue",
+                "newValue"
+        );
+        boolean isEnabled = filter.isNotificationEnabled(notification);
+        System.out.println("Is notification enabled: " + isEnabled);
+    }
+}
+```
+
+In this example, we create a new `AttributeChangeNotificationFilter` and a new `AttributeChangeNotification`. We then call the `isNotificationEnabled(Notification n)` method on the filter, passing in the notification. The result is printed to the console.
+
+Please note that this is a very basic example and does not cover all the possible scenarios. The `isNotificationEnabled(Notification n)` method is used to determine whether a given notification should be sent based on the filter's settings.
+================================================================
+
+Sample: 1 AttributeChangeNotificationFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isNotificationEnabled(Notification n) from javax.management.AttributeChangeNotificationFilter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isNotificationEnabled(Notification n)` method is not a part of the `java.util.ArrayList` class. It is a part of the `javax.management.AttributeChangeNotificationFilter` class.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.management.AttributeChangeNotification;
+import javax.management.AttributeChangeNotificationFilter;
+import javax.management.Notification;
+
+public class Main {
+    public static void main(String[] args) {
+        AttributeChangeNotificationFilter filter = new AttributeChangeNotificationFilter();
+        Notification notification = new AttributeChangeNotification(
+                this,
+                0,
+                System.currentTimeMillis(),
+                "Attribute change",
+                "Attribute",
+                "String",
+                "oldValue",
+                "newValue"
+        );
+        boolean isEnabled = filter.isNotificationEnabled(notification);
+        System.out.println("Is notification enabled: " + isEnabled);
+    }
+}
+```
+
+In this example, we create a new `AttributeChangeNotificationFilter` and a new `AttributeChangeNotification`. We then call the `isNotificationEnabled(Notification n)` method on the filter, passing in the notification. The result is printed to the console.
+
+Please note that this is a very basic example and does not cover all the possible scenarios. The `isNotificationEnabled(Notification n)` method is used to determine whether a given notification should be sent based on the filter's settings.
+================================================================
+
+Sample: 2 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isReadable() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isReadable()` method in `javax.management.MBeanAttributeInfo` is used to check if the attribute is readable. It returns a boolean value indicating whether the attribute is readable or not.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false, false, null);
+        boolean isReadable = attributeInfo.isReadable();
+        System.out.println("Is attribute readable? " + isReadable);
+    }
+}
+```
+
+In this code, we create a new `MBeanAttributeInfo` object with the name "name", type "type", description "description", and all other flags set to false. Then we call the `isReadable()` method on this object and print the result.
+
+Please note that the `MBeanAttributeInfo` class is part of the Java Management Extensions (JMX) API and is not part of the standard Java API. It is used for managing and monitoring Java applications.
+================================================================
+
+Sample: 3 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isWritable() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isWritable()` method in `javax.management.MBeanAttributeInfo` is used to check if the attribute is writable or not. It returns a boolean value.
+
+Here is the complete code snippet:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "java.lang.String", "description", true, false, false);
+        boolean isWritable = attributeInfo.isWritable();
+        System.out.println("Is attribute writable? " + isWritable);
+    }
+}
+```
+
+In this code, we create a new `MBeanAttributeInfo` object with the name "name", type "java.lang.String", description "description", and writable and isIs (not used) set to true and false respectively. Then we call the `isWritable()` method on this object and print the result.
+
+The output of this code will be:
+
+```
+Is attribute writable? true
+```
+
+This means that the attribute is writable.
+================================================================
+
+Sample: 4 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isIs() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isIs()` method in `javax.management.MBeanAttributeInfo` is used to check if the attribute is read-only or not. It returns a boolean value indicating whether the attribute is read-only or not.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false, false, null);
+        boolean isReadOnly = attributeInfo.isIs();
+        System.out.println("Is attribute read-only? " + isReadOnly);
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanAttributeInfo` object with the attribute name "name", type "type", description "description", and read-only flag set to true. Then we call the `isIs()` method on this attribute info object, which returns a boolean indicating whether the attribute is read-only or not.
+
+The output of this code snippet will be:
+
+```
+Is attribute read-only? true
+```
+
+This is because we have set the read-only flag to true when creating the `MBeanAttributeInfo` object.
+================================================================
+
+Sample: 5 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.management.MBeanAttributeInfo` returns the type of the attribute as a string.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false);
+        String type = attributeInfo.getType();
+        System.out.println("Type: " + type);
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanAttributeInfo` object with a name, type, description, and other flags. Then we call the `getType()` method on this object and print the result.
+
+Please note that the `javax.management.MBeanAttributeInfo` class is part of the Java Management Extensions (JMX) API, which is not part of the standard Java SE API. It is typically used for managing and monitoring Java applications, and is not typically used in everyday Java programming.
+================================================================
+
+Sample: 6 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.management.MBeanAttributeInfo` returns the type of the attribute as a string.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false);
+        String type = attributeInfo.getType();
+        System.out.println("Type: " + type);
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanAttributeInfo` object with a name, type, description, and other flags. Then we call the `getType()` method on this object and print the result.
+
+Please note that the `javax.management.MBeanAttributeInfo` class is part of the Java Management Extensions (JMX) API, which is not part of the standard Java SE API. It is typically used for managing and monitoring Java applications, and is not typically used in everyday Java programming.
+================================================================
+
+Sample: 7 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.management.MBeanAttributeInfo` returns the type of the attribute as a string.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false);
+        String type = attributeInfo.getType();
+        System.out.println("Type: " + type);
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanAttributeInfo` object with a name, type, description, and other flags. Then we call the `getType()` method on this object and print the result.
+
+Please note that the `javax.management.MBeanAttributeInfo` class is part of the Java Management Extensions (JMX) API, which is not part of the standard Java SE API. It is typically used for managing and monitoring Java applications, and is not typically used in everyday Java programming.
+================================================================
+
+Sample: 8 MBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.MBeanAttributeInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.management.MBeanAttributeInfo` returns the type of the attribute as a string.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanAttributeInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false);
+        String type = attributeInfo.getType();
+        System.out.println("Type: " + type);
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanAttributeInfo` object with a name, type, description, and other flags. Then we call the `getType()` method on this object and print the result.
+
+Please note that the `javax.management.MBeanAttributeInfo` class is part of the Java Management Extensions (JMX) API, which is not part of the standard Java SE API. It is typically used for managing and monitoring Java applications, and is not typically used in everyday Java programming.
+================================================================
+
+Sample: 9 MBeanConstructorInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object obj) from javax.management.MBeanConstructorInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object obj)` method in `javax.management.MBeanConstructorInfo` is used to compare the equality of two `MBeanConstructorInfo` objects. It returns `true` if the given object is also an `MBeanConstructorInfo` object and all the corresponding fields in the two objects are equal.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanConstructorInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanConstructorInfo constructorInfo1 = new MBeanConstructorInfo(new String[]{"arg1", "arg2"}, "description1");
+        MBeanConstructorInfo constructorInfo2 = new MBeanConstructorInfo(new String[]{"arg1", "arg2"}, "description1");
+
+        System.out.println(constructorInfo1.equals(constructorInfo2)); // Output: true
+    }
+}
+```
+
+In this code, we create two `MBeanConstructorInfo` objects with the same arguments and descriptions. Then we call the `equals()` method on these objects, which returns `true` because they are equal.
+================================================================
+
+Sample: 10 MBeanConstructorInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.management.MBeanConstructorInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `javax.management.MBeanConstructorInfo` is not a standard Java method. It's a method provided by the JMX (Java Management Extensions) API, which is used for managing and monitoring Java applications.
+
+However, if you are referring to the `hashCode()` method in the `java.lang.Object` class, which is a part of the Java Standard Library, then the code snippet would look like this:
+
+```java
+import java.util.Objects;
+
+public class Main {
+    public static void main(String[] args) {
+        Object obj = new Object();
+        System.out.println(obj.hashCode());
+    }
+}
+```
+
+In this code, `obj.hashCode()` will return a unique integer value for the object. The `hashCode()` method is overridden in the `java.lang.Object` class to return the identity hash code of the object which is a unique integer for each object.
+
+Please note that the `hashCode()` method is not guaranteed to be unique across different JVMs or even different executions of the same JVM. It's just a unique integer for each object.
+================================================================
+
+Sample: 11 MBeanFeatureInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.management.MBeanFeatureInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method in `javax.management.MBeanFeatureInfo` is used to get the name of the feature.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanFeatureInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanFeatureInfo featureInfo = new MBeanFeatureInfo();
+        featureInfo.setName("myFeature");
+        System.out.println(featureInfo.getName());
+    }
+}
+```
+
+In this code snippet, we create a new `MBeanFeatureInfo` object and set its name to "myFeature". Then we print out the name of the feature using the `getName()` method.
+
+Please note that the `javax.management.MBeanFeatureInfo` class is part of the Java Management Extensions (JMX) API and is not part of the standard Java API. It is used for managing and monitoring Java applications.
+================================================================
+
+Sample: 12 MBeanFeatureInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.management.MBeanFeatureInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.management.MBeanFeatureInfo` is used to get the description of a feature. It is a part of the Java Management Extensions (JMX) framework.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.management.MBeanFeatureInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanFeatureInfo featureInfo = new MBeanFeatureInfo();
+        String description = featureInfo.getDescription();
+        System.out.println(description);
+    }
+}
+```
+
+In this example, we create a new `MBeanFeatureInfo` object and call the `getDescription()` method on it. The `getDescription()` method returns a string that describes the feature.
+
+Please note that the `MBeanFeatureInfo` class is not part of the standard Java API and is part of the JMX framework. It is used to describe features of MBeans, which are objects that can be managed by JMX.
+================================================================
+
+Sample: 13 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getClassName() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getClassName()` method in `javax.management.MBeanInfo` is used to get the name of the class that the MBean represents.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = new ObjectName("javax.management:type=Memory");
+        MBeanInfo info = mbs.getMBeanInfo(name);
+        String className = info.getClassName();
+        System.out.println("Class Name: " + className);
+    }
+}
+```
+
+In this code snippet, we are getting the MBeanServer, creating an ObjectName for a Memory MBean, getting the MBeanInfo for that MBean, and then getting the class name from the MBeanInfo.
+
+Please note that you need to have the necessary permissions to access and manage MBeans. Also, the `getPlatformMBeanServer()` method may not be available in all environments, so you may need to use a different method to get the MBeanServer.
+================================================================
+
+Sample: 14 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.management.MBeanInfo` is used to get the description of the MBean. It returns a `String` that describes the MBean.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = new ObjectName("javax.management:type=Memory");
+        MBeanInfo info = mbs.getMBeanInfo(name);
+        String description = info.getDescription();
+        System.out.println(description);
+    }
+}
+```
+
+In this code snippet, we are getting the MBeanServer, creating an ObjectName for a Memory MBean, getting the MBeanInfo for that MBean, and then getting the description of the MBean. The description is then printed to the console.
+
+Please note that you need to have the necessary permissions to access and manage MBeans. Also, the `getPlatformMBeanServer()` method may not be available in all environments, so you may need to use a different method to get the MBeanServer.
+================================================================
+
+Sample: 15 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MBeanAttributeInfo[] getAttributes() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAttributes()` method in `javax.management.MBeanInfo` is used to get the attributes of the MBean. It returns an array of `MBeanAttributeInfo` objects, each of which represents an attribute of the MBean.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a MBean server
+            MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+
+            // Get the MBean info
+            ObjectName name = new ObjectName("com.example:type=MyBean");
+            MBeanInfo info = mbs.getMBeanInfo(name);
+
+            // Get the attributes
+            MBeanAttributeInfo[] attributes = info.getAttributes();
+
+            // Print the attributes
+            for (MBeanAttributeInfo attribute : attributes) {
+                System.out.println("Attribute: " + attribute.getName());
+                System.out.println("Description: " + attribute.getDescription());
+                System.out.println("Type: " + attribute.getType());
+                System.out.println("Is readable: " + attribute.isReadable());
+                System.out.println("Is writable: " + attribute.isWritable());
+                System.out.println("Is is: " + attribute.isIs());
+                System.out.println("Is is: " + attribute.isIs());
+                System.out.println("----------------------------");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code, we first create a MBean server using `ManagementFactory.getPlatformMBeanServer()`. Then, we get the MBean info using `mbs.getMBeanInfo(name)`, where `name` is the object name of the MBean. Finally, we get the attributes using `info.getAttributes()` and print them.
+
+Please replace `"com.example:type=MyBean"` with the actual object name of your MBean.
+================================================================
+
+Sample: 16 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MBeanConstructorInfo[] getConstructors() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getConstructors()` method in `javax.management.MBeanInfo` is used to get the information about the constructors of the MBean. It returns an array of `MBeanConstructorInfo` objects, each of which contains information about a constructor of the MBean.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+            ObjectName name = new ObjectName("javax.management:type=Memory");
+            MBeanInfo info = mbs.getMBeanInfo(name);
+            MBeanConstructorInfo[] constructors = info.getConstructors();
+
+            for (MBeanConstructorInfo constructor : constructors) {
+                System.out.println("Constructor: " + constructor.getName());
+                System.out.println("Description: " + constructor.getDescription());
+                System.out.println("Signature: " + constructor.getSignature());
+                System.out.println("----------------------------");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting the MBeanInfo of a Memory MBean using `getMBeanInfo(name)` method. Then we are getting the constructors of this MBean using `getConstructors()` method. We are then iterating over the constructors and printing their name, description, and signature.
+
+Please note that you need to have the necessary permissions to access and manage MBeans. Also, the `javax.management` package is not part of the standard Java API, it's part of the JDK and it's used for managing and monitoring Java applications at runtime.
+================================================================
+
+Sample: 17 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MBeanOperationInfo[] getOperations() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getOperations()` method in `javax.management.MBeanInfo` is used to get the operations of the MBean. It returns an array of `MBeanOperationInfo` objects, each of which represents an operation of the MBean.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+import java.lang.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = null;
+        try {
+            name = new ObjectName("javax.management:type=Memory");
+            MBeanInfo mbeanInfo = mbs.getMBeanInfo(name);
+            MBeanOperationInfo[] operations = mbeanInfo.getOperations();
+            for (MBeanOperationInfo operation : operations) {
+                System.out.println("Operation: " + operation.getName());
+                System.out.println("Description: " + operation.getDescription());
+                System.out.println("Signature: " + operation.getSignature());
+                System.out.println("Return type: " + operation.getReturnType());
+                System.out.println("Exception types: " + operation.getExceptionTypes());
+                System.out.println("----------------------------");
+            }
+        } catch (MalformedObjectNameException | NullPointerException | InstanceNotFoundException | IntrospectionException | ReflectionException | MBeanException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting the MBeanInfo of a Memory MBean and then getting the operations of the MBean. We then print out the name, description, signature, return type, and exception types of each operation.
+
+Please note that you need to have the necessary permissions to access and manage MBeans. Also, the `getPlatformMBeanServer()` method returns the platform MBean server, which is typically the MBean server provided by the Java Virtual Machine.
+================================================================
+
+Sample: 18 MBeanInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MBeanNotificationInfo[] getNotifications() from javax.management.MBeanInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getNotifications()` method in `javax.management.MBeanInfo` is used to retrieve the notification information for the MBean. This method returns an array of `MBeanNotificationInfo` objects, each of which contains information about a notification type that the MBean can send.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new MBean server
+            MBeanServer mbs = MBeanServerFactory.createMBeanServer();
+
+            // Create a new MBean
+            ObjectName name = new ObjectName("com.example:type=MyMBean");
+            MyMBean mb = new MyMBean();
+            mbs.registerMBean(mb, name);
+
+            // Get the MBean info
+            MBeanInfo info = mbs.getMBeanInfo(name);
+
+            // Get the notifications
+            MBeanNotificationInfo[] notifications = info.getNotifications();
+
+            // Print the notifications
+            for (MBeanNotificationInfo notification : notifications) {
+                System.out.println("Notification Type: " + notification.getType());
+                System.out.println("Notification Class: " + notification.getClassName());
+                System.out.println("Notification Description: " + notification.getDescription());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code, we create a new MBean server, register a new MBean, and then get the MBean info. We then get the notifications from the MBean info and print out the type, class name, and description of each notification.
+
+Please note that you need to replace `MyMBean` with the actual MBean class you are using. Also, you need to have the necessary permissions to access and manage MBeans.
+================================================================
+
+Sample: 19 MBeanNotificationInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object obj) from javax.management.MBeanNotificationInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object obj)` method in `javax.management.MBeanNotificationInfo` is used to compare the equality of two `MBeanNotificationInfo` objects. It returns `true` if the objects are equal and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanNotificationInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanNotificationInfo info1 = new MBeanNotificationInfo(new String[]{"type1", "type2"}, "description1", "mbean1");
+        MBeanNotificationInfo info2 = new MBeanNotificationInfo(new String[]{"type1", "type2"}, "description1", "mbean1");
+        MBeanNotificationInfo info3 = new MBeanNotificationInfo(new String[]{"type3", "type4"}, "description3", "mbean3");
+
+        System.out.println(info1.equals(info2));  // true
+        System.out.println(info1.equals(info3));  // false
+    }
+}
+```
+
+In this code, we create three `MBeanNotificationInfo` objects. The first two are equal because they have the same notification types, descriptions, and mbean names. The third one is not equal to the first two because it has different notification types, descriptions, and mbean names. The `equals()` method is then used to compare these objects and print the results.
+================================================================
+
+Sample: 20 MBeanNotificationInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.management.MBeanNotificationInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `javax.management.MBeanNotificationInfo` is not a standard Java method. It's a method provided by the JMX (Java Management Extensions) framework, which is used for managing and monitoring Java applications.
+
+However, if you're referring to the `hashCode()` method in the `java.lang.Object` class, which is a part of the Java Standard Library, the code snippet would look like this:
+
+```java
+import java.util.Objects;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello";
+        int hashCode = str.hashCode();
+        System.out.println(hashCode);
+    }
+}
+```
+
+In this code, we're creating a new `String` object and calling the `hashCode()` method on it. The `hashCode()` method returns a hash code value for the object. This method is supported for the objects which are instances of the class `Object`.
+
+Please note that the `hashCode()` method is not a standard Java method and it's not recommended to use it in your own code. It's mainly used by the JVM and other libraries to manage memory and speed up operations.
+================================================================
+
+Sample: 21 MBeanParameterInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.MBeanParameterInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.management.MBeanParameterInfo` is used to get the type of the parameter. It returns a string that represents the type of the parameter.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanParameterInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanParameterInfo parameterInfo = new MBeanParameterInfo("name", "type", "description", false, false);
+        String type = parameterInfo.getType();
+        System.out.println("Type of the parameter: " + type);
+    }
+}
+```
+
+In this code snippet, we create a `MBeanParameterInfo` object with a name, type, description, and two boolean values. Then we call the `getType()` method on this object and print the result.
+
+Please note that the `javax.management.MBeanParameterInfo` class is part of the Java Management Extensions (JMX) API and is not part of the standard Java API. It is used for managing and monitoring Java applications.
+================================================================
+
+Sample: 22 MBeanServerInvocationHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object invoke(Object proxy, Method method, Object[] args) from javax.management.MBeanServerInvocationHandler
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `Object invoke(Object proxy, Method method, Object[] args)` method is part of the `java.lang.reflect.InvocationHandler` interface, which is used to create dynamic proxies. It's used to intercept the method calls on the proxy and to perform additional actions before or after the method invocation.
+
+Here is a simple example of how you can use it:
+
+```java
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+
+        InvocationHandler handler = new InvocationHandler() {
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                System.out.println("Before method invocation");
+                Object result = method.invoke(list, args);
+                System.out.println("After method invocation");
+                return result;
+            }
+        };
+
+        List<String> proxyList = (List<String>) Proxy.newProxyInstance(
+                list.getClass().getClassLoader(),
+                list.getClass().getInterfaces(),
+                handler
+        );
+
+        proxyList.add("Hello");
+    }
+}
+```
+
+In this example, we create a dynamic proxy for the `List` interface. The `InvocationHandler` implementation intercepts the method calls on the proxy and prints a message before and after the method invocation.
+
+Please note that this is a very basic example and does not cover all aspects of the `InvocationHandler` interface. For example, it does not handle exceptions, it does not handle method calls on the proxy that are not declared in the `List` interface, etc.
+================================================================
+
+Sample: 23 MBeanServerPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object obj) from javax.management.MBeanServerPermission
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object obj)` method in `javax.management.MBeanServerPermission` is used to compare the equality of two objects. It is a part of the `Object` class and is inherited by all classes in Java.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.MBeanServerPermission;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanServerPermission permission1 = new MBeanServerPermission("permission1", "actions");
+        MBeanServerPermission permission2 = new MBeanServerPermission("permission1", "actions");
+        MBeanServerPermission permission3 = new MBeanServerPermission("permission2", "actions");
+
+        System.out.println(permission1.equals(permission2)); // true
+        System.out.println(permission1.equals(permission3)); // false
+    }
+}
+```
+
+In this code, we create three `MBeanServerPermission` objects. The first two have the same name and actions, so they are considered equal. The third one has a different name, so they are not considered equal.
+================================================================
+
+Sample: 24 MBeanServerPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.management.MBeanServerPermission
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `javax.management.MBeanServerPermission` is not a standard Java method. It is a method provided by the `javax.management` package, which is part of the Java Management Extensions (JMX).
+
+The `hashCode()` method in `javax.management.MBeanServerPermission` is used to generate a hash code for the object. This method is not typically used directly in Java code, but rather it is used by the JVM when it is storing objects in a hash-based collection like `HashMap` or `HashSet`.
+
+Here is an example of how you might use it:
+
+```java
+import javax.management.MBeanServerPermission;
+
+public class Main {
+    public static void main(String[] args) {
+        MBeanServerPermission permission = new MBeanServerPermission("register", "read");
+        int hashCode = permission.hashCode();
+        System.out.println("Hash code: " + hashCode);
+    }
+}
+```
+
+In this example, we create a new `MBeanServerPermission` object with the permissions "register" and "read". We then call the `hashCode()` method on this object and print the result.
+
+Please note that the `hashCode()` method in `javax.management.MBeanServerPermission` is not typically used in standard Java code. It is used by the JVM internally for managing objects in hash-based collections like `HashMap` or `HashSet`.
+================================================================
+
+Sample: 25 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in the `javax.management.Notification` class is used to get the type of the notification. It returns a string that represents the type of the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("type", broadcaster, 0);
+        String type = notification.getType();
+        System.out.println("Type: " + type);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. The `Notification` is created with a type of "type". We then call the `getType()` method on the `Notification` and print the result.
+
+Please note that the `NotificationBroadcaster` and `NotificationListener` interfaces and the `Notification` class are part of the Java Management Extensions (JMX) API, which is not part of the standard Java API. You need to add the JMX API to your project if you want to use these classes.
+================================================================
+
+Sample: 26 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long getSequenceNumber() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSequenceNumber()` method in the `javax.management.Notification` class is used to get the sequence number of the notification. The sequence number is a unique identifier for each notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("type", broadcaster, 0);
+        long sequenceNumber = notification.getSequenceNumber();
+
+        System.out.println("Sequence Number: " + sequenceNumber);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. We then call the `getSequenceNumber()` method on the `Notification` and print the result.
+
+Please note that the `getSequenceNumber()` method is not part of the `ArrayList` class, it's part of the `Notification` class. The `ArrayList` class does not have a `getSequenceNumber()` method.
+================================================================
+
+Sample: 27 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long getTimeStamp() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTimeStamp()` method in the `Notification` class of the `javax.management` package is used to get the time stamp of the notification. This method returns the time stamp as a `long` value.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, System.currentTimeMillis());
+        long timeStamp = notification.getTimeStamp();
+
+        System.out.println("Time stamp: " + timeStamp);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. The `Notification` is created with a time stamp that is the current time in milliseconds. The `getTimeStamp()` method is then called on the `Notification` to get the time stamp. The time stamp is then printed to the console.
+================================================================
+
+Sample: 28 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getMessage() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getMessage()` method in the `javax.management.Notification` class is used to retrieve the message associated with the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, 0, System.currentTimeMillis(), "This is a test message");
+        String message = notification.getMessage();
+        System.out.println(message);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. The `Notification` is created with a message "This is a test message". The `getMessage()` method is then called on the `Notification` to retrieve the message. The message is then printed to the console.
+================================================================
+
+Sample: 29 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setUserData(Object userData) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setUserData(Object userData)` method in the `javax.management.Notification` class is used to set the user data for the notification. The user data is an arbitrary object that can be associated with the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void sendNotification(Notification notification) {
+                // Implementation not needed for this example
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, 0);
+        notification.setUserData("User data");
+
+        System.out.println(notification.getUserData());
+    }
+}
+```
+
+In this example, we create a new `NotificationBroadcaster` and a `Notification`. We then set the user data for the notification to "User data" and print it out.
+
+Please note that the `NotificationBroadcaster` is a mock implementation and does not actually send notifications. The actual implementation of `NotificationBroadcaster` would depend on the specific environment in which the code is running.
+================================================================
+
+Sample: 30 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object getUserData() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUserData()` method in the `javax.management.Notification` class is used to retrieve the user data associated with the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, 0, System.currentTimeMillis(), "Test message", "Test user data");
+
+        Object userData = notification.getUserData();
+        System.out.println("User data: " + userData);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. The `Notification` is created with a user data of "Test user data". Then, we retrieve the user data from the `Notification` using the `getUserData()` method and print it out.
+
+Please note that the `NotificationBroadcaster` and `NotificationListener` interfaces are not part of the standard Java API, they are part of the `javax.management` package.
+================================================================
+
+Sample: 31 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSource(Object source) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSource(Object source)` method in the `javax.management.Notification` class is used to set the source of the notification. The source is an object that represents the source of the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void sendNotification(Notification notification) {
+                System.out.println("Notification sent: " + notification);
+            }
+        };
+
+        Notification notification = new Notification("Test", this, 0, System.currentTimeMillis(), "Test notification");
+        notification.setSource(broadcaster);
+
+        broadcaster.sendNotification(notification);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` that sends notifications. We then create a `Notification` and set its source to the `NotificationBroadcaster`. Finally, we send the notification.
+
+Please note that the `setSource(Object source)` method is not commonly used in Java programming. It is typically used in situations where you need to track the source of a notification or event.
+================================================================
+
+Sample: 32 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSequenceNumber(long sequenceNumber) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSequenceNumber(long sequenceNumber)` method is not a part of the `Notification` class. It is a part of the `MBeanNotificationInfo` class.
+
+Here is an example of how you can use `setSequenceNumber(long sequenceNumber)` from `MBeanNotificationInfo`:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) throws NotCompliantMBeanException, MBeanException, ReflectionException, InstanceNotFoundException, IntrospectionException {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = new ObjectName("com.example:type=Test");
+        TestMBean mbean = new TestMBean();
+        mbs.registerMBean(mbean, name);
+
+        MBeanNotificationInfo[] notificationInfos = mbean.getNotificationInfo();
+        for (MBeanNotificationInfo info : notificationInfos) {
+            System.out.println("Type: " + info.getType());
+            System.out.println("Sequence Number: " + info.getSequenceNumber());
+            info.setSequenceNumber(100);
+            System.out.println("New Sequence Number: " + info.getSequenceNumber());
+        }
+    }
+}
+
+class TestMBean implements NotificationBroadcasterMBean {
+    // Implement the methods of NotificationBroadcasterMBean
+    //...
+
+    @Override
+    public MBeanNotificationInfo[] getNotificationInfo() {
+        // Implement the method
+        //...
+        return null;
+    }
+}
+```
+
+In this example, we are creating a `TestMBean` and registering it with the platform MBean server. We then get the `MBeanNotificationInfo` from the `TestMBean` and set the sequence number to 100.
+
+Please note that this is a simple example and may not work as expected in a real-world scenario. You would need to implement the `NotificationBroadcasterMBean` interface and other methods to make this work.
+================================================================
+
+Sample: 33 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTimeStamp(long timeStamp) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTimeStamp(long timeStamp)` method in the `javax.management.Notification` class is used to set the time stamp of the notification. The time stamp is a long integer that represents the number of milliseconds since January 1, 1970, 00:00:00 GMT.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("type", broadcaster, 0);
+        notification.setTimeStamp(System.currentTimeMillis());
+        System.out.println("Time stamp: " + notification.getTimeStamp());
+    }
+}
+```
+
+In this code snippet, we create a new `NotificationBroadcaster` and a `Notification`. We then set the time stamp of the notification to the current time using `System.currentTimeMillis()` and print the time stamp.
+================================================================
+
+Sample: 34 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setUserData(Object userData) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setUserData(Object userData)` method in the `javax.management.Notification` class is used to set the user data for the notification. The user data is an arbitrary object that can be associated with the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void sendNotification(Notification notification) {
+                // Implementation not needed for this example
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, 0);
+        notification.setUserData("User data");
+
+        System.out.println(notification.getUserData());
+    }
+}
+```
+
+In this example, we create a new `NotificationBroadcaster` and a `Notification`. We then set the user data for the notification to "User data" and print it out.
+
+Please note that the `NotificationBroadcaster` is a mock implementation and does not actually send notifications. The actual implementation of `NotificationBroadcaster` would depend on the specific environment in which the code is running.
+================================================================
+
+Sample: 35 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object getUserData() from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUserData()` method in the `javax.management.Notification` class is used to retrieve the user data associated with the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("Test", broadcaster, 0, System.currentTimeMillis(), "Test message", "Test user data");
+
+        Object userData = notification.getUserData();
+        System.out.println("User data: " + userData);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` and a `Notification`. The `Notification` is created with a user data of "Test user data". Then, we retrieve the user data from the `Notification` using the `getUserData()` method and print it out.
+
+Please note that the `NotificationBroadcaster` and `NotificationListener` interfaces are not part of the standard Java API, they are part of the `javax.management` package.
+================================================================
+
+Sample: 36 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSource(Object source) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSource(Object source)` method in the `javax.management.Notification` class is used to set the source of the notification. The source is an object that represents the source of the notification.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void sendNotification(Notification notification) {
+                System.out.println("Notification sent: " + notification);
+            }
+        };
+
+        Notification notification = new Notification("Test", this, 0, System.currentTimeMillis(), "Test notification");
+        notification.setSource(broadcaster);
+
+        broadcaster.sendNotification(notification);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationBroadcaster` that sends notifications. We then create a `Notification` and set its source to the `NotificationBroadcaster`. Finally, we send the notification.
+
+Please note that the `setSource(Object source)` method is not commonly used in Java programming. It is typically used in situations where you need to track the source of a notification or event.
+================================================================
+
+Sample: 37 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSequenceNumber(long sequenceNumber) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSequenceNumber(long sequenceNumber)` method is not a part of the `Notification` class. It is a part of the `MBeanNotificationInfo` class.
+
+Here is an example of how you can use `setSequenceNumber(long sequenceNumber)` from `MBeanNotificationInfo`:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) throws NotCompliantMBeanException, MBeanException, ReflectionException, InstanceNotFoundException, IntrospectionException {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = new ObjectName("com.example:type=Test");
+        TestMBean mbean = new TestMBean();
+        mbs.registerMBean(mbean, name);
+
+        MBeanNotificationInfo[] notificationInfos = mbean.getNotificationInfo();
+        for (MBeanNotificationInfo info : notificationInfos) {
+            System.out.println("Type: " + info.getType());
+            System.out.println("Sequence Number: " + info.getSequenceNumber());
+            info.setSequenceNumber(100);
+            System.out.println("New Sequence Number: " + info.getSequenceNumber());
+        }
+    }
+}
+
+class TestMBean implements NotificationBroadcasterMBean {
+    // Implement the methods of NotificationBroadcasterMBean
+    //...
+
+    @Override
+    public MBeanNotificationInfo[] getNotificationInfo() {
+        // Implement the method
+        //...
+        return null;
+    }
+}
+```
+
+In this example, we are creating a `TestMBean` and registering it with the platform MBean server. We then get the `MBeanNotificationInfo` from the `TestMBean` and set the sequence number to 100.
+
+Please note that this is a simple example and may not work as expected in a real-world scenario. You would need to implement the `NotificationBroadcasterMBean` interface and other methods to make this work.
+================================================================
+
+Sample: 38 Notification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTimeStamp(long timeStamp) from javax.management.Notification
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTimeStamp(long timeStamp)` method in the `javax.management.Notification` class is used to set the time stamp of the notification. The time stamp is a long integer that represents the number of milliseconds since January 1, 1970, 00:00:00 GMT.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationBroadcaster;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+            @Override
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+            }
+
+            @Override
+            public void removeNotificationListener(NotificationListener listener) {
+            }
+        };
+
+        Notification notification = new Notification("type", broadcaster, 0);
+        notification.setTimeStamp(System.currentTimeMillis());
+        System.out.println("Time stamp: " + notification.getTimeStamp());
+    }
+}
+```
+
+In this code snippet, we create a new `NotificationBroadcaster` and a `Notification`. We then set the time stamp of the notification to the current time using `System.currentTimeMillis()` and print the time stamp.
+================================================================
+
+Sample: 39 NotificationBroadcasterSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void removeNotificationListener(NotificationListener listener) from javax.management.NotificationBroadcasterSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `removeNotificationListener(NotificationListener listener)` method is part of the `javax.management.NotificationBroadcasterSupport` interface, which is used to broadcast notifications to registered listeners.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcasterSupport broadcaster = new NotificationBroadcasterSupport();
+
+        // Create a NotificationListener
+        NotificationListener listener = new NotificationListener() {
+            @Override
+            public void handleNotification(Notification notification, Object handback) {
+                System.out.println("Notification received: " + notification);
+            }
+        };
+
+        // Add the listener
+        broadcaster.addNotificationListener(listener, null, null);
+
+        // Remove the listener
+        broadcaster.removeNotificationListener(listener);
+    }
+}
+```
+
+In this example, we first create a `NotificationBroadcasterSupport` object. Then, we create a `NotificationListener` that simply prints out the received notification. We add this listener to the broadcaster, and then remove it.
+
+Please note that the `removeNotificationListener(NotificationListener listener)` method does not throw any exceptions. If the listener is not found, it simply does nothing.
+================================================================
+
+Sample: 40 NotificationBroadcasterSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void sendNotification(Notification notification) from javax.management.NotificationBroadcasterSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `sendNotification(Notification notification)` method is part of the `javax.management.NotificationBroadcasterSupport` class, which is used to broadcast notifications to registered listeners.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationBroadcasterSupport broadcaster = new NotificationBroadcasterSupport();
+
+        // Register a listener
+        NotificationListener listener = new NotificationListener() {
+            public void handleNotification(Notification notification, Object handback) {
+                System.out.println("Received notification: " + notification);
+            }
+        };
+        broadcaster.addNotificationListener(listener, null, null);
+
+        // Send a notification
+        Notification notification = new Notification("TestNotification", new Object(), 0);
+        broadcaster.sendNotification(notification);
+    }
+}
+```
+
+In this example, we first create a `NotificationBroadcasterSupport` object. We then register a `NotificationListener` with the `NotificationBroadcasterSupport` object. The `NotificationListener` is a simple implementation that just prints the received notification to the console.
+
+Finally, we send a `Notification` to the `NotificationBroadcasterSupport` object, which will then be broadcast to all registered listeners.
+
+Please note that you need to have the necessary permissions and dependencies to use the `javax.management` package.
+================================================================
+
+Sample: 41 NotificationFilterSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isNotificationEnabled(Notification notification) from javax.management.NotificationFilterSupport
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isNotificationEnabled(Notification notification)` method is part of the `NotificationFilterSupport` class in the `javax.management` package. This method is used to determine whether a particular notification should be delivered to the notification listener.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.Notification;
+import javax.management.NotificationFilterSupport;
+
+public class Main {
+    public static void main(String[] args) {
+        NotificationFilterSupport filter = new NotificationFilterSupport();
+        Notification notification = new Notification("type", new Object(), 0, System.currentTimeMillis(), "message");
+        boolean isEnabled = filter.isNotificationEnabled(notification);
+        System.out.println("Is notification enabled? " + isEnabled);
+    }
+}
+```
+
+In this code snippet, we create a `NotificationFilterSupport` object and a `Notification` object. We then call the `isNotificationEnabled(Notification notification)` method on the `NotificationFilterSupport` object, passing the `Notification` object as a parameter. The result is stored in the `isEnabled` variable, which is then printed to the console.
+
+Please note that the `isNotificationEnabled(Notification notification)` method is not typically used directly. It is typically used as part of a larger system for managing notifications in a Java Management Extensions (JMX) environment.
+================================================================
+
+Sample: 42 ObjectInstance
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ObjectName getObjectName() from javax.management.ObjectInstance
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getObjectName()` method in `javax.management.ObjectInstance` is used to get the `ObjectName` of the MBean.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.*;
+
+public class Main {
+    public static void main(String[] args) throws MalformedObjectNameException, NotCompliantMBeanException, MBeanRegistrationException, InstanceAlreadyExistsException, MBeanException, ReflectionException {
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+        ObjectName name = new ObjectName("com.example:type=Test");
+        Test test = new Test();
+        mbs.registerMBean(test, name);
+
+        ObjectInstance oi = mbs.getObjectInstance(name);
+        ObjectName on = oi.getObjectName();
+
+        System.out.println(on);
+    }
+}
+
+class Test implements TestMBean {
+    // Implement the MBean interface
+}
+
+interface TestMBean {
+    // Define the MBean operations and attributes
+}
+```
+
+In this code snippet, we first create an MBean server and register an MBean with a specific name. Then we get the `ObjectInstance` of the MBean and call the `getObjectName()` method to get the `ObjectName`.
+
+Please note that you need to implement the MBean interface and define the operations and attributes in the `TestMBean` interface. The `Test` class is just a placeholder for the MBean implementation.
+================================================================
+

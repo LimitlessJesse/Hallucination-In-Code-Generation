@@ -1,0 +1,1240 @@
+Sample: 0 Boolean
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Boolean package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object obj)`: Compares the specified object with this Boolean for equality.
+2. `int hashCode()`: Returns the hash code value for this object.
+3. `boolean parseBoolean(String s)`: Parses the string argument as a boolean.
+4. `boolean valueOf(String s)`: Returns a Boolean instance representing the value determined by the string argument.
+5. `boolean valueOf(boolean b)`: Returns a Boolean instance representing the specified boolean value.
+================================================================
+
+Sample: 1 Byte
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Byte package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static byte parseByte(String s)`: Parses the string argument as a signed decimal integer.
+
+2. `public static byte parseByte(String s, int radix)`: Parses the string argument as a signed decimal integer in the radix specified by the second argument.
+
+3. `public static byte[] decode(String s)`: Decodes the specified String into a sequence of bytes.
+
+4. `public static byte[] decode(String s, int offset, int length)`: Decodes the specified substring into a sequence of bytes.
+
+5. `public static String toString(byte b)`: Returns a String object representing the specified byte value.
+================================================================
+
+Sample: 2 Character
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Character package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static boolean isDigit(char ch)`: This method returns true if the character is a digit.
+
+2. `public static boolean isLetter(char ch)`: This method returns true if the character is a letter.
+
+3. `public static boolean isLetterOrDigit(char ch)`: This method returns true if the character is a letter or a digit.
+
+4. `public static boolean isLowerCase(char ch)`: This method returns true if the character is a lowercase letter.
+
+5. `public static boolean isUpperCase(char ch)`: This method returns true if the character is an uppercase letter.
+================================================================
+
+Sample: 3 Character.Subset
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Character.Subset package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isDefined(char ch)`: This method returns true if the specified character is defined in the Unicode character set.
+
+2. `int getType(char ch)`: This method returns the type of the specified character.
+
+3. `int getNumericValue(char ch)`: This method returns the numeric value of the specified character.
+
+4. `int toUpperCase(char ch)`: This method returns the uppercase form of the specified character.
+
+5. `int toLowerCase(char ch)`: This method returns the lowercase form of the specified character.
+================================================================
+
+Sample: 4 Character.UnicodeBlock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Character.UnicodeBlock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Character.UnicodeBlock get(char codePoint)`: This method returns the UnicodeBlock for the specified character.
+
+2. `boolean isAlphabetic(char ch)`: This method returns true if the specified character is alphabetic.
+
+3. `boolean isCased(char ch)`: This method returns true if the specified character is cased.
+
+4. `boolean isLowerCase(char ch)`: This method returns true if the specified character is lower case.
+
+5. `boolean isTitleCase(char ch)`: This method returns true if the specified character is title case.
+
+6. `boolean isUpperCase(char ch)`: This method returns true if the specified character is upper case.
+
+7. `boolean isIdeographic(char ch)`: This method returns true if the specified character is ideographic.
+
+8. `boolean isDigit(char ch)`: This method returns true if the specified character is a digit.
+
+9. `boolean isMath(char ch)`: This method returns true if the specified character is a math symbol.
+
+10. `boolean isOtherNeutral(char ch)`: This method returns true if the specified character is a neutral character.
+
+11. `boolean isOtherAlphabetic(char ch)`: This method returns true if the specified character is an alphabetic character.
+
+12. `boolean isOtherLowerCase(char ch)`: This method returns true if the specified character is a lower case character.
+
+13. `boolean isOtherUpperCase(char ch)`: This method returns true if the specified character is an upper case character.
+
+14. `boolean isOtherGraphemeExtend(char ch)`: This method returns true if the specified character is a grapheme extend character.
+
+15. `boolean isOtherIDStart(char ch)`: This method returns true if the specified character is an ID start character.
+
+16. `boolean isOtherIDContinue(char ch)`: This method returns true if the specified character is an ID continue character.
+
+17. `boolean isOtherJoinControl(char ch)`: This method returns true if the specified character is a join control character.
+
+18. `boolean isOtherRadical(char ch)`: This method returns true if the specified character is a radical character.
+
+19. `boolean isOtherDefaultIgnorableCodePoint(char ch)`: This method returns true if the specified character is a default ignorable code point.
+
+20. `boolean isOtherBidiControl(char ch)`: This method returns true if the specified character is a bidirectional control character.
+
+21. `boolean isOtherSpatialSeparator(char ch)`: This method returns true if the specified character is a spatial separator character.
+
+22. `boolean isOtherLineSeparator(char ch)`: This method returns true if the specified character is a line separator character.
+
+23. `boolean isOtherParagraphSeparator(char ch)`: This method returns true if the specified character is a paragraph separator character.
+
+24. `boolean isOtherPrivateUse(char ch)`: This method returns true if the specified character is a private use character.
+
+25. `boolean isOtherSurrogate(char ch)`: This method returns true if the specified character is a surrogate character.
+
+26. `boolean isOtherOther(char ch)`: This method returns true if the specified character is an other character.
+================================================================
+
+Sample: 5 Class
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Class package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `public E get(int index)`: This method returns the element at the specified position in this list.
+3. `public E remove(int index)`: This method removes the element at the specified position in this list.
+4. `public boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `public int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 6 ClassLoader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ClassLoader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ClassLoader findClass(String name)`: This method is used to load a class by its binary name. It returns a Class object representing the class with the specified name.
+
+2. `ClassLoader loadClass(String name)`: This method is used to load a class by its binary name. It returns a Class object representing the class with the specified name.
+
+3. `URL[] getURLs()`: This method is used to get the URLs of the resources that this ClassLoader is permitted to load.
+
+4. `URL getResource(String name)`: This method is used to get a resource with the specified name.
+
+5. `InputStream getResourceAsStream(String name)`: This method is used to get a resource with the specified name as an InputStream.
+================================================================
+
+Sample: 7 ClassValue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ClassValue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs with their return types and parameters for the java.lang.ClassValue package:
+
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 8 Compiler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Compiler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 9 Double
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Double package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `double compare(double d1, double d2)`: This method returns the value 0 if d1 is numerically equal to d2; a value less than 0 if d1 is numerically less than d2; and a value greater than 0 if d1 is numerically greater than d2.
+
+2. `double copySign(double magnitude, double sign)`: This method returns a double value with the magnitude of the first argument and the sign of the second argument.
+
+3. `double decode(String nm)`: This method decodes the string representation of a floating-point number into a double value.
+
+4. `double divide(double dividend, double divisor)`: This method returns the result of dividing the first argument by the second argument.
+
+5. `double max(double a, double b)`: This method returns the maximum of two double values.
+
+6. `double min(double a, double b)`: This method returns the minimum of two double values.
+
+7. `double nextAfter(double start, double direction)`: This method returns the next representable double value after the first argument in the direction of the second argument.
+
+8. `double nextDown(double d)`: This method returns the next double value that is less than the argument.
+
+9. `double nextUp(double d)`: This method returns the next double value that is greater than the argument.
+
+10. `double parseDouble(String s)`: This method parses the string argument as a signed double.
+
+11. `double random()`: This method returns a random double value between 0.0 and 1.0.
+
+12. `double rint(double d)`: This method returns the double value that is closest in value to the argument and is equal to a mathematical integer.
+
+13. `double round(double d)`: This method returns the closest long to the argument, with ties rounding to positive infinity.
+
+14. `double sum(double a, double b)`: This method returns the sum of two double values.
+
+15. `double toDegrees(double angrad)`: This method converts an angle measured in radians to an approximately equivalent angle measured in degrees.
+
+16. `double toHexString(double d)`: This method converts the argument to a hexadecimal string.
+
+17. `double toIntExact(long x)`: This method converts the argument to an int value by throwing an exception if the argument cannot be represented as an int.
+
+18. `double toString(double d)`: This method converts the argument to a string.
+
+19. `double ulp(double d)`: This method returns the positive difference between d and the next larger representable double value.
+
+20. `double up(double d)`: This method returns the next double value that is greater than the argument.
+================================================================
+
+Sample: 10 Enum
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Enum package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public E getValue()`: This method returns the value of this enumeration constant.
+
+2. `public static <T extends Enum<T>> T valueOf(Class<T> enumType, String name)`: This method returns the enumeration constant of the specified enum type with the specified name.
+
+3. `public static <T extends Enum<T>> T valueOf(Class<T> enumType, String name, Class<? extends Enum<T>> enumConstantClass)`: This method returns the enumeration constant of the specified enum type with the specified name.
+
+4. `public static <T extends Enum<T>> T[] values()`: This method returns an array containing the constants of the specified enum type, in the order they're declared.
+
+5. `public static <T extends Enum<T>> T[] valuesOf(Class<T> enumType)`: This method returns an array containing the constants of the specified enum type, in the order they're declared.
+================================================================
+
+Sample: 11 Float
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Float package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `float floatToRawIntBits(float value)`: This method returns the floating-point representation of the specified value as an int.
+
+2. `float intBitsToFloat(int bits)`: This method converts the int argument to a float.
+
+3. `float max(float a, float b)`: This method returns the larger of two float values.
+
+4. `float min(float a, float b)`: This method returns the smaller of two float values.
+
+5. `float sum(float a, float b)`: This method returns the sum of two float values.
+
+6. `float subtract(float a, float b)`: This method returns the difference of two float values.
+
+7. `float multiply(float a, float b)`: This method returns the product of two float values.
+
+8. `float divide(float a, float b)`: This method returns the quotient of two float values.
+
+9. `float remainder(float a, float b)`: This method returns the remainder of the division of one float value by another.
+
+10. `float increment(float a)`: This method increments the float value by one.
+
+11. `float decrement(float a)`: This method decrements the float value by one.
+
+12. `float negate(float a)`: This method negates the float value.
+
+13. `float abs(float a)`: This method returns the absolute value of the float value.
+
+14. `float sqrt(float a)`: This method returns the square root of the float value.
+
+15. `float pow(float a, float b)`: This method returns the value of the first float argument raised to the power of the second float argument.
+
+16. `float log(float a)`: This method returns the natural logarithm of the float value.
+
+17. `float exp(float a)`: This method returns the base-e exponential of the float value.
+
+18. `float sin(float a)`: This method returns the sine of the float value.
+
+19. `float cos(float a)`: This method returns the cosine of the float value.
+
+20. `float tan(float a)`: This method returns the tangent of the float value.
+
+21. `float asin(float a)`: This method returns the arc sine of the float value.
+
+22. `float acos(float a)`: This method returns the arc cosine of the float value.
+
+23. `float atan(float a)`: This method returns the arc tangent of the float value.
+
+24. `float toDegrees(float angrad)`: This method converts an angle measured in radians to an approximately equivalent angle measured in degrees.
+
+25. `float toRadians(float angdeg)`: This method converts an angle measured in degrees to an approximately equivalent angle measured in radians.
+================================================================
+
+Sample: 12 InheritableThreadLocal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.InheritableThreadLocal package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the InheritableThreadLocal class in Java:
+
+1. `public void set(T value)`: This method sets the current thread's copy of this thread-local variable to the specified value.
+
+2. `public T get()`: This method returns the current thread's copy of this thread-local variable.
+
+3. `public void remove()`: This method removes the current thread's copy of this thread-local variable.
+
+4. `protected T childValue(T parentValue)`: This method is invoked by the child thread to initialize its copy of this thread-local variable to the value of the parent variable.
+
+5. `protected T initialValue()`: This method is invoked the first time a thread accesses a thread-local variable for that thread.
+
+Each method has a specific return type and parameters. For example, the `set` method sets the value of the thread-local variable for the current thread, and it takes an argument of type T. The `get` method retrieves the value of the thread-local variable for the current thread, and it returns a value of type T. The `remove` method removes the value of the thread-local variable for the current thread, and it doesn't take any arguments. The `childValue` method is invoked by the child thread to initialize its copy of the thread-local variable to the value of the parent variable, and it takes an argument of type T and returns a value of type T. The `initialValue` method is invoked the first time a thread accesses a thread-local variable for that thread, and it doesn't take any arguments but it returns a value of type T.
+================================================================
+
+Sample: 13 Integer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Integer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int compareTo(Integer anotherInteger)`: Compares this integer with the specified integer.
+2. `int compare(int x, int y)`: Compares two integers passed as parameters.
+3. `int divideUnsigned(int dividend, int divisor)`: Divides two integers without overflow.
+4. `int max(int a, int b)`: Returns the maximum of two integers.
+5. `int min(int a, int b)`: Returns the minimum of two integers.
+================================================================
+
+Sample: 14 Long
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Long package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long sum()`: This method returns the sum of all of the long values in this list.
+
+2. `long max()`: This method returns the maximum value in this list, according to the natural ordering of its elements.
+
+3. `long min()`: This method returns the minimum value in this list, according to the natural ordering of its elements.
+
+4. `long get(int index)`: This method returns the long value at the specified position in this list.
+
+5. `long set(int index, long element)`: This method replaces the long at the specified position in this list with the specified element.
+================================================================
+
+Sample: 15 Math
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Math package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `double abs(double a)`: This method returns the absolute value of a double value.
+
+2. `double ceil(double a)`: This method returns the smallest (closest to negative infinity) double value that is greater than or equal to the argument and is equal to a mathematical integer.
+
+3. `double floor(double a)`: This method returns the largest (closest to positive infinity) double value that is less than or equal to the argument and is equal to a mathematical integer.
+
+4. `double max(double a, double b)`: This method returns the maximum of two double values.
+
+5. `double min(double a, double b)`: This method returns the minimum of two double values.
+
+6. `double pow(double a, double b)`: This method returns the value of the first argument raised to the power of the second argument.
+
+7. `double random()`: This method returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0.
+
+8. `double round(double a)`: This method returns the closest long to the argument, with ties rounding to an even long.
+
+9. `double sqrt(double a)`: This method returns the positive square root of a double value.
+
+10. `double toDegrees(double angrad)`: This method converts an angle measured in radians to an approximately equivalent angle measured in degrees.
+
+11. `double toRadians(double angdeg)`: This method converts an angle measured in degrees to an approximately equivalent angle measured in radians.
+
+12. `double copySign(double magnitude, double sign)`: This method returns a value with the magnitude of the first argument and the sign of the second argument.
+
+13. `double exp(double a)`: This method returns Euler's number e raised to the power of a double value.
+
+14. `double expm1(double a)`: This method returns ex - 1, where x is the argument.
+
+15. `double log(double a)`: This method returns the natural logarithm (base e) of a double value.
+
+16. `double log10(double a)`: This method returns the base 10 logarithm of a double value.
+
+17. `double log1p(double a)`: This method returns the natural logarithm of 1 plus the argument.
+
+18. `double IEEEremainder(double f1, double f2)`: This method returns the remainder of f1 divided by f2.
+
+19. `double nextAfter(double start, direction)`: This method returns the next representable float value after the argument in the direction of the second argument.
+
+20. `double nextDown(double d)`: This method returns the next representable float value after the argument in the direction of negative infinity.
+
+21. `double nextUp(double d)`: This method returns the next representable float value after the argument in the direction of positive infinity.
+
+22. `double rint(double a)`: This method returns the double value that is closest in value to the argument and is equal to a mathematical integer.
+
+23. `double scalb(double a, int scaleFactor)`: This method returns the value of the first argument multiplied by 2 to the power of the second argument.
+
+24. `double scalb(double a, long scaleFactor)`: This method returns the value of the first argument multiplied by 2 to the power of the second argument.
+
+25. `double sin(double a)`: This method returns the trigonometric sine of an angle.
+
+26. `double cos(double a)`: This method returns the trigonometric cosine of an angle.
+
+27. `double tan(double a)`: This method returns the trigonometric tangent of an angle.
+
+28. `double asin(double a)`: This method returns the arc sine of a value.
+
+29. `double acos(double a)`: This method returns the arc cosine of a value.
+
+30. `double atan(double a)`: This method returns the arc tangent of a value.
+
+31. `double atan2(double y, double x)`: This method returns the value of the arc tangent of the first argument divided by the second argument.
+
+32. `double toDegrees(double angrad)`: This method converts an angle measured in radians to an approximately equivalent angle measured in degrees.
+
+33. `double toRadians(double angdeg)`: This method converts an angle measured in degrees to an approximately equivalent angle measured in radians.
+
+34. `double sinh(double x)`: This method returns the hyperbolic sine of a double value.
+
+35. `double cosh(double x)`: This method returns the hyperbolic cosine of a double value.
+
+36. `double tanh(double x)`: This method returns the hyperbolic tangent of a double value.
+
+37. `double hypot(double x, double y)`: This method returns sqrt(x2 + y2).
+
+38. `double cbrt(double a)`: This method returns the cube root of a double value.
+
+39. `double copySign(double magnitude, double sign)`: This method returns a value with the magnitude of the first argument and the sign of the second argument.
+
+40. `double ulp(double a)`: This method returns the positive difference between a and the next representable double value.
+================================================================
+
+Sample: 16 Number
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Number package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `byte byteValue()`: This method returns the value of the specified number as a byte.
+2. `double doubleValue()`: This method returns the value of the specified number as a double.
+3. `float floatValue()`: This method returns the value of the specified number as a float.
+4. `int intValue()`: This method returns the value of the specified number as an int.
+5. `long longValue()`: This method returns the value of the specified number as a long.
+6. `short shortValue()`: This method returns the value of the specified number as a short.
+================================================================
+
+Sample: 17 Object
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Object package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `void clear()`: This method removes all of the elements from this list.
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+================================================================
+
+Sample: 18 Package
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Package package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 19 Process
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Process package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ProcessBuilder(String... command)`: This method is used to create a new ProcessBuilder instance with the specified command.
+
+2. `ProcessBuilder(List<String> command)`: This method is used to create a new ProcessBuilder instance with the specified command.
+
+3. `Process start()`: This method is used to start the process.
+
+4. `int waitFor()`: This method is used to wait for the process to complete.
+
+5. `void destroy()`: This method is used to destroy the process.
+================================================================
+
+Sample: 20 ProcessBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ProcessBuilder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ProcessBuilder(String... command)`: This constructor is used to create a new ProcessBuilder with the specified command.
+
+2. `ProcessBuilder(List<String> command)`: This constructor is used to create a new ProcessBuilder with the specified command.
+
+3. `ProcessBuilder redirectError(File file)`: This method is used to redirect the error output of the subprocess to the specified file.
+
+4. `ProcessBuilder redirectError(OutputStream out)`: This method is used to redirect the error output of the subprocess to the specified output stream.
+
+5. `ProcessBuilder redirectInput(File file)`: This method is used to redirect the input of the subprocess to the specified file.
+
+6. `ProcessBuilder redirectInput(InputStream in)`: This method is used to redirect the input of the subprocess to the specified input stream.
+
+7. `ProcessBuilder redirectOutput(File file)`: This method is used to redirect the output of the subprocess to the specified file.
+
+8. `ProcessBuilder redirectOutput(OutputStream out)`: This method is used to redirect the output of the subprocess to the specified output stream.
+
+9. `ProcessBuilder start()`: This method is used to start the subprocess.
+
+10. `ProcessBuilder start(Map<String, String> environment)`: This method is used to start the subprocess with the specified environment.
+
+11. `ProcessBuilder directory(File dir)`: This method is used to set the working directory of the subprocess.
+
+12. `ProcessBuilder command(List<String> commands)`: This method is used to set the command of the subprocess.
+
+13. `ProcessBuilder command(String... commands)`: This method is used to set the command of the subprocess.
+
+14. `ProcessBuilder command(String command)`: This method is used to set the command of the subprocess.
+
+15. `ProcessBuilder inheritIO()`: This method is used to inherit the input and output of the subprocess.
+
+16. `ProcessBuilder redirectError()`: This method is used to redirect the error output of the subprocess to the same place as the standard output.
+
+17. `ProcessBuilder redirectInput()`: This method is used to redirect the input of the subprocess to the same place as the standard output.
+
+18. `ProcessBuilder redirectOutput()`: This method is used to redirect the output of the subprocess to the same place as the standard output.
+
+19. `ProcessBuilder redirectOutput(Appendable out)`: This method is used to redirect the output of the subprocess to the specified appendable.
+
+20. `ProcessBuilder redirectOutput(FileAppendable out)`: This method is used to redirect the output of the subprocess to the specified file appendable.
+
+21. `ProcessBuilder redirectOutput(OutputStream out)`: This method is used to redirect the output of the subprocess to the specified output stream.
+
+22. `ProcessBuilder redirectOutput(PrintStream out)`: This method is used to redirect the output of the subprocess to the specified print stream.
+
+23. `ProcessBuilder redirectOutput(PrintWriter out)`: This method is used to redirect the output of the subprocess to the specified print writer.
+
+24. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+25. `ProcessBuilder redirectOutput(File file)`: This method is used to redirect the output of the subprocess to the specified file.
+
+26. `ProcessBuilder redirectOutput(FileDescriptor out)`: This method is used to redirect the output of the subprocess to the specified file descriptor.
+
+27. `ProcessBuilder redirectOutput(FileOutputStream out)`: This method is used to redirect the output of the subprocess to the specified file output stream.
+
+28. `ProcessBuilder redirectOutput(PipedOutputStream out)`: This method is used to redirect the output of the subprocess to the specified piped output stream.
+
+29. `ProcessBuilder redirectOutput(PipedWriter out)`: This method is used to redirect the output of the subprocess to the specified piped writer.
+
+30. `ProcessBuilder redirectOutput(StringBuilder out)`: This method is used to redirect the output of the subprocess to the specified string builder.
+
+31. `ProcessBuilder redirectOutput(StringWriter out)`: This method is used to redirect the output of the subprocess to the specified string writer.
+
+32. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+33. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+34. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+35. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+36. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+37. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+38. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+39. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+40. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+41. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+42. `ProcessBuilder redirectOutput(Writer out)`: This method is used to redirect the output of the subprocess to the specified writer.
+
+43. `ProcessBuilder redirectOutput(Writer out
+================================================================
+
+Sample: 21 ProcessBuilder.Redirect
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ProcessBuilder.Redirect package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Redirect.Type redirectType()`: This method returns the type of redirection.
+
+2. `Redirect.Type redirectType(String type)`: This method sets the type of redirection.
+
+3. `File file()`: This method returns the file to which the output is redirected.
+
+4. `File file(File file)`: This method sets the file to which the output is redirected.
+
+5. `File file(String file)`: This method sets the file to which the output is redirected.
+
+6. `File file(Path path)`: This method sets the file to which the output is redirected.
+
+7. `File file(String path)`: This method sets the file to which the output is redirected.
+
+8. `File file(URI uri)`: This method sets the file to which the output is redirected.
+
+9. `File file(URL url)`: This method sets the file to which the output is redirected.
+
+10. `File file(URI uri, String path)`: This method sets the file to which the output is redirected.
+
+11. `File file(URL url, String path)`: This method sets the file to which the output is redirected.
+
+12. `File file(String uri, String path)`: This method sets the file to which the output is redirected.
+
+13. `File file(String url, String path)`: This method sets the file to which the output is redirected.
+
+14. `File file(File file, String path)`: This method sets the file to which the output is redirected.
+
+15. `File file(Path path, String path)`: This method sets the file to which the output is redirected.
+
+16. `File file(String path, String path)`: This method sets the file to which the output is redirected.
+
+17. `File file(File file, String path, String path)`: This method sets the file to which the output is redirected.
+
+18. `File file(Path path, String path, String path)`: This method sets the file to which the output is redirected.
+
+19. `File file(String path, String path, String path)`: This method sets the file to which the output is redirected.
+
+20. `File file(File file, String path, String path, String path)`: This method sets the file to which the output is redirected.
+
+21. `File file(Path path, String path, String path, String path)`: This method sets the file to which the output is redirected.
+
+22. `File file(String path, String path, String path, String path)`: This method sets the file to which the output is redirected.
+================================================================
+
+Sample: 22 Runtime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Runtime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `public boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `public void clear()`: This method removes all of the elements from this list.
+4. `public boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `public boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 23 RuntimePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.RuntimePermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the java.lang.RuntimePermission package:
+
+1. `public boolean implies(Permission permission)`: This method checks if the specified permission is implied by this permission.
+
+2. `public boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `public int hashCode()`: This method returns a hash code for this permission.
+
+4. `public String getActions()`: This method returns the actions of this permission.
+
+5. `public String getName()`: This method returns the name of this permission.
+
+Each method has its own return type and parameters. For example:
+
+`public boolean implies(Permission permission)`: This method checks if the specified permission is implied by this permission. It takes a `Permission` object as a parameter and returns a `boolean` value.
+
+`public boolean equals(Object obj)`: This method compares this permission with the specified object. It takes an `Object` as a parameter and returns a `boolean` value.
+
+`public int hashCode()`: This method returns a hash code for this permission. It doesn't take any parameters and returns an `int` value.
+
+`public String getActions()`: This method returns the actions of this permission. It doesn't take any parameters and returns a `String` value.
+
+`public String getName()`: This method returns the name of this permission. It doesn't take any parameters and returns a `String` value.
+================================================================
+
+Sample: 24 SecurityManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.SecurityManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void checkPermission(Permission perm)`: This method checks whether the specified permission is granted.
+
+2. `void checkPermission(Permission perm, Object context)`: This method checks whether the specified permission is granted in the specified context.
+
+3. `void checkExit(int status)`: This method checks whether the specified status code is permitted to exit the virtual machine.
+
+4. `void checkRead(String file)`: This method checks whether the specified file can be read.
+
+5. `void checkWrite(String file)`: This method checks whether the specified file can be written.
+================================================================
+
+Sample: 25 Short
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Short package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `shortValue()`: This method returns the value of this Short as an int.
+
+2. `compareTo(Short anotherShort)`: This method compares two Shorts numerically.
+
+3. `equals(Object obj)`: This method compares this object against the specified object.
+
+4. `hashCode()`: This method returns a hash code for this Short.
+
+5. `toString()`: This method returns a string representation of this Short.
+================================================================
+
+Sample: 26 StackTraceElement
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.StackTraceElement package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int getLineNumber()`: Returns the line number where the method was invoked.
+
+2. `public String getClassName()`: Returns the fully qualified name of the class that contains the method.
+
+3. `public String getMethodName()`: Returns the name of the method.
+
+4. `public String getFileName()`: Returns the name of the file containing the method.
+
+5. `public String getModuleName()`: Returns the name of the module containing the method.
+
+6. `public boolean isNativeMethod()`: Returns true if the method is a native method.
+================================================================
+
+Sample: 27 StrictMath
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.StrictMath package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `double acos(double a)`: This method returns the arc cosine of a value.
+2. `double asin(double a)`: This method returns the arc sine of a value.
+3. `double atan(double a)`: This method returns the arc tangent of a value.
+4. `double atan2(double y, double x)`: This method returns the value of the arc tangent of the quotient of the arguments, in radians.
+5. `double ceil(double a)`: This method returns the smallest (closest to negative infinity) double value that is greater than or equal to the argument and is equal to a mathematical integer.
+================================================================
+
+Sample: 28 String
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.String package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the 5 most useful methods from the java.lang.String package:
+
+1. `int length()`: This method returns the length of the string.
+
+2. `char charAt(int index)`: This method returns the character at the specified index.
+
+3. `boolean equals(Object another)`: This method compares this string to the specified object.
+
+4. `boolean contains(CharSequence s)`: This method checks if this string contains the specified sequence of char values.
+
+5. `String[] split(String regex)`: This method splits this string around matches of the given regular expression.
+================================================================
+
+Sample: 29 StringBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.StringBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StringBuffer append(String str)`: This method appends the specified string to the end of this buffer.
+
+2. `StringBuffer insert(int offset, String str)`: This method inserts the specified string into this buffer at the specified position.
+
+3. `StringBuffer delete(int start, int end)`: This method removes the characters in a substring of this sequence.
+
+4. `StringBuffer reverse()`: This method reverses the characters in this buffer.
+
+5. `int capacity()`: This method returns the current capacity of this buffer.
+================================================================
+
+Sample: 30 StringBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.StringBuilder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the 5 most useful methods from the `java.lang.StringBuilder` package:
+
+1. `StringBuilder append(String str)`: This method appends the specified string to the end of this string builder.
+
+2. `StringBuilder insert(int offset, String str)`: This method inserts the specified string into this string builder at the specified position.
+
+3. `StringBuilder delete(int start, int end)`: This method removes the characters in a substring of this string builder.
+
+4. `StringBuilder replace(int start, int end, String str)`: This method replaces the characters in a substring of this string builder with characters from a different string.
+
+5. `String toString()`: This method returns a string that represents the data in this string builder.
+================================================================
+
+Sample: 31 System
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.System package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long currentTimeMillis()`: This method returns the current time in milliseconds.
+
+2. `void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)`: This method copies an array from one position to another.
+
+3. `void exit(int status)`: This method terminates the currently running Java Virtual Machine.
+
+4. `void gc()`: This method initiates a full garbage-collection cycle.
+
+5. `String getProperty(String key)`: This method returns the system property indicated by the specified key.
+================================================================
+
+Sample: 32 Thread
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Thread package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void start()`: This method starts a new thread of execution.
+2. `void run()`: This method is the code that will be executed in the new thread.
+3. `void yield()`: This method allows the currently executing thread to relinquish the CPU.
+4. `void join()`: This method waits for this thread to die.
+5. `void interrupt()`: This method interrupts this thread.
+================================================================
+
+Sample: 33 ThreadGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ThreadGroup package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int activeCount()`: Returns the number of active threads in this thread group, including both dead and alive threads.
+
+2. `int activeGroupCount()`: Returns the number of active thread groups in this thread group.
+
+3. `int activeGroupCount(boolean recursive)`: Returns the number of active thread groups in this thread group, including all subgroups if recursive is true.
+
+4. `int activeCount(boolean recursive)`: Returns the number of active threads in this thread group, including all threads in all subgroups if recursive is true.
+
+5. `void uncaughtException(Thread t, Throwable e)`: Invoked when the given thread in this group throws an uncaught exception.
+================================================================
+
+Sample: 34 ThreadLocal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ThreadLocal package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.lang.ThreadLocal` package:
+
+1. `public void set(T value)`: This method sets the current thread's copy of this thread-local variable to the specified value.
+
+2. `public T get()`: This method returns the current thread's copy of this thread-local variable.
+
+3. `public void remove()`: This method removes the current thread's copy of this thread-local variable.
+
+4. `protected T initialValue()`: This method is invoked the first time a thread accesses the `get()` method with no value for the thead-local variable.
+
+5. `public static <S> ThreadLocal<S> withInitial(Supplier<? extends S> supplier)`: This method creates a new ThreadLocal instance with an initial value supplied by the given supplier.
+
+Each method has its own return type and parameters. For example, `public void set(T value)` returns void and takes one parameter of type T.
+================================================================
+
+Sample: 35 Throwable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Throwable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public Throwable fillInStackTrace()`: This method fills in the stack trace for the Throwable.
+
+2. `public String getMessage()`: This method returns the detail message string of this Throwable.
+
+3. `public synchronized Throwable getCause()`: This method returns the cause of this throwable or null if the cause is nonexistent or unknown.
+
+4. `public synchronized Throwable initCause(Throwable cause)`: This method initializes the cause of this throwable to the specified value.
+
+5. `public String toString()`: This method returns a string representation of the Throwable.
+================================================================
+
+Sample: 36 Void
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.Void package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+3. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+
+4. `void clear()`: This method removes all of the elements from this list.
+
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+
+7. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+
+9. `int lastIndexOf(Object o)`: This method returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+12. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+
+13. `void replaceAll(UnaryOperator<E> operator)`: This method replaces all of the elements of this list with the result of applying the operator to each of the elements.
+
+14. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+
+15. `int size()`: This method returns the number of elements in this list.
+
+16. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+17. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+18. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+
+19. `void trimToSize()`: This method trims the capacity of this ArrayList instance to be the list's current size.
+
+20. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+
+21. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+================================================================
+

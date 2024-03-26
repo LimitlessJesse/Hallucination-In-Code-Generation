@@ -1,0 +1,937 @@
+Sample: 0 AbstractExecutorService
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.AbstractExecutorService package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+3. `List<Runnable> shutdownNow()`: This method attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution.
+4. `boolean isShutdown()`: This method returns true if all tasks have completed following shut down.
+5. `boolean isTerminated()`: This method returns true if all tasks have completed following shut down and terminated.
+================================================================
+
+Sample: 1 ArrayBlockingQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ArrayBlockingQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean offer(E e)`: This method adds the specified element to the end of the list if it is possible to do so immediately without violating capacity restrictions.
+3. `E take()`: This method retrieves and removes the head of the list.
+4. `E poll()`: This method retrieves and removes the head of the list, or returns null if the list is empty.
+5. `E peek()`: This method retrieves, but does not remove, the head of the list.
+================================================================
+
+Sample: 2 CompletableFuture
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CompletableFuture package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CompletableFuture<Void> runAsync(Runnable runnable)`: This method accepts a Runnable object and executes it asynchronously. It returns a CompletableFuture that will be completed when the Runnable completes.
+
+2. `<U> CompletableFuture<U> thenApply(Function<? super T,? extends U> fn)`: This method accepts a Function object and applies it to the result of this CompletableFuture. It returns a new CompletableFuture that will be completed with the result of the Function application.
+
+3. `CompletableFuture<Void> thenAccept(Consumer<? super T> action)`: This method accepts a Consumer object and applies it to the result of this CompletableFuture. It returns a new CompletableFuture that will be completed when the Consumer completes.
+
+4. `CompletableFuture<T> thenCompose(Function<? super T,? extends CompletionStage<U>> fn)`: This method accepts a Function object that returns a CompletionStage and applies it to the result of this CompletableFuture. It returns a new CompletableFuture that will be completed with the result of the Function application.
+
+5. `CompletableFuture<T> exceptionally(Function<Throwable,? extends T> fn)`: This method accepts a Function object that handles exceptions and applies it to the result of this CompletableFuture. It returns a new CompletableFuture that will be completed with the result of the Function application.
+================================================================
+
+Sample: 3 ConcurrentHashMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentHashMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean putIfAbsent(K key, V value)`: This method associates the specified value with the specified key in this map only if it is not already associated with a value (i.e., it is not in the map).
+
+2. `V put(K key, V value)`: This method associates the specified value with the specified key in this map.
+
+3. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+4. `V remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+
+5. `boolean replace(K key, V oldValue, V newValue)`: This method replaces the entry for the specified key only if currently mapped to the specified value.
+================================================================
+
+Sample: 4 ConcurrentHashMap.KeySetView
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentHashMap.KeySetView package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean isEmpty()`: This method returns true if this list contains no elements.
+================================================================
+
+Sample: 5 ConcurrentLinkedDeque
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentLinkedDeque package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addFirst(E e)`: This method inserts the specified element at the front of this list.
+3. `boolean addLast(E e)`: This method appends the specified element to the end of this list.
+4. `E getFirst()`: This method retrieves, but does not remove, the head of this list.
+5. `E getLast()`: This method retrieves, but does not remove, the tail of this list.
+================================================================
+
+Sample: 6 ConcurrentLinkedQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentLinkedQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean offer(E e)`: This method adds the specified element as the tail (last element) of this queue.
+3. `E poll()`: This method retrieves and removes the head of this queue, or returns null if this queue is empty.
+4. `E peek()`: This method retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+5. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this queue.
+================================================================
+
+Sample: 7 ConcurrentSkipListMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentSkipListMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ConcurrentSkipListMap()`: This is the constructor of the ConcurrentSkipListMap class.
+
+2. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+3. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+4. `V put(K key, V value)`: This method associates the specified value with the specified key in this map.
+
+5. `V remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+================================================================
+
+Sample: 8 ConcurrentSkipListSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ConcurrentSkipListSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 9 CopyOnWriteArrayList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CopyOnWriteArrayList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+4. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 10 CopyOnWriteArraySet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CopyOnWriteArraySet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addIfAbsent(E e)`: This method appends the specified element to the end of this list only if it is not already present.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements in the specified collection.
+
+Note: The above methods are not inherent from its parent class.
+================================================================
+
+Sample: 11 CountDownLatch
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CountDownLatch package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CountDownLatch(int count)`: This is the constructor of CountDownLatch class. It takes an integer argument which specifies the number of times countDown() method must be invoked before await() returns.
+
+2. `void await()`: This method blocks the current thread until the latch has counted down to zero, or the thread is interrupted.
+
+3. `void countDown()`: This method decrements the count of the latch, releasing all waiting threads if the count reaches zero.
+
+4. `long getCount()`: This method returns the current count.
+
+5. `void await(long timeout, TimeUnit unit)`: This method is similar to await(), but it also accepts a timeout parameter. If the count does not reach zero within the specified timeout, it returns.
+================================================================
+
+Sample: 12 CountedCompleter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CountedCompleter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CountedCompleter()`: This is a constructor of CountedCompleter class.
+
+2. `addToCompletionCount(int value)`: This method increments the completion count by the specified value.
+
+3. `decrementCompletionCount()`: This method decrements the completion count by 1.
+
+4. `getCompletionCount()`: This method returns the current completion count.
+
+5. `forceCompletion()`: This method forces the completion of the task.
+================================================================
+
+Sample: 13 CyclicBarrier
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.CyclicBarrier package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CyclicBarrier(int parties)`: This constructor creates a new CyclicBarrier that will trip when the given number of parties (threads) are waiting upon it.
+
+2. `int await()`: This method waits until all parties have invoked await on this barrier. If the current thread is not the last to arrive then it is disabled for thread scheduling purposes and lies dormant until one of two things happens: some other thread invokes the await method on this barrier; or the barrier's barrierAction becomes enabled.
+
+3. `int await(long timeout, TimeUnit unit)`: This method waits until all parties have invoked await on this barrier, or the given timeout elapses, whichever comes first.
+
+4. `int getNumberWaiting()`: This method returns the number of parties that are currently waiting at the barrier.
+
+5. `int getParties()`: This method returns the number of parties required to trip this barrier.
+================================================================
+
+Sample: 14 DelayQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.DelayQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E take()`: This method retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
+3. `E poll()`: This method retrieves and removes the head of this queue, or returns null if this queue is empty.
+4. `E peek()`: This method retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+5. `long size()`: This method returns the number of elements in this queue.
+================================================================
+
+Sample: 15 Exchanger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.Exchanger package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Exchanger()`: This is the constructor of the Exchanger class.
+
+2. `exchange(V x)`: This method transfers the specified object to the other thread waiting at this exchanger and then waits for the other thread to do the same.
+
+3. `exchange(V x, long timeout, TimeUnit unit)`: This method transfers the specified object to the other thread waiting at this exchanger and then waits for the other thread to do the same. If the other thread does not arrive within the specified time, a TimeoutException is thrown.
+
+4. `V exchange(V x, long timeout, TimeUnit unit) throws InterruptedException, TimeoutException`: This method transfers the specified object to the other thread waiting at this exchanger and then waits for the other thread to do the same. If the other thread does not arrive within the specified time, a TimeoutException is thrown.
+
+5. `V exchange(V x) throws InterruptedException`: This method transfers the specified object to the other thread waiting at this exchanger and then waits for the other thread to do the same. If the other thread does not arrive, the current thread is interrupted.
+================================================================
+
+Sample: 16 ExecutorCompletionService
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ExecutorCompletionService package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E remove(int index)`: This method removes the element at the specified position in this list.
+3. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+================================================================
+
+Sample: 17 Executors
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.Executors package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ExecutorService newFixedThreadPool(int nThreads)`: This method creates a thread pool that reuses a fixed number of threads operating off a shared unbounded queue.
+
+2. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+
+3. `Future<?> submit(Runnable task)`: This method executes the given task sometime in the future and returns a Future representing that task.
+
+4. `<T> Future<T> submit(Callable<T> task)`: This method executes the given task sometime in the future and returns a Future representing that task.
+
+5. `void shutdown()`: This method initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
+================================================================
+
+Sample: 18 ForkJoinPool
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ForkJoinPool package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ForkJoinPool()`: This is a constructor of ForkJoinPool class. It creates a new ForkJoinPool with the given parallelism level.
+
+2. `submit(ForkJoinTask<V> task)`: This method is used to execute the given task.
+
+3. `invoke(ForkJoinTask<V> task)`: This method is used to execute the given task and wait for its completion.
+
+4. `execute(Runnable task)`: This method is used to execute the given task.
+
+5. `execute(ForkJoinTask<?> task)`: This method is used to execute the given task.
+
+6. `submit(Runnable task)`: This method is used to execute the given task.
+
+7. `submit(Callable<V> task)`: This method is used to execute the given task.
+
+8. `invoke(Runnable task)`: This method is used to execute the given task and wait for its completion.
+
+9. `invoke(Callable<V> task)`: This method is used to execute the given task and wait for its completion.
+
+10. `execute(ForkJoinTask<?> task, ForkJoinWorkerThread wt)`: This method is used to execute the given task on the given worker thread.
+
+11. `submit(ForkJoinTask<V> task, ForkJoinWorkerThread wt)`: This method is used to execute the given task on the given worker thread.
+
+12. `execute(Runnable task, ForkJoinWorkerThread wt)`: This method is used to execute the given task on the given worker thread.
+
+13. `submit(Callable<V> task, ForkJoinWorkerThread wt)`: This method is used to execute the given task on the given worker thread.
+
+14. `submit(Runnable task, ForkJoinWorkerThread wt)`: This method is used to execute the given task on the given worker thread.
+
+15. `submit(Callable<V> task, ForkJoinPool pool)`: This method is used to execute the given task on the given pool.
+
+16. `submit(Runnable task, ForkJoinPool pool)`: This method is used to execute the given task on the given pool.
+
+17. `submit(ForkJoinTask<V> task, ForkJoinPool pool)`: This method is used to execute the given task on the given pool.
+
+18. `submit(Callable<V> task, ForkJoinPool pool)`: This method is used to execute the given task on the given pool.
+
+19. `submit(Runnable task, ForkJoinPool pool)`: This method is used to execute the given task on the given pool.
+
+20. `submit(ForkJoinTask<V> task, ForkJoinWorkerThread wt, int priority)`: This method is used to execute the given task on the given worker thread with the given priority.
+================================================================
+
+Sample: 19 ForkJoinTask
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ForkJoinTask package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ForkJoinTask<V> fork()`: This method creates a new ForkJoinTask that is a copy of the current task, and then executes the new task in a separate thread.
+
+2. `V getRawResult()`: This method returns the result of the computation.
+
+3. `void setRawResult(V value)`: This method sets the result of the computation.
+
+4. `boolean isCancelled()`: This method checks if the task has been cancelled.
+
+5. `void cancel(boolean mayInterruptIfRunning)`: This method cancels the task. If the task is already running, it may be interrupted.
+================================================================
+
+Sample: 20 ForkJoinWorkerThread
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ForkJoinWorkerThread package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ForkJoinWorkerThread(ForkJoinPool pool)`: This is the constructor of the ForkJoinWorkerThread class. It takes a ForkJoinPool as a parameter.
+
+2. `void start()`: This method starts the worker thread.
+
+3. `void run()`: This method is the entry point for the worker thread.
+
+4. `void join()`: This method waits for the worker thread to die.
+
+5. `void interrupt()`: This method interrupts the worker thread.
+================================================================
+
+Sample: 21 FutureTask
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.FutureTask package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean cancel(boolean mayInterruptIfRunning)`: Attempts to cancel execution of this task.
+
+2. `boolean isCancelled()`: Returns true if this task was cancelled before it completed normally.
+
+3. `boolean isDone()`: Returns true if this task completed.
+
+4. `V get()`: Waits if necessary for the computation to complete, and then retrieves its result.
+
+5. `V get(long timeout, TimeUnit unit)`: Waits if necessary for at most the given time for the computation to complete, and then retrieves its result, if available.
+================================================================
+
+Sample: 22 LinkedBlockingDeque
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.LinkedBlockingDeque package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean offer(E e)`: This method adds the specified element as the tail (last element) of this list.
+3. `boolean offerFirst(E e)`: This method inserts the specified element at the front of this list.
+4. `boolean offerLast(E e)`: This method inserts the specified element at the end of this list.
+5. `E remove()`: This method retrieves and removes the head (first element) of this list.
+6. `E poll()`: This method retrieves and removes the head of this list, or returns null if this list is empty.
+7. `E pollFirst()`: This method retrieves and removes the first element of this list, or returns null if this list is empty.
+8. `E pollLast()`: This method retrieves and removes the last element of this list, or returns null if this list is empty.
+9. `E getFirst()`: This method retrieves, but does not remove, the head of this list.
+10. `E getLast()`: This method retrieves, but does not remove, the last element of this list.
+11. `E peek()`: This method retrieves, but does not remove, the head of this list, or returns null if this list is empty.
+12. `E peekFirst()`: This method retrieves, but does not remove, the first element of this list, or returns null if this list is empty.
+13. `E peekLast()`: This method retrieves, but does not remove, the last element of this list, or returns null if this list is empty.
+14. `boolean removeFirstOccurrence(Object o)`: This method removes the first occurrence of the specified element in this list, if it is present.
+15. `boolean removeLastOccurrence(Object o)`: This method removes the last occurrence of the specified element in this list, if it is present.
+16. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+17. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+18. `int size()`: This method returns the number of elements in this list.
+19. `boolean isEmpty()`: This method returns true if this list contains no elements.
+20. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 23 LinkedBlockingQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.LinkedBlockingQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E remove()`: This method removes and returns the head of the list.
+3. `boolean offer(E e)`: This method adds the specified element as the tail of this list.
+4. `E poll()`: This method retrieves and removes the head of the list, or returns null if this list is empty.
+5. `E peek()`: This method retrieves, but does not remove, the head of the list.
+================================================================
+
+Sample: 24 LinkedTransferQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.LinkedTransferQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E take()`: This method retrieves and removes the head of this list.
+3. `boolean tryTransfer(E e)`: This method transfers the specified element to this queue if it is possible to do so immediately without violating capacity restrictions.
+4. `boolean hasWaitingConsumer()`: This method returns true if consumers are waiting to receive elements.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 25 Phaser
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.Phaser package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int register()`: This method registers a new participant in the phaser and returns the new phase number.
+
+2. `int arrive()`: This method registers the current thread and returns the new phase number.
+
+3. `int arriveAndAwaitAdvance()`: This method registers the current thread, waits for all other registered threads to arrive at the phase, and then advances to the next phase.
+
+4. `int arriveAndDeregister()`: This method registers the current thread, waits for all other registered threads to arrive at the phase, and then deregisters the current thread.
+
+5. `boolean forceTermination()`: This method forces the phaser to terminate.
+================================================================
+
+Sample: 26 PriorityBlockingQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.PriorityBlockingQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E poll()`: This method retrieves and removes the head of this list, or returns null if this list is empty.
+3. `E peek()`: This method retrieves, but does not remove, the head of this list, or returns null if this list is empty.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+================================================================
+
+Sample: 27 RecursiveAction
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.RecursiveAction package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RecursiveAction`: This is the base class for tasks that return no result.
+
+2. `RecursiveAction.compute()`: This method is used to define the computation performed by this task.
+
+3. `RecursiveAction.fork()`: This method is used to create a new `RecursiveAction` that is a copy of this task, but with a different `RecursiveAction`.
+
+4. `RecursiveAction.join()`: This method is used to wait for the completion of this task and then combine its result with the result of the other task.
+
+5. `RecursiveAction.invoke()`: This method is used to execute this task.
+================================================================
+
+Sample: 28 RecursiveTask
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.RecursiveTask package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public E get(int index)`: This method returns the element at the specified position in this list.
+2. `public E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+3. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+4. `public E remove(int index)`: This method removes the element at the specified position in this list.
+5. `public boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+Note: The methods `get`, `set`, `add`, `remove`, and `addAll` are inherited from the `List` interface and are not part of the `RecursiveTask` class.
+================================================================
+
+Sample: 29 ScheduledThreadPoolExecutor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ScheduledThreadPoolExecutor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ScheduledThreadPoolExecutor(int corePoolSize)`: This method creates a new ScheduledThreadPoolExecutor with the given initial number of threads.
+
+2. `void schedule(Runnable command, long delay, TimeUnit unit)`: This method schedules the specified command to be executed after the given delay.
+
+3. `ScheduledFuture<?> scheduleAtFixedRate(Runnable command, long initialDelay, long period, TimeUnit unit)`: This method schedules the specified command to be executed at fixed rate rate.
+
+4. `ScheduledFuture<?> scheduleWithFixedDelay(Runnable command, long initialDelay, long delay, TimeUnit unit)`: This method schedules the specified command to be executed with a fixed delay.
+
+5. `void shutdown()`: This method initiates shutdown in this executor. After the method returns, subsequent calls to this executor's methods throw RejectedExecutionException.
+================================================================
+
+Sample: 30 Semaphore
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.Semaphore package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Semaphore(int permits)`: This constructor creates a Semaphore with the given number of permits.
+
+2. `void acquire()`: This method acquires a permit from this semaphore, blocking until one is available.
+
+3. `void acquire(int permits)`: This method acquires the given number of permits from this semaphore, blocking until the request is granted.
+
+4. `void release()`: This method releases a permit, returning it to the semaphore.
+
+5. `void release(int permits)`: This method releases the given number of permits, returning them to the semaphore.
+
+6. `int availablePermits()`: This method returns the number of permits available in this semaphore.
+
+7. `boolean tryAcquire()`: This method acquires a permit from this semaphore, if one is available and returns immediately.
+
+8. `boolean tryAcquire(long timeout, TimeUnit unit)`: This method acquires a permit from this semaphore, if one is available within the given timeout and returns immediately.
+
+9. `boolean tryAcquire(int permits)`: This method acquires the given number of permits from this semaphore, if one is available and returns immediately.
+
+10. `boolean tryAcquire(int permits, long timeout, TimeUnit unit)`: This method acquires the given number of permits from this semaphore, if one is available within the given timeout and returns immediately.
+================================================================
+
+Sample: 31 SynchronousQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.SynchronousQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean offer(E e)`: This method inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions.
+
+2. `E take()`: This method retrieves and removes the head of this queue.
+
+3. `E poll()`: This method retrieves and removes the head of this queue, or returns null if this queue is empty.
+
+4. `boolean isEmpty()`: This method returns true if this queue contains no elements.
+
+5. `int size()`: This method returns the number of elements in this queue.
+================================================================
+
+Sample: 32 ThreadLocalRandom
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadLocalRandom package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int nextInt()`: This method returns a random int value.
+2. `long nextLong()`: This method returns a random long value.
+3. `double nextDouble()`: This method returns a random double value.
+4. `boolean nextBoolean()`: This method returns a random boolean value.
+5. `double nextGaussian()`: This method returns a random double value with a Gaussian (normal) distribution.
+================================================================
+
+Sample: 33 ThreadPoolExecutor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadPoolExecutor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getCorePoolSize()`: This method returns the core size of the thread pool.
+
+2. `int getMaximumPoolSize()`: This method returns the maximum size of the thread pool.
+
+3. `int getPoolSize()`: This method returns the current size of the thread pool.
+
+4. `int getActiveCount()`: This method returns the number of threads that are actively executing tasks.
+
+5. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+================================================================
+
+Sample: 34 ThreadPoolExecutor.AbortPolicy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadPoolExecutor.AbortPolicy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+
+2. `<T> Future<T> submit(Callable<T> task)`: This method executes the given task and returns a Future representing that task.
+
+3. `void execute(Runnable command, long startTimeout)`: This method executes the given command after the given delay.
+
+4. `<T> Future<T> submit(Runnable task, T result)`: This method executes the given task and returns a Future representing that task.
+
+5. `void execute(Runnable command, long startTimeout, TimeUnit unit)`: This method executes the given command after the given delay.
+================================================================
+
+Sample: 35 ThreadPoolExecutor.CallerRunsPolicy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+3. `void shutdown()`: This method initiates shutdown in this executor.
+4. `List<Runnable> shutdownNow()`: This method attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution.
+5. `boolean isShutdown()`: This method returns true if all tasks have completed following shut down.
+================================================================
+
+Sample: 36 ThreadPoolExecutor.DiscardOldestPolicy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+3. `void execute(Runnable command, long delay, TimeUnit unit)`: This method executes the given command after the given delay.
+4. `Future<?> submit(Runnable task)`: This method executes the given task sometime in the future.
+5. `<T> Future<T> submit(Callable<T> task)`: This method executes the given task sometime in the future.
+
+Note: The `execute()` and `submit()` methods are used to add tasks to the thread pool. The `execute()` method adds a task to the thread pool and does not return a result, while the `submit()` method adds a task to the thread pool and returns a Future object that can be used to get the result of the task.
+================================================================
+
+Sample: 37 ThreadPoolExecutor.DiscardPolicy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.ThreadPoolExecutor.DiscardPolicy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void execute(Runnable command)`: This method executes the given command at some time in the future.
+3. `void execute(Runnable command, long delay, TimeUnit unit)`: This method executes the given command after the given delay.
+4. `Future<?> submit(Runnable task)`: This method executes the given task sometime in the future.
+5. `<T> Future<T> submit(Callable<T> task)`: This method executes the given task sometime in the future.
+
+Note: The `execute()` and `submit()` methods are used to execute tasks in the ThreadPoolExecutor. The `execute()` method is used to execute tasks that do not return a result, while the `submit()` method is used to execute tasks that return a result.
+================================================================
+

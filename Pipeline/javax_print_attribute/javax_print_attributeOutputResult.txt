@@ -1,0 +1,90 @@
+Sample: ResolutionSyntax_3
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/ResolutionSyntax_3.java:5: error: ResolutionSyntax is abstract; cannot be instantiated
+        ResolutionSyntax resolution1 = new ResolutionSyntax(100, 200);
+                                       ^
+./javax_print_attribute/javaFiles/ResolutionSyntax_3.java:6: error: ResolutionSyntax is abstract; cannot be instantiated
+        ResolutionSyntax resolution2 = new ResolutionSyntax(100, 200);
+                                       ^
+./javax_print_attribute/javaFiles/ResolutionSyntax_3.java:7: error: ResolutionSyntax is abstract; cannot be instantiated
+        ResolutionSyntax resolution3 = new ResolutionSyntax(300, 400);
+                                       ^
+3 errors
+
+
+================================================================
+
+Sample: ResolutionSyntax_4
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/ResolutionSyntax_4.java:1: error: cannot find symbol
+import javax.print.attribute.standard.ResolutionSyntax;
+                                     ^
+  symbol:   class ResolutionSyntax
+  location: package javax.print.attribute.standard
+./javax_print_attribute/javaFiles/ResolutionSyntax_4.java:5: error: cannot find symbol
+        ResolutionSyntax resolutionSyntax = new ResolutionSyntax(100, 200);
+        ^
+  symbol:   class ResolutionSyntax
+  location: class ResolutionSyntax_4
+./javax_print_attribute/javaFiles/ResolutionSyntax_4.java:5: error: cannot find symbol
+        ResolutionSyntax resolutionSyntax = new ResolutionSyntax(100, 200);
+                                                ^
+  symbol:   class ResolutionSyntax
+  location: class ResolutionSyntax_4
+3 errors
+
+
+================================================================
+
+Sample: ResolutionSyntax_5
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/ResolutionSyntax_5.java:5: error: ResolutionSyntax is abstract; cannot be instantiated
+        ResolutionSyntax resolutionSyntax = new ResolutionSyntax(100, 200);
+                                            ^
+1 error
+
+
+================================================================
+
+Sample: Size2DSyntax_4
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/Size2DSyntax_4.java:5: error: Size2DSyntax is abstract; cannot be instantiated
+        Size2DSyntax size1 = new Size2DSyntax(10, 20);
+                             ^
+./javax_print_attribute/javaFiles/Size2DSyntax_4.java:6: error: Size2DSyntax is abstract; cannot be instantiated
+        Size2DSyntax size2 = new Size2DSyntax(10, 20);
+                             ^
+./javax_print_attribute/javaFiles/Size2DSyntax_4.java:7: error: Size2DSyntax is abstract; cannot be instantiated
+        Size2DSyntax size3 = new Size2DSyntax(30, 40);
+                             ^
+3 errors
+
+
+================================================================
+
+Sample: Size2DSyntax_5
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/Size2DSyntax_5.java:5: error: Size2DSyntax is abstract; cannot be instantiated
+        Size2DSyntax size = new Size2DSyntax(10, 20);
+                            ^
+1 error
+
+
+================================================================
+
+Sample: TextSyntax_2
+----------------------------------------------------------------
+output:
+./javax_print_attribute/javaFiles/TextSyntax_2.java:6: error: TextSyntax is abstract; cannot be instantiated
+        TextSyntax textSyntax = new TextSyntax("A4", MediaSizeName.ISO_A4);
+                                ^
+1 error
+
+
+================================================================
+

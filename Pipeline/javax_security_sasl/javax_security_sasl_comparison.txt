@@ -1,0 +1,122 @@
+Sample: 0 AuthorizeCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.sasl.AuthorizeCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean authorize(String[] mechanisms, int index)`: This method is used to authorize the SASL mechanism.
+
+2. `void setAuthorizationID(String authorizationID)`: This method is used to set the authorization ID.
+
+3. `void setAuthorized(boolean authorized)`: This method is used to set the authorization status.
+
+4. `void setAuthorizationFailure(String failure)`: This method is used to set the authorization failure.
+
+5. `void setAuthorizationIDs(String[] authorizationIDs)`: This method is used to set the authorization IDs.
+================================================================
+
+Sample: 1 RealmCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.sasl.RealmCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasCallback(int callbackID)`: This method checks if the callback with the specified ID exists in the callback list.
+
+2. `Object[] getCallbacks(int callbackID)`: This method returns the callbacks associated with the specified callback ID.
+
+3. `void setName(String name)`: This method sets the name of the Realm.
+
+4. `String getName()`: This method returns the name of the Realm.
+
+5. `String getPassword()`: This method returns the password of the Realm.
+
+6. `void dispose()`: This method releases any system resources associated with this callback handler.
+================================================================
+
+Sample: 2 RealmChoiceCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.sasl.RealmChoiceCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setRealm(String realm)`: This method sets the realm for the SASL authentication.
+
+2. `String[] getRealms()`: This method returns an array of realms that the client is prepared to authenticate with.
+
+3. `void setState(int state)`: This method sets the state of the callback.
+
+4. `int getState()`: This method returns the current state of the callback.
+
+5. `void setName(String name)`: This method sets the name of the callback.
+
+6. `String getName()`: This method returns the name of the callback.
+
+7. `void setUsage(int usage)`: This method sets the usage of the callback.
+
+8. `int getUsage()`: This method returns the usage of the callback.
+
+9. `void setAuthorizedIDs(String[] authorizedIDs)`: This method sets the authorized IDs for the callback.
+
+10. `String[] getAuthorizedIDs()`: This method returns the authorized IDs for the callback.
+================================================================
+
+Sample: 3 Sasl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.sasl.Sasl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the list iterator has more elements when traversing the list in the forward direction.
+
+2. `E next()`: This method returns the next element in the list and advances the cursor position.
+
+3. `boolean hasPrevious()`: This method returns true if the list iterator has more elements when traversing the list in the reverse direction.
+
+4. `E previous()`: This method returns the previous element in the list and moves the cursor position backwards.
+
+5. `int nextIndex()`: This method returns the index of the element that would be returned by a subsequent call to next().
+
+6. `int previousIndex()`: This method returns the index of the element that would be returned by a subsequent call to previous().
+
+7. `void remove()`: This method removes from the list the last element that was returned by next() or previous() (optional operation).
+
+8. `void set(E e)`: This method replaces the last element returned by next() or previous() with the specified element (optional operation).
+
+9. `void add(E e)`: This method inserts the specified element into the list (optional operation).
+
+10. `void forEachRemaining(Consumer<? super E> action)`: This method performs the given action for each remaining element until all elements have been processed or the action throws an exception.
+================================================================
+

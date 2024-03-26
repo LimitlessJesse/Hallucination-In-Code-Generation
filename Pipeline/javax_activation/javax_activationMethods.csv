@@ -1,0 +1,86 @@
+ClassName,Method,Return Type
+ActivationDataFlavor,equals(DataFlavor dataFlavor),boolean
+ActivationDataFlavor,getHumanPresentableName(),String
+ActivationDataFlavor,getMimeType(),String
+ActivationDataFlavor,getRepresentationClass(),Class
+ActivationDataFlavor,isMimeTypeEqual(String mimeType),boolean
+ActivationDataFlavor,normalizeMimeType(String mimeType),protected String
+ActivationDataFlavor,"normalizeMimeTypeParameter(String parameterName, String parameterValue)",protected String
+ActivationDataFlavor,setHumanPresentableName(String humanPresentableName),void
+CommandInfo,getCommandClass(),String
+CommandInfo,getCommandName(),String
+CommandInfo,"getCommandObject(DataHandler dh, ClassLoader loader)",Object
+CommandMap,createDataContentHandler(String mimeType),abstract DataContentHandler
+CommandMap,"createDataContentHandler(String mimeType, DataSource ds)",DataContentHandler
+CommandMap,getAllCommands(String mimeType),abstract CommandInfo[]
+CommandMap,"getAllCommands(String mimeType, DataSource ds)",CommandInfo[]
+CommandMap,"getCommand(String mimeType, String cmdName)",abstract CommandInfo
+CommandMap,"getCommand(String mimeType, String cmdName, DataSource ds)",CommandInfo
+CommandMap,getDefaultCommandMap(),static CommandMap
+CommandMap,getMimeTypes(),String[]
+CommandMap,getPreferredCommands(String mimeType),abstract CommandInfo[]
+CommandMap,"getPreferredCommands(String mimeType, DataSource ds)",CommandInfo[]
+CommandMap,setDefaultCommandMap(CommandMap commandMap),static void
+DataHandler,getAllCommands(),CommandInfo[]
+DataHandler,getBean(CommandInfo cmdinfo),Object
+DataHandler,getCommand(String cmdName),CommandInfo
+DataHandler,getContent(),Object
+DataHandler,getContentType(),String
+DataHandler,getDataSource(),DataSource
+DataHandler,getInputStream(),InputStream
+DataHandler,getName(),String
+DataHandler,getOutputStream(),OutputStream
+DataHandler,getPreferredCommands(),CommandInfo[]
+DataHandler,getTransferData(DataFlavor flavor),Object
+DataHandler,getTransferDataFlavors(),DataFlavor[]
+DataHandler,isDataFlavorSupported(DataFlavor flavor),boolean
+DataHandler,setCommandMap(CommandMap commandMap),void
+DataHandler,setDataContentHandlerFactory(DataContentHandlerFactory newFactory),static void
+DataHandler,writeTo(OutputStream os),void
+FileDataSource,getContentType(),String
+FileDataSource,getFile(),File
+FileDataSource,getInputStream(),InputStream
+FileDataSource,getName(),String
+FileDataSource,getOutputStream(),OutputStream
+FileDataSource,setFileTypeMap(FileTypeMap map),void
+FileTypeMap,getContentType(File file),abstract String
+FileTypeMap,getContentType(String filename),abstract String
+FileTypeMap,getDefaultFileTypeMap(),static FileTypeMap
+FileTypeMap,setDefaultFileTypeMap(FileTypeMap fileTypeMap),static void
+MailcapCommandMap,addMailcap(String mail_cap),void
+MailcapCommandMap,createDataContentHandler(String mimeType),DataContentHandler
+MailcapCommandMap,getAllCommands(String mimeType),CommandInfo[]
+MailcapCommandMap,"getCommand(String mimeType, String cmdName)",CommandInfo
+MailcapCommandMap,getMimeTypes(),String[]
+MailcapCommandMap,getNativeCommands(String mimeType),String[]
+MailcapCommandMap,getPreferredCommands(String mimeType),CommandInfo[]
+MimeType,getBaseType(),String
+MimeType,getParameter(String name),String
+MimeType,getParameters(),MimeTypeParameterList
+MimeType,getPrimaryType(),String
+MimeType,getSubType(),String
+MimeType,match(MimeType type),boolean
+MimeType,match(String rawdata),boolean
+MimeType,readExternal(ObjectInput in),void
+MimeType,removeParameter(String name),void
+MimeType,"setParameter(String name, String value)",void
+MimeType,setPrimaryType(String primary),void
+MimeType,setSubType(String sub),void
+MimeType,toString(),String
+MimeType,writeExternal(ObjectOutput out),void
+MimeTypeParameterList,get(String name),String
+MimeTypeParameterList,getNames(),Enumeration
+MimeTypeParameterList,isEmpty(),boolean
+MimeTypeParameterList,parse(String parameterList),protected void
+MimeTypeParameterList,remove(String name),void
+MimeTypeParameterList,"set(String name, String value)",void
+MimeTypeParameterList,size(),int
+MimeTypeParameterList,toString(),String
+MimetypesFileTypeMap,addMimeTypes(String mime_types),void
+MimetypesFileTypeMap,getContentType(File f),String
+MimetypesFileTypeMap,getContentType(String filename),String
+URLDataSource,getContentType(),String
+URLDataSource,getInputStream(),InputStream
+URLDataSource,getName(),String
+URLDataSource,getOutputStream(),OutputStream
+URLDataSource,getURL(),URL

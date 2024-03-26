@@ -1,0 +1,209 @@
+Sample: 0 AbstractTableModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.AbstractTableModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getRowCount()`: This method returns the number of rows in the model.
+2. `int getColumnCount()`: This method returns the number of columns in the model.
+3. `Object getValueAt(int rowIndex, int columnIndex)`: This method returns the value for the cell at columnIndex and rowIndex.
+4. `void setValueAt(Object aValue, int rowIndex, int columnIndex)`: This method sets the value at the specified row and column to aValue.
+5. `boolean isCellEditable(int rowIndex, int columnIndex)`: This method returns true if the cell at rowIndex and columnIndex is editable.
+================================================================
+
+Sample: 1 DefaultTableCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.DefaultTableCellRenderer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setHorizontalAlignment(int alignment)`: This method sets the horizontal alignment of the text in the cell.
+
+2. `void setVerticalAlignment(int alignment)`: This method sets the vertical alignment of the text in the cell.
+
+3. `void setBackground(Color c)`: This method sets the background color of the cell.
+
+4. `void setForeground(Color c)`: This method sets the foreground color of the cell.
+
+5. `void setValue(Object value)`: This method sets the value of the cell.
+================================================================
+
+Sample: 2 DefaultTableCellRenderer.UIResource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.DefaultTableCellRenderer.UIResource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setHorizontalAlignment(int alignment)`: This method sets the horizontal alignment of the text in the cell.
+
+2. `void setVerticalAlignment(int alignment)`: This method sets the vertical alignment of the text in the cell.
+
+3. `void setBackground(Color c)`: This method sets the background color of the cell.
+
+4. `void setForeground(Color c)`: This method sets the foreground color of the cell.
+
+5. `void setFont(Font f)`: This method sets the font of the text in the cell.
+================================================================
+
+Sample: 3 DefaultTableColumnModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.DefaultTableColumnModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 4 DefaultTableModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.DefaultTableModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 JTableHeader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.JTableHeader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setReorderingAllowed(boolean reorderingAllowed)`: This method sets whether the header can be reordered.
+
+2. `boolean isReorderingAllowed()`: This method returns whether the header can be reordered.
+
+3. `void setResizingAllowed(boolean resizingAllowed)`: This method sets whether the header can be resized.
+
+4. `boolean isResizingAllowed()`: This method returns whether the header can be resized.
+
+5. `void setSortKeys(List<? extends SortKey> sortKeys)`: This method sets the sort keys for the header.
+================================================================
+
+Sample: 6 TableColumn
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.TableColumn package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setHeaderValue(Object value)`: This method sets the header value of the column.
+
+2. `void setCellRenderer(TableCellRenderer renderer)`: This method sets the renderer for this column.
+
+3. `void setCellEditor(TableCellEditor editor)`: This method sets the editor for this column.
+
+4. `void setPreferredWidth(int width)`: This method sets the preferred width of the column.
+
+5. `void setMaxWidth(int width)`: This method sets the maximum width of the column.
+================================================================
+
+Sample: 7 TableRowSorter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.TableRowSorter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setModel(TableModel newModel)`: This method sets the TableModel for this TableRowSorter.
+
+2. `setRowFilter(RowFilter newFilter)`: This method sets the RowFilter for this TableRowSorter.
+
+3. `setSortKeys(List<? extends SortKey> newKeys)`: This method sets the List of SortKeys for this TableRowSorter.
+
+4. `setSortable(int column, boolean sortable)`: This method sets whether the specified column is sortable.
+
+5. `setSortKeys(SortKey... newKeys)`: This method sets the SortKeys for this TableRowSorter.
+================================================================
+
+Sample: 8 TableStringConverter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.table.TableStringConverter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+

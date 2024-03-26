@@ -1,0 +1,142 @@
+Sample: 0 AbstractUndoableEdit
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.undo.AbstractUndoableEdit package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void undo()`: This method is used to undo the changes made by the edit.
+
+2. `void redo()`: This method is used to redo the changes made by the edit.
+
+3. `boolean canUndo()`: This method is used to check if the edit can be undone.
+
+4. `boolean canRedo()`: This method is used to check if the edit can be redone.
+
+5. `String getPresentationName()`: This method is used to get the name of the edit for presentation purposes.
+================================================================
+
+Sample: 1 CompoundEdit
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.undo.CompoundEdit package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addEdit(CompoundEdit.Edit edit)`: This method adds the specified edit to the end of this compound edit.
+
+2. `CompoundEdit.Edit getEdit(int index)`: This method returns the edit at the specified position in this compound edit.
+
+3. `int getEditCount()`: This method returns the number of edits in this compound edit.
+
+4. `void insertEdit(int index, CompoundEdit.Edit edit)`: This method inserts the specified edit at the specified position in this compound edit.
+
+5. `void removeEdit(int index)`: This method removes the edit at the specified position in this compound edit.
+================================================================
+
+Sample: 2 StateEdit
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.undo.StateEdit package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canRedo()`: This method returns true if this edit can be redone.
+2. `boolean canUndo()`: This method returns true if this edit can be undone.
+3. `void redo()`: This method redoes the last undone edit.
+4. `void undo()`: This method undos the last edit.
+5. `void discardEdits()`: This method discards all edits.
+================================================================
+
+Sample: 3 UndoableEditSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.undo.UndoableEditSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addEdit(UndoableEdit e)`: This method adds the specified UndoableEdit to the list of edits.
+
+2. `boolean canRedo()`: This method returns true if there is an edit that can be redone.
+
+3. `boolean canUndo()`: This method returns true if there is an edit that can be undone.
+
+4. `void discardAllEdits()`: This method discards all edits.
+
+5. `void end()`: This method ends the current edit.
+
+6. `void redo()`: This method redoes the last undone edit.
+
+7. `void undo()`: This method undos the last edit.
+
+8. `void undoableEditHappened(UndoableEdit e)`: This method is called when an undoable edit has been performed.
+
+9. `void undoableEditRedone(UndoableEdit e)`: This method is called when an undoable edit has been redone.
+
+10. `void undoableEditUndone(UndoableEdit e)`: This method is called when an undoable edit has been undone.
+================================================================
+
+Sample: 4 UndoManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.undo.UndoManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void undo()`: This method performs the undo operation.
+2. `void redo()`: This method performs the redo operation.
+3. `boolean canUndo()`: This method returns true if there is an operation that can be undone.
+4. `boolean canRedo()`: This method returns true if there is an operation that can be redone.
+5. `void discardAllEdits()`: This method discards all edits.
+6. `void addEdit(UndoableEdit e)`: This method adds an UndoableEdit to the UndoManager.
+7. `UndoableEdit[] getUndoableEdit()`: This method returns an array of UndoableEdit objects.
+8. `UndoableEdit[] getUndoableEdit(int index)`: This method returns an array of UndoableEdit objects.
+9. `UndoableEdit getUndoableEdit(Object id)`: This method returns an UndoableEdit object.
+10. `Object[] getUndoableEditIDs()`: This method returns an array of Objects.
+11. `Object[] getUndoableEditIDs(int index)`: This method returns an array of Objects.
+12. `int getUndoLimit()`: This method returns the undo limit.
+13. `void setUndoLimit(int limit)`: This method sets the undo limit.
+14. `boolean isLimitExceeded()`: This method returns true if the undo limit is exceeded.
+15. `void setLimitExceeded(boolean exceeded)`: This method sets the limit exceeded flag.
+16. `boolean isSuspended()`: This method returns true if the UndoManager is suspended.
+17. `void setSuspended(boolean suspended)`: This method sets the suspended flag.
+18. `void addUndoableEditListener(UndoableEditListener listener)`: This method adds an UndoableEditListener.
+19. `void removeUndoableEditListener(UndoableEditListener listener)`: This method removes an UndoableEditListener.
+20. `UndoableEditListener[] getUndoableEditListeners()`: This method returns an array of UndoableEditListener objects.
+================================================================
+

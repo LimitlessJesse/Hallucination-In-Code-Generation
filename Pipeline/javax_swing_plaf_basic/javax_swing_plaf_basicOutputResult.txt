@@ -1,0 +1,229 @@
+Sample: BasicBorders_ButtonBorder_4
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicBorders_ButtonBorder_4.java:8: error: constructor ButtonBorder in class ButtonBorder cannot be applied to given types;
+        button.setBorder(new BasicBorders.ButtonBorder());
+                         ^
+  required: Color,Color,Color,Color
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicBorders_MenuBarBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicBorders_MenuBarBorder_5.java:9: error: constructor MenuBarBorder in class MenuBarBorder cannot be applied to given types;
+        MenuBarBorder border = new BasicBorders.MenuBarBorder();
+                               ^
+  required: Color,Color
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+./javax_swing_plaf_basic/javaFiles/BasicBorders_MenuBarBorder_5.java:17: error: <anonymous BasicBorders_MenuBarBorder_5$2> is not abstract and does not override abstract method dispose() in Graphics
+        Graphics graphics = new Graphics() {
+                                           ^
+2 errors
+
+
+================================================================
+
+Sample: BasicBorders_RadioButtonBorder_3
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicBorders_RadioButtonBorder_3.java:14: error: constructor RadioButtonBorder in class RadioButtonBorder cannot be applied to given types;
+        radioButton.setBorder(new BasicBorders.RadioButtonBorder());
+                              ^
+  required: Color,Color,Color,Color
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicBorders_SplitPaneBorder_2
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicBorders_SplitPaneBorder_2.java:13: error: constructor SplitPaneBorder in class SplitPaneBorder cannot be applied to given types;
+        BasicBorders.SplitPaneBorder border = new BasicBorders.SplitPaneBorder();
+                                              ^
+  required: Color,Color
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicBorders_SplitPaneBorder_3
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicBorders_SplitPaneBorder_3.java:16: error: constructor SplitPaneBorder in class SplitPaneBorder cannot be applied to given types;
+                BasicBorders.SplitPaneBorder border = new BasicBorders.SplitPaneBorder();
+                                                      ^
+  required: Color,Color
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicButtonListener_3
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicButtonListener_3.java:11: error: cannot find symbol
+        button.addMouseListener(new BasicButtonListener() {
+                                    ^
+  symbol:   class BasicButtonListener
+  location: class BasicButtonListener_3
+./javax_swing_plaf_basic/javaFiles/BasicButtonListener_3.java:12: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+2 errors
+
+
+================================================================
+
+Sample: BasicButtonListener_4
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicButtonListener_4.java:8: error: constructor BasicButtonListener in class BasicButtonListener cannot be applied to given types;
+        button.addMouseListener(new BasicButtonListener() {
+                                ^
+  required: AbstractButton
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicButtonListener_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicButtonListener_5.java:7: error: cannot find symbol
+        button.addMouseListener(new BasicButtonListener() {
+                                    ^
+  symbol:   class BasicButtonListener
+  location: class BasicButtonListener_5
+./javax_swing_plaf_basic/javaFiles/BasicButtonListener_5.java:8: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+2 errors
+
+
+================================================================
+
+Sample: BasicComboBoxEditor_2
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicComboBoxEditor_2.java:10: error: constructor BasicComboBoxEditor in class BasicComboBoxEditor cannot be applied to given types;
+        BasicComboBoxEditor editor = new BasicComboBoxEditor(comboBox);
+                                     ^
+  required: no arguments
+  found:    JComboBox<String>
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: BasicDesktopPaneUI_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicDesktopPaneUI_5.java:6: error: JComponent is abstract; cannot be instantiated
+        JComponent component = new JComponent();
+                               ^
+1 error
+
+
+================================================================
+
+Sample: BasicPanelUI_5
+----------------------------------------------------------------
+================================================================
+
+Sample: BasicPopupMenuSeparatorUI_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at BasicPopupMenuSeparatorUI_1.main(BasicPopupMenuSeparatorUI_1.java:23)
+
+================================================================
+
+Sample: BasicRadioButtonUI_3
+----------------------------------------------------------------
+================================================================
+
+Sample: BasicScrollBarUI_1
+----------------------------------------------------------------
+================================================================
+
+Sample: BasicSeparatorUI_1
+----------------------------------------------------------------
+================================================================
+
+Sample: BasicSeparatorUI_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class BasicSeparatorUI_5$1 cannot be cast to class javax.swing.JSeparator (BasicSeparatorUI_5$1 is in unnamed module of loader com.sun.tools.javac.launcher.Main$MemoryClassLoader @4f638935; javax.swing.JSeparator is in module java.desktop of loader 'bootstrap')
+	at java.desktop/javax.swing.plaf.basic.BasicSeparatorUI.installUI(BasicSeparatorUI.java:76)
+	at java.desktop/javax.swing.JComponent.setUI(JComponent.java:730)
+	at BasicSeparatorUI_5$1.updateUI(BasicSeparatorUI_5.java:9)
+	at BasicSeparatorUI_5.main(BasicSeparatorUI_5.java:13)
+
+================================================================
+
+Sample: BasicSliderUI_4
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicSliderUI_4.java:10: error: paintTicks(Graphics) in <anonymous BasicSliderUI_4$1> cannot override paintTicks(Graphics) in BasicSliderUI
+            protected void paintTicks(Graphics g) {
+                           ^
+  attempting to assign weaker access privileges; was public
+1 error
+
+
+================================================================
+
+Sample: BasicSliderUI_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "javax.swing.JSlider.getLabelTable()" because "this.slider" is null
+	at java.desktop/javax.swing.plaf.basic.BasicSliderUI.paintLabels(BasicSliderUI.java:1429)
+	at BasicSliderUI_5.main(BasicSliderUI_5.java:10)
+
+================================================================
+
+Sample: BasicSplitPaneUI_3
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_basic/javaFiles/BasicSplitPaneUI_3.java:15: error: cannot find symbol
+        splitPaneUI.getDivider().setContinuousLayout(true);
+                                ^
+  symbol:   method setContinuousLayout(boolean)
+  location: class BasicSplitPaneDivider
+1 error
+
+
+================================================================
+
+Sample: BasicToolBarSeparatorUI_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class BasicToolBarSeparatorUI_3$1 cannot be cast to class javax.swing.JToolBar$Separator (BasicToolBarSeparatorUI_3$1 is in unnamed module of loader com.sun.tools.javac.launcher.Main$MemoryClassLoader @15b204a1; javax.swing.JToolBar$Separator is in module java.desktop of loader 'bootstrap')
+	at java.desktop/javax.swing.plaf.basic.BasicToolBarSeparatorUI.getPreferredSize(BasicToolBarSeparatorUI.java:87)
+	at BasicToolBarSeparatorUI_3.main(BasicToolBarSeparatorUI_3.java:15)
+
+================================================================
+

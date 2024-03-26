@@ -1,0 +1,125 @@
+Sample: 0 Clipboard
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.datatransfer.Clipboard package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setContents(Transferable contents, ClipboardOwner owner)`: This method sets the contents of the clipboard.
+
+2. `Transferable getContents(Object requestor)`: This method retrieves the contents of the clipboard.
+
+3. `Transferable getContents(Object requestor, Clipboard clipboard)`: This method retrieves the contents of the clipboard.
+
+4. `Transferable getContents(Object requestor, Clipboard clipboard, Transferable contents)`: This method retrieves the contents of the clipboard.
+
+5. `void requestContents(Object requestor, Clipboard clipboard, Transferable contents)`: This method requests the contents of the clipboard.
+================================================================
+
+Sample: 1 DataFlavor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.datatransfer.DataFlavor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isFlavorSupported(DataFlavor flavor)`: This method returns true if the specified DataFlavor is supported by this DataFlavor.
+
+2. `DataFlavor[] getAllFlavors()`: This method returns an array of DataFlavor objects representing all the flavors supported by this DataFlavor.
+
+3. `DataFlavor getRepresentationClass()`: This method returns the class of the object that this DataFlavor represents.
+
+4. `String getHumanPresentableName()`: This method returns a human-readable name for this DataFlavor.
+
+5. `String getMimeType()`: This method returns the MIME type of this DataFlavor.
+================================================================
+
+Sample: 2 FlavorEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.datatransfer.FlavorEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public FlavorEvent(Flavor flavor)`: This constructor creates a new FlavorEvent object with the specified flavor.
+
+2. `public Flavor getFlavor()`: This method returns the flavor associated with this FlavorEvent object.
+
+3. `public void consume()`: This method consumes the event, indicating that the event source has processed the event.
+
+4. `public void reset()`: This method resets the event, indicating that the event source has not processed the event.
+
+5. `public void setSource(Object source)`: This method sets the source of this FlavorEvent object to the specified object.
+================================================================
+
+Sample: 3 StringSelection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.datatransfer.StringSelection package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StringSelection(String string)`: This is a constructor of the StringSelection class. It takes a string as a parameter and initializes a new StringSelection object with the specified string.
+
+2. `getTransferData(DataFlavor flavor)`: This method retrieves the data in the specified flavor. It returns the data in the specified flavor.
+
+3. `getTransferDataFlavors()`: This method returns an array of DataFlavor objects indicating the flavors of data this object can provide.
+
+4. `isDataFlavorSupported(DataFlavor flavor)`: This method tests whether the specified data flavor is supported by this object. It returns true if the specified data flavor is supported by this object; otherwise, it returns false.
+
+5. `setContents(Transferable contents, DataFlavor[] flavors)`: This method sets the contents of this selection. It sets the contents of this selection to the specified transferable object and the specified array of data flavors.
+================================================================
+
+Sample: 4 SystemFlavorMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.datatransfer.SystemFlavorMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+

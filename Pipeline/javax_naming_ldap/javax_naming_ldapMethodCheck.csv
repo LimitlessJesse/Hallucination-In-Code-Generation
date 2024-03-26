@@ -1,0 +1,112 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,BasicControl,1,boolean hasValue(),False
+0,BasicControl,2,Object getValue(),False
+0,BasicControl,3,void setID(int id),False
+0,BasicControl,4,int getID(),False
+0,BasicControl,5,String getCriticality(),False
+1,ControlFactory,1,ControlFactory.createControl(String oid),False
+1,ControlFactory,2,"ControlFactory.createSimpleBinaryValueControl(String oid, byte[] value)",False
+1,ControlFactory,3,"ControlFactory.createSimpleStringValueControl(String oid, String value)",False
+1,ControlFactory,4,"ControlFactory.createPresentationControl(String oid, int criticality, byte[] value)",False
+1,ControlFactory,5,"ControlFactory.createContextSpecificControl(String oid, int criticality, byte[] value)",False
+2,InitialLdapContext,1,"InitialLdapContext(Hashtable<?,?> environment)",False
+2,InitialLdapContext,2,Object lookup(Name name),False
+2,InitialLdapContext,3,void close(),False
+2,InitialLdapContext,4,void reconnect(int retry),False
+2,InitialLdapContext,5,void setRequestControls(Control[] controls),True
+3,LdapName,1,LdapName(String name),False
+3,LdapName,2,String getRdn(),False
+3,LdapName,3,String getRemainder(),False
+3,LdapName,4,String getPrefix(),False
+3,LdapName,5,String getSuffix(),False
+3,LdapName,6,String getCommonName(),False
+3,LdapName,7,String getSerialNumber(),False
+3,LdapName,8,String getOrganizationName(),False
+3,LdapName,9,String getOrganizationalUnitName(),False
+3,LdapName,10,String getLocalityName(),False
+3,LdapName,11,String getStateOrProvinceName(),False
+3,LdapName,12,String getCountryName(),False
+3,LdapName,13,String getPostalCode(),False
+3,LdapName,14,String getStreet(),False
+3,LdapName,15,String getTitle(),False
+3,LdapName,16,String getDescription(),False
+3,LdapName,17,String getDomainComponent(),False
+3,LdapName,18,String getIncludeInase(),False
+3,LdapName,19,String getChairPerson(),False
+3,LdapName,20,String getManager(),False
+3,LdapName,21,String getMember(),False
+3,LdapName,22,String getOwner(),False
+3,LdapName,23,String getSubschemaSubentry(),False
+3,LdapName,24,String getSubordinateName(),False
+3,LdapName,25,String getSuperiorName(),False
+3,LdapName,26,String getDSAQuality(),False
+3,LdapName,27,String getDSAState(),False
+3,LdapName,28,String getDSAUsage(),False
+3,LdapName,29,String getDNQualifier(),False
+3,LdapName,30,String getDSAName(),False
+3,LdapName,31,String getDSAReference(),False
+3,LdapName,32,String getDSAReferenceURL(),False
+3,LdapName,33,String getDSAReferenceTelephoneNumber(),False
+3,LdapName,34,String getDSAReferenceMailMessaging(),False
+3,LdapName,35,String getDSAReferencePostalAddress(),False
+3,LdapName,36,String getDSAReferenceHours(),False
+3,LdapName,37,String getDSAReferenceTransport(),False
+3,LdapName,38,String getDSAReferenceFax(),False
+3,LdapName,39,String getDSAReferencePager(),False
+3,LdapName,40,String getDSAReferenceOther(),False
+3,LdapName,41,String getDSAReferenceRules(),False
+3,LdapName,42,String getDSAReferenceAuthority(),False
+3,LdapName,43,String getDSAReferenceAuthorityName(),False
+3,LdapName,44,String getDSAReferenceAuthorityURL(),False
+3,LdapName,45,String getDSAReferenceAuthorityTelephoneNumber(),False
+3,LdapName,46,String getDSAReferenceAuthorityMailMessaging(),False
+4,ManageReferralControl,1,boolean add(E e),False
+4,ManageReferralControl,2,"void add(int index, E element)",False
+4,ManageReferralControl,3,boolean addAll(Collection<? extends E> c),False
+4,ManageReferralControl,4,"boolean addAll(int index, Collection<? extends E> c)",False
+4,ManageReferralControl,5,void clear(),False
+5,PagedResultsControl,1,"PagedResultsControl(int size, boolean criticality)",False
+5,PagedResultsControl,2,int getSize(),False
+5,PagedResultsControl,3,boolean isCriticality(),False
+5,PagedResultsControl,4,void setSize(int size),False
+5,PagedResultsControl,5,void setCriticality(boolean criticality),False
+6,PagedResultsResponseControl,1,boolean hasMore(),False
+6,PagedResultsResponseControl,2,int getResultSizeEstimate(),False
+6,PagedResultsResponseControl,3,"Object getResult(int start, int size)",False
+6,PagedResultsResponseControl,4,void close(),False
+6,PagedResultsResponseControl,5,void setSizeLimit(int size),False
+7,Rdn,1,boolean add(E e),False
+7,Rdn,2,"void add(int index, E element)",False
+7,Rdn,3,boolean addAll(Collection<? extends E> c),False
+7,Rdn,4,"boolean addAll(int index, Collection<? extends E> c)",False
+7,Rdn,5,void clear(),False
+8,SortControl,1,"SortControl(String sortKey, boolean reverseOrder)",False
+8,SortControl,2,String getSortKey(),False
+8,SortControl,3,boolean isReverseOrder(),False
+8,SortControl,4,void setSortKey(String sortKey),False
+8,SortControl,5,void setReverseOrder(boolean reverseOrder),False
+9,SortKey,1,"SortKey(String attribute, boolean reverse)",False
+9,SortKey,2,String getAttribute(),False
+9,SortKey,3,boolean isReverse(),False
+9,SortKey,4,void setAttribute(String attribute),False
+9,SortKey,5,void setReverse(boolean reverse),False
+10,SortResponseControl,1,"SortResponseControl(String id, boolean reverseOrder, String sortKey)",False
+10,SortResponseControl,2,String getSortKey(),False
+10,SortResponseControl,3,boolean isReverseOrder(),False
+10,SortResponseControl,4,void setReverseOrder(boolean reverseOrder),False
+10,SortResponseControl,5,void setSortKey(String sortKey),False
+11,StartTlsRequest,1,void process(TlsClientProtocol tlsClientProtocol),False
+11,StartTlsRequest,2,void addHandshakeCompletedListener(HandshakeCompletedListener listener),False
+11,StartTlsRequest,3,void removeHandshakeCompletedListener(HandshakeCompletedListener listener),False
+11,StartTlsRequest,4,void addTlsHandshakeCompletedListener(TlsHandshakeCompletedListener listener),False
+11,StartTlsRequest,5,void removeTlsHandshakeCompletedListener(TlsHandshakeCompletedListener listener),False
+12,StartTlsResponse,1,StartTlsResponse(Context ctx),False
+12,StartTlsResponse,2,void setResponse(byte[] response),False
+12,StartTlsResponse,3,byte[] getResponse(),False
+12,StartTlsResponse,4,void setResponseCode(int responseCode),False
+12,StartTlsResponse,5,int getResponseCode(),False
+13,UnsolicitedNotificationEvent,1,"UnsolicitedNotificationEvent(String id, String type, String message)",False
+13,UnsolicitedNotificationEvent,2,String getID(),False
+13,UnsolicitedNotificationEvent,3,String getType(),False
+13,UnsolicitedNotificationEvent,4,String getMessage(),False
+13,UnsolicitedNotificationEvent,5,String toString(),False

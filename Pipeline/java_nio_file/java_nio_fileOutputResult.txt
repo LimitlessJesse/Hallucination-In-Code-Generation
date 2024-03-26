@@ -1,0 +1,350 @@
+Sample: Files_1
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at Files_1.main(Files_1.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_2
+----------------------------------------------------------------
+stderr:
+java.nio.file.FileAlreadyExistsException: example.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.createFile(Files.java:658)
+	at Files_2.main(Files_2.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_3
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_3.java:11: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class Files_3
+1 error
+
+
+================================================================
+
+Sample: Files_4
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: sourceFile.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:429)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:266)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at Files_4.main(Files_4.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_8
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/your/link
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readSymbolicLink(UnixFileSystemProvider.java:512)
+	at java.base/java.nio.file.Files.readSymbolicLink(Files.java:1469)
+	at Files_8.main(Files_8.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_9
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_9.java:16: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class Files_9
+1 error
+
+
+================================================================
+
+Sample: Files_13
+----------------------------------------------------------------
+================================================================
+
+Sample: Files_15
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_15.java:8: error: ')' expected
+            Files.setAttribute(path, "key", "value", LinkOption... options);
+                                                               ^
+./java_nio_file/javaFiles/Files_15.java:8: error: not a statement
+            Files.setAttribute(path, "key", "value", LinkOption... options);
+                                                                   ^
+./java_nio_file/javaFiles/Files_15.java:8: error: ';' expected
+            Files.setAttribute(path, "key", "value", LinkOption... options);
+                                                                          ^
+3 errors
+
+
+================================================================
+
+Sample: Files_17
+----------------------------------------------------------------
+stdout:
+Last modified time set successfully.
+
+================================================================
+
+Sample: Files_19
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_19.java:5: error: cannot find symbol
+    public static void main(String[] args) throws IOException {
+                                                  ^
+  symbol:   class IOException
+  location: class Files_19
+1 error
+
+
+================================================================
+
+Sample: Files_21
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_21.java:7: error: cannot find symbol
+    public static void main(String[] args) throws IOException {
+                                                  ^
+  symbol:   class IOException
+  location: class Files_21
+1 error
+
+
+================================================================
+
+Sample: Files_38
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_38.java:4: error: cannot find symbol
+    public static void main(String[] args) throws IOException {
+                                                  ^
+  symbol:   class IOException
+  location: class Files_38
+1 error
+
+
+================================================================
+
+Sample: Files_39
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at Files_39.main(Files_39.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_40
+----------------------------------------------------------------
+stderr:
+java.nio.file.FileAlreadyExistsException: example.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.createFile(Files.java:658)
+	at Files_40.main(Files_40.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_41
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_41.java:11: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class Files_41
+1 error
+
+
+================================================================
+
+Sample: Files_42
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: sourceFile.txt
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixCopyFile.move(UnixCopyFile.java:429)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:266)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at Files_42.main(Files_42.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_46
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/your/link
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readSymbolicLink(UnixFileSystemProvider.java:512)
+	at java.base/java.nio.file.Files.readSymbolicLink(Files.java:1469)
+	at Files_46.main(Files_46.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Files_47
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/Files_47.java:16: error: cannot find symbol
+        } catch (IOException e) {
+                 ^
+  symbol:   class IOException
+  location: class Files_47
+1 error
+
+
+================================================================
+
+Sample: FileStore_1
+----------------------------------------------------------------
+stdout:
+Total space: 1958540546048
+
+================================================================
+
+Sample: FileStore_2
+----------------------------------------------------------------
+stdout:
+Usable space: 466077057024
+
+================================================================
+
+Sample: FileStore_3
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/FileStore_3.java:8: error: cannot find symbol
+            FileStore store = FileSystems.getDefault().getRootDirectories().iterator().next().getFileStore();
+                                                                                             ^
+  symbol:   method getFileStore()
+  location: interface Path
+1 error
+
+
+================================================================
+
+Sample: FileStore_4
+----------------------------------------------------------------
+stdout:
+Is the file store read-only? false
+
+================================================================
+
+Sample: FileStore_5
+----------------------------------------------------------------
+output:
+./java_nio_file/javaFiles/FileStore_5.java:8: error: cannot find symbol
+        FileStore store = Files.getFileStore(path);
+                          ^
+  symbol:   variable Files
+  location: class FileStore_5
+1 error
+
+
+================================================================
+
+Sample: FileSystem_1
+----------------------------------------------------------------
+stdout:
+C:/Users/user/Desktop/file.txt
+
+================================================================
+
+Sample: FileSystem_2
+----------------------------------------------------------------
+stdout:
+true
+true
+false
+
+================================================================
+
+Sample: FileSystem_5
+----------------------------------------------------------------
+================================================================
+

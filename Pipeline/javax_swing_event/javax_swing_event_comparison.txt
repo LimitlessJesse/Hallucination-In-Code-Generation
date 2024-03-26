@@ -1,0 +1,623 @@
+Sample: 0 AncestorEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.AncestorEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AncestorEvent(Object source, int id)`: This constructor creates an AncestorEvent object with the specified source and id.
+
+2. `int getID()`: This method returns the id of this AncestorEvent.
+
+3. `Object getSource()`: This method returns the object that originated the event.
+
+4. `Component getComponent()`: This method returns the Component that is the source of the event.
+
+5. `Component getChanged()`: This method returns the Component that has changed.
+================================================================
+
+Sample: 1 CaretEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.CaretEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addCaretListener(CaretListener l)`: This method adds a caret listener to the text component.
+
+2. `int getDot()`: This method returns the index of the insertion point.
+
+3. `int getMark()`: This method returns the index of the mark position.
+
+4. `void setDot(int dot)`: This method sets the index of the insertion point.
+
+5. `void setMark(int mark)`: This method sets the index of the mark position.
+================================================================
+
+Sample: 2 ChangeEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.ChangeEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addChangeListener(ChangeListener l)`: This method adds a ChangeListener to the list of listeners to be notified of changes to the source of the events.
+
+2. `void removeChangeListener(ChangeListener l)`: This method removes a ChangeListener from the list of listeners to be notified of changes to the source of the events.
+
+3. `ChangeEvent getChangeEvent()`: This method returns the ChangeEvent that was last fired by the source of the events.
+
+4. `Object getSource()`: This method returns the object that is the source of the events.
+
+5. `void fireStateChanged()`: This method notifies all the listeners in the list that have registered interest for notification on this event source.
+================================================================
+
+Sample: 3 DocumentEvent.EventType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.DocumentEvent.EventType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void insertUpdate(DocumentEvent e)`: This method is called when a portion of the document has been inserted.
+
+2. `public void removeUpdate(DocumentEvent e)`: This method is called when a portion of the document has been removed.
+
+3. `public void changedUpdate(DocumentEvent e)`: This method is called when the document has been changed.
+
+4. `public void attributeChanged(DocumentEvent e)`: This method is called when the document's attribute has been changed.
+
+5. `public void insertUpdate(DocumentEvent e, int offs, int len)`: This method is called when a portion of the document has been inserted.
+
+6. `public void removeUpdate(DocumentEvent e, int offs, int len)`: This method is called when a portion of the document has been removed.
+
+7. `public void changedUpdate(DocumentEvent e, int offs, int len)`: This method is called when the document has been changed.
+
+8. `public void attributeChanged(DocumentEvent e, int offs, int len)`: This method is called when the document's attribute has been changed.
+================================================================
+
+Sample: 4 EventListenerList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.EventListenerList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 HyperlinkEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.HyperlinkEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `HyperlinkEvent.EventType getEventType()`: This method returns the type of event that occurred.
+
+2. `URL getURL()`: This method returns the URL of the hyperlink that was clicked.
+
+3. `MouseEvent getMouseEvent()`: This method returns the mouse event that triggered the hyperlink event.
+
+4. `Object getSource()`: This method returns the source of the event.
+
+5. `void setHandled(boolean handled)`: This method sets whether the event has been handled.
+================================================================
+
+Sample: 6 HyperlinkEvent.EventType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.HyperlinkEvent.EventType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `HyperlinkEvent.EventType.ACTIVATED`: This method returns the event type for the hyperlink activated event.
+
+2. `HyperlinkEvent.EventType.CHANGED`: This method returns the event type for the hyperlink changed event.
+
+3. `HyperlinkEvent.EventType.ENTERED`: This method returns the event type for the hyperlink entered event.
+
+4. `HyperlinkEvent.EventType.EXITED`: This method returns the event type for the hyperlink exited event.
+
+5. `HyperlinkEvent.EventType.VISITED`: This method returns the event type for the hyperlink visited event.
+================================================================
+
+Sample: 7 InternalFrameAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.InternalFrameAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void internalFrameActivated(InternalFrameEvent e)`: This method is called when an internal frame is activated.
+
+2. `void internalFrameClosed(InternalFrameEvent e)`: This method is called when an internal frame is closed.
+
+3. `void internalFrameClosing(InternalFrameEvent e)`: This method is called when an internal frame is in the process of being closed.
+
+4. `void internalFrameDeactivated(InternalFrameEvent e)`: This method is called when an internal frame is deactivated.
+
+5. `void internalFrameDeiconified(InternalFrameEvent e)`: This method is called when an internal frame is deiconified (brought to the front from being minimized or iconified).
+
+6. `void internalFrameIconified(InternalFrameEvent e)`: This method is called when an internal frame is iconified (minimized).
+
+7. `void internalFrameOpened(InternalFrameEvent e)`: This method is called when an internal frame is opened.
+
+8. `void internalFrameResized(InternalFrameEvent e)`: This method is called when an internal frame is resized.
+
+9. `void internalFrameClosed(InternalFrameEvent e)`: This method is called when an internal frame is closed.
+
+10. `void internalFrameClosing(InternalFrameEvent e)`: This method is called when an internal frame is in the process of being closed.
+================================================================
+
+Sample: 8 InternalFrameEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.InternalFrameEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setSelected(boolean b)`: This method sets the selected state of the frame.
+
+2. `void setClosed(boolean b)`: This method sets the closed state of the frame.
+
+3. `void setIconified(boolean b)`: This method sets the iconified state of the frame.
+
+4. `void setMaximized(boolean b)`: This method sets the maximized state of the frame.
+
+5. `void setIcon(boolean b)`: This method sets the icon state of the frame.
+================================================================
+
+Sample: 9 ListDataEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.ListDataEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ListDataEvent(Object source, int type, int index0, int index1)`: This constructor is used to create a new ListDataEvent object.
+
+2. `int getIndex0()`: This method returns the index of the first element in the list that has changed.
+
+3. `int getIndex1()`: This method returns the index of the last element in the list that has changed.
+
+4. `int getType()`: This method returns the type of the event.
+
+5. `Object getSource()`: This method returns the source of the event.
+================================================================
+
+Sample: 10 ListSelectionEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.ListSelectionEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addListSelectionListener(ListSelectionListener l)`: This method adds the specified listener to receive list selection events.
+
+2. `void removeListSelectionListener(ListSelectionListener l)`: This method removes the specified listener so that it no longer receives list selection events.
+
+3. `boolean getValueIsAdjusting()`: This method returns true if the list is in the process of being adjusted.
+
+4. `int getFirstIndex()`: This method returns the index of the first selected item in the list.
+
+5. `int getLastIndex()`: This method returns the index of the last selected item in the list.
+
+6. `int getLeadSelectionIndex()`: This method returns the index of the lead selection in the list.
+
+7. `int getValueIsAdjusting()`: This method returns true if the list is in the process of being adjusted.
+
+8. `int getValueIsAdjusting()`: This method returns true if the list is in the process of being adjusted.
+
+9. `int getValueIsAdjusting()`: This method returns true if the list is in the process of being adjusted.
+
+10. `int getValueIsAdjusting()`: This method returns true if the list is in the process of being adjusted.
+================================================================
+
+Sample: 11 MenuDragMouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.MenuDragMouseEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setDragPoint(Point dragPoint)`: This method sets the point where the drag operation started.
+
+2. `Point getDragPoint()`: This method returns the point where the drag operation started.
+
+3. `void setDropPoint(Point dropPoint)`: This method sets the point where the drag operation ended.
+
+4. `Point getDropPoint()`: This method returns the point where the drag operation ended.
+
+5. `void setDropLocation(int dropLocation)`: This method sets the location where the dragged item is to be dropped.
+
+6. `int getDropLocation()`: This method returns the location where the dragged item is to be dropped.
+================================================================
+
+Sample: 12 MenuEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.MenuEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MenuEvent.getID()`: This method returns the ID of the event.
+
+2. `MenuEvent.getSource()`: This method returns the object that originated the event.
+
+3. `MenuEvent.getWhen()`: This method returns the time the event occurred.
+
+4. `MenuEvent.getMenu()`: This method returns the Menu that generated the event.
+
+5. `MenuEvent.getPath()`: This method returns the path of the Menu that generated the event.
+================================================================
+
+Sample: 13 MenuKeyEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.MenuKeyEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPopupTrigger()`: This method returns true if the event is a popup trigger event.
+
+2. `boolean isMenuKey()`: This method returns true if the event is a menu key event.
+
+3. `boolean isMenuShortcut()`: This method returns true if the event is a menu shortcut event.
+
+4. `boolean isMenuAccelerator()`: This method returns true if the event is a menu accelerator event.
+
+5. `boolean isMenuSelected()`: This method returns true if the event is a menu selected event.
+================================================================
+
+Sample: 14 MouseInputAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.MouseInputAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void mouseClicked(MouseEvent e)`: This method is called when the mouse button has been clicked (pressed and released) on a component.
+
+2. `void mousePressed(MouseEvent e)`: This method is called when a mouse button has been pressed on a component.
+
+3. `void mouseReleased(MouseEvent e)`: This method is called when a mouse button has been released on a component.
+
+4. `void mouseEntered(MouseEvent e)`: This method is called when the mouse cursor enters a component.
+
+5. `void mouseExited(MouseEvent e)`: This method is called when the mouse cursor exits a component.
+================================================================
+
+Sample: 15 PopupMenuEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.PopupMenuEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PopupMenuEvent(Object source, int id)`: This is the constructor of the PopupMenuEvent class. It takes two parameters: the source of the event and the id of the event.
+
+2. `Object getSource()`: This method returns the object that is the source of the event.
+
+3. `int getID()`: This method returns the id of the event.
+
+4. `void setID(int id)`: This method sets the id of the event.
+
+5. `void consume()`: This method consumes the event, which means that the event will not be propagated to other components.
+================================================================
+
+Sample: 16 RowSorterEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.RowSorterEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RowSorterEvent(Object source, int type, int row)`: This constructor is used to create a new `RowSorterEvent` object.
+
+2. `int getType()`: This method returns the type of the event.
+
+3. `int getRow()`: This method returns the row index of the event.
+
+4. `Object getSource()`: This method returns the source of the event.
+
+5. `void setSource(Object source)`: This method sets the source of the event.
+================================================================
+
+Sample: 17 SwingPropertyChangeSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.SwingPropertyChangeSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void addPropertyChangeListener(PropertyChangeListener listener)`: This method adds a PropertyChangeListener to the listener list.
+3. `void firePropertyChange(String propertyName, Object oldValue, Object newValue)`: This method notifies all the listeners that a bound property has changed.
+4. `void removePropertyChangeListener(PropertyChangeListener listener)`: This method removes a PropertyChangeListener from the listener list.
+5. `void setValue(Object value)`: This method sets the value of the property.
+================================================================
+
+Sample: 18 TableColumnModelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.TableColumnModelEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void columnMoved(TableColumnModelEvent e)`: This method is used to notify listeners that a column has been moved.
+
+2. `void columnMarginChanged(TableColumnModelEvent e)`: This method is used to notify listeners that the margin of a column has changed.
+
+3. `void columnSelectionChanged(TableColumnModelEvent e)`: This method is used to notify listeners that the selection state of a column has changed.
+
+4. `void columnAdded(TableColumnModelEvent e)`: This method is used to notify listeners that a column has been added.
+
+5. `void columnRemoved(TableColumnModelEvent e)`: This method is used to notify listeners that a column has been removed.
+================================================================
+
+Sample: 19 TableModelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.TableModelEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TableModelEvent(Object source, int firstRow, int lastRow, int column)`: This constructor is used to create a new TableModelEvent object.
+
+2. `int getFirstRow()`: This method returns the first row index of the range of rows that changed.
+
+3. `int getLastRow()`: This method returns the last row index of the range of rows that changed.
+
+4. `int getColumn()`: This method returns the column index of the cell that changed.
+
+5. `Object getSource()`: This method returns the source of the event.
+================================================================
+
+Sample: 20 TreeExpansionEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.TreeExpansionEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TreeExpansionEvent(Object source, int path[], boolean collapsed)`: This constructor creates a new TreeExpansionEvent object.
+
+2. `int[] getPath()`: This method returns the path of the node that was expanded or collapsed.
+
+3. `boolean isCollapsed()`: This method returns true if the node was collapsed, false if it was expanded.
+
+4. `Object getSource()`: This method returns the object that originated the event.
+
+5. `void setPath(int path[])`: This method sets the path of the node that was expanded or collapsed.
+================================================================
+
+Sample: 21 TreeModelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.TreeModelEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TreeModelEvent(Object source, int[] path, int[] childIndices, int type)`: This constructor creates a new TreeModelEvent object.
+
+2. `int[] getChildIndices()`: This method returns the indices of the children of the node that changed.
+
+3. `int getType()`: This method returns the type of event.
+
+4. `int[] getPath()`: This method returns the path to the node that changed.
+
+5. `Object getSource()`: This method returns the source of the event.
+================================================================
+
+Sample: 22 TreeSelectionEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.TreeSelectionEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TreePath getPath()`: This method returns the path of the selected node.
+
+2. `TreeModel getModel()`: This method returns the TreeModel that generated the event.
+
+3. `TreeSelectionModel getSelectionModel()`: This method returns the TreeSelectionModel that generated the event.
+
+4. `TreePath getOldLeadSelectionPath()`: This method returns the path of the old leading selection.
+
+5. `TreePath getNewLeadSelectionPath()`: This method returns the path of the new leading selection.
+================================================================
+
+Sample: 23 UndoableEditEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.event.UndoableEditEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addEdit(UndoableEdit e)`: This method adds the specified edit to the list of edits.
+2. `boolean canRedo()`: This method returns true if there are edits that can be redone.
+3. `boolean canUndo()`: This method returns true if there are edits that can be undone.
+4. `void discardAllEdits()`: This method discards all edits.
+5. `void end()`: This method ends the current edit.
+6. `UndoableEdit getUndoableEdit()`: This method returns the last edit in the list.
+7. `void redo()`: This method redoes the last edit.
+8. `void undo()`: This method undos the last edit.
+9. `void undoableEditHappened(UndoableEditEvent e)`: This method is called when an undoable edit has been added to the list.
+10. `void undoableEditRedone(UndoableEditEvent e)`: This method is called when an undoable edit has been redone.
+11. `void undoableEditDone(UndoableEditEvent e)`: This method is called when an undoable edit has been undone.
+12. `void undoableEditCanceled(UndoableEditEvent e)`: This method is called when an undoable edit has been canceled.
+================================================================
+

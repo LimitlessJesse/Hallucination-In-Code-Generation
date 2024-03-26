@@ -1,0 +1,32 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AclEntry,1,AclEntry.Builder builder(),False
+0,AclEntry,2,AclEntry.Builder setPermissions(Set<PosixFilePermission> permissions),False
+0,AclEntry,3,AclEntry.Builder setPrincipal(Principal principal),False
+0,AclEntry,4,AclEntry.Builder setType(Type type),False
+0,AclEntry,5,AclEntry.Builder setFlag(AclEntryFlag flag),False
+1,AclEntry.Builder,1,AclEntry.Builder(),False
+1,AclEntry.Builder,2,AclEntry.Builder setPrincipal(Principal principal),False
+1,AclEntry.Builder,3,AclEntry.Builder setFlags(Set<AclEntry.Flag> flags),False
+1,AclEntry.Builder,4,AclEntry.Builder setPermissions(Set<AclEntry.Permission> permissions),False
+1,AclEntry.Builder,5,AclEntry.Builder setType(AclEntry.Type type),False
+1,AclEntry.Builder,6,AclEntry build(),True
+2,FileTime,1,FileTime getLastModifiedTime(),False
+2,FileTime,2,FileTime getLastAccessTime(),False
+2,FileTime,3,FileTime getCreationTime(),False
+2,FileTime,4,FileTime setLastModifiedTime(FileTime lastModifiedTime),False
+2,FileTime,5,FileTime setLastAccessTime(FileTime lastAccessTime),False
+3,PosixFilePermissions,1,PosixFilePermission getUserExecute(),False
+3,PosixFilePermissions,2,PosixFilePermission getGroupExecute(),False
+3,PosixFilePermissions,3,PosixFilePermission getOthersExecute(),False
+3,PosixFilePermissions,4,PosixFilePermission getUserWrite(),False
+3,PosixFilePermissions,5,PosixFilePermission getGroupWrite(),False
+3,PosixFilePermissions,6,PosixFilePermission getOthersWrite(),False
+3,PosixFilePermissions,7,PosixFilePermission getUserRead(),False
+3,PosixFilePermissions,8,PosixFilePermission getGroupRead(),False
+3,PosixFilePermissions,9,PosixFilePermission getOthersRead(),False
+3,PosixFilePermissions,10,Set<PosixFilePermission> fromString(String string),True
+4,UserPrincipalLookupService,1,UserPrincipal lookupPrincipalByName(String name),True
+4,UserPrincipalLookupService,2,UserPrincipal lookupPrincipalByGroupName(String group),False
+4,UserPrincipalLookupService,3,"UserPrincipal lookupPrincipalByGroupName(String group, String name)",False
+4,UserPrincipalLookupService,4,UserPrincipal lookupPrincipalBySid(String sid),False
+4,UserPrincipalLookupService,5,"UserPrincipal lookupPrincipalBySid(String sid, String name)",False

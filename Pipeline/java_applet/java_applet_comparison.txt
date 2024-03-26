@@ -1,0 +1,23 @@
+Sample: 0 Applet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.applet.Applet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addNotify()`: This method is called when the applet becomes visible.
+2. `void destroy()`: This method is called when the applet is about to be destroyed.
+3. `void init()`: This method is called when the applet is first initialized.
+4. `void paint(Graphics g)`: This method is called whenever the applet needs to be painted.
+5. `void setSize(Dimension d)`: This method sets the size of the applet.
+
+Note: The `addNotify()`, `destroy()`, `init()`, `paint(Graphics g)`, and `setSize(Dimension d)` methods are inherited from the `java.awt.Applet` class and are not part of the `java.applet.Applet` package.
+================================================================
+

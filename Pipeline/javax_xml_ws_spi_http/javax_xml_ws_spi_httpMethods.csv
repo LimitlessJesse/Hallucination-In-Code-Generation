@@ -1,0 +1,28 @@
+ClassName,Method,Return Type
+HttpContext,getAttribute(String name),abstract Object
+HttpContext,getAttributeNames(),abstract Set<String>
+HttpContext,getPath(),abstract String
+HttpContext,setHandler(HttpHandler handler),void
+HttpExchange,"addResponseHeader(String name, String value)",abstract void
+HttpExchange,close(),abstract void
+HttpExchange,getAttribute(String name),abstract Object
+HttpExchange,getAttributeNames(),abstract Set<String>
+HttpExchange,getContextPath(),abstract String
+HttpExchange,getHttpContext(),abstract HttpContext
+HttpExchange,getLocalAddress(),abstract InetSocketAddress
+HttpExchange,getPathInfo(),abstract String
+HttpExchange,getProtocol(),abstract String
+HttpExchange,getQueryString(),abstract String
+HttpExchange,getRemoteAddress(),abstract InetSocketAddress
+HttpExchange,getRequestBody(),abstract InputStream
+HttpExchange,getRequestHeader(String name),abstract String
+HttpExchange,getRequestHeaders(),"abstract Map<String,List<String>>"
+HttpExchange,getRequestMethod(),abstract String
+HttpExchange,getRequestURI(),abstract String
+HttpExchange,getResponseBody(),abstract OutputStream
+HttpExchange,getResponseHeaders(),"abstract Map<String,List<String>>"
+HttpExchange,getScheme(),abstract String
+HttpExchange,getUserPrincipal(),abstract Principal
+HttpExchange,isUserInRole(String role),abstract boolean
+HttpExchange,setStatus(int status),abstract void
+HttpHandler,handle(HttpExchange exchange),abstract void

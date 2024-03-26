@@ -1,0 +1,405 @@
+Sample: 0 MessageFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPMessage createMessage() from javax.xml.soap.MessageFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `createMessage()` method from `javax.xml.soap.MessageFactory`:
+
+```java
+import javax.xml.soap.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a SOAP factory
+            MessageFactory factory = MessageFactory.newInstance();
+
+            // Create a SOAP message
+            SOAPMessage message = factory.createMessage();
+
+            // Print the message
+            System.out.println(message);
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a new instance of `MessageFactory` and then use the `createMessage()` method to create a new `SOAPMessage`. The `SOAPMessage` is then printed to the console.
+
+Please note that the `createMessage()` method does not actually create a complete SOAP message. It just creates a new, empty SOAP message. You would then need to add elements to the message using the `SOAPMessage` methods.
+================================================================
+
+Sample: 1 SOAPConnectionFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPConnectionFactory newInstance() from javax.xml.soap.SOAPConnectionFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SOAPConnectionFactory.newInstance()` method is used to create a new instance of a SOAP connection factory. This method is used to create a SOAP connection that can be used to send and receive SOAP messages.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.soap.SOAPConnection;
+import javax.xml.soap.SOAPConnectionFactory;
+import javax.xml.soap.SOAPException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
+            SOAPConnection soapConnection = soapConnectionFactory.createConnection();
+            // Use soapConnection for sending and receiving SOAP messages
+            soapConnection.close();
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a new instance of a SOAP connection factory using `SOAPConnectionFactory.newInstance()`. Then we create a SOAP connection using `soapConnectionFactory.createConnection()`. After we are done with the SOAP connection, we close it using `soapConnection.close()`.
+
+Please note that you need to have the necessary dependencies in your project to use the `javax.xml.soap` package. You can add them to your project by adding the following to your `pom.xml` file:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.soap</groupId>
+        <artifactId>javax.xml.soap-api</artifactId>
+        <version>1.4.0</version>
+    </dependency>
+</dependencies>
+```
+
+Or if you are using Maven, you can add the following to your `pom.xml` file:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.soap</groupId>
+        <artifactId>javax.xml.soap-api</artifactId>
+        <version>1.4.0</version>
+    </dependency>
+</dependencies>
+```
+
+And if you are using Gradle, you can add the following to your `build.gradle` file:
+
+```groovy
+dependencies {
+    implementation 'javax.xml.soap:javax.xml.soap-api:1.4.0'
+}
+```
+================================================================
+
+Sample: 2 SOAPConnectionFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPConnection createConnection() from javax.xml.soap.SOAPConnectionFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `createConnection()` method from `javax.xml.soap.SOAPConnectionFactory`:
+
+```java
+import javax.xml.soap.SOAPConnection;
+import javax.xml.soap.SOAPConnectionFactory;
+import javax.xml.soap.SOAPException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
+            SOAPConnection soapConnection = soapConnectionFactory.createConnection();
+            soapConnection.close();
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first import the necessary classes from the `javax.xml.soap` package. Then, we create a new instance of `SOAPConnectionFactory` and use the `createConnection()` method to create a new `SOAPConnection`. Finally, we close the connection.
+
+Please note that this code snippet is a basic example and may not work as expected without additional configuration or setup. The `createConnection()` method can throw a `SOAPException`, so it's important to handle this exception in a production-ready code.
+================================================================
+
+Sample: 3 SOAPFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPFactory newInstance() from javax.xml.soap.SOAPFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the code snippet for `SOAPFactory newInstance()`:
+
+```java
+import javax.xml.soap.SOAPFactory;
+import javax.xml.soap.SOAPException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SOAPFactory factory = SOAPFactory.newInstance();
+            System.out.println(factory);
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `SOAPFactory` and printing it. If an error occurs during the creation of the `SOAPFactory`, it will be caught and printed to the console.
+
+Please note that you need to have the necessary dependencies in your project to use `SOAPFactory`. If you are using Maven, you can add the following dependency to your `pom.xml`:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.soap</groupId>
+        <artifactId>javax.xml.soap-api</artifactId>
+        <version>1.4.0</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle`:
+
+```groovy
+dependencies {
+    implementation 'javax.xml.soap:javax.xml.soap-api:1.4.0'
+}
+```
+
+Please replace the version with the latest version available.
+================================================================
+
+Sample: 4 SOAPFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPElement createElement(QName qname) from javax.xml.soap.SOAPFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `createElement(QName qname)` method from `javax.xml.soap.SOAPFactory`:
+
+```java
+import javax.xml.namespace.QName;
+import javax.xml.soap.SOAPElement;
+import javax.xml.soap.SOAPFactory;
+import javax.xml.soap.SOAPException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SOAPFactory factory = SOAPFactory.newInstance();
+            QName qname = new QName("http://www.example.com/", "elementName");
+            SOAPElement element = factory.createElement(qname);
+            System.out.println(element);
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a new instance of `SOAPFactory`, then create a new `QName` with a namespace and local part. We then use this `QName` to create a new `SOAPElement` using the `SOAPFactory`'s `createElement(QName qname)` method.
+
+Please note that you need to replace `"http://www.example.com/"` and `"elementName"` with your own namespace and local part.
+
+Also, you need to handle the `SOAPException` that may be thrown by the `SOAPFactory` methods. In this example, we simply print the stack trace of the exception.
+================================================================
+
+Sample: 5 SOAPPart
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SOAPEnvelope getEnvelope() from javax.xml.soap.SOAPPart
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getEnvelope()` method in `javax.xml.soap.SOAPPart` is used to get the SOAP envelope of the SOAP part.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.xml.soap.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            SOAPFactory factory = SOAPFactory.newInstance();
+            SOAPMessage message = factory.createMessage();
+            SOAPPart part = message.getSOAPPart();
+            SOAPEnvelope envelope = part.getEnvelope();
+
+            // Now you can use the envelope to add or manipulate SOAP elements
+            // For example, you can add a header to the envelope
+            SOAPHeader header = envelope.getHeader();
+            SOAPElement element = envelope.createElement("MyHeader");
+            header.addChildElement(element);
+
+            // Or you can add a body to the envelope
+            SOAPBody body = envelope.getBody();
+            SOAPElement bodyElement = envelope.createElement("MyBody");
+            body.addBodyElement(bodyElement);
+
+            // You can also create a new envelope
+            SOAPEnvelope newEnvelope = factory.createSOAPEnvelope();
+            part.setEnvelope(newEnvelope);
+
+        } catch (SOAPException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a new SOAP message, get the SOAP part from the message, and then get the SOAP envelope from the SOAP part. We then add a header and a body to the envelope, and create a new envelope.
+
+Please note that you need to have the necessary permissions and the necessary libraries to run this code. Also, this is a basic example and may not cover all possible scenarios.
+================================================================
+

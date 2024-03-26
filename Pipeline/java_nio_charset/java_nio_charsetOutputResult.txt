@@ -1,0 +1,72 @@
+Sample: CharsetDecoder_1
+----------------------------------------------------------------
+stdout:
+UTF-8
+
+================================================================
+
+Sample: CharsetDecoder_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: CharsetDecoder_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalStateException: Current state = RESET, new state = FLUSHED
+	at java.base/java.nio.charset.CharsetDecoder.throwIllegalStateException(CharsetDecoder.java:996)
+	at java.base/java.nio.charset.CharsetDecoder.flush(CharsetDecoder.java:679)
+	at CharsetDecoder_3.main(CharsetDecoder_3.java:9)
+
+================================================================
+
+Sample: CharsetEncoder_2
+----------------------------------------------------------------
+stdout:
+Is legal replacement: true
+
+================================================================
+
+Sample: CoderResult_1
+----------------------------------------------------------------
+output:
+./java_nio_charset/javaFiles/CoderResult_1.java:6: error: cannot find symbol
+        CoderResult result = encoder.encode(CharBuffer.wrap("Hello"));
+                                            ^
+  symbol:   variable CharBuffer
+  location: class CoderResult_1
+1 error
+
+
+================================================================
+
+Sample: CoderResult_2
+----------------------------------------------------------------
+stdout:
+Is malformed: true
+
+================================================================
+
+Sample: CoderResult_3
+----------------------------------------------------------------
+stdout:
+Is unmappable: false
+
+================================================================
+
+Sample: CoderResult_4
+----------------------------------------------------------------
+stdout:
+Is underflow: false
+
+================================================================
+
+Sample: CoderResult_5
+----------------------------------------------------------------
+stdout:
+Is overflow: true
+
+================================================================
+

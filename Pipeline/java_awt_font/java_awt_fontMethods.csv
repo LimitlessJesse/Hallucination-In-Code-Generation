@@ -1,0 +1,182 @@
+ClassName,Method,Return Type
+FontRenderContext,equals(FontRenderContext rhs),boolean
+FontRenderContext,equals(Object obj),boolean
+FontRenderContext,getAntiAliasingHint(),Object
+FontRenderContext,getFractionalMetricsHint(),Object
+FontRenderContext,getTransform(),AffineTransform
+FontRenderContext,getTransformType(),int
+FontRenderContext,hashCode(),int
+FontRenderContext,isAntiAliased(),boolean
+FontRenderContext,isTransformed(),boolean
+FontRenderContext,usesFractionalMetrics(),boolean
+GlyphMetrics,getAdvance(),float
+GlyphMetrics,getAdvanceX(),float
+GlyphMetrics,getAdvanceY(),float
+GlyphMetrics,getBounds2D(),Rectangle2D
+GlyphMetrics,getLSB(),float
+GlyphMetrics,getRSB(),float
+GlyphMetrics,getType(),int
+GlyphMetrics,isCombining(),boolean
+GlyphMetrics,isComponent(),boolean
+GlyphMetrics,isLigature(),boolean
+GlyphMetrics,isStandard(),boolean
+GlyphMetrics,isWhitespace(),boolean
+GlyphVector,equals(GlyphVector set),abstract boolean
+GlyphVector,getFont(),abstract Font
+GlyphVector,getFontRenderContext(),abstract FontRenderContext
+GlyphVector,getGlyphCharIndex(int glyphIndex),int
+GlyphVector,"getGlyphCharIndices(int beginGlyphIndex, int numEntries, int[] codeReturn)",int[]
+GlyphVector,getGlyphCode(int glyphIndex),abstract int
+GlyphVector,"getGlyphCodes(int beginGlyphIndex, int numEntries, int[] codeReturn)",abstract int[]
+GlyphVector,getGlyphJustificationInfo(int glyphIndex),abstract GlyphJustificationInfo
+GlyphVector,getGlyphLogicalBounds(int glyphIndex),abstract Shape
+GlyphVector,getGlyphMetrics(int glyphIndex),abstract GlyphMetrics
+GlyphVector,getGlyphOutline(int glyphIndex),abstract Shape
+GlyphVector,"getGlyphOutline(int glyphIndex, float x, float y)",Shape
+GlyphVector,"getGlyphPixelBounds(int index, FontRenderContext renderFRC, float x, float y)",Rectangle
+GlyphVector,getGlyphPosition(int glyphIndex),abstract Point2D
+GlyphVector,"getGlyphPositions(int beginGlyphIndex, int numEntries, float[] positionReturn)",abstract float[]
+GlyphVector,getGlyphTransform(int glyphIndex),abstract AffineTransform
+GlyphVector,getGlyphVisualBounds(int glyphIndex),abstract Shape
+GlyphVector,getLayoutFlags(),int
+GlyphVector,getLogicalBounds(),abstract Rectangle2D
+GlyphVector,getNumGlyphs(),abstract int
+GlyphVector,getOutline(),abstract Shape
+GlyphVector,"getOutline(float x, float y)",abstract Shape
+GlyphVector,"getPixelBounds(FontRenderContext renderFRC, float x, float y)",Rectangle
+GlyphVector,getVisualBounds(),abstract Rectangle2D
+GlyphVector,performDefaultLayout(),abstract void
+GlyphVector,"setGlyphPosition(int glyphIndex, Point2D newPos)",abstract void
+GlyphVector,"setGlyphTransform(int glyphIndex, AffineTransform newTX)",abstract void
+GraphicAttribute,"draw(Graphics2D graphics, float x, float y)",abstract void
+GraphicAttribute,getAdvance(),abstract float
+GraphicAttribute,getAlignment(),int
+GraphicAttribute,getAscent(),abstract float
+GraphicAttribute,getBounds(),Rectangle2D
+GraphicAttribute,getDescent(),abstract float
+GraphicAttribute,getJustificationInfo(),GlyphJustificationInfo
+GraphicAttribute,getOutline(AffineTransform tx),Shape
+ImageGraphicAttribute,"draw(Graphics2D graphics, float x, float y)",void
+ImageGraphicAttribute,equals(ImageGraphicAttribute rhs),boolean
+ImageGraphicAttribute,equals(Object rhs),boolean
+ImageGraphicAttribute,getAdvance(),float
+ImageGraphicAttribute,getAscent(),float
+ImageGraphicAttribute,getBounds(),Rectangle2D
+ImageGraphicAttribute,getDescent(),float
+ImageGraphicAttribute,hashCode(),int
+LayoutPath,"pathToPoint(Point2D location, boolean preceding, Point2D point)",abstract void
+LayoutPath,"pointToPath(Point2D point, Point2D location)",abstract boolean
+LineBreakMeasurer,"deleteChar(AttributedCharacterIterator newParagraph, int deletePos)",void
+LineBreakMeasurer,getPosition(),int
+LineBreakMeasurer,"insertChar(AttributedCharacterIterator newParagraph, int insertPos)",void
+LineBreakMeasurer,nextLayout(float wrappingWidth),TextLayout
+LineBreakMeasurer,"nextLayout(float wrappingWidth, int offsetLimit, boolean requireNextWord)",TextLayout
+LineBreakMeasurer,nextOffset(float wrappingWidth),int
+LineBreakMeasurer,"nextOffset(float wrappingWidth, int offsetLimit, boolean requireNextWord)",int
+LineBreakMeasurer,setPosition(int newPosition),void
+LineMetrics,getAscent(),abstract float
+LineMetrics,getBaselineIndex(),abstract int
+LineMetrics,getBaselineOffsets(),abstract float[]
+LineMetrics,getDescent(),abstract float
+LineMetrics,getHeight(),abstract float
+LineMetrics,getLeading(),abstract float
+LineMetrics,getNumChars(),abstract int
+LineMetrics,getStrikethroughOffset(),abstract float
+LineMetrics,getStrikethroughThickness(),abstract float
+LineMetrics,getUnderlineOffset(),abstract float
+LineMetrics,getUnderlineThickness(),abstract float
+NumericShaper,equals(Object o),boolean
+NumericShaper,getContextualShaper(int ranges),static NumericShaper
+NumericShaper,"getContextualShaper(int ranges, int defaultContext)",static NumericShaper
+NumericShaper,getContextualShaper(Set<NumericShaper.Range> ranges),static NumericShaper
+NumericShaper,"getContextualShaper(Set<NumericShaper.Range> ranges, NumericShaper.Range defaultContext)",static NumericShaper
+NumericShaper,getRanges(),int
+NumericShaper,getRangeSet(),Set<NumericShaper.Range>
+NumericShaper,getShaper(int singleRange),static NumericShaper
+NumericShaper,getShaper(NumericShaper.Range singleRange),static NumericShaper
+NumericShaper,hashCode(),int
+NumericShaper,isContextual(),boolean
+NumericShaper,"shape(char[] text, int start, int count)",void
+NumericShaper,"shape(char[] text, int start, int count, int context)",void
+NumericShaper,"shape(char[] text, int start, int count, NumericShaper.Range context)",void
+NumericShaper,toString(),String
+ShapeGraphicAttribute,"draw(Graphics2D graphics, float x, float y)",void
+ShapeGraphicAttribute,equals(Object rhs),boolean
+ShapeGraphicAttribute,equals(ShapeGraphicAttribute rhs),boolean
+ShapeGraphicAttribute,getAdvance(),float
+ShapeGraphicAttribute,getAscent(),float
+ShapeGraphicAttribute,getBounds(),Rectangle2D
+ShapeGraphicAttribute,getDescent(),float
+ShapeGraphicAttribute,getOutline(AffineTransform tx),Shape
+ShapeGraphicAttribute,hashCode(),int
+TextAttribute,readResolve(),protected Object
+TextHitInfo,afterOffset(int offset),static TextHitInfo
+TextHitInfo,beforeOffset(int offset),static TextHitInfo
+TextHitInfo,equals(Object obj),boolean
+TextHitInfo,equals(TextHitInfo hitInfo),boolean
+TextHitInfo,getCharIndex(),int
+TextHitInfo,getInsertionIndex(),int
+TextHitInfo,getOffsetHit(int delta),TextHitInfo
+TextHitInfo,getOtherHit(),TextHitInfo
+TextHitInfo,hashCode(),int
+TextHitInfo,isLeadingEdge(),boolean
+TextHitInfo,leading(int charIndex),static TextHitInfo
+TextHitInfo,toString(),String
+TextHitInfo,trailing(int charIndex),static TextHitInfo
+TextLayout,clone(),protected Object
+TextLayout,"draw(Graphics2D g2, float x, float y)",void
+TextLayout,equals(Object obj),boolean
+TextLayout,equals(TextLayout rhs),boolean
+TextLayout,getAdvance(),float
+TextLayout,getAscent(),float
+TextLayout,getBaseline(),byte
+TextLayout,getBaselineOffsets(),float[]
+TextLayout,"getBlackBoxBounds(int firstEndpoint, int secondEndpoint)",Shape
+TextLayout,getBounds(),Rectangle2D
+TextLayout,getCaretInfo(TextHitInfo hit),float[]
+TextLayout,"getCaretInfo(TextHitInfo hit, Rectangle2D bounds)",float[]
+TextLayout,getCaretShape(TextHitInfo hit),Shape
+TextLayout,"getCaretShape(TextHitInfo hit, Rectangle2D bounds)",Shape
+TextLayout,getCaretShapes(int offset),Shape[]
+TextLayout,"getCaretShapes(int offset, Rectangle2D bounds)",Shape[]
+TextLayout,"getCaretShapes(int offset, Rectangle2D bounds, TextLayout.CaretPolicy policy)",Shape[]
+TextLayout,getCharacterCount(),int
+TextLayout,getCharacterLevel(int index),byte
+TextLayout,getDescent(),float
+TextLayout,getJustifiedLayout(float justificationWidth),TextLayout
+TextLayout,getLayoutPath(),LayoutPath
+TextLayout,getLeading(),float
+TextLayout,"getLogicalHighlightShape(int firstEndpoint, int secondEndpoint)",Shape
+TextLayout,"getLogicalHighlightShape(int firstEndpoint, int secondEndpoint, Rectangle2D bounds)",Shape
+TextLayout,"getLogicalRangesForVisualSelection(TextHitInfo firstEndpoint, TextHitInfo secondEndpoint)",int[]
+TextLayout,getNextLeftHit(int offset),TextHitInfo
+TextLayout,"getNextLeftHit(int offset, TextLayout.CaretPolicy policy)",TextHitInfo
+TextLayout,getNextLeftHit(TextHitInfo hit),TextHitInfo
+TextLayout,getNextRightHit(int offset),TextHitInfo
+TextLayout,"getNextRightHit(int offset, TextLayout.CaretPolicy policy)",TextHitInfo
+TextLayout,getNextRightHit(TextHitInfo hit),TextHitInfo
+TextLayout,getOutline(AffineTransform tx),Shape
+TextLayout,"getPixelBounds(FontRenderContext frc, float x, float y)",Rectangle
+TextLayout,getVisibleAdvance(),float
+TextLayout,"getVisualHighlightShape(TextHitInfo firstEndpoint, TextHitInfo secondEndpoint)",Shape
+TextLayout,"getVisualHighlightShape(TextHitInfo firstEndpoint, TextHitInfo secondEndpoint, Rectangle2D bounds)",Shape
+TextLayout,getVisualOtherHit(TextHitInfo hit),TextHitInfo
+TextLayout,handleJustify(float justificationWidth),protected void
+TextLayout,hashCode(),int
+TextLayout,"hitTestChar(float x, float y)",TextHitInfo
+TextLayout,"hitTestChar(float x, float y, Rectangle2D bounds)",TextHitInfo
+TextLayout,"hitToPoint(TextHitInfo hit, Point2D point)",void
+TextLayout,isLeftToRight(),boolean
+TextLayout,isVertical(),boolean
+TextLayout,toString(),String
+TextLayout.CaretPolicy,"getStrongCaret(TextHitInfo hit1, TextHitInfo hit2, TextLayout layout)",TextHitInfo
+TextMeasurer,clone(),protected Object
+TextMeasurer,"deleteChar(AttributedCharacterIterator newParagraph, int deletePos)",void
+TextMeasurer,"getAdvanceBetween(int start, int limit)",float
+TextMeasurer,"getLayout(int start, int limit)",TextLayout
+TextMeasurer,"getLineBreakIndex(int start, float maxAdvance)",int
+TextMeasurer,"insertChar(AttributedCharacterIterator newParagraph, int insertPos)",void
+TransformAttribute,equals(Object rhs),boolean
+TransformAttribute,getTransform(),AffineTransform
+TransformAttribute,hashCode(),int
+TransformAttribute,isIdentity(),boolean

@@ -1,0 +1,52 @@
+ClassName,Method,Return Type
+LockInfo,from(CompositeData cd),static LockInfo
+LockInfo,getClassName(),String
+LockInfo,getIdentityHashCode(),int
+LockInfo,toString(),String
+ManagementFactory,getClassLoadingMXBean(),static ClassLoadingMXBean
+ManagementFactory,getCompilationMXBean(),static CompilationMXBean
+ManagementFactory,getGarbageCollectorMXBeans(),static List<GarbageCollectorMXBean>
+ManagementFactory,getMemoryManagerMXBeans(),static List<MemoryManagerMXBean>
+ManagementFactory,getMemoryMXBean(),static MemoryMXBean
+ManagementFactory,getMemoryPoolMXBeans(),static List<MemoryPoolMXBean>
+ManagementFactory,getOperatingSystemMXBean(),static OperatingSystemMXBean
+ManagementFactory,getPlatformManagementInterfaces(),static Set<Class<? extends PlatformManagedObject>>
+ManagementFactory,getPlatformMBeanServer(),static MBeanServer
+ManagementFactory,getPlatformMXBean(Class<T> mxbeanInterface),static <T extends PlatformManagedObject>T
+ManagementFactory,"getPlatformMXBean(MBeanServerConnection connection, Class<T> mxbeanInterface)",static <T extends PlatformManagedObject>T
+ManagementFactory,getPlatformMXBeans(Class<T> mxbeanInterface),static <T extends PlatformManagedObject>List<T>
+ManagementFactory,"getPlatformMXBeans(MBeanServerConnection connection, Class<T> mxbeanInterface)",static <T extends PlatformManagedObject>List<T>
+ManagementFactory,getRuntimeMXBean(),static RuntimeMXBean
+ManagementFactory,getThreadMXBean(),static ThreadMXBean
+ManagementFactory,"newPlatformMXBeanProxy(MBeanServerConnection connection, String mxbeanName, Class<T> mxbeanInterface)",static <T> T
+MemoryNotificationInfo,from(CompositeData cd),static MemoryNotificationInfo
+MemoryNotificationInfo,getCount(),long
+MemoryNotificationInfo,getPoolName(),String
+MemoryNotificationInfo,getUsage(),MemoryUsage
+MemoryUsage,from(CompositeData cd),static MemoryUsage
+MemoryUsage,getCommitted(),long
+MemoryUsage,getInit(),long
+MemoryUsage,getMax(),long
+MemoryUsage,getUsed(),long
+MemoryUsage,toString(),String
+MonitorInfo,from(CompositeData cd),static MonitorInfo
+MonitorInfo,getLockedStackDepth(),int
+MonitorInfo,getLockedStackFrame(),StackTraceElement
+ThreadInfo,from(CompositeData cd),static ThreadInfo
+ThreadInfo,getBlockedCount(),long
+ThreadInfo,getBlockedTime(),long
+ThreadInfo,getLockedMonitors(),MonitorInfo[]
+ThreadInfo,getLockedSynchronizers(),LockInfo[]
+ThreadInfo,getLockInfo(),LockInfo
+ThreadInfo,getLockName(),String
+ThreadInfo,getLockOwnerId(),long
+ThreadInfo,getLockOwnerName(),String
+ThreadInfo,getStackTrace(),StackTraceElement[]
+ThreadInfo,getThreadId(),long
+ThreadInfo,getThreadName(),String
+ThreadInfo,getThreadState(),Thread.State
+ThreadInfo,getWaitedCount(),long
+ThreadInfo,getWaitedTime(),long
+ThreadInfo,isInNative(),boolean
+ThreadInfo,isSuspended(),boolean
+ThreadInfo,toString(),String

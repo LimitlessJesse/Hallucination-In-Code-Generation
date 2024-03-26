@@ -1,0 +1,154 @@
+ClassName,Method,Return Type
+DragGestureEvent,getComponent(),Component
+DragGestureEvent,getDragAction(),int
+DragGestureEvent,getDragOrigin(),Point
+DragGestureEvent,getDragSource(),DragSource
+DragGestureEvent,getSourceAsDragGestureRecognizer(),DragGestureRecognizer
+DragGestureEvent,getTriggerEvent(),InputEvent
+DragGestureEvent,iterator(),Iterator<InputEvent>
+DragGestureEvent,"startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)",void
+DragGestureEvent,"startDrag(Cursor dragCursor, Transferable transferable)",void
+DragGestureEvent,"startDrag(Cursor dragCursor, Transferable transferable, DragSourceListener dsl)",void
+DragGestureEvent,toArray(),Object[]
+DragGestureEvent,toArray(Object[] array),Object[]
+DragGestureRecognizer,addDragGestureListener(DragGestureListener dgl),void
+DragGestureRecognizer,appendEvent(InputEvent awtie),protected void
+DragGestureRecognizer,"fireDragGestureRecognized(int dragAction, Point p)",protected void
+DragGestureRecognizer,getComponent(),Component
+DragGestureRecognizer,getDragSource(),DragSource
+DragGestureRecognizer,getSourceActions(),int
+DragGestureRecognizer,getTriggerEvent(),InputEvent
+DragGestureRecognizer,registerListeners(),protected abstract void
+DragGestureRecognizer,removeDragGestureListener(DragGestureListener dgl),void
+DragGestureRecognizer,resetRecognizer(),void
+DragGestureRecognizer,setComponent(Component c),void
+DragGestureRecognizer,setSourceActions(int actions),void
+DragGestureRecognizer,unregisterListeners(),protected abstract void
+DragSource,addDragSourceListener(DragSourceListener dsl),void
+DragSource,addDragSourceMotionListener(DragSourceMotionListener dsml),void
+DragSource,"createDefaultDragGestureRecognizer(Component c, int actions, DragGestureListener dgl)",DragGestureRecognizer
+DragSource,"createDragGestureRecognizer(Class<T> recognizerAbstractClass, Component c, int actions, DragGestureListener dgl)",<T extends DragGestureRecognizer>T
+DragSource,"createDragSourceContext(java.awt.dnd.peer.DragSourceContextPeer dscp, DragGestureEvent dgl, Cursor dragCursor, Image dragImage, Point imageOffset, Transferable t, DragSourceListener dsl)",protected DragSourceContext
+DragSource,getDefaultDragSource(),static DragSource
+DragSource,getDragSourceListeners(),DragSourceListener[]
+DragSource,getDragSourceMotionListeners(),DragSourceMotionListener[]
+DragSource,getDragThreshold(),static int
+DragSource,getFlavorMap(),FlavorMap
+DragSource,getListeners(Class<T> listenerType),<T extends EventListener>T[]
+DragSource,isDragImageSupported(),static boolean
+DragSource,removeDragSourceListener(DragSourceListener dsl),void
+DragSource,removeDragSourceMotionListener(DragSourceMotionListener dsml),void
+DragSource,"startDrag(DragGestureEvent trigger, Cursor dragCursor, Image dragImage, Point dragOffset, Transferable transferable, DragSourceListener dsl)",void
+DragSource,"startDrag(DragGestureEvent trigger, Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl, FlavorMap flavorMap)",void
+DragSource,"startDrag(DragGestureEvent trigger, Cursor dragCursor, Transferable transferable, DragSourceListener dsl)",void
+DragSource,"startDrag(DragGestureEvent trigger, Cursor dragCursor, Transferable transferable, DragSourceListener dsl, FlavorMap flavorMap)",void
+DragSourceAdapter,dragDropEnd(DragSourceDropEvent dsde),void
+DragSourceAdapter,dragEnter(DragSourceDragEvent dsde),void
+DragSourceAdapter,dragExit(DragSourceEvent dse),void
+DragSourceAdapter,dragMouseMoved(DragSourceDragEvent dsde),void
+DragSourceAdapter,dragOver(DragSourceDragEvent dsde),void
+DragSourceAdapter,dropActionChanged(DragSourceDragEvent dsde),void
+DragSourceContext,addDragSourceListener(DragSourceListener dsl),void
+DragSourceContext,dragDropEnd(DragSourceDropEvent dsde),void
+DragSourceContext,dragEnter(DragSourceDragEvent dsde),void
+DragSourceContext,dragExit(DragSourceEvent dse),void
+DragSourceContext,dragMouseMoved(DragSourceDragEvent dsde),void
+DragSourceContext,dragOver(DragSourceDragEvent dsde),void
+DragSourceContext,dropActionChanged(DragSourceDragEvent dsde),void
+DragSourceContext,getComponent(),Component
+DragSourceContext,getCursor(),Cursor
+DragSourceContext,getDragSource(),DragSource
+DragSourceContext,getSourceActions(),int
+DragSourceContext,getTransferable(),Transferable
+DragSourceContext,getTrigger(),DragGestureEvent
+DragSourceContext,removeDragSourceListener(DragSourceListener dsl),void
+DragSourceContext,setCursor(Cursor c),void
+DragSourceContext,transferablesFlavorsChanged(),void
+DragSourceContext,"updateCurrentCursor(int sourceAct, int targetAct, int status)",protected void
+DragSourceDragEvent,getDropAction(),int
+DragSourceDragEvent,getGestureModifiers(),int
+DragSourceDragEvent,getGestureModifiersEx(),int
+DragSourceDragEvent,getTargetActions(),int
+DragSourceDragEvent,getUserAction(),int
+DragSourceDropEvent,getDropAction(),int
+DragSourceDropEvent,getDropSuccess(),boolean
+DragSourceEvent,getDragSourceContext(),DragSourceContext
+DragSourceEvent,getLocation(),Point
+DragSourceEvent,getX(),int
+DragSourceEvent,getY(),int
+DropTarget,addDropTargetListener(DropTargetListener dtl),void
+DropTarget,addNotify(java.awt.peer.ComponentPeer peer),void
+DropTarget,clearAutoscroll(),protected void
+DropTarget,"createDropTargetAutoScroller(Component c, Point p)",protected DropTarget.DropTargetAutoScroller
+DropTarget,createDropTargetContext(),protected DropTargetContext
+DropTarget,dragEnter(DropTargetDragEvent dtde),void
+DropTarget,dragExit(DropTargetEvent dte),void
+DropTarget,dragOver(DropTargetDragEvent dtde),void
+DropTarget,drop(DropTargetDropEvent dtde),void
+DropTarget,dropActionChanged(DropTargetDragEvent dtde),void
+DropTarget,getComponent(),Component
+DropTarget,getDefaultActions(),int
+DropTarget,getDropTargetContext(),DropTargetContext
+DropTarget,getFlavorMap(),FlavorMap
+DropTarget,initializeAutoscrolling(Point p),protected void
+DropTarget,isActive(),boolean
+DropTarget,removeDropTargetListener(DropTargetListener dtl),void
+DropTarget,removeNotify(java.awt.peer.ComponentPeer peer),void
+DropTarget,setActive(boolean isActive),void
+DropTarget,setComponent(Component c),void
+DropTarget,setDefaultActions(int ops),void
+DropTarget,setFlavorMap(FlavorMap fm),void
+DropTarget,updateAutoscroll(Point dragCursorLocn),protected void
+DropTarget.DropTargetAutoScroller,actionPerformed(ActionEvent e),void
+DropTarget.DropTargetAutoScroller,stop(),protected void
+DropTarget.DropTargetAutoScroller,updateLocation(Point newLocn),protected void
+DropTargetAdapter,dragEnter(DropTargetDragEvent dtde),void
+DropTargetAdapter,dragExit(DropTargetEvent dte),void
+DropTargetAdapter,dragOver(DropTargetDragEvent dtde),void
+DropTargetAdapter,dropActionChanged(DropTargetDragEvent dtde),void
+DropTargetContext,acceptDrag(int dragOperation),protected void
+DropTargetContext,acceptDrop(int dropOperation),protected void
+DropTargetContext,addNotify(java.awt.dnd.peer.DropTargetContextPeer dtcp),void
+DropTargetContext,"createTransferableProxy(Transferable t, boolean local)",protected Transferable
+DropTargetContext,dropComplete(boolean success),void
+DropTargetContext,getComponent(),Component
+DropTargetContext,getCurrentDataFlavors(),protected DataFlavor[]
+DropTargetContext,getCurrentDataFlavorsAsList(),protected List<DataFlavor>
+DropTargetContext,getDropTarget(),DropTarget
+DropTargetContext,getTargetActions(),protected int
+DropTargetContext,getTransferable(),protected Transferable
+DropTargetContext,isDataFlavorSupported(DataFlavor df),protected boolean
+DropTargetContext,rejectDrag(),protected void
+DropTargetContext,rejectDrop(),protected void
+DropTargetContext,removeNotify(),void
+DropTargetContext,setTargetActions(int actions),protected void
+DropTargetDragEvent,acceptDrag(int dragOperation),void
+DropTargetDragEvent,getCurrentDataFlavors(),DataFlavor[]
+DropTargetDragEvent,getCurrentDataFlavorsAsList(),List<DataFlavor>
+DropTargetDragEvent,getDropAction(),int
+DropTargetDragEvent,getLocation(),Point
+DropTargetDragEvent,getSourceActions(),int
+DropTargetDragEvent,getTransferable(),Transferable
+DropTargetDragEvent,isDataFlavorSupported(DataFlavor df),boolean
+DropTargetDragEvent,rejectDrag(),void
+DropTargetDropEvent,acceptDrop(int dropAction),void
+DropTargetDropEvent,dropComplete(boolean success),void
+DropTargetDropEvent,getCurrentDataFlavors(),DataFlavor[]
+DropTargetDropEvent,getCurrentDataFlavorsAsList(),List<DataFlavor>
+DropTargetDropEvent,getDropAction(),int
+DropTargetDropEvent,getLocation(),Point
+DropTargetDropEvent,getSourceActions(),int
+DropTargetDropEvent,getTransferable(),Transferable
+DropTargetDropEvent,isDataFlavorSupported(DataFlavor df),boolean
+DropTargetDropEvent,isLocalTransfer(),boolean
+DropTargetDropEvent,rejectDrop(),void
+DropTargetEvent,getDropTargetContext(),DropTargetContext
+MouseDragGestureRecognizer,mouseClicked(MouseEvent e),void
+MouseDragGestureRecognizer,mouseDragged(MouseEvent e),void
+MouseDragGestureRecognizer,mouseEntered(MouseEvent e),void
+MouseDragGestureRecognizer,mouseExited(MouseEvent e),void
+MouseDragGestureRecognizer,mouseMoved(MouseEvent e),void
+MouseDragGestureRecognizer,mousePressed(MouseEvent e),void
+MouseDragGestureRecognizer,mouseReleased(MouseEvent e),void
+MouseDragGestureRecognizer,registerListeners(),protected void
+MouseDragGestureRecognizer,unregisterListeners(),protected void

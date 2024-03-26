@@ -1,0 +1,181 @@
+ClassName,Method,Return Type
+BeanDescriptor,getBeanClass(),Class<?>
+BeanDescriptor,getCustomizerClass(),Class<?>
+Beans,"getInstanceOf(Object bean, Class<?> targetType)",static Object
+Beans,"instantiate(ClassLoader cls, String beanName)",static Object
+Beans,"instantiate(ClassLoader cls, String beanName, BeanContext beanContext)",static Object
+Beans,"instantiate(ClassLoader cls, String beanName, BeanContext beanContext, AppletInitializer initializer)",static Object
+Beans,isDesignTime(),static boolean
+Beans,isGuiAvailable(),static boolean
+Beans,"isInstanceOf(Object bean, Class<?> targetType)",static boolean
+Beans,setDesignTime(boolean isDesignTime),static void
+Beans,setGuiAvailable(boolean isGuiAvailable),static void
+DefaultPersistenceDelegate,"initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out)",protected void
+DefaultPersistenceDelegate,"instantiate(Object oldInstance, Encoder out)",protected Expression
+DefaultPersistenceDelegate,"mutatesTo(Object oldInstance, Object newInstance)",protected boolean
+Encoder,get(Object oldInstance),Object
+Encoder,getExceptionListener(),ExceptionListener
+Encoder,getPersistenceDelegate(Class<?> type),PersistenceDelegate
+Encoder,remove(Object oldInstance),Object
+Encoder,setExceptionListener(ExceptionListener exceptionListener),void
+Encoder,"setPersistenceDelegate(Class<?> type, PersistenceDelegate delegate)",void
+Encoder,writeExpression(Expression oldExp),void
+Encoder,writeObject(Object o),protected void
+Encoder,writeStatement(Statement oldStm),void
+EventHandler,"create(Class<T> listenerInterface, Object target, String action)",static <T> T
+EventHandler,"create(Class<T> listenerInterface, Object target, String action, String eventPropertyName)",static <T> T
+EventHandler,"create(Class<T> listenerInterface, Object target, String action, String eventPropertyName, String listenerMethodName)",static <T> T
+EventHandler,getAction(),String
+EventHandler,getEventPropertyName(),String
+EventHandler,getListenerMethodName(),String
+EventHandler,getTarget(),Object
+EventHandler,"invoke(Object proxy, Method method, Object[] arguments)",Object
+EventSetDescriptor,getAddListenerMethod(),Method
+EventSetDescriptor,getGetListenerMethod(),Method
+EventSetDescriptor,getListenerMethodDescriptors(),MethodDescriptor[]
+EventSetDescriptor,getListenerMethods(),Method[]
+EventSetDescriptor,getListenerType(),Class<?>
+EventSetDescriptor,getRemoveListenerMethod(),Method
+EventSetDescriptor,isInDefaultEventSet(),boolean
+EventSetDescriptor,isUnicast(),boolean
+EventSetDescriptor,setInDefaultEventSet(boolean inDefaultEventSet),void
+EventSetDescriptor,setUnicast(boolean unicast),void
+Expression,execute(),void
+Expression,getValue(),Object
+Expression,setValue(Object value),void
+Expression,toString(),String
+FeatureDescriptor,attributeNames(),Enumeration<String>
+FeatureDescriptor,getDisplayName(),String
+FeatureDescriptor,getName(),String
+FeatureDescriptor,getShortDescription(),String
+FeatureDescriptor,getValue(String attributeName),Object
+FeatureDescriptor,isExpert(),boolean
+FeatureDescriptor,isHidden(),boolean
+FeatureDescriptor,isPreferred(),boolean
+FeatureDescriptor,setDisplayName(String displayName),void
+FeatureDescriptor,setExpert(boolean expert),void
+FeatureDescriptor,setHidden(boolean hidden),void
+FeatureDescriptor,setName(String name),void
+FeatureDescriptor,setPreferred(boolean preferred),void
+FeatureDescriptor,setShortDescription(String text),void
+FeatureDescriptor,"setValue(String attributeName, Object value)",void
+FeatureDescriptor,toString(),String
+IndexedPropertyChangeEvent,getIndex(),int
+IndexedPropertyDescriptor,equals(Object obj),boolean
+IndexedPropertyDescriptor,getIndexedPropertyType(),Class<?>
+IndexedPropertyDescriptor,getIndexedReadMethod(),Method
+IndexedPropertyDescriptor,getIndexedWriteMethod(),Method
+IndexedPropertyDescriptor,hashCode(),int
+IndexedPropertyDescriptor,setIndexedReadMethod(Method readMethod),void
+IndexedPropertyDescriptor,setIndexedWriteMethod(Method writeMethod),void
+Introspector,decapitalize(String name),static String
+Introspector,flushCaches(),static void
+Introspector,flushFromCaches(Class<?> clz),static void
+Introspector,getBeanInfo(Class<?> beanClass),static BeanInfo
+Introspector,"getBeanInfo(Class<?> beanClass, Class<?> stopClass)",static BeanInfo
+Introspector,"getBeanInfo(Class<?> beanClass, Class<?> stopClass, int flags)",static BeanInfo
+Introspector,"getBeanInfo(Class<?> beanClass, int flags)",static BeanInfo
+Introspector,getBeanInfoSearchPath(),static String[]
+Introspector,setBeanInfoSearchPath(String[] path),static void
+MethodDescriptor,getMethod(),Method
+MethodDescriptor,getParameterDescriptors(),ParameterDescriptor[]
+PersistenceDelegate,"initialize(Class<?> type, Object oldInstance, Object newInstance, Encoder out)",protected void
+PersistenceDelegate,"instantiate(Object oldInstance, Encoder out)",protected abstract Expression
+PersistenceDelegate,"mutatesTo(Object oldInstance, Object newInstance)",protected boolean
+PersistenceDelegate,"writeObject(Object oldInstance, Encoder out)",void
+PropertyChangeEvent,getNewValue(),Object
+PropertyChangeEvent,getOldValue(),Object
+PropertyChangeEvent,getPropagationId(),Object
+PropertyChangeEvent,getPropertyName(),String
+PropertyChangeEvent,setPropagationId(Object propagationId),void
+PropertyChangeEvent,toString(),String
+PropertyChangeListenerProxy,getPropertyName(),String
+PropertyChangeListenerProxy,propertyChange(PropertyChangeEvent event),void
+PropertyChangeSupport,addPropertyChangeListener(PropertyChangeListener listener),void
+PropertyChangeSupport,"addPropertyChangeListener(String propertyName, PropertyChangeListener listener)",void
+PropertyChangeSupport,"fireIndexedPropertyChange(String propertyName, int index, boolean oldValue, boolean newValue)",void
+PropertyChangeSupport,"fireIndexedPropertyChange(String propertyName, int index, int oldValue, int newValue)",void
+PropertyChangeSupport,"fireIndexedPropertyChange(String propertyName, int index, Object oldValue, Object newValue)",void
+PropertyChangeSupport,firePropertyChange(PropertyChangeEvent event),void
+PropertyChangeSupport,"firePropertyChange(String propertyName, boolean oldValue, boolean newValue)",void
+PropertyChangeSupport,"firePropertyChange(String propertyName, int oldValue, int newValue)",void
+PropertyChangeSupport,"firePropertyChange(String propertyName, Object oldValue, Object newValue)",void
+PropertyChangeSupport,getPropertyChangeListeners(),PropertyChangeListener[]
+PropertyChangeSupport,getPropertyChangeListeners(String propertyName),PropertyChangeListener[]
+PropertyChangeSupport,hasListeners(String propertyName),boolean
+PropertyChangeSupport,removePropertyChangeListener(PropertyChangeListener listener),void
+PropertyChangeSupport,"removePropertyChangeListener(String propertyName, PropertyChangeListener listener)",void
+PropertyDescriptor,createPropertyEditor(Object bean),PropertyEditor
+PropertyDescriptor,equals(Object obj),boolean
+PropertyDescriptor,getPropertyEditorClass(),Class<?>
+PropertyDescriptor,getPropertyType(),Class<?>
+PropertyDescriptor,getReadMethod(),Method
+PropertyDescriptor,getWriteMethod(),Method
+PropertyDescriptor,hashCode(),int
+PropertyDescriptor,isBound(),boolean
+PropertyDescriptor,isConstrained(),boolean
+PropertyDescriptor,setBound(boolean bound),void
+PropertyDescriptor,setConstrained(boolean constrained),void
+PropertyDescriptor,setPropertyEditorClass(Class<?> propertyEditorClass),void
+PropertyDescriptor,setReadMethod(Method readMethod),void
+PropertyDescriptor,setWriteMethod(Method writeMethod),void
+PropertyEditorManager,findEditor(Class<?> targetType),static PropertyEditor
+PropertyEditorManager,getEditorSearchPath(),static String[]
+PropertyEditorManager,"registerEditor(Class<?> targetType, Class<?> editorClass)",static void
+PropertyEditorManager,setEditorSearchPath(String[] path),static void
+PropertyEditorSupport,addPropertyChangeListener(PropertyChangeListener listener),void
+PropertyEditorSupport,firePropertyChange(),void
+PropertyEditorSupport,getAsText(),String
+PropertyEditorSupport,getCustomEditor(),Component
+PropertyEditorSupport,getJavaInitializationString(),String
+PropertyEditorSupport,getSource(),Object
+PropertyEditorSupport,getTags(),String[]
+PropertyEditorSupport,getValue(),Object
+PropertyEditorSupport,isPaintable(),boolean
+PropertyEditorSupport,"paintValue(Graphics gfx, Rectangle box)",void
+PropertyEditorSupport,removePropertyChangeListener(PropertyChangeListener listener),void
+PropertyEditorSupport,setAsText(String text),void
+PropertyEditorSupport,setSource(Object source),void
+PropertyEditorSupport,setValue(Object value),void
+PropertyEditorSupport,supportsCustomEditor(),boolean
+SimpleBeanInfo,getAdditionalBeanInfo(),BeanInfo[]
+SimpleBeanInfo,getBeanDescriptor(),BeanDescriptor
+SimpleBeanInfo,getDefaultEventIndex(),int
+SimpleBeanInfo,getDefaultPropertyIndex(),int
+SimpleBeanInfo,getEventSetDescriptors(),EventSetDescriptor[]
+SimpleBeanInfo,getIcon(int iconKind),Image
+SimpleBeanInfo,getMethodDescriptors(),MethodDescriptor[]
+SimpleBeanInfo,getPropertyDescriptors(),PropertyDescriptor[]
+SimpleBeanInfo,loadImage(String resourceName),Image
+Statement,execute(),void
+Statement,getArguments(),Object[]
+Statement,getMethodName(),String
+Statement,getTarget(),Object
+Statement,toString(),String
+VetoableChangeListenerProxy,getPropertyName(),String
+VetoableChangeListenerProxy,vetoableChange(PropertyChangeEvent event),void
+VetoableChangeSupport,"addVetoableChangeListener(String propertyName, VetoableChangeListener listener)",void
+VetoableChangeSupport,addVetoableChangeListener(VetoableChangeListener listener),void
+VetoableChangeSupport,fireVetoableChange(PropertyChangeEvent event),void
+VetoableChangeSupport,"fireVetoableChange(String propertyName, boolean oldValue, boolean newValue)",void
+VetoableChangeSupport,"fireVetoableChange(String propertyName, int oldValue, int newValue)",void
+VetoableChangeSupport,"fireVetoableChange(String propertyName, Object oldValue, Object newValue)",void
+VetoableChangeSupport,getVetoableChangeListeners(),VetoableChangeListener[]
+VetoableChangeSupport,getVetoableChangeListeners(String propertyName),VetoableChangeListener[]
+VetoableChangeSupport,hasListeners(String propertyName),boolean
+VetoableChangeSupport,"removeVetoableChangeListener(String propertyName, VetoableChangeListener listener)",void
+VetoableChangeSupport,removeVetoableChangeListener(VetoableChangeListener listener),void
+XMLDecoder,close(),void
+XMLDecoder,"createHandler(Object owner, ExceptionListener el, ClassLoader cl)",static DefaultHandler
+XMLDecoder,getExceptionListener(),ExceptionListener
+XMLDecoder,getOwner(),Object
+XMLDecoder,readObject(),Object
+XMLDecoder,setExceptionListener(ExceptionListener exceptionListener),void
+XMLDecoder,setOwner(Object owner),void
+XMLEncoder,close(),void
+XMLEncoder,flush(),void
+XMLEncoder,getOwner(),Object
+XMLEncoder,setOwner(Object owner),void
+XMLEncoder,writeExpression(Expression oldExp),void
+XMLEncoder,writeObject(Object o),void
+XMLEncoder,writeStatement(Statement oldStm),void

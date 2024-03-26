@@ -1,0 +1,404 @@
+Sample: 0 Attributes
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isEmpty() from java.util.jar.Attributes
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isEmpty()` method in `java.util.jar.Attributes` is a boolean method that checks if the Attributes object is empty or not. It returns true if the Attributes object is empty, and false otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.jar.Attributes;
+import java.util.jar.Manifest;
+
+public class Main {
+    public static void main(String[] args) {
+        Manifest manifest = new Manifest();
+        Attributes attributes = manifest.getMainAttributes();
+
+        if (attributes.isEmpty()) {
+            System.out.println("Attributes object is empty");
+        } else {
+            System.out.println("Attributes object is not empty");
+        }
+    }
+}
+```
+
+In this code snippet, we first create a new Manifest object and then get its main attributes. We then call the `isEmpty()` method on these attributes and print out a message based on the result.
+================================================================
+
+Sample: 1 Attributes
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from java.util.jar.Attributes
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `java.util.jar.Attributes` returns the number of attributes in the jar file.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.jar.Attributes;
+import java.util.jar.Manifest;
+import java.util.jar.JarFile;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JarFile jarFile = new JarFile(new File("path_to_your_jar_file.jar"));
+            Manifest manifest = jarFile.getManifest();
+            Attributes attributes = manifest.getMainAttributes();
+            int size = attributes.size();
+            System.out.println("Number of attributes in the jar file: " + size);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are opening a jar file, getting its manifest, and then getting the attributes from the manifest. The `size()` method is then used to get the number of attributes in the jar file.
+
+Please replace `"path_to_your_jar_file.jar"` with the actual path to your jar file.
+================================================================
+
+Sample: 2 JarFile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Enumeration<JarEntry> entries() from java.util.jar.JarFile
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `entries()` method from `java.util.jar.JarFile`:
+
+```java
+import java.util.jar.JarFile;
+import java.util.jar.JarEntry;
+import java.util.Enumeration;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JarFile jarFile = new JarFile("path_to_your_jar_file");
+            Enumeration<JarEntry> entries = jarFile.entries();
+
+            while (entries.hasMoreElements()) {
+                JarEntry entry = entries.nextElement();
+                System.out.println(entry.getName());
+            }
+
+            jarFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+This code snippet creates a new `JarFile` object, which represents a jar file. It then calls the `entries()` method, which returns an `Enumeration` of the `JarEntry` objects in the jar file. The `Enumeration` provides a way to access the elements of the jar file one at a time.
+
+In the while loop, we iterate over the `JarEntry` objects in the jar file, printing out the name of each entry.
+
+Finally, we close the `JarFile` to free up resources. If an `IOException` occurs during this process, it is caught and printed to the console.
+================================================================
+
+Sample: 3 JarFile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Manifest getManifest() from java.util.jar.JarFile
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getManifest()` method in `java.util.jar.JarFile` class is used to get the Manifest of the Jar file.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.jar.JarFile;
+import java.util.jar.Manifest;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JarFile jarFile = new JarFile("path_to_your_jar_file.jar");
+            Manifest manifest = jarFile.getManifest();
+            System.out.println(manifest);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, replace "path_to_your_jar_file.jar" with the actual path of your jar file.
+
+This code will print the Manifest of the jar file to the console.
+
+Note: This method can throw `IOException` if an error occurs while reading the jar file. So, it's recommended to handle this exception using a try-catch block.
+================================================================
+
+Sample: 4 JarFile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use JarEntry getJarEntry(String name) from java.util.jar.JarFile
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getJarEntry(String name)` method in `java.util.jar.JarFile` class is used to get the JarEntry for the specified name. It returns a JarEntry object representing the entry in the jar file with the specified name.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.jar.JarFile;
+import java.util.jar.JarEntry;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JarFile jarFile = new JarFile("path_to_your_jar_file");
+            JarEntry jarEntry = jarFile.getJarEntry("name_of_the_entry_in_jar_file");
+            System.out.println(jarEntry);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, replace "path_to_your_jar_file" with the actual path of your jar file and "name_of_the_entry_in_jar_file" with the name of the entry you want to get.
+
+This code will print the JarEntry object for the specified name. If the entry does not exist in the jar file, it will throw an IOException.
+================================================================
+
+Sample: 5 JarInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use JarEntry getNextJarEntry() from java.util.jar.JarInputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getNextJarEntry()` method in `java.util.jar.JarInputStream` is used to get the next entry in the jar file. It returns a `JarEntry` object representing the next entry in the jar file.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.jar.JarEntry;
+import java.util.jar.JarInputStream;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JarInputStream jarInputStream = new JarInputStream(new FileInputStream("path_to_your_jar_file.jar"));
+            JarEntry jarEntry = jarInputStream.getNextJarEntry();
+            while (jarEntry!= null) {
+                System.out.println(jarEntry.getName());
+                jarEntry = jarInputStream.getNextJarEntry();
+            }
+            jarInputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are reading a jar file and printing the names of all the entries in the jar file. The `getNextJarEntry()` method is used to get the next entry in the jar file. The loop continues until there are no more entries in the jar file.
+
+Please replace "path_to_your_jar_file.jar" with the actual path to your jar file.
+================================================================
+
+Sample: 6 Manifest
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from java.util.jar.Manifest
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void clear()` method in `java.util.jar.Manifest` is used to remove all of the elements from this `Manifest`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.jar.Manifest;
+
+public class Main {
+    public static void main(String[] args) {
+        Manifest manifest = new Manifest();
+        manifest.clear();
+    }
+}
+```
+
+In this code snippet, we first import the `Manifest` class from `java.util.jar` package. Then, we create a new `Manifest` object and call the `clear()` method on it. This will remove all the entries from the `Manifest`.
+================================================================
+

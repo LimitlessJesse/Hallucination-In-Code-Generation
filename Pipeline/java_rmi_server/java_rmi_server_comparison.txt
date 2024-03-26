@@ -1,0 +1,294 @@
+Sample: 0 LogStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.LogStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 ObjID
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.ObjID package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object obj)`: Compares the specified object with this list for equality.
+2. `int hashCode()`: Returns the hash code value for this list.
+3. `String toString()`: Returns a string representation of this list.
+4. `int size()`: Returns the number of elements in this list.
+5. `boolean isEmpty()`: Returns true if this list contains no elements.
+================================================================
+
+Sample: 2 Operation
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.Operation package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 3 RemoteObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RemoteObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `protected ObjectInputStream createObjectInputStream(InputStream in)`: This method creates an ObjectInputStream that reads from the specified InputStream.
+
+2. `protected ObjectOutputStream createObjectOutputStream(OutputStream out)`: This method creates an ObjectOutputStream that writes to the specified OutputStream.
+
+3. `protected void exportObject(Object obj, Remote rmiRef)`: This method exports the specified object for remote invocation.
+
+4. `protected void unexportObject(Object obj, boolean unregister)`: This method unexports the specified object.
+
+5. `protected void notifyServer(Remote server)`: This method notifies the server that the client has been notified.
+================================================================
+
+Sample: 4 RemoteObjectInvocationHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RemoteObjectInvocationHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 5 RemoteServer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RemoteServer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 6 RemoteStub
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RemoteStub package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 7 RMIClassLoader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RMIClassLoader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 8 RMIClassLoaderSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RMIClassLoaderSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 9 RMISocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.RMISocketFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setSocketFactory(RMISocketFactory socketFactory)`: This method sets the socket factory for the RMI server.
+
+2. `getSocketFactory()`: This method returns the socket factory for the RMI server.
+
+3. `createSocket(String host, int port)`: This method creates a socket connected to the specified host and port.
+
+4. `createServerSocket(int port)`: This method creates a server socket on the specified port.
+
+5. `getClientHost()`: This method returns the host name of the client that is currently connected to the server.
+================================================================
+
+Sample: 10 UID
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.UID package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object obj)`: Compares the specified object with this UID for equality.
+2. `int hashCode()`: Returns the hash code value for this UID.
+3. `String toString()`: Returns a string representation of this UID.
+4. `long timestamp()`: Returns the timestamp of this UID.
+5. `int clockSeqAndNode()`: Returns the clock sequence and node value of this UID.
+================================================================
+
+Sample: 11 UnicastRemoteObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.server.UnicastRemoteObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `protected Object clone()`: This method creates and returns a copy of this object.
+
+2. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+
+3. `public boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `public void clear()`: This method removes all of the elements from this list.
+
+5. `public boolean contains(Object o)`: This method returns true if this list contains the specified element.
+================================================================
+

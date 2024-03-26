@@ -1,0 +1,118 @@
+Sample: 0 FileSystemProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use FileSystem getFileSystem(URI uri) from java.nio.file.spi.FileSystemProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getFileSystem(URI uri)` method is a part of `java.nio.file.spi.FileSystemProvider` class. It is used to get a `FileSystem` instance for the specified URI.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.net.URI;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+
+public class Main {
+    public static void main(String[] args) {
+        URI uri = URI.create("file:///C:/Users/user/Desktop");
+        FileSystem fileSystem = FileSystems.getFileSystem(uri);
+        System.out.println(fileSystem);
+    }
+}
+```
+
+In this code snippet, we are creating a URI for a file system path. Then we are getting a `FileSystem` instance for this URI using `FileSystems.getFileSystem(uri)` method.
+
+Please replace `"file:///C:/Users/user/Desktop"` with your actual file system path.
+
+Note: This method is used to get a `FileSystem` instance for the specified URI. It is not used to create a new `FileSystem` instance. If you want to create a new `FileSystem` instance, you should use `FileSystems.newFileSystem(URI, ClassLoader)` method.
+================================================================
+
+Sample: 1 FileSystemProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use FileSystem newFileSystem(URI uri, Map<String,?> env) from java.nio.file.spi.FileSystemProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `FileSystem newFileSystem(URI uri, Map<String,?> env)` method is a part of the `FileSystemProvider` class in Java's NIO.2 API. It is used to create a new `FileSystem` instance for the given URI and environment.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.IOException;
+import java.net.URI;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URI uri = URI.create("file:///C:/temp");
+            Map<String, String> env = new HashMap<>();
+            FileSystem fs = FileSystems.newFileSystem(uri, env);
+            Path path = fs.getPath("/");
+            System.out.println(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new `FileSystem` instance for the URI `file:///C:/temp`. The `FileSystems.newFileSystem(uri, env)` method is used to create the `FileSystem` instance. The `env` parameter is a map that can be used to pass any additional environment information required by the `FileSystemProvider`.
+
+Please note that you need to have the necessary permissions to access the file system specified by the URI. Also, the `FileSystem` instance created by this method is not automatically closed. You should close it when you are done with it.
+================================================================
+

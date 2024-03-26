@@ -1,0 +1,164 @@
+Sample: 0 AbstractScriptEngine
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object eval(String script) from javax.script.AbstractScriptEngine
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `eval` method in `AbstractScriptEngine` is used to evaluate a script. It is a method of `javax.script.ScriptEngine` interface and it is used to execute a script.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
+public class Main {
+    public static void main(String[] args) {
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptEngine engine = manager.getEngineByName("JavaScript");
+
+        try {
+            engine.eval("function add(a, b) { return a + b; }");
+            Object result = engine.eval("add(1, 2)");
+            System.out.println(result);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are using JavaScript as the scripting language. We are defining a function `add` in the script and then calling this function from the script. The result of the function call is stored in the `result` variable and then printed to the console.
+
+Please note that the `eval` method can be dangerous if you are evaluating scripts from an untrusted source, as it can execute any script. Always ensure that you are evaluating scripts from a trusted source.
+================================================================
+
+Sample: 1 CompiledScript
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ScriptEngine getEngine() from javax.script.CompiledScript
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getEngine()` method from `javax.script.CompiledScript` is used to get the `ScriptEngine` instance that was used to compile the script.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+
+public class Main {
+    public static void main(String[] args) {
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptEngine engine = manager.getEngineByName("JavaScript");
+        System.out.println(engine);
+    }
+}
+```
+
+In this code snippet, we are using `ScriptEngineManager` to get the `ScriptEngine` instance. The `getEngineByName("JavaScript")` method is used to get the JavaScript engine.
+
+Please note that the `ScriptEngine` instance is used to execute the compiled script. The `ScriptEngineManager` is used to create `ScriptEngine` instances.
+================================================================
+
+Sample: 2 SimpleBindings
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from javax.script.SimpleBindings
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `javax.script.SimpleBindings` is used to get the number of bindings in the `SimpleBindings` object.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.script.SimpleBindings;
+
+public class Main {
+    public static void main(String[] args) {
+        SimpleBindings bindings = new SimpleBindings();
+        bindings.put("name", "John");
+        bindings.put("age", 30);
+
+        int size = bindings.size();
+        System.out.println("Number of bindings: " + size);
+    }
+}
+```
+
+In this code, we create a `SimpleBindings` object and add two bindings to it. Then we call the `size()` method to get the number of bindings in the object. The result is printed to the console.
+================================================================
+

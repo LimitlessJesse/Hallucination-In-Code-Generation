@@ -1,0 +1,91 @@
+ClassName,Method,Return Type
+AbstractPreferences,absolutePath(),String
+AbstractPreferences,addNodeChangeListener(NodeChangeListener ncl),void
+AbstractPreferences,addPreferenceChangeListener(PreferenceChangeListener pcl),void
+AbstractPreferences,cachedChildren(),protected AbstractPreferences[]
+AbstractPreferences,childrenNames(),String[]
+AbstractPreferences,childrenNamesSpi(),protected abstract String[]
+AbstractPreferences,childSpi(String name),protected abstract AbstractPreferences
+AbstractPreferences,clear(),void
+AbstractPreferences,exportNode(OutputStream os),void
+AbstractPreferences,exportSubtree(OutputStream os),void
+AbstractPreferences,flush(),void
+AbstractPreferences,flushSpi(),protected abstract void
+AbstractPreferences,"get(String key, String def)",String
+AbstractPreferences,"getBoolean(String key, boolean def)",boolean
+AbstractPreferences,"getByteArray(String key, byte[] def)",byte[]
+AbstractPreferences,getChild(String nodeName),protected AbstractPreferences
+AbstractPreferences,"getDouble(String key, double def)",double
+AbstractPreferences,"getFloat(String key, float def)",float
+AbstractPreferences,"getInt(String key, int def)",int
+AbstractPreferences,"getLong(String key, long def)",long
+AbstractPreferences,getSpi(String key),protected abstract String
+AbstractPreferences,isRemoved(),protected boolean
+AbstractPreferences,isUserNode(),boolean
+AbstractPreferences,keys(),String[]
+AbstractPreferences,keysSpi(),protected abstract String[]
+AbstractPreferences,name(),String
+AbstractPreferences,node(String path),Preferences
+AbstractPreferences,nodeExists(String path),boolean
+AbstractPreferences,parent(),Preferences
+AbstractPreferences,"put(String key, String value)",void
+AbstractPreferences,"putBoolean(String key, boolean value)",void
+AbstractPreferences,"putByteArray(String key, byte[] value)",void
+AbstractPreferences,"putDouble(String key, double value)",void
+AbstractPreferences,"putFloat(String key, float value)",void
+AbstractPreferences,"putInt(String key, int value)",void
+AbstractPreferences,"putLong(String key, long value)",void
+AbstractPreferences,"putSpi(String key, String value)",protected abstract void
+AbstractPreferences,remove(String key),void
+AbstractPreferences,removeNode(),void
+AbstractPreferences,removeNodeChangeListener(NodeChangeListener ncl),void
+AbstractPreferences,removeNodeSpi(),protected abstract void
+AbstractPreferences,removePreferenceChangeListener(PreferenceChangeListener pcl),void
+AbstractPreferences,removeSpi(String key),protected abstract void
+AbstractPreferences,sync(),void
+AbstractPreferences,syncSpi(),protected abstract void
+AbstractPreferences,toString(),String
+NodeChangeEvent,getChild(),Preferences
+NodeChangeEvent,getParent(),Preferences
+PreferenceChangeEvent,getKey(),String
+PreferenceChangeEvent,getNewValue(),String
+PreferenceChangeEvent,getNode(),Preferences
+Preferences,absolutePath(),abstract String
+Preferences,addNodeChangeListener(NodeChangeListener ncl),abstract void
+Preferences,addPreferenceChangeListener(PreferenceChangeListener pcl),abstract void
+Preferences,childrenNames(),abstract String[]
+Preferences,clear(),abstract void
+Preferences,exportNode(OutputStream os),abstract void
+Preferences,exportSubtree(OutputStream os),abstract void
+Preferences,flush(),abstract void
+Preferences,"get(String key, String def)",abstract String
+Preferences,"getBoolean(String key, boolean def)",abstract boolean
+Preferences,"getByteArray(String key, byte[] def)",abstract byte[]
+Preferences,"getDouble(String key, double def)",abstract double
+Preferences,"getFloat(String key, float def)",abstract float
+Preferences,"getInt(String key, int def)",abstract int
+Preferences,"getLong(String key, long def)",abstract long
+Preferences,importPreferences(InputStream is),static void
+Preferences,isUserNode(),abstract boolean
+Preferences,keys(),abstract String[]
+Preferences,name(),abstract String
+Preferences,node(String pathName),abstract Preferences
+Preferences,nodeExists(String pathName),abstract boolean
+Preferences,parent(),abstract Preferences
+Preferences,"put(String key, String value)",abstract void
+Preferences,"putBoolean(String key, boolean value)",abstract void
+Preferences,"putByteArray(String key, byte[] value)",abstract void
+Preferences,"putDouble(String key, double value)",abstract void
+Preferences,"putFloat(String key, float value)",abstract void
+Preferences,"putInt(String key, int value)",abstract void
+Preferences,"putLong(String key, long value)",abstract void
+Preferences,remove(String key),abstract void
+Preferences,removeNode(),abstract void
+Preferences,removeNodeChangeListener(NodeChangeListener ncl),abstract void
+Preferences,removePreferenceChangeListener(PreferenceChangeListener pcl),abstract void
+Preferences,sync(),abstract void
+Preferences,systemNodeForPackage(Class<?> c),static Preferences
+Preferences,systemRoot(),static Preferences
+Preferences,toString(),abstract String
+Preferences,userNodeForPackage(Class<?> c),static Preferences
+Preferences,userRoot(),static Preferences

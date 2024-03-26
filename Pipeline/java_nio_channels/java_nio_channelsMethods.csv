@@ -1,0 +1,188 @@
+ClassName,Method,Return Type
+AsynchronousChannelGroup,"awaitTermination(long timeout, TimeUnit unit)",abstract boolean
+AsynchronousChannelGroup,isShutdown(),abstract boolean
+AsynchronousChannelGroup,isTerminated(),abstract boolean
+AsynchronousChannelGroup,provider(),AsynchronousChannelProvider
+AsynchronousChannelGroup,shutdown(),abstract void
+AsynchronousChannelGroup,shutdownNow(),abstract void
+AsynchronousChannelGroup,"withCachedThreadPool(ExecutorService executor, int initialSize)",static AsynchronousChannelGroup
+AsynchronousChannelGroup,"withFixedThreadPool(int nThreads, ThreadFactory threadFactory)",static AsynchronousChannelGroup
+AsynchronousChannelGroup,withThreadPool(ExecutorService executor),static AsynchronousChannelGroup
+AsynchronousFileChannel,force(boolean metaData),abstract void
+AsynchronousFileChannel,lock(),Future<FileLock>
+AsynchronousFileChannel,"lock(A attachment, CompletionHandler<FileLock,? super A> handler)",<A> void
+AsynchronousFileChannel,"lock(long position, long size, boolean shared)",abstract Future<FileLock>
+AsynchronousFileChannel,"lock(long position, long size, boolean shared, A attachment, CompletionHandler<FileLock,? super A> handler)",abstract <A> void
+AsynchronousFileChannel,"open(Path file, OpenOption... options)",static AsynchronousFileChannel
+AsynchronousFileChannel,"open(Path file, Set<? extends OpenOption> options, ExecutorService executor, FileAttribute<?>... attrs)",static AsynchronousFileChannel
+AsynchronousFileChannel,"read(ByteBuffer dst, long position)",abstract Future<Integer>
+AsynchronousFileChannel,"read(ByteBuffer dst, long position, A attachment, CompletionHandler<Integer,? super A> handler)",abstract <A> void
+AsynchronousFileChannel,size(),abstract long
+AsynchronousFileChannel,truncate(long size),abstract AsynchronousFileChannel
+AsynchronousFileChannel,tryLock(),FileLock
+AsynchronousFileChannel,"tryLock(long position, long size, boolean shared)",abstract FileLock
+AsynchronousFileChannel,"write(ByteBuffer src, long position)",abstract Future<Integer>
+AsynchronousFileChannel,"write(ByteBuffer src, long position, A attachment, CompletionHandler<Integer,? super A> handler)",abstract <A> void
+AsynchronousServerSocketChannel,accept(),abstract Future<AsynchronousSocketChannel>
+AsynchronousServerSocketChannel,"accept(A attachment, CompletionHandler<AsynchronousSocketChannel,? super A> handler)",abstract <A> void
+AsynchronousServerSocketChannel,bind(SocketAddress local),AsynchronousServerSocketChannel
+AsynchronousServerSocketChannel,"bind(SocketAddress local, int backlog)",abstract AsynchronousServerSocketChannel
+AsynchronousServerSocketChannel,getLocalAddress(),abstract SocketAddress
+AsynchronousServerSocketChannel,open(),static AsynchronousServerSocketChannel
+AsynchronousServerSocketChannel,open(AsynchronousChannelGroup group),static AsynchronousServerSocketChannel
+AsynchronousServerSocketChannel,provider(),AsynchronousChannelProvider
+AsynchronousServerSocketChannel,"setOption(SocketOption<T> name, T value)",abstract <T> AsynchronousServerSocketChannel
+AsynchronousSocketChannel,bind(SocketAddress local),abstract AsynchronousSocketChannel
+AsynchronousSocketChannel,connect(SocketAddress remote),abstract Future<Void>
+AsynchronousSocketChannel,"connect(SocketAddress remote, A attachment, CompletionHandler<Void,? super A> handler)",abstract <A> void
+AsynchronousSocketChannel,getLocalAddress(),abstract SocketAddress
+AsynchronousSocketChannel,getRemoteAddress(),abstract SocketAddress
+AsynchronousSocketChannel,open(),static AsynchronousSocketChannel
+AsynchronousSocketChannel,open(AsynchronousChannelGroup group),static AsynchronousSocketChannel
+AsynchronousSocketChannel,provider(),AsynchronousChannelProvider
+AsynchronousSocketChannel,read(ByteBuffer dst),abstract Future<Integer>
+AsynchronousSocketChannel,"read(ByteBuffer[] dsts, int offset, int length, long timeout, TimeUnit unit, A attachment, CompletionHandler<Long,? super A> handler)",abstract <A> void
+AsynchronousSocketChannel,"read(ByteBuffer dst, A attachment, CompletionHandler<Integer,? super A> handler)",<A> void
+AsynchronousSocketChannel,"read(ByteBuffer dst, long timeout, TimeUnit unit, A attachment, CompletionHandler<Integer,? super A> handler)",abstract <A> void
+AsynchronousSocketChannel,"setOption(SocketOption<T> name, T value)",abstract <T> AsynchronousSocketChannel
+AsynchronousSocketChannel,shutdownInput(),abstract AsynchronousSocketChannel
+AsynchronousSocketChannel,shutdownOutput(),abstract AsynchronousSocketChannel
+AsynchronousSocketChannel,write(ByteBuffer src),abstract Future<Integer>
+AsynchronousSocketChannel,"write(ByteBuffer[] srcs, int offset, int length, long timeout, TimeUnit unit, A attachment, CompletionHandler<Long,? super A> handler)",abstract <A> void
+AsynchronousSocketChannel,"write(ByteBuffer src, A attachment, CompletionHandler<Integer,? super A> handler)",<A> void
+AsynchronousSocketChannel,"write(ByteBuffer src, long timeout, TimeUnit unit, A attachment, CompletionHandler<Integer,? super A> handler)",abstract <A> void
+Channels,newChannel(InputStream in),static ReadableByteChannel
+Channels,newChannel(OutputStream out),static WritableByteChannel
+Channels,newInputStream(AsynchronousByteChannel ch),static InputStream
+Channels,newInputStream(ReadableByteChannel ch),static InputStream
+Channels,newOutputStream(AsynchronousByteChannel ch),static OutputStream
+Channels,newOutputStream(WritableByteChannel ch),static OutputStream
+Channels,"newReader(ReadableByteChannel ch, CharsetDecoder dec, int minBufferCap)",static Reader
+Channels,"newReader(ReadableByteChannel ch, String csName)",static Reader
+Channels,"newWriter(WritableByteChannel ch, CharsetEncoder enc, int minBufferCap)",static Writer
+Channels,"newWriter(WritableByteChannel ch, String csName)",static Writer
+DatagramChannel,bind(SocketAddress local),abstract DatagramChannel
+DatagramChannel,connect(SocketAddress remote),abstract DatagramChannel
+DatagramChannel,disconnect(),abstract DatagramChannel
+DatagramChannel,getLocalAddress(),abstract SocketAddress
+DatagramChannel,getRemoteAddress(),abstract SocketAddress
+DatagramChannel,isConnected(),abstract boolean
+DatagramChannel,open(),static DatagramChannel
+DatagramChannel,open(ProtocolFamily family),static DatagramChannel
+DatagramChannel,read(ByteBuffer dst),abstract int
+DatagramChannel,read(ByteBuffer[] dsts),long
+DatagramChannel,"read(ByteBuffer[] dsts, int offset, int length)",abstract long
+DatagramChannel,receive(ByteBuffer dst),abstract SocketAddress
+DatagramChannel,"send(ByteBuffer src, SocketAddress target)",abstract int
+DatagramChannel,"setOption(SocketOption<T> name, T value)",abstract <T> DatagramChannel
+DatagramChannel,socket(),abstract DatagramSocket
+DatagramChannel,validOps(),int
+DatagramChannel,write(ByteBuffer src),abstract int
+DatagramChannel,write(ByteBuffer[] srcs),long
+DatagramChannel,"write(ByteBuffer[] srcs, int offset, int length)",abstract long
+FileChannel,force(boolean metaData),abstract void
+FileChannel,lock(),FileLock
+FileChannel,"lock(long position, long size, boolean shared)",abstract FileLock
+FileChannel,"map(FileChannel.MapMode mode, long position, long size)",abstract MappedByteBuffer
+FileChannel,"open(Path path, OpenOption... options)",static FileChannel
+FileChannel,"open(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)",static FileChannel
+FileChannel,position(),abstract long
+FileChannel,position(long newPosition),abstract FileChannel
+FileChannel,read(ByteBuffer dst),abstract int
+FileChannel,read(ByteBuffer[] dsts),long
+FileChannel,"read(ByteBuffer[] dsts, int offset, int length)",abstract long
+FileChannel,"read(ByteBuffer dst, long position)",abstract int
+FileChannel,size(),abstract long
+FileChannel,"transferFrom(ReadableByteChannel src, long position, long count)",abstract long
+FileChannel,"transferTo(long position, long count, WritableByteChannel target)",abstract long
+FileChannel,truncate(long size),abstract FileChannel
+FileChannel,tryLock(),FileLock
+FileChannel,"tryLock(long position, long size, boolean shared)",abstract FileLock
+FileChannel,write(ByteBuffer src),abstract int
+FileChannel,write(ByteBuffer[] srcs),long
+FileChannel,"write(ByteBuffer[] srcs, int offset, int length)",abstract long
+FileChannel,"write(ByteBuffer src, long position)",abstract int
+FileChannel.MapMode,toString(),String
+FileLock,acquiredBy(),Channel
+FileLock,channel(),FileChannel
+FileLock,close(),void
+FileLock,isShared(),boolean
+FileLock,isValid(),abstract boolean
+FileLock,"overlaps(long position, long size)",boolean
+FileLock,position(),long
+FileLock,release(),abstract void
+FileLock,size(),long
+FileLock,toString(),String
+MembershipKey,block(InetAddress source),abstract MembershipKey
+MembershipKey,channel(),abstract MulticastChannel
+MembershipKey,drop(),abstract void
+MembershipKey,group(),abstract InetAddress
+MembershipKey,isValid(),abstract boolean
+MembershipKey,networkInterface(),abstract NetworkInterface
+MembershipKey,sourceAddress(),abstract InetAddress
+MembershipKey,unblock(InetAddress source),abstract MembershipKey
+Pipe,open(),static Pipe
+Pipe,sink(),abstract Pipe.SinkChannel
+Pipe,source(),abstract Pipe.SourceChannel
+Pipe.SinkChannel,validOps(),int
+Pipe.SourceChannel,validOps(),int
+SelectableChannel,blockingLock(),abstract Object
+SelectableChannel,configureBlocking(boolean block),abstract SelectableChannel
+SelectableChannel,isBlocking(),abstract boolean
+SelectableChannel,isRegistered(),abstract boolean
+SelectableChannel,keyFor(Selector sel),abstract SelectionKey
+SelectableChannel,provider(),abstract SelectorProvider
+SelectableChannel,"register(Selector sel, int ops)",SelectionKey
+SelectableChannel,"register(Selector sel, int ops, Object att)",abstract SelectionKey
+SelectableChannel,validOps(),abstract int
+SelectionKey,attach(Object ob),Object
+SelectionKey,attachment(),Object
+SelectionKey,cancel(),abstract void
+SelectionKey,channel(),abstract SelectableChannel
+SelectionKey,interestOps(),abstract int
+SelectionKey,interestOps(int ops),abstract SelectionKey
+SelectionKey,isAcceptable(),boolean
+SelectionKey,isConnectable(),boolean
+SelectionKey,isReadable(),boolean
+SelectionKey,isValid(),abstract boolean
+SelectionKey,isWritable(),boolean
+SelectionKey,readyOps(),abstract int
+SelectionKey,selector(),abstract Selector
+Selector,close(),abstract void
+Selector,isOpen(),abstract boolean
+Selector,keys(),abstract Set<SelectionKey>
+Selector,open(),static Selector
+Selector,provider(),abstract SelectorProvider
+Selector,select(),abstract int
+Selector,select(long timeout),abstract int
+Selector,selectedKeys(),abstract Set<SelectionKey>
+Selector,selectNow(),abstract int
+Selector,wakeup(),abstract Selector
+ServerSocketChannel,accept(),abstract SocketChannel
+ServerSocketChannel,bind(SocketAddress local),ServerSocketChannel
+ServerSocketChannel,"bind(SocketAddress local, int backlog)",abstract ServerSocketChannel
+ServerSocketChannel,getLocalAddress(),abstract SocketAddress
+ServerSocketChannel,open(),static ServerSocketChannel
+ServerSocketChannel,"setOption(SocketOption<T> name, T value)",abstract <T> ServerSocketChannel
+ServerSocketChannel,socket(),abstract ServerSocket
+ServerSocketChannel,validOps(),int
+SocketChannel,bind(SocketAddress local),abstract SocketChannel
+SocketChannel,connect(SocketAddress remote),abstract boolean
+SocketChannel,finishConnect(),abstract boolean
+SocketChannel,getLocalAddress(),abstract SocketAddress
+SocketChannel,getRemoteAddress(),abstract SocketAddress
+SocketChannel,isConnected(),abstract boolean
+SocketChannel,isConnectionPending(),abstract boolean
+SocketChannel,open(),static SocketChannel
+SocketChannel,open(SocketAddress remote),static SocketChannel
+SocketChannel,read(ByteBuffer dst),abstract int
+SocketChannel,read(ByteBuffer[] dsts),long
+SocketChannel,"read(ByteBuffer[] dsts, int offset, int length)",abstract long
+SocketChannel,"setOption(SocketOption<T> name, T value)",abstract <T> SocketChannel
+SocketChannel,shutdownInput(),abstract SocketChannel
+SocketChannel,shutdownOutput(),abstract SocketChannel
+SocketChannel,socket(),abstract Socket
+SocketChannel,validOps(),int
+SocketChannel,write(ByteBuffer src),abstract int
+SocketChannel,write(ByteBuffer[] srcs),long
+SocketChannel,"write(ByteBuffer[] srcs, int offset, int length)",abstract long

@@ -1,0 +1,268 @@
+Sample: 0 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.AbstractBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean isBorderOpaque()`: This method returns whether the border is opaque.
+
+2. `public Insets getBorderInsets(Component c)`: This method returns the insets of the border.
+
+3. `public Insets getBorderInsets(Component c, Insets insets)`: This method returns the insets of the border.
+
+4. `public void paintBorder(Component c, Graphics g, int x, int y, int width, int height)`: This method paints the border for the specified component with the specified position and dimension.
+
+5. `public void paintBorder(Component c, Graphics g, int x, int y, int width, int height)`: This method paints the border for the specified component with the specified position and dimension.
+================================================================
+
+Sample: 1 BevelBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.BevelBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BevelBorder(int bevelType)`: This constructor creates a bevel border with the specified type.
+
+2. `BevelBorder(int bevelType, Color highlight, Color shadow)`: This constructor creates a bevel border with the specified type and colors.
+
+3. `BevelBorder(int bevelType, Color highlight, Color shadow, int highlightThickness, int shadowThickness)`: This constructor creates a bevel border with the specified type, colors, and thicknesses.
+
+4. `BevelBorder(int bevelType, Color highlight, Color shadow, int highlightThickness, int shadowThickness, boolean isHighlightHighlight, boolean isShadowShadow)`: This constructor creates a bevel border with the specified type, colors, thicknesses, and highlight and shadow directions.
+
+5. `BevelBorder(int bevelType, Color highlight, Color shadow, int highlightThickness, int shadowThickness, boolean isHighlightHighlight, boolean isShadowShadow, boolean isHighlightLowered, boolean isShadowLowered)`: This constructor creates a bevel border with the specified type, colors, thicknesses, highlight and shadow directions, and lowered highlight and shadow directions.
+================================================================
+
+Sample: 2 CompoundBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.CompoundBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 EmptyBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.EmptyBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 4 EtchedBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.EtchedBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `EtchedBorder(int etchType)`: This constructor creates an etched border with the specified etch type. The etch type is an integer that can be one of the following constants: `EtchedBorder.RAISED`, `EtchedBorder.LOWERED`, `EtchedBorder.MIDDLE`, `EtchedBorder.ETCHED`, `EtchedBorder.LOWERED_MIDDLE`, `EtchedBorder.RAISED_MIDDLE`, `EtchedBorder.LOWERED_HIGHLIGHT`, `EtchedBorder.RAISED_HIGHLIGHT`, `EtchedBorder.LOWERED_LOWERED`, `EtchedBorder.RAISED_LOWERED`, `EtchedBorder.LOWERED_RAISED`, `EtchedBorder.RAISED_RAISED`.
+
+2. `EtchedBorder(int etchType, Color highlight, Color shadow)`: This constructor creates an etched border with the specified etch type, highlight color, and shadow color.
+
+3. `EtchedBorder(int etchType, Color highlight, Color shadow, Insets borderInsets)`: This constructor creates an etched border with the specified etch type, highlight color, shadow color, and border insets.
+
+4. `EtchedBorder(int etchType, Color highlight, Color shadow, Insets borderInsets, boolean isOpaque)`: This constructor creates an etched border with the specified etch type, highlight color, shadow color, border insets, and opaque flag.
+
+5. `EtchedBorder(int etchType, Color highlight, Color shadow, Insets borderInsets, boolean isOpaque, boolean paintCenter)`: This constructor creates an etched border with the specified etch type, highlight color, shadow color, border insets, opaque flag, and paint center flag.
+================================================================
+
+Sample: 5 LineBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.LineBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LineBorder(Color lineColor, int thickness, boolean roundedCorners)`: This constructor creates a LineBorder with the specified line color, thickness, and whether or not the corners are rounded.
+
+2. `LineBorder(Color lineColor, int thickness)`: This constructor creates a LineBorder with the specified line color and thickness, and with rounded corners.
+
+3. `LineBorder(Color lineColor)`: This constructor creates a LineBorder with the specified line color and default thickness (1) and with rounded corners.
+
+4. `LineBorder()`: This constructor creates a LineBorder with the default line color (black) and default thickness (1) and with rounded corners.
+
+5. `setColor(Color c)`: This method sets the color of the border.
+
+6. `setThickness(int thickness)`: This method sets the thickness of the border.
+
+7. `setRoundedCorners(boolean rounded)`: This method sets whether or not the corners of the border are rounded.
+
+8. `getColor()`: This method returns the color of the border.
+
+9. `getThickness()`: This method returns the thickness of the border.
+
+10. `getRoundedCorners()`: This method returns whether or not the corners of the border are rounded.
+================================================================
+
+Sample: 6 MatteBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.MatteBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MatteBorder(int top, int left, int bottom, int right, Color matteColor)`: This constructor creates a border with the specified top, left, bottom, and right insets and the specified color.
+
+2. `MatteBorder(int top, int left, int bottom, int right, Color matteColor, boolean roundedCorners)`: This constructor creates a border with the specified top, left, bottom, and right insets, the specified color, and whether or not the corners are rounded.
+
+3. `MatteBorder(int top, int left, int bottom, int right, Color matteColor, int cornerType)`: This constructor creates a border with the specified top, left, bottom, and right insets, the specified color, and the type of corners.
+
+4. `MatteBorder(int top, int left, int bottom, int right, Color matteColor, int cornerType, boolean roundedCorners)`: This constructor creates a border with the specified top, left, bottom, and right insets, the specified color, the type of corners, and whether or not the corners are rounded.
+
+5. `MatteBorder(Insets insets, Color matteColor)`: This constructor creates a border with the specified insets and color.
+
+6. `MatteBorder(Insets insets, Color matteColor, boolean roundedCorners)`: This constructor creates a border with the specified insets, color, and whether or not the corners are rounded.
+
+7. `MatteBorder(Insets insets, Color matteColor, int cornerType)`: This constructor creates a border with the specified insets, color, and type of corners.
+
+8. `MatteBorder(Insets insets, Color matteColor, int cornerType, boolean roundedCorners)`: This constructor creates a border with the specified insets, color, type of corners, and whether or not the corners are rounded.
+================================================================
+
+Sample: 7 SoftBevelBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.SoftBevelBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SoftBevelBorder(int bevelType, Color highlight, Color shadow)`: This constructor creates a SoftBevelBorder with the specified bevel type, highlight color, and shadow color.
+
+2. `void setHighlightColor(Color newHighlight)`: This method sets the highlight color of this border.
+
+3. `void setShadowColor(Color newShadow)`: This method sets the shadow color of this border.
+
+4. `void setBevelType(int newBevelType)`: This method sets the bevel type of this border.
+
+5. `Color getHighlightColor()`: This method returns the highlight color of this border.
+
+6. `Color getShadowColor()`: This method returns the shadow color of this border.
+
+7. `int getBevelType()`: This method returns the bevel type of this border.
+
+8. `Insets getBorderInsets(Component c)`: This method returns the insets of this border.
+
+9. `boolean isBorderOpaque()`: This method returns true if this border is opaque; false otherwise.
+
+10. `void paintBorder(Component c, Graphics g, int x, int y, int width, int height)`: This method paints the border for the specified component with the specified position and dimension.
+================================================================
+
+Sample: 8 StrokeBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.StrokeBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StrokeBorder(float thickness, Color color)`: This constructor creates a border with the specified thickness and color.
+
+2. `StrokeBorder(float thickness, Color color, BasicStroke stroke)`: This constructor creates a border with the specified thickness, color, and stroke.
+
+3. `StrokeBorder(float thickness, Color color, BasicStroke stroke, boolean roundedCorners)`: This constructor creates a border with the specified thickness, color, stroke, and rounded corners.
+
+4. `StrokeBorder(float thickness, Color color, boolean roundedCorners)`: This constructor creates a border with the specified thickness, color, and rounded corners.
+
+5. `StrokeBorder(float thickness, Color color, boolean roundedCorners, boolean strokeCentered)`: This constructor creates a border with the specified thickness, color, rounded corners, and stroke centered.
+================================================================
+
+Sample: 9 TitledBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.border.TitledBorder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TitledBorder(String title)`: This constructor creates a titled border with the specified title.
+
+2. `void setTitle(String title)`: This method sets the title of the border.
+
+3. `String getTitle()`: This method returns the title of the border.
+
+4. `void setTitlePosition(int position)`: This method sets the position of the title.
+
+5. `int getTitlePosition()`: This method returns the position of the title.
+================================================================
+

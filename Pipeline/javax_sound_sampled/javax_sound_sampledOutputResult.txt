@@ -1,0 +1,168 @@
+Sample: AudioFormat_1
+----------------------------------------------------------------
+stdout:
+PCM_SIGNED
+
+================================================================
+
+Sample: AudioFormat_2
+----------------------------------------------------------------
+stdout:
+Sample Rate: 44100.0
+
+================================================================
+
+Sample: AudioFormat_3
+----------------------------------------------------------------
+stdout:
+Sample size in bits: 16
+
+================================================================
+
+Sample: AudioFormat_4
+----------------------------------------------------------------
+stdout:
+Number of channels: 2
+
+================================================================
+
+Sample: AudioFormat_5
+----------------------------------------------------------------
+stdout:
+Frame size: 4
+
+================================================================
+
+Sample: AudioFormat_6
+----------------------------------------------------------------
+stdout:
+Frame Rate: 44100.0
+
+================================================================
+
+Sample: AudioFormat_7
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: AudioInputStream_1
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: path_to_your_audio_file (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.desktop/com.sun.media.sound.SunFileReader.getAudioInputStream(SunFileReader.java:117)
+	at java.desktop/javax.sound.sampled.AudioSystem.getAudioInputStream(AudioSystem.java:1062)
+	at AudioInputStream_1.main(AudioInputStream_1.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: AudioInputStream_3
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/AudioInputStream_3.java:7: error: cannot find symbol
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(Main.class.getResource("/path/to/your/audio/file.wav"));
+                                                                                ^
+  symbol:   class Main
+  location: class AudioInputStream_3
+1 error
+
+
+================================================================
+
+Sample: AudioInputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: path_to_your_audio_file (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.desktop/com.sun.media.sound.SunFileReader.getAudioInputStream(SunFileReader.java:117)
+	at java.desktop/javax.sound.sampled.AudioSystem.getAudioInputStream(AudioSystem.java:1062)
+	at AudioInputStream_4.main(AudioInputStream_4.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BooleanControl_2
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/BooleanControl_2.java:13: error: cannot find symbol
+            BooleanControl booleanControl = (BooleanControl) clip.getControl(BooleanControl.Type.MASTER_GAIN);
+                                                                                                ^
+  symbol:   variable MASTER_GAIN
+  location: class Type
+1 error
+
+
+================================================================
+
+Sample: LineEvent_1
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/LineEvent_1.java:5: error: constructor LineEvent in class LineEvent cannot be applied to given types;
+        LineEvent event = new LineEvent(null, 0, 0, null, LineEvent.Type.OPEN);
+                          ^
+  required: Line,Type,long
+  found:    <null>,int,int,<null>,Type
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: Mixer_Info_2
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/Mixer_Info_2.java:5: error: cannot find symbol
+        Mixer.Info[] mixerInfo = Mixer.Info.getMixerInfos();
+                                           ^
+  symbol:   method getMixerInfos()
+  location: class Info
+1 error
+
+
+================================================================
+
+Sample: Mixer_Info_3
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/Mixer_Info_3.java:5: error: cannot find symbol
+        Mixer.Info[] mixerInfo = Mixer.Info.getMixerInfos();
+                                           ^
+  symbol:   method getMixerInfos()
+  location: class Info
+1 error
+
+
+================================================================
+
+Sample: Mixer_Info_4
+----------------------------------------------------------------
+output:
+./javax_sound_sampled/javaFiles/Mixer_Info_4.java:5: error: cannot find symbol
+        Mixer.Info[] mixerInfo = Mixer.Info.getMixerInfos();
+                                           ^
+  symbol:   method getMixerInfos()
+  location: class Info
+1 error
+
+
+================================================================
+

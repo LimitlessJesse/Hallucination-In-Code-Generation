@@ -1,0 +1,160 @@
+Sample: 0 DateTimeFormatterBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DateTimeFormatterBuilder appendPattern(String pattern) from java.time.format.DateTimeFormatterBuilder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `appendPattern(String pattern)` method in `DateTimeFormatterBuilder` is used to append a pattern string to the formatter. The pattern string is a sequence of characters that define the format of the date-time.
+
+Here is an example of how to use it:
+
+```java
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+    public static void main(String[] args) {
+        DateTimeFormatterBuilder builder = new DateTimeFormatterBuilder();
+        builder.appendPattern("dd-MM-yyyy");
+        DateTimeFormatter formatter = builder.toFormatter();
+        System.out.println(formatter);
+    }
+}
+```
+
+In this example, we create a `DateTimeFormatterBuilder`, append the pattern "dd-MM-yyyy" to it, and then convert it to a `DateTimeFormatter`. The `DateTimeFormatter` can then be used to format or parse date-time strings.
+
+Please note that the `appendPattern(String pattern)` method is a part of the `DateTimeFormatterBuilder` class, which is part of the Java 8 date and time API. If you are using an older version of Java, you may need to upgrade to use this method.
+================================================================
+
+Sample: 1 DateTimeFormatterBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DateTimeFormatterBuilder parseCaseInsensitive() from java.time.format.DateTimeFormatterBuilder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `parseCaseInsensitive()` method in `DateTimeFormatterBuilder` is used to parse a date-time string in a case-insensitive manner. It is used to parse a date-time string in a case-insensitive manner.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+
+public class Main {
+    public static void main(String[] args) {
+        DateTimeFormatterBuilder builder = new DateTimeFormatterBuilder();
+        builder.parseCaseInsensitive();
+        DateTimeFormatter formatter = builder.toFormatter();
+
+        String dateTimeString = "2022-01-01T12:00:00";
+        LocalDateTime dateTime = LocalDateTime.parse(dateTimeString, formatter);
+
+        System.out.println(dateTime);
+    }
+}
+```
+
+In this code snippet, we first create a `DateTimeFormatterBuilder` and then use the `parseCaseInsensitive()` method to make the formatter case-insensitive. We then create a `DateTimeFormatter` from the builder and use it to parse a date-time string. The result is printed to the console.
+================================================================
+
+Sample: 2 DecimalStyle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use char getDecimalSeparator() from java.time.format.DecimalStyle
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDecimalSeparator()` method from `java.time.format.DecimalStyle` class is used to get the decimal separator.
+
+Here is the complete code snippet:
+
+```java
+import java.time.format.DecimalStyle;
+
+public class Main {
+    public static void main(String[] args) {
+        DecimalStyle decimalStyle = DecimalStyle.getInstance();
+        char decimalSeparator = decimalStyle.getDecimalSeparator();
+        System.out.println("Decimal Separator: " + decimalSeparator);
+    }
+}
+```
+
+In this code snippet, we first import the `DecimalStyle` class from `java.time.format` package. Then we create an instance of `DecimalStyle` and call the `getDecimalSeparator()` method to get the decimal separator. Finally, we print the decimal separator.
+
+The output will be the decimal separator for the current locale. For example, if the locale is set to US, the output will be '.'. If the locale is set to France, the output will be ','.
+================================================================
+

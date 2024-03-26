@@ -1,0 +1,1611 @@
+Sample: AbstractMap_2
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: AbstractMap_3
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: AbstractMap_4
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/AbstractMap_4.java:5: error: <anonymous AbstractMap_4$1> is not abstract and does not override abstract method entrySet() in AbstractMap
+        AbstractMap<String, Integer> map = new AbstractMap<>() {
+                                                               ^
+1 error
+
+
+================================================================
+
+Sample: AbstractMap_5
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/AbstractMap_5.java:7: error: cannot find symbol
+            public V put(K key, V value) {
+                         ^
+  symbol: class K
+./java_util/javaFiles/AbstractMap_5.java:7: error: cannot find symbol
+            public V put(K key, V value) {
+                                ^
+  symbol: class V
+./java_util/javaFiles/AbstractMap_5.java:7: error: cannot find symbol
+            public V put(K key, V value) {
+                   ^
+  symbol: class V
+./java_util/javaFiles/AbstractMap_5.java:5: error: <anonymous AbstractMap_5$1> is not abstract and does not override abstract method entrySet() in AbstractMap
+        AbstractMap<String, Integer> map = new AbstractMap<>() {
+                                                               ^
+4 errors
+
+
+================================================================
+
+Sample: AbstractMap_SimpleEntry_5
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: AbstractMap_SimpleEntry_6
+----------------------------------------------------------------
+stdout:
+Hash code: 112004910
+
+================================================================
+
+Sample: AbstractMap_SimpleImmutableEntry_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: AbstractMap_SimpleImmutableEntry_2
+----------------------------------------------------------------
+stdout:
+Hash code: 69609673
+
+================================================================
+
+Sample: AbstractMap_SimpleImmutableEntry_3
+----------------------------------------------------------------
+stdout:
+Key
+
+================================================================
+
+Sample: AbstractMap_SimpleImmutableEntry_4
+----------------------------------------------------------------
+stdout:
+123
+
+================================================================
+
+Sample: AbstractMap_SimpleImmutableEntry_5
+----------------------------------------------------------------
+stdout:
+Before: Hello=1
+
+stderr:
+Exception in thread "main" java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractMap$SimpleImmutableEntry.setValue(AbstractMap.java:815)
+	at AbstractMap_SimpleImmutableEntry_5.main(AbstractMap_SimpleImmutableEntry_5.java:8)
+
+================================================================
+
+Sample: AbstractQueue_1
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/AbstractQueue_1.java:6: error: incompatible types: cannot infer type arguments for LinkedList<>
+        AbstractQueue<String> queue = new LinkedList<>();
+                                                    ^
+    reason: no instance(s) of type variable(s) E exist so that LinkedList<E> conforms to AbstractQueue<String>
+  where E is a type-variable:
+    E extends Object declared in class LinkedList
+1 error
+
+
+================================================================
+
+Sample: AbstractQueue_2
+----------------------------------------------------------------
+stdout:
+Queue before remove: [Hello, World]
+Queue after remove: [World]
+
+================================================================
+
+Sample: AbstractSequentialList_2
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/AbstractSequentialList_2.java:6: error: incompatible types: cannot infer type arguments for ArrayList<>
+        AbstractSequentialList<String> list = new ArrayList<>();
+                                                           ^
+    reason: no instance(s) of type variable(s) E exist so that ArrayList<E> conforms to AbstractSequentialList<String>
+  where E is a type-variable:
+    E extends Object declared in class ArrayList
+1 error
+
+
+================================================================
+
+Sample: AbstractSequentialList_3
+----------------------------------------------------------------
+stdout:
+Original list: [Hello, World]
+Updated list: [Hello, Java]
+
+================================================================
+
+Sample: ArrayDeque_1
+----------------------------------------------------------------
+stdout:
+true
+[Hello]
+
+================================================================
+
+Sample: ArrayDeque_2
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: ArrayDeque_3
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: ArrayDeque_4
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: ArrayDeque_5
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[World]
+
+================================================================
+
+Sample: ArrayDeque_6
+----------------------------------------------------------------
+stdout:
+Before poll: [Hello, World]
+After poll: [World]
+Head: Hello
+
+================================================================
+
+Sample: ArrayDeque_7
+----------------------------------------------------------------
+stdout:
+Deque: [First, Second, Third]
+Removed first element: First
+Updated Deque: [Second, Third]
+
+================================================================
+
+Sample: ArrayDeque_8
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+World
+[Hello]
+
+================================================================
+
+Sample: ArrayDeque_9
+----------------------------------------------------------------
+stdout:
+First element: First
+
+================================================================
+
+Sample: ArrayDeque_10
+----------------------------------------------------------------
+stdout:
+Last element: World
+
+================================================================
+
+Sample: ArrayDeque_11
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World, Hello]
+After removal: [World, Hello]
+
+================================================================
+
+Sample: ArrayDeque_12
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World, Hello]
+After removal: [Hello, World]
+
+================================================================
+
+Sample: ArrayDeque_13
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ArrayDeque_14
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: ArrayDeque_15
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ArrayDeque_16
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: ArrayDeque_17
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: ArrayDeque_20
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: ArrayDeque_21
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: ArrayList_1
+----------------------------------------------------------------
+stdout:
+true
+[Hello]
+
+================================================================
+
+Sample: ArrayList_2
+----------------------------------------------------------------
+stdout:
+[Hello, Java, World]
+
+================================================================
+
+Sample: ArrayList_3
+----------------------------------------------------------------
+stdout:
+[Hello, World, Java, Programming]
+
+================================================================
+
+Sample: ArrayList_4
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: ArrayList_5
+----------------------------------------------------------------
+stdout:
+Original list: [Hello, World, Java]
+List after removing: [Hello, Java]
+
+================================================================
+
+Sample: Base64_Encoder_1
+----------------------------------------------------------------
+stdout:
+SGVsbG8sIFdvcmxkIQ==
+
+================================================================
+
+Sample: Base64_Encoder_2
+----------------------------------------------------------------
+stdout:
+Original Input: Hello, World!
+Encoded String: SGVsbG8sIFdvcmxkIQ==
+
+================================================================
+
+Sample: BitSet_1
+----------------------------------------------------------------
+stdout:
+true
+true
+true
+false
+
+================================================================
+
+Sample: BitSet_4
+----------------------------------------------------------------
+stdout:
+3
+
+================================================================
+
+Sample: BitSet_5
+----------------------------------------------------------------
+stdout:
+Length of BitSet: 3
+
+================================================================
+
+Sample: Calendar_1
+----------------------------------------------------------------
+stdout:
+Year: 2024
+Month: 2
+Day: 8
+Hour: 23
+Minute: 16
+Second: 25
+Millisecond: 45
+
+================================================================
+
+Sample: Calendar_2
+----------------------------------------------------------------
+stdout:
+Sat Jan 01 23:16:26 CST 2022
+
+================================================================
+
+Sample: Calendar_3
+----------------------------------------------------------------
+stdout:
+Before adding: Fri Mar 08 23:16:27 CST 2024
+After adding: Wed Mar 13 23:16:27 CDT 2024
+
+================================================================
+
+Sample: Calendar_4
+----------------------------------------------------------------
+stdout:
+Current time in milliseconds: 1709961388794
+
+================================================================
+
+Sample: Calendar_5
+----------------------------------------------------------------
+stdout:
+Thu Dec 31 18:00:00 CST 2020
+
+================================================================
+
+Sample: Currency_1
+----------------------------------------------------------------
+stdout:
+USD
+
+================================================================
+
+Sample: Currency_2
+----------------------------------------------------------------
+stdout:
+Currency Code: USD
+
+================================================================
+
+Sample: Currency_3
+----------------------------------------------------------------
+stdout:
+US Dollar
+
+================================================================
+
+Sample: Currency_4
+----------------------------------------------------------------
+stdout:
+US Dollar
+
+================================================================
+
+Sample: Currency_5
+----------------------------------------------------------------
+stdout:
+Default fraction digits for US currency: 2
+
+================================================================
+
+Sample: Date_1
+----------------------------------------------------------------
+stdout:
+Is current date after specified date? true
+
+stderr:
+Note: ./java_util/javaFiles/Date_1.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Date_2
+----------------------------------------------------------------
+stdout:
+Is current date before specified date? false
+
+stderr:
+Note: ./java_util/javaFiles/Date_2.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Date_3
+----------------------------------------------------------------
+stdout:
+date1 is after date2
+
+stderr:
+Note: ./java_util/javaFiles/Date_3.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Date_4
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Date_5
+----------------------------------------------------------------
+stdout:
+The number of milliseconds since January 1, 1970, 00:00:00 GMT is: 1709961402314
+
+================================================================
+
+Sample: DoubleSummaryStatistics_1
+----------------------------------------------------------------
+stdout:
+6.0
+
+================================================================
+
+Sample: DoubleSummaryStatistics_2
+----------------------------------------------------------------
+stdout:
+Count: 5
+
+================================================================
+
+Sample: DoubleSummaryStatistics_5
+----------------------------------------------------------------
+stdout:
+Average: 3.0
+
+================================================================
+
+Sample: EnumMap_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: EnumMap_5
+----------------------------------------------------------------
+stdout:
+{ONE=One, TWO=Two}
+{}
+
+================================================================
+
+Sample: GregorianCalendar_1
+----------------------------------------------------------------
+stdout:
+Is 2020 a leap year? true
+
+================================================================
+
+Sample: GregorianCalendar_2
+----------------------------------------------------------------
+stdout:
+Maximum day of the month: 31
+Maximum month of the year: 11
+Maximum year: 292278994
+
+================================================================
+
+Sample: GregorianCalendar_3
+----------------------------------------------------------------
+stdout:
+Minimum day: 1
+Minimum month: 0
+Minimum year: 1
+
+================================================================
+
+Sample: GregorianCalendar_4
+----------------------------------------------------------------
+stderr:
+Note: ./java_util/javaFiles/GregorianCalendar_4.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: GregorianCalendar_5
+----------------------------------------------------------------
+stdout:
+The Gregorian calendar reform date is: Thu Oct 04 18:00:00 CST 1582
+
+================================================================
+
+Sample: HashMap_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: HashMap_2
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: HashMap_3
+----------------------------------------------------------------
+stdout:
+{One=1, Two=2, Three=3}
+
+================================================================
+
+Sample: HashMap_4
+----------------------------------------------------------------
+stdout:
+Before removal: {One=1, Two=2, Three=3}
+Removed value: 2
+After removal: {One=1, Three=3}
+
+================================================================
+
+Sample: HashMap_5
+----------------------------------------------------------------
+stdout:
+Size of the HashMap: 3
+
+================================================================
+
+Sample: HashSet_1
+----------------------------------------------------------------
+stdout:
+true
+[Hello]
+
+================================================================
+
+Sample: HashSet_2
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: HashSet_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: HashSet_4
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World]
+After removal: [World]
+
+================================================================
+
+Sample: HashSet_5
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: Hashtable_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: IdentityHashMap_1
+----------------------------------------------------------------
+stdout:
+Does the map contain the key 'Two'? true
+
+================================================================
+
+Sample: IdentityHashMap_2
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: IdentityHashMap_3
+----------------------------------------------------------------
+stdout:
+Key: Two, Value: 2
+Key: Three, Value: 3
+Key: One, Value: 1
+
+================================================================
+
+Sample: IdentityHashMap_4
+----------------------------------------------------------------
+stdout:
+1
+
+================================================================
+
+Sample: IdentityHashMap_5
+----------------------------------------------------------------
+stdout:
+Is the map empty? false
+Is the map empty after clearing? true
+
+================================================================
+
+Sample: IntSummaryStatistics_1
+----------------------------------------------------------------
+stdout:
+Count: 5
+
+================================================================
+
+Sample: IntSummaryStatistics_2
+----------------------------------------------------------------
+stdout:
+Average: 3.0
+
+================================================================
+
+Sample: IntSummaryStatistics_3
+----------------------------------------------------------------
+stdout:
+Sum: 15
+
+================================================================
+
+Sample: IntSummaryStatistics_4
+----------------------------------------------------------------
+stdout:
+Minimum value: 10
+
+================================================================
+
+Sample: IntSummaryStatistics_5
+----------------------------------------------------------------
+stdout:
+Max: 30
+
+================================================================
+
+Sample: LinkedHashMap_3
+----------------------------------------------------------------
+stdout:
+Initial map: {One=1, Two=2, Three=3}
+After clear: {}
+
+================================================================
+
+Sample: LinkedList_1
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: LinkedList_2
+----------------------------------------------------------------
+stdout:
+[Hello, Java, World]
+
+================================================================
+
+Sample: LinkedList_3
+----------------------------------------------------------------
+stdout:
+[Hello, World, Java, Programming]
+
+================================================================
+
+Sample: LinkedList_4
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: LinkedList_5
+----------------------------------------------------------------
+stdout:
+Original list: [Hello, World]
+Updated list: [Hello, Java]
+
+================================================================
+
+Sample: Locale_Builder_2
+----------------------------------------------------------------
+stdout:
+en_US
+
+================================================================
+
+Sample: Locale_Builder_3
+----------------------------------------------------------------
+stdout:
+_US
+
+================================================================
+
+Sample: Locale_Builder_4
+----------------------------------------------------------------
+stdout:
+en_US_POSIX
+
+================================================================
+
+Sample: Locale_Builder_5
+----------------------------------------------------------------
+stdout:
+en__#Latn
+
+================================================================
+
+Sample: Locale_Builder_6
+----------------------------------------------------------------
+stdout:
+en_US
+
+================================================================
+
+Sample: Locale_LanguageRange_2
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Locale_LanguageRange_3
+----------------------------------------------------------------
+stdout:
+1072836438
+
+================================================================
+
+Sample: LongSummaryStatistics_1
+----------------------------------------------------------------
+stdout:
+Count: 10
+
+================================================================
+
+Sample: LongSummaryStatistics_2
+----------------------------------------------------------------
+stdout:
+Sum: 60
+
+================================================================
+
+Sample: LongSummaryStatistics_3
+----------------------------------------------------------------
+stdout:
+Minimum value: 10
+
+================================================================
+
+Sample: LongSummaryStatistics_4
+----------------------------------------------------------------
+stdout:
+Max: 30
+
+================================================================
+
+Sample: LongSummaryStatistics_5
+----------------------------------------------------------------
+stdout:
+Average: 20.0
+
+================================================================
+
+Sample: Objects_1
+----------------------------------------------------------------
+stdout:
+true
+false
+false
+
+================================================================
+
+Sample: Objects_2
+----------------------------------------------------------------
+stdout:
+Hash code of str1: 69609650
+Hash code of str2: 83766130
+
+================================================================
+
+Sample: Objects_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Objects_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Observable_1
+----------------------------------------------------------------
+stderr:
+Note: ./java_util/javaFiles/Observable_1.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Observable_2
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/Observable_2.java:10: error: setChanged() has protected access in Observable
+        observable.setChanged();
+                  ^
+Note: ./java_util/javaFiles/Observable_2.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+
+
+================================================================
+
+Sample: Observable_3
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/Observable_3.java:10: error: setChanged() has protected access in Observable
+        observable.setChanged();
+                  ^
+Note: ./java_util/javaFiles/Observable_3.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+
+
+================================================================
+
+Sample: Observable_4
+----------------------------------------------------------------
+stdout:
+Data has changed!
+false
+
+stderr:
+Note: ./java_util/javaFiles/Observable_4.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Observable_5
+----------------------------------------------------------------
+stdout:
+Number of observers: 2
+
+stderr:
+Note: ./java_util/javaFiles/Observable_5.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Observable_6
+----------------------------------------------------------------
+stderr:
+Note: ./java_util/javaFiles/Observable_6.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+error: can't find main(String[]) method in class: MyObservable
+
+================================================================
+
+Sample: Observable_7
+----------------------------------------------------------------
+stdout:
+Received update: Hello, World!
+
+stderr:
+Note: ./java_util/javaFiles/Observable_7.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Observable_8
+----------------------------------------------------------------
+stdout:
+State has changed
+
+stderr:
+Note: ./java_util/javaFiles/Observable_8.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Observable_9
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/Observable_9.java:7: error: setChanged() has protected access in Observable
+        observable.setChanged();
+                  ^
+./java_util/javaFiles/Observable_9.java:9: error: clearChanged() has protected access in Observable
+        observable.clearChanged();
+                  ^
+Note: ./java_util/javaFiles/Observable_9.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+
+
+================================================================
+
+Sample: Optional_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Optional_2
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: Optional_3
+----------------------------------------------------------------
+stdout:
+Default Value
+
+================================================================
+
+Sample: Optional_4
+----------------------------------------------------------------
+stdout:
+Default value
+
+================================================================
+
+Sample: OptionalLong_1
+----------------------------------------------------------------
+stdout:
+100
+
+================================================================
+
+Sample: OptionalLong_2
+----------------------------------------------------------------
+stdout:
+OptionalLong.empty
+
+================================================================
+
+Sample: OptionalLong_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: OptionalLong_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.util.NoSuchElementException: No value present
+	at java.base/java.util.OptionalLong.getAsLong(OptionalLong.java:130)
+	at OptionalLong_4.main(OptionalLong_4.java:6)
+
+================================================================
+
+Sample: OptionalLong_5
+----------------------------------------------------------------
+stdout:
+10
+20
+
+================================================================
+
+Sample: PriorityQueue_1
+----------------------------------------------------------------
+stdout:
+Element added successfully: true
+
+================================================================
+
+Sample: PriorityQueue_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PriorityQueue_4
+----------------------------------------------------------------
+stdout:
+Element added successfully: true
+
+================================================================
+
+Sample: PriorityQueue_5
+----------------------------------------------------------------
+stdout:
+Queue: [Hello, World]
+Removed element: Hello
+Queue after poll: [World]
+
+================================================================
+
+Sample: PropertyPermission_1
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: PropertyPermission_2
+----------------------------------------------------------------
+stdout:
+Are the permissions equal? true
+
+================================================================
+
+Sample: PropertyPermission_3
+----------------------------------------------------------------
+stdout:
+Hash code: 560567564
+
+================================================================
+
+Sample: PropertyPermission_4
+----------------------------------------------------------------
+stdout:
+read
+
+================================================================
+
+Sample: Random_1
+----------------------------------------------------------------
+stdout:
+Random number: 649719159
+
+================================================================
+
+Sample: Random_2
+----------------------------------------------------------------
+stdout:
+Random number: 4
+
+================================================================
+
+Sample: Random_3
+----------------------------------------------------------------
+stdout:
+-7941422958857432647
+
+================================================================
+
+Sample: Random_4
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Random_5
+----------------------------------------------------------------
+stdout:
+Random float: 0.68171895
+
+================================================================
+
+Sample: ResourceBundle_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.util.MissingResourceException: Can't find bundle for base name MyBundle, locale en_CA
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2045)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1683)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1586)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1549)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:858)
+	at ResourceBundle_2.main(ResourceBundle_2.java:6)
+
+================================================================
+
+Sample: ResourceBundle_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.util.MissingResourceException: Can't find bundle for base name MyBundle, locale en_CA
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2045)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1683)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1586)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1549)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:858)
+	at ResourceBundle_3.main(ResourceBundle_3.java:5)
+
+================================================================
+
+Sample: ResourceBundle_4
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/ResourceBundle_4.java:14: error: class UTF8Control is public, should be declared in a file named UTF8Control.java
+public class UTF8Control extends Control {
+       ^
+./java_util/javaFiles/ResourceBundle_4.java:3: error: cannot find symbol
+import java.util.Control;
+                ^
+  symbol:   class Control
+  location: package java.util
+./java_util/javaFiles/ResourceBundle_4.java:14: error: cannot find symbol
+public class UTF8Control extends Control {
+                                 ^
+  symbol: class Control
+./java_util/javaFiles/ResourceBundle_4.java:19: error: cannot find symbol
+        String bundleName = toBundleName(baseName, locale);
+                            ^
+  symbol:   method toBundleName(String,Locale)
+  location: class UTF8Control
+./java_util/javaFiles/ResourceBundle_4.java:20: error: cannot find symbol
+        String resourceName = toResourceName(bundleName, "properties");
+                              ^
+  symbol:   method toResourceName(String,String)
+  location: class UTF8Control
+./java_util/javaFiles/ResourceBundle_4.java:37: error: cannot find symbol
+                bundle = new PropertyResourceBundle(new InputStreamReader(stream, "UTF-8"));
+                             ^
+  symbol:   class PropertyResourceBundle
+  location: class UTF8Control
+6 errors
+
+
+================================================================
+
+Sample: ResourceBundle_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.util.MissingResourceException: Can't find bundle for base name MyBundle, locale en_CA
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2045)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1683)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1586)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1549)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:932)
+	at ResourceBundle_5.main(ResourceBundle_5.java:6)
+
+================================================================
+
+Sample: Scanner_1
+----------------------------------------------------------------
+stdout:
+Enter a number: 
+Has next: true
+
+================================================================
+
+Sample: Scanner_2
+----------------------------------------------------------------
+stdout:
+Enter a string:
+You entered: in
+
+================================================================
+
+Sample: Scanner_3
+----------------------------------------------------------------
+stdout:
+Enter an integer: 
+
+stderr:
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Scanner_3.main(Scanner_3.java:7)
+
+================================================================
+
+Sample: Scanner_4
+----------------------------------------------------------------
+stdout:
+Enter a double:
+
+stderr:
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at Scanner_4.main(Scanner_4.java:7)
+
+================================================================
+
+Sample: Scanner_5
+----------------------------------------------------------------
+stdout:
+in case
+
+================================================================
+
+Sample: Spliterators_AbstractDoubleSpliterator_4
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/Spliterators_AbstractDoubleSpliterator_4.java:5: error: type AbstractDoubleSpliterator does not take parameters
+        Spliterators.AbstractDoubleSpliterator<?> spliterator = null; // replace with your AbstractDoubleSpliterator instance
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: Spliterators_AbstractLongSpliterator_1
+----------------------------------------------------------------
+output:
+./java_util/javaFiles/Spliterators_AbstractLongSpliterator_1.java:7: error: incompatible types: OfLong cannot be converted to AbstractLongSpliterator
+        Spliterators.AbstractLongSpliterator spliterator = longStream.spliterator();
+                                                                                 ^
+1 error
+
+
+================================================================
+
+Sample: SplittableRandom_2
+----------------------------------------------------------------
+stdout:
+3081944600594502161
+
+================================================================
+
+Sample: SplittableRandom_3
+----------------------------------------------------------------
+stdout:
+0.6486298386960684
+
+================================================================
+
+Sample: SplittableRandom_4
+----------------------------------------------------------------
+stdout:
+9
+
+================================================================
+
+Sample: SplittableRandom_5
+----------------------------------------------------------------
+stdout:
+Generated random long: 70
+
+================================================================
+
+Sample: Stack_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Stack_2
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: Stack_3
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+Popped: World
+[Hello]
+
+================================================================
+
+Sample: Stack_4
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: Stack_5
+----------------------------------------------------------------
+stdout:
+Java found at position 1 from the top of the stack
+
+================================================================
+
+Sample: StringJoiner_4
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+
+================================================================
+
+Sample: StringJoiner_5
+----------------------------------------------------------------
+stdout:
+13
+
+================================================================
+
+Sample: StringTokenizer_4
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: StringTokenizer_5
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: Timer_2
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: Timer_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: Timer_4
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: Timer_5
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: TimerTask_1
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: TimerTask_2
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: TimerTask_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: TreeMap_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: TreeMap_2
+----------------------------------------------------------------
+stdout:
+2
+null
+
+================================================================
+
+Sample: TreeMap_3
+----------------------------------------------------------------
+stdout:
+{One=1, Three=3, Two=2}
+
+================================================================
+
+Sample: TreeMap_4
+----------------------------------------------------------------
+stdout:
+Original TreeMap: {One=1, Three=3, Two=2}
+TreeMap after removing key 'Two': {One=1, Three=3}
+
+================================================================
+
+Sample: TreeMap_5
+----------------------------------------------------------------
+stdout:
+Size of the TreeMap: 3
+
+================================================================
+
+Sample: TreeSet_1
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: TreeSet_2
+----------------------------------------------------------------
+stdout:
+Is added: true
+TreeSet: [Elements, Hello, New, World]
+
+================================================================
+
+Sample: TreeSet_3
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: TreeSet_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: UUID_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NumberFormatException: Error at index 6 in: "a2c31exxxxx"
+	at java.base/java.lang.NumberFormatException.forCharSequence(NumberFormatException.java:83)
+	at java.base/java.lang.Long.parseLong(Long.java:794)
+	at java.base/java.util.UUID.fromString1(UUID.java:290)
+	at java.base/java.util.UUID.fromString(UUID.java:258)
+	at UUID_1.main(UUID_1.java:6)
+
+================================================================
+
+Sample: UUID_2
+----------------------------------------------------------------
+stdout:
+Generated UUID: 0f1e4252-b955-46d4-9a9d-d633d17ccb53
+
+================================================================
+
+Sample: UUID_3
+----------------------------------------------------------------
+stdout:
+UUID 1: a27a65d6-5bf5-40b4-a70a-ec65c2687416
+UUID 2: 5bee8c3e-b92c-4e95-a6f5-8584b2ca5932
+UUID 1 is less than UUID 2
+
+================================================================
+
+Sample: UUID_4
+----------------------------------------------------------------
+stdout:
+Hash code: -992661540
+
+================================================================
+
+Sample: UUID_5
+----------------------------------------------------------------
+stdout:
+fd612374-e769-47f9-b6de-ec304af478bc
+
+================================================================
+
+Sample: Vector_1
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: Vector_2
+----------------------------------------------------------------
+stdout:
+[Hello, World, Java, Programming]
+
+================================================================
+
+Sample: Vector_3
+----------------------------------------------------------------
+stdout:
+Before clear: [Hello, World]
+After clear: []
+
+================================================================
+
+Sample: Vector_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Vector_5
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: WeakHashMap_3
+----------------------------------------------------------------
+stdout:
+{key1=value1, key2=value2}
+{}
+
+================================================================
+
+Sample: WeakHashMap_4
+----------------------------------------------------------------
+stdout:
+false
+true
+
+================================================================
+
+Sample: WeakHashMap_5
+----------------------------------------------------------------
+stdout:
+Size of weakHashMap: 3
+
+================================================================
+

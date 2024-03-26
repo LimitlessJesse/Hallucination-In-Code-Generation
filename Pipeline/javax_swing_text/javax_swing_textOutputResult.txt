@@ -1,0 +1,200 @@
+Sample: AbstractDocument_1
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/AbstractDocument_1.java:8: error: no suitable constructor found for AbstractDocument(no arguments)
+        AbstractDocument doc = new AbstractDocument() {
+                               ^
+    constructor AbstractDocument.AbstractDocument(Content) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor AbstractDocument.AbstractDocument(Content,AttributeContext) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_swing_text/javaFiles/AbstractDocument_1.java:8: error: <anonymous AbstractDocument_1$1> is not abstract and does not override abstract method getParagraphElement(int) in AbstractDocument
+        AbstractDocument doc = new AbstractDocument() {
+                                                      ^
+2 errors
+
+
+================================================================
+
+Sample: DefaultCaret_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultCaret_4
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: DefaultCaret_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultFormatter_3
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/DefaultFormatter_3.java:6: error: unreported exception ParseException; must be caught or declared to be thrown
+        String result = formatter.valueToString(123);
+                                               ^
+1 error
+
+
+================================================================
+
+Sample: DefaultFormatter_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultStyledDocument_4
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/DefaultStyledDocument_4.java:10: error: cannot find symbol
+        AttributeSet a = sc.addAttribute(sc.getEmptySet(), StyleConstants.Foreground, Color.red);
+                                                                                      ^
+  symbol:   variable Color
+  location: class DefaultStyledDocument_4
+1 error
+
+
+================================================================
+
+Sample: DefaultStyledDocument_5
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/DefaultStyledDocument_5.java:8: error: cannot find symbol
+        StyledDocument doc = new DefaultStyledDocument();
+                                 ^
+  symbol:   class DefaultStyledDocument
+  location: class DefaultStyledDocument_5
+./javax_swing_text/javaFiles/DefaultStyledDocument_5.java:10: error: incompatible types: AttributeSet cannot be converted to MutableAttributeSet
+        StyleConstants.setFontFamily(attr, "Arial");
+                                     ^
+./javax_swing_text/javaFiles/DefaultStyledDocument_5.java:11: error: incompatible types: AttributeSet cannot be converted to MutableAttributeSet
+        StyleConstants.setFontSize(attr, 12);
+                                   ^
+./javax_swing_text/javaFiles/DefaultStyledDocument_5.java:12: error: cannot find symbol
+        StyleConstants.setForeground(attr, Color.BLACK);
+                                           ^
+  symbol:   variable Color
+  location: class DefaultStyledDocument_5
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+
+================================================================
+
+Sample: JTextComponent_4
+----------------------------------------------------------------
+================================================================
+
+Sample: MaskFormatter_2
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/MaskFormatter_2.java:8: error: cannot find symbol
+            maskFormatter.setValue(12.3456);
+                         ^
+  symbol:   method setValue(double)
+  location: variable maskFormatter of type MaskFormatter
+./javax_swing_text/javaFiles/MaskFormatter_2.java:9: error: cannot find symbol
+            String formattedValue = maskFormatter.valueToString(maskFormatter.getValue());
+                                                                             ^
+  symbol:   method getValue()
+  location: variable maskFormatter of type MaskFormatter
+2 errors
+
+
+================================================================
+
+Sample: MaskFormatter_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+	at MaskFormatter_3.main(MaskFormatter_3.java:9)
+
+================================================================
+
+Sample: PlainDocument_1
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: Segment_1
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/Segment_1.java:5: error: incompatible types: String cannot be converted to char[]
+        Segment segment = new Segment("Hello World", 0, 5);
+                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: Segment_2
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/Segment_2.java:6: error: cannot find symbol
+        segment.setEndIndex(10);
+               ^
+  symbol:   method setEndIndex(int)
+  location: variable segment of type Segment
+1 error
+
+
+================================================================
+
+Sample: Segment_3
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/Segment_3.java:5: error: no suitable constructor found for Segment(String)
+        Segment segment = new Segment("Hello World");
+                          ^
+    constructor Segment.Segment() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Segment.Segment(char[],int,int) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: StyledEditorKit_ItalicAction_1
+----------------------------------------------------------------
+output:
+./javax_swing_text/javaFiles/StyledEditorKit_ItalicAction_1.java:24: error: cannot find symbol
+                Element[] elements = textComponent.getDocument().getDefaultRootElement().getElements();
+                                                                                        ^
+  symbol:   method getElements()
+  location: interface Element
+./javax_swing_text/javaFiles/StyledEditorKit_ItalicAction_1.java:26: error: cannot find symbol
+                    textComponent.setCharacterAttributes(aset, false);
+                                 ^
+  symbol:   method setCharacterAttributes(AttributeSet,boolean)
+  location: variable textComponent of type JTextComponent
+./javax_swing_text/javaFiles/StyledEditorKit_ItalicAction_1.java:27: error: cannot find symbol
+                    textComponent.processUpdates(elements[i]);
+                                 ^
+  symbol:   method processUpdates(Element)
+  location: variable textComponent of type JTextComponent
+3 errors
+
+
+================================================================
+
+Sample: StyledEditorKit_UnderlineAction_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at StyledEditorKit_UnderlineAction_5.main(StyledEditorKit_UnderlineAction_5.java:7)
+
+================================================================
+

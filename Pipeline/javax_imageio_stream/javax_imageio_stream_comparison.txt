@@ -1,0 +1,213 @@
+Sample: 0 FileCacheImageInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.FileCacheImageInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+================================================================
+
+Sample: 1 FileCacheImageOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.FileCacheImageOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 2 FileImageInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.FileImageInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean read(byte[] b)`: This method reads the next bytes from the stream and stores them into the byte array b.
+
+2. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+3. `int skipBytes(int n)`: This method skips over and discards n bytes of data from the input stream.
+
+4. `boolean readFully(byte[] b)`: This method reads the next bytes from the stream and stores them into the byte array b.
+
+5. `int length()`: This method returns the total length of the stream.
+================================================================
+
+Sample: 3 FileImageOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.FileImageOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void close()`: This method closes the stream and releases any system resources associated with it.
+
+2. `void flush()`: This method forces any buffered output bytes to be written out to the stream.
+
+3. `void write(int b)`: This method writes the specified byte to the output stream.
+
+4. `void write(byte[] b)`: This method writes the specified byte array to the output stream.
+
+5. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to the output stream.
+================================================================
+
+Sample: 4 IIOByteBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.IIOByteBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isEOF()`: This method returns true if the stream is at the end of the file.
+
+2. `int read()`: This method reads the next byte of data from the input stream.
+
+3. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+4. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+5. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+================================================================
+
+Sample: 5 ImageInputStreamImpl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.ImageInputStreamImpl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream. The value byte is returned as an int in the range 0 to 255. If no byte is available because the end of the stream has been reached, the value -1 is returned.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array b. The number of bytes read is returned as an integer.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes. The number of bytes actually read is returned as an integer.
+
+4. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 6 ImageOutputStreamImpl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.ImageOutputStreamImpl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void close()`: This method closes the ImageOutputStream.
+
+2. `void flush()`: This method flushes the ImageOutputStream.
+
+3. `int getByteArraySize()`: This method returns the size of the byte array.
+
+4. `int getStreamPosition()`: This method returns the current position in the stream.
+
+5. `void write(int b)`: This method writes the specified byte to the ImageOutputStream.
+================================================================
+
+Sample: 7 MemoryCacheImageInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.MemoryCacheImageInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+2. `int read()`: This method reads the next byte of data from the input stream.
+
+3. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+4. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 8 MemoryCacheImageOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.stream.MemoryCacheImageOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+

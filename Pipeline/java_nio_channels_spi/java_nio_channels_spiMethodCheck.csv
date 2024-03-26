@@ -1,0 +1,31 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractInterruptibleChannel,1,boolean isOpen(),True
+0,AbstractInterruptibleChannel,2,void close(),True
+0,AbstractInterruptibleChannel,3,void closeForWriting(),False
+0,AbstractInterruptibleChannel,4,void closeForReading(),False
+0,AbstractInterruptibleChannel,5,void finishConnect(),False
+1,AbstractSelectableChannel,1,boolean isOpen(),False
+1,AbstractSelectableChannel,2,void close() throws IOException,False
+1,AbstractSelectableChannel,3,boolean isConnected(),False
+1,AbstractSelectableChannel,4,"SelectionKey register(Selector sel, int ops, Object att) throws ClosedChannelException",True
+1,AbstractSelectableChannel,5,SelectionKey keyFor(Selector sel),True
+2,AbstractSelectionKey,1,boolean add(E e),False
+2,AbstractSelectionKey,2,void clear(),False
+2,AbstractSelectionKey,3,boolean contains(Object o),False
+2,AbstractSelectionKey,4,boolean remove(Object o),False
+2,AbstractSelectionKey,5,int size(),False
+3,AbstractSelector,1,SelectorProvider open(),False
+3,AbstractSelector,2,SelectorProvider provider(),True
+3,AbstractSelector,3,Selector openSelector(),False
+3,AbstractSelector,4,SelectorProvider select(Selector selector),False
+3,AbstractSelector,5,SelectorProvider close(),False
+4,AsynchronousChannelProvider,1,AsynchronousChannelProvider.openAsynchronousChannel(AsynchronousChannelType channelType),False
+4,AsynchronousChannelProvider,2,AsynchronousChannelProvider.openAsynchronousServerSocketChannel(),False
+4,AsynchronousChannelProvider,3,AsynchronousChannelProvider.openAsynchronousSocketChannel(InetSocketAddress remoteAddress),False
+4,AsynchronousChannelProvider,4,AsynchronousChannelProvider.provider(),False
+4,AsynchronousChannelProvider,5,AsynchronousChannelProvider.supportedChannelTypes(),False
+5,SelectorProvider,1,SelectorProvider newSelector(),False
+5,SelectorProvider,2,SelectorProvider openSelector(),False
+5,SelectorProvider,3,SelectorProvider openServerSocketChannel(),False
+5,SelectorProvider,4,SelectorProvider openSocketChannel(),False
+5,SelectorProvider,5,SelectorProvider openDatagramChannel(),False

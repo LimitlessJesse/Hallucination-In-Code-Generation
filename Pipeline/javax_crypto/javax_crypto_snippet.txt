@@ -1,0 +1,956 @@
+Sample: 0 Cipher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getBlockSize() from javax.crypto.Cipher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple code snippet that uses the `getBlockSize()` method from the `javax.crypto.Cipher` class:
+
+```java
+import javax.crypto.Cipher;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Cipher cipher = Cipher.getInstance("AES");
+            int blockSize = cipher.getBlockSize();
+            System.out.println("Block size: " + blockSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first get an instance of the `Cipher` class using the `getInstance()` method. Then we call the `getBlockSize()` method on the `Cipher` object to get the block size. The block size is the number of bytes in a block of data that the cipher operates on.
+
+Please note that the `getBlockSize()` method is not a part of the `Cipher` class, but it is a part of the `javax.crypto.Cipher` package. So, you need to import the `javax.crypto.Cipher` package to use this method.
+
+Also, this code snippet is using the `getInstance()` method which can throw a `NoSuchAlgorithmException` or `NoSuchPaddingException`. So, it is wrapped in a `try-catch` block to handle these exceptions.
+================================================================
+
+Sample: 1 Cipher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] doFinal(byte[] input) from javax.crypto.Cipher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `doFinal(byte[] input)` method from `javax.crypto.Cipher`.
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // Generate a secret key
+        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+        keyGenerator.init(128);
+        SecretKey secretKey = keyGenerator.generateKey();
+
+        // Create a cipher instance
+        Cipher cipher = Cipher.getInstance("AES");
+
+        // Initialize the cipher for encryption
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+
+        // The text to encrypt
+        String text = "Hello, World!";
+
+        // Encrypt the text
+        byte[] encrypted = cipher.doFinal(text.getBytes());
+
+        // Print the encrypted text
+        System.out.println("Encrypted: " + Base64.getEncoder().encodeToString(encrypted));
+
+        // Initialize the cipher for decryption
+        cipher.init(Cipher.DECRYPT_MODE, secretKey);
+
+        // Decrypt the text
+        byte[] decrypted = cipher.doFinal(encrypted);
+
+        // Print the decrypted text
+        System.out.println("Decrypted: " + new String(decrypted));
+    }
+}
+```
+
+In this example, we first generate a secret key using the AES algorithm. Then, we create a cipher instance and initialize it for encryption. We encrypt a string and print the result. After that, we initialize the cipher for decryption and decrypt the encrypted text. Finally, we print the decrypted text.
+
+Please note that this is a simple example and does not handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 2 Cipher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void init(int opmode, Key key, AlgorithmParameterSpec params) from javax.crypto.Cipher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `init(int opmode, Key key, AlgorithmParameterSpec params)` method is used to initialize the Cipher object with the specified mode, key, and parameters. Here is a complete code snippet of this method:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.IvParameterSpec;
+import java.security.SecureRandom;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // Generate a secret key
+        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+        keyGenerator.init(128); // block size is 128 bits
+        SecretKey secretKey = keyGenerator.generateKey();
+
+        // Generate an initialization vector
+        byte[] iv = new byte[16];
+        new SecureRandom().nextBytes(iv);
+        IvParameterSpec ivParameterSpec = new IvParameterSpec(iv);
+
+        // Initialize the Cipher
+        Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey, ivParameterSpec);
+
+        // Now you can use the cipher for encryption or decryption
+    }
+}
+```
+
+In this code snippet, we first generate a secret key using AES algorithm. Then we generate an initialization vector (iv) and use it to initialize the Cipher object in encryption mode. The Cipher object is then used for encryption.
+
+Please note that this is a simple example and does not cover all possible scenarios. For a real-world application, you would need to handle exceptions, and possibly use a different algorithm or mode.
+================================================================
+
+Sample: 3 CipherInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int read(byte[] b, int off, int len) from javax.crypto.CipherInputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `int read(byte[] b, int off, int len)` method from `javax.crypto.CipherInputStream`:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.Key;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeyException, IOException {
+        // Create a key
+        Key key = new javax.crypto.spec.SecretKeySpec(new byte[16], "AES");
+
+        // Create a cipher
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+
+        // Create a byte array input stream
+        ByteArrayInputStream bais = new ByteArrayInputStream("Hello, World!".getBytes());
+
+        // Create a cipher input stream
+        CipherInputStream cis = new CipherInputStream(bais, cipher);
+
+        // Create a byte array to hold the decrypted data
+        byte[] decryptedData = new byte[1024];
+
+        // Read data from the cipher input stream
+        int bytesRead = cis.read(decryptedData, 0, 1024);
+
+        // Print the decrypted data
+        System.out.println(new String(decryptedData, 0, bytesRead));
+    }
+}
+```
+
+This code snippet creates a cipher, initializes it with a key, and then uses it to encrypt a string. It then creates a cipher input stream from the byte array input stream and reads the encrypted data into a byte array. Finally, it prints the decrypted data.
+
+Please note that this code snippet is a simplified example and may not work as expected in a real-world scenario. It is also important to handle exceptions properly in a production environment.
+================================================================
+
+Sample: 4 CipherInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void close() from javax.crypto.CipherInputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `close()` method in `CipherInputStream` is used to close the stream and release any system resources associated with it. It does not perform any cryptographic operations.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherInputStream;
+import javax.crypto.CipherOutputStream;
+import javax.crypto.KeyGenerator;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.security.Key;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
+        keyGenerator.init(128);
+        Key key = keyGenerator.generateKey();
+
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        CipherOutputStream cipherOutputStream = new CipherOutputStream(outputStream, cipher);
+        cipherOutputStream.write("Hello, World!".getBytes());
+        cipherOutputStream.close();
+
+        CipherInputStream cipherInputStream = new CipherInputStream(new ByteArrayInputStream(outputStream.toByteArray()), cipher);
+        byte[] buffer = new byte[1024];
+        int read = cipherInputStream.read(buffer);
+        if (read!= -1) {
+            System.out.println(new String(buffer, 0, read));
+        }
+        cipherInputStream.close();
+    }
+}
+```
+
+In this example, we first generate a key using AES algorithm, then we create a cipher using this key. We then create a `CipherOutputStream` and write some data to it. After that, we create a `CipherInputStream` and read the data back. Finally, we close both streams.
+================================================================
+
+Sample: 5 CipherOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void write(int b) from javax.crypto.CipherOutputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `write(int b)` method from `javax.crypto.CipherOutputStream`:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherOutputStream;
+import java.io.OutputStream;
+import java.security.Key;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Key key = new javax.crypto.spec.SecretKeySpec("1234567890123456".getBytes(), "AES");
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        OutputStream out = new CipherOutputStream(System.out, cipher);
+        out.write("Hello, World!".getBytes());
+        out.close();
+    }
+}
+```
+
+In this code snippet, we first create a `Cipher` object using the `getInstance` method of the `Cipher` class. We then initialize the cipher with the `ENCRYPT_MODE` and a `Key` object.
+
+We then create a `CipherOutputStream` object, passing the `OutputStream` we want to write to and the `Cipher` object.
+
+Finally, we write a string to the `CipherOutputStream` using the `write` method, and close the `OutputStream`.
+
+Please note that this code snippet is a simple example and may not work as expected in a real-world scenario. It's also important to handle exceptions properly in a production environment.
+================================================================
+
+Sample: 6 CipherOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void write(byte[] b) from javax.crypto.CipherOutputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `write(byte[] b)` method from `javax.crypto.CipherOutputStream`:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
+
+public class Main {
+    public static void main(String[] args) throws IOException, GeneralSecurityException {
+        Cipher cipher = Cipher.getInstance("AES");
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        CipherOutputStream cipherOutputStream = new CipherOutputStream(outputStream, cipher);
+
+        String text = "Hello, World!";
+        byte[] bytes = text.getBytes();
+
+        cipherOutputStream.write(bytes);
+        cipherOutputStream.flush();
+
+        byte[] encryptedBytes = outputStream.toByteArray();
+        System.out.println(new String(encryptedBytes));
+    }
+}
+```
+
+In this example, we are using the AES encryption algorithm. The `write(byte[] b)` method is used to write the bytes to the output stream. The `flush()` method is used to ensure that all bytes are written to the underlying output stream.
+
+Please note that you need to replace `"AES"` with the actual encryption algorithm you want to use. Also, you need to handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 7 CipherOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void write(byte[] b, int off, int len) from javax.crypto.CipherOutputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `write(byte[] b, int off, int len)` method from `javax.crypto.CipherOutputStream`:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherOutputStream;
+import java.io.OutputStream;
+import java.security.Key;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Key key =...; // your key
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+        OutputStream out =...; // your output stream
+        CipherOutputStream cos = new CipherOutputStream(out, cipher);
+
+        byte[] data = "Hello, World!".getBytes();
+        cos.write(data, 0, data.length);
+        cos.flush();
+    }
+}
+```
+
+In this example, we are using AES encryption. You need to replace `...` with your own key and output stream.
+
+This code snippet creates a new `CipherOutputStream`, which is a filter output stream that transforms the data written to the output stream using the specified cipher. The `write(byte[] b, int off, int len)` method writes the specified byte array to the output stream.
+
+Please note that you need to handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 8 CipherOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void flush() from javax.crypto.CipherOutputStream
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void flush()` method in `javax.crypto.CipherOutputStream` is used to flush the output stream. It forces any buffered output bytes to be written out to the underlying stream.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.crypto.Cipher;
+import javax.crypto.CipherOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Cipher cipher = Cipher.getInstance("AES");
+            FileOutputStream fileOut = new FileOutputStream("output.txt");
+            CipherOutputStream cipherOut = new CipherOutputStream(fileOut, cipher);
+
+            // Write some data to the cipher output stream
+            String data = "Hello, World!";
+            cipherOut.write(data.getBytes());
+
+            // Flush the cipher output stream
+            cipherOut.flush();
+
+            // Close the cipher output stream
+            cipherOut.close();
+        } catch (NoSuchAlgorithmException | InvalidKeyException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we first create a `Cipher` object using the `getInstance` method of the `Cipher` class. We then create a `FileOutputStream` and a `CipherOutputStream` using the `Cipher` object and the `FileOutputStream`.
+
+We write some data to the `CipherOutputStream` using the `write` method. After that, we call the `flush` method of the `CipherOutputStream` to ensure that all buffered data is written to the underlying stream.
+
+Finally, we close the `CipherOutputStream` using the `close` method.
+================================================================
+
+Sample: 9 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Mac getInstance(String algorithm) from javax.crypto.Mac
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `getInstance(String algorithm)` method from the `javax.crypto.Mac` class:
+
+```java
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new Mac instance
+            Mac mac = Mac.getInstance("HmacSHA256");
+
+            // Create a secret key
+            SecretKeySpec secretKey = new SecretKeySpec("mySecretKey".getBytes(), "HmacSHA256");
+
+            // Initialize the Mac with the secret key
+            mac.init(secretKey);
+
+            // Update the Mac with some data
+            mac.update("Hello, World!".getBytes());
+
+            // Compute the Mac
+            byte[] macBytes = mac.doFinal();
+
+            // Print the Mac
+            System.out.println("Mac: " + new String(macBytes));
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we're using the HmacSHA256 algorithm to create a new `Mac` instance. We then create a `SecretKeySpec` with a secret key and initialize the `Mac` with this key. After that, we update the `Mac` with some data and finally compute the `Mac`. The result is printed to the console.
+
+Please note that you need to have the necessary permissions and the necessary libraries to run this code. Also, the `SecretKeySpec` constructor requires a byte array as the first argument, so you need to convert your secret key to a byte array.
+================================================================
+
+Sample: 10 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void init(Key key) from javax.crypto.Mac
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `init(Key key)` method in the `javax.crypto.Mac` class is used to initialize the Mac object with the specified key.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new Mac object with the HmacSHA256 algorithm
+            Mac mac = Mac.getInstance("HmacSHA256");
+
+            // Create a secret key
+            byte[] secretKeyBytes = "mySecretKey".getBytes();
+            SecretKeySpec secretKey = new SecretKeySpec(secretKeyBytes, "HmacSHA256");
+
+            // Initialize the Mac object with the secret key
+            mac.init(secretKey);
+
+            System.out.println("Mac object initialized successfully!");
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a new `Mac` object with the `HmacSHA256` algorithm. Then, we create a secret key and initialize the `Mac` object with the secret key. If the initialization is successful, a message "Mac object initialized successfully!" will be printed to the console. If an error occurs (like the algorithm not being found or the key being invalid), the error will be printed to the console.
+================================================================
+
+Sample: 11 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void update(byte[] input) from javax.crypto.Mac
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `update(byte[] input)` method from `javax.crypto.Mac`:
+
+```java
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new HmacSHA256 key
+            byte[] keyBytes = "mySecretKey".getBytes();
+            SecretKeySpec key = new SecretKeySpec(keyBytes, "HmacSHA256");
+
+            // Create a new Mac instance
+            Mac mac = Mac.getInstance("HmacSHA256");
+
+            // Initialize the Mac with the key
+            mac.init(key);
+
+            // Update the Mac with some data
+            byte[] data = "Hello, World!".getBytes();
+            mac.update(data);
+
+            // Compute the Mac
+            byte[] macBytes = mac.doFinal();
+
+            // Print the Mac
+            System.out.println("HMAC: " + new String(macBytes));
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a new `HmacSHA256` key. Then, we create a new `Mac` instance and initialize it with the key. We then update the `Mac` with some data and finally compute the `Mac`. The `Mac` is then printed to the console.
+
+Please note that the `HmacSHA256` algorithm is used here, but you can use any other algorithm supported by the `Mac` class. The key used here is a simple string, but in a real-world application, you would typically use a secure key.
+================================================================
+
+Sample: 12 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] doFinal() from javax.crypto.Mac
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `doFinal()` method from `javax.crypto.Mac`:
+
+```java
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new HmacSHA256 key
+            byte[] keyBytes = "mySecretKey".getBytes();
+            SecretKeySpec key = new SecretKeySpec(keyBytes, "HmacSHA256");
+
+            // Create a new Mac instance
+            Mac mac = Mac.getInstance("HmacSHA256");
+            mac.init(key);
+
+            // Create a message
+            byte[] message = "Hello, World!".getBytes();
+
+            // Compute the HMAC
+            byte[] hmac = mac.doFinal(message);
+
+            // Print the HMAC
+            System.out.println(new String(hmac));
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we first create a new `HmacSHA256` key. Then, we create a new `Mac` instance and initialize it with the key. We then create a message and compute the HMAC of the message using the `doFinal()` method. Finally, we print the HMAC.
+
+Please note that the `doFinal()` method is used to compute the final HMAC value. It is not used to add data to the HMAC computation. If you want to add data to the HMAC computation, you should use the `update()` method instead.
+================================================================
+
+Sample: 13 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void reset() from javax.crypto.Mac
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `reset()` method in the `javax.crypto.Mac` class is used to reset the MAC to its initial state. It is used when you want to use the same `Mac` object for multiple calculations.
+
+Here is a complete code snippet of the `reset()` method:
+
+```java
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new Mac object
+            Mac mac = Mac.getInstance("HmacSHA256");
+
+            // Create a secret key
+            SecretKeySpec secretKey = new SecretKeySpec("secret".getBytes(), "HmacSHA256");
+
+            // Initialize the Mac with the secret key
+            mac.init(secretKey);
+
+            // Update the Mac with some data
+            mac.update("Hello".getBytes());
+
+            // Get the MAC
+            byte[] macBytes = mac.doFinal();
+
+            // Print the MAC
+            System.out.println("MAC: " + new String(macBytes));
+
+            // Reset the Mac
+            mac.reset();
+
+            // Update the Mac with some other data
+            mac.update("World".getBytes());
+
+            // Get the MAC again
+            macBytes = mac.doFinal();
+
+            // Print the MAC again
+            System.out.println("MAC: " + new String(macBytes));
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code, we first create a new `Mac` object using the `getInstance()` method. We then create a `SecretKeySpec` object with a secret key and the same algorithm as the `Mac` object. We initialize the `Mac` with the secret key using the `init()` method.
+
+We then update the `Mac` with some data using the `update()` method and get the MAC using the `doFinal()` method.
+
+Finally, we reset the `Mac` using the `reset()` method and update it with some other data. We get the MAC again and print it.
+================================================================
+

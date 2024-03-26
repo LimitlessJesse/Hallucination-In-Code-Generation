@@ -1,0 +1,57 @@
+Sample: 0 AuthorizeCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setAuthorized(boolean authorized) from javax.security.sasl.AuthorizeCallback
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setAuthorized(boolean authorized)` method is part of the `AuthorizeCallback` interface in the `javax.security.sasl` package. This method is used to set the authorization status of a SASL client.
+
+Here is a complete code snippet that demonstrates how to use this method:
+
+```java
+import javax.security.sasl.AuthorizeCallback;
+
+public class Main {
+    public static void main(String[] args) {
+        AuthorizeCallback callback = new AuthorizeCallback() {
+            @Override
+            public void setAuthorized(boolean authorized) {
+                System.out.println("Authorization status: " + authorized);
+            }
+        };
+
+        // Use the callback
+        callback.setAuthorized(true);
+    }
+}
+```
+
+In this code, we create an anonymous class that implements the `AuthorizeCallback` interface. We override the `setAuthorized(boolean authorized)` method and print the authorization status. Then, we use the callback to set the authorization status to `true`.
+
+Please note that this is a simple example and does not involve any actual SASL client or server. The `setAuthorized(boolean authorized)` method is typically used in the context of a SASL client or server to handle the authorization process.
+================================================================
+

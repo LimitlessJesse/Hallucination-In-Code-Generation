@@ -1,0 +1,31 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,PhantomReference,1,"PhantomReference(Object referent, ReferenceQueue<? super Object> q)",False
+0,PhantomReference,2,get(),False
+0,PhantomReference,3,isEnqueued(),False
+0,PhantomReference,4,enqueue(),False
+0,PhantomReference,5,finalize(),False
+1,Reference,1,ReferenceQueue getQueue(),False
+1,Reference,2,void clear(),True
+1,Reference,3,int size(),False
+1,Reference,4,boolean remove(Object o),False
+1,Reference,5,Object poll(),False
+2,ReferenceQueue,1,boolean add(E e),False
+2,ReferenceQueue,2,E remove(),False
+2,ReferenceQueue,3,boolean remove(Object o),False
+2,ReferenceQueue,4,boolean removeIf(Predicate<? super E> filter),False
+2,ReferenceQueue,5,void clear(),False
+3,SoftReference,1,T get(),True
+3,SoftReference,2,void clear(),False
+3,SoftReference,3,boolean isEnqueued(),False
+3,SoftReference,4,void clear(),False
+3,SoftReference,5,boolean isEnqueued(),False
+3,SoftReference,6,boolean equals(Object obj),False
+3,SoftReference,7,int hashCode(),False
+3,SoftReference,8,String toString(),False
+3,SoftReference,9,<T> SoftReference<T> referentOf(ReferenceQueue<? super T> q),False
+3,SoftReference,10,"<T> SoftReference<T> referentOf(ReferenceQueue<? super T> q, T referent)",False
+4,WeakReference,1,WeakReference(T referent),False
+4,WeakReference,2,get(),False
+4,WeakReference,3,clear(),False
+4,WeakReference,4,hashCode(),False
+4,WeakReference,5,equals(Object obj),False

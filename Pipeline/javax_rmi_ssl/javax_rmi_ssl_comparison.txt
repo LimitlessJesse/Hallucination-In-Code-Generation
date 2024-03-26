@@ -1,0 +1,50 @@
+Sample: 0 SslRMIClientSocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.rmi.ssl.SslRMIClientSocketFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean accept(Socket socket)`: This method checks whether the SslRMIClientSocketFactory can accept a socket.
+
+2. `Socket createSocket(String host, int port)`: This method creates a new socket connected to the specified host and port.
+
+3. `Socket createSocket(InetAddress host, int port)`: This method creates a new socket connected to the specified host and port.
+
+4. `Socket createSocket(String host, int port, InetAddress localAddress, int localPort)`: This method creates a new socket connected to the specified host and port, using the specified local address and port.
+
+5. `Socket createSocket(InetAddress host, int port, InetAddress localAddress, int localPort)`: This method creates a new socket connected to the specified host and port, using the specified local address and port.
+================================================================
+
+Sample: 1 SslRMIServerSocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.rmi.ssl.SslRMIServerSocketFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setNeedClientAuth(boolean need)`: This method sets the needClientAuth flag.
+
+2. `boolean getNeedClientAuth()`: This method returns the needClientAuth flag.
+
+3. `void setCipherSuites(String[] suites)`: This method sets the cipher suites.
+
+4. `String[] getCipherSuites()`: This method returns the cipher suites.
+
+5. `void setHostnameVerifier(HostnameVerifier verifier)`: This method sets the hostname verifier.
+================================================================
+

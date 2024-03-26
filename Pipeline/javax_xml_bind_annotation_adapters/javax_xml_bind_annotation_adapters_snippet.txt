@@ -1,0 +1,117 @@
+Sample: 0 HexBinaryAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String marshal(byte[] v) from javax.xml.bind.annotation.adapters.HexBinaryAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `marshal(byte[] v)` method from `javax.xml.bind.annotation.adapters.HexBinaryAdapter`:
+
+```java
+import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
+
+public class Main {
+    public static void main(String[] args) {
+        HexBinaryAdapter hexBinaryAdapter = new HexBinaryAdapter();
+        byte[] bytes = {1, 2, 3, 4, 5};
+        String hexString = hexBinaryAdapter.marshal(bytes);
+        System.out.println(hexString);
+    }
+}
+```
+
+In this code snippet, we create a new instance of `HexBinaryAdapter` and then use the `marshal(byte[] v)` method to convert an array of bytes into a hexadecimal string. The result is then printed to the console.
+
+Please note that you need to have the necessary dependencies in your project to use the `HexBinaryAdapter` class. If you are using Maven, you can add the following dependency to your `pom.xml` file:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle` file:
+
+```groovy
+dependencies {
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+}
+```
+
+Remember to replace `2.3.1` with the latest version of `jaxb-api` available.
+================================================================
+
+Sample: 1 HexBinaryAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] unmarshal(String v) from javax.xml.bind.annotation.adapters.HexBinaryAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `unmarshal(String v)` method from `javax.xml.bind.annotation.adapters.HexBinaryAdapter`:
+
+```java
+import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
+
+public class Main {
+    public static void main(String[] args) {
+        HexBinaryAdapter hexBinaryAdapter = new HexBinaryAdapter();
+        byte[] bytes = hexBinaryAdapter.unmarshal("48656C6C6F"); // "Hello" in hex
+        System.out.println(new String(bytes));
+    }
+}
+```
+
+In this code snippet, we create a new instance of `HexBinaryAdapter` and then call the `unmarshal` method with a string of hexadecimal characters. The `unmarshal` method converts the hexadecimal string into a byte array. Finally, we print out the byte array as a string to verify that it matches the original hexadecimal string.
+================================================================
+

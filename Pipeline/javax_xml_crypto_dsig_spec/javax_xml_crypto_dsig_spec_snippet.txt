@@ -1,0 +1,50 @@
+Sample: 0 XPathFilterParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getXPath() from javax.xml.crypto.dsig.spec.XPathFilterParameterSpec
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getXPath()` method is not a part of the `javax.xml.crypto.dsig.spec.XPathFilterParameterSpec` class. It is a part of the `javax.xml.crypto.dsig.spec.XPathType` class.
+
+Here is a simple example of how you can use the `getXPath()` method from the `javax.xml.crypto.dsig.spec.XPathType` class:
+
+```java
+import javax.xml.crypto.dsig.spec.XPathType;
+
+public class Main {
+    public static void main(String[] args) {
+        XPathType xPathType = new XPathType("//*[local-name()='element']");
+        System.out.println(xPathType.getXPath());
+    }
+}
+```
+
+In this example, we create a new `XPathType` object with an XPath expression. Then we call the `getXPath()` method on this object and print the result.
+
+Please note that the `javax.xml.crypto.dsig.spec.XPathType` class is part of the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files, which is a separate download and installation. Without these files, the `javax.xml.crypto.dsig.spec.XPathType` class will not be available.
+================================================================
+

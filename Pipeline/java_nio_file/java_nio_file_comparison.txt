@@ -1,0 +1,290 @@
+Sample: 0 Files
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.Files package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Path createDirectory(Path dir, FileAttribute<?>... attrs)`: This method creates a directory.
+
+2. `Path createFile(Path path, FileAttribute<?>... attrs)`: This method creates a new file.
+
+3. `Path copy(Path source, Path target, CopyOption... options)`: This method copies a file to another file.
+
+4. `Path move(Path source, Path target, CopyOption... options)`: This method moves a file to another file.
+
+5. `Path delete(Path path)`: This method deletes a file.
+
+6. `Path deleteIfExists(Path path)`: This method deletes a file if it exists.
+
+7. `Path link(Path existing, Path newLink)`: This method creates a link to a file.
+
+8. `Path readSymbolicLink(Path link)`: This method reads the symbolic link.
+
+9. `Path write(Path path, byte[] bytes, OpenOption... options)`: This method writes bytes to a file.
+
+10. `Path readAllBytes(Path path)`: This method reads all bytes from a file.
+
+11. `Path write(Path path, CharBuffer charBuffer, OpenOption... options)`: This method writes a CharBuffer to a file.
+
+12. `Path readAllLines(Path path)`: This method reads all lines from a file.
+
+13. `Path write(Path path, Iterable<? extends CharSequence> lines, OpenOption... options)`: This method writes lines to a file.
+
+14. `Path readAttributes(Path path, Class<?> attributeView, LinkOption... options)`: This method reads attributes of a file.
+
+15. `Path setAttribute(Path path, String attribute, Object value, LinkOption... options)`: This method sets an attribute of a file.
+
+16. `Path getLastModifiedTime(Path path, LinkOption... options)`: This method gets the last modified time of a file.
+
+17. `Path setLastModifiedTime(Path path, FileTime time)`: This method sets the last modified time of a file.
+
+18. `Path getOwner(Path path, LinkOption... options)`: This method gets the owner of a file.
+
+19. `Path setOwner(Path path, UserPrincipal owner)`: This method sets the owner of a file.
+
+20. `Path getPosixFilePermissions(Path path)`: This method gets the POSIX file permissions of a file.
+
+21. `Path setPosixFilePermissions(Path path, Set<PosixFilePermission> perms)`: This method sets the POSIX file permissions of a file.
+
+22. `Path getFileStore(Path path)`: This method gets the file store of a file.
+
+23. `Path isSameFile(Path path, Path path2)`: This method checks if two paths are the same file.
+
+24. `Path notExists(Path path, LinkOption... options)`: This method checks if a file does not exist.
+
+25. `Path exists(Path path, LinkOption... options)`: This method checks if a file exists.
+
+26. `Path isDirectory(Path path, LinkOption... options)`: This method checks if a path is a directory.
+
+27. `Path isRegularFile(Path path, LinkOption... options)`: This method checks if a path is a regular file.
+
+28. `Path isSymbolicLink(Path path)`: This method checks if a path is a symbolic link.
+
+29. `Path isHidden(Path path)`: This method checks if a path is hidden.
+
+30. `Path isReadable(Path path)`: This method checks if a path is readable.
+
+31. `Path isWritable(Path path)`: This method checks if a path is writable.
+
+32. `Path isExecutable(Path path)`: This method checks if a path is executable.
+
+33. `Path probeContentType(Path path)`: This method probes the content type of a file.
+
+34. `Path probeFile(Path path, LinkOption... options)`: This method probes a file.
+
+35. `Path probeDirectory(Path dir, LinkOption... options)`: This method probes a directory.
+
+36. `Path createTempFile(Path dir, String prefix, String suffix)`: This method creates a temporary file.
+
+37. `Path createTempDirectory(Path dir, String prefix)`: This method creates a temporary directory.
+
+38. `Path createLink(Path existing, Path newLink)`: This method creates a link to a file.
+
+39. `Path createDirectory(Path dir, FileAttribute<?>... attrs)`: This method creates a directory.
+
+40. `Path createFile(Path path, FileAttribute<?>... attrs)`: This method creates a new file.
+
+41. `Path copy(Path source, Path target, CopyOption... options)`: This method copies a file to another file.
+
+42. `Path move(Path source, Path target, CopyOption... options)`: This method moves a file to another file.
+
+43. `Path delete(Path path)`: This method deletes a file.
+
+44. `Path deleteIfExists(Path path)`: This method deletes a file if it exists.
+
+45. `Path link(Path existing, Path newLink)`: This method creates a link to a file.
+
+46. `Path readSymbolicLink(Path link)`: This method reads the symbolic link.
+
+47. `Path write(Path path, byte[] bytes, OpenOption... options)`: This method writes bytes to a file.
+
+48. `Path readAllBytes(Path path)`: This method reads all bytes from a file.
+
+49. `Path write(Path path
+================================================================
+
+Sample: 1 FileStore
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.FileStore package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long getTotalSpace()`: This method returns the total size, in bytes, of the file-system.
+
+2. `long getUsableSpace()`: This method returns the remaining space, in bytes, that can be directly allocated for use by applications.
+
+3. `long getUnallocatedSpace()`: This method returns the amount of space, in bytes, that is not allocated to any file.
+
+4. `boolean isReadOnly()`: This method returns true if the file system is read-only.
+
+5. `String name()`: This method returns the name of the file system.
+================================================================
+
+Sample: 2 FileSystem
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.FileSystem package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Path getPath(String first, String... more)`: This method returns a new Path instance by resolving the sequence of input path strings against the first path string.
+
+2. `PathMatcher getPathMatcher(String syntaxAndPattern)`: This method returns a new PathMatcher instance for the specified syntax and pattern.
+
+3. `FileSystem getFileSystem()`: This method returns the FileSystem of this Path.
+
+4. `FileSystemProvider getFileSystemProvider()`: This method returns the FileSystemProvider of this Path.
+
+5. `WatchService newWatchService()`: This method returns a new WatchService instance.
+================================================================
+
+Sample: 3 FileSystems
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.FileSystems package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileSystem getFileSystem()`: This method returns the FileSystem that this Path resides on.
+
+2. `Path getRoot()`: This method returns the root directory of this path.
+
+3. `int getNameCount()`: This method returns the number of elements in the name sequence of this path.
+
+4. `Path getName(int index)`: This method returns the name at the specified position in the name sequence of this path.
+
+5. `Path resolve(Path other)`: This method resolves this path against the given path.
+================================================================
+
+Sample: 4 LinkPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.LinkPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean checkPermission(FilePermission fp)`: This method checks whether the current user has the specified permission on the file.
+
+2. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `int hashCode()`: This method returns the hash code value for this object.
+
+4. `boolean implies(Permission p)`: This method checks whether this permission implies the specified permission.
+
+5. `String getActions()`: This method returns the actions of this permission.
+================================================================
+
+Sample: 5 Paths
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.Paths package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Paths.get(String first, String... more)`: This method returns a Path object by resolving the sequence of input arguments as a sequence of names with the first argument as the primary file name element.
+
+2. `Path resolve(Path other)`: This method returns a Path that resolves this path against the given path.
+
+3. `Path resolve(String other)`: This method returns a Path that resolves this path against the given path string.
+
+4. `Path normalize()`: This method returns a Path that is the result of replacing each sequence of current and parent directory steps with a single step.
+
+5. `Path relativize(Path other)`: This method returns a Path that is the result of replacing the sequence of steps from this path to the given path with a sequence of steps that starts at the root of the drive.
+================================================================
+
+Sample: 6 SimpleFileVisitor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.SimpleFileVisitor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileVisitResult visitFile(Path file, BasicFileAttributes attrs)`: This method is called for a file in a directory.
+
+2. `FileVisitResult postVisitDirectory(Path dir, IOException exc)`: This method is called after visiting a directory.
+
+3. `FileVisitResult visitFileFailed(Path file, IOException exc)`: This method is called if an I/O error occurs.
+
+4. `FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)`: This method is called before visiting a directory.
+
+5. `FileVisitResult visitFile(Path file, ReadOnlyFileAttributes attrs)`: This method is called for a file in a directory.
+================================================================
+
+Sample: 7 StandardWatchEventKinds
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.StandardWatchEventKinds package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StandardWatchEventKinds.ENTRY_CREATE`: This method returns a new instance of `StandardWatchEventKinds`.
+
+2. `StandardWatchEventKinds.ENTRY_DELETE`: This method returns a new instance of `StandardWatchEventKinds`.
+
+3. `StandardWatchEventKinds.ENTRY_MODIFY`: This method returns a new instance of `StandardWatchEventKinds`.
+
+4. `StandardWatchEventKinds.OVERFLOW`: This method returns a new instance of `StandardWatchEventKinds`.
+
+5. `StandardWatchEventKinds.ENTRY_MOVED_FROM`: This method returns a new instance of `StandardWatchEventKinds`.
+
+6. `StandardWatchEventKinds.ENTRY_MOVED_TO`: This method returns a new instance of `StandardWatchEventKinds`.
+================================================================
+

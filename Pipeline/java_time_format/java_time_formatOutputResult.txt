@@ -1,0 +1,31 @@
+Sample: DateTimeFormatterBuilder_2
+----------------------------------------------------------------
+stdout:
+Value(DayOfMonth,2)'-'Value(MonthOfYear,2)'-'Value(YearOfEra,4,19,EXCEEDS_PAD)
+
+================================================================
+
+Sample: DateTimeFormatterBuilder_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.time.format.DateTimeParseException: Text '2022-01-01T12:00:00' could not be parsed, unparsed text found at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2055)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954)
+	at java.base/java.time.LocalDateTime.parse(LocalDateTime.java:494)
+	at DateTimeFormatterBuilder_5.main(DateTimeFormatterBuilder_5.java:12)
+
+================================================================
+
+Sample: DecimalStyle_3
+----------------------------------------------------------------
+output:
+./java_time_format/javaFiles/DecimalStyle_3.java:5: error: cannot find symbol
+        DecimalStyle decimalStyle = DecimalStyle.getInstance();
+                                                ^
+  symbol:   method getInstance()
+  location: class DecimalStyle
+1 error
+
+
+================================================================
+

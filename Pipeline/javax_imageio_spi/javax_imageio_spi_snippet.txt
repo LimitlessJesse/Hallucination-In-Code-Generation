@@ -1,0 +1,234 @@
+Sample: 0 ImageInputStreamSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ImageInputStream createInputStreamInstance(Object source, boolean useCache, File cacheDirectory) from javax.imageio.spi.ImageInputStreamSpi
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `createInputStreamInstance(Object source, boolean useCache, File cacheDirectory)` method is part of the `ImageInputStreamSpi` class, which is an abstract class that provides the service provider interface for the `ImageInputStream` class.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.imageio.stream.ImageInputStream;
+import javax.imageio.spi.ImageInputStreamSpi;
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        ImageInputStreamSpi spi = new ImageInputStreamSpi() {
+            // Implement the methods here
+        };
+
+        try {
+            ImageInputStream inputStream = spi.createInputStreamInstance(new File("image.jpg"), true, new File("cache"));
+            // Use the inputStream
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In the above code, we are creating an instance of `ImageInputStreamSpi` and then calling the `createInputStreamInstance` method. The `createInputStreamInstance` method takes three parameters:
+
+- `source`: This is the source of the image data. It can be a `File`, a `URL`, a `String` (representing a file path), or any other object that the specific `ImageInputStreamSpi` implementation can handle.
+- `useCache`: This is a boolean flag that indicates whether to use a cache for the image data.
+- `cacheDirectory`: This is the directory where the cache will be stored.
+
+The `createInputStreamInstance` method returns an `ImageInputStream` instance that can be used to read the image data.
+
+Please note that you need to implement the methods in the `ImageInputStreamSpi` class according to your specific needs.
+================================================================
+
+Sample: 1 ImageReaderSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean canDecodeInput(Object input) from javax.imageio.spi.ImageReaderSpi
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `canDecodeInput(Object input)` method in `javax.imageio.spi.ImageReaderSpi` is used to check if the ImageReaderSpi can decode the input. It returns a boolean value indicating whether the ImageReaderSpi can decode the input.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.imageio.spi.ImageReaderSpi;
+
+public class Main {
+    public static void main(String[] args) {
+        ImageReaderSpi imageReaderSpi = new ImageReaderSpi() {
+            @Override
+            public boolean canDecodeInput(Object input) {
+                // Implement your logic here
+                return false;
+            }
+        };
+
+        // Use the canDecodeInput method
+        boolean canDecode = imageReaderSpi.canDecodeInput(new Object());
+        System.out.println("Can decode input: " + canDecode);
+    }
+}
+```
+
+In the above code, we are creating an anonymous class that extends `ImageReaderSpi` and overrides the `canDecodeInput(Object input)` method. We then create an instance of this class and call the `canDecodeInput(Object input)` method.
+
+Please replace the logic inside the `canDecodeInput(Object input)` method with your own implementation. This method is used to check if the ImageReaderSpi can decode the input. It returns a boolean value indicating whether the ImageReaderSpi can decode the input.
+================================================================
+
+Sample: 2 ImageWriterSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ImageWriter createWriterInstance(Object extension) from javax.imageio.spi.ImageWriterSpi
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `ImageWriter createWriterInstance(Object extension)` method is part of the `javax.imageio.spi.ImageWriterSpi` class. This method is used to create an instance of the ImageWriter.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.imageio.ImageIO;
+import javax.imageio.spi.ImageWriterSpi;
+import javax.imageio.ImageWriter;
+
+public class Main {
+    public static void main(String[] args) {
+        ImageWriterSpi writerSpi = new ImageWriterSpi();
+        ImageWriter writer = writerSpi.createWriterInstance();
+    }
+}
+```
+
+In this code snippet, we first create an instance of `ImageWriterSpi`. Then we call the `createWriterInstance()` method on this instance. This method will return an instance of `ImageWriter`.
+
+Please note that this code snippet is a basic example and may not work as expected without additional setup or configuration. The actual usage of this method would depend on the specific requirements and the specific ImageWriterSpi instance being used.
+================================================================
+
+Sample: 3 ServiceRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean contains(Object o) from javax.imageio.spi.ServiceRegistry
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `contains(Object o)` method in `ServiceRegistry` class checks if the specified element is present in the registry or not. It returns `true` if the element is found and `false` otherwise.
+
+Here is a complete code snippet:
+
+```java
+import javax.imageio.spi.ServiceRegistry;
+
+public class Main {
+    public static void main(String[] args) {
+        ServiceRegistry registry = new ServiceRegistry();
+        registry.add("Service1");
+        registry.add("Service2");
+        registry.add("Service3");
+
+        String serviceToCheck = "Service2";
+        boolean isServicePresent = registry.contains(serviceToCheck);
+
+        System.out.println("Is service '" + serviceToCheck + "' present? " + isServicePresent);
+    }
+}
+```
+
+In this code, we create a `ServiceRegistry` and add some services to it. Then we check if a specific service is present in the registry by calling the `contains(Object o)` method. The result is printed to the console.
+================================================================
+

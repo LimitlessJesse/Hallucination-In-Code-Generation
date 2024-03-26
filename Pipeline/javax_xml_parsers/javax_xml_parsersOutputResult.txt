@@ -1,0 +1,130 @@
+Sample: DocumentBuilder_3
+----------------------------------------------------------------
+output:
+./javax_xml_parsers/javaFiles/DocumentBuilder_3.java:26: error: no suitable method found for parse(Reader)
+            Document document = builder.parse(reader);
+                                       ^
+    method DocumentBuilder.parse(InputStream) is not applicable
+      (argument mismatch; Reader cannot be converted to InputStream)
+    method DocumentBuilder.parse(String) is not applicable
+      (argument mismatch; Reader cannot be converted to String)
+    method DocumentBuilder.parse(File) is not applicable
+      (argument mismatch; Reader cannot be converted to File)
+    method DocumentBuilder.parse(InputSource) is not applicable
+      (argument mismatch; Reader cannot be converted to InputSource)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: DocumentBuilder_4
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: /home/yixi/comp4522/MagicCoder/Pipeline/path_to_your_xml_file.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178)
+	at DocumentBuilder_4.main(DocumentBuilder_4.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DocumentBuilder_6
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: /home/yixi/comp4522/MagicCoder/Pipeline/input.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:861)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at DocumentBuilder_6.main(DocumentBuilder_6.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DocumentBuilder_7
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: path_to_your_xml_file.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at DocumentBuilder_7.main(DocumentBuilder_7.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DocumentBuilderFactory_1
+----------------------------------------------------------------
+stdout:
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl@1990a65e
+
+================================================================
+
+Sample: DocumentBuilderFactory_2
+----------------------------------------------------------------
+stdout:
+com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@7181ae3f
+
+================================================================
+
+Sample: DocumentBuilderFactory_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DocumentBuilderFactory_4
+----------------------------------------------------------------
+output:
+./javax_xml_parsers/javaFiles/DocumentBuilderFactory_4.java:6: error: unreported exception ParserConfigurationException; must be caught or declared to be thrown
+        boolean isValidating = factory.getFeature("http://apache.org/xml/features/validation/schema");
+                                                 ^
+1 error
+
+
+================================================================
+
+Sample: DocumentBuilderFactory_5
+----------------------------------------------------------------
+================================================================
+

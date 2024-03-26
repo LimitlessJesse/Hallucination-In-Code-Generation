@@ -1,0 +1,673 @@
+Sample: 0 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isBorderOpaque() from javax.swing.border.AbstractBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isBorderOpaque()` method is not a part of the `AbstractBorder` class, but it is a part of the `Border` interface. The `Border` interface is implemented by all border classes in Java Swing.
+
+Here is an example of how you can use the `isBorderOpaque()` method:
+
+```java
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+
+public class Main {
+    public static void main(String[] args) {
+        Border border = new LineBorder(Color.BLACK, 1);
+        System.out.println(border.isBorderOpaque());
+    }
+}
+```
+
+In this example, we create a `LineBorder` object and then call the `isBorderOpaque()` method on it. The `isBorderOpaque()` method returns `true` if the border is opaque (i.e., it blocks the painting of the component's background) and `false` if the border is transparent.
+
+Please note that the `isBorderOpaque()` method is not part of the `AbstractBorder` class, but it is part of the `Border` interface. The `AbstractBorder` class is an abstract class that implements the `Border` interface, and it provides default implementations for the `isBorderOpaque()` method.
+================================================================
+
+Sample: 1 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Insets getBorderInsets(Component c) from javax.swing.border.AbstractBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getBorderInsets(Component c)` method is part of the `AbstractBorder` class in the `javax.swing.border` package. It is used to get the insets of the border around a component.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.border.AbstractBorder;
+import java.awt.Insets;
+import java.awt.Component;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JButton button = new JButton("Button");
+        button.setBorder(new AbstractBorder() {
+            @Override
+            public Insets getBorderInsets(Component c) {
+                return new Insets(10, 10, 10, 10);
+            }
+        });
+
+        frame.add(button);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame and a JButton. We then set a custom border to the button using an anonymous inner class that extends `AbstractBorder`. The `getBorderInsets(Component c)` method is overridden to return a new `Insets` object with the top, left, bottom, and right insets set to 10. This will create a 10-pixel border around the button.
+================================================================
+
+Sample: 2 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Insets getBorderInsets(Component c, Insets insets) from javax.swing.border.AbstractBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getBorderInsets(Component c, Insets insets)` method is part of the `AbstractBorder` class in the `javax.swing.border` package. It is used to get the insets of the border around a component.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.border.AbstractBorder;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        panel.setBorder(new AbstractBorder() {
+            @Override
+            public Insets getBorderInsets(Component c, Insets insets) {
+                insets.left = 10;
+                insets.right = 10;
+                insets.top = 10;
+                insets.bottom = 10;
+                return insets;
+            }
+        });
+
+        panel.setBackground(Color.RED);
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame and a JPanel. We set a custom border to the JPanel. The border is an instance of `AbstractBorder`, and we override the `getBorderInsets(Component c, Insets insets)` method to set the insets of the border. The insets are set to 10 pixels on all sides.
+
+The JPanel is then added to the JFrame, and the JFrame is made visible. The JPanel will have a red background, and a 10-pixel border around it.
+================================================================
+
+Sample: 3 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void paintBorder(Component c, Graphics g, int x, int y, int width, int height) from javax.swing.border.AbstractBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method is part of the `AbstractBorder` class in the `javax.swing.border` package. This method is used to paint the border of a component.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.swing.*;
+import javax.swing.border.AbstractBorder;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                paintBorder(this, g, 0, 0, getWidth(), getHeight());
+            }
+
+            @Override
+            public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+                g.setColor(Color.RED);
+                g.drawRect(x, y, width - 1, height - 1);
+            }
+        };
+
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this example, we create a JFrame and a JPanel. The JPanel overrides the `paintComponent(Graphics g)` method to call the `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method. The `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method is overridden to draw a red rectangle around the JPanel.
+================================================================
+
+Sample: 4 AbstractBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void paintBorder(Component c, Graphics g, int x, int y, int width, int height) from javax.swing.border.AbstractBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method is part of the `AbstractBorder` class in the `javax.swing.border` package. This method is used to paint the border of a component.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.swing.*;
+import javax.swing.border.AbstractBorder;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel() {
+            @Override
+            protected void paintComponent(Graphics g) {
+                super.paintComponent(g);
+                paintBorder(this, g, 0, 0, getWidth(), getHeight());
+            }
+
+            @Override
+            public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+                g.setColor(Color.RED);
+                g.drawRect(x, y, width - 1, height - 1);
+            }
+        };
+
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this example, we create a JFrame and a JPanel. The JPanel overrides the `paintComponent(Graphics g)` method to call the `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method. The `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method is overridden to draw a red rectangle around the JPanel.
+================================================================
+
+Sample: 5 SoftBevelBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isBorderOpaque() from javax.swing.border.SoftBevelBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isBorderOpaque()` method from `SoftBevelBorder` class in `javax.swing.border` package is used to determine whether the border is opaque or not. It returns a boolean value, `true` if the border is opaque and `false` if it is not.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.border.SoftBevelBorder;
+
+public class Main {
+    public static void main(String[] args) {
+        SoftBevelBorder border = new SoftBevelBorder(0);
+        boolean isOpaque = border.isBorderOpaque();
+        System.out.println("Is border opaque? " + isOpaque);
+    }
+}
+```
+
+In this code, we create a `SoftBevelBorder` object with a style of 0 (raised bevel). Then we call the `isBorderOpaque()` method on this border object and print the result. The result will be `true` because the border is opaque.
+================================================================
+
+Sample: 6 SoftBevelBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void paintBorder(Component c, Graphics g, int x, int y, int width, int height) from javax.swing.border.SoftBevelBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `paintBorder(Component c, Graphics g, int x, int y, int width, int height)` method is a part of the `SoftBevelBorder` class and it is used to paint the border of a component.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.border.SoftBevelBorder;
+import java.awt.*;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        panel.setBorder(new SoftBevelBorder(SoftBevelBorder.RAISED));
+
+        panel.paintBorder(panel, panel.getGraphics(), 0, 0, panel.getWidth(), panel.getHeight());
+
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame and a JPanel. We set the border of the panel to a `SoftBevelBorder` with the `RAISED` style. Then we call the `paintBorder` method on the panel, passing in the panel's graphics and the panel's dimensions. This will paint the border of the panel.
+
+Please note that the `paintBorder` method is not intended to be called directly. It is called by the system when the panel needs to be repainted.
+================================================================
+
+Sample: 7 TitledBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTitle(String title) from javax.swing.border.TitledBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTitle(String title)` method is a part of the `TitledBorder` interface in Java. It is used to set the title of the border.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.border.TitledBorder;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Titled Border Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        TitledBorder border = new TitledBorder("This is a Titled Border");
+        border.setTitle("New Title");
+        panel.setBorder(border);
+
+        frame.getContentPane().add(panel, BorderLayout.CENTER);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame and a JPanel. We then create a TitledBorder and set its title to "This is a Titled Border". We then set this border to the panel and add the panel to the JFrame. Finally, we pack the JFrame and make it visible.
+
+When you run this code, you will see a JFrame with a JPanel that has a TitledBorder with the title "This is a Titled Border". If you then call `border.setTitle("New Title");`, the title of the border will change to "New Title".
+================================================================
+
+Sample: 8 TitledBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getTitle() from javax.swing.border.TitledBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTitle()` method in `javax.swing.border.TitledBorder` is used to get the title of the border. Here is a complete code snippet of this method:
+
+```java
+import javax.swing.border.TitledBorder;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        TitledBorder border = new TitledBorder("My Title");
+        panel.setBorder(border);
+
+        frame.getContentPane().add(panel, BorderLayout.CENTER);
+        frame.setVisible(true);
+
+        String title = border.getTitle();
+        System.out.println("Title: " + title);
+    }
+}
+```
+
+In this code, we create a JFrame with a JPanel. We then create a TitledBorder with a title "My Title" and set it as the border of the JPanel. Finally, we get the title of the border and print it to the console.
+================================================================
+
+Sample: 9 TitledBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTitlePosition(int position) from javax.swing.border.TitledBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTitlePosition(int position)` method of `TitledBorder` class is used to set the position of the title relative to the border. The position can be one of the following:
+
+- `TitledBorder.TOP`: The title is at the top of the border.
+- `TitledBorder.LEFT`: The title is at the left of the border.
+- `TitledBorder.BOTTOM`: The title is at the bottom of the border.
+- `TitledBorder.RIGHT`: The title is at the right of the border.
+
+Here is a complete code snippet that demonstrates the usage of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.border.TitledBorder;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Titled Border Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JPanel panel = new JPanel();
+        TitledBorder border = BorderFactory.createTitledBorder("Title");
+        border.setTitlePosition(TitledBorder.LEFT);
+        panel.setBorder(border);
+
+        JLabel label = new JLabel("Hello, World!");
+        panel.add(label);
+
+        frame.getContentPane().add(panel);
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame with a JPanel. We create a TitledBorder with a title and set its position to `TitledBorder.LEFT`. We then set this border to the panel and add a JLabel to the panel. Finally, we add the panel to the content pane of the frame, pack the frame, and make it visible.
+================================================================
+
+Sample: 10 TitledBorder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getTitlePosition() from javax.swing.border.TitledBorder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTitlePosition()` method from `javax.swing.border.TitledBorder` is used to get the position of the title relative to the border. It returns an integer value which can be one of the following:
+
+- `TitledBorder.TOP`
+- `TitledBorder.LEFT`
+- `TitledBorder.BOTTOM`
+- `TitledBorder.RIGHT`
+- `TitledBorder.CENTER`
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.border.TitledBorder;
+
+public class Main {
+    public static void main(String[] args) {
+        TitledBorder border = new TitledBorder("Title");
+        int position = border.getTitlePosition();
+        System.out.println("Title position: " + position);
+    }
+}
+```
+
+In this code, we create a `TitledBorder` with a title. Then we call the `getTitlePosition()` method on the border to get the position of the title. The position is then printed to the console.
+================================================================
+

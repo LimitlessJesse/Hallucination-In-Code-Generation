@@ -1,0 +1,76 @@
+ClassName,Method,Return Type
+Charset,aliases(),Set<String>
+Charset,availableCharsets(),"static SortedMap<String,Charset>"
+Charset,canEncode(),boolean
+Charset,compareTo(Charset that),int
+Charset,contains(Charset cs),abstract boolean
+Charset,decode(ByteBuffer bb),CharBuffer
+Charset,defaultCharset(),static Charset
+Charset,displayName(),String
+Charset,displayName(Locale locale),String
+Charset,encode(CharBuffer cb),ByteBuffer
+Charset,encode(String str),ByteBuffer
+Charset,equals(Object ob),boolean
+Charset,forName(String charsetName),static Charset
+Charset,hashCode(),int
+Charset,isRegistered(),boolean
+Charset,isSupported(String charsetName),static boolean
+Charset,name(),String
+Charset,newDecoder(),abstract CharsetDecoder
+Charset,newEncoder(),abstract CharsetEncoder
+Charset,toString(),String
+CharsetDecoder,averageCharsPerByte(),float
+CharsetDecoder,charset(),Charset
+CharsetDecoder,decode(ByteBuffer in),CharBuffer
+CharsetDecoder,"decode(ByteBuffer in, CharBuffer out, boolean endOfInput)",CoderResult
+CharsetDecoder,"decodeLoop(ByteBuffer in, CharBuffer out)",protected abstract CoderResult
+CharsetDecoder,detectedCharset(),Charset
+CharsetDecoder,flush(CharBuffer out),CoderResult
+CharsetDecoder,implFlush(CharBuffer out),protected CoderResult
+CharsetDecoder,implOnMalformedInput(CodingErrorAction newAction),protected void
+CharsetDecoder,implOnUnmappableCharacter(CodingErrorAction newAction),protected void
+CharsetDecoder,implReplaceWith(String newReplacement),protected void
+CharsetDecoder,implReset(),protected void
+CharsetDecoder,isAutoDetecting(),boolean
+CharsetDecoder,isCharsetDetected(),boolean
+CharsetDecoder,malformedInputAction(),CodingErrorAction
+CharsetDecoder,maxCharsPerByte(),float
+CharsetDecoder,onMalformedInput(CodingErrorAction newAction),CharsetDecoder
+CharsetDecoder,onUnmappableCharacter(CodingErrorAction newAction),CharsetDecoder
+CharsetDecoder,replacement(),String
+CharsetDecoder,replaceWith(String newReplacement),CharsetDecoder
+CharsetDecoder,reset(),CharsetDecoder
+CharsetDecoder,unmappableCharacterAction(),CodingErrorAction
+CharsetEncoder,averageBytesPerChar(),float
+CharsetEncoder,canEncode(char c),boolean
+CharsetEncoder,canEncode(CharSequence cs),boolean
+CharsetEncoder,charset(),Charset
+CharsetEncoder,encode(CharBuffer in),ByteBuffer
+CharsetEncoder,"encode(CharBuffer in, ByteBuffer out, boolean endOfInput)",CoderResult
+CharsetEncoder,"encodeLoop(CharBuffer in, ByteBuffer out)",protected abstract CoderResult
+CharsetEncoder,flush(ByteBuffer out),CoderResult
+CharsetEncoder,implFlush(ByteBuffer out),protected CoderResult
+CharsetEncoder,implOnMalformedInput(CodingErrorAction newAction),protected void
+CharsetEncoder,implOnUnmappableCharacter(CodingErrorAction newAction),protected void
+CharsetEncoder,implReplaceWith(byte[] newReplacement),protected void
+CharsetEncoder,implReset(),protected void
+CharsetEncoder,isLegalReplacement(byte[] repl),boolean
+CharsetEncoder,malformedInputAction(),CodingErrorAction
+CharsetEncoder,maxBytesPerChar(),float
+CharsetEncoder,onMalformedInput(CodingErrorAction newAction),CharsetEncoder
+CharsetEncoder,onUnmappableCharacter(CodingErrorAction newAction),CharsetEncoder
+CharsetEncoder,replacement(),byte[]
+CharsetEncoder,replaceWith(byte[] newReplacement),CharsetEncoder
+CharsetEncoder,reset(),CharsetEncoder
+CharsetEncoder,unmappableCharacterAction(),CodingErrorAction
+CoderResult,isError(),boolean
+CoderResult,isMalformed(),boolean
+CoderResult,isOverflow(),boolean
+CoderResult,isUnderflow(),boolean
+CoderResult,isUnmappable(),boolean
+CoderResult,length(),int
+CoderResult,malformedForLength(int length),static CoderResult
+CoderResult,throwException(),void
+CoderResult,toString(),String
+CoderResult,unmappableForLength(int length),static CoderResult
+CodingErrorAction,toString(),String

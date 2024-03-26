@@ -1,0 +1,914 @@
+Sample: 0 CommandInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getCommandName() from javax.activation.CommandInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getCommandName()` method is part of the `CommandInfo` interface in the `javax.activation` package. It is used to get the name of the command.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.CommandInfo;
+import javax.activation.MailcapCommandMap;
+import javax.activation.CommandMap;
+
+public class Main {
+    public static void main(String[] args) {
+        CommandMap commandMap = (CommandMap)MailcapCommandMap.getDefaultCommandMap();
+        CommandInfo[] commands = commandMap.getCommands();
+
+        for (CommandInfo command : commands) {
+            System.out.println(command.getCommandName());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting the default command map using `MailcapCommandMap.getDefaultCommandMap()`. Then we are getting all the commands from the command map using `getCommands()`. Finally, we are printing the name of each command using `getCommandName()`.
+
+Please note that this code snippet is just an example and may not work as expected in your environment. The `getCommandName()` method is used to get the name of the command, but it does not return a string. The actual implementation of the `getCommandName()` method may vary depending on the specific implementation of the `CommandInfo` interface.
+================================================================
+
+Sample: 1 DataHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getContentType() from javax.activation.DataHandler
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `getContentType()` method from `javax.activation.DataHandler`:
+
+```java
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a DataSource
+        DataSource source = new FileDataSource("path_to_your_file");
+
+        // Create a DataHandler
+        DataHandler handler = new DataHandler(source);
+
+        // Get the content type
+        String contentType = handler.getContentType();
+
+        System.out.println("Content Type: " + contentType);
+    }
+}
+```
+
+In this example, we create a `DataSource` for a file, then create a `DataHandler` with that `DataSource`. We then call `getContentType()` on the `DataHandler` to get the content type of the data in the `DataHandler`.
+
+Please replace `"path_to_your_file"` with the actual path to your file.
+
+Note: The `javax.activation` package is part of Java's standard library, so you don't need to add any additional dependencies to your project.
+================================================================
+
+Sample: 2 DataHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.activation.DataHandler
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method in `javax.activation.DataHandler` is used to get the name of the data.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DataSource source = new FileDataSource("path_to_your_file");
+            DataHandler handler = new DataHandler(source);
+            String name = handler.getName();
+            System.out.println("Name of the data: " + name);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a `DataSource` object which represents the data source. Then we are creating a `DataHandler` object which wraps the `DataSource`. Finally, we are calling the `getName()` method on the `DataHandler` object to get the name of the data.
+
+Please replace "path_to_your_file" with the actual path to your file.
+
+Note: The `javax.activation` package is not part of the standard Java API. It is a part of JavaMail API, which is a separate library and not included in the standard Java API. So, you need to add the JavaMail API to your project if you want to use this package.
+================================================================
+
+Sample: 3 FileDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getContentType() from javax.activation.FileDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getContentType()` method from `javax.activation.FileDataSource` is used to get the content type of the file.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.FileDataSource;
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        File file = new File("path_to_your_file");
+        FileDataSource fileDataSource = new FileDataSource(file);
+        try {
+            String contentType = fileDataSource.getContentType();
+            System.out.println("Content Type: " + contentType);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `File` object with the path to the file we want to get the content type of. Then we create a `FileDataSource` object with this file. Finally, we call the `getContentType()` method on the `FileDataSource` object and print the result.
+
+Please replace "path_to_your_file" with the actual path to your file.
+
+Note: This code assumes that the file exists and the path is correct. If the file does not exist or the path is incorrect, the `getContentType()` method will throw an `IOException`.
+================================================================
+
+Sample: 4 FileDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use InputStream getInputStream() throws IOException from javax.activation.FileDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getInputStream()` method from `javax.activation.FileDataSource`:
+
+```java
+import javax.activation.FileDataSource;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileDataSource fileDataSource = new FileDataSource("path_to_your_file");
+            InputStream inputStream = fileDataSource.getInputStream();
+            // Now you can use the inputStream for reading the file content.
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, replace `"path_to_your_file"` with the actual path to your file. This code will create a `FileDataSource` object, which is a class in the `javax.activation` package, and then use the `getInputStream()` method to get an `InputStream` object that you can use to read the content of the file.
+
+Please note that you need to have the necessary permissions to read the file and handle any potential `IOException` that may occur.
+================================================================
+
+Sample: 5 FileDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.activation.FileDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method in `javax.activation.FileDataSource` is used to get the name of the file.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.FileDataSource;
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        File file = new File("path_to_your_file");
+        FileDataSource fileDataSource = new FileDataSource(file);
+        try {
+            System.out.println(fileDataSource.getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `File` object with the path to the file we want to get the name of. Then we create a `FileDataSource` object with this file. Finally, we call the `getName()` method on the `FileDataSource` object and print the result.
+
+Please replace "path_to_your_file" with the actual path to your file.
+
+Note: The `javax.activation` package is not part of the standard Java API. It's a part of Java Activation Framework, which is a separate project and is not included in the standard Java SE distribution. If you are using Java SE, you won't be able to use this package.
+================================================================
+
+Sample: 6 FileDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use OutputStream getOutputStream() throws IOException from javax.activation.FileDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getOutputStream()` method from `javax.activation.FileDataSource`:
+
+```java
+import javax.activation.FileDataSource;
+import java.io.IOException;
+import java.io.OutputStream;
+
+public class Main {
+    public static void main(String[] args) {
+        FileDataSource fileDataSource = new FileDataSource("path_to_your_file");
+        try {
+            OutputStream outputStream = fileDataSource.getOutputStream();
+            // Write to the output stream
+            outputStream.write("Hello, World!".getBytes());
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a `FileDataSource` object with the path to a file. Then we call the `getOutputStream()` method, which returns an `OutputStream` object. We write a string to the output stream and then close the stream.
+
+Please replace "path_to_your_file" with the actual path to your file.
+
+Note: This code assumes that you have the necessary permissions to write to the file. If the file does not exist, it will be created. If the file already exists, its contents will be overwritten.
+================================================================
+
+Sample: 7 FileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use FileTypeMap getDefaultFileTypeMap() from javax.activation.FileTypeMap
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDefaultFileTypeMap()` method from `javax.activation.FileTypeMap` class is used to get the default file type map. This method returns a `FileTypeMap` object that contains the default file type map.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.FileTypeMap;
+
+public class Main {
+    public static void main(String[] args) {
+        FileTypeMap fileTypeMap = FileTypeMap.getDefaultFileTypeMap();
+        System.out.println(fileTypeMap);
+    }
+}
+```
+
+In this code snippet, we are importing the `FileTypeMap` class from `javax.activation` package. Then we are calling the `getDefaultFileTypeMap()` method and storing the returned `FileTypeMap` object in the `fileTypeMap` variable. Finally, we are printing the `fileTypeMap` object.
+
+Please note that the `FileTypeMap` class is part of Java Activation Framework (JAF) and it's not part of the standard Java API. It's used for mapping between MIME types and file extensions.
+================================================================
+
+Sample: 8 FileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getContentType(File file) from javax.activation.FileTypeMap
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getContentType(File file)` method from `javax.activation.FileTypeMap`:
+
+```java
+import javax.activation.FileTypeMap;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        File file = new File("path_to_your_file");
+        String contentType = FileTypeMap.getDefaultFileTypeMap().getContentType(file);
+        System.out.println("Content type of the file is: " + contentType);
+    }
+}
+```
+
+In this code snippet, replace `"path_to_your_file"` with the actual path to the file you want to get the content type for.
+
+This code will print the content type of the file to the console. The content type is a string that describes the type of data that the file contains. For example, a JPEG image file would have a content type of "image/jpeg".
+================================================================
+
+Sample: 9 FileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getContentType(String fileName) from javax.activation.FileTypeMap
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getContentType(String fileName)` method from `javax.activation.FileTypeMap`:
+
+```java
+import javax.activation.FileTypeMap;
+
+public class Main {
+    public static void main(String[] args) {
+        FileTypeMap fileTypeMap = FileTypeMap.getDefaultFileTypeMap();
+        String contentType = fileTypeMap.getContentType("example.txt");
+        System.out.println(contentType);
+    }
+}
+```
+
+In this code snippet, we first import the `FileTypeMap` class from the `javax.activation` package. Then, we create a new instance of `FileTypeMap` and call the `getContentType(String fileName)` method on it. The `getContentType(String fileName)` method returns the MIME type of the file with the given name.
+
+Please note that the `getContentType(String fileName)` method uses a default `FileTypeMap` instance, which is not necessarily the same as the one used by the JDK. If you want to use a specific `FileTypeMap` instance, you would need to create your own.
+================================================================
+
+Sample: 10 FileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setDefaultFileTypeMap(FileTypeMap map) from javax.activation.FileTypeMap
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setDefaultFileTypeMap(FileTypeMap map)` method is a static method of the `FileTypeMap` class in the `javax.activation` package. It sets the default `FileTypeMap` for the JVM.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.FileTypeMap;
+
+public class Main {
+    public static void main(String[] args) {
+        FileTypeMap map = FileTypeMap.getDefaultFileTypeMap();
+        map.addExtension("txt", "text/plain");
+        FileTypeMap.setDefaultFileTypeMap(map);
+    }
+}
+```
+
+In this code snippet, we first get the default `FileTypeMap` using `FileTypeMap.getDefaultFileTypeMap()`. Then, we add a new extension "txt" to the map with the MIME type "text/plain" using `map.addExtension("txt", "text/plain")`. Finally, we set the default `FileTypeMap` for the JVM using `FileTypeMap.setDefaultFileTypeMap(map)`.
+
+Please note that this code snippet should be executed in a Java environment where the `javax.activation` package is available. If you are running this code in an environment where the `javax.activation` package is not available, you will need to add the necessary import statement to your code.
+================================================================
+
+Sample: 11 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use URL getURL() from javax.activation.URLDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getURL()` method in `javax.activation.URLDataSource` is used to get the URL of the data source.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.URLDataSource;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("http://www.example.com");
+            URLDataSource dataSource = new URLDataSource(url);
+            URL urlFromDataSource = dataSource.getURL();
+            System.out.println("URL from data source: " + urlFromDataSource);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a URL object and pass it to the `URLDataSource` constructor. Then we call the `getURL()` method on the `URLDataSource` object, which returns the URL of the data source.
+
+Please note that you need to replace `"http://www.example.com"` with the actual URL you want to get.
+
+Also, you need to add the necessary import statements at the top of your code.
+================================================================
+
+Sample: 12 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use InputStream getInputStream() from javax.activation.URLDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getInputStream()` method is part of the `URLDataSource` interface, which is used to obtain an `InputStream` for a URL.
+
+Here is a simple example of how to use it:
+
+```java
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import javax.activation.URLDataSource;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("http://example.com");
+            URLDataSource dataSource = (URLDataSource) url.getContent();
+            InputStream inputStream = dataSource.getInputStream();
+
+            // Now you can read from the inputStream
+            // For example, you can read the content of the URL
+            int data = inputStream.read();
+            while (data!= -1) {
+                System.out.print((char) data);
+                data = inputStream.read();
+            }
+
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are creating a URL object and getting its content as a `URLDataSource`. Then we are getting an `InputStream` from the `URLDataSource` and reading from it.
+
+Please note that you need to handle exceptions properly in a real-world application. This example is kept simple for the sake of clarity.
+================================================================
+
+Sample: 13 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use OutputStream getOutputStream() from javax.activation.URLDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getOutputStream()` method from `javax.activation.URLDataSource` is used to get an output stream to write data to the URL.
+
+Here is a simple example of how to use it:
+
+```java
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.URL;
+import javax.activation.URLDataSource;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("http://example.com");
+            URLDataSource dataSource = (URLDataSource) url.getContent();
+            OutputStream outputStream = dataSource.getOutputStream();
+
+            // Write data to the output stream
+            String data = "Hello, World!";
+            outputStream.write(data.getBytes());
+
+            // Close the output stream
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are writing a string "Hello, World!" to the URL "http://example.com". Please replace "http://example.com" with your actual URL.
+
+Please note that you need to have the necessary permissions to write to the URL and the URL should be accessible. Also, this method may not work with all URLs, as it may require authentication or other specific conditions.
+================================================================
+
+Sample: 14 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getContentType() from javax.activation.URLDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getContentType()` method from `javax.activation.URLDataSource` is used to get the MIME type of the data source.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.URLDataSource;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        URL url = new URL("http://example.com");
+        URLDataSource dataSource = (URLDataSource) url.getContent();
+        String contentType = dataSource.getContentType();
+        System.out.println("Content Type: " + contentType);
+    }
+}
+```
+
+In this code snippet, we are creating a URL object and getting its content as a `URLDataSource` object. Then we are calling the `getContentType()` method on the `URLDataSource` object to get the MIME type of the data source.
+
+Please note that you need to handle exceptions properly in a real-world application. This example is kept simple for the sake of clarity.
+================================================================
+
+Sample: 15 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.activation.URLDataSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method in `javax.activation.URLDataSource` is used to get the name of the resource.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.activation.URLDataSource;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("http://example.com");
+            URLDataSource dataSource = (URLDataSource) url.getContent();
+            String name = dataSource.getName();
+            System.out.println("Name of the resource: " + name);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a URL object and getting the content from it. Then we are casting the content to `URLDataSource` and calling the `getName()` method to get the name of the resource.
+
+Please note that you need to have the necessary permissions to access the URL and the URL should be valid. If the URL is not valid or you don't have the necessary permissions, the `getContent()` method will throw an `IOException`.
+================================================================
+

@@ -1,0 +1,130 @@
+Sample: 0 AuthPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.AuthPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The methods `remove(Object o)`, `removeAll(Collection<?> c)`, `retainAll(Collection<?> c)`, `set(int index, E element)`, `subList(int fromIndex, int toIndex)`, `toArray()`, `toArray(T[] a)`, `equals(Object o)`, `hashCode()`, `toString()`, `listIterator()`, `listIterator(int index)`, `lastIndexOf(Object o)`, `remove(int index)`, `get(int index)`, `indexOf(Object o)`, `isEmpty()`, `size()`, `iterator()`, `listIterator(int index)`, `listIterator()`, `subList(int fromIndex, int toIndex)`, `clone()`, `addAll(int index, Collection<? extends E> c)`, `addAll(Collection<? extends E> c)`, `removeRange(int fromIndex, int toIndex)`, `clear()`, `set(int index, E element)`, `add(int index, E element)`, `remove(int index)`, `lastIndexOf(Object o)`, `indexOf(Object o)`, `get(int index)`, `contains(Object o)`, `containsAll(Collection<?> c)`, `removeAll(Collection<?> c)`, `retainAll(Collection<?> c)`, `equals(Object o)`, `hashCode()`, `toString()`, `clone()`, `add(E e)`, `addAll(int index, Collection<? extends E> c)`, `addAll(Collection<? extends E> c)`, `removeRange(int fromIndex, int toIndex)`, `clear()`, `set(int index, E element)`, `add(int index, E element)`, `remove(int index)`, `lastIndexOf(Object o)`, `indexOf(Object o)`, `get(int index)`, `contains(Object o)`, `containsAll(Collection<?> c)`, `removeAll(Collection<?> c)`, `retainAll(Collection<?> c)`, `equals(Object o)`, `hashCode()`, `toString()`, `clone()` are not included in the list because they are inherited from the parent class `AbstractList`.
+================================================================
+
+Sample: 1 Policy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.Policy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Subject subject)`: This method checks if the policy permits the specified subject.
+
+2. `boolean implies(Principal principal)`: This method checks if the policy permits the specified principal.
+
+3. `boolean implies(java.security.Principal[] principals)`: This method checks if the policy permits the specified array of principals.
+
+4. `boolean implies(java.security.Permission permission)`: This method checks if the policy permits the specified permission.
+
+5. `boolean implies(java.security.Permission[] permissions)`: This method checks if the policy permits the specified array of permissions.
+================================================================
+
+Sample: 2 PrivateCredentialPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.PrivateCredentialPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 3 Subject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.Subject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Subject s)`: This method checks if the current Subject implies the specified Subject.
+
+2. `boolean isReadOnly()`: This method checks if the Subject is read-only.
+
+3. `boolean isEmpty()`: This method checks if the Subject is empty.
+
+4. `boolean equals(Object o)`: This method compares the specified Object with this Subject for equality.
+
+5. `int hashCode()`: This method returns the hash code value for this Subject.
+================================================================
+
+Sample: 4 SubjectDomainCombiner
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.SubjectDomainCombiner package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+

@@ -1,0 +1,75 @@
+Sample: 0 XMLEventFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.stream.XMLEventFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `XMLEventFactory createXMLEventFactory()`: This method creates a new instance of XMLEventFactory.
+
+2. `XMLEvent createStartElement(QName name, String namespaceURI, String prefix, int attributeCount)`: This method creates a new XMLEvent for a start element.
+
+3. `XMLEvent createEndElement(QName name, String namespaceURI, String prefix)`: This method creates a new XMLEvent for an end element.
+
+4. `XMLEvent createAttribute(QName name, String value)`: This method creates a new XMLEvent for an attribute.
+
+5. `XMLEvent createCharacters(String text)`: This method creates a new XMLEvent for characters.
+================================================================
+
+Sample: 1 XMLInputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.stream.XMLInputFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `XMLStreamReader createXMLStreamReader(Reader)`: This method creates an XMLStreamReader for the specified Reader.
+
+2. `XMLStreamReader createXMLStreamReader(InputStream)`: This method creates an XMLStreamReader for the specified InputStream.
+
+3. `XMLStreamReader createXMLStreamReader(String)`: This method creates an XMLStreamReader for the specified String.
+
+4. `XMLStreamReader createXMLStreamReader(URL)`: This method creates an XMLStreamReader for the specified URL.
+
+5. `XMLStreamReader createXMLStreamReader(File)`: This method creates an XMLStreamReader for the specified File.
+================================================================
+
+Sample: 2 XMLOutputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.stream.XMLOutputFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `XMLOutputFactory newInstance()`: This method creates a new instance of the XMLOutputFactory.
+
+2. `XMLStreamWriter createXMLStreamWriter(OutputStream stream)`: This method creates a new XMLStreamWriter that writes to the specified OutputStream.
+
+3. `XMLStreamWriter createXMLStreamWriter(Writer writer)`: This method creates a new XMLStreamWriter that writes to the specified Writer.
+
+4. `XMLStreamWriter createXMLStreamWriter(OutputStream stream, String encoding)`: This method creates a new XMLStreamWriter that writes to the specified OutputStream with the specified encoding.
+
+5. `XMLStreamWriter createXMLStreamWriter(Writer writer, String encoding)`: This method creates a new XMLStreamWriter that writes to the specified Writer with the specified encoding.
+================================================================
+

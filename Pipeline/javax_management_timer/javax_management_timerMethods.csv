@@ -1,0 +1,30 @@
+ClassName,Method,Return Type
+Timer,"addNotification(String type, String message, Object userData, Date date)",Integer
+Timer,"addNotification(String type, String message, Object userData, Date date, long period)",Integer
+Timer,"addNotification(String type, String message, Object userData, Date date, long period, long nbOccurences)",Integer
+Timer,"addNotification(String type, String message, Object userData, Date date, long period, long nbOccurences, boolean fixedRate)",Integer
+Timer,getAllNotificationIDs(),Vector<Integer>
+Timer,getDate(Integer id),Date
+Timer,getFixedRate(Integer id),Boolean
+Timer,getNbNotifications(),int
+Timer,getNbOccurences(Integer id),Long
+Timer,getNotificationIDs(String type),Vector<Integer>
+Timer,getNotificationInfo(),MBeanNotificationInfo[]
+Timer,getNotificationMessage(Integer id),String
+Timer,getNotificationType(Integer id),String
+Timer,getNotificationUserData(Integer id),Object
+Timer,getPeriod(Integer id),Long
+Timer,getSendPastNotifications(),boolean
+Timer,isActive(),boolean
+Timer,isEmpty(),boolean
+Timer,postDeregister(),void
+Timer,postRegister(Boolean registrationDone),void
+Timer,preDeregister(),void
+Timer,"preRegister(MBeanServer server, ObjectName name)",ObjectName
+Timer,removeAllNotifications(),void
+Timer,removeNotification(Integer id),void
+Timer,removeNotifications(String type),void
+Timer,setSendPastNotifications(boolean value),void
+Timer,start(),void
+Timer,stop(),void
+TimerNotification,getNotificationID(),Integer

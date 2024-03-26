@@ -1,0 +1,50 @@
+Sample: 0 XPathConstants
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.xpath.XPathConstants package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean compile(String expression)`: This method compiles the XPath expression.
+
+2. `Object evaluate(Node contextNode, QName variable)`: This method evaluates the XPath expression in the context of the specified node.
+
+3. `Object evaluate(Node contextNode, QName variable, Map<String, Object> variables)`: This method evaluates the XPath expression in the context of the specified node with the specified variables.
+
+4. `Object evaluate(String expression, Node contextNode, QName variable)`: This method evaluates the XPath expression in the context of the specified node.
+
+5. `Object evaluate(String expression, Node contextNode, QName variable, Map<String, Object> variables)`: This method evaluates the XPath expression in the context of the specified node with the specified variables.
+================================================================
+
+Sample: 1 XPathFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.xpath.XPathFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `XPathFactory newInstance()`: This method creates a new XPathFactory instance.
+
+2. `XPath newXPath()`: This method creates a new XPath object.
+
+3. `XPathExpression compile(String expression)`: This method compiles the given XPath expression.
+
+4. `Object evaluate(Object context, QName variable)`: This method evaluates the compiled XPath expression.
+
+5. `Object evaluate(Object context)`: This method evaluates the compiled XPath expression.
+================================================================
+

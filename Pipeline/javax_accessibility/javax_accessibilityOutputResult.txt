@@ -1,0 +1,88 @@
+Sample: AccessibleContext_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "AWT-EventQueue-0" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at AccessibleContext_2.lambda$main$0(AccessibleContext_2.java:13)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+================================================================
+
+Sample: AccessibleContext_4
+----------------------------------------------------------------
+output:
+./javax_accessibility/javaFiles/AccessibleContext_4.java:31: error: incompatible types: Accessible cannot be converted to AccessibleContext
+            AccessibleContext parentContext = buttonContext.getAccessibleParent();
+                                                                               ^
+./javax_accessibility/javaFiles/AccessibleContext_4.java:39: error: incompatible types: Accessible cannot be converted to AccessibleContext
+            parentContext = labelContext.getAccessibleParent();
+                                                            ^
+2 errors
+
+
+================================================================
+
+Sample: AccessibleContext_5
+----------------------------------------------------------------
+output:
+./javax_accessibility/javaFiles/AccessibleContext_5.java:6: error: <anonymous AccessibleContext_5$1> is not abstract and does not override abstract method getLocale() in AccessibleContext
+        AccessibleContext context = new AccessibleContext() {
+                                                            ^
+1 error
+
+
+================================================================
+
+Sample: AccessibleRelationSet_3
+----------------------------------------------------------------
+output:
+./javax_accessibility/javaFiles/AccessibleRelationSet_3.java:6: error: cannot find symbol
+        set.add(AccessibleRelation.LABEL_FOR);
+                ^
+  symbol:   variable AccessibleRelation
+  location: class AccessibleRelationSet_3
+./javax_accessibility/javaFiles/AccessibleRelationSet_3.java:7: error: cannot find symbol
+        set.add(AccessibleRelation.DESCRIBED_BY);
+                ^
+  symbol:   variable AccessibleRelation
+  location: class AccessibleRelationSet_3
+2 errors
+
+
+================================================================
+
+Sample: AccessibleStateSet_3
+----------------------------------------------------------------
+output:
+./javax_accessibility/javaFiles/AccessibleStateSet_3.java:6: error: cannot find symbol
+        stateSet.add(AccessibleStateSet.State.ACTIVE);
+                                       ^
+  symbol:   variable State
+  location: class AccessibleStateSet
+./javax_accessibility/javaFiles/AccessibleStateSet_3.java:7: error: cannot find symbol
+        stateSet.add(AccessibleStateSet.State.CHECKED);
+                                       ^
+  symbol:   variable State
+  location: class AccessibleStateSet
+2 errors
+
+
+================================================================
+

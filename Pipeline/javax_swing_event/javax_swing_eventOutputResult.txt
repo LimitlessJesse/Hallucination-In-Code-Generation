@@ -1,0 +1,258 @@
+Sample: CaretEvent_2
+----------------------------------------------------------------
+================================================================
+
+Sample: CaretEvent_3
+----------------------------------------------------------------
+================================================================
+
+Sample: HyperlinkEvent_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/javax.swing.event.HyperlinkEvent.<init>(HyperlinkEvent.java:98)
+	at java.desktop/javax.swing.event.HyperlinkEvent.<init>(HyperlinkEvent.java:78)
+	at HyperlinkEvent_1.main(HyperlinkEvent_1.java:5)
+
+================================================================
+
+Sample: HyperlinkEvent_2
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/HyperlinkEvent_2.java:9: error: no suitable constructor found for HyperlinkEvent(URL,EventType)
+            HyperlinkEvent event = new HyperlinkEvent(url, HyperlinkEvent.EventType.ACTIVATED);
+                                   ^
+    constructor HyperlinkEvent.HyperlinkEvent(Object,EventType,URL) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor HyperlinkEvent.HyperlinkEvent(Object,EventType,URL,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor HyperlinkEvent.HyperlinkEvent(Object,EventType,URL,String,Element) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor HyperlinkEvent.HyperlinkEvent(Object,EventType,URL,String,Element,InputEvent) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: InternalFrameAdapter_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at InternalFrameAdapter_2.main(InternalFrameAdapter_2.java:7)
+
+================================================================
+
+Sample: InternalFrameAdapter_3
+----------------------------------------------------------------
+================================================================
+
+Sample: InternalFrameAdapter_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at InternalFrameAdapter_4.main(InternalFrameAdapter_4.java:6)
+
+================================================================
+
+Sample: InternalFrameAdapter_6
+----------------------------------------------------------------
+================================================================
+
+Sample: InternalFrameAdapter_7
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at InternalFrameAdapter_7.main(InternalFrameAdapter_7.java:6)
+
+================================================================
+
+Sample: InternalFrameAdapter_9
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at InternalFrameAdapter_9.main(InternalFrameAdapter_9.java:7)
+
+================================================================
+
+Sample: InternalFrameAdapter_10
+----------------------------------------------------------------
+================================================================
+
+Sample: ListDataEvent_2
+----------------------------------------------------------------
+stdout:
+Index: 0
+
+================================================================
+
+Sample: ListDataEvent_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/javax.swing.event.ListDataEvent.<init>(ListDataEvent.java:99)
+	at ListDataEvent_3.main(ListDataEvent_3.java:23)
+
+================================================================
+
+Sample: ListDataEvent_4
+----------------------------------------------------------------
+stdout:
+Event type: 0
+
+================================================================
+
+Sample: ListSelectionEvent_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at ListSelectionEvent_3.main(ListSelectionEvent_3.java:15)
+
+================================================================
+
+Sample: ListSelectionEvent_4
+----------------------------------------------------------------
+================================================================
+
+Sample: ListSelectionEvent_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at ListSelectionEvent_5.main(ListSelectionEvent_5.java:10)
+
+================================================================
+
+Sample: TableModelEvent_2
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TableModelEvent_2.java:7: error: <anonymous TableModelEvent_2$1> is not abstract and does not override abstract method removeTableModelListener(TableModelListener) in TableModel
+        TableModel model = new TableModel() {
+                                            ^
+./javax_swing_event/javaFiles/TableModelEvent_2.java:24: error: cannot find symbol
+        model.fireTableDataChanged();
+             ^
+  symbol:   method fireTableDataChanged()
+  location: variable model of type TableModel
+2 errors
+
+
+================================================================
+
+Sample: TableModelEvent_4
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TableModelEvent_4.java:5: error: cannot find symbol
+        TableModelEvent event = new TableModelEvent(null, 0, 0, TableModelEvent.ALL_COLUMNS_CHANGED);
+                                                                               ^
+  symbol:   variable ALL_COLUMNS_CHANGED
+  location: class TableModelEvent
+1 error
+
+
+================================================================
+
+Sample: TreeModelEvent_2
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TreeModelEvent_2.java:6: error: <anonymous TreeModelEvent_2$1> is not abstract and does not override abstract method removeTreeModelListener(TreeModelListener) in TreeModel
+        TreeModel treeModel = new TreeModel() {
+                                              ^
+./javax_swing_event/javaFiles/TreeModelEvent_2.java:11: error: no suitable constructor found for TreeModelEvent(TreeModel,int[])
+        TreeModelEvent event = new TreeModelEvent(treeModel, new int[]{0, 1, 2});
+                               ^
+    constructor TreeModelEvent.TreeModelEvent(Object,Object[]) is not applicable
+      (argument mismatch; int[] cannot be converted to Object[])
+    constructor TreeModelEvent.TreeModelEvent(Object,TreePath) is not applicable
+      (argument mismatch; int[] cannot be converted to TreePath)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: TreeSelectionEvent_1
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TreeSelectionEvent_1.java:6: error: no suitable constructor found for TreeSelectionEvent(<null>,<null>,<null>)
+        TreeSelectionEvent event = new TreeSelectionEvent(null, null, null);
+                                   ^
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath[],boolean[],TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath,boolean,TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: TreeSelectionEvent_4
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TreeSelectionEvent_4.java:6: error: no suitable constructor found for TreeSelectionEvent(<null>,<null>,<null>)
+        TreeSelectionEvent event = new TreeSelectionEvent(null, null, null);
+                                   ^
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath[],boolean[],TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath,boolean,TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: TreeSelectionEvent_5
+----------------------------------------------------------------
+output:
+./javax_swing_event/javaFiles/TreeSelectionEvent_5.java:7: error: no suitable constructor found for TreeSelectionEvent(<null>,<null>,<null>)
+        TreeSelectionEvent event = new TreeSelectionEvent(null, null, null);
+                                   ^
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath[],boolean[],TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor TreeSelectionEvent.TreeSelectionEvent(Object,TreePath,boolean,TreePath,TreePath) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+

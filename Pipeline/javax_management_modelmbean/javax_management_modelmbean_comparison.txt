@@ -1,0 +1,199 @@
+Sample: 0 DescriptorSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.DescriptorSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadOnly()`: This method returns true if this attribute is read-only.
+
+2. `boolean isWritable()`: This method returns true if this attribute is writable.
+
+3. `boolean isIs()`: This method returns true if this attribute is an identifier.
+
+4. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+5. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+6. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+7. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+8. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+9. `boolean isHidden()`: This method returns true if this attribute is hidden.
+
+10. `boolean isHidden()`: This method returns true if this attribute is hidden.
+================================================================
+
+Sample: 1 ModelMBeanAttributeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.ModelMBeanAttributeInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadable()`: This method returns true if the attribute is readable.
+
+2. `boolean isWritable()`: This method returns true if the attribute is writable.
+
+3. `boolean isIs()`: This method returns true if the attribute is an identifier.
+
+4. `boolean isSettable()`: This method returns true if the attribute can be set.
+
+5. `boolean isCollection()`: This method returns true if the attribute is a collection.
+================================================================
+
+Sample: 2 ModelMBeanConstructorInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.ModelMBeanConstructorInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isConstructor()`: This method returns true if this constructor is a default constructor.
+
+2. `String getSignature()`: This method returns the signature of the constructor.
+
+3. `String getDescription()`: This method returns the description of the constructor.
+
+4. `String getShortDescription()`: This method returns the short description of the constructor.
+
+5. `String getConstructorClassName()`: This method returns the class name of the constructor.
+
+6. `String getConstructorName()`: This method returns the name of the constructor.
+
+7. `String[] getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+8. `String[] getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+9. `String[] getExceptionTypes()`: This method returns the types of the exceptions thrown by the constructor.
+
+10. `String[] getExceptionDescriptions()`: This method returns the descriptions of the exceptions thrown by the constructor.
+
+11. `String[] getExceptionShortDescriptions()`: This method returns the short descriptions of the exceptions thrown by the constructor.
+================================================================
+
+Sample: 3 ModelMBeanInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.ModelMBeanInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isQueryable()`: This method returns true if the model mbean is queryable.
+
+2. `boolean isWritable()`: This method returns true if the model mbean is writable.
+
+3. `boolean isWritableProperty(String propertyName)`: This method returns true if the specified property is writable.
+
+4. `boolean isReadableProperty(String propertyName)`: This method returns true if the specified property is readable.
+
+5. `boolean isNotifiable()`: This method returns true if the model mbean is notifiable.
+================================================================
+
+Sample: 4 ModelMBeanNotificationInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.ModelMBeanNotificationInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 ModelMBeanOperationInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.ModelMBeanOperationInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isQueryOp()`: This method returns true if the operation is a query operation.
+
+2. `boolean isActionOp()`: This method returns true if the operation is an action operation.
+
+3. `boolean isInfo()`: This method returns true if the operation is an information operation.
+
+4. `boolean isConstructorOp()`: This method returns true if the operation is a constructor operation.
+
+5. `boolean isSetOp()`: This method returns true if the operation is a set operation.
+
+6. `boolean isGetOp()`: This method returns true if the operation is a get operation.
+
+7. `boolean isAddOp()`: This method returns true if the operation is an add operation.
+
+8. `boolean isRemoveOp()`: This method returns true if the operation is a remove operation.
+
+9. `boolean isClearOp()`: This method returns true if the operation is a clear operation.
+
+10. `boolean isIsOp()`: This method returns true if the operation is an is operation.
+================================================================
+
+Sample: 6 RequiredModelMBean
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.modelmbean.RequiredModelMBean package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+

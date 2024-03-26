@@ -1,0 +1,45 @@
+Sample: AttributeList_18
+----------------------------------------------------------------
+output:
+./javax_swing_text_html_parser/javaFiles/AttributeList_18.java:5: error: constructor AttributeList in class AttributeList cannot be applied to given types;
+        AttributeList attributeList = new AttributeList();
+                                      ^
+  required: no arguments
+  found:    no arguments
+  reason: AttributeList() is not public in AttributeList; cannot be accessed from outside package
+./javax_swing_text_html_parser/javaFiles/AttributeList_18.java:6: error: cannot find symbol
+        attributeList.add("name", "value");
+                     ^
+  symbol:   method add(String,String)
+  location: variable attributeList of type AttributeList
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: DocumentParser_3
+----------------------------------------------------------------
+output:
+./javax_swing_text_html_parser/javaFiles/DocumentParser_3.java:10: error: constructor DocumentParser in class DocumentParser cannot be applied to given types;
+        DocumentParser parser = new DocumentParser();
+                                ^
+  required: DTD
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: ParserDelegator_2
+----------------------------------------------------------------
+output:
+./javax_swing_text_html_parser/javaFiles/ParserDelegator_2.java:9: error: unreported exception IOException; must be caught or declared to be thrown
+        delegator.parse(new StringReader(html), new HTMLEditorKit.ParserCallback() {
+                       ^
+1 error
+
+
+================================================================
+

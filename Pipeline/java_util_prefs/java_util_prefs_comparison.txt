@@ -1,0 +1,116 @@
+Sample: 0 AbstractPreferences
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.prefs.AbstractPreferences package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean nodeExists(String key)`: This method checks if a node with the specified key exists in the preferences node.
+
+2. `String[] keys()`: This method returns an array of strings containing the names of all keys in the preferences node.
+
+3. `String get(String key, String def)`: This method returns the value of the specified key in the preferences node. If the key does not exist, the default value is returned.
+
+4. `void put(String key, String value)`: This method sets the value of the specified key in the preferences node.
+
+5. `void remove(String key)`: This method removes the key (and its corresponding value) from the preferences node.
+================================================================
+
+Sample: 1 NodeChangeEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.prefs.NodeChangeEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `NodeChangeEvent(NodeChangeEvent evt)`: This constructor is used to create a new NodeChangeEvent object with the same properties as the specified NodeChangeEvent object.
+
+2. `NodeChangeEvent(Object key, Object oldValue, Object newValue)`: This constructor is used to create a new NodeChangeEvent object with the specified key, old value, and new value.
+
+3. `Object getKey()`: This method returns the key of the NodeChangeEvent.
+
+4. `Object getOldValue()`: This method returns the old value of the NodeChangeEvent.
+
+5. `Object getNewValue()`: This method returns the new value of the NodeChangeEvent.
+================================================================
+
+Sample: 2 PreferenceChangeEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.prefs.PreferenceChangeEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean getNewValue()`: This method returns the new value of the preference that has changed.
+
+2. `String getPath()`: This method returns the path of the preference that has changed.
+
+3. `String getNode()`: This method returns the node of the preference that has changed.
+
+4. `String getPreferenceName()`: This method returns the name of the preference that has changed.
+
+5. `String getOldValue()`: This method returns the old value of the preference that has changed.
+================================================================
+
+Sample: 3 Preferences
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.prefs.Preferences package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean getBoolean(String key, boolean def)`: This method returns the boolean value for the specified key.
+2. `void putBoolean(String key, boolean value)`: This method sets the boolean value for the specified key.
+3. `String get(String key, String def)`: This method returns the string value for the specified key.
+4. `void put(String key, String value)`: This method sets the string value for the specified key.
+5. `int getInt(String key, int def)`: This method returns the int value for the specified key.
+6. `void putInt(String key, int value)`: This method sets the int value for the specified key.
+7. `long getLong(String key, long def)`: This method returns the long value for the specified key.
+8. `void putLong(String key, long value)`: This method sets the long value for the specified key.
+9. `float getFloat(String key, float def)`: This method returns the float value for the specified key.
+10. `void putFloat(String key, float value)`: This method sets the float value for the specified key.
+11. `double getDouble(String key, double def)`: This method returns the double value for the specified key.
+12. `void putDouble(String key, double value)`: This method sets the double value for the specified key.
+13. `byte[] getByteArray(String key, byte[] def)`: This method returns the byte array value for the specified key.
+14. `void putByteArray(String key, byte[] value)`: This method sets the byte array value for the specified key.
+15. `String[] getStringArray(String key, String[] def)`: This method returns the string array value for the specified key.
+16. `void putStringArray(String key, String[] value)`: This method sets the string array value for the specified key.
+17. `void remove(String key)`: This method removes the key and its corresponding value from this preference node.
+18. `void clear()`: This method removes all keys and values from this preference node.
+19. `Enumeration<String> keys()`: This method returns an enumeration of all the keys in this preference node.
+20. `void exportSubtree(OutputStream out)`: This method exports the subtree rooted at this node to the specified output stream.
+21. `void importSubtree(InputStream in)`: This method imports the subtree rooted at this node from the specified input stream.
+22. `void exportNode(OutputStream out)`: This method exports the node to the specified output stream.
+23. `void importNode(InputStream in)`: This method imports the node from the specified input stream.
+24. `void sync()`: This method forces the synchronization of the preferences to the disk.
+25. `void flush()`: This method forces the preferences to be written to the disk.
+================================================================
+

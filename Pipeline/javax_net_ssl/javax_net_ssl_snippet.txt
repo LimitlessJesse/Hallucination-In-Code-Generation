@@ -1,0 +1,718 @@
+Sample: 0 HttpsURLConnection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSSLSocketFactory(SSLSocketFactory factory) from javax.net.ssl.HttpsURLConnection
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSSLSocketFactory(SSLSocketFactory factory)` method is used to set the SSLSocketFactory that this URLConnection will use to create SSLSockets.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSocketFactory;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        URL url = new URL("https://www.example.com");
+        HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+
+        // Create a SSLSocketFactory
+        SSLSocketFactory sslSocketFactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+
+        // Set the SSLSocketFactory
+        conn.setSSLSocketFactory(sslSocketFactory);
+
+        // Now you can use conn to make HTTPS requests
+    }
+}
+```
+
+In this code snippet, we first create a URL object for the HTTPS URL we want to connect to. Then we open a connection to that URL using the `openConnection()` method.
+
+Next, we create a default SSLSocketFactory using `SSLSocketFactory.getDefault()`.
+
+Finally, we set the SSLSocketFactory for the HttpsURLConnection using the `setSSLSocketFactory(SSLSocketFactory factory)` method.
+
+After setting the SSLSocketFactory, you can use the HttpsURLConnection to make HTTPS requests.
+================================================================
+
+Sample: 1 HttpsURLConnection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setHostnameVerifier(HostnameVerifier verifier) from javax.net.ssl.HttpsURLConnection
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setHostnameVerifier(HostnameVerifier verifier)` method is a part of the `HttpsURLConnection` class in Java. This method is used to set the hostname verifier for this connection.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.HostnameVerifier;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        URL url = new URL("https://example.com");
+        HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+
+        // Create a custom hostname verifier
+        HostnameVerifier hostnameVerifier = (hostname, session) -> {
+            // Custom verification logic here
+            return true;
+        };
+
+        // Set the hostname verifier
+        conn.setHostnameVerifier(hostnameVerifier);
+    }
+}
+```
+
+In the above code, we are creating a custom `HostnameVerifier` and setting it to the `HttpsURLConnection`. The `HostnameVerifier` is a functional interface that has a single method `verify(String hostname, SSLSession session)`. This method is used to verify the hostname of the server.
+
+Please replace the `// Custom verification logic here` comment with your own logic to verify the hostname.
+
+Remember to handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 2 HttpsURLConnection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setDefaultHostnameVerifier(HostnameVerifier verifier) from javax.net.ssl.HttpsURLConnection
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setDefaultHostnameVerifier(HostnameVerifier verifier)` method from `javax.net.ssl.HttpsURLConnection` is used to set the default hostname verifier.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.HostnameVerifier;
+
+public class Main {
+    public static void main(String[] args) {
+        HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() {
+            @Override
+            public boolean verify(String hostname, javax.net.ssl.SSLSession sslSession) {
+                return true; // accept all hostnames
+            }
+        });
+    }
+}
+```
+
+In this code snippet, we are setting a custom `HostnameVerifier` that always returns `true`, meaning it accepts all hostnames. This is useful for testing purposes, but in a real-world application, you would want to use a more secure `HostnameVerifier`.
+
+Please note that this code snippet should be executed in a secure environment, as it modifies the default behavior of SSL connections.
+================================================================
+
+Sample: 3 HttpsURLConnection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setDefaultSSLSocketFactory(SSLSocketFactory factory) from javax.net.ssl.HttpsURLConnection
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setDefaultSSLSocketFactory(SSLSocketFactory factory)` method is a static method of the `HttpsURLConnection` class. It sets the default SSLSocketFactory to be used by all HttpsURLConnections.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSocketFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        SSLSocketFactory factory = null; // replace with your SSLSocketFactory
+        HttpsURLConnection.setDefaultSSLSocketFactory(factory);
+    }
+}
+```
+
+In the above code, replace `SSLSocketFactory factory = null;` with your SSLSocketFactory.
+
+Note: The SSLSocketFactory is a factory for creating SSLSockets. It is used to create SSLSockets for secure communication.
+
+Also, remember that you need to have the necessary permissions to set the default SSLSocketFactory. If you are not running your application with sufficient permissions, you may get a `SecurityException`.
+================================================================
+
+Sample: 4 KeyManagerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void init(KeyStore keystore, char[] password) from javax.net.ssl.KeyManagerFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `init(KeyStore keystore, char[] password)` method from `javax.net.ssl.KeyManagerFactory`:
+
+```java
+import javax.net.ssl.KeyManagerFactory;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            KeyStore keyStore = KeyStore.getInstance("JKS");
+            char[] password = "password".toCharArray();
+            KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
+            keyManagerFactory.init(keyStore, password);
+        } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException | CertificateException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `KeyStore` instance. Then we create a `KeyManagerFactory` instance and call the `init` method on it, passing the `KeyStore` and the password as arguments.
+
+Please replace "JKS" with the type of your keystore and "password" with your keystore password.
+
+Also, please note that this code snippet is a simple example and may not work as expected in your specific use case. You may need to handle exceptions according to your requirements.
+================================================================
+
+Sample: 5 KeyManagerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void init(ManagerFactoryParameters spec) from javax.net.ssl.KeyManagerFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `init(ManagerFactoryParameters spec)` method is used to initialize the KeyManagerFactory. It takes a `ManagerFactoryParameters` object as a parameter.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.ManagerFactoryParameters;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            KeyStore ks = KeyStore.getInstance("JKS");
+            ks.load(null, null);
+
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+            kmf.init(ks, null);
+
+            ManagerFactoryParameters spec = new ManagerFactoryParameters() {
+                // Implement the ManagerFactoryParameters interface
+            };
+
+            kmf.init(spec);
+        } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException | CertificateException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In the above code, we are creating a KeyStore, initializing a KeyManagerFactory, and then initializing the KeyManagerFactory with a ManagerFactoryParameters object.
+
+Please note that the `ManagerFactoryParameters` object is an interface and you need to provide your own implementation. The `init(ManagerFactoryParameters spec)` method is used to initialize the KeyManagerFactory with the specified parameters.
+================================================================
+
+Sample: 6 KeyManagerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use KeyManager[] getKeyManagers() from javax.net.ssl.KeyManagerFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `getKeyManagers()` method from `javax.net.ssl.KeyManagerFactory`:
+
+```java
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.KeyManagerFactory;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.CertificateException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Load the keystore
+            KeyStore ks = KeyStore.getInstance("JKS");
+            ks.load(new java.io.FileInputStream("keystore.jks"), "password".toCharArray());
+
+            // Get the KeyManagerFactory
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
+            kmf.init(ks, "password".toCharArray());
+
+            // Get the KeyManagers
+            KeyManager[] keyManagers = kmf.getKeyManagers();
+
+            // Print the KeyManagers
+            for (KeyManager keyManager : keyManagers) {
+                System.out.println(keyManager);
+            }
+        } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException | CertificateException | java.io.IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+This code snippet loads a keystore, gets a `KeyManagerFactory` instance, initializes the `KeyManagerFactory` with the keystore and a password, and then gets the `KeyManagers`. It then prints the `KeyManagers`.
+
+Please replace "keystore.jks" and "password" with your actual keystore file and password.
+
+Also, note that you need to have the necessary permissions to access the keystore file and handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 7 X509ExtendedTrustManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void checkClientTrusted(X509Certificate[] chain, String authType, Socket socket) from javax.net.ssl.X509ExtendedTrustManager
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void checkClientTrusted(X509Certificate[] chain, String authType, Socket socket)` method from `javax.net.ssl.X509ExtendedTrustManager` is used to check the client's certificate. It is used in SSL/TLS handshake to verify the identity of the client.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.net.ssl.X509ExtendedTrustManager;
+import java.security.cert.X509Certificate;
+import java.net.Socket;
+
+public class MyTrustManager extends X509ExtendedTrustManager {
+
+    @Override
+    public void checkClientTrusted(X509Certificate[] chain, String authType, Socket socket) {
+        // Your implementation here
+    }
+
+    // Other methods from X509ExtendedTrustManager
+}
+```
+
+In the above code, `MyTrustManager` is a class that extends `X509ExtendedTrustManager`. You need to implement the `checkClientTrusted` method according to your requirements.
+
+Please note that this is a very basic example and you would need to add your own logic inside the `checkClientTrusted` method to verify the client's certificate.
+
+Also, remember that you need to set your custom `TrustManager` to your `SSLContext` before you can use it to create an `SSLSocket`.
+
+```java
+SSLContext sslContext = SSLContext.getInstance("TLS");
+sslContext.init(null, new TrustManager[]{new MyTrustManager()}, null);
+SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
+```
+
+This is just a basic example. In a real-world application, you would need to handle exceptions, check the certificate chain, and perform other checks according to your specific requirements.
+================================================================
+
+Sample: 8 X509ExtendedTrustManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void checkServerTrusted(X509Certificate[] chain, String authType, Socket socket) from javax.net.ssl.X509ExtendedTrustManager
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void checkServerTrusted(X509Certificate[] chain, String authType, Socket socket)` method from `javax.net.ssl.X509ExtendedTrustManager` is used to check the server's certificate chain and the authentication type.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.net.ssl.*;
+import java.security.cert.X509Certificate;
+import java.net.Socket;
+
+public class Main {
+    public static void main(String[] args) {
+        X509ExtendedTrustManager trustManager = new X509ExtendedTrustManager() {
+            @Override
+            public void checkClientTrusted(X509Certificate[] chain, String authType) {
+                // Implementation not needed for this example
+            }
+
+            @Override
+            public void checkServerTrusted(X509Certificate[] chain, String authType, Socket socket) {
+                // Implementation not needed for this example
+            }
+
+            @Override
+            public X509Certificate[] getAcceptedIssuers() {
+                // Implementation not needed for this example
+                return null;
+            }
+        };
+
+        // Use the trust manager
+        try {
+            SSLContext sslContext = SSLContext.getInstance("TLS");
+            sslContext.init(null, new TrustManager[] { trustManager }, null);
+            SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
+            // Use sslSocketFactory to create SSLSocket
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a `X509ExtendedTrustManager` that does not perform any checks. In a real-world application, you would replace this with your own implementation that checks the server's certificate chain and authentication type.
+
+Please note that this is a very basic example and does not cover all the possible scenarios. In a real-world application, you would need to handle exceptions, check the certificate chain, and perform other necessary checks.
+================================================================
+
+Sample: 9 X509ExtendedTrustManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void checkClientTrusted(X509Certificate[] chain, String authType, SSLEngine engine) from javax.net.ssl.X509ExtendedTrustManager
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `checkClientTrusted` method from `javax.net.ssl.X509ExtendedTrustManager`:
+
+```java
+import javax.net.ssl.X509ExtendedTrustManager;
+import java.security.cert.X509Certificate;
+import javax.net.ssl.SSLEngine;
+import java.security.cert.CertificateException;
+
+public class Main {
+    public static void main(String[] args) {
+        X509ExtendedTrustManager trustManager = new X509ExtendedTrustManager() {
+            @Override
+            public void checkClientTrusted(X509Certificate[] chain, String authType, SSLEngine engine) throws CertificateException {
+                // Your implementation here
+            }
+
+            @Override
+            public void checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine) throws CertificateException {
+                // Your implementation here
+            }
+
+            @Override
+            public X509Certificate[] getAcceptedIssuers() {
+                // Your implementation here
+                return null;
+            }
+        };
+    }
+}
+```
+
+In the `checkClientTrusted` method, you can add your own logic to check the client's certificate. If the certificate is trusted, you can simply return; otherwise, you can throw a `CertificateException`.
+
+The `checkServerTrusted` method is similar, but it's used for server-side validation.
+
+The `getAcceptedIssuers` method returns an array of trusted issuers.
+
+Please replace the comments with your own logic.
+================================================================
+
+Sample: 10 X509ExtendedTrustManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine) from javax.net.ssl.X509ExtendedTrustManager
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine)` method is part of the `X509ExtendedTrustManager` interface, which is used to manage the trust in certificates.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.net.ssl.X509ExtendedTrustManager;
+import java.security.cert.X509Certificate;
+import javax.net.ssl.SSLEngine;
+
+public class MyTrustManager extends X509ExtendedTrustManager {
+
+    @Override
+    public void checkClientTrusted(X509Certificate[] chain, String authType) {
+        // Implement your logic here
+    }
+
+    @Override
+    public void checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine) {
+        // Implement your logic here
+    }
+
+    @Override
+    public X509Certificate[] getAcceptedIssuers() {
+        // Implement your logic here
+        return null;
+    }
+}
+```
+
+In the above example, you need to implement the `checkServerTrusted` method according to your requirements. This method is called by the SSL engine when the server certificate needs to be verified.
+
+Please note that you need to replace the `// Implement your logic here` comments with your actual logic.
+
+Also, you need to replace `MyTrustManager` with the actual name of your class that extends `X509ExtendedTrustManager`.
+
+Remember to handle exceptions properly in your implementation.
+================================================================
+

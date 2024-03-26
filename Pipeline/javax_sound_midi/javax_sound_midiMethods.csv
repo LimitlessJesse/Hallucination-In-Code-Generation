@@ -1,0 +1,85 @@
+ClassName,Method,Return Type
+Instrument,getPatch(),Patch
+MetaMessage,clone(),Object
+MetaMessage,getData(),byte[]
+MetaMessage,getType(),int
+MetaMessage,"setMessage(int type, byte[] data, int length)",void
+MidiDevice.Info,equals(Object obj),boolean
+MidiDevice.Info,getDescription(),String
+MidiDevice.Info,getName(),String
+MidiDevice.Info,getVendor(),String
+MidiDevice.Info,getVersion(),String
+MidiDevice.Info,hashCode(),int
+MidiDevice.Info,toString(),String
+MidiEvent,getMessage(),MidiMessage
+MidiEvent,getTick(),long
+MidiEvent,setTick(long tick),void
+MidiFileFormat,getByteLength(),int
+MidiFileFormat,getDivisionType(),float
+MidiFileFormat,getMicrosecondLength(),long
+MidiFileFormat,getProperty(String key),Object
+MidiFileFormat,getResolution(),int
+MidiFileFormat,getType(),int
+MidiFileFormat,properties(),"Map<String,Object>"
+MidiMessage,clone(),abstract Object
+MidiMessage,getLength(),int
+MidiMessage,getMessage(),byte[]
+MidiMessage,getStatus(),int
+MidiMessage,"setMessage(byte[] data, int length)",protected void
+MidiSystem,getMidiDevice(MidiDevice.Info info),static MidiDevice
+MidiSystem,getMidiDeviceInfo(),static MidiDevice.Info[]
+MidiSystem,getMidiFileFormat(File file),static MidiFileFormat
+MidiSystem,getMidiFileFormat(InputStream stream),static MidiFileFormat
+MidiSystem,getMidiFileFormat(URL url),static MidiFileFormat
+MidiSystem,getMidiFileTypes(),static int[]
+MidiSystem,getMidiFileTypes(Sequence sequence),static int[]
+MidiSystem,getReceiver(),static Receiver
+MidiSystem,getSequence(File file),static Sequence
+MidiSystem,getSequence(InputStream stream),static Sequence
+MidiSystem,getSequence(URL url),static Sequence
+MidiSystem,getSequencer(),static Sequencer
+MidiSystem,getSequencer(boolean connected),static Sequencer
+MidiSystem,getSoundbank(File file),static Soundbank
+MidiSystem,getSoundbank(InputStream stream),static Soundbank
+MidiSystem,getSoundbank(URL url),static Soundbank
+MidiSystem,getSynthesizer(),static Synthesizer
+MidiSystem,getTransmitter(),static Transmitter
+MidiSystem,isFileTypeSupported(int fileType),static boolean
+MidiSystem,"isFileTypeSupported(int fileType, Sequence sequence)",static boolean
+MidiSystem,"write(Sequence in, int type, File out)",static int
+MidiSystem,"write(Sequence in, int fileType, OutputStream out)",static int
+Patch,getBank(),int
+Patch,getProgram(),int
+Sequence,createTrack(),Track
+Sequence,deleteTrack(Track track),boolean
+Sequence,getDivisionType(),float
+Sequence,getMicrosecondLength(),long
+Sequence,getPatchList(),Patch[]
+Sequence,getResolution(),int
+Sequence,getTickLength(),long
+Sequence,getTracks(),Track[]
+Sequencer.SyncMode,equals(Object obj),boolean
+Sequencer.SyncMode,hashCode(),int
+Sequencer.SyncMode,toString(),String
+ShortMessage,clone(),Object
+ShortMessage,getChannel(),int
+ShortMessage,getCommand(),int
+ShortMessage,getData1(),int
+ShortMessage,getData2(),int
+ShortMessage,getDataLength(int status),protected int
+ShortMessage,setMessage(int status),void
+ShortMessage,"setMessage(int status, int data1, int data2)",void
+ShortMessage,"setMessage(int command, int channel, int data1, int data2)",void
+SoundbankResource,getData(),abstract Object
+SoundbankResource,getDataClass(),Class<?>
+SoundbankResource,getName(),String
+SoundbankResource,getSoundbank(),Soundbank
+SysexMessage,clone(),Object
+SysexMessage,getData(),byte[]
+SysexMessage,"setMessage(byte[] data, int length)",void
+SysexMessage,"setMessage(int status, byte[] data, int length)",void
+Track,add(MidiEvent event),boolean
+Track,get(int index),MidiEvent
+Track,remove(MidiEvent event),boolean
+Track,size(),int
+Track,ticks(),long

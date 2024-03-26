@@ -1,0 +1,114 @@
+Sample: 0 RMIConnectorServer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void start() from javax.management.remote.rmi.RMIConnectorServer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `start()` method is a part of the `RMIConnectorServer` class in the `javax.management.remote.rmi` package. This method is used to start the RMI connector server.
+
+Here is a complete code snippet of the `start()` method:
+
+```java
+import javax.management.remote.rmi.RMIConnectorServer;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.createRegistry(1099);
+            RMIConnectorServer rmiConnectorServer = new RMIConnectorServer();
+            rmiConnectorServer.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a registry on port 1099 using `LocateRegistry.createRegistry(1099)`. Then we create an instance of `RMIConnectorServer` and call the `start()` method on it.
+
+Please note that you need to have the necessary permissions to start the RMI connector server. Also, this code snippet is a basic example and may not work as expected in a real-world scenario.
+================================================================
+
+Sample: 1 RMIConnectorServer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void stop() from javax.management.remote.rmi.RMIConnectorServer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void stop()` method is not a part of the `RMIConnectorServer` class. It is a part of the `Server` interface which is implemented by `RMIConnectorServer`.
+
+Here is a complete code snippet of the `stop()` method:
+
+```java
+import javax.management.remote.rmi.RMIConnectorServer;
+import java.rmi.server.RMIServerSocketFactory;
+import java.rmi.server.RMISocketFactory;
+import java.rmi.server.UnicastRemoteObject;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        RMIServerSocketFactory ssFactory = null;
+        RMISocketFactory sFactory = null;
+        RMIConnectorServer rmiConnectorServer = new RMIConnectorServer(ssFactory, sFactory);
+        UnicastRemoteObject.exportObject(rmiConnectorServer, 0);
+        rmiConnectorServer.start();
+        rmiConnectorServer.stop();
+    }
+}
+```
+
+In this code snippet, we create a `RMIConnectorServer` object and call the `stop()` method on it. Note that you need to have the necessary permissions to call the `stop()` method.
+
+Also, please note that the `stop()` method is deprecated in Java 9 and later versions. It is recommended to use the `close()` method instead.
+================================================================
+

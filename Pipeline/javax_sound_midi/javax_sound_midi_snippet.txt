@@ -1,0 +1,1800 @@
+Sample: 0 MetaMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getType() from javax.sound.midi.MetaMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.sound.midi.MetaMessage` class is used to get the type of the MIDI meta-event.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MetaMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MetaMessage metaMessage = new MetaMessage(new byte[]{0x03, 0x00, 0x02, 0x00}, 3);
+            int type = metaMessage.getType();
+            System.out.println("Type of the MIDI meta-event: " + type);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `MetaMessage` object with a byte array and a length. Then we call the `getType()` method on this object to get the type of the MIDI meta-event. The type is then printed to the console.
+
+Please note that you need to have the necessary permissions and the necessary libraries to run this code. Also, this code is just an example and may not work as expected in your environment.
+================================================================
+
+Sample: 1 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method in `javax.sound.midi.MidiDevice.Info` is used to get the name of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println(info.getName());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its name using `info.getName()`.
+
+Please note that this code snippet may not work as expected if no MIDI devices are available. In that case, it will throw a `MidiUnavailableException`. We are catching this exception and printing the stack trace to handle it.
+================================================================
+
+Sample: 2 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVendor() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getVendor()` method from `javax.sound.midi.MidiDevice.Info`:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Vendor: " + info.getVendor());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their vendor names.
+
+Please note that the `getVendor()` method returns the vendor name of the MIDI device. The vendor name is a string that identifies the manufacturer of the MIDI device.
+
+Also, the `MidiUnavailableException` is thrown when a MIDI device is not available. This exception is a checked exception, so you need to handle it using a try-catch block.
+================================================================
+
+Sample: 3 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 4 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 5 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 6 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 7 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 8 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 9 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 10 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 11 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 12 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 13 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 14 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 15 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 16 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 17 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method in `javax.sound.midi.MidiDevice.Info` returns a string that describes the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+        for (MidiDevice.Info info : infos) {
+            System.out.println(info.getDescription());
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI device information using `MidiSystem.getMidiDeviceInfo()`. Then we are iterating over each `MidiDevice.Info` object and printing its description using `info.getDescription()`.
+
+Please note that you need to have the necessary permissions to access and use MIDI devices. Also, the `MidiUnavailableException` can be thrown if the MIDI device is unavailable.
+================================================================
+
+Sample: 18 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getVersion() from javax.sound.midi.MidiDevice.Info
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getVersion()` method in `javax.sound.midi.MidiDevice.Info` class is used to get the version of the MIDI device.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            MidiDevice.Info[] infos = MidiSystem.getMidiDeviceInfo();
+            for (MidiDevice.Info info : infos) {
+                System.out.println("Device name: " + info.getName());
+                System.out.println("Device version: " + info.getVersion());
+            }
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are getting all the MIDI devices available in the system and then printing their names and versions.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`. If you are using a command line tool like Maven or Gradle, you can add the MIDI API as a dependency in your `pom.xml` or `build.gradle` file.
+================================================================
+
+Sample: 19 Patch
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getBank() from javax.sound.midi.Patch
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getBank()` method in the `javax.sound.midi.Patch` class is used to get the bank number of the patch.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.Patch;
+
+public class Main {
+    public static void main(String[] args) {
+        Patch patch = new Patch();
+        int bank = patch.getBank();
+        System.out.println("Bank number: " + bank);
+    }
+}
+```
+
+In this code snippet, we first import the `Patch` class from the `javax.sound.midi` package. Then, we create a new `Patch` object and call the `getBank()` method on it. The bank number is then printed to the console.
+
+Please note that this is a simple example and may not work as expected in a real-world scenario. The `Patch` class is typically used in a MIDI context, and the `getBank()` method is typically used in conjunction with other MIDI methods to get the bank number of a specific patch.
+================================================================
+
+Sample: 20 Patch
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getProgram() from javax.sound.midi.Patch
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getProgram()` method in the `javax.sound.midi.Patch` class is used to get the program number of the patch.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Synthesizer;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Synthesizer synth = MidiSystem.getSynthesizer();
+            synth.open();
+            int program = synth.getPatch().getProgram();
+            System.out.println("Program number: " + program);
+            synth.close();
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first get a `Synthesizer` object using `MidiSystem.getSynthesizer()`. Then we open the synthesizer using `synth.open()`. After that, we get the program number of the patch using `synth.getPatch().getProgram()`. Finally, we close the synthesizer using `synth.close()`.
+
+Please note that you need to have the MIDI API in your classpath to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`.
+================================================================
+
+Sample: 21 Sequence
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Track[] getTracks() from javax.sound.midi.Sequence
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTracks()` method in `javax.sound.midi.Sequence` returns an array of `Track` objects. Each `Track` object represents a sequence of MIDI events.
+
+Here is a simple example of how to use this method:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import javax.sound.midi.Track;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Sequence sequence = MidiSystem.getSequence("path_to_your_midi_file");
+            Track[] tracks = sequence.getTracks();
+
+            for (Track track : tracks) {
+                System.out.println(track);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are getting a `Sequence` object from a MIDI file using `MidiSystem.getSequence()`. Then we are getting an array of `Track` objects from the `Sequence` using `getTracks()`. Finally, we are printing each `Track` object to the console.
+
+Please replace `"path_to_your_midi_file"` with the actual path to your MIDI file.
+
+Note: This code assumes that you have the necessary permissions to read the MIDI file and that the MIDI file is in a format that can be read by the `MidiSystem.getSequence()` method.
+================================================================
+
+Sample: 22 Sequence
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getResolution() from javax.sound.midi.Sequence
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getResolution()` method is not a part of the `Sequence` class in the `javax.sound.midi` package. It is a part of the `Sequencer` class.
+
+Here is an example of how you can use the `getResolution()` method from the `Sequencer` class:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequencer;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Sequencer sequencer = MidiSystem.getSequencer();
+            System.out.println("Resolution: " + sequencer.getResolution());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code, we first get a `Sequencer` object using `MidiSystem.getSequencer()`. Then we call the `getResolution()` method on this `Sequencer` object and print the result.
+
+Please note that you need to have a MIDI device connected to your system to get a `Sequencer` object. If you don't have a MIDI device, you will get a `MidiUnavailableException`.
+================================================================
+
+Sample: 23 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setMessage(int command, int channel, int data1, int data2) from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `setMessage` method from `javax.sound.midi.ShortMessage`:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Synthesizer;
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Synthesizer synth = MidiSystem.getSynthesizer();
+            synth.open();
+            ShortMessage msg = new ShortMessage();
+            msg.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+            synth.getChannels()[0].send(msg, 1);
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are using the `javax.sound.midi` package to create a synthesizer and send a note on message. The `setMessage` method is used to set the command, channel, data1, and data2 of the ShortMessage.
+
+Please note that you need to have the MIDI API installed on your system to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`.
+================================================================
+
+Sample: 24 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getCommand() from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getCommand()` method from `javax.sound.midi.ShortMessage`:
+
+```java
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        ShortMessage msg = new ShortMessage();
+        int command = msg.getCommand();
+        System.out.println("Command: " + command);
+    }
+}
+```
+
+In this code snippet, we create a new `ShortMessage` object and then call the `getCommand()` method. The `getCommand()` method returns the command of the `ShortMessage` object. The command is an integer value that represents the type of MIDI message.
+
+Please note that the `javax.sound.midi.ShortMessage` class is part of the Java Sound API, which is not included in the standard Java library. You need to add the Java Sound API to your project to use this class.
+================================================================
+
+Sample: 25 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getChannel() from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getChannel()` method from `javax.sound.midi.ShortMessage`:
+
+```java
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        ShortMessage msg = new ShortMessage();
+        int channel = msg.getChannel();
+        System.out.println("Channel: " + channel);
+    }
+}
+```
+
+In this code snippet, we create a new `ShortMessage` object and then call the `getChannel()` method on it. The `getChannel()` method returns the MIDI channel of the message.
+
+Please note that the `javax.sound.midi.ShortMessage` class is part of the Java Sound API, which is not included in the standard Java API. You will need to add the Java Sound API to your project if you want to use this class.
+================================================================
+
+Sample: 26 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getData1() from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getData1()` method in `javax.sound.midi.ShortMessage` is used to get the first data byte of the MIDI message.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        ShortMessage msg = new ShortMessage();
+        msg.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+        int data1 = msg.getData1();
+        System.out.println("Data1: " + data1);
+    }
+}
+```
+
+In this code, we create a new `ShortMessage` object and set a MIDI message using `setMessage()`. Then we get the first data byte of the MIDI message using `getData1()` and print it out.
+
+Please note that you need to add the necessary MIDI libraries to your project to use `ShortMessage`. If you are using Maven, you can add the following dependency to your `pom.xml`:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.jsyn</groupId>
+        <artifactId>jsyn</artifactId>
+        <version>2019.06.01</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle`:
+
+```groovy
+dependencies {
+    implementation 'com.jsyn:jsyn:2019.06.01'
+}
+```
+================================================================
+
+Sample: 27 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getData2() from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getData2()` method in `javax.sound.midi.ShortMessage` is used to get the second data byte of the MIDI message. This method returns an integer value between 0 and 127.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        ShortMessage msg = new ShortMessage();
+        try {
+            msg.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+            int data2 = msg.getData2();
+            System.out.println("Data2: " + data2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `ShortMessage` object and set a MIDI message using the `setMessage()` method. Then we get the second data byte of the message using the `getData2()` method and print it out.
+
+Please note that the `setMessage()` method can throw an `InvalidMidiDataException`, so we need to handle it in a try-catch block.
+================================================================
+
+Sample: 28 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setMessage(int command, int channel, int data1) from javax.sound.midi.ShortMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `setMessage(int command, int channel, int data1)` method from `javax.sound.midi.ShortMessage`:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Synthesizer;
+import javax.sound.midi.ShortMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Synthesizer synth = MidiSystem.getSynthesizer();
+            synth.open();
+            ShortMessage msg = new ShortMessage();
+            msg.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+            synth.getChannels()[0].send(msg, 1);
+        } catch (MidiUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are using the `javax.sound.midi` package to create a synthesizer and send a note on message. The `setMessage(int command, int channel, int data1)` method is used to set the command, channel, and data1 of the ShortMessage. The command is set to `NOTE_ON`, the channel is set to `1`, and the data1 is set to `60`.
+
+Please note that you need to have the MIDI API installed on your system to run this code. If you are using an IDE like Eclipse or IntelliJ, you can add the MIDI API by going to `File -> Project Structure -> Libraries -> + -> Java -> MIDI API`.
+================================================================
+
+Sample: 29 SysexMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] getData() from javax.sound.midi.SysexMessage
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getData()` method in `javax.sound.midi.SysexMessage` returns a byte array that contains the data of the SysexMessage.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequencer;
+import javax.sound.midi.SysexMessage;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Sequencer sequencer = MidiSystem.getSequencer();
+            SysexMessage sysexMessage = new SysexMessage(new byte[]{0xF0, 0x41, 0x10, 0x42, 0x12, 0x34, 0x56, 0x78, 0xF7}, 0, 9);
+            byte[] data = sysexMessage.getData();
+            for (byte b : data) {
+                System.out.printf("%02X ", b);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a `SysexMessage` with some data, then we get the data using `getData()` and print it to the console.
+
+Please note that you need to have the MIDI API in your classpath to use `javax.sound.midi`. If you are using Maven, you can add the following dependency to your `pom.xml`:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.sun</groupId>
+        <artifactId>media</artifactId>
+        <version>1.0</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle`:
+
+```groovy
+dependencies {
+    implementation 'com.sun.media:jai_core:1.1.3'
+}
+```
+================================================================
+
+Sample: 30 Track
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use MidiEvent get(int index) from javax.sound.midi.Track
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `get(int index)` method in the `javax.sound.midi.Track` class is used to get the MIDI event at the specified index in the track.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.sound.midi.*;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a sequencer
+            Sequencer sequencer = MidiSystem.getSequencer();
+            sequencer.open();
+
+            // Create a sequence
+            Sequence sequence = new Sequence(Sequence.PPQ, 1);
+
+            // Get the first track
+            Track track = sequence.getTracks()[0];
+
+            // Create a note on event
+            ShortMessage noteOn = new ShortMessage();
+            noteOn.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+
+            // Create a note off event
+            ShortMessage noteOff = new ShortMessage();
+            noteOff.setMessage(ShortMessage.NOTE_OFF, 1, 60, 100);
+
+            // Add the events to the track
+            track.add(new MidiEvent(noteOn, 1));
+            track.add(new MidiEvent(noteOff, 2));
+
+            // Get the MIDI event at index 0
+            MidiEvent event = track.get(0);
+
+            // Print the event
+            System.out.println(event);
+
+            // Close the sequencer
+            sequencer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a sequencer and a sequence. Then we get the first track from the sequence. We create two `ShortMessage` objects, one for a note on event and one for a note off event. We add these events to the track at the appropriate times. Finally, we get the MIDI event at index 0 from the track and print it.
+================================================================
+

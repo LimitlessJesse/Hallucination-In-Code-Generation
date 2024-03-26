@@ -1,0 +1,49 @@
+Sample: 0 ValueRange
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isFixed() from java.time.temporal.ValueRange
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isFixed()` method from `java.time.temporal.ValueRange` is used to check if the range is fixed. A fixed range is one that has a specific start and end value.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.time.temporal.ValueRange;
+
+public class Main {
+    public static void main(String[] args) {
+        ValueRange range = ValueRange.of(1, 10);
+        boolean isFixed = range.isFixed();
+        System.out.println("Is the range fixed? " + isFixed);
+    }
+}
+```
+
+In this code snippet, we create a `ValueRange` object with a start value of 1 and an end value of 10. We then call the `isFixed()` method on this range, which returns `true` because this range is fixed. The result is then printed to the console.
+================================================================
+

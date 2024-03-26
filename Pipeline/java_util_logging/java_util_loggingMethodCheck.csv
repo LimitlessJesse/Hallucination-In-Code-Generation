@@ -1,0 +1,142 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,ConsoleHandler,1,void setFormatter(Formatter newFormatter),False
+0,ConsoleHandler,2,void setLevel(Level newLevel),False
+0,ConsoleHandler,3,void setFilter(Filter newFilter),False
+0,ConsoleHandler,4,void publish(LogRecord record),True
+0,ConsoleHandler,5,void flush(),False
+1,ErrorManager,1,"void error(String message, Exception ex, int code)",True
+1,ErrorManager,2,"void error(String message, int code)",False
+1,ErrorManager,3,void error(String message),False
+1,ErrorManager,4,"void fail(String message, Exception ex, int code)",False
+1,ErrorManager,5,"void fail(String message, int code)",False
+1,ErrorManager,6,void fail(String message),False
+2,FileHandler,1,"FileHandler(String pattern, int limit, int count)",False
+2,FileHandler,2,"FileHandler(String pattern, int limit, int count, boolean append)",False
+2,FileHandler,3,void publish(LogRecord record),True
+2,FileHandler,4,void flush(),False
+2,FileHandler,5,void close(),True
+3,Formatter,1,String format(LogRecord record),True
+3,Formatter,2,String getHead(Handler h),True
+3,Formatter,3,String getTail(Handler h),True
+3,Formatter,4,void setContext(LogRecord record),False
+3,Formatter,5,void setFormatter(Formatter newFormatter),False
+4,Handler,1,boolean add(E e),False
+4,Handler,2,void close(),True
+4,Handler,3,void flush(),True
+4,Handler,4,void publish(LogRecord record),True
+4,Handler,5,void setFormatter(Formatter newFormatter),True
+5,Level,1,boolean add(E e),False
+5,Level,2,"void add(int index, E element)",False
+5,Level,3,boolean addAll(Collection<? extends E> c),False
+5,Level,4,boolean remove(Object o),False
+5,Level,5,E remove(int index),False
+6,Logger,1,void addHandler(Handler h),True
+6,Logger,2,void setLevel(Level newLevel),True
+6,Logger,3,void setParent(Logger parent),True
+6,Logger,4,void setUseParentHandlers(boolean useParentHandlers),True
+6,Logger,5,"void log(Level level, String msg)",True
+7,LoggingPermission,1,boolean equals(Object obj),False
+7,LoggingPermission,2,int hashCode(),False
+7,LoggingPermission,3,boolean add(E e),False
+7,LoggingPermission,4,boolean remove(Object o),False
+7,LoggingPermission,5,boolean contains(Object o),False
+8,LogManager,1,void addAppender(Appender appender),False
+8,LogManager,2,void readConfiguration(),True
+8,LogManager,3,void reset(),True
+8,LogManager,4,void resetToParent(),False
+8,LogManager,5,void setLogger(Logger logger),False
+8,LogManager,6,"void setLogger(String name, Logger logger)",False
+8,LogManager,7,"void setLogger(String name, String resourceBundleName)",False
+8,LogManager,8,"void setLogger(String name, String resourceBundleName, Locale locale)",False
+8,LogManager,9,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader)",False
+8,LogManager,10,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control)",False
+8,LogManager,11,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle)",False
+8,LogManager,12,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent)",False
+8,LogManager,13,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub)",False
+8,LogManager,14,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent)",False
+8,LogManager,15,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate)",False
+8,LogManager,16,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub)",False
+8,LogManager,17,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub)",False
+8,LogManager,18,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent)",False
+8,LogManager,19,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent, ResourceBundle delegateDelegateHub)",False
+8,LogManager,20,"void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent, ResourceBundle delegateDelegateHub, ResourceBundle delegateDelegateParentHub)",False
+9,LogRecord,1,void setMessage(String message),True
+9,LogRecord,2,void setLoggerName(String loggerName),True
+9,LogRecord,3,void setLevel(Level level),True
+9,LogRecord,4,void setMillis(long millis),True
+9,LogRecord,5,void setSourceClassName(String sourceClassName),True
+9,LogRecord,6,void setSourceMethodName(String sourceMethodName),True
+9,LogRecord,7,void setThrown(Throwable thrown),True
+9,LogRecord,8,void setParameters(Object[] parameters),True
+9,LogRecord,9,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,10,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,11,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,12,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,13,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,14,void setResourceBundle(ResourceBundle bundle),True
+9,LogRecord,15,void setResourceBundle(ResourceBundle bundle),True
+10,MemoryHandler,1,"MemoryHandler(Handler target, int size, boolean push)",False
+10,MemoryHandler,2,void push(),True
+10,MemoryHandler,3,void pop(),False
+10,MemoryHandler,4,void setPush(boolean push),False
+10,MemoryHandler,5,boolean isPush(),False
+11,SimpleFormatter,1,String format(LogRecord record),True
+11,SimpleFormatter,2,String getHead(),False
+11,SimpleFormatter,3,String getTail(),False
+11,SimpleFormatter,4,void setHead(String head),False
+11,SimpleFormatter,5,void setTail(String tail),False
+12,SocketHandler,1,void close(),True
+12,SocketHandler,2,void publish(LogRecord record),True
+12,SocketHandler,3,void flush(),False
+12,SocketHandler,4,void setFormatter(Formatter newFormatter),False
+12,SocketHandler,5,void setLevel(Level newLevel),False
+12,SocketHandler,6,void setFilter(Filter newFilter),False
+12,SocketHandler,7,void setEncoding(String encoding),False
+12,SocketHandler,8,void setAddress(InetAddress address),False
+12,SocketHandler,9,void setPort(int port),False
+12,SocketHandler,10,void setSocket(Socket socket),False
+13,StreamHandler,1,void close(),True
+13,StreamHandler,2,void flush(),True
+13,StreamHandler,3,void publish(LogRecord record),True
+13,StreamHandler,4,void setFormatter(Formatter formatter),False
+13,StreamHandler,5,void setOutputStream(OutputStream out),True
+14,XMLFormatter,1,void setOutput(OutputStream out),False
+14,XMLFormatter,2,void setEncoding(String encoding),False
+14,XMLFormatter,3,void setIndent(int indent),False
+14,XMLFormatter,4,void setPrefix(String prefix),False
+14,XMLFormatter,5,void setSuffix(String suffix),False
+14,XMLFormatter,6,void setFacility(String facility),False
+14,XMLFormatter,7,void setFormat(String format),False
+14,XMLFormatter,8,void setDateFormat(String dateFormat),False
+14,XMLFormatter,9,void setTimeZone(String timeZone),False
+14,XMLFormatter,10,void setContext(String context),False
+14,XMLFormatter,11,void setMessageFormat(String messageFormat),False
+14,XMLFormatter,12,void setHeader(String header),False
+14,XMLFormatter,13,void setFooter(String footer),False
+14,XMLFormatter,14,void setRecordSeparator(String recordSeparator),False
+14,XMLFormatter,15,void setRecordDelimiter(String recordDelimiter),False
+14,XMLFormatter,16,void setBundle(String bundle),False
+14,XMLFormatter,17,void setBundleName(String bundleName),False
+14,XMLFormatter,18,void setBundleVersion(String bundleVersion),False
+14,XMLFormatter,19,void setBundleVendor(String bundleVendor),False
+14,XMLFormatter,20,void setBundleClassName(String bundleClassName),False
+14,XMLFormatter,21,void setBundleSymbolicName(String bundleSymbolicName),False
+14,XMLFormatter,22,void setBundleDescription(String bundleDescription),False
+14,XMLFormatter,23,void setBundleCopyright(String bundleCopyright),False
+14,XMLFormatter,24,void setBundleLicense(String bundleLicense),False
+14,XMLFormatter,25,void setBundleVendorURL(String bundleVendorURL),False
+14,XMLFormatter,26,void setBundleDocURL(String bundleDocURL),False
+14,XMLFormatter,27,void setBundleSigAlgName(String bundleSigAlgName),False
+14,XMLFormatter,28,void setBundleSigAlgProvider(String bundleSigAlgProvider),False
+14,XMLFormatter,29,void setBundleSigAlgDigest(String bundleSigAlgDigest),False
+14,XMLFormatter,30,void setBundleSigAlgCertificate(String bundleSigAlgCertificate),False
+14,XMLFormatter,31,void setBundleSigAlgCertificatePath(String bundleSigAlgCertificatePath),False
+14,XMLFormatter,32,void setBundleSigAlgCertificateAlias(String bundleSigAlgCertificateAlias),False
+14,XMLFormatter,33,void setBundleSigAlgCertificateSerialNumber(String bundleSigAlgCertificateSerialNumber),False
+14,XMLFormatter,34,void setBundleSigAlgCertificateValidity(String bundleSigAlgCertificateValidity),False
+14,XMLFormatter,35,void setBundleSigAlgCertificateIssuer(String bundleSigAlgCertificateIssuer),False
+14,XMLFormatter,36,void setBundleSigAlgCertificateSubject(String bundleSigAlgCertificateSubject),False
+14,XMLFormatter,37,void setBundleSigAlgCertificateVersion(String bundleSigAlgCertificateVersion),False
+14,XMLFormatter,38,void setBundleSigAlgCertificateNotBefore(String bundleSigAlgCertificateNotBefore),False
+14,XMLFormatter,39,void setBundleSigAlgCertificateNotAfter(String bundleSigAlgCertificateNotAfter),False
+14,XMLFormatter,40,void setBundleSigAlgCertificateKeyAlgorithm(String bundleSigAlgCertificateKeyAlgorithm),False

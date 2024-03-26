@@ -1,0 +1,653 @@
+Sample: 0 _BindingIteratorImplBase
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming._BindingIteratorImplBase package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the iteration has more elements.
+2. `E next()`: This method returns the next element in the iteration.
+3. `void remove()`: This method removes from the underlying collection the last element returned by this iterator.
+4. `void reset()`: This method resets the iterator to its initial state.
+5. `void destroy()`: This method destroys the iterator.
+================================================================
+
+Sample: 1 _BindingIteratorStub
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming._BindingIteratorStub package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the iteration has more elements.
+2. `org.omg.CORBA.Object next()`: This method returns the next element in the iteration.
+3. `void remove()`: This method removes from the underlying collection the last element returned by this iterator.
+4. `void reset()`: This method resets the iterator to its initial state.
+5. `void destroy()`: This method destroys the iterator.
+================================================================
+
+Sample: 2 _NamingContextExtStub
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming._NamingContextExtStub package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName resolve_str(String name)`: This method resolves the given name to an object reference.
+
+2. `void rebind(String name, Object obj)`: This method binds the given object reference to the given name.
+
+3. `void rebind_context(String name, Object obj)`: This method binds the given object reference to the given name in the context.
+
+4. `void unbind(String name)`: This method unbinds the given name from the object reference.
+
+5. `void unbind_context(String name)`: This method unbinds the given name from the object reference in the context.
+================================================================
+
+Sample: 3 _NamingContextImplBase
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming._NamingContextImplBase package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName name()`: This method returns the name of the NamingContext.
+2. `void rebind(String name, Object obj)`: This method binds the specified object to the specified name in the NamingContext.
+3. `void rebinding_notification(int type, ObjectName name)`: This method notifies the NamingContext that the specified object has been rebound.
+4. `Object lookup(String name)`: This method looks up the object bound to the specified name in the NamingContext.
+5. `void unbind(String name)`: This method unbinds the object bound to the specified name in the NamingContext.
+================================================================
+
+Sample: 4 _NamingContextStub
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming._NamingContextStub package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName name()`: This method returns the name of the NamingContext.
+2. `void rebind(String name, Object obj)`: This method binds the specified object to the specified name.
+3. `void rebind(ObjectName name, Object obj)`: This method binds the specified object to the specified name.
+4. `void unbind(String name)`: This method unbinds the specified name.
+5. `void unbind(ObjectName name)`: This method unbinds the specified name.
+================================================================
+
+Sample: 5 Binding
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.Binding package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 6 BindingHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 7 BindingHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void set_binding(org.omg.CORBA.Object obj)`: This method sets the binding to the specified object.
+
+2. `org.omg.CORBA.Object get_binding()`: This method returns the binding of the object.
+
+3. `void set_address(String address)`: This method sets the address of the object.
+
+4. `String get_address()`: This method returns the address of the object.
+
+5. `void set_type(String type)`: This method sets the type of the object.
+
+6. `String get_type()`: This method returns the type of the object.
+================================================================
+
+Sample: 8 BindingIteratorHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingIteratorHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the iteration has more elements.
+2. `org.omg.CosNaming.Binding next()`: This method returns the next element in the iteration.
+3. `void remove()`: This method removes from the underlying collection the last element returned by this iterator.
+4. `void reset()`: This method resets the iterator to its initial state.
+5. `boolean hasMoreElements()`: This method returns true if the iteration has more elements.
+6. `org.omg.CosNaming.Binding nextElement()`: This method returns the next element in the iteration.
+================================================================
+
+Sample: 9 BindingIteratorHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingIteratorHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the iteration has more elements.
+2. `org.omg.CosNaming.Binding next()`: This method returns the next element in the iteration.
+3. `void remove()`: This method removes from the underlying collection the last element returned by this iterator.
+4. `void reset()`: This method resets the iterator to its initial state.
+5. `void set_done(boolean done)`: This method sets the done flag of the iterator.
+================================================================
+
+Sample: 10 BindingIteratorPOA
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingIteratorPOA package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if the iteration has more elements.
+2. `org.omg.CosNaming.Binding next()`: This method returns the next element in the iteration.
+3. `void remove()`: This method removes from the underlying collection the last element returned by this iterator.
+4. `void reset()`: This method resets the iterator to its initial state.
+5. `boolean hasMoreElements()`: This method returns true if the iteration has more elements.
+6. `org.omg.CosNaming.Binding nextElement()`: This method returns the next element in the iteration.
+7. `void removeElement()`: This method removes from the underlying collection the last element returned by this iterator.
+8. `void resetElements()`: This method resets the iterator to its initial state.
+9. `boolean hasMore()`: This method returns true if the iteration has more elements.
+10. `org.omg.CosNaming.Binding nextBinding()`: This method returns the next element in the iteration.
+11. `void removeBinding()`: This method removes from the underlying collection the last element returned by this iterator.
+12. `void resetBindings()`: This method resets the iterator to its initial state.
+13. `boolean hasMoreBindings()`: This method returns true if the iteration has more elements.
+14. `org.omg.CosNaming.Binding nextBindingElement()`: This method returns the next element in the iteration.
+15. `void removeBindingElement()`: This method removes from the underlying collection the last element returned by this iterator.
+16. `void resetBindingElements()`: This method resets the iterator to its initial state.
+17. `boolean hasMoreBindingElements()`: This method returns true if the iteration has more elements.
+18. `org.omg.CosNaming.Binding nextBindingElement()`: This method returns the next element in the iteration.
+19. `void removeBindingElement()`: This method removes from the underlying collection the last element returned by this iterator.
+20. `void resetBindingElements()`: This method resets the iterator to its initial state.
+================================================================
+
+Sample: 11 BindingListHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingListHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 12 BindingListHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingListHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 13 BindingType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 14 BindingTypeHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingTypeHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object o)`: Compares the specified object with this list for equality.
+2. `int hashCode()`: Returns the hash code value for this list.
+3. `E getName()`: Returns the name of the binding.
+4. `E getType()`: Returns the type of the binding.
+5. `E getObject()`: Returns the object reference of the binding.
+================================================================
+
+Sample: 15 BindingTypeHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.BindingTypeHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean is_default()`: This method returns true if the BindingType is the default BindingType.
+
+2. `void set_default(boolean default_val)`: This method sets the BindingType to the default BindingType.
+
+3. `String name()`: This method returns the name of the BindingType.
+
+4. `void set_name(String name)`: This method sets the name of the BindingType.
+
+5. `String type()`: This method returns the type of the BindingType.
+
+6. `void set_type(String type)`: This method sets the type of the BindingType.
+================================================================
+
+Sample: 16 IstringHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.IstringHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object o)`: Compares the specified object with this string for equality.
+2. `int hashCode()`: Returns a hash code for this string.
+3. `String toString()`: Returns a string representation of this string.
+4. `int compareTo(String anotherString)`: Compares two strings lexicographically.
+5. `String[] split(String regex)`: Splits this string around matches of the given regular expression.
+================================================================
+
+Sample: 17 NameComponent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NameComponent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 18 NameComponentHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NameComponentHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `NameComponentHelper.newNameComponent(String id, String kind)`: This method creates a new NameComponent with the specified id and kind.
+
+2. `NameComponentHelper.newNameComponent(String id, String kind, String encoding)`: This method creates a new NameComponent with the specified id, kind, and encoding.
+
+3. `NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address)`: This method creates a new NameComponent with the specified id, kind, encoding, and address.
+
+4. `NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address, String port)`: This method creates a new NameComponent with the specified id, kind, encoding, address, and port.
+
+5. `NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address, String port, String type)`: This method creates a new NameComponent with the specified id, kind, encoding, address, port, and type.
+================================================================
+
+Sample: 19 NameComponentHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NameComponentHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void set_id(String id)`: This method sets the id of the NameComponentHolder.
+2. `String get_id()`: This method returns the id of the NameComponentHolder.
+3. `void set_kind(String kind)`: This method sets the kind of the NameComponentHolder.
+4. `String get_kind()`: This method returns the kind of the NameComponentHolder.
+5. `void set_name(String name)`: This method sets the name of the NameComponentHolder.
+6. `String get_name()`: This method returns the name of the NameComponentHolder.
+================================================================
+
+Sample: 20 NameHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NameHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `String to_string(org.omg.CosNaming.NamingContextExt nc, org.omg.CosNaming.Name name)`: This method converts a name into a string.
+
+2. `org.omg.CosNaming.Name string_to_name(String name)`: This method converts a string into a name.
+
+3. `org.omg.CosNaming.Name compose_name(org.omg.CosNaming.NamingContextExt nc, org.omg.CosNaming.Name name1, org.omg.CosNaming.Name name2)`: This method composes two names into one.
+
+4. `org.omg.CosNaming.Name parse_name(String name)`: This method parses a string into a name.
+
+5. `org.omg.CosNaming.Name parse_name(String name, int start, int end)`: This method parses a string into a name within a specified range.
+================================================================
+
+Sample: 21 NameHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NameHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void set_name(org.omg.CORBA.Object obj)`: This method sets the name of the object.
+
+2. `org.omg.CORBA.Object get_name()`: This method returns the name of the object.
+
+3. `void set_context(org.omg.CORBA.Object obj)`: This method sets the context of the object.
+
+4. `org.omg.CORBA.Object get_context()`: This method returns the context of the object.
+
+5. `void set_type(org.omg.CORBA.TypeCode tc)`: This method sets the type of the object.
+
+6. `org.omg.CORBA.TypeCode get_type()`: This method returns the type of the object.
+================================================================
+
+Sample: 22 NamingContextExtHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName name()`: This method returns the name of the NamingContext.
+2. `void rebind(String name, Object obj)`: This method binds the specified object to the specified name.
+3. `void rebind(ObjectName name, Object obj)`: This method binds the specified object to the specified name.
+4. `void unbind(String name)`: This method unbinds the specified name.
+5. `void unbind(ObjectName name)`: This method unbinds the specified name.
+================================================================
+
+Sample: 23 NamingContextExtHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void rebind(String name, Object obj)`: This method binds the specified name to the specified object in the naming context.
+
+2. `void rebind_url(String name, String url)`: This method binds the specified name to the specified URL in the naming context.
+
+3. `void unbind(String name)`: This method unbinds the specified name from the naming context.
+
+4. `Object resolve_str(String name)`: This method resolves the specified name in the naming context and returns the object.
+
+5. `Object resolve_str(String name, org.omg.CORBA.Object obj)`: This method resolves the specified name in the naming context and returns the object. If the object is not null, it is used as the default object for the name.
+================================================================
+
+Sample: 24 NamingContextExtPOA
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextExtPOA package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName name()`: This method returns the name of the NamingContext.
+2. `void rebind(String name, Object obj)`: This method binds the specified object to the specified name.
+3. `void rebind(ObjectName name, Object obj)`: This method binds the specified object to the specified name.
+4. `void unbind(String name)`: This method unbinds the specified name.
+5. `void unbind(ObjectName name)`: This method unbinds the specified name.
+================================================================
+
+Sample: 25 NamingContextHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs from the `org.omg.CosNaming.NamingContextHelper` package in Java:
+
+1. `org.omg.CosNaming.NamingContextHelper.string_to_url(String name)`: This method converts a string to a URL.
+
+2. `org.omg.CosNaming.NamingContextHelper.string_to_name(String name)`: This method converts a string to a Name.
+
+3. `org.omg.CosNaming.NamingContextHelper.string_to_namingcontext(String name)`: This method converts a string to a NamingContext.
+
+4. `org.omg.CosNaming.NamingContextHelper.string_to_namingcontextext(String name)`: This method converts a string to a NamingContextExt.
+
+5. `org.omg.CosNaming.NamingContextHelper.string_to_namingcontextid(String name)`: This method converts a string to a NamingContextId.
+
+Each of these methods has a return type and parameters as specified in the format you provided.
+================================================================
+
+Sample: 26 NamingContextHolder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextHolder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs from the `org.omg.CosNaming.NamingContextHolder` package:
+
+1. `void bind(String name, Object obj)`: This method binds the specified object to the specified name in the naming context.
+
+2. `void rebind(String name, Object obj)`: This method rebinds the specified object to the specified name in the naming context.
+
+3. `void unbind(String name)`: This method unbinds the specified name from the naming context.
+
+4. `Object resolve(String name)`: This method resolves the specified name in the naming context and returns the corresponding object.
+
+5. `void destroy()`: This method destroys the naming context.
+================================================================
+
+Sample: 27 NamingContextPOA
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.CosNaming.NamingContextPOA package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectName name()`: This method returns the name of the NamingContext.
+2. `void rebind(String name, Object obj)`: This method binds the specified object to the specified name.
+3. `void rebinding_notification(int type, ObjectName name)`: This method notifies the NamingContext that the specified object has been rebound.
+4. `Object resolve_str(String name)`: This method resolves the specified name to an object.
+5. `void unbind(String name)`: This method unbinds the specified name from the NamingContext.
+================================================================
+

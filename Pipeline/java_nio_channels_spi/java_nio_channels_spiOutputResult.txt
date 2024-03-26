@@ -1,0 +1,41 @@
+Sample: AbstractInterruptibleChannel_1
+----------------------------------------------------------------
+output:
+./java_nio_channels_spi/javaFiles/AbstractInterruptibleChannel_1.java:24: error: cannot find symbol
+            protected void implCancel(AbstractSelectionKey.SelectorKey key) {
+                                                          ^
+  symbol:   class SelectorKey
+  location: class AbstractSelectionKey
+./java_nio_channels_spi/javaFiles/AbstractInterruptibleChannel_1.java:13: error: isOpen() in <anonymous AbstractInterruptibleChannel_1$1> cannot implement isOpen() in Channel
+            protected boolean isOpen() {
+                              ^
+  attempting to assign weaker access privileges; was public
+./java_nio_channels_spi/javaFiles/AbstractInterruptibleChannel_1.java:18: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./java_nio_channels_spi/javaFiles/AbstractInterruptibleChannel_1.java:23: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+4 errors
+
+
+================================================================
+
+Sample: AbstractInterruptibleChannel_2
+----------------------------------------------------------------
+================================================================
+
+Sample: AbstractSelector_2
+----------------------------------------------------------------
+output:
+./java_nio_channels_spi/javaFiles/AbstractSelector_2.java:5: error: non-static method provider() cannot be referenced from a static context
+        AbstractSelector selector = AbstractSelector.provider();
+                                                    ^
+./java_nio_channels_spi/javaFiles/AbstractSelector_2.java:5: error: incompatible types: SelectorProvider cannot be converted to AbstractSelector
+        AbstractSelector selector = AbstractSelector.provider();
+                                                             ^
+2 errors
+
+
+================================================================
+

@@ -1,0 +1,322 @@
+Sample: 0 AbstractChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.AbstractChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Chronology getChronology()`: This method returns the chronology of this chrono local date.
+
+2. `ChronoLocalDate plus(long amountToAdd, TemporalUnit unit)`: This method adds the specified amount of time to this date-time.
+
+3. `ChronoLocalDate minus(long amountToSubtract, TemporalUnit unit)`: This method subtracts the specified amount of time from this date-time.
+
+4. `ChronoLocalDate with(TemporalAdjuster adjuster)`: This method adjusts this date-time with the specified temporal adjuster.
+
+5. `ChronoLocalDate with(TemporalAdjusters adjuster)`: This method adjusts this date-time with the specified temporal adjuster.
+================================================================
+
+Sample: 1 HijrahChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.HijrahChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `HijrahChronology.INSTANCE`: This method returns the singleton instance of the HijrahChronology.
+
+2. `HijrahChronology.from(TemporalAccessor temporal)`: This method returns a HijrahChronology based on the given TemporalAccessor.
+
+3. `HijrahChronology.from(TemporalAccessor temporal, ZoneId zone)`: This method returns a HijrahChronology based on the given TemporalAccessor and ZoneId.
+
+4. `HijrahChronology.from(TemporalAccessor temporal, ZoneId zone, ChronoLocalDate date)`: This method returns a HijrahChronology based on the given TemporalAccessor, ZoneId, and ChronoLocalDate.
+
+5. `HijrahChronology.from(TemporalAccessor temporal, ZoneId zone, ChronoLocalDate date, ChronoLocalTime time)`: This method returns a HijrahChronology based on the given TemporalAccessor, ZoneId, ChronoLocalDate, and ChronoLocalTime.
+================================================================
+
+Sample: 2 HijrahDate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.HijrahDate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `HijrahDate.of(int year, int month, int dayOfMonth)`: This method creates a HijrahDate instance from the specified year, month, and day of month.
+
+2. `HijrahDate.from(TemporalAccessor temporal)`: This method creates a HijrahDate instance from the specified temporal object.
+
+3. `HijrahDate.now()`: This method returns the current date and time in the system's default time-zone.
+
+4. `HijrahDate.now(ZoneId zone)`: This method returns the current date and time in the specified time-zone.
+
+5. `HijrahDate.ofEpochDay(long epochDay)`: This method creates a HijrahDate instance from the specified epoch day.
+================================================================
+
+Sample: 3 IsoChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.IsoChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `IsoChronology getChronology()`: This method returns the chronology of this chronology.
+2. `ChronoField getDateType()`: This method returns the date type of this chronology.
+3. `ChronoField getDayOfWeekType()`: This method returns the day-of-week type of this chronology.
+4. `ChronoField getEraType()`: This method returns the era type of this chronology.
+5. `ChronoField getMonthType()`: This method returns the month type of this chronology.
+6. `ChronoField getWeekBasedYearType()`: This method returns the week-based-year type of this chronology.
+7. `ChronoField getYearType()`: This method returns the year type of this chronology.
+8. `ChronoField getDayOfYearType()`: This method returns the day-of-year type of this chronology.
+9. `ChronoField getDayOfMonthType()`: This method returns the day-of-month type of this chronology.
+10. `ChronoField getHourOfDayType()`: This method returns the hour-of-day type of this chronology.
+11. `ChronoField getMinuteOfHourType()`: This method returns the minute-of-hour type of this chronology.
+12. `ChronoField getSecondOfMinuteType()`: This method returns the second-of-minute type of this chronology.
+13. `ChronoField getMillisOfSecondType()`: This method returns the milli-of-second type of this chronology.
+14. `ChronoField getMicrosOfSecondType()`: This method returns the micro-of-second type of this chronology.
+15. `ChronoField getNanosOfSecondType()`: This method returns the nano-of-second type of this chronology.
+16. `ChronoField getOffsetType()`: This method returns the offset type of this chronology.
+17. `ChronoField getZoneOffsetType()`: This method returns the zone-offset type of this chronology.
+18. `ChronoField getZoneIdType()`: This method returns the zone-id type of this chronology.
+19. `ChronoField getInstantType()`: This method returns the instant type of this chronology.
+20. `ChronoField getDurationType()`: This method returns the duration type of this chronology.
+21. `ChronoField getDateBasedType()`: This method returns the date-based type of this chronology.
+22. `ChronoField getTimeBasedType()`: This method returns the time-based type of this chronology.
+23. `ChronoField getDateTimeType()`: This method returns the date-time type of this chronology.
+24. `ChronoField getTimeType()`: This method returns the time type of this chronology.
+25. `ChronoField getOffsetSecondsType()`: This method returns the offset-seconds type of this chronology.
+26. `ChronoField getOffsetMinutesType()`: This method returns the offset-minutes type of this chronology.
+27. `ChronoField getOffsetHoursType()`: This method returns the offset-hours type of this chronology.
+28. `ChronoField getOffsetDaysType()`: This method returns the offset-days type of this chronology.
+29. `ChronoField getOffsetWeeksType()`: This method returns the offset-weeks type of this chronology.
+30. `ChronoField getOffsetMonthsType()`: This method returns the offset-months type of this chronology.
+31. `ChronoField getOffsetYearsType()`: This method returns the offset-years type of this chronology.
+32. `ChronoField getOffsetHalfDaysType()`: This method returns the offset-half-days type of this chronology.
+33. `ChronoField getOffsetQuartersType()`: This method returns the offset-quarters type of this chronology.
+34. `ChronoField getOffsetFifteenMinutesType()`: This method returns the offset-fifteen-minutes type of this chronology.
+35. `ChronoField getOffsetThirtyMinutesType()`: This method returns the offset-thirty-minutes type of this chronology.
+36. `ChronoField getOffsetFortyFiveMinutesType()`: This method returns the offset-forty-five-minutes type of this chronology.
+37. `ChronoField getOffsetHalfHoursType()`: This method returns the offset-half-hours type of this chronology.
+38. `ChronoField getOffsetHoursMinutesType()`: This method returns the offset-hours-minutes type of this chronology.
+39. `ChronoField getOffsetHoursMinutesSecondsType()`: This method returns the offset-hours-minutes-seconds type of this chronology.
+40. `ChronoField getOffsetHoursMinutesSecondsNanosType()`: This method returns the offset-hours-minutes-seconds-nanos type of this chronology.
+41. `ChronoField getOffsetHoursMinutesSecondsMillisType()`: This method returns the offset-hours-minutes-seconds-millis type of this chronology.
+42. `ChronoField getOffsetHoursMinutesSecondsMicrosType()`: This method returns the offset-hours-minutes-seconds-micros type of this chronology.
+43. `ChronoField getOffsetHoursMinutesSecondsNanosType()`: This method returns the offset-hours-minutes-seconds-nanos type of this chronology.
+44. `
+================================================================
+
+Sample: 4 JapaneseChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.JapaneseChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `JapaneseChronology getInstance(Locale locale)`: This method returns the JapaneseChronology instance for the specified locale.
+
+2. `JapaneseDate date(int era, int yearOfEra, int month, int dayOfMonth)`: This method returns a JapaneseDate instance for the specified era, year, month, and day.
+
+3. `JapaneseDate date(int era, int yearOfEra, int month, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute)`: This method returns a JapaneseDate instance for the specified era, year, month, day, hour, minute, and second.
+
+4. `JapaneseDate date(int era, int yearOfEra, int month, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int nanoOfSecond)`: This method returns a JapaneseDate instance for the specified era, year, month, day, hour, minute, second, and nano of second.
+
+5. `JapaneseDate date(int era, int yearOfEra, int month, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int nanoOfSecond, ZoneOffset zoneOffset)`: This method returns a JapaneseDate instance for the specified era, year, month, day, hour, minute, second, nano of second, and zone offset.
+================================================================
+
+Sample: 5 JapaneseDate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.JapaneseDate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `JapaneseDate of(int era, int yearOfEra, int month, int dayOfMonth)`: This method creates a JapaneseDate instance.
+
+2. `int getEra()`: This method returns the era.
+
+3. `int getYearOfEra()`: This method returns the year in the era.
+
+4. `int getMonthValue()`: This method returns the month.
+
+5. `int getDayOfMonth()`: This method returns the day of the month.
+================================================================
+
+Sample: 6 JapaneseEra
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.JapaneseEra package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `JapaneseEra getEra(int eraValue)`: This method returns the JapaneseEra instance for the specified era value.
+
+2. `JapaneseEra getEra(String eraName)`: This method returns the JapaneseEra instance for the specified era name.
+
+3. `JapaneseEra getEra(int eraValue, String eraName)`: This method returns the JapaneseEra instance for the specified era value and era name.
+
+4. `JapaneseEra getEra(String eraName, int eraValue)`: This method returns the JapaneseEra instance for the specified era name and era value.
+
+5. `JapaneseEra getEra(String eraName, String eraValue)`: This method returns the JapaneseEra instance for the specified era name and era value.
+================================================================
+
+Sample: 7 MinguoChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.MinguoChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MinguoChronology getInstance()`: This method returns the singleton instance of the MinguoChronology class.
+
+2. `Chronology getUtc()`: This method returns the UTC chronology.
+
+3. `Chronology getGregorian()`: This method returns the Gregorian chronology.
+
+4. `Chronology getIso()`: This method returns the ISO chronology.
+
+5. `Chronology getMinguo()`: This method returns the Minguo chronology.
+
+6. `Chronology getEraBased()`: This method returns the era-based chronology.
+
+7. `Chronology getEraBased(Era era)`: This method returns the era-based chronology with the specified era.
+
+8. `Chronology getEraBased(Era era, Era otherEra)`: This method returns the era-based chronology with the specified eras.
+
+9. `Chronology getEraBased(Era era, Era otherEra, Era anotherEra)`: This method returns the era-based chronology with the specified eras.
+
+10. `Chronology getEraBased(Era era, Era otherEra, Era anotherEra, Era lastEra)`: This method returns the era-based chronology with the specified eras.
+
+11. `Chronology getEraBased(Era era, Era otherEra, Era anotherEra, Era lastEra, Era lastButOneEra)`: This method returns the era-based chronology with the specified eras.
+================================================================
+
+Sample: 8 MinguoDate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.MinguoDate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MinguoDate.from(Chronology.MinguoEra era, int prolepticYear, int month, int dayOfMonth)`: This method returns a MinguoDate instance representing the specified date.
+
+2. `MinguoDate.from(Chronology.MinguoEra era, int prolepticYear, int month, int dayOfMonth, int hour, int minute, int second)`: This method returns a MinguoDate instance representing the specified date and time.
+
+3. `MinguoDate.from(Chronology.MinguoEra era, int prolepticYear, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond)`: This method returns a MinguoDate instance representing the specified date, time, and nano-of-second.
+
+4. `MinguoDate.from(Chronology.MinguoEra era, int prolepticYear, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneOffset offset)`: This method returns a MinguoDate instance representing the specified date, time, nano-of-second, and offset.
+
+5. `MinguoDate.from(Chronology.MinguoEra era, int prolepticYear, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneId zone)`: This method returns a MinguoDate instance representing the specified date, time, nano-of-second, and zone.
+================================================================
+
+Sample: 9 ThaiBuddhistChronology
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.ThaiBuddhistChronology package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ThaiBuddhistChronology getInstance()`: This method returns the ThaiBuddhistChronology instance.
+
+2. `Chronology getChronology()`: This method returns the Chronology object.
+
+3. `LocalDate date(int era, int yearOfEra, int month, int dayOfMonth)`: This method returns a LocalDate object.
+
+4. `LocalDate date(int era, int yearOfEra, int month, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute)`: This method returns a LocalDate object with time.
+
+5. `LocalDate date(int era, int yearOfEra, int month, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int nanoOfSecond)`: This method returns a LocalDate object with time and nanoseconds.
+================================================================
+
+Sample: 10 ThaiBuddhistDate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.chrono.ThaiBuddhistDate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ThaiBuddhistDate.from(ChronoLocalDate date)`: This method returns a ThaiBuddhistDate based on the specified ChronoLocalDate.
+
+2. `ThaiBuddhistDate.now()`: This method returns the current date and time in the ThaiBuddhist calendar system.
+
+3. `ThaiBuddhistDate.of(int prolepticYear, int month, int dayOfMonth)`: This method returns a ThaiBuddhistDate with the specified year, month, and day.
+
+4. `ThaiBuddhistDate.ofEra(int era, int prolepticYear, int month, int dayOfMonth)`: This method returns a ThaiBuddhistDate with the specified era, year, month, and day.
+
+5. `ThaiBuddhistDate.from(TemporalAccessor temporal)`: This method returns a ThaiBuddhistDate based on the specified TemporalAccessor.
+================================================================
+

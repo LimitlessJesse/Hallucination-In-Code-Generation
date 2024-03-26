@@ -1,0 +1,72 @@
+Sample: RowSetMetaDataImpl_7
+----------------------------------------------------------------
+output:
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:6: error: unreported exception SQLException; must be caught or declared to be thrown
+        rsmd.setColumnName(1, "Column1");
+                          ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:7: error: unreported exception SQLException; must be caught or declared to be thrown
+        rsmd.setColumnName(2, "Column2");
+                          ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:8: error: unreported exception SQLException; must be caught or declared to be thrown
+        rsmd.setColumnName(3, "Column3");
+                          ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:10: error: unreported exception SQLException; must be caught or declared to be thrown
+        System.out.println(rsmd.getColumnName(1)); // Output: Column1
+                                             ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:11: error: unreported exception SQLException; must be caught or declared to be thrown
+        System.out.println(rsmd.getColumnName(2)); // Output: Column2
+                                             ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_7.java:12: error: unreported exception SQLException; must be caught or declared to be thrown
+        System.out.println(rsmd.getColumnName(3)); // Output: Column3
+                                             ^
+6 errors
+
+
+================================================================
+
+Sample: RowSetMetaDataImpl_8
+----------------------------------------------------------------
+output:
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_8.java:7: error: cannot find symbol
+        metaData.addColumn("columnName", Types.VARCHAR, 10, 0, 0, 0, false);
+                ^
+  symbol:   method addColumn(String,int,int,int,int,int,boolean)
+  location: variable metaData of type RowSetMetaDataImpl
+1 error
+
+
+================================================================
+
+Sample: RowSetMetaDataImpl_9
+----------------------------------------------------------------
+output:
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_9.java:6: error: unreported exception SQLException; must be caught or declared to be thrown
+        metaData.setColumnLabel(0, "Column1");
+                               ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_9.java:7: error: unreported exception SQLException; must be caught or declared to be thrown
+        metaData.setColumnLabel(1, "Column2");
+                               ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_9.java:8: error: unreported exception SQLException; must be caught or declared to be thrown
+        System.out.println(metaData.getColumnLabel(0)); // Output: Column1
+                                                  ^
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_9.java:9: error: unreported exception SQLException; must be caught or declared to be thrown
+        System.out.println(metaData.getColumnLabel(1)); // Output: Column2
+                                                  ^
+4 errors
+
+
+================================================================
+
+Sample: RowSetMetaDataImpl_10
+----------------------------------------------------------------
+output:
+./javax_sql_rowset/javaFiles/RowSetMetaDataImpl_10.java:6: error: cannot find symbol
+        metaData.addColumn("columnName", "className", 10, 0, false);
+                ^
+  symbol:   method addColumn(String,String,int,int,boolean)
+  location: variable metaData of type RowSetMetaDataImpl
+1 error
+
+
+================================================================
+

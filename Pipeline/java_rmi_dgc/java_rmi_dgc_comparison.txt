@@ -1,0 +1,46 @@
+Sample: 0 Lease
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.dgc.Lease package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isValid()`: This method checks if the lease is still valid.
+
+2. `long getRenewalInterval()`: This method returns the interval at which the lease should be renewed.
+
+3. `long getValidityDuration()`: This method returns the duration for which the lease is valid.
+
+4. `long getRenewalDuration()`: This method returns the duration for which the lease should be renewed.
+
+5. `long getLeaseDuration()`: This method returns the total duration of the lease.
+================================================================
+
+Sample: 1 VMID
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.dgc.VMID package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `VMID getVMID()`: This method returns the VMID of the VM.
+2. `long getStartTime()`: This method returns the start time of the VM.
+3. `long getUptime()`: This method returns the uptime of the VM.
+4. `long getDGC()`: This method returns the DGC of the VM.
+5. `long getLease()`: This method returns the lease of the VM.
+================================================================
+

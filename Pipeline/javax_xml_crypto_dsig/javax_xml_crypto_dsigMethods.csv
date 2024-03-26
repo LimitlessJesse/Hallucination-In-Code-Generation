@@ -1,0 +1,40 @@
+ClassName,Method,Return Type
+TransformService,getAlgorithm(),String
+TransformService,"getInstance(String algorithm, String mechanismType)",static TransformService
+TransformService,"getInstance(String algorithm, String mechanismType, Provider provider)",static TransformService
+TransformService,"getInstance(String algorithm, String mechanismType, String provider)",static TransformService
+TransformService,getMechanismType(),String
+TransformService,getProvider(),Provider
+TransformService,init(TransformParameterSpec params),abstract void
+TransformService,"init(XMLStructure parent, XMLCryptoContext context)",abstract void
+TransformService,"marshalParams(XMLStructure parent, XMLCryptoContext context)",abstract void
+XMLSignatureFactory,getInstance(),static XMLSignatureFactory
+XMLSignatureFactory,getInstance(String mechanismType),static XMLSignatureFactory
+XMLSignatureFactory,"getInstance(String mechanismType, Provider provider)",static XMLSignatureFactory
+XMLSignatureFactory,"getInstance(String mechanismType, String provider)",static XMLSignatureFactory
+XMLSignatureFactory,getKeyInfoFactory(),KeyInfoFactory
+XMLSignatureFactory,getMechanismType(),String
+XMLSignatureFactory,getProvider(),Provider
+XMLSignatureFactory,getURIDereferencer(),abstract URIDereferencer
+XMLSignatureFactory,isFeatureSupported(String feature),abstract boolean
+XMLSignatureFactory,"newCanonicalizationMethod(String algorithm, C14NMethodParameterSpec params)",abstract CanonicalizationMethod
+XMLSignatureFactory,"newCanonicalizationMethod(String algorithm, XMLStructure params)",abstract CanonicalizationMethod
+XMLSignatureFactory,"newDigestMethod(String algorithm, DigestMethodParameterSpec params)",abstract DigestMethod
+XMLSignatureFactory,newManifest(List references),abstract Manifest
+XMLSignatureFactory,"newManifest(List references, String id)",abstract Manifest
+XMLSignatureFactory,"newReference(String uri, DigestMethod dm)",abstract Reference
+XMLSignatureFactory,"newReference(String uri, DigestMethod dm, List appliedTransforms, Data result, List transforms, String type, String id)",abstract Reference
+XMLSignatureFactory,"newReference(String uri, DigestMethod dm, List transforms, String type, String id)",abstract Reference
+XMLSignatureFactory,"newReference(String uri, DigestMethod dm, List transforms, String type, String id, byte[] digestValue)",abstract Reference
+XMLSignatureFactory,"newSignatureMethod(String algorithm, SignatureMethodParameterSpec params)",abstract SignatureMethod
+XMLSignatureFactory,"newSignatureProperties(List properties, String id)",abstract SignatureProperties
+XMLSignatureFactory,"newSignatureProperty(List content, String target, String id)",abstract SignatureProperty
+XMLSignatureFactory,"newSignedInfo(CanonicalizationMethod cm, SignatureMethod sm, List references)",abstract SignedInfo
+XMLSignatureFactory,"newSignedInfo(CanonicalizationMethod cm, SignatureMethod sm, List references, String id)",abstract SignedInfo
+XMLSignatureFactory,"newTransform(String algorithm, TransformParameterSpec params)",abstract Transform
+XMLSignatureFactory,"newTransform(String algorithm, XMLStructure params)",abstract Transform
+XMLSignatureFactory,"newXMLObject(List content, String id, String mimeType, String encoding)",abstract XMLObject
+XMLSignatureFactory,"newXMLSignature(SignedInfo si, KeyInfo ki)",abstract XMLSignature
+XMLSignatureFactory,"newXMLSignature(SignedInfo si, KeyInfo ki, List objects, String id, String signatureValueId)",abstract XMLSignature
+XMLSignatureFactory,unmarshalXMLSignature(XMLStructure xmlStructure),abstract XMLSignature
+XMLSignatureFactory,unmarshalXMLSignature(XMLValidateContext context),abstract XMLSignature

@@ -1,0 +1,102 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,DESedeKeySpec,1,DESedeKeySpec(byte[] key),False
+0,DESedeKeySpec,2,byte[] getKey(),True
+0,DESedeKeySpec,3,int getKeyLength(),False
+0,DESedeKeySpec,4,String getAlgorithm(),False
+0,DESedeKeySpec,5,String getFormat(),False
+1,DESKeySpec,1,"DESKeySpec(byte[] key, int offset, int len)",False
+1,DESKeySpec,2,byte[] getKey(),True
+1,DESKeySpec,3,int getKeyLength(),False
+1,DESKeySpec,4,int getOffset(),False
+1,DESKeySpec,5,int getLength(),False
+2,DHGenParameterSpec,1,DHGenParameterSpec(int strength),False
+2,DHGenParameterSpec,2,"DHGenParameterSpec(BigInteger p, BigInteger g)",False
+2,DHGenParameterSpec,3,BigInteger getP(),False
+2,DHGenParameterSpec,4,BigInteger getG(),False
+2,DHGenParameterSpec,5,int getStrength(),False
+3,DHParameterSpec,1,"DHParameterSpec(BigInteger p, BigInteger g)",False
+3,DHParameterSpec,2,BigInteger getP(),True
+3,DHParameterSpec,3,BigInteger getG(),True
+3,DHParameterSpec,4,int getL(),True
+3,DHParameterSpec,5,int getN(),False
+3,DHParameterSpec,6,int getM(),False
+3,DHParameterSpec,7,int getJ(),False
+3,DHParameterSpec,8,int getK(),False
+3,DHParameterSpec,9,int getQ(),False
+3,DHParameterSpec,10,int getS(),False
+3,DHParameterSpec,11,int getT(),False
+3,DHParameterSpec,12,int getU(),False
+3,DHParameterSpec,13,int getV(),False
+3,DHParameterSpec,14,int getW(),False
+3,DHParameterSpec,15,int getX(),False
+3,DHParameterSpec,16,int getY(),False
+3,DHParameterSpec,17,int getZ(),False
+3,DHParameterSpec,18,int getR(),False
+3,DHParameterSpec,19,int getA(),False
+3,DHParameterSpec,20,int getB(),False
+4,DHPrivateKeySpec,1,BigInteger getX(),True
+4,DHPrivateKeySpec,2,BigInteger getP(),True
+4,DHPrivateKeySpec,3,BigInteger getG(),True
+4,DHPrivateKeySpec,4,BigInteger getL(),False
+4,DHPrivateKeySpec,5,BigInteger getQ(),False
+4,DHPrivateKeySpec,6,BigInteger getY(),False
+4,DHPrivateKeySpec,7,BigInteger getJ(),False
+4,DHPrivateKeySpec,8,BigInteger getV(),False
+4,DHPrivateKeySpec,9,BigInteger getR(),False
+4,DHPrivateKeySpec,10,BigInteger getS(),False
+5,DHPublicKeySpec,1,"DHPublicKeySpec(BigInteger y, BigInteger p, BigInteger g)",False
+5,DHPublicKeySpec,2,BigInteger getG(),True
+5,DHPublicKeySpec,3,BigInteger getP(),True
+5,DHPublicKeySpec,4,BigInteger getY(),True
+5,DHPublicKeySpec,5,boolean equals(Object obj),False
+5,DHPublicKeySpec,6,int hashCode(),False
+6,GCMParameterSpec,1,"GCMParameterSpec(int tLen, byte[] iv)",False
+6,GCMParameterSpec,2,byte[] getIV(),True
+6,GCMParameterSpec,3,int getTLen(),True
+6,GCMParameterSpec,4,boolean equals(Object obj),False
+6,GCMParameterSpec,5,int hashCode(),False
+7,IvParameterSpec,1,IvParameterSpec(byte[] iv),False
+7,IvParameterSpec,2,byte[] getIV(),True
+7,IvParameterSpec,3,int hashCode(),False
+7,IvParameterSpec,4,boolean equals(Object obj),False
+7,IvParameterSpec,5,String toString(),False
+8,OAEPParameterSpec,1,"OAEPParameterSpec(String mgfAlgorithm, String maskAlgorithm)",False
+8,OAEPParameterSpec,2,String getMGFAlgorithm(),True
+8,OAEPParameterSpec,3,String getMaskAlgorithm(),False
+8,OAEPParameterSpec,4,boolean equals(Object obj),False
+8,OAEPParameterSpec,5,int hashCode(),False
+9,PBEKeySpec,1,"PBEKeySpec(char[] password, byte[] salt, int iterationCount, int keyLength)",False
+9,PBEKeySpec,2,byte[] getSalt(),True
+9,PBEKeySpec,3,int getIterationCount(),True
+9,PBEKeySpec,4,int getKeyLength(),True
+9,PBEKeySpec,5,char[] getPassword(),True
+10,PBEParameterSpec,1,int getIterationCount(),True
+10,PBEParameterSpec,2,byte[] getSalt(),True
+10,PBEParameterSpec,3,int getKeyLength(),False
+10,PBEParameterSpec,4,byte[] getIV(),False
+10,PBEParameterSpec,5,byte[] getPassword(),False
+11,PSource,1,PSource.PSpecified,False
+11,PSource,2,PSource.PSalted,False
+11,PSource,3,PSource.PStored,False
+11,PSource,4,PSource.PGenerate,False
+11,PSource,5,PSource.PVerified,False
+12,PSource.PSpecified,1,"boolean set(int index, E element)",False
+12,PSource.PSpecified,2,E remove(int index),False
+12,PSource.PSpecified,3,boolean addAll(Collection<? extends E> c),False
+12,PSource.PSpecified,4,void clear(),False
+12,PSource.PSpecified,5,E get(int index),False
+13,RC2ParameterSpec,1,"RC2ParameterSpec(int keySize, int rounds)",False
+13,RC2ParameterSpec,2,int getKeySize(),False
+13,RC2ParameterSpec,3,int getRounds(),False
+13,RC2ParameterSpec,4,boolean equals(Object obj),True
+13,RC2ParameterSpec,5,int hashCode(),True
+14,RC5ParameterSpec,1,"RC5ParameterSpec(int rounds, byte[] key)",False
+14,RC5ParameterSpec,2,int getRounds(),True
+14,RC5ParameterSpec,3,byte[] getKey(),False
+14,RC5ParameterSpec,4,int getEffectiveKeyBits(),False
+14,RC5ParameterSpec,5,int getBlockSize(),False
+15,SecretKeySpec,1,"SecretKeySpec(byte[] key, String algorithm)",False
+15,SecretKeySpec,2,byte[] getEncoded(),True
+15,SecretKeySpec,3,String getAlgorithm(),True
+15,SecretKeySpec,4,String getFormat(),True
+15,SecretKeySpec,5,String getProvider(),False

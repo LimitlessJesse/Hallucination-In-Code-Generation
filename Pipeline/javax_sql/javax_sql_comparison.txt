@@ -1,0 +1,77 @@
+Sample: 0 ConnectionEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.ConnectionEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void connectionClosed()`: This method is called when the connection is closed.
+
+2. `void connectionErrorOccurred()`: This method is called when an error occurs on the connection.
+
+3. `void connectionFailed(SQLException ex)`: This method is called when the connection fails.
+
+4. `void connectionEstablished(ConnectionEvent e)`: This method is called when the connection is established.
+
+5. `void connectionLost(SQLException ex)`: This method is called when the connection is lost.
+================================================================
+
+Sample: 1 RowSetEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.RowSetEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void rowChanged(RowSetEvent event)`: This method is called when a row in the RowSet has been changed.
+
+2. `void rowSetChanged(RowSetEvent event)`: This method is called when the RowSet has been changed.
+
+3. `void cursorMoved(RowSetEvent event)`: This method is called when the cursor position in the RowSet has been changed.
+
+4. `void rowSetStructureChanged(RowSetEvent event)`: This method is called when the structure of the RowSet has been changed.
+
+5. `void rowDeleted(RowSetEvent event)`: This method is called when a row in the RowSet has been deleted.
+================================================================
+
+Sample: 2 StatementEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.StatementEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setStatement(Statement stmt)`: This method sets the statement for this event.
+
+2. `Statement getStatement()`: This method returns the statement for this event.
+
+3. `void setSQL(String sql)`: This method sets the SQL string for this event.
+
+4. `String getSQL()`: This method returns the SQL string for this event.
+
+5. `void setConnection(Connection conn)`: This method sets the connection for this event.
+
+6. `Connection getConnection()`: This method returns the connection for this event.
+================================================================
+

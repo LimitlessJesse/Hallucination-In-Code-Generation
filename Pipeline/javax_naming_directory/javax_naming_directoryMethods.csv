@@ -1,0 +1,76 @@
+ClassName,Method,Return Type
+BasicAttribute,"add(int ix, Object attrVal)",void
+BasicAttribute,add(Object attrVal),boolean
+BasicAttribute,clear(),void
+BasicAttribute,clone(),Object
+BasicAttribute,contains(Object attrVal),boolean
+BasicAttribute,equals(Object obj),boolean
+BasicAttribute,get(),Object
+BasicAttribute,get(int ix),Object
+BasicAttribute,getAll(),NamingEnumeration<?>
+BasicAttribute,getAttributeDefinition(),DirContext
+BasicAttribute,getAttributeSyntaxDefinition(),DirContext
+BasicAttribute,getID(),String
+BasicAttribute,hashCode(),int
+BasicAttribute,isOrdered(),boolean
+BasicAttribute,remove(int ix),Object
+BasicAttribute,remove(Object attrval),boolean
+BasicAttribute,"set(int ix, Object attrVal)",Object
+BasicAttribute,size(),int
+BasicAttribute,toString(),String
+BasicAttributes,clone(),Object
+BasicAttributes,equals(Object obj),boolean
+BasicAttributes,get(String attrID),Attribute
+BasicAttributes,getAll(),NamingEnumeration<Attribute>
+BasicAttributes,getIDs(),NamingEnumeration<String>
+BasicAttributes,hashCode(),int
+BasicAttributes,isCaseIgnored(),boolean
+BasicAttributes,put(Attribute attr),Attribute
+BasicAttributes,"put(String attrID, Object val)",Attribute
+BasicAttributes,remove(String attrID),Attribute
+BasicAttributes,size(),int
+BasicAttributes,toString(),String
+InitialDirContext,"bind(Name name, Object obj, Attributes attrs)",void
+InitialDirContext,"bind(String name, Object obj, Attributes attrs)",void
+InitialDirContext,"createSubcontext(Name name, Attributes attrs)",DirContext
+InitialDirContext,"createSubcontext(String name, Attributes attrs)",DirContext
+InitialDirContext,getAttributes(Name name),Attributes
+InitialDirContext,"getAttributes(Name name, String[] attrIds)",Attributes
+InitialDirContext,getAttributes(String name),Attributes
+InitialDirContext,"getAttributes(String name, String[] attrIds)",Attributes
+InitialDirContext,getSchema(Name name),DirContext
+InitialDirContext,getSchema(String name),DirContext
+InitialDirContext,getSchemaClassDefinition(Name name),DirContext
+InitialDirContext,getSchemaClassDefinition(String name),DirContext
+InitialDirContext,"modifyAttributes(Name name, int mod_op, Attributes attrs)",void
+InitialDirContext,"modifyAttributes(Name name, ModificationItem[] mods)",void
+InitialDirContext,"modifyAttributes(String name, int mod_op, Attributes attrs)",void
+InitialDirContext,"modifyAttributes(String name, ModificationItem[] mods)",void
+InitialDirContext,"rebind(Name name, Object obj, Attributes attrs)",void
+InitialDirContext,"rebind(String name, Object obj, Attributes attrs)",void
+InitialDirContext,"search(Name name, Attributes matchingAttributes)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(Name name, Attributes matchingAttributes, String[] attributesToReturn)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(Name name, String filterExpr, Object[] filterArgs, SearchControls cons)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(Name name, String filter, SearchControls cons)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(String name, Attributes matchingAttributes)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(String name, Attributes matchingAttributes, String[] attributesToReturn)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(String name, String filterExpr, Object[] filterArgs, SearchControls cons)",NamingEnumeration<SearchResult>
+InitialDirContext,"search(String name, String filter, SearchControls cons)",NamingEnumeration<SearchResult>
+ModificationItem,getAttribute(),Attribute
+ModificationItem,getModificationOp(),int
+ModificationItem,toString(),String
+SearchControls,getCountLimit(),long
+SearchControls,getDerefLinkFlag(),boolean
+SearchControls,getReturningAttributes(),String[]
+SearchControls,getReturningObjFlag(),boolean
+SearchControls,getSearchScope(),int
+SearchControls,getTimeLimit(),int
+SearchControls,setCountLimit(long limit),void
+SearchControls,setDerefLinkFlag(boolean on),void
+SearchControls,setReturningAttributes(String[] attrs),void
+SearchControls,setReturningObjFlag(boolean on),void
+SearchControls,setSearchScope(int scope),void
+SearchControls,setTimeLimit(int ms),void
+SearchResult,getAttributes(),Attributes
+SearchResult,setAttributes(Attributes attrs),void
+SearchResult,toString(),String

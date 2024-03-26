@@ -1,0 +1,280 @@
+Sample: 0 IIOImage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.IIOImage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `IIOImage(RenderedImage image, RenderingHints hints)`: This constructor creates a new IIOImage with the specified image and rendering hints.
+
+2. `RenderedImage getRenderedImage()`: This method returns the rendered image.
+
+3. `RenderingHints getRenderingHints()`: This method returns the rendering hints.
+
+4. `void setRenderingHints(RenderingHints hints)`: This method sets the rendering hints.
+
+5. `void setRenderedImage(RenderedImage image)`: This method sets the rendered image.
+================================================================
+
+Sample: 1 IIOParam
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.IIOParam package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `IIOParam.getParamName()`: This method returns the name of the parameter.
+
+2. `IIOParam.getParamValue()`: This method returns the value of the parameter.
+
+3. `IIOParam.getParamValues()`: This method returns an array of values for the parameter.
+
+4. `IIOParam.getParamType()`: This method returns the type of the parameter.
+
+5. `IIOParam.getParamRange()`: This method returns the range of values for the parameter.
+================================================================
+
+Sample: 2 ImageIO
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageIO package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BufferedImage read(InputStream in)`: This method reads a BufferedImage from the specified input stream.
+
+2. `void write(BufferedImage img, String formatName, OutputStream out)`: This method writes a BufferedImage to the specified output stream in the specified format.
+
+3. `Iterator<ImageReader> getImageReaders(ImageInputStream iis)`: This method returns an iterator over the ImageReaders that can read from the specified ImageInputStream.
+
+4. `Iterator<ImageWriter> getImageWriters(ImageOutputStream ios)`: This method returns an iterator over the ImageWriters that can write to the specified ImageOutputStream.
+
+5. `Iterator<ImageReader> getImageReadersByFormatName(String formatName)`: This method returns an iterator over the ImageReaders that can read from the specified format name.
+
+6. `Iterator<ImageWriter> getImageWritersByFormatName(String formatName)`: This method returns an iterator over the ImageWriters that can write to the specified format name.
+
+7. `Iterator<ImageReader> getImageReadersByMIMEType(String mimeType)`: This method returns an iterator over the ImageReaders that can read from the specified MIME type.
+
+8. `Iterator<ImageWriter> getImageWritersByMIMEType(String mimeType)`: This method returns an iterator over the ImageWriters that can write to the specified MIME type.
+
+9. `Iterator<ImageReader> getImageReadersBySuffix(String suffix)`: This method returns an iterator over the ImageReaders that can read from the specified file suffix.
+
+10. `Iterator<ImageWriter> getImageWritersBySuffix(String suffix)`: This method returns an iterator over the ImageWriters that can write to the specified file suffix.
+================================================================
+
+Sample: 3 ImageReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canDecode(String formatName)`: This method returns true if the ImageReader can decode the specified format.
+
+2. `int getNumImages(boolean deep)`: This method returns the number of images in the ImageReader.
+
+3. `int getNumThumbnails()`: This method returns the number of thumbnails in the ImageReader.
+
+4. `int getNumResolutions()`: This method returns the number of resolutions in the ImageReader.
+
+5. `int getNumTiles(int imageIndex)`: This method returns the number of tiles in the specified image.
+
+6. `int getNumTiles(int imageIndex, int resolutionIndex)`: This method returns the number of tiles in the specified image and resolution.
+
+7. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex)`: This method returns the number of tiles in the specified image, resolution, and tile grid.
+
+8. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, and tile index.
+
+9. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, and tile offset index.
+
+10. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, and tile size index.
+
+11. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, tile size index, and tile area index.
+
+12. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, tile size index, tile area index, and tile area offset index.
+
+13. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, tile size index, tile area index, tile area offset index, and tile area size index.
+
+14. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex, int tileAreaOffsetSizeIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, tile size index, tile area index, tile area offset index, tile area size index, and tile area offset size index.
+
+15. `int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex, int tileAreaOffsetSizeIndex, int tileAreaOffsetSizeIndex)`: This method returns the number of tiles in the specified image, resolution, tile grid, tile index, tile offset index, tile size index, tile area index, tile area offset index, tile area size index, tile area offset size index, and tile area offset size index.
+================================================================
+
+Sample: 4 ImageReadParam
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageReadParam package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setSource(RenderedImage source)`: This method sets the source image.
+
+2. `void setDestination(RenderedImage destination)`: This method sets the destination image.
+
+3. `void setRegion(Rectangle2D rect)`: This method sets the region of the source image to be read.
+
+4. `void setCropRect(Rectangle2D rect)`: This method sets the region of the destination image to be written.
+
+5. `void setSourceRegion(Rectangle2D rect)`: This method sets the region of the source image to be read.
+
+6. `void setDestinationRegion(Rectangle2D rect)`: This method sets the region of the destination image to be written.
+
+7. `void setSourceColorSpace(ColorSpace cspace)`: This method sets the color space of the source image.
+
+8. `void setDestinationColorSpace(ColorSpace cspace)`: This method sets the color space of the destination image.
+
+9. `void setInterpolation(int interpolation)`: This method sets the interpolation method to be used.
+
+10. `void setRenderingHints(RenderingHints hints)`: This method sets the rendering hints.
+
+11. `void setSourceSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the source image.
+
+12. `void setDestinationSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the destination image.
+
+13. `void setSourceSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the source image.
+
+14. `void setDestinationSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the destination image.
+
+15. `void setSourceSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the source image.
+
+16. `void setDestinationSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the destination image.
+
+17. `void setSourceSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the source image.
+
+18. `void setDestinationSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the destination image.
+
+19. `void setSourceSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the source image.
+
+20. `void setDestinationSubsampling(int x, int y, int width, int height)`: This method sets the subsampling of the destination image.
+================================================================
+
+Sample: 5 ImageTypeSpecifier
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageTypeSpecifier package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isComplex()`: This method returns true if the image type is complex, false otherwise.
+
+2. `boolean isIndexed()`: This method returns true if the image type is indexed, false otherwise.
+
+3. `boolean isPalette()`: This method returns true if the image type is palette, false otherwise.
+
+4. `boolean isReadOnly()`: This method returns true if the image type is read-only, false otherwise.
+
+5. `boolean isRegistered()`: This method returns true if the image type is registered, false otherwise.
+
+6. `boolean isSequence()`: This method returns true if the image type is sequence, false otherwise.
+
+7. `boolean isVolatile()`: This method returns true if the image type is volatile, false otherwise.
+
+8. `boolean isVector()`: This method returns true if the image type is vector, false otherwise.
+
+9. `boolean isWritable()`: This method returns true if the image type is writable, false otherwise.
+
+10. `boolean isWrapper()`: This method returns true if the image type is wrapper, false otherwise.
+================================================================
+
+Sample: 6 ImageWriteParam
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageWriteParam package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setCompressionMode(int mode)`: This method sets the compression mode.
+
+2. `void setCompressionQuality(float quality)`: This method sets the compression quality.
+
+3. `void setProgressiveMode(int mode)`: This method sets the progressive mode.
+
+4. `void setDestination(RenderedImage im)`: This method sets the destination image.
+
+5. `void setDestination(ImageWriteConfig config)`: This method sets the destination image write config.
+================================================================
+
+Sample: 7 ImageWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.ImageWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canEncode(RenderedImage im)`: This method returns true if the ImageWriter can encode the specified RenderedImage.
+
+2. `boolean canEncode(RenderedImage im, MediaType mediaType)`: This method returns true if the ImageWriter can encode the specified RenderedImage with the specified media type.
+
+3. `boolean canWriteSequence(ImageWriteParam param)`: This method returns true if the ImageWriter can write a sequence of images.
+
+4. `boolean canWriteSequence(ImageWriteParam param, MediaType mediaType)`: This method returns true if the ImageWriter can write a sequence of images with the specified media type.
+
+5. `boolean canWriteSequence(ImageWriteParam param, MediaType mediaType, RenderedImage im)`: This method returns true if the ImageWriter can write a sequence of images with the specified media type and RenderedImage.
+
+6. `boolean canWriteSequence(ImageWriteParam param, RenderedImage im)`: This method returns true if the ImageWriter can write a sequence of images with the specified ImageWriteParam and RenderedImage.
+
+7. `boolean canWriteSequence(RenderedImage im)`: This method returns true if the ImageWriter can write a sequence of images with the specified RenderedImage.
+
+8. `boolean canWriteSequence(RenderedImage im, MediaType mediaType)`: This method returns true if the ImageWriter can write a sequence of images with the specified RenderedImage and media type.
+
+9. `boolean canWriteSequence(RenderedImage im, MediaType mediaType, ImageWriteParam param)`: This method returns true if the ImageWriter can write a sequence of images with the specified RenderedImage, media type, and ImageWriteParam.
+
+10. `boolean canWriteSequence(RenderedImage im, ImageWriteParam param)`: This method returns true if the ImageWriter can write a sequence of images with the specified RenderedImage and ImageWriteParam.
+================================================================
+

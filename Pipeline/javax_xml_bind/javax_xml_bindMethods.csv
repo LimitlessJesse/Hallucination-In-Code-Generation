@@ -1,0 +1,97 @@
+ClassName,Method,Return Type
+Binder,getEventHandler(),abstract ValidationEventHandler
+Binder,getJAXBNode(XmlNode xmlNode),abstract Object
+Binder,getProperty(String name),abstract Object
+Binder,getSchema(),abstract Schema
+Binder,getXMLNode(Object jaxbObject),abstract XmlNode
+Binder,"marshal(Object jaxbObject, XmlNode xmlNode)",abstract void
+Binder,setEventHandler(ValidationEventHandler handler),abstract void
+Binder,"setProperty(String name, Object value)",abstract void
+Binder,setSchema(Schema schema),abstract void
+Binder,unmarshal(XmlNode xmlNode),abstract Object
+Binder,"unmarshal(XmlNode xmlNode, Class<T> declaredType)",abstract <T> JAXBElement<T>
+Binder,updateJAXB(XmlNode xmlNode),abstract Object
+Binder,updateXML(Object jaxbObject),abstract XmlNode
+Binder,"updateXML(Object jaxbObject, XmlNode xmlNode)",abstract XmlNode
+DatatypeConverter,parseAnySimpleType(String lexicalXSDAnySimpleType),static String
+DatatypeConverter,parseBase64Binary(String lexicalXSDBase64Binary),static byte[]
+DatatypeConverter,parseBoolean(String lexicalXSDBoolean),static boolean
+DatatypeConverter,parseByte(String lexicalXSDByte),static byte
+DatatypeConverter,parseDate(String lexicalXSDDate),static Calendar
+DatatypeConverter,parseDateTime(String lexicalXSDDateTime),static Calendar
+DatatypeConverter,parseDecimal(String lexicalXSDDecimal),static BigDecimal
+DatatypeConverter,parseDouble(String lexicalXSDDouble),static double
+DatatypeConverter,parseFloat(String lexicalXSDFloat),static float
+DatatypeConverter,parseHexBinary(String lexicalXSDHexBinary),static byte[]
+DatatypeConverter,parseInt(String lexicalXSDInt),static int
+DatatypeConverter,parseInteger(String lexicalXSDInteger),static BigInteger
+DatatypeConverter,parseLong(String lexicalXSDLong),static long
+DatatypeConverter,"parseQName(String lexicalXSDQName, NamespaceContext nsc)",static QName
+DatatypeConverter,parseShort(String lexicalXSDShort),static short
+DatatypeConverter,parseString(String lexicalXSDString),static String
+DatatypeConverter,parseTime(String lexicalXSDTime),static Calendar
+DatatypeConverter,parseUnsignedInt(String lexicalXSDUnsignedInt),static long
+DatatypeConverter,parseUnsignedShort(String lexicalXSDUnsignedShort),static int
+DatatypeConverter,printAnySimpleType(String val),static String
+DatatypeConverter,printBase64Binary(byte[] val),static String
+DatatypeConverter,printBoolean(boolean val),static String
+DatatypeConverter,printByte(byte val),static String
+DatatypeConverter,printDate(Calendar val),static String
+DatatypeConverter,printDateTime(Calendar val),static String
+DatatypeConverter,printDecimal(BigDecimal val),static String
+DatatypeConverter,printDouble(double val),static String
+DatatypeConverter,printFloat(float val),static String
+DatatypeConverter,printHexBinary(byte[] val),static String
+DatatypeConverter,printInt(int val),static String
+DatatypeConverter,printInteger(BigInteger val),static String
+DatatypeConverter,printLong(long val),static String
+DatatypeConverter,"printQName(QName val, NamespaceContext nsc)",static String
+DatatypeConverter,printShort(short val),static String
+DatatypeConverter,printString(String val),static String
+DatatypeConverter,printTime(Calendar val),static String
+DatatypeConverter,printUnsignedInt(long val),static String
+DatatypeConverter,printUnsignedShort(int val),static String
+DatatypeConverter,setDatatypeConverter(DatatypeConverterInterface converter),static void
+JAXB,"marshal(Object jaxbObject, File xml)",static void
+JAXB,"marshal(Object jaxbObject, OutputStream xml)",static void
+JAXB,"marshal(Object jaxbObject, Result xml)",static void
+JAXB,"marshal(Object jaxbObject, String xml)",static void
+JAXB,"marshal(Object jaxbObject, URI xml)",static void
+JAXB,"marshal(Object jaxbObject, URL xml)",static void
+JAXB,"marshal(Object jaxbObject, Writer xml)",static void
+JAXB,"unmarshal(File xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(InputStream xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(Reader xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(Source xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(String xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(URI xml, Class<T> type)",static <T> T
+JAXB,"unmarshal(URL xml, Class<T> type)",static <T> T
+JAXBContext,createBinder(),Binder<Node>
+JAXBContext,createBinder(Class<T> domType),<T> Binder<T>
+JAXBContext,createJAXBIntrospector(),JAXBIntrospector
+JAXBContext,createMarshaller(),abstract Marshaller
+JAXBContext,createUnmarshaller(),abstract Unmarshaller
+JAXBContext,createValidator(),abstract Validator
+JAXBContext,generateSchema(SchemaOutputResolver outputResolver),void
+JAXBContext,newInstance(Class... classesToBeBound),static JAXBContext
+JAXBContext,"newInstance(Class[] classesToBeBound, Map<String,?> properties)",static JAXBContext
+JAXBContext,newInstance(String contextPath),static JAXBContext
+JAXBContext,"newInstance(String contextPath, ClassLoader classLoader)",static JAXBContext
+JAXBContext,"newInstance(String contextPath, ClassLoader classLoader, Map<String,?> properties)",static JAXBContext
+JAXBElement,getDeclaredType(),Class<T>
+JAXBElement,getName(),QName
+JAXBElement,getScope(),Class
+JAXBElement,getValue(),T
+JAXBElement,isGlobalScope(),boolean
+JAXBElement,isNil(),boolean
+JAXBElement,isTypeSubstituted(),boolean
+JAXBElement,setNil(boolean value),void
+JAXBElement,setValue(T t),void
+JAXBIntrospector,getElementName(Object jaxbElement),abstract QName
+JAXBIntrospector,getValue(Object jaxbElement),static Object
+JAXBIntrospector,isElement(Object object),abstract boolean
+Marshaller.Listener,afterMarshal(Object source),void
+Marshaller.Listener,beforeMarshal(Object source),void
+SchemaOutputResolver,"createOutput(String namespaceUri, String suggestedFileName)",abstract Result
+Unmarshaller.Listener,"afterUnmarshal(Object target, Object parent)",void
+Unmarshaller.Listener,"beforeUnmarshal(Object target, Object parent)",void

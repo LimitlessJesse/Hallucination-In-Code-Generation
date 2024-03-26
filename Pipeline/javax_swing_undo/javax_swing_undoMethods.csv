@@ -1,0 +1,65 @@
+ClassName,Method,Return Type
+AbstractUndoableEdit,addEdit(UndoableEdit anEdit),boolean
+AbstractUndoableEdit,canRedo(),boolean
+AbstractUndoableEdit,canUndo(),boolean
+AbstractUndoableEdit,die(),void
+AbstractUndoableEdit,getPresentationName(),String
+AbstractUndoableEdit,getRedoPresentationName(),String
+AbstractUndoableEdit,getUndoPresentationName(),String
+AbstractUndoableEdit,isSignificant(),boolean
+AbstractUndoableEdit,redo(),void
+AbstractUndoableEdit,replaceEdit(UndoableEdit anEdit),boolean
+AbstractUndoableEdit,toString(),String
+AbstractUndoableEdit,undo(),void
+CompoundEdit,addEdit(UndoableEdit anEdit),boolean
+CompoundEdit,canRedo(),boolean
+CompoundEdit,canUndo(),boolean
+CompoundEdit,die(),void
+CompoundEdit,end(),void
+CompoundEdit,getPresentationName(),String
+CompoundEdit,getRedoPresentationName(),String
+CompoundEdit,getUndoPresentationName(),String
+CompoundEdit,isInProgress(),boolean
+CompoundEdit,isSignificant(),boolean
+CompoundEdit,lastEdit(),protected UndoableEdit
+CompoundEdit,redo(),void
+CompoundEdit,toString(),String
+CompoundEdit,undo(),void
+StateEdit,end(),void
+StateEdit,getPresentationName(),String
+StateEdit,"init(StateEditable anObject, String name)",protected void
+StateEdit,redo(),void
+StateEdit,removeRedundantState(),protected void
+StateEdit,undo(),void
+UndoableEditSupport,_postEdit(UndoableEdit e),protected void
+UndoableEditSupport,addUndoableEditListener(UndoableEditListener l),void
+UndoableEditSupport,beginUpdate(),void
+UndoableEditSupport,createCompoundEdit(),protected CompoundEdit
+UndoableEditSupport,endUpdate(),void
+UndoableEditSupport,getUndoableEditListeners(),UndoableEditListener[]
+UndoableEditSupport,getUpdateLevel(),int
+UndoableEditSupport,postEdit(UndoableEdit e),void
+UndoableEditSupport,removeUndoableEditListener(UndoableEditListener l),void
+UndoableEditSupport,toString(),String
+UndoManager,addEdit(UndoableEdit anEdit),boolean
+UndoManager,canRedo(),boolean
+UndoManager,canUndo(),boolean
+UndoManager,canUndoOrRedo(),boolean
+UndoManager,discardAllEdits(),void
+UndoManager,editToBeRedone(),protected UndoableEdit
+UndoManager,editToBeUndone(),protected UndoableEdit
+UndoManager,end(),void
+UndoManager,getLimit(),int
+UndoManager,getRedoPresentationName(),String
+UndoManager,getUndoOrRedoPresentationName(),String
+UndoManager,getUndoPresentationName(),String
+UndoManager,redo(),void
+UndoManager,redoTo(UndoableEdit edit),protected void
+UndoManager,setLimit(int l),void
+UndoManager,toString(),String
+UndoManager,"trimEdits(int from, int to)",protected void
+UndoManager,trimForLimit(),protected void
+UndoManager,undo(),void
+UndoManager,undoableEditHappened(UndoableEditEvent e),void
+UndoManager,undoOrRedo(),void
+UndoManager,undoTo(UndoableEdit edit),protected void

@@ -1,0 +1,255 @@
+Sample: DefaultMutableTreeNode_4
+----------------------------------------------------------------
+stdout:
+Number of children: 2
+
+================================================================
+
+Sample: DefaultTreeCellEditor_1
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:8: error: cannot find symbol
+        DefaultTreeModel model = new DefaultTreeModel(new DefaultMutableTreeNode("Root"));
+                                                          ^
+  symbol:   class DefaultMutableTreeNode
+  location: class DefaultTreeCellEditor_1
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:9: error: no suitable constructor found for DefaultTreeCellEditor(DefaultTreeModel)
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor(model);
+                                       ^
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer,TreeCellEditor) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:11: error: incompatible types: Object cannot be converted to TreeNode
+        TreeNode root = model.getRoot();
+                                     ^
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:12: error: cannot find symbol
+        TreeNode node1 = new DefaultMutableTreeNode("Node 1");
+                             ^
+  symbol:   class DefaultMutableTreeNode
+  location: class DefaultTreeCellEditor_1
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:13: error: cannot find symbol
+        TreeNode node2 = new DefaultMutableTreeNode("Node 2");
+                             ^
+  symbol:   class DefaultMutableTreeNode
+  location: class DefaultTreeCellEditor_1
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:14: error: cannot find symbol
+        root.add(node1);
+            ^
+  symbol:   method add(TreeNode)
+  location: variable root of type TreeNode
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_1.java:15: error: cannot find symbol
+        root.add(node2);
+            ^
+  symbol:   method add(TreeNode)
+  location: variable root of type TreeNode
+7 errors
+
+
+================================================================
+
+Sample: DefaultTreeCellEditor_3
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_3.java:6: error: no suitable constructor found for DefaultTreeCellEditor(no arguments)
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor();
+                                       ^
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer,TreeCellEditor) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_3.java:7: error: <anonymous DefaultTreeCellEditor_3$1> is not abstract and does not override abstract method editingCanceled(ChangeEvent) in CellEditorListener
+        CellEditorListener listener = new CellEditorListener() {
+                                                               ^
+2 errors
+
+
+================================================================
+
+Sample: DefaultTreeCellEditor_4
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_4.java:6: error: no suitable constructor found for DefaultTreeCellEditor(no arguments)
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor();
+                                       ^
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer,TreeCellEditor) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_4.java:9: error: cannot find symbol
+            public void editingStopped(ChangeEvent e) {
+                                       ^
+  symbol: class ChangeEvent
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_4.java:14: error: cannot find symbol
+            public void editingCanceled(ChangeEvent e) {
+                                        ^
+  symbol: class ChangeEvent
+3 errors
+
+
+================================================================
+
+Sample: DefaultTreeCellEditor_5
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_5.java:18: error: no suitable constructor found for DefaultTreeCellEditor(JTree)
+        TreeCellEditor editor = new DefaultTreeCellEditor(tree) {
+                                ^
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor DefaultTreeCellEditor.DefaultTreeCellEditor(JTree,DefaultTreeCellRenderer,TreeCellEditor) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_swing_tree/javaFiles/DefaultTreeCellEditor_5.java:20: error: cannot find symbol
+            public Component getTreeCellEditorComponent(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row) {
+                   ^
+  symbol: class Component
+2 errors
+
+
+================================================================
+
+Sample: DefaultTreeCellRenderer_2
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeCellRenderer_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeCellRenderer_4
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeModel_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeSelectionModel_2
+----------------------------------------------------------------
+stdout:
+[Root, Child 1]
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeSelectionModel_6
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeSelectionModel_7
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_7.java:24: error: cannot find symbol
+        selectionModel.setModel(treeModel);
+                      ^
+  symbol:   method setModel(DefaultTreeModel)
+  location: variable selectionModel of type DefaultTreeSelectionModel
+1 error
+
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_9
+----------------------------------------------------------------
+stdout:
+[Root]
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_10
+----------------------------------------------------------------
+stdout:
+Selected node: Root
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_11
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_11.java:17: error: constructor DefaultTreeSelectionModel in class DefaultTreeSelectionModel cannot be applied to given types;
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel(treeModel);
+                                                   ^
+  required: no arguments
+  found:    DefaultTreeModel
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_13
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_13.java:8: error: constructor DefaultTreeSelectionModel in class DefaultTreeSelectionModel cannot be applied to given types;
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel(model);
+                                                   ^
+  required: no arguments
+  found:    DefaultTreeModel
+  reason: actual and formal argument lists differ in length
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_13.java:11: error: cannot find symbol
+        model.insertNodeInto(new DefaultMutableTreeNode("Node 1"), null, 0);
+                                 ^
+  symbol:   class DefaultMutableTreeNode
+  location: class DefaultTreeSelectionModel_13
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_13.java:12: error: cannot find symbol
+        model.insertNodeInto(new DefaultMutableTreeNode("Node 2"), null, 1);
+                                 ^
+  symbol:   class DefaultMutableTreeNode
+  location: class DefaultTreeSelectionModel_13
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_13.java:15: error: incompatible types: Object cannot be converted to TreeNode
+        selectionModel.setSelectionPath(new TreePath(model.getPathToRoot(model.getRoot())));
+                                                                                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_14
+----------------------------------------------------------------
+stdout:
+Is path selected? false
+
+================================================================
+
+Sample: DefaultTreeSelectionModel_16
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultTreeSelectionModel_17
+----------------------------------------------------------------
+output:
+./javax_swing_tree/javaFiles/DefaultTreeSelectionModel_17.java:22: error: cannot find symbol
+        DefaultTreeSelectionModel selectionModel = (DefaultTreeSelectionModel) model.getSelectionPaths();
+                                                                                    ^
+  symbol:   method getSelectionPaths()
+  location: variable model of type DefaultTreeModel
+1 error
+
+
+================================================================
+
+Sample: TreePath_2
+----------------------------------------------------------------
+stdout:
+Number of paths in the tree: 1
+
+================================================================
+
+Sample: TreePath_3
+----------------------------------------------------------------
+stdout:
+Last component of the path: Child1
+
+================================================================
+
+Sample: TreePath_4
+----------------------------------------------------------------
+stdout:
+Node2
+
+================================================================
+

@@ -1,0 +1,31 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,DelegationPermission,1,"boolean hasDelegationPermission(Principal principal, String targetName)",False
+0,DelegationPermission,2,"boolean hasDelegationPermission(Principal principal, String targetName, String serviceName)",False
+0,DelegationPermission,3,"boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName)",False
+0,DelegationPermission,4,"boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName, String targetRealm)",False
+0,DelegationPermission,5,"boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName, String targetRealm, String targetHost)",False
+1,KerberosKey,1,boolean add(E e),False
+1,KerberosKey,2,"void add(int index, E element)",False
+1,KerberosKey,3,boolean addAll(Collection<? extends E> c),False
+1,KerberosKey,4,"boolean addAll(int index, Collection<? extends E> c)",False
+1,KerberosKey,5,void clear(),False
+2,KerberosPrincipal,1,KerberosPrincipal(String name),False
+2,KerberosPrincipal,2,String getName(),True
+2,KerberosPrincipal,3,String getRealm(),True
+2,KerberosPrincipal,4,boolean equals(Object another),True
+2,KerberosPrincipal,5,int hashCode(),True
+3,KerberosTicket,1,boolean isValid(),False
+3,KerberosTicket,2,long getEndTime(),False
+3,KerberosTicket,3,long getRenewTill(),False
+3,KerberosTicket,4,long getStartTime(),False
+3,KerberosTicket,5,byte[] getTicket(),False
+4,KeyTab,1,boolean isValid(),False
+4,KeyTab,2,Principal[] getPrincipals(),False
+4,KeyTab,3,KeyEntry[] getKeyEntries(Principal principal),False
+4,KeyTab,4,"KeyEntry getKeyEntry(Principal principal, Date time)",False
+4,KeyTab,5,"KeyEntry getKeyEntry(Principal principal, Date time, boolean forward)",False
+5,ServicePermission,1,boolean implies(Principal p),False
+5,ServicePermission,2,boolean equals(Object obj),True
+5,ServicePermission,3,int hashCode(),True
+5,ServicePermission,4,String getActions(),True
+5,ServicePermission,5,String toString(),False

@@ -1,0 +1,960 @@
+Sample: 0 AudioFileFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioFileFormat package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. AudioFileFormat.Type getType(): This method returns the type of the audio file format.
+
+2. AudioInputStream getAudioInputStream(AudioFormat af) throws UnsupportedAudioFileException: This method returns an AudioInputStream for reading the audio data.
+
+3. AudioFormat getAudioFormat(): This method returns the audio format of the audio file.
+
+4. AudioFileFormat.Type[] getTypes(): This method returns an array of all the supported audio file formats.
+
+5. AudioFileFormat getAudioFileFormat(): This method returns the AudioFileFormat of the audio file.
+================================================================
+
+Sample: 1 AudioFileFormat.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioFileFormat.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioFileFormat.Type getType()`: This method returns the type of the audio file format.
+
+2. `AudioFileFormat getAudioFileFormat(URL url)`: This method returns an AudioFileFormat object for the specified URL.
+
+3. `AudioFileFormat getAudioFileFormat(File file)`: This method returns an AudioFileFormat object for the specified File.
+
+4. `AudioFileFormat getAudioFileFormat(AudioInputStream stream)`: This method returns an AudioFileFormat object for the specified AudioInputStream.
+
+5. `AudioFileFormat getAudioFileFormat(URL url, AudioInputStream stream)`: This method returns an AudioFileFormat object for the specified URL and AudioInputStream.
+================================================================
+
+Sample: 2 AudioFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioFormat package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioFormat.Encoding getEncoding()`: This method returns the encoding of the audio data.
+
+2. `float getSampleRate()`: This method returns the sample rate of the audio data.
+
+3. `int getSampleSizeInBits()`: This method returns the sample size in bits of the audio data.
+
+4. `int getChannels()`: This method returns the number of channels in the audio data.
+
+5. `int getFrameSize()`: This method returns the frame size of the audio data.
+
+6. `float getFrameRate()`: This method returns the frame rate of the audio data.
+
+7. `boolean isBigEndian()`: This method returns whether the audio data is in big-endian byte order.
+
+8. `boolean isSigned()`: This method returns whether the audio data is signed.
+
+9. `boolean isEncodingChangeable()`: This method returns whether the encoding of the audio data can be changed.
+
+10. `boolean isFrameLengthChangeable()`: This method returns whether the frame length of the audio data can be changed.
+
+11. `boolean isFrameRateChangeable()`: This method returns whether the frame rate of the audio data can be changed.
+
+12. `boolean isSampleRateChangeable()`: This method returns whether the sample rate of the audio data can be changed.
+
+13. `boolean isChannelsChangeable()`: This method returns whether the number of channels in the audio data can be changed.
+
+14. `boolean isSignedChangeable()`: This method returns whether the signed status of the audio data can be changed.
+
+15. `boolean isBigEndianChangeable()`: This method returns whether the big-endian status of the audio data can be changed.
+================================================================
+
+Sample: 3 AudioFormat.Encoding
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioFormat.Encoding package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioFormat.Encoding getEncoding()`: This method returns the encoding of the audio data.
+
+2. `float getSampleRate()`: This method returns the sample rate of the audio data.
+
+3. `int getSampleSizeInBits()`: This method returns the sample size in bits of the audio data.
+
+4. `int getChannels()`: This method returns the number of channels in the audio data.
+
+5. `boolean isBigEndian()`: This method returns whether the audio data is in big-endian byte order.
+
+6. `boolean isSigned()`: This method returns whether the audio data is signed.
+
+7. `boolean isFloat()`: This method returns whether the audio data is in floating-point format.
+
+8. `boolean isPCM_Signed()`: This method returns whether the audio data is in PCM signed format.
+
+9. `boolean isPCM_Unsigned()`: This method returns whether the audio data is in PCM unsigned format.
+
+10. `boolean isULAW()`: This method returns whether the audio data is in U-Law format.
+
+11. `boolean isALAW()`: This method returns whether the audio data is in A-Law format.
+
+12. `boolean isMULAW()`: This method returns whether the audio data is in mu-Law format.
+
+13. `boolean isAES()`: This method returns whether the audio data is in AES format.
+
+14. `boolean isDVI_R_DVI_L()`: This method returns whether the audio data is in DVI-R/DVI-L format.
+
+15. `boolean isTHP()`: This method returns whether the audio data is in THP format.
+
+16. `boolean isGSM()`: This method returns whether the audio data is in GSM format.
+
+17. `boolean isQCELP()`: This method returns whether the audio data is in QCELP format.
+
+18. `boolean isEvrc()`: This method returns whether the audio data is in EVRC format.
+
+19. `boolean isSMV()`: This method returns whether the audio data is in SMV format.
+
+20. `boolean isG723_24()`: This method returns whether the audio data is in G.723.24 format.
+
+21. `boolean isG723_40()`: This method returns whether the audio data is in G.723.40 format.
+
+22. `boolean isDVI_R_DVI_L()`: This method returns whether the audio data is in DVI-R/DVI-L format.
+
+23. `boolean isG729()`: This method returns whether the audio data is in G.729 format.
+
+24. `boolean isMPEG()`: This method returns whether the audio data is in MPEG format.
+
+25. `boolean isG726()`: This method returns whether the audio data is in G.726 format.
+================================================================
+
+Sample: 4 AudioInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioFormat getFormat()`: This method returns the format of the audio data in the stream.
+
+2. `int getFrameLength()`: This method returns the number of frames in the stream.
+
+3. `int read(byte[] b, int off, int len)`: This method reads a sequence of bytes from the stream into the byte array.
+
+4. `int read(byte[] b)`: This method reads a sequence of bytes from the stream into the byte array.
+
+5. `int skipBytes(int n)`: This method skips the specified number of bytes in the stream.
+================================================================
+
+Sample: 5 AudioPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioPermission(String actions)`: This constructor creates an AudioPermission object initialized with the specified actions.
+
+2. `boolean implies(Permission permission)`: This method checks if this permission implies the specified permission.
+
+3. `String getActions()`: This method returns the actions of this permission.
+
+4. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+5. `int hashCode()`: This method returns a hash code for this permission.
+================================================================
+
+Sample: 6 AudioSystem
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.AudioSystem package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AudioSystem.getAudioFileFormat(File file)`: This method returns an AudioFileFormat object that describes the format of the audio file.
+
+2. `AudioSystem.getAudioInputStream(File file)`: This method returns an AudioInputStream object that can be used to read the audio data from the specified file.
+
+3. `AudioSystem.getMixer(Mixer.Info mixerInfo)`: This method returns a Mixer object that corresponds to the specified mixer information.
+
+4. `AudioSystem.getSourceDataLine(DataLine.Info dataLineInfo)`: This method returns a SourceDataLine object that can be used to play back audio data.
+
+5. `AudioSystem.getTargetDataLine(DataLine.Info dataLineInfo)`: This method returns a TargetDataLine object that can be used to record audio data.
+================================================================
+
+Sample: 7 BooleanControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.BooleanControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isEnabled()`: This method returns the current value of the control.
+2. `void setValue(boolean value)`: This method sets the value of the control.
+3. `boolean isValueSupported(boolean value)`: This method checks if the specified value is supported by the control.
+4. `boolean isPrecise()`: This method returns true if the control is precise.
+5. `boolean isRelative()`: This method returns true if the control is relative.
+================================================================
+
+Sample: 8 BooleanControl.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.BooleanControl.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isEnabled()`: This method returns the current value of the control.
+2. `void setValue(boolean value)`: This method sets the value of the control.
+3. `boolean isValueSupported(boolean value)`: This method checks if the specified value is supported by the control.
+4. `boolean isPrecise()`: This method returns true if the control supports precise values.
+5. `boolean isPreciseSupported()`: This method returns true if the control supports precise values.
+================================================================
+
+Sample: 9 CompoundControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.CompoundControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isEnabled()`: This method returns the current enablement state of the control.
+
+2. `void setEnabled(boolean enable)`: This method sets the current enablement state of the control.
+
+3. `float getValue()`: This method returns the current value of the control.
+
+4. `void setValue(float value)`: This method sets the current value of the control.
+
+5. `float getMaximum()`: This method returns the maximum value of the control.
+
+6. `float getMinimum()`: This method returns the minimum value of the control.
+
+7. `float getMajorTickSpacing()`: This method returns the major tick spacing of the control.
+
+8. `float getMinorTickSpacing()`: This method returns the minor tick spacing of the control.
+
+9. `float getPaintTickMarks()`: This method returns whether the control paints tick marks.
+
+10. `float getPaintLabels()`: This method returns whether the control paints labels.
+
+11. `float getPaintValue()`: This method returns whether the control paints the current value.
+
+12. `float getPaintTicks()`: This method returns whether the control paints ticks.
+
+13. `float getPaintBaseline()`: This method returns whether the control paints a baseline.
+
+14. `float getPaintBorder()`: This method returns whether the control paints a border.
+
+15. `float getPaintFocus()`: This method returns whether the control paints a focus indicator.
+
+16. `float getDisplayedValue()`: This method returns the displayed value of the control.
+
+17. `float getDisplayedValueMinimum()`: This method returns the minimum displayed value of the control.
+
+18. `float getDisplayedValueMaximum()`: This method returns the maximum displayed value of the control.
+
+19. `float getDisplayedValueIncrement()`: This method returns the increment of the displayed value of the control.
+
+20. `float getDisplayedValuePrecision()`: This method returns the precision of the displayed value of the control.
+================================================================
+
+Sample: 10 CompoundControl.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.CompoundControl.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isEnabled()`: This method returns the current enabled state of the control.
+
+2. `void setEnabled(boolean enabled)`: This method sets the enabled state of the control.
+
+3. `float getValue()`: This method returns the current value of the control.
+
+4. `void setValue(float value)`: This method sets the value of the control.
+
+5. `float getMaximum()`: This method returns the maximum value of the control.
+
+6. `float getMinimum()`: This method returns the minimum value of the control.
+
+7. `float getNormalValue()`: This method returns the normal value of the control.
+
+8. `float getPrecision()`: This method returns the precision of the control.
+
+9. `float getValueIncrement()`: This method returns the increment value of the control.
+
+10. `float getValueIncrementStepSize()`: This method returns the increment step size of the control.
+
+11. `float getValueStepSize()`: This method returns the value step size of the control.
+
+12. `float getValueStepSizeIncrement()`: This method returns the value step size increment of the control.
+
+13. `float getValueStepSizeIncrementStepSize()`: This method returns the value step size increment step size of the control.
+
+14. `float getValueStepSizeIncrementStepSizeIncrement()`: This method returns the value step size increment step size increment of the control.
+
+15. `float getValueStepSizeIncrementStepSizeIncrementIncrement()`: This method returns the value step size increment step size increment increment of the control.
+
+16. `float getValueStepSizeIncrementStepSizeIncrementIncrementIncrement()`: This method returns the value step size increment step size increment increment increment of the control.
+
+17. `float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrement()`: This method returns the value step size increment step size increment increment increment increment of the control.
+
+18. `float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrement()`: This method returns the value step size increment step size increment increment increment increment increment of the control.
+
+19. `float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrementIncrement()`: This method returns the value step size increment step size increment increment increment increment increment increment increment of the control.
+
+20. `float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrementIncrementIncrement()`: This method returns the value step size increment step size increment increment increment increment increment increment increment increment increment of the control.
+================================================================
+
+Sample: 11 Control
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.Control package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPrecise()`: This method returns true if the control is precise.
+
+2. `boolean isMute()`: This method returns true if the control is muted.
+
+3. `boolean isEnabled()`: This method returns true if the control is enabled.
+
+4. `void setValue(float value)`: This method sets the value of the control.
+
+5. `float getValue()`: This method returns the value of the control.
+
+6. `float getMinimumValue()`: This method returns the minimum value of the control.
+
+7. `float getMaximumValue()`: This method returns the maximum value of the control.
+
+8. `float getPrecision()`: This method returns the precision of the control.
+
+9. `float getMuteValue()`: This method returns the mute value of the control.
+
+10. `float getEnabledValue()`: This method returns the enabled value of the control.
+
+11. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+12. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+13. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+14. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+15. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+16. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+17. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+18. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+19. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+
+20. `float getValueChangeIncrement()`: This method returns the value change increment of the control.
+================================================================
+
+Sample: 12 Control.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.Control.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPrecise()`: This method returns true if the control is precise.
+
+2. `boolean isMomentary()`: This method returns true if the control is momentary.
+
+3. `boolean isRelative()`: This method returns true if the control is relative.
+
+4. `boolean isToggle()`: This method returns true if the control is a toggle.
+
+5. `boolean isOnOff()`: This method returns true if the control is an on/off control.
+================================================================
+
+Sample: 13 DataLine.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.DataLine.Info package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DataLine.Info(Class lineClass, Format format)`: This constructor creates a new DataLine.Info object with the specified line class and format.
+
+2. `DataLine.Info(Class lineClass, Format format, Object target)`: This constructor creates a new DataLine.Info object with the specified line class, format, and target.
+
+3. `DataLine.Info(Class lineClass, Format format, Object target, int bufferSize)`: This constructor creates a new DataLine.Info object with the specified line class, format, target, and buffer size.
+
+4. `DataLine.Info(Class lineClass, Format format, Object target, int bufferSize, int flags)`: This constructor creates a new DataLine.Info object with the specified line class, format, target, buffer size, and flags.
+
+5. `DataLine.Info(Class lineClass, Format format, Object target, int bufferSize, int flags, int maxBufferSize)`: This constructor creates a new DataLine.Info object with the specified line class, format, target, buffer size, flags, and maximum buffer size.
+================================================================
+
+Sample: 14 EnumControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.EnumControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isMicrophoneSupported()`: This method returns true if the control supports the microphone.
+
+2. `boolean isSpeakerSupported()`: This method returns true if the control supports the speaker.
+
+3. `boolean isLineSupported()`: This method returns true if the control supports the line.
+
+4. `boolean isMuteSupported()`: This method returns true if the control supports the mute.
+
+5. `boolean isVolumeSupported()`: This method returns true if the control supports the volume.
+
+6. `boolean isRelativeSupported()`: This method returns true if the control supports the relative.
+
+7. `boolean isAbsoluteSupported()`: This method returns true if the control supports the absolute.
+
+8. `boolean isToggleSupported()`: This method returns true if the control supports the toggle.
+
+9. `boolean isBypassSupported()`: This method returns true if the control supports the bypass.
+
+10. `boolean isPrecisionSupported()`: This method returns true if the control supports the precision.
+
+11. `boolean isPolaritySupported()`: This method returns true if the control supports the polarity.
+
+12. `boolean isRampSupported()`: This method returns true if the control supports the ramp.
+
+13. `boolean isWrapSupported()`: This method returns true if the control supports the wrap.
+
+14. `boolean isSoloSupported()`: This method returns true if the control supports the solo.
+
+15. `boolean isMute()`: This method returns the mute state of the control.
+
+16. `boolean isBypass()`: This method returns the bypass state of the control.
+
+17. `boolean isSolo()`: This method returns the solo state of the control.
+
+18. `int getMicrophoneMaximum()`: This method returns the maximum value of the microphone.
+
+19. `int getMicrophoneMinimum()`: This method returns the minimum value of the microphone.
+
+20. `int getSpeakerMaximum()`: This method returns the maximum value of the speaker.
+
+21. `int getSpeakerMinimum()`: This method returns the minimum value of the speaker.
+
+22. `int getLineMaximum()`: This method returns the maximum value of the line.
+
+23. `int getLineMinimum()`: This method returns the minimum value of the line.
+
+24. `int getVolumeMaximum()`: This method returns the maximum value of the volume.
+
+25. `int getVolumeMinimum()`: This method returns the minimum value of the volume.
+
+26. `int getRelativeMaximum()`: This method returns the maximum value of the relative.
+
+27. `int getRelativeMinimum()`: This method returns the minimum value of the relative.
+
+28. `int getAbsoluteMaximum()`: This method returns the maximum value of the absolute.
+
+29. `int getAbsoluteMinimum()`: This method returns the minimum value of the absolute.
+
+30. `int getToggleMaximum()`: This method returns the maximum value of the toggle.
+
+31. `int getToggleMinimum()`: This method returns the minimum value of the toggle.
+
+32. `int getPrecision()`: This method returns the precision of the control.
+
+33. `int getPolarity()`: This method returns the polarity of the control.
+
+34. `int getRamp()`: This method returns the ramp of the control.
+
+35. `int getWrap()`: This method returns the wrap of the control.
+
+36. `void setMicrophone(boolean value)`: This method sets the microphone state of the control.
+
+37. `void setSpeaker(boolean value)`: This method sets the speaker state of the control.
+
+38. `void setLine(boolean value)`: This method sets the line state of the control.
+
+39. `void setMute(boolean value)`: This method sets the mute state of the control.
+
+40. `void setBypass(boolean value)`: This method sets the bypass state of the control.
+
+41. `void setSolo(boolean value)`: This method sets the solo state of the control.
+
+42. `void setVolume(int value)`: This method sets the volume of the control.
+
+43. `void setRelative(int value)`: This method sets the relative of the control.
+
+44. `void setAbsolute(int value)`: This method sets the absolute of the control.
+
+45. `void setToggle(int value)`: This method sets the toggle of the control.
+
+46. `void setPrecision(int value)`: This method sets the precision of the control.
+
+47. `void setPolarity(int value)`: This method sets the polarity of the control.
+
+48. `void setRamp(int value)`: This method sets the ramp of the control.
+
+49. `void setWrap(int value)`: This method sets the wrap of the control.
+
+50. `void setValue(int value)`: This method sets the value of the control.
+================================================================
+
+Sample: 15 EnumControl.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.EnumControl.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isMute()`: This method returns the current mute state of the control.
+
+2. `boolean isPrecise()`: This method returns true if the control is precise, false otherwise.
+
+3. `boolean isSigned()`: This method returns true if the control is signed, false otherwise.
+
+4. `boolean isSupported()`: This method returns true if the control is supported, false otherwise.
+
+5. `boolean isToggle()`: This method returns true if the control is a toggle, false otherwise.
+
+6. `boolean isVolatile()`: This method returns true if the control is volatile, false otherwise.
+
+7. `int getMaximum()`: This method returns the maximum value of the control.
+
+8. `int getMinimum()`: This method returns the minimum value of the control.
+
+9. `int getValue()`: This method returns the current value of the control.
+
+10. `void setValue(int value)`: This method sets the value of the control to the specified value.
+
+11. `void setValue(float value)`: This method sets the value of the control to the specified value.
+
+12. `void setValue(double value)`: This method sets the value of the control to the specified value.
+
+13. `void setValue(long value)`: This method sets the value of the control to the specified value.
+
+14. `void setValue(float[] values)`: This method sets the values of the control to the specified values.
+
+15. `void setValue(double[] values)`: This method sets the values of the control to the specified values.
+
+16. `void setValue(long[] values)`: This method sets the values of the control to the specified values.
+
+17. `void setValue(int[] values)`: This method sets the values of the control to the specified values.
+
+18. `void setValue(float[][] values)`: This method sets the values of the control to the specified values.
+
+19. `void setValue(double[][] values)`: This method sets the values of the control to the specified values.
+
+20. `void setValue(long[][] values)`: This method sets the values of the control to the specified values.
+
+21. `void setValue(int[][] values)`: This method sets the values of the control to the specified values.
+================================================================
+
+Sample: 16 FloatControl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.FloatControl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `get()`: This method returns the current value of the control.
+
+2. `getMaximum()`: This method returns the maximum value of the control.
+
+3. `getMinimum()`: This method returns the minimum value of the control.
+
+4. `getNormalizedValue()`: This method returns the current value of the control, normalized to the range 0.0 to 1.0.
+
+5. `setValue(float newValue)`: This method sets the value of the control.
+================================================================
+
+Sample: 17 FloatControl.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.FloatControl.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getValue()`: This method returns the current value of the control.
+
+2. `getMinimumValue()`: This method returns the minimum value that the control can have.
+
+3. `getMaximumValue()`: This method returns the maximum value that the control can have.
+
+4. `getValue()`: This method returns the current value of the control.
+
+5. `setValue(float newValue)`: This method sets the value of the control to the specified value.
+
+6. `getNormalizedValue()`: This method returns the current value of the control, normalized to the range 0.0 to 1.0.
+
+7. `setNormalizedValue(float newNormalizedValue)`: This method sets the value of the control to the specified normalized value.
+
+8. `getMajorTickSpacing()`: This method returns the major tick spacing of the control.
+
+9. `getMinorTickSpacing()`: This method returns the minor tick spacing of the control.
+
+10. `getTickUnitSize()`: This method returns the size of the tick unit of the control.
+
+11. `getCurrentTickLabel()`: This method returns the current tick label of the control.
+
+12. `getCurrentTickPosition()`: This method returns the current tick position of the control.
+
+13. `getCurrentTickLabels()`: This method returns the current tick labels of the control.
+
+14. `getCurrentTickPositions()`: This method returns the current tick positions of the control.
+
+15. `getCurrentTickLabels(int[] tickPositions)`: This method returns the current tick labels of the control for the specified tick positions.
+
+16. `getCurrentTickPositions(String[] tickLabels)`: This method returns the current tick positions of the control for the specified tick labels.
+
+17. `getCurrentTickLabels(int[] tickPositions, String[] tickLabels)`: This method returns the current tick labels of the control for the specified tick positions and tick labels.
+
+18. `getCurrentTickPositions(String[] tickLabels, int[] tickPositions)`: This method returns the current tick positions of the control for the specified tick labels and tick positions.
+
+19. `getCurrentTickLabels(int[] tickPositions, String[] tickLabels, int[] tickPositions2, String[] tickLabels2)`: This method returns the current tick labels of the control for the specified tick positions and tick labels.
+
+20. `getCurrentTickPositions(String[] tickLabels, int[] tickPositions, String[] tickLabels2, int[] tickPositions2)`: This method returns the current tick positions of the control for the specified tick labels and tick positions.
+================================================================
+
+Sample: 18 Line.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.Line.Info package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Line.Info getLineInfo()`: This method returns the Line.Info object associated with this Line.
+
+2. `Line.Info[] getSupportedLineInfos()`: This method returns an array of Line.Info objects that represent the Line.Info objects that this Line supports.
+
+3. `boolean isOpen()`: This method returns true if this Line is open.
+
+4. `boolean isActive()`: This method returns true if this Line is active.
+
+5. `boolean isSupported(Line.Info info)`: This method returns true if the specified Line.Info object is supported by this Line.
+================================================================
+
+Sample: 19 LineEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.LineEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LineEvent.Type getType()`: This method returns the type of this event.
+2. `Line getLine()`: This method returns the line associated with this event.
+3. `long getFramePosition()`: This method returns the current frame position.
+4. `long getMicrosecondPosition()`: This method returns the current microsecond position.
+5. `long getSamplePosition()`: This method returns the current sample position.
+================================================================
+
+Sample: 20 LineEvent.Type
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.LineEvent.Type package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LineEvent.Type getType()`: This method returns the type of this event.
+
+2. `Line getLine()`: This method returns the line associated with this event.
+
+3. `long getFramePosition()`: This method returns the current frame position of the line associated with this event.
+
+4. `long getMicrosecondPosition()`: This method returns the current microsecond position of the line associated with this event.
+
+5. `long getSampleFramePosition()`: This method returns the current sample frame position of the line associated with this event.
+
+6. `long getSampleMicrosecondPosition()`: This method returns the current sample microsecond position of the line associated with this event.
+
+7. `long getSampleTimePosition()`: This method returns the current sample time position of the line associated with this event.
+
+8. `long getTimePosition()`: This method returns the current time position of the line associated with this event.
+
+9. `long getBytePosition()`: This method returns the current byte position of the line associated with this event.
+
+10. `long getFrameLength()`: This method returns the length of the line in frames.
+
+11. `long getMicrosecondLength()`: This method returns the length of the line in microseconds.
+
+12. `long getSampleFrameLength()`: This method returns the length of the line in sample frames.
+
+13. `long getSampleMicrosecondLength()`: This method returns the length of the line in sample microseconds.
+
+14. `long getSampleTimeLength()`: This method returns the length of the line in sample time.
+
+15. `long getTimeLength()`: This method returns the length of the line in time.
+
+16. `long getByteLength()`: This method returns the length of the line in bytes.
+
+17. `long getFramePosition()`: This method returns the current frame position of the line associated with this event.
+
+18. `long getMicrosecondPosition()`: This method returns the current microsecond position of the line associated with this event.
+
+19. `long getSampleFramePosition()`: This method returns the current sample frame position of the line associated with this event.
+
+20. `long getSampleMicrosecondPosition()`: This method returns the current sample microsecond position of the line associated with this event.
+
+21. `long getSampleTimePosition()`: This method returns the current sample time position of the line associated with this event.
+
+22. `long getTimePosition()`: This method returns the current time position of the line associated with this event.
+
+23. `long getBytePosition()`: This method returns the current byte position of the line associated with this event.
+
+24. `long getFrameLength()`: This method returns the length of the line in frames.
+
+25. `long getMicrosecondLength()`: This method returns the length of the line in microseconds.
+
+26. `long getSampleFrameLength()`: This method returns the length of the line in sample frames.
+
+27. `long getSampleMicrosecondLength()`: This method returns the length of the line in sample microseconds.
+
+28. `long getSampleTimeLength()`: This method returns the length of the line in sample time.
+
+29. `long getTimeLength()`: This method returns the length of the line in time.
+
+30. `long getByteLength()`: This method returns the length of the line in bytes.
+================================================================
+
+Sample: 21 Mixer.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.Mixer.Info package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Mixer.Info getMixerInfo()`: This method returns the Mixer.Info object associated with this Mixer.
+
+2. `String getName()`: This method returns the name of the mixer.
+
+3. `String getVendor()`: This method returns the vendor of the mixer.
+
+4. `String getDescription()`: This method returns a description of the mixer.
+
+5. `boolean isLineSupported(Line.Info info)`: This method checks if the specified line is supported by this mixer.
+
+6. `Line.Info[] getSourceLineInfo()`: This method returns an array of Line.Info objects representing the lines that this mixer can source.
+
+7. `Line.Info[] getTargetLineInfo()`: This method returns an array of Line.Info objects representing the lines that this mixer can target.
+
+8. `Line.Info[] getSourceLineInfo(Control[] controls)`: This method returns an array of Line.Info objects representing the lines that this mixer can source with the specified controls.
+
+9. `Line.Info[] getTargetLineInfo(Control[] controls)`: This method returns an array of Line.Info objects representing the lines that this mixer can target with the specified controls.
+
+10. `Line[] getSourceLines()`: This method returns an array of Line objects representing the lines that this mixer can source.
+
+11. `Line[] getTargetLines()`: This method returns an array of Line objects representing the lines that this mixer can target.
+
+12. `Line[] getSourceLines(Control[] controls)`: This method returns an array of Line objects representing the lines that this mixer can source with the specified controls.
+
+13. `Line[] getTargetLines(Control[] controls)`: This method returns an array of Line objects representing the lines that this mixer can target with the specified controls.
+
+14. `Line getLine(Line.Info info)`: This method returns a Line object representing the line with the specified Line.Info object.
+
+15. `Line getLine(Line.Info info, AudioFormat format)`: This method returns a Line object representing the line with the specified Line.Info object and AudioFormat.
+================================================================
+
+Sample: 22 Port.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.Port.Info package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Port.Info getPortInfo()`: This method returns an array of Port.Info objects that represent the ports available on the system.
+
+2. `Port.Info getPortInfo(String name)`: This method returns a Port.Info object that represents the port with the specified name.
+
+3. `Port.Info getPortInfo(String name, String vendor)`: This method returns a Port.Info object that represents the port with the specified name and vendor.
+
+4. `Port.Info getPortInfo(String name, String vendor, String version)`: This method returns a Port.Info object that represents the port with the specified name, vendor, and version.
+
+5. `Port.Info getPortInfo(String name, String vendor, String version, String description)`: This method returns a Port.Info object that represents the port with the specified name, vendor, version, and description.
+================================================================
+
+Sample: 23 ReverbType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.sampled.ReverbType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ReverbType.getReverbDefinition()`: This method returns the reverb definition.
+
+2. `ReverbType.getReverbPreset()`: This method returns the reverb preset.
+
+3. `ReverbType.getReverbPresetName()`: This method returns the reverb preset name.
+
+4. `ReverbType.getReverbPresetType()`: This method returns the reverb preset type.
+
+5. `ReverbType.getReverbType()`: This method returns the reverb type.
+================================================================
+

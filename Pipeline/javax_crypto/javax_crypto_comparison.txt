@@ -1,0 +1,465 @@
+Sample: 0 Cipher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.Cipher package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getBlockSize()`: This method returns the block size of the underlying cipher.
+
+2. `AlgorithmParameterSpec getParameters()`: This method returns the parameters of the underlying cipher.
+
+3. `byte[] doFinal(byte[] input)`: This method processes the input data and returns the result.
+
+4. `void init(int opmode, Key key, AlgorithmParameterSpec params)`: This method initializes the cipher with the specified mode, key, and parameters.
+
+5. `void setIV(byte[] iv)`: This method sets the initialization vector (IV) for the cipher.
+================================================================
+
+Sample: 1 CipherInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.CipherInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CipherInputStream(InputStream in, Cipher cipher)`: This constructor creates a CipherInputStream that uses the specified Cipher for decryption.
+
+2. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from this input stream into an array of bytes.
+
+3. `void close()`: This method closes this input stream and releases any system resources associated with the stream.
+
+4. `void reset()`: This method resets this input stream.
+
+5. `void mark(int readlimit)`: This method marks the present position in the input stream.
+================================================================
+
+Sample: 2 CipherOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.CipherOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CipherOutputStream(OutputStream out, Cipher cipher)`: This constructor creates a new CipherOutputStream that uses the specified Cipher for encryption.
+
+2. `void write(int b)`: This method writes the specified byte to the output stream.
+
+3. `void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+
+4. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+5. `void flush()`: This method flushes this output stream and forces any buffered output bytes to be written out.
+================================================================
+
+Sample: 3 CipherSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.CipherSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public byte[] doFinal(byte[] input)`: This method processes the input data and returns the result.
+
+2. `public void init(int opmode, Key key, AlgorithmParameterSpec params)`: This method initializes the Cipher with the specified mode, key, and parameters.
+
+3. `public void setParameter(String prop, Object value)`: This method sets the specified parameter to the specified value.
+
+4. `public byte[] update(byte[] input)`: This method processes the input data and returns the result.
+
+5. `public void reset()`: This method resets the Cipher to its initial state.
+================================================================
+
+Sample: 4 EncryptedPrivateKeyInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.EncryptedPrivateKeyInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getAlgName()`: This method returns the algorithm name of the encryption.
+
+2. `getEncAlgParameters()`: This method returns the parameters of the encryption algorithm.
+
+3. `getKey()`: This method returns the key.
+
+4. `getEncryptedData()`: This method returns the encrypted data.
+
+5. `getSeqNum()`: This method returns the sequence number.
+================================================================
+
+Sample: 5 ExemptionMechanism
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.ExemptionMechanism package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean supportsExemption(int exemptionMechanism)`: This method returns true if the ExemptionMechanism is supported by the underlying cryptographic provider.
+
+2. `void setExemptionMechanism(int exemptionMechanism)`: This method sets the exemption mechanism to be used for the cryptographic operation.
+
+3. `int getExemptionMechanism()`: This method returns the exemption mechanism currently in use.
+
+4. `void setExemptionMechanism(int exemptionMechanism, int exemptionMechanism)`: This method sets the exemption mechanism to be used for the cryptographic operation.
+
+5. `void setExemptionMechanism(int exemptionMechanism, int exemptionMechanism, int exemptionMechanism)`: This method sets the exemption mechanism to be used for the cryptographic operation.
+================================================================
+
+Sample: 6 ExemptionMechanismSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.ExemptionMechanismSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean supportsExemption(Key key)`: This method returns true if the ExemptionMechanismSpi implementation supports the specified key.
+
+2. `void exemptKey(Key key)`: This method exempts the specified key.
+
+3. `void unexemptKey(Key key)`: This method unexempts the specified key.
+
+4. `boolean isKeyExempted(Key key)`: This method returns true if the specified key is exempted.
+
+5. `void clearExemption()`: This method clears all exemptions.
+================================================================
+
+Sample: 7 KeyAgreement
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.KeyAgreement package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `init(KeyAgreement keyAgreement)`: This method initializes the KeyAgreement object.
+
+2. `init(Cipher cipher)`: This method initializes the KeyAgreement object with the specified cipher.
+
+3. `doPhase(byte[] input, int offset, int len)`: This method performs the key agreement phase.
+
+4. `generateSecret()`: This method generates the secret key.
+
+5. `getLocalPublic()`: This method returns the local public key.
+
+6. `getRemotePublic()`: This method returns the remote public key.
+
+7. `getKeySize()`: This method returns the key size.
+
+8. `getAlgorithm()`: This method returns the algorithm name.
+
+9. `getProvider()`: This method returns the provider.
+
+10. `getParameters()`: This method returns the parameters.
+================================================================
+
+Sample: 8 KeyAgreementSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.KeyAgreementSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `init(Key key)`: This method initializes the key agreement with the given key.
+
+2. `doPhase(byte[] input, int offset, int len)`: This method performs the key agreement phase with the given input.
+
+3. `generateSecret()`: This method generates the secret key.
+
+4. `getAgreedValue()`: This method returns the agreed value.
+
+5. `getLocalPublic()`: This method returns the local public key.
+
+6. `getRemotePublic()`: This method returns the remote public key.
+
+7. `getAgreedValue()`: This method returns the agreed value.
+
+8. `getLocalParameterSpec()`: This method returns the local parameter specification.
+
+9. `getRemoteParameterSpec()`: This method returns the remote parameter specification.
+
+10. `getAgreedValue()`: This method returns the agreed value.
+
+11. `getAgreedValue()`: This method returns the agreed value.
+
+12. `getAgreedValue()`: This method returns the agreed value.
+
+13. `getAgreedValue()`: This method returns the agreed value.
+
+14. `getAgreedValue()`: This method returns the agreed value.
+
+15. `getAgreedValue()`: This method returns the agreed value.
+================================================================
+
+Sample: 9 KeyGenerator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.KeyGenerator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyGenerator()`: This method is used to create a KeyGenerator object.
+
+2. `init(int keysize)`: This method initializes the KeyGenerator object with the specified key size.
+
+3. `init(SecureRandom random)`: This method initializes the KeyGenerator object with the specified SecureRandom object.
+
+4. `generateKey()`: This method generates a SecretKey object.
+
+5. `init(AlgorithmParameterSpec params)`: This method initializes the KeyGenerator object with the specified AlgorithmParameterSpec object.
+================================================================
+
+Sample: 10 KeyGeneratorSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.KeyGeneratorSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyGeneratorSpi()`: This is the constructor of the KeyGeneratorSpi class.
+
+2. `init(SecureRandom random)`: This method initializes the KeyGeneratorSpi object with the specified SecureRandom object.
+
+3. `init(AlgorithmParameterSpec params, SecureRandom random)`: This method initializes the KeyGeneratorSpi object with the specified AlgorithmParameterSpec object and SecureRandom object.
+
+4. `generateKey()`: This method generates a new SecretKey.
+
+5. `engineInit(int keysize, SecureRandom random)`: This method initializes the KeyGeneratorSpi object with the specified key size and SecureRandom object.
+================================================================
+
+Sample: 11 Mac
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.Mac package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Mac getInstance(String algorithm)`: This method returns a Mac object that implements the specified Mac algorithm.
+
+2. `void init(Key key)`: This method initializes the Mac object with the given key.
+
+3. `void update(byte[] input)`: This method updates the Mac object with the specified byte array.
+
+4. `byte[] doFinal()`: This method completes the Mac operation and returns the final output.
+
+5. `void reset()`: This method resets the Mac object.
+================================================================
+
+Sample: 12 MacSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.MacSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void init(Key key)`: This method initializes the MacSpi object with the given key.
+
+2. `void update(byte input)`: This method updates the MacSpi object with the given input byte.
+
+3. `void update(byte[] input, int offset, int len)`: This method updates the MacSpi object with the given input byte array.
+
+4. `byte[] doFinal()`: This method completes the MacSpi object and returns the final result.
+
+5. `void reset()`: This method resets the MacSpi object.
+================================================================
+
+Sample: 13 NullCipher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.NullCipher package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `NullCipher getInstance(String algorithm)`: This method returns a NullCipher object that implements the specified transformation.
+
+2. `void init(int opmode)`: This method initializes the Cipher for encryption or decryption.
+
+3. `int getBlockSize()`: This method returns the block size of the cipher in bytes.
+
+4. `AlgorithmParameterSpec getParameters()`: This method returns the parameters for this cipher.
+
+5. `void setParameters(AlgorithmParameterSpec params)`: This method sets the parameters for this cipher.
+================================================================
+
+Sample: 14 SealedObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.SealedObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SealedObject(Serializable obj)`: This constructor creates a new SealedObject that wraps the specified object.
+
+2. `Object getObject()`: This method returns the object that is wrapped by this SealedObject.
+
+3. `SealedObject seal(Key key)`: This method seals this SealedObject with the specified key.
+
+4. `SealedObject seal(Key key, AlgorithmParameterSpec param)`: This method seals this SealedObject with the specified key and parameters.
+
+5. `SealedObject seal(Key key, Cipher cipher)`: This method seals this SealedObject with the specified key and cipher.
+================================================================
+
+Sample: 15 SecretKeyFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.SecretKeyFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SecretKeyFactory.getInstance(String algorithm)`: This method returns a `SecretKeyFactory` object that implements the specified secret key factory algorithm.
+
+2. `SecretKeyFactory.generateSecret(KeySpec keySpec)`: This method generates a secret key from the given key specification.
+
+3. `SecretKeyFactory.getKeySpec(SecretKey key, Class<? extends KeySpec> keySpec)`: This method returns a `KeySpec` object that represents the given secret key.
+
+4. `SecretKeyFactory.getAlgorithmParameters(String algorithm)`: This method returns an `AlgorithmParameters` object that contains the parameters for the specified algorithm.
+
+5. `SecretKeyFactory.getKeyTypes()`: This method returns an array of strings that contains the names of the key types supported by this factory.
+================================================================
+
+Sample: 16 SecretKeyFactorySpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.SecretKeyFactorySpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SecretKeyFactorySpi()`: This is the constructor of the SecretKeyFactorySpi class.
+
+2. `SecretKeyFactorySpi(Provider provider)`: This is the constructor of the SecretKeyFactorySpi class that takes a Provider object.
+
+3. `SecretKeyFactorySpi(Provider provider, AlgorithmParameterSpec params)`: This is the constructor of the SecretKeyFactorySpi class that takes a Provider object and an AlgorithmParameterSpec object.
+
+4. `SecretKeyFactorySpi(AlgorithmParameterSpec params)`: This is the constructor of the SecretKeyFactorySpi class that takes an AlgorithmParameterSpec object.
+
+5. `SecretKeyFactorySpi(String algorithm)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm.
+
+6. `SecretKeyFactorySpi(String algorithm, Provider provider)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm and a Provider object.
+
+7. `SecretKeyFactorySpi(String algorithm, AlgorithmParameterSpec params)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm and an AlgorithmParameterSpec object.
+
+8. `SecretKeyFactorySpi(String algorithm, Provider provider, AlgorithmParameterSpec params)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm, a Provider object, and an AlgorithmParameterSpec object.
+
+9. `SecretKeyFactorySpi(String algorithm, String provider)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm and a String representing the provider.
+
+10. `SecretKeyFactorySpi(String algorithm, String provider, AlgorithmParameterSpec params)`: This is the constructor of the SecretKeyFactorySpi class that takes a String representing the algorithm, a String representing the provider, and an AlgorithmParameterSpec object.
+================================================================
+

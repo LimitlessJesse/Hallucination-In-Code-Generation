@@ -1,0 +1,172 @@
+ClassName,Method,Return Type
+Cipher,doFinal(),byte[]
+Cipher,doFinal(byte[] input),byte[]
+Cipher,"doFinal(byte[] output, int outputOffset)",int
+Cipher,"doFinal(byte[] input, int inputOffset, int inputLen)",byte[]
+Cipher,"doFinal(byte[] input, int inputOffset, int inputLen, byte[] output)",int
+Cipher,"doFinal(byte[] input, int inputOffset, int inputLen, byte[] output, int outputOffset)",int
+Cipher,"doFinal(ByteBuffer input, ByteBuffer output)",int
+Cipher,getAlgorithm(),String
+Cipher,getBlockSize(),int
+Cipher,getExemptionMechanism(),ExemptionMechanism
+Cipher,getInstance(String transformation),static Cipher
+Cipher,"getInstance(String transformation, Provider provider)",static Cipher
+Cipher,"getInstance(String transformation, String provider)",static Cipher
+Cipher,getIV(),byte[]
+Cipher,getMaxAllowedKeyLength(String transformation),static int
+Cipher,getMaxAllowedParameterSpec(String transformation),static AlgorithmParameterSpec
+Cipher,getOutputSize(int inputLen),int
+Cipher,getParameters(),AlgorithmParameters
+Cipher,getProvider(),Provider
+Cipher,"init(int opmode, Certificate certificate)",void
+Cipher,"init(int opmode, Certificate certificate, SecureRandom random)",void
+Cipher,"init(int opmode, Key key)",void
+Cipher,"init(int opmode, Key key, AlgorithmParameters params)",void
+Cipher,"init(int opmode, Key key, AlgorithmParameterSpec params)",void
+Cipher,"init(int opmode, Key key, AlgorithmParameterSpec params, SecureRandom random)",void
+Cipher,"init(int opmode, Key key, AlgorithmParameters params, SecureRandom random)",void
+Cipher,"init(int opmode, Key key, SecureRandom random)",void
+Cipher,"unwrap(byte[] wrappedKey, String wrappedKeyAlgorithm, int wrappedKeyType)",Key
+Cipher,update(byte[] input),byte[]
+Cipher,"update(byte[] input, int inputOffset, int inputLen)",byte[]
+Cipher,"update(byte[] input, int inputOffset, int inputLen, byte[] output)",int
+Cipher,"update(byte[] input, int inputOffset, int inputLen, byte[] output, int outputOffset)",int
+Cipher,"update(ByteBuffer input, ByteBuffer output)",int
+Cipher,updateAAD(byte[] src),void
+Cipher,"updateAAD(byte[] src, int offset, int len)",void
+Cipher,updateAAD(ByteBuffer src),void
+Cipher,wrap(Key key),byte[]
+CipherInputStream,available(),int
+CipherInputStream,close(),void
+CipherInputStream,markSupported(),boolean
+CipherInputStream,read(),int
+CipherInputStream,read(byte[] b),int
+CipherInputStream,"read(byte[] b, int off, int len)",int
+CipherInputStream,skip(long n),long
+CipherOutputStream,close(),void
+CipherOutputStream,flush(),void
+CipherOutputStream,write(byte[] b),void
+CipherOutputStream,"write(byte[] b, int off, int len)",void
+CipherOutputStream,write(int b),void
+CipherSpi,"engineDoFinal(byte[] input, int inputOffset, int inputLen)",protected abstract byte[]
+CipherSpi,"engineDoFinal(byte[] input, int inputOffset, int inputLen, byte[] output, int outputOffset)",protected abstract int
+CipherSpi,"engineDoFinal(ByteBuffer input, ByteBuffer output)",protected int
+CipherSpi,engineGetBlockSize(),protected abstract int
+CipherSpi,engineGetIV(),protected abstract byte[]
+CipherSpi,engineGetKeySize(Key key),protected int
+CipherSpi,engineGetOutputSize(int inputLen),protected abstract int
+CipherSpi,engineGetParameters(),protected abstract AlgorithmParameters
+CipherSpi,"engineInit(int opmode, Key key, AlgorithmParameterSpec params, SecureRandom random)",protected abstract void
+CipherSpi,"engineInit(int opmode, Key key, AlgorithmParameters params, SecureRandom random)",protected abstract void
+CipherSpi,"engineInit(int opmode, Key key, SecureRandom random)",protected abstract void
+CipherSpi,engineSetMode(String mode),protected abstract void
+CipherSpi,engineSetPadding(String padding),protected abstract void
+CipherSpi,"engineUnwrap(byte[] wrappedKey, String wrappedKeyAlgorithm, int wrappedKeyType)",protected Key
+CipherSpi,"engineUpdate(byte[] input, int inputOffset, int inputLen)",protected abstract byte[]
+CipherSpi,"engineUpdate(byte[] input, int inputOffset, int inputLen, byte[] output, int outputOffset)",protected abstract int
+CipherSpi,"engineUpdate(ByteBuffer input, ByteBuffer output)",protected int
+CipherSpi,"engineUpdateAAD(byte[] src, int offset, int len)",protected void
+CipherSpi,engineUpdateAAD(ByteBuffer src),protected void
+CipherSpi,engineWrap(Key key),protected byte[]
+EncryptedPrivateKeyInfo,getAlgName(),String
+EncryptedPrivateKeyInfo,getAlgParameters(),AlgorithmParameters
+EncryptedPrivateKeyInfo,getEncoded(),byte[]
+EncryptedPrivateKeyInfo,getEncryptedData(),byte[]
+EncryptedPrivateKeyInfo,getKeySpec(Cipher cipher),PKCS8EncodedKeySpec
+EncryptedPrivateKeyInfo,getKeySpec(Key decryptKey),PKCS8EncodedKeySpec
+EncryptedPrivateKeyInfo,"getKeySpec(Key decryptKey, Provider provider)",PKCS8EncodedKeySpec
+EncryptedPrivateKeyInfo,"getKeySpec(Key decryptKey, String providerName)",PKCS8EncodedKeySpec
+ExemptionMechanism,finalize(),protected void
+ExemptionMechanism,genExemptionBlob(),byte[]
+ExemptionMechanism,genExemptionBlob(byte[] output),int
+ExemptionMechanism,"genExemptionBlob(byte[] output, int outputOffset)",int
+ExemptionMechanism,getInstance(String algorithm),static ExemptionMechanism
+ExemptionMechanism,"getInstance(String algorithm, Provider provider)",static ExemptionMechanism
+ExemptionMechanism,"getInstance(String algorithm, String provider)",static ExemptionMechanism
+ExemptionMechanism,getName(),String
+ExemptionMechanism,getOutputSize(int inputLen),int
+ExemptionMechanism,getProvider(),Provider
+ExemptionMechanism,init(Key key),void
+ExemptionMechanism,"init(Key key, AlgorithmParameters params)",void
+ExemptionMechanism,"init(Key key, AlgorithmParameterSpec params)",void
+ExemptionMechanism,isCryptoAllowed(Key key),boolean
+ExemptionMechanismSpi,engineGenExemptionBlob(),protected abstract byte[]
+ExemptionMechanismSpi,"engineGenExemptionBlob(byte[] output, int outputOffset)",protected abstract int
+ExemptionMechanismSpi,engineGetOutputSize(int inputLen),protected abstract int
+ExemptionMechanismSpi,engineInit(Key key),protected abstract void
+ExemptionMechanismSpi,"engineInit(Key key, AlgorithmParameters params)",protected abstract void
+ExemptionMechanismSpi,"engineInit(Key key, AlgorithmParameterSpec params)",protected abstract void
+KeyAgreement,"doPhase(Key key, boolean lastPhase)",Key
+KeyAgreement,generateSecret(),byte[]
+KeyAgreement,"generateSecret(byte[] sharedSecret, int offset)",int
+KeyAgreement,generateSecret(String algorithm),SecretKey
+KeyAgreement,getAlgorithm(),String
+KeyAgreement,getInstance(String algorithm),static KeyAgreement
+KeyAgreement,"getInstance(String algorithm, Provider provider)",static KeyAgreement
+KeyAgreement,"getInstance(String algorithm, String provider)",static KeyAgreement
+KeyAgreement,getProvider(),Provider
+KeyAgreement,init(Key key),void
+KeyAgreement,"init(Key key, AlgorithmParameterSpec params)",void
+KeyAgreement,"init(Key key, AlgorithmParameterSpec params, SecureRandom random)",void
+KeyAgreement,"init(Key key, SecureRandom random)",void
+KeyAgreementSpi,"engineDoPhase(Key key, boolean lastPhase)",protected abstract Key
+KeyAgreementSpi,engineGenerateSecret(),protected abstract byte[]
+KeyAgreementSpi,"engineGenerateSecret(byte[] sharedSecret, int offset)",protected abstract int
+KeyAgreementSpi,engineGenerateSecret(String algorithm),protected abstract SecretKey
+KeyAgreementSpi,"engineInit(Key key, AlgorithmParameterSpec params, SecureRandom random)",protected abstract void
+KeyAgreementSpi,"engineInit(Key key, SecureRandom random)",protected abstract void
+KeyGenerator,generateKey(),SecretKey
+KeyGenerator,getAlgorithm(),String
+KeyGenerator,getInstance(String algorithm),static KeyGenerator
+KeyGenerator,"getInstance(String algorithm, Provider provider)",static KeyGenerator
+KeyGenerator,"getInstance(String algorithm, String provider)",static KeyGenerator
+KeyGenerator,getProvider(),Provider
+KeyGenerator,init(AlgorithmParameterSpec params),void
+KeyGenerator,"init(AlgorithmParameterSpec params, SecureRandom random)",void
+KeyGenerator,init(int keysize),void
+KeyGenerator,"init(int keysize, SecureRandom random)",void
+KeyGenerator,init(SecureRandom random),void
+KeyGeneratorSpi,engineGenerateKey(),protected abstract SecretKey
+KeyGeneratorSpi,"engineInit(AlgorithmParameterSpec params, SecureRandom random)",protected abstract void
+KeyGeneratorSpi,"engineInit(int keysize, SecureRandom random)",protected abstract void
+KeyGeneratorSpi,engineInit(SecureRandom random),protected abstract void
+Mac,clone(),Object
+Mac,doFinal(),byte[]
+Mac,doFinal(byte[] input),byte[]
+Mac,"doFinal(byte[] output, int outOffset)",void
+Mac,getAlgorithm(),String
+Mac,getInstance(String algorithm),static Mac
+Mac,"getInstance(String algorithm, Provider provider)",static Mac
+Mac,"getInstance(String algorithm, String provider)",static Mac
+Mac,getMacLength(),int
+Mac,getProvider(),Provider
+Mac,init(Key key),void
+Mac,"init(Key key, AlgorithmParameterSpec params)",void
+Mac,reset(),void
+Mac,update(byte input),void
+Mac,update(byte[] input),void
+Mac,"update(byte[] input, int offset, int len)",void
+Mac,update(ByteBuffer input),void
+MacSpi,clone(),Object
+MacSpi,engineDoFinal(),protected abstract byte[]
+MacSpi,engineGetMacLength(),protected abstract int
+MacSpi,"engineInit(Key key, AlgorithmParameterSpec params)",protected abstract void
+MacSpi,engineReset(),protected abstract void
+MacSpi,engineUpdate(byte input),protected abstract void
+MacSpi,"engineUpdate(byte[] input, int offset, int len)",protected abstract void
+MacSpi,engineUpdate(ByteBuffer input),protected void
+SealedObject,getAlgorithm(),String
+SealedObject,getObject(Cipher c),Object
+SealedObject,getObject(Key key),Object
+SealedObject,"getObject(Key key, String provider)",Object
+SecretKeyFactory,generateSecret(KeySpec keySpec),SecretKey
+SecretKeyFactory,getAlgorithm(),String
+SecretKeyFactory,getInstance(String algorithm),static SecretKeyFactory
+SecretKeyFactory,"getInstance(String algorithm, Provider provider)",static SecretKeyFactory
+SecretKeyFactory,"getInstance(String algorithm, String provider)",static SecretKeyFactory
+SecretKeyFactory,"getKeySpec(SecretKey key, Class<?> keySpec)",KeySpec
+SecretKeyFactory,getProvider(),Provider
+SecretKeyFactory,translateKey(SecretKey key),SecretKey
+SecretKeyFactorySpi,engineGenerateSecret(KeySpec keySpec),protected abstract SecretKey
+SecretKeyFactorySpi,"engineGetKeySpec(SecretKey key, Class<?> keySpec)",protected abstract KeySpec
+SecretKeyFactorySpi,engineTranslateKey(SecretKey key),protected abstract SecretKey

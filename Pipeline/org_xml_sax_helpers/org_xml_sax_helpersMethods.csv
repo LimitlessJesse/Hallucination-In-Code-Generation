@@ -1,0 +1,147 @@
+ClassName,Method,Return Type
+AttributeListImpl,"addAttribute(String name, String type, String value)",void
+AttributeListImpl,clear(),void
+AttributeListImpl,getLength(),int
+AttributeListImpl,getName(int i),String
+AttributeListImpl,getType(int i),String
+AttributeListImpl,getType(String name),String
+AttributeListImpl,getValue(int i),String
+AttributeListImpl,getValue(String name),String
+AttributeListImpl,removeAttribute(String name),void
+AttributeListImpl,setAttributeList(AttributeList atts),void
+AttributesImpl,"addAttribute(String uri, String localName, String qName, String type, String value)",void
+AttributesImpl,clear(),void
+AttributesImpl,getIndex(String qName),int
+AttributesImpl,"getIndex(String uri, String localName)",int
+AttributesImpl,getLength(),int
+AttributesImpl,getLocalName(int index),String
+AttributesImpl,getQName(int index),String
+AttributesImpl,getType(int index),String
+AttributesImpl,getType(String qName),String
+AttributesImpl,"getType(String uri, String localName)",String
+AttributesImpl,getURI(int index),String
+AttributesImpl,getValue(int index),String
+AttributesImpl,getValue(String qName),String
+AttributesImpl,"getValue(String uri, String localName)",String
+AttributesImpl,removeAttribute(int index),void
+AttributesImpl,"setAttribute(int index, String uri, String localName, String qName, String type, String value)",void
+AttributesImpl,setAttributes(Attributes atts),void
+AttributesImpl,"setLocalName(int index, String localName)",void
+AttributesImpl,"setQName(int index, String qName)",void
+AttributesImpl,"setType(int index, String type)",void
+AttributesImpl,"setURI(int index, String uri)",void
+AttributesImpl,"setValue(int index, String value)",void
+DefaultHandler,"characters(char[] ch, int start, int length)",void
+DefaultHandler,endDocument(),void
+DefaultHandler,"endElement(String uri, String localName, String qName)",void
+DefaultHandler,endPrefixMapping(String prefix),void
+DefaultHandler,error(SAXParseException e),void
+DefaultHandler,fatalError(SAXParseException e),void
+DefaultHandler,"ignorableWhitespace(char[] ch, int start, int length)",void
+DefaultHandler,"notationDecl(String name, String publicId, String systemId)",void
+DefaultHandler,"processingInstruction(String target, String data)",void
+DefaultHandler,"resolveEntity(String publicId, String systemId)",InputSource
+DefaultHandler,setDocumentLocator(Locator locator),void
+DefaultHandler,skippedEntity(String name),void
+DefaultHandler,startDocument(),void
+DefaultHandler,"startElement(String uri, String localName, String qName, Attributes attributes)",void
+DefaultHandler,"startPrefixMapping(String prefix, String uri)",void
+DefaultHandler,"unparsedEntityDecl(String name, String publicId, String systemId, String notationName)",void
+DefaultHandler,warning(SAXParseException e),void
+LocatorImpl,getColumnNumber(),int
+LocatorImpl,getLineNumber(),int
+LocatorImpl,getPublicId(),String
+LocatorImpl,getSystemId(),String
+LocatorImpl,setColumnNumber(int columnNumber),void
+LocatorImpl,setLineNumber(int lineNumber),void
+LocatorImpl,setPublicId(String publicId),void
+LocatorImpl,setSystemId(String systemId),void
+NamespaceSupport,"declarePrefix(String prefix, String uri)",boolean
+NamespaceSupport,getDeclaredPrefixes(),Enumeration
+NamespaceSupport,getPrefix(String uri),String
+NamespaceSupport,getPrefixes(),Enumeration
+NamespaceSupport,getPrefixes(String uri),Enumeration
+NamespaceSupport,getURI(String prefix),String
+NamespaceSupport,isNamespaceDeclUris(),boolean
+NamespaceSupport,popContext(),void
+NamespaceSupport,"processName(String qName, String[] parts, boolean isAttribute)",String[]
+NamespaceSupport,pushContext(),void
+NamespaceSupport,reset(),void
+NamespaceSupport,setNamespaceDeclUris(boolean value),void
+ParserAdapter,"characters(char[] ch, int start, int length)",void
+ParserAdapter,endDocument(),void
+ParserAdapter,endElement(String qName),void
+ParserAdapter,getContentHandler(),ContentHandler
+ParserAdapter,getDTDHandler(),DTDHandler
+ParserAdapter,getEntityResolver(),EntityResolver
+ParserAdapter,getErrorHandler(),ErrorHandler
+ParserAdapter,getFeature(String name),boolean
+ParserAdapter,getProperty(String name),Object
+ParserAdapter,"ignorableWhitespace(char[] ch, int start, int length)",void
+ParserAdapter,parse(InputSource input),void
+ParserAdapter,parse(String systemId),void
+ParserAdapter,"processingInstruction(String target, String data)",void
+ParserAdapter,setContentHandler(ContentHandler handler),void
+ParserAdapter,setDocumentLocator(Locator locator),void
+ParserAdapter,setDTDHandler(DTDHandler handler),void
+ParserAdapter,setEntityResolver(EntityResolver resolver),void
+ParserAdapter,setErrorHandler(ErrorHandler handler),void
+ParserAdapter,"setFeature(String name, boolean value)",void
+ParserAdapter,"setProperty(String name, Object value)",void
+ParserAdapter,startDocument(),void
+ParserAdapter,"startElement(String qName, AttributeList qAtts)",void
+ParserFactory,makeParser(),static Parser
+ParserFactory,makeParser(String className),static Parser
+XMLFilterImpl,"characters(char[] ch, int start, int length)",void
+XMLFilterImpl,endDocument(),void
+XMLFilterImpl,"endElement(String uri, String localName, String qName)",void
+XMLFilterImpl,endPrefixMapping(String prefix),void
+XMLFilterImpl,error(SAXParseException e),void
+XMLFilterImpl,fatalError(SAXParseException e),void
+XMLFilterImpl,getContentHandler(),ContentHandler
+XMLFilterImpl,getDTDHandler(),DTDHandler
+XMLFilterImpl,getEntityResolver(),EntityResolver
+XMLFilterImpl,getErrorHandler(),ErrorHandler
+XMLFilterImpl,getFeature(String name),boolean
+XMLFilterImpl,getParent(),XMLReader
+XMLFilterImpl,getProperty(String name),Object
+XMLFilterImpl,"ignorableWhitespace(char[] ch, int start, int length)",void
+XMLFilterImpl,"notationDecl(String name, String publicId, String systemId)",void
+XMLFilterImpl,parse(InputSource input),void
+XMLFilterImpl,parse(String systemId),void
+XMLFilterImpl,"processingInstruction(String target, String data)",void
+XMLFilterImpl,"resolveEntity(String publicId, String systemId)",InputSource
+XMLFilterImpl,setContentHandler(ContentHandler handler),void
+XMLFilterImpl,setDocumentLocator(Locator locator),void
+XMLFilterImpl,setDTDHandler(DTDHandler handler),void
+XMLFilterImpl,setEntityResolver(EntityResolver resolver),void
+XMLFilterImpl,setErrorHandler(ErrorHandler handler),void
+XMLFilterImpl,"setFeature(String name, boolean value)",void
+XMLFilterImpl,setParent(XMLReader parent),void
+XMLFilterImpl,"setProperty(String name, Object value)",void
+XMLFilterImpl,skippedEntity(String name),void
+XMLFilterImpl,startDocument(),void
+XMLFilterImpl,"startElement(String uri, String localName, String qName, Attributes atts)",void
+XMLFilterImpl,"startPrefixMapping(String prefix, String uri)",void
+XMLFilterImpl,"unparsedEntityDecl(String name, String publicId, String systemId, String notationName)",void
+XMLFilterImpl,warning(SAXParseException e),void
+XMLReaderAdapter,"characters(char[] ch, int start, int length)",void
+XMLReaderAdapter,endDocument(),void
+XMLReaderAdapter,"endElement(String uri, String localName, String qName)",void
+XMLReaderAdapter,endPrefixMapping(String prefix),void
+XMLReaderAdapter,"ignorableWhitespace(char[] ch, int start, int length)",void
+XMLReaderAdapter,parse(InputSource input),void
+XMLReaderAdapter,parse(String systemId),void
+XMLReaderAdapter,"processingInstruction(String target, String data)",void
+XMLReaderAdapter,setDocumentHandler(DocumentHandler handler),void
+XMLReaderAdapter,setDocumentLocator(Locator locator),void
+XMLReaderAdapter,setDTDHandler(DTDHandler handler),void
+XMLReaderAdapter,setEntityResolver(EntityResolver resolver),void
+XMLReaderAdapter,setErrorHandler(ErrorHandler handler),void
+XMLReaderAdapter,setLocale(Locale locale),void
+XMLReaderAdapter,skippedEntity(String name),void
+XMLReaderAdapter,startDocument(),void
+XMLReaderAdapter,"startElement(String uri, String localName, String qName, Attributes atts)",void
+XMLReaderAdapter,"startPrefixMapping(String prefix, String uri)",void
+XMLReaderFactory,createXMLReader(),static XMLReader
+XMLReaderFactory,createXMLReader(String className),static XMLReader

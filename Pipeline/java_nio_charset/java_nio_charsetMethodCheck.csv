@@ -1,0 +1,39 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Charset,1,Charset.availableCharsets(),False
+0,Charset,2,Charset.defaultCharset(),False
+0,Charset,3,Charset.forName(String charsetName),False
+0,Charset,4,CharsetEncoder canEncode(CharBuffer cb),False
+0,Charset,5,CharsetDecoder canDecode(ByteBuffer bb),False
+1,CharsetDecoder,1,Charset charset(),True
+1,CharsetDecoder,2,"CoderResult decode(ByteBuffer in, CharBuffer out, boolean endOfInput)",True
+1,CharsetDecoder,3,CoderResult flush(CharBuffer out),True
+1,CharsetDecoder,4,void reset(),False
+1,CharsetDecoder,5,CoderResult onMalformedInput(CodingErrorAction action),False
+1,CharsetDecoder,6,CoderResult onUnmappableCharacter(CodingErrorAction action),False
+1,CharsetDecoder,7,CoderResult onUndefined(CodingErrorAction action),False
+1,CharsetDecoder,8,CoderResult onUnrepresentableCharacter(CodingErrorAction action),False
+1,CharsetDecoder,9,CoderResult onMalformedInput(CodingErrorAction action),False
+1,CharsetDecoder,10,CoderResult onUnmappableCharacter(CodingErrorAction action),False
+1,CharsetDecoder,11,CoderResult onUndefined(CodingErrorAction action),False
+1,CharsetDecoder,12,CoderResult onUnrepresentableCharacter(CodingErrorAction action),False
+2,CharsetEncoder,1,boolean canEncode(CharBuffer cb),False
+2,CharsetEncoder,2,boolean isLegalReplacement(byte[] bytes),True
+2,CharsetEncoder,3,boolean isLegalSequence(byte[] bytes),False
+2,CharsetEncoder,4,boolean isLegalUnicode(int codePoint),False
+2,CharsetEncoder,5,int maxBytesPerChar(),False
+3,CoderResult,1,boolean isError(),True
+3,CoderResult,2,boolean isMalformed(),True
+3,CoderResult,3,boolean isUnmappable(),True
+3,CoderResult,4,boolean isUnderflow(),True
+3,CoderResult,5,boolean isOverflow(),True
+4,CodingErrorAction,1,CodingErrorAction REPLACE,False
+4,CodingErrorAction,2,CodingErrorAction IGNORE,False
+4,CodingErrorAction,3,CodingErrorAction REPORT,False
+4,CodingErrorAction,4,CodingErrorAction REPLACE,False
+4,CodingErrorAction,5,CodingErrorAction IGNORE,False
+4,CodingErrorAction,6,CodingErrorAction REPORT,False
+5,StandardCharsets,1,Charset charset(),False
+5,StandardCharsets,2,CharsetDecoder newDecoder(),False
+5,StandardCharsets,3,CharsetEncoder newEncoder(),False
+5,StandardCharsets,4,String name(),False
+5,StandardCharsets,5,Charset forName(String charsetName),False

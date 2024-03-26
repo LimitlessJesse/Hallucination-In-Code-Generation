@@ -1,0 +1,342 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AccessControlContext,1,boolean checkPermission(Permission perm),False
+0,AccessControlContext,2,"void checkPermission(Permission perm, Object context)",False
+0,AccessControlContext,3,void setReadOnly(),False
+0,AccessControlContext,4,void setReadOnly(boolean readOnly),False
+0,AccessControlContext,5,boolean isReadOnly(),False
+1,AccessController,1,boolean checkPermission(Permission perm),False
+1,AccessController,2,"void checkPermission(Permission perm, Object context)",False
+1,AccessController,3,void checkSecurityAccess(String target),False
+1,AccessController,4,"void checkSecurityAccess(String target, Object context)",False
+1,AccessController,5,"void checkSecurityAccess(String target, Object context, ProtectionDomain domain)",False
+2,AlgorithmParameterGenerator,1,AlgorithmParameterGenerator,False
+2,AlgorithmParameterGenerator,2,init(SecureRandom random),False
+2,AlgorithmParameterGenerator,3,init(AlgorithmParameterSpec params),False
+2,AlgorithmParameterGenerator,4,generateParameters(),False
+2,AlgorithmParameterGenerator,5,getParameterSpec(Class<T> parameterSpec),False
+2,AlgorithmParameterGenerator,6,getParameterSpec(AlgorithmParameterSpec parameterSpec),False
+2,AlgorithmParameterGenerator,7,"getParameterSpec(Class<T> parameterSpec, AlgorithmParameterSpec parameterSpec)",False
+2,AlgorithmParameterGenerator,8,"getParameterSpec(AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)",False
+2,AlgorithmParameterGenerator,9,"getParameterSpec(Class<T> parameterSpec, AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)",False
+2,AlgorithmParameterGenerator,10,"getParameterSpec(AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)",False
+3,AlgorithmParameterGeneratorSpi,1,AlgorithmParameterGeneratorSpi(),False
+3,AlgorithmParameterGeneratorSpi,2,init(SecureRandom random),False
+3,AlgorithmParameterGeneratorSpi,3,generateParameters(),False
+3,AlgorithmParameterGeneratorSpi,4,getParameterSpec(Class<T> parameterSpec),False
+3,AlgorithmParameterGeneratorSpi,5,setParameter(byte[] params),False
+4,AlgorithmParameters,1,getParameterSpec(Class<T> parameterSpec),False
+4,AlgorithmParameters,2,getParameterSpecs(Class<T> parameterSpec),False
+4,AlgorithmParameters,3,getParameter(String parameterName),False
+4,AlgorithmParameters,4,getParameterNames(),False
+4,AlgorithmParameters,5,getParameter(String parameterName),False
+5,AlgorithmParametersSpi,1,boolean isInitialized(),False
+5,AlgorithmParametersSpi,2,void init(SecureRandom sr),False
+5,AlgorithmParametersSpi,3,"void setParameter(String name, byte[] value)",False
+5,AlgorithmParametersSpi,4,byte[] getParameter(String name),False
+5,AlgorithmParametersSpi,5,byte[] getEncoded(),False
+6,AllPermission,1,boolean add(E e),False
+6,AllPermission,2,boolean addAll(Collection<? extends E> c),False
+6,AllPermission,3,void clear(),False
+6,AllPermission,4,boolean contains(Object o),False
+6,AllPermission,5,boolean containsAll(Collection<?> c),False
+7,AuthProvider,1,boolean add(E e),False
+7,AuthProvider,2,boolean addAll(Collection<? extends E> c),False
+7,AuthProvider,3,void clear(),False
+7,AuthProvider,4,boolean contains(Object o),False
+7,AuthProvider,5,boolean containsAll(Collection<?> c),False
+8,BasicPermission,1,boolean implies(Permission p),True
+8,BasicPermission,2,boolean equals(Object obj),True
+8,BasicPermission,3,String getActions(),True
+8,BasicPermission,4,int hashCode(),True
+8,BasicPermission,5,String getName(),False
+9,CodeSigner,1,String getSignerCertPath(),False
+9,CodeSigner,2,String getSignerCertPath(String type),False
+9,CodeSigner,3,"String getSignerCertPath(String type, String algorithm)",False
+9,CodeSigner,4,"String getSignerCertPath(String type, String algorithm, String provider)",False
+9,CodeSigner,5,"String getSignerCertPath(String type, String algorithm, String provider, String parameter)",False
+10,CodeSource,1,URL getLocation(),True
+10,CodeSource,2,boolean equals(Object obj),True
+10,CodeSource,3,int hashCode(),True
+10,CodeSource,4,String toString(),True
+10,CodeSource,5,boolean implies(CodeSource cs),True
+11,DigestInputStream,1,"DigestInputStream(InputStream in, MessageDigest md)",False
+11,DigestInputStream,2,int read(),True
+11,DigestInputStream,3,int read(byte[] b),False
+11,DigestInputStream,4,"int read(byte[] b, int off, int len)",True
+11,DigestInputStream,5,void close(),False
+12,DigestOutputStream,1,"DigestOutputStream(OutputStream out, MessageDigest md)",False
+12,DigestOutputStream,2,void write(int b),True
+12,DigestOutputStream,3,void write(byte[] b),False
+12,DigestOutputStream,4,"void write(byte[] b, int off, int len)",True
+12,DigestOutputStream,5,void flush(),False
+13,DomainLoadStoreParameter,1,boolean add(E e),False
+13,DomainLoadStoreParameter,2,"void add(int index, E element)",False
+13,DomainLoadStoreParameter,3,boolean addAll(Collection<? extends E> c),False
+13,DomainLoadStoreParameter,4,"boolean addAll(int index, Collection<? extends E> c)",False
+13,DomainLoadStoreParameter,5,void clear(),False
+14,GuardedObject,1,boolean add(E e),False
+14,GuardedObject,2,E get(int index),False
+14,GuardedObject,3,E remove(int index),False
+14,GuardedObject,4,boolean remove(Object o),False
+14,GuardedObject,5,int size(),False
+15,Identity,1,boolean add(E e),False
+15,Identity,2,"void add(int index, E element)",False
+15,Identity,3,boolean addAll(Collection<? extends E> c),False
+15,Identity,4,"boolean addAll(int index, Collection<? extends E> c)",False
+15,Identity,5,void clear(),False
+16,IdentityScope,1,boolean add(E e),False
+16,IdentityScope,2,boolean addAll(Collection<? extends E> c),False
+16,IdentityScope,3,void clear(),False
+16,IdentityScope,4,boolean contains(Object o),False
+16,IdentityScope,5,boolean containsAll(Collection<?> c),False
+17,KeyFactory,1,KeyFactory.getInstance(String algorithm),False
+17,KeyFactory,2,PublicKey getPublicKey(),False
+17,KeyFactory,3,PrivateKey getPrivateKey(),False
+17,KeyFactory,4,"KeySpec getKeySpec(Key key, Class<? extends KeySpec> keySpec)",False
+17,KeyFactory,5,Key generatePublic(KeySpec keySpec),False
+17,KeyFactory,6,Key generatePrivate(KeySpec keySpec),False
+17,KeyFactory,7,"KeyFactory.getInstance(String algorithm, String provider)",False
+17,KeyFactory,8,"KeyFactory.getInstance(String algorithm, Provider provider)",False
+17,KeyFactory,9,"KeyFactory.getInstance(String algorithm, String provider, ClassLoader loader)",False
+17,KeyFactory,10,"KeyFactory.getInstance(String algorithm, Provider provider, ClassLoader loader)",False
+18,KeyFactorySpi,1,KeyFactorySpi(),False
+18,KeyFactorySpi,2,KeyFactorySpi(Provider provider),False
+18,KeyFactorySpi,3,"KeyFactorySpi(Provider provider, AlgorithmParameterSpec params)",False
+18,KeyFactorySpi,4,KeyFactorySpi(AlgorithmParameterSpec params),False
+18,KeyFactorySpi,5,KeyFactorySpi(String algorithm),False
+18,KeyFactorySpi,6,"KeyFactorySpi(String algorithm, Provider provider)",False
+18,KeyFactorySpi,7,"KeyFactorySpi(String algorithm, Provider provider, AlgorithmParameterSpec params)",False
+18,KeyFactorySpi,8,"KeyFactorySpi(String algorithm, AlgorithmParameterSpec params)",False
+19,KeyPair,1,KeyPairGenerator.getInstance(String algorithm),False
+19,KeyPair,2,KeyPairGenerator.initialize(int keySize),False
+19,KeyPair,3,KeyPairGenerator.generateKeyPair(),False
+19,KeyPair,4,KeyPair.getPrivate(),False
+19,KeyPair,5,KeyPair.getPublic(),False
+20,KeyPairGenerator,1,KeyPairGenerator(String algorithm),False
+20,KeyPairGenerator,2,void initialize(int keySize),True
+20,KeyPairGenerator,3,KeyPair generateKeyPair(),True
+20,KeyPairGenerator,4,void initialize(AlgorithmParameterSpec params),True
+20,KeyPairGenerator,5,AlgorithmParameterSpec getParameters(),False
+21,KeyPairGeneratorSpi,1,KeyPairGeneratorSpi(),False
+21,KeyPairGeneratorSpi,2,"initialize(int keySize, SecureRandom random)",False
+21,KeyPairGeneratorSpi,3,generateKeyPair(),False
+21,KeyPairGeneratorSpi,4,getAlgorithm(),False
+21,KeyPairGeneratorSpi,5,getProvider(),False
+22,KeyRep,1,boolean add(E e),False
+22,KeyRep,2,"void add(int index, E element)",False
+22,KeyRep,3,boolean addAll(Collection<? extends E> c),False
+22,KeyRep,4,"boolean addAll(int index, Collection<? extends E> c)",False
+22,KeyRep,5,void clear(),False
+23,KeyStore,1,KeyStore.getInstance(String algorithm),False
+23,KeyStore,2,"KeyStore.load(InputStream inStream, char[] password)",False
+23,KeyStore,3,"KeyStore.setKeyEntry(String alias, PrivateKey key, char[] password, Certificate[] chain)",False
+23,KeyStore,4,KeyStore.getCertificate(String alias),False
+23,KeyStore,5,KeyStore.getCertificateChain(String alias),False
+24,KeyStore.Builder,1,KeyStore.Builder.newInstance(String type),False
+24,KeyStore.Builder,2,"KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain)",False
+24,KeyStore.Builder,3,"KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,4,"KeyStore.Builder setCertificateEntry(String alias, Certificate certificate)",False
+24,KeyStore.Builder,5,"KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,6,KeyStore build(),False
+24,KeyStore.Builder,7,"KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,8,"KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,9,KeyStore build(KeyStore.ProtectionParameter protectionParameter),False
+24,KeyStore.Builder,10,"KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,11,"KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)",False
+24,KeyStore.Builder,12,KeyStore build(KeyStore.ProtectionParameter protectionParameter),False
+25,KeyStore.CallbackHandlerProtection,1,boolean isKeyEntry(String alias),False
+25,KeyStore.CallbackHandlerProtection,2,ProtectionParameter getProtectionParameter(String alias),False
+25,KeyStore.CallbackHandlerProtection,3,ProtectionParameter getProtectionParameter(Key key),False
+25,KeyStore.CallbackHandlerProtection,4,"KeyStore.Entry getEntry(String alias, char[] password)",False
+25,KeyStore.CallbackHandlerProtection,5,"KeyStore.Entry getEntry(String alias, KeyStore.ProtectionParameter protParam)",False
+26,KeyStore.PasswordProtection,1,KeyStore.PasswordProtection(char[] password),False
+26,KeyStore.PasswordProtection,2,char[] getPassword(),True
+26,KeyStore.PasswordProtection,3,void setPassword(char[] password),False
+26,KeyStore.PasswordProtection,4,boolean isDestroyed(),True
+26,KeyStore.PasswordProtection,5,void destroy(),True
+27,KeyStore.PrivateKeyEntry,1,"PrivateKeyEntry(PrivateKey privateKey, Certificate[] certificateChain)",False
+27,KeyStore.PrivateKeyEntry,2,PrivateKey getPrivateKey(),True
+27,KeyStore.PrivateKeyEntry,3,Certificate[] getCertificateChain(),True
+27,KeyStore.PrivateKeyEntry,4,boolean equals(Object obj),False
+27,KeyStore.PrivateKeyEntry,5,int hashCode(),False
+28,KeyStore.SecretKeyEntry,1,boolean contains(Object o),False
+28,KeyStore.SecretKeyEntry,2,boolean remove(Object o),False
+28,KeyStore.SecretKeyEntry,3,boolean isEmpty(),False
+28,KeyStore.SecretKeyEntry,4,int size(),False
+28,KeyStore.SecretKeyEntry,5,Object[] toArray(),False
+29,KeyStore.TrustedCertificateEntry,1,boolean add(E e),False
+29,KeyStore.TrustedCertificateEntry,2,void clear(),False
+29,KeyStore.TrustedCertificateEntry,3,boolean contains(Object o),False
+29,KeyStore.TrustedCertificateEntry,4,boolean remove(Object o),False
+29,KeyStore.TrustedCertificateEntry,5,boolean removeAll(Collection<?> c),False
+30,KeyStoreSpi,1,boolean containsAlias(String alias),False
+30,KeyStoreSpi,2,Enumeration<String> aliases(),False
+30,KeyStoreSpi,3,Key key(String alias),False
+30,KeyStoreSpi,4,Certificate certificate(String alias),False
+30,KeyStoreSpi,5,PrivateKey privateKey(String alias),False
+30,KeyStoreSpi,6,SecretKey secretKey(String alias),False
+30,KeyStoreSpi,7,"KeyStore.ProtectionParameter getKey(String alias, KeyStore.ProtectionParameter protParam)",False
+30,KeyStoreSpi,8,"KeyStore.ProtectionParameter getCertificate(String alias, KeyStore.ProtectionParameter protParam)",False
+30,KeyStoreSpi,9,"KeyStore.ProtectionParameter getKey(String alias, char[] password, KeyStore.ProtectionParameter protParam)",False
+30,KeyStoreSpi,10,"KeyStore.ProtectionParameter getCertificate(String alias, char[] password, KeyStore.ProtectionParameter protParam)",False
+31,MessageDigest,1,MessageDigest update(byte[] input),False
+31,MessageDigest,2,byte[] digest(),True
+31,MessageDigest,3,void reset(),True
+31,MessageDigest,4,String getAlgorithm(),True
+31,MessageDigest,5,int getDigestLength(),True
+32,MessageDigestSpi,1,void update(byte input[]),False
+32,MessageDigestSpi,2,"void update(byte input[], int offset, int len)",False
+32,MessageDigestSpi,3,byte[] digest(),False
+32,MessageDigestSpi,4,void reset(),False
+32,MessageDigestSpi,5,int engineGetDigestLength(),True
+32,MessageDigestSpi,6,void engineUpdate(byte input),True
+32,MessageDigestSpi,7,"void engineUpdate(byte input[], int offset, int len)",False
+32,MessageDigestSpi,8,byte[] engineDigest(),True
+32,MessageDigestSpi,9,void engineReset(),True
+32,MessageDigestSpi,10,int engineGetDigestLength(),True
+33,Permission,1,boolean implies(Permission p),True
+33,Permission,2,boolean equals(Object obj),True
+33,Permission,3,int hashCode(),True
+33,Permission,4,String getActions(),True
+33,Permission,5,String getName(),True
+34,PermissionCollection,1,boolean implies(Permission p),True
+34,PermissionCollection,2,boolean implies(PermissionCollection pc),False
+34,PermissionCollection,3,Enumeration elements(),False
+34,PermissionCollection,4,boolean isReadOnly(),True
+34,PermissionCollection,5,int size(),False
+35,Permissions,1,boolean implies(Permission p),True
+35,Permissions,2,void setReadOnly(),False
+35,Permissions,3,boolean isReadOnly(),False
+35,Permissions,4,Enumeration elements(),False
+35,Permissions,5,boolean equals(Object obj),False
+36,PKCS12Attribute,1,boolean contains(Object o),False
+36,PKCS12Attribute,2,boolean isEmpty(),False
+36,PKCS12Attribute,3,int size(),False
+36,PKCS12Attribute,4,Object clone(),False
+36,PKCS12Attribute,5,boolean equals(Object o),True
+37,Policy,1,boolean add(E e),False
+37,Policy,2,"void add(int index, E element)",False
+37,Policy,3,boolean addAll(Collection<? extends E> c),False
+37,Policy,4,"boolean addAll(int index, Collection<? extends E> c)",False
+37,Policy,5,void clear(),False
+38,PolicySpi,1,boolean add(E e),False
+38,PolicySpi,2,"void add(int index, E element)",False
+38,PolicySpi,3,boolean addAll(Collection<? extends E> c),False
+38,PolicySpi,4,"boolean addAll(int index, Collection<? extends E> c)",False
+38,PolicySpi,5,void clear(),False
+39,ProtectionDomain,1,getCodeSource(),False
+39,ProtectionDomain,2,getClassLoader(),False
+39,ProtectionDomain,3,getPermissions(),False
+39,ProtectionDomain,4,getReadLocalClasses(),False
+39,ProtectionDomain,5,getImmutable(),False
+40,Provider,1,boolean add(E e),False
+40,Provider,2,boolean addAll(Collection<? extends E> c),False
+40,Provider,3,void clear(),True
+40,Provider,4,boolean contains(Object o),False
+40,Provider,5,boolean containsAll(Collection<?> c),False
+40,Provider,6,boolean equals(Object o),False
+40,Provider,7,E get(int index),False
+40,Provider,8,int indexOf(Object o),False
+40,Provider,9,boolean isEmpty(),False
+40,Provider,10,Iterator<E> iterator(),False
+40,Provider,11,int lastIndexOf(Object o),False
+40,Provider,12,ListIterator<E> listIterator(),False
+40,Provider,13,ListIterator<E> listIterator(int index),False
+40,Provider,14,boolean remove(Object o),False
+40,Provider,15,E remove(int index),False
+40,Provider,16,boolean removeAll(Collection<?> c),False
+40,Provider,17,boolean retainAll(Collection<?> c),False
+40,Provider,18,"E set(int index, E element)",False
+40,Provider,19,int size(),False
+40,Provider,20,"List<E> subList(int fromIndex, int toIndex)",False
+41,Provider.Service,1,boolean add(E e),False
+41,Provider.Service,2,boolean addAll(Collection<? extends E> c),False
+41,Provider.Service,3,void clear(),False
+41,Provider.Service,4,boolean contains(Object o),False
+41,Provider.Service,5,boolean containsAll(Collection<?> c),False
+41,Provider.Service,6,boolean equals(Object o),False
+41,Provider.Service,7,E get(int index),False
+41,Provider.Service,8,int indexOf(Object o),False
+41,Provider.Service,9,boolean isEmpty(),False
+41,Provider.Service,10,Iterator<E> iterator(),False
+41,Provider.Service,11,int lastIndexOf(Object o),False
+41,Provider.Service,12,ListIterator<E> listIterator(),False
+41,Provider.Service,13,ListIterator<E> listIterator(int index),False
+41,Provider.Service,14,boolean remove(Object o),False
+41,Provider.Service,15,E remove(int index),False
+41,Provider.Service,16,boolean removeAll(Collection<?> c),False
+41,Provider.Service,17,boolean retainAll(Collection<?> c),False
+41,Provider.Service,18,"E set(int index, E element)",False
+41,Provider.Service,19,int size(),False
+41,Provider.Service,20,"List<E> subList(int fromIndex, int toIndex)",False
+42,SecureClassLoader,1,boolean add(E e),False
+42,SecureClassLoader,2,"void add(int index, E element)",False
+42,SecureClassLoader,3,boolean addAll(Collection<? extends E> c),False
+42,SecureClassLoader,4,"boolean addAll(int index, Collection<? extends E> c)",False
+42,SecureClassLoader,5,void clear(),False
+43,SecureRandom,1,SecureRandom(),False
+43,SecureRandom,2,void setSeed(long seed),True
+43,SecureRandom,3,void setSeed(byte[] seed),True
+43,SecureRandom,4,void nextBytes(byte[] bytes),True
+43,SecureRandom,5,int nextInt(),False
+43,SecureRandom,6,int nextInt(int n),False
+43,SecureRandom,7,long nextLong(),False
+43,SecureRandom,8,boolean nextBoolean(),False
+43,SecureRandom,9,float nextFloat(),False
+43,SecureRandom,10,double nextDouble(),False
+43,SecureRandom,11,double nextGaussian(),False
+44,SecureRandomSpi,1,SecureRandomSpi(),False
+44,SecureRandomSpi,2,void setSeed(byte[] seed),False
+44,SecureRandomSpi,3,void nextBytes(byte[] bytes),False
+44,SecureRandomSpi,4,int nextInt(),False
+44,SecureRandomSpi,5,long nextLong(),False
+44,SecureRandomSpi,6,boolean nextBoolean(),False
+44,SecureRandomSpi,7,float nextFloat(),False
+44,SecureRandomSpi,8,double nextDouble(),False
+44,SecureRandomSpi,9,double nextGaussian(),False
+44,SecureRandomSpi,10,void setSeed(long seed),False
+45,Security,1,Security.addProvider(Provider p),False
+45,Security,2,Security.getProviders(),False
+45,Security,3,Security.getProperty(String key),False
+45,Security,4,"Security.setProperty(String key, String value)",False
+45,Security,5,Security.removeProvider(String providerName),False
+46,SecurityPermission,1,boolean add(E e),False
+46,SecurityPermission,2,boolean addAll(Collection<? extends E> c),False
+46,SecurityPermission,3,void clear(),False
+46,SecurityPermission,4,boolean contains(Object o),False
+46,SecurityPermission,5,boolean containsAll(Collection<?> c),False
+47,Signature,1,initVerify(PublicKey key),False
+47,Signature,2,update(byte[] data),False
+47,Signature,3,verify(byte[] signature),False
+47,Signature,4,getInstance(String algorithm),False
+47,Signature,5,initSign(PrivateKey key),False
+48,SignatureSpi,1,initSign(PrivateKey privateKey),False
+48,SignatureSpi,2,update(byte[] data),False
+48,SignatureSpi,3,sign(),False
+48,SignatureSpi,4,verify(byte[] signature),False
+48,SignatureSpi,5,getAlgorithm(),False
+49,SignedObject,1,"SignedObject(PrivateKey privateKey, Object object)",False
+49,SignedObject,2,Object getObject(),True
+49,SignedObject,3,byte[] getSignature(),True
+49,SignedObject,4,boolean verify(PublicKey publicKey),False
+49,SignedObject,5,"boolean verify(PublicKey publicKey, byte[] signature)",False
+50,Signer,1,boolean verify(byte[] signature),False
+50,Signer,2,void update(byte[] data),False
+50,Signer,3,"void update(byte[] data, int offset, int len)",False
+50,Signer,4,byte[] sign(),False
+50,Signer,5,"void setParameter(String param, Object value)",False
+51,Timestamp,1,boolean add(E e),False
+51,Timestamp,2,"void add(int index, E element)",False
+51,Timestamp,3,boolean addAll(Collection<? extends E> c),False
+51,Timestamp,4,"boolean addAll(int index, Collection<? extends E> c)",False
+51,Timestamp,5,void clear(),False
+52,UnresolvedPermission,1,boolean add(E e),False
+52,UnresolvedPermission,2,boolean addAll(Collection<? extends E> c),False
+52,UnresolvedPermission,3,void clear(),False
+52,UnresolvedPermission,4,boolean contains(Object o),False
+52,UnresolvedPermission,5,boolean containsAll(Collection<?> c),False
+53,URIParameter,1,boolean add(E e),False
+53,URIParameter,2,"void add(int index, E element)",False
+53,URIParameter,3,boolean addAll(Collection<? extends E> c),False
+53,URIParameter,4,"boolean addAll(int index, Collection<? extends E> c)",False
+53,URIParameter,5,void clear(),False

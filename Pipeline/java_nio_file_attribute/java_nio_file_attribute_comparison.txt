@@ -1,0 +1,137 @@
+Sample: 0 AclEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.attribute.AclEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AclEntry.Builder builder()`: This method returns a new Builder instance for an AclEntry.
+
+2. `AclEntry.Builder setPermissions(Set<PosixFilePermission> permissions)`: This method sets the permissions for the AclEntry.
+
+3. `AclEntry.Builder setPrincipal(Principal principal)`: This method sets the principal for the AclEntry.
+
+4. `AclEntry.Builder setType(Type type)`: This method sets the type for the AclEntry.
+
+5. `AclEntry.Builder setFlag(AclEntryFlag flag)`: This method sets the flag for the AclEntry.
+================================================================
+
+Sample: 1 AclEntry.Builder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.attribute.AclEntry.Builder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AclEntry.Builder()`: This is the constructor of the AclEntry.Builder class. It takes no parameters and returns an instance of AclEntry.Builder.
+
+2. `AclEntry.Builder setPrincipal(Principal principal)`: This method sets the principal of the AclEntry.Builder. It takes a Principal object as a parameter and returns the AclEntry.Builder object.
+
+3. `AclEntry.Builder setFlags(Set<AclEntry.Flag> flags)`: This method sets the flags of the AclEntry.Builder. It takes a Set of AclEntry.Flag objects as a parameter and returns the AclEntry.Builder object.
+
+4. `AclEntry.Builder setPermissions(Set<AclEntry.Permission> permissions)`: This method sets the permissions of the AclEntry.Builder. It takes a Set of AclEntry.Permission objects as a parameter and returns the AclEntry.Builder object.
+
+5. `AclEntry.Builder setType(AclEntry.Type type)`: This method sets the type of the AclEntry.Builder. It takes an AclEntry.Type object as a parameter and returns the AclEntry.Builder object.
+
+6. `AclEntry build()`: This method builds the AclEntry object. It takes no parameters and returns an AclEntry object.
+================================================================
+
+Sample: 2 FileTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.attribute.FileTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileTime getLastModifiedTime()`: This method returns the time of last modification of the file.
+
+2. `FileTime getLastAccessTime()`: This method returns the time of last access of the file.
+
+3. `FileTime getCreationTime()`: This method returns the time of creation of the file.
+
+4. `FileTime setLastModifiedTime(FileTime lastModifiedTime)`: This method sets the time of last modification of the file.
+
+5. `FileTime setLastAccessTime(FileTime lastAccessTime)`: This method sets the time of last access of the file.
+================================================================
+
+Sample: 3 PosixFilePermissions
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.attribute.PosixFilePermissions package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PosixFilePermission getUserExecute()`: This method returns the PosixFilePermission for the user execute permission.
+
+2. `PosixFilePermission getGroupExecute()`: This method returns the PosixFilePermission for the group execute permission.
+
+3. `PosixFilePermission getOthersExecute()`: This method returns the PosixFilePermission for the others execute permission.
+
+4. `PosixFilePermission getUserWrite()`: This method returns the PosixFilePermission for the user write permission.
+
+5. `PosixFilePermission getGroupWrite()`: This method returns the PosixFilePermission for the group write permission.
+
+6. `PosixFilePermission getOthersWrite()`: This method returns the PosixFilePermission for the others write permission.
+
+7. `PosixFilePermission getUserRead()`: This method returns the PosixFilePermission for the user read permission.
+
+8. `PosixFilePermission getGroupRead()`: This method returns the PosixFilePermission for the group read permission.
+
+9. `PosixFilePermission getOthersRead()`: This method returns the PosixFilePermission for the others read permission.
+
+10. `Set<PosixFilePermission> fromString(String string)`: This method returns a set of PosixFilePermission from the specified string.
+================================================================
+
+Sample: 4 UserPrincipalLookupService
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.attribute.UserPrincipalLookupService package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `UserPrincipal lookupPrincipalByName(String name)`: This method returns the UserPrincipal object associated with the specified name.
+
+2. `UserPrincipal lookupPrincipalByGroupName(String group)`: This method returns the UserPrincipal object associated with the specified group.
+
+3. `UserPrincipal lookupPrincipalByGroupName(String group, String name)`: This method returns the UserPrincipal object associated with the specified group and name.
+
+4. `UserPrincipal lookupPrincipalBySid(String sid)`: This method returns the UserPrincipal object associated with the specified security identifier (SID).
+
+5. `UserPrincipal lookupPrincipalBySid(String sid, String name)`: This method returns the UserPrincipal object associated with the specified security identifier (SID) and name.
+================================================================
+

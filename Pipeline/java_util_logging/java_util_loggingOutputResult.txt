@@ -1,0 +1,428 @@
+Sample: ConsoleHandler_4
+----------------------------------------------------------------
+stderr:
+Mar. 08, 2024 11:26:40 P.M. null
+INFO: This is a test log message
+
+================================================================
+
+Sample: ErrorManager_1
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/ErrorManager_1.java:15: error: cannot find symbol
+        logger.setErrorManager(errorManager);
+              ^
+  symbol:   method setErrorManager(ErrorManager)
+  location: variable logger of type Logger
+1 error
+
+
+================================================================
+
+Sample: FileHandler_3
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/FileHandler_3.java:9: error: cannot find symbol
+        LogRecord record = new LogRecord(Level.INFO, "Logging to file");
+                                         ^
+  symbol:   variable Level
+  location: class FileHandler_3
+1 error
+
+
+================================================================
+
+Sample: FileHandler_5
+----------------------------------------------------------------
+stderr:
+Mar. 08, 2024 11:26:42 P.M. FileHandler_5 main
+INFO: My first log
+
+================================================================
+
+Sample: Formatter_1
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Formatter_1.java:8: error: cannot find symbol
+        handler.setFormatter(new CustomFormatter());
+                                 ^
+  symbol:   class CustomFormatter
+  location: class Formatter_1
+1 error
+
+
+================================================================
+
+Sample: Formatter_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Formatter_2.java:9: error: cannot find symbol
+            public void publish(LogRecord record) {
+                                ^
+  symbol: class LogRecord
+./java_util_logging/javaFiles/Formatter_2.java:10: error: cannot find symbol
+                System.out.println(new MyFormatter().format(record));
+                                       ^
+  symbol: class MyFormatter
+2 errors
+
+
+================================================================
+
+Sample: Handler_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Handler_2.java:7: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Handler_2
+1 error
+
+
+================================================================
+
+Sample: Handler_3
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Handler_3.java:7: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Handler_3
+1 error
+
+
+================================================================
+
+Sample: Handler_4
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Handler_4.java:5: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Handler_4
+./java_util_logging/javaFiles/Handler_4.java:6: error: cannot find symbol
+        MyHandler handler = new MyHandler();
+        ^
+  symbol:   class MyHandler
+  location: class Handler_4
+./java_util_logging/javaFiles/Handler_4.java:6: error: cannot find symbol
+        MyHandler handler = new MyHandler();
+                                ^
+  symbol:   class MyHandler
+  location: class Handler_4
+3 errors
+
+
+================================================================
+
+Sample: Handler_5
+----------------------------------------------------------------
+stderr:
+INFO: This is an information message
+Mar. 08, 2024 11:26:46 P.M. Handler_5 main
+INFO: This is an information message
+
+================================================================
+
+Sample: Logger_1
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Logger_1.java:6: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Logger_1
+1 error
+
+
+================================================================
+
+Sample: Logger_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Logger_2.java:6: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Logger_2
+1 error
+
+
+================================================================
+
+Sample: Logger_3
+----------------------------------------------------------------
+================================================================
+
+Sample: Logger_4
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Logger_4.java:5: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Logger_4
+1 error
+
+
+================================================================
+
+Sample: Logger_5
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/Logger_5.java:7: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class Logger_5
+1 error
+
+
+================================================================
+
+Sample: LogManager_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/LogManager_2.java:6: error: unreported exception IOException; must be caught or declared to be thrown
+        logManager.readConfiguration();
+                                    ^
+1 error
+
+
+================================================================
+
+Sample: LogManager_3
+----------------------------------------------------------------
+================================================================
+
+Sample: LogRecord_1
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/LogRecord_1.java:6: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class LogRecord_1
+1 error
+
+
+================================================================
+
+Sample: LogRecord_2
+----------------------------------------------------------------
+stderr:
+Mar. 08, 2024 11:26:53 P.M. LogRecord_2 main
+INFO: This is a log message
+
+================================================================
+
+Sample: LogRecord_3
+----------------------------------------------------------------
+stdout:
+Log level: SEVERE
+
+================================================================
+
+Sample: LogRecord_4
+----------------------------------------------------------------
+stdout:
+Log Record Time: 1709962016477
+
+stderr:
+Note: ./java_util_logging/javaFiles/LogRecord_4.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: LogRecord_5
+----------------------------------------------------------------
+stdout:
+Source Class Name: Main
+
+================================================================
+
+Sample: LogRecord_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_6.main(LogRecord_6.java:5)
+
+================================================================
+
+Sample: LogRecord_7
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/LogRecord_7.java:6: error: cannot find symbol
+        Logger logger = Logger.getLogger(Main.class.getName());
+                                         ^
+  symbol:   class Main
+  location: class LogRecord_7
+1 error
+
+
+================================================================
+
+Sample: LogRecord_8
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/LogRecord_8.java:5: error: cannot find symbol
+        LogRecord logRecord = new LogRecord(Level.INFO, "This is a log message");
+                                            ^
+  symbol:   variable Level
+  location: class LogRecord_8
+1 error
+
+
+================================================================
+
+Sample: LogRecord_9
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_9.main(LogRecord_9.java:6)
+
+================================================================
+
+Sample: LogRecord_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_10.main(LogRecord_10.java:6)
+
+================================================================
+
+Sample: LogRecord_11
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_11.main(LogRecord_11.java:6)
+
+================================================================
+
+Sample: LogRecord_12
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_12.main(LogRecord_12.java:6)
+
+================================================================
+
+Sample: LogRecord_13
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_13.main(LogRecord_13.java:6)
+
+================================================================
+
+Sample: LogRecord_14
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_14.main(LogRecord_14.java:6)
+
+================================================================
+
+Sample: LogRecord_15
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at LogRecord_15.main(LogRecord_15.java:6)
+
+================================================================
+
+Sample: MemoryHandler_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/MemoryHandler_2.java:8: error: method push in class MemoryHandler cannot be applied to given types;
+        handler.push(record);
+               ^
+  required: no arguments
+  found:    LogRecord
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: SocketHandler_1
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/SocketHandler_1.java:9: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+./java_util_logging/javaFiles/SocketHandler_1.java:6: error: unreported exception IOException; must be caught or declared to be thrown
+        SocketHandler socketHandler = new SocketHandler();
+                                      ^
+2 errors
+
+
+================================================================
+
+Sample: SocketHandler_2
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/SocketHandler_2.java:8: error: class CustomSocketHandler is public, should be declared in a file named CustomSocketHandler.java
+public class CustomSocketHandler extends SocketHandler {
+       ^
+1 error
+
+
+================================================================
+
+Sample: StreamHandler_1
+----------------------------------------------------------------
+stderr:
+Mar. 08, 2024 11:27:11 P.M. StreamHandler_1 main
+INFO: This is a log message
+
+================================================================
+
+Sample: StreamHandler_2
+----------------------------------------------------------------
+stderr:
+Mar. 08, 2024 11:27:12 P.M. StreamHandler_2 main
+INFO: This is a test message
+
+================================================================
+
+Sample: StreamHandler_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.logging/java.util.logging.LogRecord.<init>(LogRecord.java:220)
+	at StreamHandler_3.main(StreamHandler_3.java:13)
+
+================================================================
+
+Sample: StreamHandler_5
+----------------------------------------------------------------
+output:
+./java_util_logging/javaFiles/StreamHandler_5.java:8: error: setOutputStream(OutputStream) has protected access in StreamHandler
+        handler.setOutputStream(out);
+               ^
+1 error
+
+
+================================================================
+

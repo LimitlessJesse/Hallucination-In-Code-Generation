@@ -1,0 +1,46 @@
+ClassName,Method,Return Type
+Collectors,averagingDouble(ToDoubleFunction<? super T> mapper),"static <T> Collector<T,?,Double>"
+Collectors,averagingInt(ToIntFunction<? super T> mapper),"static <T> Collector<T,?,Double>"
+Collectors,averagingLong(ToLongFunction<? super T> mapper),"static <T> Collector<T,?,Double>"
+Collectors,"collectingAndThen(Collector<T,A,R> downstream, Function<R,RR> finisher)","static <T,A,R,RR> Collector<T,A,RR>"
+Collectors,counting(),"static <T> Collector<T,?,Long>"
+Collectors,"groupingBy(Function<? super T,? extends K> classifier)","static <T,K> Collector<T,?,Map<K,List<T>>>"
+Collectors,"groupingBy(Function<? super T,? extends K> classifier, Collector<? super T,A,D> downstream)","static <T,K,A,D> Collector<T,?,Map<K,D>>"
+Collectors,"groupingBy(Function<? super T,? extends K> classifier, Supplier<M> mapFactory, Collector<? super T,A,D> downstream)","static <T,K,D,A,M extends Map<K,D>>Collector<T,?,M>"
+Collectors,"groupingByConcurrent(Function<? super T,? extends K> classifier)","static <T,K> Collector<T,?,ConcurrentMap<K,List<T>>>"
+Collectors,"groupingByConcurrent(Function<? super T,? extends K> classifier, Collector<? super T,A,D> downstream)","static <T,K,A,D> Collector<T,?,ConcurrentMap<K,D>>"
+Collectors,"groupingByConcurrent(Function<? super T,? extends K> classifier, Supplier<M> mapFactory, Collector<? super T,A,D> downstream)","static <T,K,A,D,M extends ConcurrentMap<K,D>>Collector<T,?,M>"
+Collectors,joining(),"static Collector<CharSequence,?,String>"
+Collectors,joining(CharSequence delimiter),"static Collector<CharSequence,?,String>"
+Collectors,"joining(CharSequence delimiter, CharSequence prefix, CharSequence suffix)","static Collector<CharSequence,?,String>"
+Collectors,"mapping(Function<? super T,? extends U> mapper, Collector<? super U,A,R> downstream)","static <T,U,A,R> Collector<T,?,R>"
+Collectors,maxBy(Comparator<? super T> comparator),"static <T> Collector<T,?,Optional<T>>"
+Collectors,minBy(Comparator<? super T> comparator),"static <T> Collector<T,?,Optional<T>>"
+Collectors,partitioningBy(Predicate<? super T> predicate),"static <T> Collector<T,?,Map<Boolean,List<T>>>"
+Collectors,"partitioningBy(Predicate<? super T> predicate, Collector<? super T,A,D> downstream)","static <T,D,A> Collector<T,?,Map<Boolean,D>>"
+Collectors,reducing(BinaryOperator<T> op),"static <T> Collector<T,?,Optional<T>>"
+Collectors,"reducing(T identity, BinaryOperator<T> op)","static <T> Collector<T,?,T>"
+Collectors,"reducing(U identity, Function<? super T,? extends U> mapper, BinaryOperator<U> op)","static <T,U> Collector<T,?,U>"
+Collectors,summarizingDouble(ToDoubleFunction<? super T> mapper),"static <T> Collector<T,?,DoubleSummaryStatistics>"
+Collectors,summarizingInt(ToIntFunction<? super T> mapper),"static <T> Collector<T,?,IntSummaryStatistics>"
+Collectors,summarizingLong(ToLongFunction<? super T> mapper),"static <T> Collector<T,?,LongSummaryStatistics>"
+Collectors,summingDouble(ToDoubleFunction<? super T> mapper),"static <T> Collector<T,?,Double>"
+Collectors,summingInt(ToIntFunction<? super T> mapper),"static <T> Collector<T,?,Integer>"
+Collectors,summingLong(ToLongFunction<? super T> mapper),"static <T> Collector<T,?,Long>"
+Collectors,toCollection(Supplier<C> collectionFactory),"static <T,C extends Collection<T>>Collector<T,?,C>"
+Collectors,"toConcurrentMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper)","static <T,K,U> Collector<T,?,ConcurrentMap<K,U>>"
+Collectors,"toConcurrentMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper, BinaryOperator<U> mergeFunction)","static <T,K,U> Collector<T,?,ConcurrentMap<K,U>>"
+Collectors,"toConcurrentMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper, BinaryOperator<U> mergeFunction, Supplier<M> mapSupplier)","static <T,K,U,M extends ConcurrentMap<K,U>>Collector<T,?,M>"
+Collectors,toList(),"static <T> Collector<T,?,List<T>>"
+Collectors,"toMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper)","static <T,K,U> Collector<T,?,Map<K,U>>"
+Collectors,"toMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper, BinaryOperator<U> mergeFunction)","static <T,K,U> Collector<T,?,Map<K,U>>"
+Collectors,"toMap(Function<? super T,? extends K> keyMapper, Function<? super T,? extends U> valueMapper, BinaryOperator<U> mergeFunction, Supplier<M> mapSupplier)","static <T,K,U,M extends Map<K,U>>Collector<T,?,M>"
+Collectors,toSet(),"static <T> Collector<T,?,Set<T>>"
+StreamSupport,"doubleStream(Spliterator.OfDouble spliterator, boolean parallel)",static DoubleStream
+StreamSupport,"doubleStream(Supplier<? extends Spliterator.OfDouble> supplier, int characteristics, boolean parallel)",static DoubleStream
+StreamSupport,"intStream(Spliterator.OfInt spliterator, boolean parallel)",static IntStream
+StreamSupport,"intStream(Supplier<? extends Spliterator.OfInt> supplier, int characteristics, boolean parallel)",static IntStream
+StreamSupport,"longStream(Spliterator.OfLong spliterator, boolean parallel)",static LongStream
+StreamSupport,"longStream(Supplier<? extends Spliterator.OfLong> supplier, int characteristics, boolean parallel)",static LongStream
+StreamSupport,"stream(Spliterator<T> spliterator, boolean parallel)",static <T> Stream<T>
+StreamSupport,"stream(Supplier<? extends Spliterator<T>> supplier, int characteristics, boolean parallel)",static <T> Stream<T>

@@ -1,0 +1,111 @@
+Sample: 0 FileFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.filechooser.FileFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean accept(File f)`: This method returns true if the file should be shown in the directory pane, false otherwise.
+
+2. `String getDescription()`: This method returns the description of this filter.
+
+3. `void setDescription(String description)`: This method sets the description of this filter.
+
+4. `void addChangeListener(ChangeListener l)`: This method adds a ChangeListener to the list of ChangeListeners.
+
+5. `void removeChangeListener(ChangeListener l)`: This method removes a ChangeListener from the list of ChangeListeners.
+================================================================
+
+Sample: 1 FileNameExtensionFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.filechooser.FileNameExtensionFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+6. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+12. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+13. `int size()`: This method returns the number of elements in this list.
+14. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+15. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+16. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+17. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+18. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+19. `boolean removeIf(Predicate<? super E> filter)`: This method removes all of the elements of this list that satisfy the given predicate.
+20. `void replaceAll(UnaryOperator<E> operator)`: This method replaces each element of this list with the result of applying the operator to that element.
+================================================================
+
+Sample: 2 FileSystemView
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.filechooser.FileSystemView package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileSystemView.getDefaultFileSystemView()`: This method returns the default FileSystemView for the current system.
+
+2. `FileSystemView.getFileSystemView()`: This method returns the FileSystemView for the specified file.
+
+3. `FileSystemView.getHomeDirectory()`: This method returns the home directory for the current user.
+
+4. `FileSystemView.getRoots()`: This method returns an array of File objects that represent the roots of the file system.
+
+5. `FileSystemView.getSystemDisplayName(File file)`: This method returns the display name for the specified file.
+================================================================
+
+Sample: 3 FileView
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.filechooser.FileView package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileView.getIcon(File file)`: This method returns an icon for the specified file.
+
+2. `FileView.getName(File file)`: This method returns the name of the specified file.
+
+3. `FileView.getTypeDescription(File file)`: This method returns a description of the type of the specified file.
+
+4. `FileView.isTraversable(File file)`: This method returns true if the specified file is traversable.
+
+5. `FileView.accept(File file)`: This method returns true if the specified file is accepted.
+================================================================
+

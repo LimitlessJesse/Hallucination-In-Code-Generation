@@ -1,0 +1,125 @@
+Sample: 0 BigDecimal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.math.BigDecimal package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigDecimal(String val)`: This method constructs a BigDecimal number with the string representation of the specified number.
+
+2. `BigDecimal(double val)`: This method constructs a BigDecimal number with the double value represented by the argument.
+
+3. `BigDecimal divide(BigDecimal divisor, int scale, int roundingMode)`: This method divides this BigDecimal by the specified BigDecimal, rounding the result to the specified scale and rounding mode.
+
+4. `BigDecimal multiply(BigDecimal val)`: This method multiplies this BigDecimal by the specified BigDecimal and returns the result.
+
+5. `BigDecimal subtract(BigDecimal val)`: This method subtracts the specified BigDecimal from this BigDecimal and returns the result.
+================================================================
+
+Sample: 1 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.math.BigInteger package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigInteger(String val)`: This method constructs a BigInteger from the specified String.
+
+2. `BigInteger add(BigInteger val)`: This method returns a BigInteger whose value is (this + val).
+
+3. `BigInteger subtract(BigInteger val)`: This method returns a BigInteger whose value is (this - val).
+
+4. `BigInteger multiply(BigInteger val)`: This method returns a BigInteger whose value is (this * val).
+
+5. `BigInteger divide(BigInteger val)`: This method returns a BigInteger whose value is (this / val).
+
+6. `BigInteger remainder(BigInteger val)`: This method returns a BigInteger whose value is (this % val).
+
+7. `int compareTo(BigInteger val)`: This method compares this BigInteger with the specified BigInteger.
+
+8. `BigInteger pow(int exponent)`: This method returns a BigInteger whose value is (this ^ exponent).
+
+9. `BigInteger nextProbablePrime()`: This method returns a BigInteger that is a probable prime, greater than or equal to this one.
+
+10. `BigInteger gcd(BigInteger val)`: This method returns the greatest common divisor of this BigInteger and the specified BigInteger.
+================================================================
+
+Sample: 2 MathContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.math.MathContext package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigDecimal(String val)`: This method constructs a BigDecimal from the given string.
+
+2. `BigDecimal(BigInteger val)`: This method constructs a BigDecimal from the given BigInteger.
+
+3. `BigDecimal(double val)`: This method constructs a BigDecimal from the given double.
+
+4. `BigDecimal(int val)`: This method constructs a BigDecimal from the given int.
+
+5. `BigDecimal(long val)`: This method constructs a BigDecimal from the given long.
+
+6. `BigDecimal divide(BigDecimal divisor, MathContext mc)`: This method divides this BigDecimal by the given BigDecimal, using the given MathContext.
+
+7. `BigDecimal divide(BigDecimal divisor, int roundingMode)`: This method divides this BigDecimal by the given BigDecimal, using the given rounding mode.
+
+8. `BigDecimal divide(BigDecimal divisor)`: This method divides this BigDecimal by the given BigDecimal, using the default MathContext.
+
+9. `BigDecimal divideToIntegralValue(BigDecimal divisor)`: This method divides this BigDecimal by the given BigDecimal, rounding towards zero.
+
+10. `BigDecimal divideToIntegralValue(BigDecimal divisor, int roundingMode)`: This method divides this BigDecimal by the given BigDecimal, using the given rounding mode.
+
+11. `BigDecimal divideToIntegralValue(BigDecimal divisor, MathContext mc)`: This method divides this BigDecimal by the given BigDecimal, using the given MathContext.
+
+12. `BigDecimal pow(int exponent)`: This method raises this BigDecimal to the power of the given int.
+
+13. `BigDecimal pow(int exponent, MathContext mc)`: This method raises this BigDecimal to the power of the given int, using the given MathContext.
+
+14. `BigDecimal remainder(BigDecimal divisor)`: This method returns the remainder of this BigDecimal divided by the given BigDecimal.
+
+15. `BigDecimal remainder(BigDecimal divisor, MathContext mc)`: This method returns the remainder of this BigDecimal divided by the given BigDecimal, using the given MathContext.
+
+16. `BigDecimal remainder(BigDecimal divisor, int roundingMode)`: This method returns the remainder of this BigDecimal divided by the given BigDecimal, using the given rounding mode.
+
+17. `BigDecimal round(MathContext mc)`: This method rounds this BigDecimal to the number of digits specified by the given MathContext.
+
+18. `BigDecimal round(int newScale)`: This method rounds this BigDecimal to the specified scale.
+
+19. `BigDecimal round(int newScale, int roundingMode)`: This method rounds this BigDecimal to the specified scale, using the given rounding mode.
+
+20. `BigDecimal setScale(int newScale)`: This method sets the scale of this BigDecimal to the specified value.
+
+21. `BigDecimal setScale(int newScale, int roundingMode)`: This method sets the scale of this BigDecimal to the specified value, using the given rounding mode.
+
+22. `BigDecimal sqrt(MathContext mc)`: This method computes the square root of this BigDecimal, using the given MathContext.
+
+23. `BigDecimal sqrt()`: This method computes the square root of this BigDecimal.
+
+24. `BigDecimal subtract(BigDecimal val)`: This method subtracts the given BigDecimal from this BigDecimal.
+
+25. `BigDecimal toBigInteger()`: This method converts this BigDecimal to a BigInteger.
+================================================================
+

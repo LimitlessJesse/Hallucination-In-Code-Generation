@@ -1,0 +1,75 @@
+Sample: 0 OutputKeys
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.OutputKeys package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setIndent(String indent)`: This method sets the indentation string.
+
+2. `setMethod(String method)`: This method sets the method attribute.
+
+3. `setMediaType(String mediaType)`: This method sets the media type attribute.
+
+4. `setOmitXMLDeclaration(boolean omit)`: This method sets whether to omit the XML declaration.
+
+5. `setStandalone(boolean standalone)`: This method sets the standalone attribute.
+================================================================
+
+Sample: 1 Transformer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.Transformer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setOutputProperty(String name, String value)`: This method sets the value of a specified output property.
+
+2. `transform(Source source, Result result)`: This method applies the current transformation to the specified Source and sends the result to the specified Result.
+
+3. `transform(Source source, StreamResult result)`: This method applies the current transformation to the specified Source and sends the result to the specified StreamResult.
+
+4. `transform(Source source, Writer out)`: This method applies the current transformation to the specified Source and sends the result to the specified Writer.
+
+5. `transform(Source source, OutputStream out)`: This method applies the current transformation to the specified Source and sends the result to the specified OutputStream.
+================================================================
+
+Sample: 2 TransformerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.TransformerFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TransformerFactory newInstance()`: This method creates a new instance of the TransformerFactory.
+
+2. `Transformer newTransformer()`: This method creates a new Transformer.
+
+3. `Templates newTemplates()`: This method creates a new Templates.
+
+4. `Source newSource()`: This method creates a new Source.
+
+5. `Result newResult()`: This method creates a new Result.
+================================================================
+

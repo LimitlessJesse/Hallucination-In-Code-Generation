@@ -1,0 +1,114 @@
+Sample: 0 DOMResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setNode(Node node) from javax.xml.transform.dom.DOMResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setNode(Node node)` method in `javax.xml.transform.dom.DOMResult` is used to set the Node object that will be used as the root of the DOM tree.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.dom.DOMResult;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document document = builder.newDocument();
+
+            Element rootElement = document.createElement("root");
+            document.appendChild(rootElement);
+
+            DOMResult result = new DOMResult();
+            result.setNode(rootElement);
+
+            // Now you can use the result object to perform further operations
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new Document object, create a root element, and then set this element as the root node of the DOMResult object. This allows us to use the result object to perform further operations on the DOM tree.
+================================================================
+
+Sample: 1 DOMResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSystemId(String systemId) from javax.xml.transform.dom.DOMResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSystemId(String systemId)` method in `javax.xml.transform.dom.DOMResult` is used to set the system identifier for the DOMResult.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.transform.dom.DOMResult;
+
+public class Main {
+    public static void main(String[] args) {
+        DOMResult domResult = new DOMResult();
+        domResult.setSystemId("systemId");
+    }
+}
+```
+
+In this code snippet, we first create a new `DOMResult` object. Then we call the `setSystemId(String systemId)` method on this object, passing in the string "systemId". This sets the system identifier for the DOMResult.
+================================================================
+

@@ -1,0 +1,244 @@
+Sample: 0 XMLOutputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XMLOutputFactory newInstance() from javax.xml.stream.XMLOutputFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the code snippet using XMLOutputFactory newInstance() method:
+
+```java
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
+            XMLStreamWriter writer = outputFactory.createXMLStreamWriter(System.out);
+
+            writer.writeStartDocument();
+            writer.writeStartElement("root");
+            writer.writeCharacters("Hello, World!");
+            writer.writeEndElement();
+            writer.writeEndDocument();
+
+            writer.flush();
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of XMLOutputFactory and then using it to create a new XMLStreamWriter. We then write the start of the document, a start element, some characters, an end element, and finally the end of the document. The XMLStreamWriter is then flushed and closed.
+
+Please note that this code will print the XML to the console. If you want to write it to a file, you would need to replace System.out with a FileWriter or OutputStreamWriter.
+================================================================
+
+Sample: 1 XMLOutputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XMLStreamWriter createXMLStreamWriter(OutputStream stream) from javax.xml.stream.XMLOutputFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use `XMLOutputFactory` and `XMLStreamWriter` to write XML to an `OutputStream`.
+
+```java
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+import java.io.OutputStream;
+import java.io.FileOutputStream;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
+        try (OutputStream output = new FileOutputStream("output.xml")) {
+            XMLStreamWriter writer = outputFactory.createXMLStreamWriter(output, "UTF-8");
+
+            writer.writeStartDocument("UTF-8", "1.0");
+            writer.writeStartElement("root");
+            writer.writeCharacters("Hello, World!");
+            writer.writeEndElement();
+            writer.writeEndDocument();
+
+            writer.flush();
+        }
+    }
+}
+```
+
+In this example, we create a new `XMLOutputFactory`, then use it to create a new `XMLStreamWriter` that writes to a `FileOutputStream`. We then write the XML document to the stream.
+
+Please note that you need to handle exceptions properly in a real-world application. This example is kept simple for the sake of clarity.
+================================================================
+
+Sample: 2 XMLOutputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XMLStreamWriter createXMLStreamWriter(Writer writer) from javax.xml.stream.XMLOutputFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet using `XMLOutputFactory` and `XMLStreamWriter`:
+
+```java
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+import java.io.StringWriter;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        XMLOutputFactory output = XMLOutputFactory.newInstance();
+        StringWriter stringWriter = new StringWriter();
+        XMLStreamWriter writer = output.createXMLStreamWriter(stringWriter);
+
+        writer.writeStartDocument();
+        writer.writeStartElement("root");
+        writer.writeCharacters("Hello, World!");
+        writer.writeEndElement();
+        writer.writeEndDocument();
+
+        writer.flush();
+        writer.close();
+
+        System.out.println(stringWriter.toString());
+    }
+}
+```
+
+This code snippet creates a new XML document with a root element named "root" and writes the text "Hello, World!" inside it. The `writeStartDocument()`, `writeStartElement()`, `writeCharacters()`, `writeEndElement()`, and `writeEndDocument()` methods are used to create the XML document. The `writeCharacters()` method is used to write the text "Hello, World!" inside the "root" element. The `flush()` and `close()` methods are used to ensure that all the data is written to the `StringWriter`. Finally, the `toString()` method is used to convert the `StringWriter` to a string and print it.
+================================================================
+
+Sample: 3 XMLOutputFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XMLStreamWriter createXMLStreamWriter(OutputStream stream, String encoding) from javax.xml.stream.XMLOutputFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet using `XMLOutputFactory` and `XMLStreamWriter`:
+
+```java
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamWriter;
+import java.io.OutputStream;
+import java.io.FileOutputStream;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
+        OutputStream output = new FileOutputStream("output.xml");
+        XMLStreamWriter writer = outputFactory.createXMLStreamWriter(output, "UTF-8");
+
+        writer.writeStartDocument("UTF-8", "1.0");
+        writer.writeStartElement("root");
+        writer.writeCharacters("Hello, World!");
+        writer.writeEndElement();
+        writer.writeEndDocument();
+
+        writer.flush();
+        writer.close();
+    }
+}
+```
+
+In this code snippet, we first create an `XMLOutputFactory` instance. Then we create an `OutputStream` to write the XML data to a file named "output.xml". We then create an `XMLStreamWriter` using the `createXMLStreamWriter` method of the `XMLOutputFactory`, passing in the `OutputStream` and the encoding.
+
+We then write the XML document start, an element named "root", some text, and the end of the document. Finally, we flush and close the `XMLStreamWriter`.
+================================================================
+

@@ -1,0 +1,223 @@
+Sample: 0 Configuration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void refresh() from javax.security.auth.login.Configuration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void refresh()` method in `javax.security.auth.login.Configuration` is used to refresh the configuration. It is not a common method in Java, and it is not used in the standard Java libraries.
+
+The method is not part of the standard Java libraries, so you will need to import the package where it is defined.
+
+Here is an example of how you might use it:
+
+```java
+import javax.security.auth.login.Configuration;
+
+public class Main {
+    public static void main(String[] args) {
+        Configuration config = new Configuration();
+        config.refresh();
+    }
+}
+```
+
+In this example, `config.refresh()` is a call to the `refresh()` method. However, this method does not return a value (it's `void`), so you can't assign it to a variable.
+
+Also, keep in mind that this method is not commonly used and might not be available in all environments or configurations. It's also worth noting that the `javax.security.auth.login.Configuration` package is not part of the standard Java libraries, so you may need to add it to your classpath if you're using a build system like Maven or Gradle.
+================================================================
+
+Sample: 1 LoginContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void login() from javax.security.auth.login.LoginContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void login()` method from `javax.security.auth.login.LoginContext` is used to authenticate a user. It is not a simple method to be used in a standalone manner. It requires a `CallbackHandler` to handle the authentication process.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.security.auth.login.LoginContext;
+import javax.security.auth.login.LoginException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            LoginContext loginContext = new LoginContext("MyLoginContext");
+            loginContext.login();
+            System.out.println("Login successful");
+        } catch (LoginException e) {
+            System.out.println("Login failed: " + e.getMessage());
+        }
+    }
+}
+```
+
+In this example, "MyLoginContext" is the name of the LoginContext. You need to create a `LoginModule` that handles the authentication process.
+
+Please note that you need to have the necessary permissions and configurations to use this method. Also, this method is not typically used in standalone applications, but rather in server-side applications that need to authenticate users.
+================================================================
+
+Sample: 2 LoginContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void logout() from javax.security.auth.login.LoginContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void logout()` method in `javax.security.auth.login.LoginContext` is used to logout the current subject.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.security.auth.login.LoginContext;
+import javax.security.auth.login.LoginException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            LoginContext loginContext = new LoginContext("MyLoginContext");
+            loginContext.login();
+            // Perform some operations
+            loginContext.logout();
+        } catch (LoginException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a `LoginContext` object and then calling the `login()` method to authenticate the user. After performing some operations, we call the `logout()` method to logout the user.
+
+Please note that you need to replace "MyLoginContext" with the actual name of your LoginContext. Also, you need to handle the `LoginException` that may be thrown by the `login()` and `logout()` methods.
+================================================================
+
+Sample: 3 LoginContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Subject getSubject() from javax.security.auth.login.LoginContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSubject()` method from `javax.security.auth.login.LoginContext` is used to get the Subject associated with the current LoginContext.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.security.auth.Subject;
+import javax.security.auth.login.LoginContext;
+import javax.security.auth.login.LoginException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            LoginContext loginContext = new LoginContext("MyLoginContext");
+            loginContext.login();
+            Subject subject = loginContext.getSubject();
+            System.out.println(subject);
+        } catch (LoginException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new LoginContext with the name "MyLoginContext". We then call the `login()` method on the LoginContext, which authenticates the user. After the user is authenticated, we call the `getSubject()` method on the LoginContext to get the Subject associated with the current LoginContext.
+
+Please note that you need to replace "MyLoginContext" with the actual name of your LoginContext. Also, this code snippet assumes that you have a properly configured LoginContext and that the user is authenticated. If not, the `login()` method will throw a `LoginException`.
+================================================================
+

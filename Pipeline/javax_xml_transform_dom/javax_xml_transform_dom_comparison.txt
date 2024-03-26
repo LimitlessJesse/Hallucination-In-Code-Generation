@@ -1,0 +1,46 @@
+Sample: 0 DOMResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.dom.DOMResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setNode(Node node)`: This method sets the Node that will be the root of the DOM tree.
+
+2. `public void setSystemId(String systemId)`: This method sets the system identifier.
+
+3. `public void setStringValue(String stringValue)`: This method sets the string value of the DOM tree.
+
+4. `public void setXMLVersion(String xmlVersion)`: This method sets the XML version of the DOM tree.
+
+5. `public void setXmlStandalone(boolean xmlStandalone)`: This method sets whether the DOM tree is standalone.
+================================================================
+
+Sample: 1 DOMSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.dom.DOMSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+

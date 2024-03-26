@@ -1,0 +1,499 @@
+ClassName,Method,Return Type
+Authenticator,getPasswordAuthentication(),protected PasswordAuthentication
+Authenticator,getRequestingHost(),protected String
+Authenticator,getRequestingPort(),protected int
+Authenticator,getRequestingPrompt(),protected String
+Authenticator,getRequestingProtocol(),protected String
+Authenticator,getRequestingScheme(),protected String
+Authenticator,getRequestingSite(),protected InetAddress
+Authenticator,getRequestingURL(),protected URL
+Authenticator,getRequestorType(),protected Authenticator.RequestorType
+Authenticator,"requestPasswordAuthentication(InetAddress addr, int port, String protocol, String prompt, String scheme)",static PasswordAuthentication
+Authenticator,"requestPasswordAuthentication(String host, InetAddress addr, int port, String protocol, String prompt, String scheme)",static PasswordAuthentication
+Authenticator,"requestPasswordAuthentication(String host, InetAddress addr, int port, String protocol, String prompt, String scheme, URL url, Authenticator.RequestorType reqType)",static PasswordAuthentication
+Authenticator,setDefault(Authenticator a),static void
+CacheRequest,abort(),abstract void
+CacheRequest,getBody(),abstract OutputStream
+CacheResponse,getBody(),abstract InputStream
+CacheResponse,getHeaders(),"abstract Map<String,List<String>>"
+ContentHandler,getContent(URLConnection urlc),abstract Object
+ContentHandler,"getContent(URLConnection urlc, Class[] classes)",Object
+CookieHandler,"get(URI uri, Map<String,List<String>> requestHeaders)","abstract Map<String,List<String>>"
+CookieHandler,getDefault(),static CookieHandler
+CookieHandler,"put(URI uri, Map<String,List<String>> responseHeaders)",abstract void
+CookieHandler,setDefault(CookieHandler cHandler),static void
+CookieManager,"get(URI uri, Map<String,List<String>> requestHeaders)","Map<String,List<String>>"
+CookieManager,getCookieStore(),CookieStore
+CookieManager,"put(URI uri, Map<String,List<String>> responseHeaders)",void
+CookieManager,setCookiePolicy(CookiePolicy cookiePolicy),void
+DatagramPacket,getAddress(),InetAddress
+DatagramPacket,getData(),byte[]
+DatagramPacket,getLength(),int
+DatagramPacket,getOffset(),int
+DatagramPacket,getPort(),int
+DatagramPacket,getSocketAddress(),SocketAddress
+DatagramPacket,setAddress(InetAddress iaddr),void
+DatagramPacket,setData(byte[] buf),void
+DatagramPacket,"setData(byte[] buf, int offset, int length)",void
+DatagramPacket,setLength(int length),void
+DatagramPacket,setPort(int iport),void
+DatagramPacket,setSocketAddress(SocketAddress address),void
+DatagramSocket,bind(SocketAddress addr),void
+DatagramSocket,close(),void
+DatagramSocket,"connect(InetAddress address, int port)",void
+DatagramSocket,connect(SocketAddress addr),void
+DatagramSocket,disconnect(),void
+DatagramSocket,getBroadcast(),boolean
+DatagramSocket,getChannel(),DatagramChannel
+DatagramSocket,getInetAddress(),InetAddress
+DatagramSocket,getLocalAddress(),InetAddress
+DatagramSocket,getLocalPort(),int
+DatagramSocket,getLocalSocketAddress(),SocketAddress
+DatagramSocket,getPort(),int
+DatagramSocket,getReceiveBufferSize(),int
+DatagramSocket,getRemoteSocketAddress(),SocketAddress
+DatagramSocket,getReuseAddress(),boolean
+DatagramSocket,getSendBufferSize(),int
+DatagramSocket,getSoTimeout(),int
+DatagramSocket,getTrafficClass(),int
+DatagramSocket,isBound(),boolean
+DatagramSocket,isClosed(),boolean
+DatagramSocket,isConnected(),boolean
+DatagramSocket,receive(DatagramPacket p),void
+DatagramSocket,send(DatagramPacket p),void
+DatagramSocket,setBroadcast(boolean on),void
+DatagramSocket,setDatagramSocketImplFactory(DatagramSocketImplFactory fac),static void
+DatagramSocket,setReceiveBufferSize(int size),void
+DatagramSocket,setReuseAddress(boolean on),void
+DatagramSocket,setSendBufferSize(int size),void
+DatagramSocket,setSoTimeout(int timeout),void
+DatagramSocket,setTrafficClass(int tc),void
+DatagramSocketImpl,"bind(int lport, InetAddress laddr)",protected abstract void
+DatagramSocketImpl,close(),protected abstract void
+DatagramSocketImpl,"connect(InetAddress address, int port)",protected void
+DatagramSocketImpl,create(),protected abstract void
+DatagramSocketImpl,disconnect(),protected void
+DatagramSocketImpl,getFileDescriptor(),protected FileDescriptor
+DatagramSocketImpl,getLocalPort(),protected int
+DatagramSocketImpl,getTimeToLive(),protected abstract int
+DatagramSocketImpl,getTTL(),protected abstract byte
+DatagramSocketImpl,join(InetAddress inetaddr),protected abstract void
+DatagramSocketImpl,"joinGroup(SocketAddress mcastaddr, NetworkInterface netIf)",protected abstract void
+DatagramSocketImpl,leave(InetAddress inetaddr),protected abstract void
+DatagramSocketImpl,"leaveGroup(SocketAddress mcastaddr, NetworkInterface netIf)",protected abstract void
+DatagramSocketImpl,peek(InetAddress i),protected abstract int
+DatagramSocketImpl,peekData(DatagramPacket p),protected abstract int
+DatagramSocketImpl,receive(DatagramPacket p),protected abstract void
+DatagramSocketImpl,send(DatagramPacket p),protected abstract void
+DatagramSocketImpl,setTimeToLive(int ttl),protected abstract void
+DatagramSocketImpl,setTTL(byte ttl),protected abstract void
+HttpCookie,clone(),Object
+HttpCookie,"domainMatches(String domain, String host)",static boolean
+HttpCookie,equals(Object obj),boolean
+HttpCookie,getComment(),String
+HttpCookie,getCommentURL(),String
+HttpCookie,getDiscard(),boolean
+HttpCookie,getDomain(),String
+HttpCookie,getMaxAge(),long
+HttpCookie,getName(),String
+HttpCookie,getPath(),String
+HttpCookie,getPortlist(),String
+HttpCookie,getSecure(),boolean
+HttpCookie,getValue(),String
+HttpCookie,getVersion(),int
+HttpCookie,hasExpired(),boolean
+HttpCookie,hashCode(),int
+HttpCookie,isHttpOnly(),boolean
+HttpCookie,parse(String header),static List<HttpCookie>
+HttpCookie,setComment(String purpose),void
+HttpCookie,setCommentURL(String purpose),void
+HttpCookie,setDiscard(boolean discard),void
+HttpCookie,setDomain(String pattern),void
+HttpCookie,setHttpOnly(boolean httpOnly),void
+HttpCookie,setMaxAge(long expiry),void
+HttpCookie,setPath(String uri),void
+HttpCookie,setPortlist(String ports),void
+HttpCookie,setSecure(boolean flag),void
+HttpCookie,setValue(String newValue),void
+HttpCookie,setVersion(int v),void
+HttpCookie,toString(),String
+HttpURLConnection,disconnect(),abstract void
+HttpURLConnection,getErrorStream(),InputStream
+HttpURLConnection,getFollowRedirects(),static boolean
+HttpURLConnection,getHeaderField(int n),String
+HttpURLConnection,"getHeaderFieldDate(String name, long Default)",long
+HttpURLConnection,getHeaderFieldKey(int n),String
+HttpURLConnection,getInstanceFollowRedirects(),boolean
+HttpURLConnection,getPermission(),Permission
+HttpURLConnection,getRequestMethod(),String
+HttpURLConnection,getResponseCode(),int
+HttpURLConnection,getResponseMessage(),String
+HttpURLConnection,setChunkedStreamingMode(int chunklen),void
+HttpURLConnection,setFixedLengthStreamingMode(int contentLength),void
+HttpURLConnection,setFixedLengthStreamingMode(long contentLength),void
+HttpURLConnection,setFollowRedirects(boolean set),static void
+HttpURLConnection,setInstanceFollowRedirects(boolean followRedirects),void
+HttpURLConnection,setRequestMethod(String method),void
+HttpURLConnection,usingProxy(),abstract boolean
+IDN,toASCII(String input),static String
+IDN,"toASCII(String input, int flag)",static String
+IDN,toUnicode(String input),static String
+IDN,"toUnicode(String input, int flag)",static String
+Inet4Address,equals(Object obj),boolean
+Inet4Address,getAddress(),byte[]
+Inet4Address,getHostAddress(),String
+Inet4Address,hashCode(),int
+Inet4Address,isAnyLocalAddress(),boolean
+Inet4Address,isLinkLocalAddress(),boolean
+Inet4Address,isLoopbackAddress(),boolean
+Inet4Address,isMCGlobal(),boolean
+Inet4Address,isMCLinkLocal(),boolean
+Inet4Address,isMCNodeLocal(),boolean
+Inet4Address,isMCOrgLocal(),boolean
+Inet4Address,isMCSiteLocal(),boolean
+Inet4Address,isMulticastAddress(),boolean
+Inet4Address,isSiteLocalAddress(),boolean
+Inet6Address,equals(Object obj),boolean
+Inet6Address,getAddress(),byte[]
+Inet6Address,"getByAddress(String host, byte[] addr, int scope_id)",static Inet6Address
+Inet6Address,"getByAddress(String host, byte[] addr, NetworkInterface nif)",static Inet6Address
+Inet6Address,getHostAddress(),String
+Inet6Address,getScopedInterface(),NetworkInterface
+Inet6Address,getScopeId(),int
+Inet6Address,hashCode(),int
+Inet6Address,isAnyLocalAddress(),boolean
+Inet6Address,isIPv4CompatibleAddress(),boolean
+Inet6Address,isLinkLocalAddress(),boolean
+Inet6Address,isLoopbackAddress(),boolean
+Inet6Address,isMCGlobal(),boolean
+Inet6Address,isMCLinkLocal(),boolean
+Inet6Address,isMCNodeLocal(),boolean
+Inet6Address,isMCOrgLocal(),boolean
+Inet6Address,isMCSiteLocal(),boolean
+Inet6Address,isMulticastAddress(),boolean
+Inet6Address,isSiteLocalAddress(),boolean
+InetAddress,equals(Object obj),boolean
+InetAddress,getAddress(),byte[]
+InetAddress,getAllByName(String host),static InetAddress[]
+InetAddress,getByAddress(byte[] addr),static InetAddress
+InetAddress,"getByAddress(String host, byte[] addr)",static InetAddress
+InetAddress,getByName(String host),static InetAddress
+InetAddress,getCanonicalHostName(),String
+InetAddress,getHostAddress(),String
+InetAddress,getHostName(),String
+InetAddress,getLocalHost(),static InetAddress
+InetAddress,getLoopbackAddress(),static InetAddress
+InetAddress,hashCode(),int
+InetAddress,isAnyLocalAddress(),boolean
+InetAddress,isLinkLocalAddress(),boolean
+InetAddress,isLoopbackAddress(),boolean
+InetAddress,isMCGlobal(),boolean
+InetAddress,isMCLinkLocal(),boolean
+InetAddress,isMCNodeLocal(),boolean
+InetAddress,isMCOrgLocal(),boolean
+InetAddress,isMCSiteLocal(),boolean
+InetAddress,isMulticastAddress(),boolean
+InetAddress,isReachable(int timeout),boolean
+InetAddress,"isReachable(NetworkInterface netif, int ttl, int timeout)",boolean
+InetAddress,isSiteLocalAddress(),boolean
+InetAddress,toString(),String
+InetSocketAddress,"createUnresolved(String host, int port)",static InetSocketAddress
+InetSocketAddress,equals(Object obj),boolean
+InetSocketAddress,getAddress(),InetAddress
+InetSocketAddress,getHostName(),String
+InetSocketAddress,getHostString(),String
+InetSocketAddress,getPort(),int
+InetSocketAddress,hashCode(),int
+InetSocketAddress,isUnresolved(),boolean
+InetSocketAddress,toString(),String
+InterfaceAddress,equals(Object obj),boolean
+InterfaceAddress,getAddress(),InetAddress
+InterfaceAddress,getBroadcast(),InetAddress
+InterfaceAddress,getNetworkPrefixLength(),short
+InterfaceAddress,hashCode(),int
+InterfaceAddress,toString(),String
+JarURLConnection,getAttributes(),Attributes
+JarURLConnection,getCertificates(),Certificate[]
+JarURLConnection,getEntryName(),String
+JarURLConnection,getJarEntry(),JarEntry
+JarURLConnection,getJarFile(),abstract JarFile
+JarURLConnection,getJarFileURL(),URL
+JarURLConnection,getMainAttributes(),Attributes
+JarURLConnection,getManifest(),Manifest
+MulticastSocket,getInterface(),InetAddress
+MulticastSocket,getLoopbackMode(),boolean
+MulticastSocket,getNetworkInterface(),NetworkInterface
+MulticastSocket,getTimeToLive(),int
+MulticastSocket,getTTL(),byte
+MulticastSocket,joinGroup(InetAddress mcastaddr),void
+MulticastSocket,"joinGroup(SocketAddress mcastaddr, NetworkInterface netIf)",void
+MulticastSocket,leaveGroup(InetAddress mcastaddr),void
+MulticastSocket,"leaveGroup(SocketAddress mcastaddr, NetworkInterface netIf)",void
+MulticastSocket,"send(DatagramPacket p, byte ttl)",void
+MulticastSocket,setInterface(InetAddress inf),void
+MulticastSocket,setLoopbackMode(boolean disable),void
+MulticastSocket,setNetworkInterface(NetworkInterface netIf),void
+MulticastSocket,setTimeToLive(int ttl),void
+MulticastSocket,setTTL(byte ttl),void
+NetworkInterface,equals(Object obj),boolean
+NetworkInterface,getByIndex(int index),static NetworkInterface
+NetworkInterface,getByInetAddress(InetAddress addr),static NetworkInterface
+NetworkInterface,getByName(String name),static NetworkInterface
+NetworkInterface,getDisplayName(),String
+NetworkInterface,getHardwareAddress(),byte[]
+NetworkInterface,getIndex(),int
+NetworkInterface,getInetAddresses(),Enumeration<InetAddress>
+NetworkInterface,getInterfaceAddresses(),List<InterfaceAddress>
+NetworkInterface,getMTU(),int
+NetworkInterface,getName(),String
+NetworkInterface,getNetworkInterfaces(),static Enumeration<NetworkInterface>
+NetworkInterface,getParent(),NetworkInterface
+NetworkInterface,getSubInterfaces(),Enumeration<NetworkInterface>
+NetworkInterface,hashCode(),int
+NetworkInterface,isLoopback(),boolean
+NetworkInterface,isPointToPoint(),boolean
+NetworkInterface,isUp(),boolean
+NetworkInterface,isVirtual(),boolean
+NetworkInterface,supportsMulticast(),boolean
+NetworkInterface,toString(),String
+PasswordAuthentication,getPassword(),char[]
+PasswordAuthentication,getUserName(),String
+Proxy,address(),SocketAddress
+Proxy,equals(Object obj),boolean
+Proxy,hashCode(),int
+Proxy,toString(),String
+Proxy,type(),Proxy.Type
+ProxySelector,"connectFailed(URI uri, SocketAddress sa, IOException ioe)",abstract void
+ProxySelector,getDefault(),static ProxySelector
+ProxySelector,select(URI uri),abstract List<Proxy>
+ProxySelector,setDefault(ProxySelector ps),static void
+ResponseCache,"get(URI uri, String rqstMethod, Map<String,List<String>> rqstHeaders)",abstract CacheResponse
+ResponseCache,getDefault(),static ResponseCache
+ResponseCache,"put(URI uri, URLConnection conn)",abstract CacheRequest
+ResponseCache,setDefault(ResponseCache responseCache),static void
+SecureCacheResponse,getCipherSuite(),abstract String
+SecureCacheResponse,getLocalCertificateChain(),abstract List<Certificate>
+SecureCacheResponse,getLocalPrincipal(),abstract Principal
+SecureCacheResponse,getPeerPrincipal(),abstract Principal
+SecureCacheResponse,getServerCertificateChain(),abstract List<Certificate>
+ServerSocket,accept(),Socket
+ServerSocket,bind(SocketAddress endpoint),void
+ServerSocket,"bind(SocketAddress endpoint, int backlog)",void
+ServerSocket,close(),void
+ServerSocket,getChannel(),ServerSocketChannel
+ServerSocket,getInetAddress(),InetAddress
+ServerSocket,getLocalPort(),int
+ServerSocket,getLocalSocketAddress(),SocketAddress
+ServerSocket,getReceiveBufferSize(),int
+ServerSocket,getReuseAddress(),boolean
+ServerSocket,getSoTimeout(),int
+ServerSocket,implAccept(Socket s),protected void
+ServerSocket,isBound(),boolean
+ServerSocket,isClosed(),boolean
+ServerSocket,"setPerformancePreferences(int connectionTime, int latency, int bandwidth)",void
+ServerSocket,setReceiveBufferSize(int size),void
+ServerSocket,setReuseAddress(boolean on),void
+ServerSocket,setSocketFactory(SocketImplFactory fac),static void
+ServerSocket,setSoTimeout(int timeout),void
+ServerSocket,toString(),String
+Socket,bind(SocketAddress bindpoint),void
+Socket,close(),void
+Socket,connect(SocketAddress endpoint),void
+Socket,"connect(SocketAddress endpoint, int timeout)",void
+Socket,getChannel(),SocketChannel
+Socket,getInetAddress(),InetAddress
+Socket,getInputStream(),InputStream
+Socket,getKeepAlive(),boolean
+Socket,getLocalAddress(),InetAddress
+Socket,getLocalPort(),int
+Socket,getLocalSocketAddress(),SocketAddress
+Socket,getOOBInline(),boolean
+Socket,getOutputStream(),OutputStream
+Socket,getPort(),int
+Socket,getReceiveBufferSize(),int
+Socket,getRemoteSocketAddress(),SocketAddress
+Socket,getReuseAddress(),boolean
+Socket,getSendBufferSize(),int
+Socket,getSoLinger(),int
+Socket,getSoTimeout(),int
+Socket,getTcpNoDelay(),boolean
+Socket,getTrafficClass(),int
+Socket,isBound(),boolean
+Socket,isClosed(),boolean
+Socket,isConnected(),boolean
+Socket,isInputShutdown(),boolean
+Socket,isOutputShutdown(),boolean
+Socket,sendUrgentData(int data),void
+Socket,setKeepAlive(boolean on),void
+Socket,setOOBInline(boolean on),void
+Socket,"setPerformancePreferences(int connectionTime, int latency, int bandwidth)",void
+Socket,setReceiveBufferSize(int size),void
+Socket,setReuseAddress(boolean on),void
+Socket,setSendBufferSize(int size),void
+Socket,setSocketImplFactory(SocketImplFactory fac),static void
+Socket,"setSoLinger(boolean on, int linger)",void
+Socket,setSoTimeout(int timeout),void
+Socket,setTcpNoDelay(boolean on),void
+Socket,setTrafficClass(int tc),void
+Socket,shutdownInput(),void
+Socket,shutdownOutput(),void
+Socket,toString(),String
+SocketImpl,accept(SocketImpl s),protected abstract void
+SocketImpl,available(),protected abstract int
+SocketImpl,"bind(InetAddress host, int port)",protected abstract void
+SocketImpl,close(),protected abstract void
+SocketImpl,"connect(InetAddress address, int port)",protected abstract void
+SocketImpl,"connect(SocketAddress address, int timeout)",protected abstract void
+SocketImpl,"connect(String host, int port)",protected abstract void
+SocketImpl,create(boolean stream),protected abstract void
+SocketImpl,getFileDescriptor(),protected FileDescriptor
+SocketImpl,getInetAddress(),protected InetAddress
+SocketImpl,getInputStream(),protected abstract InputStream
+SocketImpl,getLocalPort(),protected int
+SocketImpl,getOutputStream(),protected abstract OutputStream
+SocketImpl,getPort(),protected int
+SocketImpl,listen(int backlog),protected abstract void
+SocketImpl,sendUrgentData(int data),protected abstract void
+SocketImpl,"setPerformancePreferences(int connectionTime, int latency, int bandwidth)",protected void
+SocketImpl,shutdownInput(),protected void
+SocketImpl,shutdownOutput(),protected void
+SocketImpl,supportsUrgentData(),protected boolean
+SocketImpl,toString(),String
+SocketPermission,equals(Object obj),boolean
+SocketPermission,getActions(),String
+SocketPermission,hashCode(),int
+SocketPermission,implies(Permission p),boolean
+SocketPermission,newPermissionCollection(),PermissionCollection
+URI,compareTo(URI that),int
+URI,create(String str),static URI
+URI,equals(Object ob),boolean
+URI,getAuthority(),String
+URI,getFragment(),String
+URI,getHost(),String
+URI,getPath(),String
+URI,getPort(),int
+URI,getQuery(),String
+URI,getRawAuthority(),String
+URI,getRawFragment(),String
+URI,getRawPath(),String
+URI,getRawQuery(),String
+URI,getRawSchemeSpecificPart(),String
+URI,getRawUserInfo(),String
+URI,getScheme(),String
+URI,getSchemeSpecificPart(),String
+URI,getUserInfo(),String
+URI,hashCode(),int
+URI,isAbsolute(),boolean
+URI,isOpaque(),boolean
+URI,normalize(),URI
+URI,parseServerAuthority(),URI
+URI,relativize(URI uri),URI
+URI,resolve(String str),URI
+URI,resolve(URI uri),URI
+URI,toASCIIString(),String
+URI,toString(),String
+URI,toURL(),URL
+URL,equals(Object obj),boolean
+URL,getAuthority(),String
+URL,getContent(),Object
+URL,getContent(Class[] classes),Object
+URL,getDefaultPort(),int
+URL,getFile(),String
+URL,getHost(),String
+URL,getPath(),String
+URL,getPort(),int
+URL,getProtocol(),String
+URL,getQuery(),String
+URL,getRef(),String
+URL,getUserInfo(),String
+URL,hashCode(),int
+URL,openConnection(),URLConnection
+URL,openConnection(Proxy proxy),URLConnection
+URL,openStream(),InputStream
+URL,sameFile(URL other),boolean
+URL,setURLStreamHandlerFactory(URLStreamHandlerFactory fac),static void
+URL,toExternalForm(),String
+URL,toString(),String
+URL,toURI(),URI
+URLClassLoader,addURL(URL url),protected void
+URLClassLoader,close(),void
+URLClassLoader,"definePackage(String name, Manifest man, URL url)",protected Package
+URLClassLoader,findClass(String name),protected Class<?>
+URLClassLoader,findResource(String name),URL
+URLClassLoader,findResources(String name),Enumeration<URL>
+URLClassLoader,getPermissions(CodeSource codesource),protected PermissionCollection
+URLClassLoader,getResourceAsStream(String name),InputStream
+URLClassLoader,getURLs(),URL[]
+URLClassLoader,newInstance(URL[] urls),static URLClassLoader
+URLClassLoader,"newInstance(URL[] urls, ClassLoader parent)",static URLClassLoader
+URLConnection,"addRequestProperty(String key, String value)",void
+URLConnection,connect(),abstract void
+URLConnection,getAllowUserInteraction(),boolean
+URLConnection,getConnectTimeout(),int
+URLConnection,getContent(),Object
+URLConnection,getContent(Class[] classes),Object
+URLConnection,getContentEncoding(),String
+URLConnection,getContentLength(),int
+URLConnection,getContentLengthLong(),long
+URLConnection,getContentType(),String
+URLConnection,getDate(),long
+URLConnection,getDefaultAllowUserInteraction(),static boolean
+URLConnection,getDefaultRequestProperty(String key),static String
+URLConnection,getDefaultUseCaches(),boolean
+URLConnection,getDoInput(),boolean
+URLConnection,getDoOutput(),boolean
+URLConnection,getExpiration(),long
+URLConnection,getFileNameMap(),static FileNameMap
+URLConnection,getHeaderField(int n),String
+URLConnection,getHeaderField(String name),String
+URLConnection,"getHeaderFieldDate(String name, long Default)",long
+URLConnection,"getHeaderFieldInt(String name, int Default)",int
+URLConnection,getHeaderFieldKey(int n),String
+URLConnection,"getHeaderFieldLong(String name, long Default)",long
+URLConnection,getHeaderFields(),"Map<String,List<String>>"
+URLConnection,getIfModifiedSince(),long
+URLConnection,getInputStream(),InputStream
+URLConnection,getLastModified(),long
+URLConnection,getOutputStream(),OutputStream
+URLConnection,getPermission(),Permission
+URLConnection,getReadTimeout(),int
+URLConnection,getRequestProperties(),"Map<String,List<String>>"
+URLConnection,getRequestProperty(String key),String
+URLConnection,getURL(),URL
+URLConnection,getUseCaches(),boolean
+URLConnection,guessContentTypeFromName(String fname),static String
+URLConnection,guessContentTypeFromStream(InputStream is),static String
+URLConnection,setAllowUserInteraction(boolean allowuserinteraction),void
+URLConnection,setConnectTimeout(int timeout),void
+URLConnection,setContentHandlerFactory(ContentHandlerFactory fac),static void
+URLConnection,setDefaultAllowUserInteraction(boolean defaultallowuserinteraction),static void
+URLConnection,"setDefaultRequestProperty(String key, String value)",static void
+URLConnection,setDefaultUseCaches(boolean defaultusecaches),void
+URLConnection,setDoInput(boolean doinput),void
+URLConnection,setDoOutput(boolean dooutput),void
+URLConnection,setFileNameMap(FileNameMap map),static void
+URLConnection,setIfModifiedSince(long ifmodifiedsince),void
+URLConnection,setReadTimeout(int timeout),void
+URLConnection,"setRequestProperty(String key, String value)",void
+URLConnection,setUseCaches(boolean usecaches),void
+URLConnection,toString(),String
+URLDecoder,decode(String s),static String
+URLDecoder,"decode(String s, String enc)",static String
+URLEncoder,encode(String s),static String
+URLEncoder,"encode(String s, String enc)",static String
+URLPermission,equals(Object p),boolean
+URLPermission,getActions(),String
+URLPermission,hashCode(),int
+URLPermission,implies(Permission p),boolean
+URLStreamHandler,"equals(URL u1, URL u2)",protected boolean
+URLStreamHandler,getDefaultPort(),protected int
+URLStreamHandler,getHostAddress(URL u),protected InetAddress
+URLStreamHandler,hashCode(URL u),protected int
+URLStreamHandler,"hostsEqual(URL u1, URL u2)",protected boolean
+URLStreamHandler,openConnection(URL u),protected abstract URLConnection
+URLStreamHandler,"openConnection(URL u, Proxy p)",protected URLConnection
+URLStreamHandler,"parseURL(URL u, String spec, int start, int limit)",protected void
+URLStreamHandler,"sameFile(URL u1, URL u2)",protected boolean
+URLStreamHandler,"setURL(URL u, String protocol, String host, int port, String file, String ref)",protected void
+URLStreamHandler,"setURL(URL u, String protocol, String host, int port, String authority, String userInfo, String path, String query, String ref)",protected void
+URLStreamHandler,toExternalForm(URL u),protected String

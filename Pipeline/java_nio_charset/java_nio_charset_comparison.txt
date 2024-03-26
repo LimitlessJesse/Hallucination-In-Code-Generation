@@ -1,0 +1,166 @@
+Sample: 0 Charset
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.Charset package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Charset.availableCharsets()`: This method returns a map of all available charsets.
+
+2. `Charset.defaultCharset()`: This method returns the default charset.
+
+3. `Charset.forName(String charsetName)`: This method returns the charset for the named charset.
+
+4. `CharsetEncoder canEncode(CharBuffer cb)`: This method returns true if this encoder can encode the entire character sequence in the given buffer.
+
+5. `CharsetDecoder canDecode(ByteBuffer bb)`: This method returns true if this decoder can decode the entire byte sequence in the given buffer.
+================================================================
+
+Sample: 1 CharsetDecoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.CharsetDecoder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Charset charset()`: This method returns the charset of this decoder.
+
+2. `CoderResult decode(ByteBuffer in, CharBuffer out, boolean endOfInput)`: This method decodes bytes from the input ByteBuffer into characters into the output CharBuffer.
+
+3. `CoderResult flush(CharBuffer out)`: This method flushes any buffered input into the output CharBuffer.
+
+4. `void reset()`: This method resets this decoder.
+
+5. `CoderResult onMalformedInput(CodingErrorAction action)`: This method sets the action to be taken when malformed input is encountered.
+
+6. `CoderResult onUnmappableCharacter(CodingErrorAction action)`: This method sets the action to be taken when an unmappable character is encountered.
+
+7. `CoderResult onUndefined(CodingErrorAction action)`: This method sets the action to be taken when an undefined character is encountered.
+
+8. `CoderResult onUnrepresentableCharacter(CodingErrorAction action)`: This method sets the action to be taken when an unrepresentable character is encountered.
+
+9. `CoderResult onMalformedInput(CodingErrorAction action)`: This method sets the action to be taken when malformed input is encountered.
+
+10. `CoderResult onUnmappableCharacter(CodingErrorAction action)`: This method sets the action to be taken when an unmappable character is encountered.
+
+11. `CoderResult onUndefined(CodingErrorAction action)`: This method sets the action to be taken when an undefined character is encountered.
+
+12. `CoderResult onUnrepresentableCharacter(CodingErrorAction action)`: This method sets the action to be taken when an unrepresentable character is encountered.
+================================================================
+
+Sample: 2 CharsetEncoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.CharsetEncoder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean canEncode(CharBuffer cb)`: This method returns true if the specified character buffer can be encoded without encountering an error.
+
+2. `public boolean isLegalReplacement(byte[] bytes)`: This method returns true if the specified byte array can be used as a replacement for a character that cannot be encoded.
+
+3. `public boolean isLegalSequence(byte[] bytes)`: This method returns true if the specified byte array can be used as a sequence of bytes that can be encoded.
+
+4. `public boolean isLegalUnicode(int codePoint)`: This method returns true if the specified Unicode code point can be encoded.
+
+5. `public int maxBytesPerChar()`: This method returns the maximum number of bytes that can be produced by encoding a single character.
+================================================================
+
+Sample: 3 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.CoderResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isError()`: This method returns true if the CoderResult object represents an error condition.
+
+2. `boolean isMalformed()`: This method returns true if the CoderResult object represents a malformed input condition.
+
+3. `boolean isUnmappable()`: This method returns true if the CoderResult object represents an unmappable input condition.
+
+4. `boolean isUnderflow()`: This method returns true if the CoderResult object represents an underflow condition.
+
+5. `boolean isOverflow()`: This method returns true if the CoderResult object represents an overflow condition.
+================================================================
+
+Sample: 4 CodingErrorAction
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.CodingErrorAction package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static CodingErrorAction REPLACE`: This method returns a CodingErrorAction that replaces invalid-encoded input with replacement characters.
+
+2. `public static CodingErrorAction IGNORE`: This method returns a CodingErrorAction that silently discards invalid-encoded input.
+
+3. `public static CodingErrorAction REPORT`: This method returns a CodingErrorAction that reports errors without altering the input or output.
+
+4. `public static CodingErrorAction REPLACE`: This method returns a CodingErrorAction that replaces invalid-encoded input with replacement characters.
+
+5. `public static CodingErrorAction IGNORE`: This method returns a CodingErrorAction that silently discards invalid-encoded input.
+
+6. `public static CodingErrorAction REPORT`: This method returns a CodingErrorAction that reports errors without altering the input or output.
+================================================================
+
+Sample: 5 StandardCharsets
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.charset.StandardCharsets package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Charset charset()`: This method returns the charset of this charset object.
+
+2. `CharsetDecoder newDecoder()`: This method returns a new charset decoder for this charset.
+
+3. `CharsetEncoder newEncoder()`: This method returns a new charset encoder for this charset.
+
+4. `String name()`: This method returns the name of this charset.
+
+5. `static Charset forName(String charsetName)`: This method returns the charset named by the specified charset name.
+================================================================
+

@@ -1,0 +1,611 @@
+Sample: 0 BigDecimal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigDecimal divide(BigDecimal divisor, int scale, int roundingMode) from java.math.BigDecimal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `divide(BigDecimal divisor, int scale, int roundingMode)` method from `java.math.BigDecimal`:
+
+```java
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal value1 = new BigDecimal("10");
+        BigDecimal value2 = new BigDecimal("3");
+
+        BigDecimal result = value1.divide(value2, 2, RoundingMode.HALF_UP);
+
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+In this code snippet, we are creating two `BigDecimal` objects `value1` and `value2`. We then call the `divide` method on `value1` with `value2` as the divisor, 2 as the scale (the number of digits to the right of the decimal point), and `RoundingMode.HALF_UP` as the rounding mode. The result is then printed to the console.
+
+The `divide` method is used to divide the `BigDecimal` value by the specified divisor, rounding the result to the specified scale and mode. The `RoundingMode.HALF_UP` mode means that if the digit to the right of the decimal point would normally be rounded up, it is rounded up unless the next digit to the left is even, in which case it is rounded down.
+================================================================
+
+Sample: 1 BigDecimal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigDecimal multiply(BigDecimal val) from java.math.BigDecimal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use the `multiply(BigDecimal val)` method from `java.math.BigDecimal`:
+
+```java
+import java.math.BigDecimal;
+
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal num1 = new BigDecimal("123.45");
+        BigDecimal num2 = new BigDecimal("67.89");
+
+        BigDecimal result = num1.multiply(num2);
+
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+In this code, we create two `BigDecimal` objects `num1` and `num2`. We then call the `multiply(BigDecimal val)` method on `num1` and pass `num2` as the argument. The result is stored in the `result` variable. Finally, we print the result.
+================================================================
+
+Sample: 2 BigDecimal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigDecimal subtract(BigDecimal val) from java.math.BigDecimal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `subtract(BigDecimal val)` method from `java.math.BigDecimal`:
+
+```java
+import java.math.BigDecimal;
+
+public class Main {
+    public static void main(String[] args) {
+        BigDecimal a = new BigDecimal("10.5");
+        BigDecimal b = new BigDecimal("5.2");
+        BigDecimal result = a.subtract(b);
+        System.out.println("The result is: " + result);
+    }
+}
+```
+
+In this code snippet, we are creating two `BigDecimal` objects `a` and `b`. Then we are subtracting `b` from `a` and storing the result in a new `BigDecimal` object `result`. Finally, we are printing the result.
+================================================================
+
+Sample: 3 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger add(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `add(BigInteger val)` method from `java.math.BigInteger`:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("12345678901234567890");
+        BigInteger num2 = new BigInteger("98765432109876543210");
+
+        BigInteger sum = num1.add(num2);
+
+        System.out.println("Sum: " + sum);
+    }
+}
+```
+
+In this code snippet, we create two `BigInteger` objects `num1` and `num2`. We then use the `add()` method to add these two numbers and store the result in a new `BigInteger` object `sum`. Finally, we print the sum to the console.
+================================================================
+
+Sample: 4 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger subtract(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `subtract(BigInteger val)` method from `java.math.BigInteger`:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("100");
+        BigInteger num2 = new BigInteger("50");
+        BigInteger result = num1.subtract(num2);
+        System.out.println("The result is: " + result);
+    }
+}
+```
+
+In this code snippet, we first import the `BigInteger` class from the `java.math` package. Then, we create two `BigInteger` objects `num1` and `num2`, each initialized with the string "100" and "50" respectively. We then call the `subtract(BigInteger val)` method on `num1`, passing `num2` as the argument. The result is stored in the `result` variable. Finally, we print the result to the console.
+================================================================
+
+Sample: 5 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger multiply(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `BigInteger multiply(BigInteger val)` method in Java is used to multiply the value of this BigInteger with the specified BigInteger.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("1234567890");
+        BigInteger num2 = new BigInteger("9876543210");
+
+        BigInteger product = num1.multiply(num2);
+
+        System.out.println("Product: " + product);
+    }
+}
+```
+
+In this code snippet, we are creating two BigInteger objects `num1` and `num2` and then multiplying them using the `multiply()` method. The result is stored in the `product` object and then printed to the console.
+================================================================
+
+Sample: 6 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger divide(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the BigInteger divide(BigInteger val) method:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("100");
+        BigInteger num2 = new BigInteger("20");
+        BigInteger result = num1.divide(num2);
+        System.out.println("Result: " + result);
+    }
+}
+```
+
+In this code snippet, we are creating two BigInteger objects num1 and num2. Then we are dividing num1 by num2 and storing the result in a BigInteger object result. Finally, we are printing the result.
+
+Please replace "100" and "20" with the numbers you want to divide.
+================================================================
+
+Sample: 7 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger remainder(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `remainder(BigInteger val)` method in the `BigInteger` class in Java is used to find the remainder of the division of this `BigInteger` by the specified `BigInteger`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("10");
+        BigInteger num2 = new BigInteger("3");
+
+        BigInteger remainder = num1.remainder(num2);
+
+        System.out.println("The remainder of the division is: " + remainder);
+    }
+}
+```
+
+In this code snippet, we are creating two `BigInteger` objects `num1` and `num2`. We then call the `remainder(BigInteger val)` method on `num1` and pass `num2` as the argument. The result is stored in the `remainder` variable. Finally, we print the remainder to the console.
+================================================================
+
+Sample: 8 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int compareTo(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `compareTo(BigInteger val)` method in the `BigInteger` class compares this BigInteger with the specified BigInteger. It returns a negative integer, zero, or a positive integer as this BigInteger is numerically less than, equal to, or greater than the specified BigInteger.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("100");
+        BigInteger num2 = new BigInteger("200");
+
+        int result = num1.compareTo(num2);
+
+        if (result < 0) {
+            System.out.println(num1 + " is less than " + num2);
+        } else if (result == 0) {
+            System.out.println(num1 + " is equal to " + num2);
+        } else {
+            System.out.println(num1 + " is greater than " + num2);
+        }
+    }
+}
+```
+
+In this code snippet, we create two `BigInteger` objects `num1` and `num2`. We then call the `compareTo` method on `num1` and pass `num2` as the argument. The result is stored in the `result` variable. Depending on the result, we print out a message indicating whether `num1` is less than, equal to, or greater than `num2`.
+================================================================
+
+Sample: 9 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger pow(int exponent) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `pow(int exponent)` method from `java.math.BigInteger`:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger bi = new BigInteger("10");
+        BigInteger result = bi.pow(2);
+        System.out.println(result);
+    }
+}
+```
+
+In this code snippet, we create a `BigInteger` object `bi` with the value `10`. Then we use the `pow(int exponent)` method to raise `bi` to the power of `2`, and store the result in `result`. Finally, we print `result` to the console.
+
+The `pow(int exponent)` method raises the value of the `BigInteger` to the power of the specified exponent and returns a new `BigInteger` with the result. If the exponent is negative, the method throws an `ArithmeticException`.
+================================================================
+
+Sample: 10 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger nextProbablePrime() from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a code snippet that uses the `nextProbablePrime()` method from `java.math.BigInteger`:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger bigInteger = BigInteger.valueOf(100);
+        BigInteger nextPrime = bigInteger.nextProbablePrime();
+        System.out.println("Next probable prime: " + nextPrime);
+    }
+}
+```
+
+In this code snippet, we first create a `BigInteger` with the value 100. Then we call the `nextProbablePrime()` method on this `BigInteger`, which returns the next probable prime number. The result is then printed to the console.
+
+Please note that the `nextProbablePrime()` method is not deterministic, meaning that it may return different results each time it is called with the same input. This is because it uses a probabilistic algorithm to generate prime numbers, which means that the output is not guaranteed to be the same each time the method is called.
+================================================================
+
+Sample: 11 BigInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use BigInteger gcd(BigInteger val) from java.math.BigInteger
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `gcd(BigInteger val)` method in the `BigInteger` class in Java is used to find the greatest common divisor of this BigInteger and the specified value.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.math.BigInteger;
+
+public class Main {
+    public static void main(String[] args) {
+        BigInteger num1 = new BigInteger("100");
+        BigInteger num2 = new BigInteger("50");
+
+        BigInteger gcd = num1.gcd(num2);
+
+        System.out.println("The GCD of " + num1 + " and " + num2 + " is: " + gcd);
+    }
+}
+```
+
+In this code snippet, we are creating two `BigInteger` objects `num1` and `num2`. We then call the `gcd(BigInteger val)` method on `num1` and pass `num2` as the argument. The result is stored in the `gcd` variable. Finally, we print the GCD of `num1` and `num2`.
+================================================================
+

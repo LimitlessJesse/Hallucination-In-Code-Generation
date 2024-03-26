@@ -1,0 +1,50 @@
+Sample: 0 Collectors
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.stream.Collectors package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Collectors.toList()`: This method returns a Collector that accumulates the input elements into a new List.
+
+2. `Collectors.toSet()`: This method returns a Collector that accumulates the input elements into a new Set.
+
+3. `Collectors.toCollection(Supplier<C> collectionFactory)`: This method returns a Collector that accumulates the input elements into a new Collection created by the provided collection factory.
+
+4. `Collectors.joining()`: This method returns a Collector that concatenates the input elements, separated by the specified delimiter, and preceded by the specified prefix and followed by the specified suffix.
+
+5. `Collectors.averagingInt(ToIntFunction<? super T> mapper)`: This method returns a Collector that calculates the average of a Integer-valued function applied to the input elements.
+================================================================
+
+Sample: 1 StreamSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.stream.StreamSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Stream<T> stream()`: This method returns a sequential Stream with this collection as its source.
+
+2. `Stream<T> parallelStream()`: This method returns a possibly parallel Stream with this collection as its source.
+
+3. `boolean removeIf(Predicate<? super T> filter)`: This method removes all of the elements of this stream that match the given predicate.
+
+4. `void forEach(Consumer<? super T> action)`: This method performs an action for each element of this stream.
+
+5. `<R> Stream<R> map(Function<? super T,? extends R> mapper)`: This method returns a stream consisting of the results of applying the given function to the elements of this stream.
+================================================================
+

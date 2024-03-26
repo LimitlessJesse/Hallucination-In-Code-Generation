@@ -1,0 +1,568 @@
+Sample: AdjustmentEvent_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/java.awt.AWTEvent.<init>(AWTEvent.java:325)
+	at java.desktop/java.awt.event.AdjustmentEvent.<init>(AdjustmentEvent.java:206)
+	at java.desktop/java.awt.event.AdjustmentEvent.<init>(AdjustmentEvent.java:175)
+	at AdjustmentEvent_1.main(AdjustmentEvent_1.java:5)
+
+================================================================
+
+Sample: AdjustmentEvent_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at AdjustmentEvent_2.main(AdjustmentEvent_2.java:8)
+
+================================================================
+
+Sample: AdjustmentEvent_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/java.awt.AWTEvent.<init>(AWTEvent.java:325)
+	at java.desktop/java.awt.event.AdjustmentEvent.<init>(AdjustmentEvent.java:206)
+	at java.desktop/java.awt.event.AdjustmentEvent.<init>(AdjustmentEvent.java:175)
+	at AdjustmentEvent_5.main(AdjustmentEvent_5.java:5)
+
+================================================================
+
+Sample: ComponentAdapter_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at ComponentAdapter_1.main(ComponentAdapter_1.java:7)
+
+================================================================
+
+Sample: ComponentAdapter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: ComponentAdapter_3
+----------------------------------------------------------------
+================================================================
+
+Sample: ComponentAdapter_4
+----------------------------------------------------------------
+================================================================
+
+Sample: FocusAdapter_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at FocusAdapter_1.main(FocusAdapter_1.java:8)
+
+================================================================
+
+Sample: FocusAdapter_2
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/FocusAdapter_2.java:8: error: cannot find symbol
+        textField.addFocusListener(focusAdapter);
+        ^
+  symbol:   variable textField
+  location: class FocusAdapter_2
+1 error
+
+
+================================================================
+
+Sample: FocusAdapter_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at FocusAdapter_3.main(FocusAdapter_3.java:8)
+
+================================================================
+
+Sample: FocusAdapter_4
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/FocusAdapter_4.java:8: error: cannot find symbol
+        textField.addFocusListener(focusAdapter);
+        ^
+  symbol:   variable textField
+  location: class FocusAdapter_4
+1 error
+
+
+================================================================
+
+Sample: FocusAdapter_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at FocusAdapter_5.main(FocusAdapter_5.java:8)
+
+================================================================
+
+Sample: FocusAdapter_6
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/FocusAdapter_6.java:8: error: cannot find symbol
+        textField.addFocusListener(focusAdapter);
+        ^
+  symbol:   variable textField
+  location: class FocusAdapter_6
+1 error
+
+
+================================================================
+
+Sample: InputEvent_1
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/InputEvent_1.java:5: error: InputEvent is abstract; cannot be instantiated
+        InputEvent event = new InputEvent();
+                           ^
+1 error
+
+
+================================================================
+
+Sample: InputEvent_2
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/InputEvent_2.java:5: error: InputEvent is abstract; cannot be instantiated
+        InputEvent event = new InputEvent();
+                           ^
+1 error
+
+
+================================================================
+
+Sample: InputEvent_3
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/InputEvent_3.java:5: error: InputEvent is abstract; cannot be instantiated
+        InputEvent event = new InputEvent();
+                           ^
+1 error
+
+
+================================================================
+
+Sample: InputEvent_4
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/InputEvent_4.java:5: error: constructor InputEvent in class InputEvent cannot be applied to given types;
+        InputEvent event = new InputEvent() {
+                           ^
+  required: Component,int,long,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: KeyAdapter_1
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/KeyAdapter_1.java:7: error: cannot find symbol
+        Main main = new Main();
+        ^
+  symbol:   class Main
+  location: class KeyAdapter_1
+./java_awt_event/javaFiles/KeyAdapter_1.java:7: error: cannot find symbol
+        Main main = new Main();
+                        ^
+  symbol:   class Main
+  location: class KeyAdapter_1
+2 errors
+
+
+================================================================
+
+Sample: KeyAdapter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: KeyAdapter_3
+----------------------------------------------------------------
+================================================================
+
+Sample: KeyEvent_1
+----------------------------------------------------------------
+stdout:
+Key code for 'A' is: 65
+
+================================================================
+
+Sample: KeyEvent_2
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/KeyEvent_2.java:6: error: method getKeyLocation in class KeyEvent cannot be applied to given types;
+        int keyLocation = KeyEvent.getKeyLocation(keyCode);
+                                  ^
+  required: no arguments
+  found:    int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MouseAdapter_1
+----------------------------------------------------------------
+================================================================
+
+Sample: MouseAdapter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: MouseAdapter_3
+----------------------------------------------------------------
+================================================================
+
+Sample: MouseAdapter_5
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseAdapter_5.java:8: error: cannot find symbol
+        component.addMouseListener(mouseAdapter);
+        ^
+  symbol:   variable component
+  location: class MouseAdapter_5
+1 error
+
+
+================================================================
+
+Sample: MouseEvent_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at MouseEvent_1.main(MouseEvent_1.java:8)
+
+================================================================
+
+Sample: MouseEvent_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/java.awt.AWTEvent.<init>(AWTEvent.java:325)
+	at java.desktop/java.awt.event.ComponentEvent.<init>(ComponentEvent.java:122)
+	at java.desktop/java.awt.event.InputEvent.<init>(InputEvent.java:378)
+	at java.desktop/java.awt.event.MouseEvent.<init>(MouseEvent.java:759)
+	at java.desktop/java.awt.event.MouseEvent.<init>(MouseEvent.java:576)
+	at java.desktop/java.awt.event.MouseEvent.<init>(MouseEvent.java:641)
+	at MouseEvent_2.main(MouseEvent_2.java:5)
+
+================================================================
+
+Sample: MouseEvent_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: null source
+	at java.base/java.util.EventObject.<init>(EventObject.java:57)
+	at java.desktop/java.awt.AWTEvent.<init>(AWTEvent.java:325)
+	at java.desktop/java.awt.event.ComponentEvent.<init>(ComponentEvent.java:122)
+	at java.desktop/java.awt.event.InputEvent.<init>(InputEvent.java:378)
+	at java.desktop/java.awt.event.MouseEvent.<init>(MouseEvent.java:759)
+	at java.desktop/java.awt.event.MouseEvent.<init>(MouseEvent.java:576)
+	at MouseEvent_3.main(MouseEvent_3.java:5)
+
+================================================================
+
+Sample: MouseEvent_4
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseEvent_4.java:5: error: no suitable constructor found for MouseEvent(<null>,int,int,int,int,int,boolean)
+        MouseEvent event = new MouseEvent(null, 0, 0, 0, 0, MouseEvent.BUTTON1, false);
+                           ^
+    constructor MouseEvent.MouseEvent(Component,int,long,int,int,int,int,boolean,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseEvent.MouseEvent(Component,int,long,int,int,int,int,boolean) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseEvent.MouseEvent(Component,int,long,int,int,int,int,int,int,boolean,int) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MouseMotionAdapter_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MouseMotionAdapter_1.main(MouseMotionAdapter_1.java:9)
+
+================================================================
+
+Sample: MouseWheelEvent_1
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseWheelEvent_1.java:6: error: no suitable constructor found for MouseWheelEvent(<null>,int,int,int,int,int,int,boolean,int)
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 0, 0, 0, false, MouseWheelEvent.WHEEL_UNIT_SCROLL);
+                                ^
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MouseWheelEvent_2
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseWheelEvent_2.java:6: error: no suitable constructor found for MouseWheelEvent(<null>,int,int,int,int,boolean,boolean,boolean,boolean,int)
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 1, false, false, false, false, 1);
+                                ^
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MouseWheelEvent_3
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseWheelEvent_3.java:5: error: no suitable constructor found for MouseWheelEvent(<null>,int,int,int,int,int,boolean,int)
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 0, 1, false, 1);
+                                ^
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MouseWheelEvent_4
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/MouseWheelEvent_4.java:5: error: no suitable constructor found for MouseWheelEvent(<null>,int,int,int,int,boolean,boolean,boolean,boolean,int)
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 1, false, false, false, false, 1);
+                                ^
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MouseWheelEvent.MouseWheelEvent(Component,int,long,int,int,int,int,int,int,boolean,int,int,int,double) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: PaintEvent_5
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/PaintEvent_5.java:6: error: constructor PaintEvent in class PaintEvent cannot be applied to given types;
+        PaintEvent event = new PaintEvent(null, 0, 0, 0, 0, false);
+                           ^
+  required: Component,int,Rectangle
+  found:    <null>,int,int,int,int,boolean
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_1
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_1.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_1
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_2
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_2.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_2
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_3
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_3.java:7: error: cannot find symbol
+        Window window = new Window();
+        ^
+  symbol:   class Window
+  location: class WindowAdapter_3
+./java_awt_event/javaFiles/WindowAdapter_3.java:7: error: cannot find symbol
+        Window window = new Window();
+                            ^
+  symbol:   class Window
+  location: class WindowAdapter_3
+./java_awt_event/javaFiles/WindowAdapter_3.java:10: error: cannot find symbol
+        window.addWindowListener(new Main());
+                                     ^
+  symbol:   class Main
+  location: class WindowAdapter_3
+3 errors
+
+
+================================================================
+
+Sample: WindowAdapter_4
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_4.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_4
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_5
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_5.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_5
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_6
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_6.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_6
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_7
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_7.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_7
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_8
+----------------------------------------------------------------
+================================================================
+
+Sample: WindowAdapter_9
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_9.java:8: error: cannot find symbol
+        frame.addWindowListener(adapter);
+        ^
+  symbol:   variable frame
+  location: class WindowAdapter_9
+1 error
+
+
+================================================================
+
+Sample: WindowAdapter_10
+----------------------------------------------------------------
+output:
+./java_awt_event/javaFiles/WindowAdapter_10.java:7: error: cannot find symbol
+        Window window = new Window();
+        ^
+  symbol:   class Window
+  location: class WindowAdapter_10
+./java_awt_event/javaFiles/WindowAdapter_10.java:7: error: cannot find symbol
+        Window window = new Window();
+                            ^
+  symbol:   class Window
+  location: class WindowAdapter_10
+./java_awt_event/javaFiles/WindowAdapter_10.java:10: error: cannot find symbol
+        window.addWindowListener(new Main());
+                                     ^
+  symbol:   class Main
+  location: class WindowAdapter_10
+./java_awt_event/javaFiles/WindowAdapter_10.java:13: error: cannot find symbol
+        window.setState(Window.NORMAL);
+                        ^
+  symbol:   variable Window
+  location: class WindowAdapter_10
+4 errors
+
+
+================================================================
+

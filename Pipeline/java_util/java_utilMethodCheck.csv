@@ -1,0 +1,444 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractCollection,1,boolean add(E e),True
+0,AbstractCollection,2,boolean addAll(Collection<? extends E> c),True
+0,AbstractCollection,3,void clear(),True
+0,AbstractCollection,4,boolean contains(Object o),True
+0,AbstractCollection,5,boolean containsAll(Collection<?> c),True
+1,AbstractList,1,boolean add(E e),True
+1,AbstractList,2,E get(int index),True
+1,AbstractList,3,"E set(int index, E element)",True
+1,AbstractList,4,int size(),False
+1,AbstractList,5,boolean remove(Object o),False
+2,AbstractMap,1,"AbstractMap.Entry<K,V> entrySet()",False
+2,AbstractMap,2,boolean containsKey(Object key),True
+2,AbstractMap,3,boolean containsValue(Object value),True
+2,AbstractMap,4,V get(Object key),True
+2,AbstractMap,5,"V put(K key, V value)",True
+3,AbstractMap.SimpleEntry,1,boolean add(E e),False
+3,AbstractMap.SimpleEntry,2,E getKey(),False
+3,AbstractMap.SimpleEntry,3,E getValue(),False
+3,AbstractMap.SimpleEntry,4,E setValue(E value),False
+3,AbstractMap.SimpleEntry,5,boolean equals(Object o),True
+3,AbstractMap.SimpleEntry,6,int hashCode(),True
+4,AbstractMap.SimpleImmutableEntry,1,boolean equals(Object o),True
+4,AbstractMap.SimpleImmutableEntry,2,int hashCode(),True
+4,AbstractMap.SimpleImmutableEntry,3,K getKey(),True
+4,AbstractMap.SimpleImmutableEntry,4,V getValue(),True
+4,AbstractMap.SimpleImmutableEntry,5,V setValue(V value),True
+5,AbstractQueue,1,boolean add(E e),True
+5,AbstractQueue,2,E remove(),True
+5,AbstractQueue,3,boolean offer(E e),False
+5,AbstractQueue,4,E poll(),False
+5,AbstractQueue,5,E peek(),False
+6,AbstractSequentialList,1,boolean add(E e),False
+6,AbstractSequentialList,2,E get(int index),True
+6,AbstractSequentialList,3,"E set(int index, E element)",True
+6,AbstractSequentialList,4,ListIterator<E> listIterator(int index),True
+6,AbstractSequentialList,5,ListIterator<E> listIterator(),False
+7,AbstractSet,1,boolean add(E e),False
+7,AbstractSet,2,boolean remove(Object o),False
+7,AbstractSet,3,void clear(),False
+7,AbstractSet,4,boolean contains(Object o),False
+7,AbstractSet,5,boolean isEmpty(),False
+8,ArrayDeque,1,boolean add(E e),True
+8,ArrayDeque,2,boolean offer(E e),True
+8,ArrayDeque,3,boolean offerFirst(E e),True
+8,ArrayDeque,4,boolean offerLast(E e),True
+8,ArrayDeque,5,E remove(),True
+8,ArrayDeque,6,E poll(),True
+8,ArrayDeque,7,E pollFirst(),True
+8,ArrayDeque,8,E pollLast(),True
+8,ArrayDeque,9,E getFirst(),True
+8,ArrayDeque,10,E getLast(),True
+8,ArrayDeque,11,boolean removeFirstOccurrence(Object o),True
+8,ArrayDeque,12,boolean removeLastOccurrence(Object o),True
+8,ArrayDeque,13,boolean contains(Object o),True
+8,ArrayDeque,14,int size(),True
+8,ArrayDeque,15,boolean isEmpty(),True
+8,ArrayDeque,16,void clear(),True
+8,ArrayDeque,17,Iterator<E> iterator(),True
+8,ArrayDeque,18,ListIterator<E> listIterator(),False
+8,ArrayDeque,19,ListIterator<E> listIterator(int index),False
+8,ArrayDeque,20,Object[] toArray(),True
+8,ArrayDeque,21,<T> T[] toArray(T[] a),True
+8,ArrayDeque,22,boolean equals(Object o),False
+8,ArrayDeque,23,int hashCode(),False
+8,ArrayDeque,24,String toString(),False
+8,ArrayDeque,25,void forEach(Consumer<? super E> action),False
+9,ArrayList,1,boolean add(E e),True
+9,ArrayList,2,"void add(int index, E element)",True
+9,ArrayList,3,boolean addAll(Collection<? extends E> c),True
+9,ArrayList,4,E get(int index),True
+9,ArrayList,5,E remove(int index),True
+10,Arrays,1,boolean add(E e),False
+10,Arrays,2,"void add(int index, E element)",False
+10,Arrays,3,boolean addAll(Collection<? extends E> c),False
+10,Arrays,4,"boolean addAll(int index, Collection<? extends E> c)",False
+10,Arrays,5,void clear(),False
+11,Base64,1,byte[] getDecoder(),False
+11,Base64,2,byte[] getEncoder(),False
+11,Base64,3,byte[] decode(byte[] src),False
+11,Base64,4,byte[] decode(String src),False
+11,Base64,5,byte[] encode(byte[] src),False
+11,Base64,6,String encodeToString(byte[] src),False
+11,Base64,7,String encodeToString(String src),False
+11,Base64,8,"String encodeToString(byte[] src, int off, int len)",False
+11,Base64,9,"String encode(byte[] src, int off, int len)",False
+11,Base64,10,"byte[] decode(String src, int off, int len)",False
+11,Base64,11,"byte[] decode(byte[] src, int off, int len)",False
+11,Base64,12,"byte[] decode(String src, Base64.Decoder decoder)",False
+11,Base64,13,"byte[] decode(byte[] src, Base64.Decoder decoder)",False
+11,Base64,14,"String encodeToString(byte[] src, Base64.Encoder encoder)",False
+11,Base64,15,"byte[] encode(byte[] src, Base64.Encoder encoder)",False
+11,Base64,16,"byte[] decode(String src, Base64.Decoder decoder, int off, int len)",False
+11,Base64,17,"byte[] decode(byte[] src, Base64.Decoder decoder, int off, int len)",False
+11,Base64,18,"byte[] encode(byte[] src, Base64.Encoder encoder, int off, int len)",False
+11,Base64,19,"String encodeToString(byte[] src, Base64.Encoder encoder, int off, int len)",False
+11,Base64,20,"byte[] decode(String src, int off, int len, Base64.Decoder decoder)",False
+11,Base64,21,"byte[] decode(byte[] src, int off, int len, Base64.Decoder decoder)",False
+11,Base64,22,"byte[] encode(byte[] src, int off, int len, Base64.Encoder encoder)",False
+11,Base64,23,"String encodeToString(byte[] src, int off, int len, Base64.Encoder encoder)",False
+12,Base64.Decoder,1,"int decode(byte[] src, int off, int len)",False
+12,Base64.Decoder,2,int decode(byte[] src),False
+12,Base64.Decoder,3,int decode(String src),False
+12,Base64.Decoder,4,"int decodeBuffer(byte[] src, int off, int len)",False
+12,Base64.Decoder,5,int decodeBuffer(byte[] src),False
+13,Base64.Encoder,1,byte[] encode(byte[] src),True
+13,Base64.Encoder,2,String encodeToString(byte[] src),True
+13,Base64.Encoder,3,OutputStream wrap(OutputStream out),True
+13,Base64.Encoder,4,void setLineLength(int lineLength),False
+13,Base64.Encoder,5,int getLineLength(),False
+14,BitSet,1,boolean get(int index),True
+14,BitSet,2,boolean set(int index),False
+14,BitSet,3,"boolean set(int index, boolean value)",False
+14,BitSet,4,int cardinality(),True
+14,BitSet,5,int length(),True
+15,Calendar,1,int get(int field),True
+15,Calendar,2,"void set(int field, int value)",True
+15,Calendar,3,"void add(int field, int amount)",True
+15,Calendar,4,long getTimeInMillis(),True
+15,Calendar,5,void setTimeInMillis(long millis),True
+16,Calendar.Builder,1,"CalendarBuilder setDate(int year, int month, int date)",False
+16,Calendar.Builder,2,"CalendarBuilder setTime(int hourOfDay, int minute, int second)",False
+16,Calendar.Builder,3,CalendarBuilder setTimeZone(TimeZone timeZone),False
+16,Calendar.Builder,4,"CalendarBuilder setWeekDate(int weekYear, int weekOfYear, int dayOfWeek)",False
+16,Calendar.Builder,5,CalendarBuilder setWeekYear(int weekYear),False
+17,Collections,1,boolean add(E e),False
+17,Collections,2,"void add(int index, E element)",False
+17,Collections,3,boolean addAll(Collection<? extends E> c),False
+17,Collections,4,void clear(),False
+17,Collections,5,boolean contains(Object o),False
+18,Currency,1,Currency getInstance(String currencyCode),True
+18,Currency,2,String getCurrencyCode(),True
+18,Currency,3,String getDisplayName(),True
+18,Currency,4,String getDisplayName(Locale locale),True
+18,Currency,5,int getDefaultFractionDigits(),True
+19,Date,1,boolean after(Date when),True
+19,Date,2,boolean before(Date when),True
+19,Date,3,int compareTo(Date anotherDate),True
+19,Date,4,boolean equals(Object obj),True
+19,Date,5,long getTime(),True
+20,Dictionary,1,boolean add(E e),False
+20,Dictionary,2,boolean addAll(Collection<? extends E> c),False
+20,Dictionary,3,void clear(),False
+20,Dictionary,4,boolean contains(Object o),False
+20,Dictionary,5,boolean containsAll(Collection<?> c),False
+21,DoubleSummaryStatistics,1,double getSum(),True
+21,DoubleSummaryStatistics,2,long getCount(),True
+21,DoubleSummaryStatistics,3,OptionalDouble getMin(),False
+21,DoubleSummaryStatistics,4,OptionalDouble getMax(),False
+21,DoubleSummaryStatistics,5,double getAverage(),True
+22,EnumMap,1,boolean containsKey(Object key),True
+22,EnumMap,2,E get(Object key),False
+22,EnumMap,3,"E put(K key, V value)",False
+22,EnumMap,4,E remove(Object key),False
+22,EnumMap,5,void clear(),True
+23,EnumSet,1,boolean add(E e),False
+23,EnumSet,2,void clear(),False
+23,EnumSet,3,boolean contains(Object o),False
+23,EnumSet,4,boolean remove(Object o),False
+23,EnumSet,5,boolean isEmpty(),False
+24,EventListenerProxy,1,boolean add(E e),False
+24,EventListenerProxy,2,boolean addAll(Collection<? extends E> c),False
+24,EventListenerProxy,3,void clear(),False
+24,EventListenerProxy,4,boolean contains(Object o),False
+24,EventListenerProxy,5,boolean containsAll(Collection<?> c),False
+25,EventObject,1,getSource(),False
+25,EventObject,2,toString(),False
+25,EventObject,3,getClass(),False
+25,EventObject,4,hashCode(),False
+25,EventObject,5,equals(Object obj),False
+26,FormattableFlags,1,boolean isPadded(),False
+26,FormattableFlags,2,boolean isLeftJustified(),False
+26,FormattableFlags,3,boolean isZeroPadded(),False
+26,FormattableFlags,4,boolean isAlternate(),False
+26,FormattableFlags,5,boolean isLocaleSpecific(),False
+26,FormattableFlags,6,boolean isGroupingUsed(),False
+26,FormattableFlags,7,boolean isIntegerZero(),False
+26,FormattableFlags,8,boolean isNegative(),False
+26,FormattableFlags,9,boolean isZeroDigit(),False
+26,FormattableFlags,10,boolean isDigit(),False
+27,Formatter,1,boolean add(E e),False
+27,Formatter,2,"void add(int index, E element)",False
+27,Formatter,3,boolean addAll(Collection<? extends E> c),False
+27,Formatter,4,"boolean addAll(int index, Collection<? extends E> c)",False
+27,Formatter,5,void clear(),False
+28,GregorianCalendar,1,boolean isLeapYear(int year),True
+28,GregorianCalendar,2,int getActualMaximum(int field),True
+28,GregorianCalendar,3,int getActualMinimum(int field),True
+28,GregorianCalendar,4,void setGregorianChange(Date date),True
+28,GregorianCalendar,5,Date getGregorianChange(),True
+29,HashMap,1,boolean containsKey(Object key),True
+29,HashMap,2,V get(Object key),True
+29,HashMap,3,"V put(K key, V value)",True
+29,HashMap,4,V remove(Object key),True
+29,HashMap,5,int size(),True
+30,HashSet,1,boolean add(E e),True
+30,HashSet,2,void clear(),True
+30,HashSet,3,boolean contains(Object o),True
+30,HashSet,4,boolean remove(Object o),True
+30,HashSet,5,int size(),True
+31,Hashtable,1,boolean contains(Object o),True
+31,Hashtable,2,boolean remove(Object o),False
+31,Hashtable,3,Enumeration elements(),False
+31,Hashtable,4,Object get(Object key),False
+31,Hashtable,5,"Object put(Object key, Object value)",False
+32,IdentityHashMap,1,boolean containsKey(Object key),True
+32,IdentityHashMap,2,boolean containsValue(Object value),True
+32,IdentityHashMap,3,"Set<Map.Entry<K,V>> entrySet()",True
+32,IdentityHashMap,4,V get(Object key),True
+32,IdentityHashMap,5,boolean isEmpty(),True
+33,IntSummaryStatistics,1,long getCount(),True
+33,IntSummaryStatistics,2,double getAverage(),True
+33,IntSummaryStatistics,3,long getSum(),True
+33,IntSummaryStatistics,4,int getMin(),True
+33,IntSummaryStatistics,5,int getMax(),True
+34,LinkedHashMap,1,boolean add(E e),False
+34,LinkedHashMap,2,boolean addAll(Collection<? extends E> c),False
+34,LinkedHashMap,3,void clear(),True
+34,LinkedHashMap,4,boolean contains(Object o),False
+34,LinkedHashMap,5,boolean containsAll(Collection<?> c),False
+35,LinkedHashSet,1,boolean add(E e),False
+35,LinkedHashSet,2,boolean addAll(Collection<? extends E> c),False
+35,LinkedHashSet,3,void clear(),False
+35,LinkedHashSet,4,boolean contains(Object o),False
+35,LinkedHashSet,5,boolean containsAll(Collection<?> c),False
+36,LinkedList,1,boolean add(E e),True
+36,LinkedList,2,"void add(int index, E element)",True
+36,LinkedList,3,boolean addAll(Collection<? extends E> c),True
+36,LinkedList,4,E get(int index),True
+36,LinkedList,5,"E set(int index, E element)",True
+37,ListResourceBundle,1,boolean add(E e),False
+37,ListResourceBundle,2,E get(int index),False
+37,ListResourceBundle,3,E remove(int index),False
+37,ListResourceBundle,4,int size(),False
+37,ListResourceBundle,5,"List<E> subList(int fromIndex, int toIndex)",False
+38,Locale,1,Locale.getDefault(),False
+38,Locale,2,Locale.getAvailableLocales(),False
+38,Locale,3,Locale.setDefault(Locale newLocale),False
+38,Locale,4,Locale.getISOCountries(),False
+38,Locale,5,Locale.getISO3Language(),False
+39,Locale.Builder,1,Locale.Builder(),False
+39,Locale.Builder,2,Locale.Builder setLanguage(String language),True
+39,Locale.Builder,3,Locale.Builder setRegion(String region),True
+39,Locale.Builder,4,Locale.Builder setVariant(String variant),True
+39,Locale.Builder,5,Locale.Builder setScript(String script),True
+39,Locale.Builder,6,Locale build(),True
+40,Locale.LanguageRange,1,List<LanguageRange> parse(String rangeList),False
+40,Locale.LanguageRange,2,boolean equals(Object obj),True
+40,Locale.LanguageRange,3,int hashCode(),True
+40,Locale.LanguageRange,4,String toString(),False
+40,Locale.LanguageRange,5,int compareTo(LanguageRange other),False
+40,Locale.LanguageRange,6,List<LanguageRange> sort(List<LanguageRange> list),False
+40,Locale.LanguageRange,7,List<LanguageRange> sortByQuality(List<LanguageRange> list),False
+40,Locale.LanguageRange,8,List<LanguageRange> sortByWeight(List<LanguageRange> list),False
+40,Locale.LanguageRange,9,List<LanguageRange> sortByPriority(List<LanguageRange> list),False
+40,Locale.LanguageRange,10,"List<LanguageRange> sortByMatch(List<LanguageRange> list, Locale locale)",False
+41,LongSummaryStatistics,1,long getCount(),True
+41,LongSummaryStatistics,2,long getSum(),True
+41,LongSummaryStatistics,3,long getMin(),True
+41,LongSummaryStatistics,4,long getMax(),True
+41,LongSummaryStatistics,5,double getAverage(),True
+42,Objects,1,"boolean equals(Object a, Object b)",True
+42,Objects,2,int hashCode(Object o),True
+42,Objects,3,boolean isNull(Object obj),True
+42,Objects,4,boolean nonNull(Object obj),True
+42,Objects,5,boolean requireNonNull(Object obj),False
+43,Observable,1,void addObserver(Observer o),True
+43,Observable,2,void deleteObserver(Observer o),True
+43,Observable,3,void deleteObservers(),True
+43,Observable,4,boolean hasChanged(),True
+43,Observable,5,int countObservers(),True
+43,Observable,6,void notifyObservers(),True
+43,Observable,7,void notifyObservers(Object arg),True
+43,Observable,8,void setChanged(),True
+43,Observable,9,void clearChanged(),True
+43,Observable,10,boolean hasNoObservers(),False
+44,Optional,1,boolean isPresent(),True
+44,Optional,2,T get(),True
+44,Optional,3,T orElse(T other),True
+44,Optional,4,T orElseGet(Supplier<? extends T> other),True
+44,Optional,5,<X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier),False
+45,OptionalDouble,1,OptionalDouble isPresent(),False
+45,OptionalDouble,2,OptionalDouble getAsDouble(),False
+45,OptionalDouble,3,OptionalDouble orElse(double other),False
+45,OptionalDouble,4,OptionalDouble orElseGet(DoubleSupplier other),False
+45,OptionalDouble,5,OptionalDouble orElseThrow(),False
+46,OptionalInt,1,OptionalInt isPresent(),False
+46,OptionalInt,2,OptionalInt getAsInt(),False
+46,OptionalInt,3,OptionalInt orElse(int other),False
+46,OptionalInt,4,OptionalInt orElseGet(IntSupplier other),False
+46,OptionalInt,5,OptionalInt orElseThrow(),False
+47,OptionalLong,1,OptionalLong of(long value),True
+47,OptionalLong,2,OptionalLong empty(),True
+47,OptionalLong,3,boolean isPresent(),True
+47,OptionalLong,4,long getAsLong(),True
+47,OptionalLong,5,long orElse(long other),True
+48,PriorityQueue,1,boolean add(E e),True
+48,PriorityQueue,2,E remove(),False
+48,PriorityQueue,3,E peek(),True
+48,PriorityQueue,4,boolean offer(E e),True
+48,PriorityQueue,5,E poll(),True
+49,Properties,1,boolean contains(Object o),False
+49,Properties,2,boolean containsAll(Collection<?> c),False
+49,Properties,3,Object get(int index),False
+49,Properties,4,"Object set(int index, Object element)",False
+49,Properties,5,boolean isEmpty(),False
+50,PropertyPermission,1,boolean implies(Permission p),True
+50,PropertyPermission,2,boolean equals(Object obj),True
+50,PropertyPermission,3,int hashCode(),True
+50,PropertyPermission,4,String getActions(),True
+50,PropertyPermission,5,String getName(),False
+51,PropertyResourceBundle,1,boolean contains(Object o),False
+51,PropertyResourceBundle,2,boolean containsAll(Collection<?> c),False
+51,PropertyResourceBundle,3,boolean equals(Object o),False
+51,PropertyResourceBundle,4,Object get(int index),False
+51,PropertyResourceBundle,5,int indexOf(Object o),False
+51,PropertyResourceBundle,6,int lastIndexOf(Object o),False
+51,PropertyResourceBundle,7,ListIterator<E> listIterator(),False
+51,PropertyResourceBundle,8,ListIterator<E> listIterator(int index),False
+51,PropertyResourceBundle,9,E remove(int index),False
+51,PropertyResourceBundle,10,boolean remove(Object o),False
+51,PropertyResourceBundle,11,boolean removeAll(Collection<?> c),False
+51,PropertyResourceBundle,12,boolean retainAll(Collection<?> c),False
+51,PropertyResourceBundle,13,"E set(int index, E element)",False
+51,PropertyResourceBundle,14,int size(),False
+51,PropertyResourceBundle,15,"List<E> subList(int fromIndex, int toIndex)",False
+51,PropertyResourceBundle,16,Object[] toArray(),False
+51,PropertyResourceBundle,17,<T> T[] toArray(T[] a),False
+51,PropertyResourceBundle,18,String toString(),False
+52,Random,1,int nextInt(),True
+52,Random,2,int nextInt(int bound),True
+52,Random,3,long nextLong(),True
+52,Random,4,boolean nextBoolean(),True
+52,Random,5,float nextFloat(),True
+53,ResourceBundle,1,boolean containsKey(Object key),False
+53,ResourceBundle,2,Enumeration<String> getKeys(),True
+53,ResourceBundle,3,Object getObject(String key),True
+53,ResourceBundle,4,String getString(String key),True
+53,ResourceBundle,5,Locale getLocale(),True
+54,ResourceBundle.Control,1,boolean containsKey(String key),False
+54,ResourceBundle.Control,2,Enumeration<String> getKeys(),False
+54,ResourceBundle.Control,3,Object handleGetObject(String key),False
+54,ResourceBundle.Control,4,String getString(String key),False
+54,ResourceBundle.Control,5,"String getString(String key, Locale locale)",False
+55,Scanner,1,boolean hasNext(),True
+55,Scanner,2,String next(),True
+55,Scanner,3,int nextInt(),True
+55,Scanner,4,double nextDouble(),True
+55,Scanner,5,boolean hasNextLine(),True
+56,ServiceLoader,1,boolean add(E e),False
+56,ServiceLoader,2,"void add(int index, E element)",False
+56,ServiceLoader,3,boolean addAll(Collection<? extends E> c),False
+56,ServiceLoader,4,boolean remove(Object o),False
+56,ServiceLoader,5,E remove(int index),False
+57,SimpleTimeZone,1,boolean contains(Object o),False
+57,SimpleTimeZone,2,boolean remove(Object o),False
+57,SimpleTimeZone,3,int size(),False
+57,SimpleTimeZone,4,Object[] toArray(),False
+57,SimpleTimeZone,5,boolean addAll(Collection<? extends E> c),False
+58,Spliterators,1,Spliterator.trySplit(),False
+58,Spliterators,2,Spliterator.forEachRemaining(Consumer<? super T> action),False
+58,Spliterators,3,Spliterator.hasCharacteristics(int characteristics),False
+58,Spliterators,4,Spliterator.getExactSizeIfKnown(),False
+58,Spliterators,5,Spliterator.characteristics(),False
+59,Spliterators.AbstractDoubleSpliterator,1,double tryAdvance(DoubleConsumer action),False
+59,Spliterators.AbstractDoubleSpliterator,2,boolean trySplit(),False
+59,Spliterators.AbstractDoubleSpliterator,3,long estimateSize(),True
+59,Spliterators.AbstractDoubleSpliterator,4,int characteristics(),True
+59,Spliterators.AbstractDoubleSpliterator,5,Comparator<? super Double> getComparator(),False
+60,Spliterators.AbstractIntSpliterator,1,int estimateSize(),False
+60,Spliterators.AbstractIntSpliterator,2,boolean tryAdvance(IntConsumer action),False
+60,Spliterators.AbstractIntSpliterator,3,Spliterator<Integer> trySplit(),False
+60,Spliterators.AbstractIntSpliterator,4,long estimateSize(),True
+60,Spliterators.AbstractIntSpliterator,5,boolean tryAdvance(IntConsumer action),False
+61,Spliterators.AbstractLongSpliterator,1,long estimateSize(),True
+61,Spliterators.AbstractLongSpliterator,2,boolean tryAdvance(Consumer<? super Long> action),False
+61,Spliterators.AbstractLongSpliterator,3,Spliterator<Long> trySplit(),False
+61,Spliterators.AbstractLongSpliterator,4,long getExactSizeIfKnown(),False
+61,Spliterators.AbstractLongSpliterator,5,int characteristics(),True
+62,Spliterators.AbstractSpliterator,1,boolean tryAdvance(Consumer<? super T> action),False
+62,Spliterators.AbstractSpliterator,2,Spliterator<T> trySplit(),True
+62,Spliterators.AbstractSpliterator,3,long estimateSize(),True
+62,Spliterators.AbstractSpliterator,4,int characteristics(),True
+62,Spliterators.AbstractSpliterator,5,Comparator<? super T> getComparator(),False
+63,SplittableRandom,1,SplittableRandom(),False
+63,SplittableRandom,2,long nextLong(),True
+63,SplittableRandom,3,double nextDouble(),True
+63,SplittableRandom,4,int nextInt(int bound),True
+63,SplittableRandom,5,long nextLong(long bound),True
+64,Stack,1,boolean empty(),True
+64,Stack,2,E peek(),True
+64,Stack,3,E pop(),True
+64,Stack,4,E push(E item),True
+64,Stack,5,int search(Object o),True
+65,StringJoiner,1,StringJoiner(CharSequence delimiter),False
+65,StringJoiner,2,"StringJoiner(CharSequence delimiter, CharSequence prefix, CharSequence suffix)",False
+65,StringJoiner,3,StringJoiner append(CharSequence newElement),False
+65,StringJoiner,4,String toString(),True
+65,StringJoiner,5,int length(),True
+66,StringTokenizer,1,StringTokenizer(String str),False
+66,StringTokenizer,2,"StringTokenizer(String str, String delim)",False
+66,StringTokenizer,3,"StringTokenizer(String str, String delim, boolean returnDelims)",False
+66,StringTokenizer,4,boolean hasMoreTokens(),True
+66,StringTokenizer,5,String nextToken(),True
+67,Timer,1,boolean cancel(),False
+67,Timer,2,"void schedule(TimerTask task, long delay)",True
+67,Timer,3,"void schedule(TimerTask task, Date time)",True
+67,Timer,4,"void schedule(TimerTask task, long delay, long period)",True
+67,Timer,5,"void scheduleAtFixedRate(TimerTask task, long delay, long period)",True
+68,TimerTask,1,boolean cancel(),True
+68,TimerTask,2,void run(),True
+68,TimerTask,3,long scheduledExecutionTime(),True
+68,TimerTask,4,boolean isCancelled(),False
+68,TimerTask,5,boolean isDone(),False
+69,TimeZone,1,"getDisplayName(boolean daylight, int style)",False
+69,TimeZone,2,getID(),False
+69,TimeZone,3,getOffset(long date),False
+69,TimeZone,4,getRawOffset(),False
+69,TimeZone,5,useDaylightTime(),False
+70,TreeMap,1,boolean containsKey(Object key),True
+70,TreeMap,2,V get(Object key),True
+70,TreeMap,3,"V put(K key, V value)",True
+70,TreeMap,4,V remove(Object key),True
+70,TreeMap,5,int size(),True
+71,TreeSet,1,boolean add(E e),True
+71,TreeSet,2,boolean addAll(Collection<? extends E> c),True
+71,TreeSet,3,void clear(),True
+71,TreeSet,4,boolean contains(Object o),True
+71,TreeSet,5,boolean containsAll(Collection<?> c),False
+72,UUID,1,UUID fromString(String name),True
+72,UUID,2,UUID randomUUID(),True
+72,UUID,3,int compareTo(UUID uuid),True
+72,UUID,4,int hashCode(),True
+72,UUID,5,String toString(),True
+73,Vector,1,boolean add(E e),True
+73,Vector,2,boolean addAll(Collection<? extends E> c),True
+73,Vector,3,void clear(),True
+73,Vector,4,boolean contains(Object o),True
+73,Vector,5,E get(int index),True
+74,WeakHashMap,1,boolean contains(Object o),False
+74,WeakHashMap,2,boolean remove(Object o),False
+74,WeakHashMap,3,void clear(),True
+74,WeakHashMap,4,boolean isEmpty(),True
+74,WeakHashMap,5,int size(),True

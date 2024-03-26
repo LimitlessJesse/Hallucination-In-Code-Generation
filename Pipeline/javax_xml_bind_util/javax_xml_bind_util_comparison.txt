@@ -1,0 +1,95 @@
+Sample: 0 JAXBResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.bind.util.JAXBResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 JAXBSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.bind.util.JAXBSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+21. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+22. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+23. `String toString()`: This method returns a string representation of this list.
+================================================================
+
+Sample: 2 ValidationEventCollector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.bind.util.ValidationEventCollector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasEvents()`: This method returns true if this collector has collected any events.
+
+2. `List<ValidationEvent> getEvents()`: This method returns a list of all the events collected by this collector.
+
+3. `void clear()`: This method removes all of the events from this collector.
+
+4. `void addValidationEvent(ValidationEvent event)`: This method adds the specified event to this collector.
+
+5. `void addValidationEvent(ValidationEventLocator locator, String msg, Object arg)`: This method adds a new event to this collector.
+
+6. `void addValidationEvent(ValidationEventLocator locator, String msg, Object[] arg)`: This method adds a new event to this collector.
+
+7. `void addValidationEvent(ValidationEventLocator locator, String msg, Object arg1, Object arg2)`: This method adds a new event to this collector.
+
+8. `void addValidationEvent(ValidationEventLocator locator, String msg, Object arg1, Object arg2, Object arg3)`: This method adds a new event to this collector.
+
+9. `void addValidationEvent(ValidationEventLocator locator, String msg, Object arg1, Object arg2, Object arg3, Object arg4)`: This method adds a new event to this collector.
+
+10. `void addValidationEvent(ValidationEventLocator locator, String msg, Object arg1, Object arg2, Object arg3, Object arg4, Object arg5)`: This method adds a new event to this collector.
+================================================================
+

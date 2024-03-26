@@ -1,0 +1,106 @@
+Sample: 0 DefaultColorSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Color getSelectedColor() from javax.swing.colorchooser.DefaultColorSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSelectedColor()` method is not a part of the `DefaultColorSelectionModel` class. It is a part of the `JColorChooser` class.
+
+Here is a complete code snippet of the `getSelectedColor()` method:
+
+```java
+import javax.swing.JColorChooser;
+import java.awt.Color;
+
+public class Main {
+    public static void main(String[] args) {
+        Color selectedColor = JColorChooser.showDialog(null, "Choose a color", Color.BLACK);
+        if (selectedColor!= null) {
+            System.out.println("Selected color: " + selectedColor.toString());
+        } else {
+            System.out.println("No color selected.");
+        }
+    }
+}
+```
+
+In this code, `JColorChooser.showDialog(null, "Choose a color", Color.BLACK)` opens a color chooser dialog with the initial color set to black. The user can then select a color. If the user clicks OK, the selected color is returned. If the user clicks Cancel, `null` is returned.
+================================================================
+
+Sample: 1 DefaultColorSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSelectedColor(Color color) from javax.swing.colorchooser.DefaultColorSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setSelectedColor(Color color)` method is not a part of the `DefaultColorSelectionModel` class. It is a part of the `JColorChooser` class.
+
+Here is a complete code snippet of the `JColorChooser.setSelectedColor(Color color)` method:
+
+```java
+import javax.swing.JColorChooser;
+import java.awt.Color;
+
+public class Main {
+    public static void main(String[] args) {
+        Color color = JColorChooser.showDialog(null, "Choose a color", Color.BLACK);
+        if (color!= null) {
+            System.out.println("Selected color: " + color.toString());
+        }
+    }
+}
+```
+
+In this code snippet, we are using `JColorChooser.showDialog(null, "Choose a color", Color.BLACK)` to show a color chooser dialog. The selected color is then printed to the console.
+
+Please note that the `null` parameter in `JColorChooser.showDialog(null, "Choose a color", Color.BLACK)` is the parent component of the dialog. If you have a specific component, you can pass it instead of `null`.
+================================================================
+

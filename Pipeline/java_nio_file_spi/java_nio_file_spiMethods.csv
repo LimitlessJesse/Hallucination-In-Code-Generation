@@ -1,0 +1,30 @@
+ClassName,Method,Return Type
+FileSystemProvider,"checkAccess(Path path, AccessMode... modes)",abstract void
+FileSystemProvider,"copy(Path source, Path target, CopyOption... options)",abstract void
+FileSystemProvider,"createDirectory(Path dir, FileAttribute<?>... attrs)",abstract void
+FileSystemProvider,"createLink(Path link, Path existing)",void
+FileSystemProvider,"createSymbolicLink(Path link, Path target, FileAttribute<?>... attrs)",void
+FileSystemProvider,delete(Path path),abstract void
+FileSystemProvider,deleteIfExists(Path path),boolean
+FileSystemProvider,"getFileAttributeView(Path path, Class<V> type, LinkOption... options)",abstract <V extends FileAttributeView>V
+FileSystemProvider,getFileStore(Path path),abstract FileStore
+FileSystemProvider,getFileSystem(URI uri),abstract FileSystem
+FileSystemProvider,getPath(URI uri),abstract Path
+FileSystemProvider,getScheme(),abstract String
+FileSystemProvider,installedProviders(),static List<FileSystemProvider>
+FileSystemProvider,isHidden(Path path),abstract boolean
+FileSystemProvider,"isSameFile(Path path, Path path2)",abstract boolean
+FileSystemProvider,"move(Path source, Path target, CopyOption... options)",abstract void
+FileSystemProvider,"newAsynchronousFileChannel(Path path, Set<? extends OpenOption> options, ExecutorService executor, FileAttribute<?>... attrs)",AsynchronousFileChannel
+FileSystemProvider,"newByteChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)",abstract SeekableByteChannel
+FileSystemProvider,"newDirectoryStream(Path dir, DirectoryStream.Filter<? super Path> filter)",abstract DirectoryStream<Path>
+FileSystemProvider,"newFileChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)",FileChannel
+FileSystemProvider,"newFileSystem(Path path, Map<String,?> env)",FileSystem
+FileSystemProvider,"newFileSystem(URI uri, Map<String,?> env)",abstract FileSystem
+FileSystemProvider,"newInputStream(Path path, OpenOption... options)",InputStream
+FileSystemProvider,"newOutputStream(Path path, OpenOption... options)",OutputStream
+FileSystemProvider,"readAttributes(Path path, Class<A> type, LinkOption... options)",abstract <A extends BasicFileAttributes>A
+FileSystemProvider,"readAttributes(Path path, String attributes, LinkOption... options)","abstract Map<String,Object>"
+FileSystemProvider,readSymbolicLink(Path link),Path
+FileSystemProvider,"setAttribute(Path path, String attribute, Object value, LinkOption... options)",abstract void
+FileTypeDetector,probeContentType(Path path),abstract String

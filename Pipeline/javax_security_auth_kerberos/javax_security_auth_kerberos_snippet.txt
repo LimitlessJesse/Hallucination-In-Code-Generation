@@ -1,0 +1,362 @@
+Sample: 0 KerberosPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.security.auth.kerberos.KerberosPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method from `javax.security.auth.kerberos.KerberosPrincipal` is used to get the name of the principal.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        KerberosPrincipal principal = new KerberosPrincipal("name@REALM");
+        System.out.println(principal.getName());
+    }
+}
+```
+
+In this example, we create a new `KerberosPrincipal` with the name "name@REALM" and then call the `getName()` method on it. The result will be printed to the console.
+
+Please note that the `javax.security.auth.kerberos.KerberosPrincipal` class is part of the Java Security API and is not part of the standard Java API. It is likely that the class you are trying to use is part of a different library or framework, and you will need to include that library or framework in your project to use it.
+================================================================
+
+Sample: 1 KerberosPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getRealm() from javax.security.auth.kerberos.KerberosPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getRealm()` method is not a part of the `KerberosPrincipal` class. It is a part of the `javax.security.auth.kerberos.KerberosTicket` class.
+
+Here is a simple example of how you can use the `getRealm()` method from `KerberosTicket`:
+
+```java
+import javax.security.auth.kerberos.KerberosTicket;
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        KerberosTicket ticket = new KerberosTicket();
+        KerberosPrincipal principal = new KerberosPrincipal("test", "realm");
+        ticket.setPrincipal(principal);
+        System.out.println(ticket.getRealm());
+    }
+}
+```
+
+In this example, we create a `KerberosTicket` and a `KerberosPrincipal`. We then set the principal to the ticket and finally print the realm of the ticket.
+
+Please note that the `getRealm()` method is deprecated in the `KerberosTicket` class and it is recommended to use `getRealmName()` method instead.
+================================================================
+
+Sample: 2 KerberosPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object another) from javax.security.auth.kerberos.KerberosPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object another)` method in `KerberosPrincipal` class is used to compare the specified object with this principal for equality.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        KerberosPrincipal principal1 = new KerberosPrincipal("user1", "realm1");
+        KerberosPrincipal principal2 = new KerberosPrincipal("user1", "realm1");
+        KerberosPrincipal principal3 = new KerberosPrincipal("user2", "realm1");
+
+        System.out.println(principal1.equals(principal2)); // true
+        System.out.println(principal1.equals(principal3)); // false
+    }
+}
+```
+
+In this code, we create three `KerberosPrincipal` objects. The first two are equal because they have the same name and realm. The third one is not equal to the first two because they have different names. The `equals()` method is then used to compare these principals and print the results.
+================================================================
+
+Sample: 3 KerberosPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.security.auth.kerberos.KerberosPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `KerberosPrincipal` class is not a standard Java method. It is a part of the Kerberos protocol and is used to generate a unique hash code for a Kerberos principal.
+
+Here is an example of how you can use it:
+
+```java
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        KerberosPrincipal principal = new KerberosPrincipal("test/test@EXAMPLE.COM");
+        int hashCode = principal.hashCode();
+        System.out.println("Hash code: " + hashCode);
+    }
+}
+```
+
+In this example, we create a new `KerberosPrincipal` object with a name "test/test@EXAMPLE.COM". Then we call the `hashCode()` method on this principal and print the result.
+
+Please note that the `hashCode()` method in `KerberosPrincipal` class is not a standard Java method. It is a part of the Kerberos protocol and is used to generate a unique hash code for a Kerberos principal.
+================================================================
+
+Sample: 4 ServicePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object obj) from javax.security.auth.kerberos.ServicePermission
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object obj)` method in `ServicePermission` class is used to compare the equality of two `ServicePermission` objects. It returns `true` if the given object is also a `ServicePermission` object and it has the same principal name and actions as this `ServicePermission` object.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.security.auth.kerberos.ServicePermission;
+
+public class Main {
+    public static void main(String[] args) {
+        ServicePermission permission1 = new ServicePermission("service1", "connect,listen");
+        ServicePermission permission2 = new ServicePermission("service1", "connect,listen");
+        ServicePermission permission3 = new ServicePermission("service2", "connect,listen");
+
+        System.out.println(permission1.equals(permission2)); // true
+        System.out.println(permission1.equals(permission3)); // false
+    }
+}
+```
+
+In this code, `permission1` and `permission2` are the same `ServicePermission` object, so `equals(Object obj)` returns `true`. `permission1` and `permission3` are different `ServicePermission` objects, so `equals(Object obj)` returns `false`.
+================================================================
+
+Sample: 5 ServicePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.security.auth.kerberos.ServicePermission
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `ServicePermission` class is not a standard Java method. It is a part of the Kerberos API and is used to generate a hash code for the service permission.
+
+Here is an example of how you can use it:
+
+```java
+import javax.security.auth.kerberos.ServicePermission;
+
+public class Main {
+    public static void main(String[] args) {
+        ServicePermission servicePermission = new ServicePermission("serviceName", "actions");
+        int hashCode = servicePermission.hashCode();
+        System.out.println("Hash code: " + hashCode);
+    }
+}
+```
+
+In this example, we create a new `ServicePermission` object with the service name "serviceName" and the actions "actions". Then we call the `hashCode()` method on this object and print the result.
+
+Please note that the `hashCode()` method in `ServicePermission` class is not a standard Java method. It is a part of the Kerberos API and is used to generate a hash code for the service permission. The actual behavior of the `hashCode()` method in `ServicePermission` class is not specified in the Java documentation and may change between different versions of the Java runtime environment.
+================================================================
+
+Sample: 6 ServicePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getActions() from javax.security.auth.kerberos.ServicePermission
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getActions()` method in `ServicePermission` class is used to get the actions associated with the `ServicePermission` object. It returns a string array of actions.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.security.auth.kerberos.ServicePermission;
+
+public class Main {
+    public static void main(String[] args) {
+        ServicePermission servicePermission = new ServicePermission("service/host@REALM", "connect,getAttr");
+        String[] actions = servicePermission.getActions();
+        for (String action : actions) {
+            System.out.println(action);
+        }
+    }
+}
+```
+
+In this code snippet, we create a `ServicePermission` object with the service name "service/host@REALM" and actions "connect,getAttr". Then we call the `getActions()` method on this object, which returns a string array of actions. We then print each action to the console.
+
+Please note that the `ServicePermission` class is part of the `javax.security.auth.kerberos` package, which is not part of the standard Java API. You may need to add the necessary dependencies to your project to use this class.
+================================================================
+

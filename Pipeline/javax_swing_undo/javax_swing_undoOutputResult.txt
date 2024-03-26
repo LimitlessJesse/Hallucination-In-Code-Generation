@@ -1,0 +1,121 @@
+Sample: AbstractUndoableEdit_1
+----------------------------------------------------------------
+stdout:
+Undoing changes...
+
+================================================================
+
+Sample: AbstractUndoableEdit_2
+----------------------------------------------------------------
+output:
+./javax_swing_undo/javaFiles/AbstractUndoableEdit_2.java:4: error: class MyUndoableEdit is public, should be declared in a file named MyUndoableEdit.java
+public class MyUndoableEdit extends AbstractUndoableEdit {
+       ^
+1 error
+
+
+================================================================
+
+Sample: AbstractUndoableEdit_3
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: AbstractUndoableEdit_4
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: AbstractUndoableEdit_5
+----------------------------------------------------------------
+stdout:
+My Undoable Edit
+
+================================================================
+
+Sample: StateEdit_3
+----------------------------------------------------------------
+output:
+./javax_swing_undo/javaFiles/StateEdit_3.java:5: error: no suitable constructor found for StateEdit(no arguments)
+        StateEdit stateEdit = new StateEdit() {
+                              ^
+    constructor StateEdit.StateEdit(StateEditable) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor StateEdit.StateEdit(StateEditable,String) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: StateEdit_4
+----------------------------------------------------------------
+output:
+./javax_swing_undo/javaFiles/StateEdit_4.java:5: error: no suitable constructor found for StateEdit(no arguments)
+        StateEdit stateEdit = new StateEdit() {
+                              ^
+    constructor StateEdit.StateEdit(StateEditable) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor StateEdit.StateEdit(StateEditable,String) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: UndoManager_1
+----------------------------------------------------------------
+output:
+./javax_swing_undo/javaFiles/UndoManager_1.java:9: error: cannot find symbol
+        undoManager.edit();
+                   ^
+  symbol:   method edit()
+  location: variable undoManager of type UndoManager
+./javax_swing_undo/javaFiles/UndoManager_1.java:13: error: cannot find symbol
+        UndoableEdit lastEdit = undoManager.getUndoableEdit();
+                                           ^
+  symbol:   method getUndoableEdit()
+  location: variable undoManager of type UndoManager
+2 errors
+
+
+================================================================
+
+Sample: UndoManager_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" javax.swing.undo.CannotUndoException
+	at java.desktop/javax.swing.undo.UndoManager.tryUndoOrRedo(UndoManager.java:468)
+	at java.desktop/javax.swing.undo.UndoManager.undo(UndoManager.java:416)
+	at UndoManager_2.main(UndoManager_2.java:6)
+
+================================================================
+
+Sample: UndoManager_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" javax.swing.undo.CannotUndoException
+	at java.desktop/javax.swing.undo.UndoManager.tryUndoOrRedo(UndoManager.java:468)
+	at java.desktop/javax.swing.undo.UndoManager.undo(UndoManager.java:416)
+	at UndoManager_3.main(UndoManager_3.java:6)
+
+================================================================
+
+Sample: UndoManager_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" javax.swing.undo.CannotUndoException
+	at java.desktop/javax.swing.undo.UndoManager.tryUndoOrRedo(UndoManager.java:468)
+	at java.desktop/javax.swing.undo.UndoManager.undo(UndoManager.java:416)
+	at UndoManager_4.main(UndoManager_4.java:6)
+
+================================================================
+
+Sample: UndoManager_5
+----------------------------------------------------------------
+================================================================
+

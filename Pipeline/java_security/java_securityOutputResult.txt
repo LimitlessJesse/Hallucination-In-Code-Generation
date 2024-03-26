@@ -1,0 +1,421 @@
+Sample: BasicPermission_1
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/BasicPermission_1.java:6: error: BasicPermission is abstract; cannot be instantiated
+        BasicPermission permission1 = new BasicPermission("test");
+                                      ^
+./java_security/javaFiles/BasicPermission_1.java:7: error: BasicPermission is abstract; cannot be instantiated
+        Permission permission2 = new BasicPermission("test");
+                                 ^
+2 errors
+
+
+================================================================
+
+Sample: BasicPermission_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/BasicPermission_2.java:5: error: BasicPermission is abstract; cannot be instantiated
+        BasicPermission permission1 = new BasicPermission("permission1");
+                                      ^
+./java_security/javaFiles/BasicPermission_2.java:6: error: BasicPermission is abstract; cannot be instantiated
+        BasicPermission permission2 = new BasicPermission("permission2");
+                                      ^
+2 errors
+
+
+================================================================
+
+Sample: BasicPermission_3
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/BasicPermission_3.java:5: error: BasicPermission is abstract; cannot be instantiated
+        BasicPermission permission = new BasicPermission("test");
+                                     ^
+./java_security/javaFiles/BasicPermission_3.java:6: error: incompatible types: String cannot be converted to String[]
+        String[] actions = permission.getActions();
+                                                ^
+2 errors
+
+
+================================================================
+
+Sample: BasicPermission_4
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/BasicPermission_4.java:5: error: BasicPermission is abstract; cannot be instantiated
+        BasicPermission permission = new BasicPermission("permissionName");
+                                     ^
+1 error
+
+
+================================================================
+
+Sample: CodeSource_1
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/CodeSource_1.java:7: error: cannot find symbol
+            CodeSource codeSource = Main.class.getProtectionDomain().getCodeSource();
+                                    ^
+  symbol:   class Main
+  location: class CodeSource_1
+1 error
+
+
+================================================================
+
+Sample: CodeSource_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/CodeSource_2.java:12: error: no suitable constructor found for CodeSource(JarFile,Certificate[])
+        CodeSource codeSource1 = new CodeSource(new JarFile("file1.jar"), (Certificate[]) null);
+                                 ^
+    constructor CodeSource.CodeSource(URL,Certificate[]) is not applicable
+      (argument mismatch; JarFile cannot be converted to URL)
+    constructor CodeSource.CodeSource(URL,CodeSigner[]) is not applicable
+      (argument mismatch; JarFile cannot be converted to URL)
+./java_security/javaFiles/CodeSource_2.java:13: error: no suitable constructor found for CodeSource(JarFile,Certificate[])
+        CodeSource codeSource2 = new CodeSource(new JarFile("file2.jar"), (Certificate[]) null);
+                                 ^
+    constructor CodeSource.CodeSource(URL,Certificate[]) is not applicable
+      (argument mismatch; JarFile cannot be converted to URL)
+    constructor CodeSource.CodeSource(URL,CodeSigner[]) is not applicable
+      (argument mismatch; JarFile cannot be converted to URL)
+2 errors
+
+
+================================================================
+
+Sample: CodeSource_3
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/CodeSource_3.java:7: error: cannot find symbol
+            CodeSource codeSource = Main.class.getProtectionDomain().getCodeSource();
+                                    ^
+  symbol:   class Main
+  location: class CodeSource_3
+1 error
+
+
+================================================================
+
+Sample: CodeSource_4
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/CodeSource_4.java:8: error: cannot find symbol
+            CodeSource codeSource = Main.class.getProtectionDomain().getCodeSource();
+                                    ^
+  symbol:   class Main
+  location: class CodeSource_4
+1 error
+
+
+================================================================
+
+Sample: CodeSource_5
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/CodeSource_5.java:6: error: Permission is abstract; cannot be instantiated
+            Permission permission = new Permission("test.permission");
+                                    ^
+./java_security/javaFiles/CodeSource_5.java:7: error: cannot find symbol
+            CodeSource codeSource = new CodeSource(new File("test.jar"), (java.util.jar.Manifest) null);
+                                                       ^
+  symbol:   class File
+  location: class CodeSource_5
+./java_security/javaFiles/CodeSource_5.java:8: error: incompatible types: CodeSource cannot be converted to Permission
+            System.out.println(permission.implies(codeSource));
+                                                  ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: DigestInputStream_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/DigestInputStream_2.java:20: error: unreported exception IOException; must be caught or declared to be thrown
+            while ((data = dis.read())!= -1) {
+                                   ^
+1 error
+
+
+================================================================
+
+Sample: DigestInputStream_4
+----------------------------------------------------------------
+stdout:
+��`!�+հ�gb���å1�݁��
+K(h�6!��o
+
+================================================================
+
+Sample: DigestOutputStream_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+Digest: ��`!�+հ�gb���å1�݁��
+K(h�6!��o
+
+================================================================
+
+Sample: DigestOutputStream_4
+----------------------------------------------------------------
+stdout:
+Hello, World!
+Digest: ��`!�+հ�gb���å1�݁��
+K(h�6!��o
+
+================================================================
+
+Sample: KeyPairGenerator_2
+----------------------------------------------------------------
+================================================================
+
+Sample: KeyPairGenerator_3
+----------------------------------------------------------------
+stdout:
+Public Key: Sun RSA public key, 2048 bits
+  params: null
+  modulus: 17176345147594597415849657214270479956005498716680860188377641465117759321237510212814296022722823675719384642677003755817644899230329566150575429712388297992011841662538267779670104423780654907522146521999843868379386399421419038197993721393377353343508338856672155361242324029059132048643079427632894349373647692847659520573766037032589834813910896729085135274260281753757828609379054306018815475652449408738094073775226982914610094693337287081459847496056917813749983997574655205144338006660541404180306950685996696308656187001717150342390156290787132401867191024870461555911477954955056951757080171669975921059133
+  public exponent: 65537
+Private Key: SunRsaSign RSA private CRT key, 2048 bits
+  params: null
+  modulus: 17176345147594597415849657214270479956005498716680860188377641465117759321237510212814296022722823675719384642677003755817644899230329566150575429712388297992011841662538267779670104423780654907522146521999843868379386399421419038197993721393377353343508338856672155361242324029059132048643079427632894349373647692847659520573766037032589834813910896729085135274260281753757828609379054306018815475652449408738094073775226982914610094693337287081459847496056917813749983997574655205144338006660541404180306950685996696308656187001717150342390156290787132401867191024870461555911477954955056951757080171669975921059133
+  private exponent: 2384067376216400741463240716688457221413919146074544832744514023947444919139371830429608370396847056871406722952093697679100459676956420014475935675705939433973720458417067501682547338006328140840673296570968761901110645625172624333857971629077575944721662639573344236744751827674998774440114317308735881243801239108799538275429713302212094491965382900880104716212470375766345566777863329319400426039052322118363596599786384335844545117589078534393312982600727159839728526519022005444982436378239005734378087769653118866832306898432476824219364135900436099104047002094824173689381970053629127500157541053658261164703
+
+================================================================
+
+Sample: KeyPairGenerator_4
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/KeyPairGenerator_4.java:16: error: unreported exception InvalidAlgorithmParameterException; must be caught or declared to be thrown
+            keyPairGenerator.initialize(ecSpec);
+                                       ^
+1 error
+
+
+================================================================
+
+Sample: KeyStore_PasswordProtection_5
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/KeyStore_PasswordProtection_5.java:8: error: incompatible types: char[] cannot be converted to byte[]
+        keyStore.setKeyEntry("alias", "secret".toCharArray(), passwordProtection);
+                                                          ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: KeyStore_PrivateKeyEntry_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/KeyStore_PrivateKeyEntry_2.java:11: error: unreported exception IOException; must be caught or declared to be thrown
+            keyStore.load(null, null);
+                         ^
+./java_security/javaFiles/KeyStore_PrivateKeyEntry_2.java:12: error: unreported exception UnrecoverableEntryException; must be caught or declared to be thrown
+            KeyStore.PrivateKeyEntry privateKeyEntry = (KeyStore.PrivateKeyEntry) keyStore.getEntry("alias", new KeyStore.PasswordProtection("password".toCharArray()));
+                                                                                                   ^
+2 errors
+
+
+================================================================
+
+Sample: KeyStore_PrivateKeyEntry_3
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/KeyStore_PrivateKeyEntry_3.java:16: error: unreported exception UnrecoverableEntryException; must be caught or declared to be thrown
+            KeyStore.PrivateKeyEntry pkEntry = (KeyStore.PrivateKeyEntry) ks.getEntry("alias", new KeyStore.PasswordProtection("password".toCharArray()));
+                                                                                     ^
+1 error
+
+
+================================================================
+
+Sample: MessageDigest_2
+----------------------------------------------------------------
+stdout:
+65a8e27d8879283831b664bd8b7f0ad4
+================================================================
+
+Sample: MessageDigest_3
+----------------------------------------------------------------
+stdout:
+��`!�+հ�gb���å1�݁��
+K(h�6!��o
+��`!�+հ�gb���å1�݁��
+K(h�6!��o
+
+================================================================
+
+Sample: MessageDigest_4
+----------------------------------------------------------------
+stdout:
+Algorithm: SHA-256
+
+================================================================
+
+Sample: MessageDigest_5
+----------------------------------------------------------------
+stdout:
+Digest length: 32
+
+================================================================
+
+Sample: Permission_1
+----------------------------------------------------------------
+stdout:
+false
+false
+
+================================================================
+
+Sample: Permission_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/Permission_2.java:5: error: Permission is abstract; cannot be instantiated
+        Permission permission1 = new Permission("permission1");
+                                 ^
+./java_security/javaFiles/Permission_2.java:6: error: Permission is abstract; cannot be instantiated
+        Permission permission2 = new Permission("permission2");
+                                 ^
+2 errors
+
+
+================================================================
+
+Sample: Permission_3
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/Permission_3.java:5: error: <anonymous Permission_3$1> is not abstract and does not override abstract method getActions() in Permission
+        Permission permission = new Permission("permissionName") {
+                                                                 ^
+1 error
+
+
+================================================================
+
+Sample: Permission_4
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/Permission_4.java:8: error: for-each not applicable to expression type
+        for (Permission permission : permissions) {
+                                     ^
+  required: array or java.lang.Iterable
+  found:    Permissions
+1 error
+
+
+================================================================
+
+Sample: Permission_5
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/Permission_5.java:7: error: incompatible types: Permissions cannot be converted to Permission
+        Permission permission = new Permissions();
+                                ^
+./java_security/javaFiles/Permission_5.java:8: error: cannot find symbol
+        permission.add(new java.io.FilePermission("/home/user/", "read"));
+                  ^
+  symbol:   method add(FilePermission)
+  location: variable permission of type Permission
+2 errors
+
+
+================================================================
+
+Sample: PermissionCollection_1
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Permissions_1
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: PKCS12Attribute_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: Incorrect format: name
+	at java.base/java.security.PKCS12Attribute.<init>(PKCS12Attribute.java:81)
+	at PKCS12Attribute_5.main(PKCS12Attribute_5.java:5)
+Caused by: java.io.IOException: ObjectIdentifier() -- Invalid format: java.lang.NumberFormatException: For input string: "attr1"
+	at java.base/sun.security.util.ObjectIdentifier.<init>(ObjectIdentifier.java:244)
+	at java.base/sun.security.util.ObjectIdentifier.of(ObjectIdentifier.java:299)
+	at java.base/java.security.PKCS12Attribute.<init>(PKCS12Attribute.java:79)
+	at PKCS12Attribute_5.main(PKCS12Attribute_5.java:5)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+Caused by: java.lang.NumberFormatException: For input string: "attr1"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at java.base/sun.security.util.ObjectIdentifier.<init>(ObjectIdentifier.java:216)
+	... 10 more
+
+================================================================
+
+Sample: Provider_3
+----------------------------------------------------------------
+stdout:
+value
+null
+
+================================================================
+
+Sample: SecureRandom_2
+----------------------------------------------------------------
+================================================================
+
+Sample: SecureRandom_3
+----------------------------------------------------------------
+stdout:
+Random number: -1940112468
+
+================================================================
+
+Sample: SecureRandom_4
+----------------------------------------------------------------
+stdout:
+-69 97 -54 -103 -28 -32 49 -50 -29 -32 
+================================================================
+
+Sample: SignedObject_2
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/SignedObject_2.java:25: error: incompatible types: byte[] cannot be converted to PrivateKey
+        SignedObject signedObject = new SignedObject(data, signatureBytes, publicKey);
+                                                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: SignedObject_3
+----------------------------------------------------------------
+output:
+./java_security/javaFiles/SignedObject_3.java:23: error: constructor SignedObject in class SignedObject cannot be applied to given types;
+        SignedObject signedObject = new SignedObject(signedBytes, signature);
+                                    ^
+  required: Serializable,PrivateKey,Signature
+  found:    byte[],Signature
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+

@@ -1,0 +1,260 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Annotation,1,boolean add(E e),False
+0,Annotation,2,"void add(int index, E element)",False
+0,Annotation,3,boolean addAll(Collection<? extends E> c),False
+0,Annotation,4,"boolean addAll(int index, Collection<? extends E> c)",False
+0,Annotation,5,void clear(),False
+1,AttributedCharacterIterator.Attribute,1,Attribute,False
+1,AttributedCharacterIterator.Attribute,2,CharacterIterator,False
+1,AttributedCharacterIterator.Attribute,3,CharacterIterator.Attribute,False
+1,AttributedCharacterIterator.Attribute,4,CharacterIterator.AttributeKey,False
+1,AttributedCharacterIterator.Attribute,5,CharacterIterator.AttributeMap,False
+2,AttributedString,1,boolean add(E e),False
+2,AttributedString,2,"void add(int index, E element)",False
+2,AttributedString,3,boolean addAll(Collection<? extends E> c),False
+2,AttributedString,4,"boolean addAll(int index, Collection<? extends E> c)",False
+2,AttributedString,5,void clear(),False
+3,Bidi,1,boolean isOdd(),False
+3,Bidi,2,boolean isMirrored(),False
+3,Bidi,3,boolean isValid(),False
+3,Bidi,4,boolean isReversed(),False
+3,Bidi,5,boolean isPaired(),False
+4,BreakIterator,1,int first(),True
+4,BreakIterator,2,int last(),True
+4,BreakIterator,3,int next(int position),True
+4,BreakIterator,4,int previous(int position),False
+4,BreakIterator,5,int following(int position),True
+4,BreakIterator,6,int preceding(int position),True
+4,BreakIterator,7,"int following(int position, int limit)",False
+4,BreakIterator,8,"int preceding(int position, int limit)",False
+4,BreakIterator,9,int current(),True
+4,BreakIterator,10,int next(),True
+4,BreakIterator,11,int previous(),True
+4,BreakIterator,12,int following(),False
+4,BreakIterator,13,int preceding(),False
+4,BreakIterator,14,int following(int limit),True
+4,BreakIterator,15,int preceding(int limit),True
+4,BreakIterator,16,int next(int limit),True
+4,BreakIterator,17,int previous(int limit),False
+4,BreakIterator,18,"int next(int position, int limit)",False
+4,BreakIterator,19,"int previous(int position, int limit)",False
+4,BreakIterator,20,"int following(int position, int limit)",False
+4,BreakIterator,21,"int preceding(int position, int limit)",False
+5,ChoiceFormat,1,ChoiceFormat(String pattern),False
+5,ChoiceFormat,2,"String format(double[] limits, String[] choices, int[] choiceIndex)",False
+5,ChoiceFormat,3,"String format(double[] limits, String[] choices)",False
+5,ChoiceFormat,4,String format(double d),False
+5,ChoiceFormat,5,String toString(),False
+6,CollationElementIterator,1,boolean hasNext(),False
+6,CollationElementIterator,2,CollationElementIterator next(),False
+6,CollationElementIterator,3,int getOffset(),True
+6,CollationElementIterator,4,int getLimit(),False
+6,CollationElementIterator,5,int getSourceLength(),False
+7,CollationKey,1,CollationKey getCollationKey(String source),False
+7,CollationKey,2,"int compare(CollationKey key1, CollationKey key2)",False
+7,CollationKey,3,"int compare(String source1, CollationKey key2)",False
+7,CollationKey,4,"int compare(CollationKey key1, String source2)",False
+7,CollationKey,5,"int compare(String source1, String source2)",False
+8,Collator,1,"int compare(Object o1, Object o2)",True
+8,Collator,2,"int compare(String source, String target)",True
+8,Collator,3,"int compare(String[] source, String[] target)",False
+8,Collator,4,int getDecomposition(int character),False
+8,Collator,5,int getStrength(),True
+8,Collator,6,int hashCode(),True
+8,Collator,7,boolean equals(Object anObject),True
+8,Collator,8,String toString(),False
+8,Collator,9,int getCollationKey(String source),False
+8,Collator,10,"int getCollationKey(String source, int offset, int count)",False
+8,Collator,11,"int getCollationKey(char[] source, int offset, int count)",False
+8,Collator,12,int getCollationKey(char[] source),False
+8,Collator,13,"int getCollationKey(String source, int offset, int count, CollationKey key)",False
+8,Collator,14,"int getCollationKey(char[] source, int offset, int count, CollationKey key)",False
+8,Collator,15,"int getCollationKey(char[] source, CollationKey key)",False
+8,Collator,16,"int getCollationKey(String source, CollationKey key)",False
+8,Collator,17,"int getCollationKey(String source, int offset, int count, CollationKey key, int keyOffset)",False
+8,Collator,18,"int getCollationKey(char[] source, int offset, int count, CollationKey key, int keyOffset)",False
+8,Collator,19,"int getCollationKey(char[] source, CollationKey key, int keyOffset)",False
+8,Collator,20,"int getCollationKey(String source, CollationKey key, int keyOffset)",False
+9,DateFormat,1,DateFormat getDateInstance(),True
+9,DateFormat,2,DateFormat getDateInstance(int style),True
+9,DateFormat,3,"DateFormat getDateInstance(int style, Locale locale)",True
+9,DateFormat,4,DateFormat getDateTimeInstance(),True
+9,DateFormat,5,"DateFormat getDateTimeInstance(int dateStyle, int timeStyle)",True
+9,DateFormat,6,"DateFormat getDateTimeInstance(int dateStyle, int timeStyle, Locale locale)",True
+9,DateFormat,7,DateFormat getTimeInstance(),True
+9,DateFormat,8,DateFormat getTimeInstance(int style),True
+9,DateFormat,9,"DateFormat getTimeInstance(int style, Locale locale)",True
+9,DateFormat,10,DateFormat getInstance(),True
+9,DateFormat,11,DateFormat getInstance(Locale locale),False
+9,DateFormat,12,DateFormat getInstance(String pattern),False
+9,DateFormat,13,"DateFormat getInstance(String pattern, Locale locale)",False
+9,DateFormat,14,DateFormat getInstance(DateFormat.Field field),False
+9,DateFormat,15,"DateFormat getInstance(DateFormat.Field field, Locale locale)",False
+10,DateFormat.Field,1,boolean isLenient(),False
+10,DateFormat.Field,2,void setLenient(boolean lenient),False
+10,DateFormat.Field,3,int getCalendarType(),False
+10,DateFormat.Field,4,void setCalendar(Calendar newCalendar),False
+10,DateFormat.Field,5,"StringBuffer format(Date date, StringBuffer toAppendTo, FieldPosition fieldPosition)",False
+11,DateFormatSymbols,1,getMonths(),False
+11,DateFormatSymbols,2,getShortMonths(),False
+11,DateFormatSymbols,3,getShortWeekdays(),False
+11,DateFormatSymbols,4,getWeekdays(),False
+11,DateFormatSymbols,5,getEras(),False
+12,DecimalFormat,1,DecimalFormat(String pattern),False
+12,DecimalFormat,2,String format(double number),False
+12,DecimalFormat,3,String format(long number),False
+12,DecimalFormat,4,String format(BigDecimal number),False
+12,DecimalFormat,5,Number parse(String source),False
+13,DecimalFormatSymbols,1,DecimalFormatSymbols(),False
+13,DecimalFormatSymbols,2,getDecimalSeparator(),False
+13,DecimalFormatSymbols,3,getExponentSeparator(),False
+13,DecimalFormatSymbols,4,getGroupingSeparator(),False
+13,DecimalFormatSymbols,5,getInfinity(),False
+13,DecimalFormatSymbols,6,getNaN(),False
+13,DecimalFormatSymbols,7,getZeroDigit(),False
+13,DecimalFormatSymbols,8,setDecimalSeparator(char newValue),False
+13,DecimalFormatSymbols,9,setExponentSeparator(char newValue),False
+13,DecimalFormatSymbols,10,setGroupingSeparator(char newValue),False
+13,DecimalFormatSymbols,11,setInfinity(String newValue),False
+13,DecimalFormatSymbols,12,setNaN(String newValue),False
+13,DecimalFormatSymbols,13,setZeroDigit(char newValue),False
+14,FieldPosition,1,int getBeginIndex(),True
+14,FieldPosition,2,int getEndIndex(),True
+14,FieldPosition,3,void setBeginIndex(int newBeginIndex),True
+14,FieldPosition,4,void setEndIndex(int newEndIndex),True
+14,FieldPosition,5,void setFieldAttribute(Object newAttribute),False
+14,FieldPosition,6,Object getFieldAttribute(),False
+14,FieldPosition,7,void setBeginIndex(int newBeginIndex),True
+14,FieldPosition,8,void setEndIndex(int newEndIndex),True
+14,FieldPosition,9,void setFieldAttribute(Object newAttribute),False
+14,FieldPosition,10,Object getFieldAttribute(),False
+15,Format,1,String format(Object obj),True
+15,Format,2,"String format(Locale l, Object obj)",False
+15,Format,3,"String format(String format, Object... args)",False
+15,Format,4,"String format(Locale l, String format, Object... args)",False
+15,Format,5,"void format(Formatter f, Object obj)",False
+16,Format.Field,1,boolean add(E e),False
+16,Format.Field,2,"void add(int index, E element)",False
+16,Format.Field,3,boolean addAll(Collection<? extends E> c),False
+16,Format.Field,4,"boolean addAll(int index, Collection<? extends E> c)",False
+16,Format.Field,5,void clear(),False
+17,MessageFormat,1,"String format(String pattern, Object... arguments)",True
+17,MessageFormat,2,"String format(Locale l, String pattern, Object... arguments)",False
+17,MessageFormat,3,"StringBuffer format(StringBuffer sbuf, String pattern, Object... arguments)",False
+17,MessageFormat,4,"StringBuffer format(Locale l, StringBuffer sbuf, String pattern, Object... arguments)",False
+17,MessageFormat,5,"StringBuffer format(Formatter f, String pattern, Object... arguments)",False
+18,MessageFormat.Field,1,boolean add(E e),False
+18,MessageFormat.Field,2,"void add(int index, E element)",False
+18,MessageFormat.Field,3,boolean addAll(Collection<? extends E> c),False
+18,MessageFormat.Field,4,"boolean addAll(int index, Collection<? extends E> c)",False
+18,MessageFormat.Field,5,void clear(),False
+19,Normalizer,1,"String normalize(String src, Form form)",False
+19,Normalizer,2,"String[] decompose(String src, Form form)",False
+19,Normalizer,3,"String compose(String[] src, Form form)",False
+19,Normalizer,4,String stripCombiningMarks(String src),False
+19,Normalizer,5,String stripAccents(String src),False
+20,NumberFormat,1,NumberFormat getInstance(),True
+20,NumberFormat,2,NumberFormat getInstance(Locale inLocale),True
+20,NumberFormat,3,String format(double number),True
+20,NumberFormat,4,String format(long number),True
+20,NumberFormat,5,Number parse(String source),True
+21,NumberFormat.Field,1,boolean isGroupingUsed(),False
+21,NumberFormat.Field,2,void setGroupingUsed(boolean newValue),False
+21,NumberFormat.Field,3,String getCurrency(),False
+21,NumberFormat.Field,4,void setCurrency(String newCurrency),False
+21,NumberFormat.Field,5,String getPercent(),False
+21,NumberFormat.Field,6,void setPercent(String newPercent),False
+21,NumberFormat.Field,7,String getZeroDigit(),False
+21,NumberFormat.Field,8,void setZeroDigit(String newZeroDigit),False
+21,NumberFormat.Field,9,String getMinusSign(),False
+21,NumberFormat.Field,10,void setMinusSign(String newMinusSign),False
+21,NumberFormat.Field,11,String getPlusSign(),False
+21,NumberFormat.Field,12,void setPlusSign(String newPlusSign),False
+21,NumberFormat.Field,13,String getNaNStr(),False
+21,NumberFormat.Field,14,void setNaNStr(String newNaNStr),False
+21,NumberFormat.Field,15,String getInfinity(),False
+21,NumberFormat.Field,16,void setInfinity(String newInfinity),False
+21,NumberFormat.Field,17,String getParsedIntegerDigitsPattern(),False
+21,NumberFormat.Field,18,void setParsedIntegerDigitsPattern(String newPattern),False
+21,NumberFormat.Field,19,String getParsedFractionDigitsPattern(),False
+21,NumberFormat.Field,20,void setParsedFractionDigitsPattern(String newPattern),False
+21,NumberFormat.Field,21,String getParsedSignificantDigitsPattern(),False
+21,NumberFormat.Field,22,void setParsedSignificantDigitsPattern(String newPattern),False
+21,NumberFormat.Field,23,String getParsedIntegerPattern(),False
+21,NumberFormat.Field,24,void setParsedIntegerPattern(String newPattern),False
+21,NumberFormat.Field,25,String getParsedFractionPattern(),False
+21,NumberFormat.Field,26,void setParsedFractionPattern(String newPattern),False
+21,NumberFormat.Field,27,String getParsedSignificantPattern(),False
+21,NumberFormat.Field,28,void setParsedSignificantPattern(String newPattern),False
+21,NumberFormat.Field,29,String getParsedPattern(),False
+21,NumberFormat.Field,30,void setParsedPattern(String newPattern),False
+22,ParsePosition,1,boolean hasError(),False
+22,ParsePosition,2,int getErrorIndex(),True
+22,ParsePosition,3,void setErrorIndex(int errorIndex),True
+22,ParsePosition,4,void setIndex(int index),True
+22,ParsePosition,5,int getIndex(),True
+22,ParsePosition,6,void setError(ParseException e),False
+22,ParsePosition,7,ParseException getError(),False
+22,ParsePosition,8,void setParsedString(String parsedString),False
+22,ParsePosition,9,String getParsedString(),False
+22,ParsePosition,10,void setSource(CharSequence source),False
+22,ParsePosition,11,CharSequence getSource(),False
+22,ParsePosition,12,void setText(CharSequence text),False
+22,ParsePosition,13,CharSequence getText(),False
+22,ParsePosition,14,void setEndIndex(int endIndex),False
+22,ParsePosition,15,int getEndIndex(),False
+22,ParsePosition,16,void setBeginIndex(int beginIndex),False
+22,ParsePosition,17,int getBeginIndex(),False
+22,ParsePosition,18,void setIndexLimit(int indexLimit),False
+22,ParsePosition,19,int getIndexLimit(),False
+22,ParsePosition,20,void setSourceLimit(int sourceLimit),False
+22,ParsePosition,21,int getSourceLimit(),False
+22,ParsePosition,22,void setSourceOffset(int sourceOffset),False
+22,ParsePosition,23,int getSourceOffset(),False
+22,ParsePosition,24,void setErrorOnMismatch(boolean errorOnMismatch),False
+22,ParsePosition,25,boolean getErrorOnMismatch(),False
+23,RuleBasedCollator,1,boolean add(E e),False
+23,RuleBasedCollator,2,"void add(int index, E element)",False
+23,RuleBasedCollator,3,boolean addAll(Collection<? extends E> c),False
+23,RuleBasedCollator,4,"boolean addAll(int index, Collection<? extends E> c)",False
+23,RuleBasedCollator,5,void clear(),False
+24,SimpleDateFormat,1,final String format(Date date),False
+24,SimpleDateFormat,2,final Date parse(String source),False
+24,SimpleDateFormat,3,final void applyPattern(String pattern),False
+24,SimpleDateFormat,4,final String toPattern(),False
+24,SimpleDateFormat,5,final boolean isLenient(),False
+25,StringCharacterIterator,1,char first(),True
+25,StringCharacterIterator,2,char last(),True
+25,StringCharacterIterator,3,char setIndex(int position),True
+25,StringCharacterIterator,4,char getBeginIndex(),False
+25,StringCharacterIterator,5,char getEndIndex(),False
+25,StringCharacterIterator,6,char getIndex(),False
+25,StringCharacterIterator,7,char next(),True
+25,StringCharacterIterator,8,char previous(),True
+25,StringCharacterIterator,9,char current(),True
+25,StringCharacterIterator,10,char getChar(),False
+25,StringCharacterIterator,11,char setChar(char ch),False
+25,StringCharacterIterator,12,char getBeginIndex(),False
+25,StringCharacterIterator,13,char getEndIndex(),False
+25,StringCharacterIterator,14,char getIndex(),False
+25,StringCharacterIterator,15,char next(),True
+25,StringCharacterIterator,16,char previous(),True
+25,StringCharacterIterator,17,char current(),True
+25,StringCharacterIterator,18,char getChar(),False
+25,StringCharacterIterator,19,char setChar(char ch),False
+25,StringCharacterIterator,20,char getBeginIndex(),False
+25,StringCharacterIterator,21,char getEndIndex(),False
+25,StringCharacterIterator,22,char getIndex(),False
+25,StringCharacterIterator,23,char next(),True
+25,StringCharacterIterator,24,char previous(),True
+25,StringCharacterIterator,25,char current(),True
+25,StringCharacterIterator,26,char getChar(),False
+25,StringCharacterIterator,27,char setChar(char ch),False
+25,StringCharacterIterator,28,char getBeginIndex(),False
+25,StringCharacterIterator,29,char getEndIndex(),False
+25,StringCharacterIterator,30,char getIndex(),False
+25,StringCharacterIterator,31,char next(),True
+25,StringCharacterIterator,32,char previous(),True
+25,StringCharacterIterator,33,char current(),True
+25,StringCharacterIterator,34,char getChar(),False
+25,StringCharacterIterator,35,char setChar(char ch),False

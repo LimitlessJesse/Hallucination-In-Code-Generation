@@ -1,0 +1,46 @@
+ClassName,Method,Return Type
+DiagnosticCollector,getDiagnostics(),List<Diagnostic<? extends S>>
+DiagnosticCollector,report(Diagnostic<? extends S> diagnostic),void
+ForwardingFileObject,delete(),boolean
+ForwardingFileObject,getCharContent(boolean ignoreEncodingErrors),CharSequence
+ForwardingFileObject,getLastModified(),long
+ForwardingFileObject,getName(),String
+ForwardingFileObject,openInputStream(),InputStream
+ForwardingFileObject,openOutputStream(),OutputStream
+ForwardingFileObject,openReader(boolean ignoreEncodingErrors),Reader
+ForwardingFileObject,openWriter(),Writer
+ForwardingFileObject,toUri(),URI
+ForwardingJavaFileManager,close(),void
+ForwardingJavaFileManager,flush(),void
+ForwardingJavaFileManager,getClassLoader(JavaFileManager.Location location),ClassLoader
+ForwardingJavaFileManager,"getFileForInput(JavaFileManager.Location location, String packageName, String relativeName)",FileObject
+ForwardingJavaFileManager,"getFileForOutput(JavaFileManager.Location location, String packageName, String relativeName, FileObject sibling)",FileObject
+ForwardingJavaFileManager,"getJavaFileForInput(JavaFileManager.Location location, String className, JavaFileObject.Kind kind)",JavaFileObject
+ForwardingJavaFileManager,"getJavaFileForOutput(JavaFileManager.Location location, String className, JavaFileObject.Kind kind, FileObject sibling)",JavaFileObject
+ForwardingJavaFileManager,"handleOption(String current, Iterator<String> remaining)",boolean
+ForwardingJavaFileManager,hasLocation(JavaFileManager.Location location),boolean
+ForwardingJavaFileManager,"inferBinaryName(JavaFileManager.Location location, JavaFileObject file)",String
+ForwardingJavaFileManager,"isSameFile(FileObject a, FileObject b)",boolean
+ForwardingJavaFileManager,isSupportedOption(String option),int
+ForwardingJavaFileManager,"list(JavaFileManager.Location location, String packageName, Set<JavaFileObject.Kind> kinds, boolean recurse)",Iterable<JavaFileObject>
+ForwardingJavaFileObject,getAccessLevel(),Modifier
+ForwardingJavaFileObject,getKind(),JavaFileObject.Kind
+ForwardingJavaFileObject,getNestingKind(),NestingKind
+ForwardingJavaFileObject,"isNameCompatible(String simpleName, JavaFileObject.Kind kind)",boolean
+SimpleJavaFileObject,delete(),boolean
+SimpleJavaFileObject,getAccessLevel(),Modifier
+SimpleJavaFileObject,getCharContent(boolean ignoreEncodingErrors),CharSequence
+SimpleJavaFileObject,getKind(),JavaFileObject.Kind
+SimpleJavaFileObject,getLastModified(),long
+SimpleJavaFileObject,getName(),String
+SimpleJavaFileObject,getNestingKind(),NestingKind
+SimpleJavaFileObject,"isNameCompatible(String simpleName, JavaFileObject.Kind kind)",boolean
+SimpleJavaFileObject,openInputStream(),InputStream
+SimpleJavaFileObject,openOutputStream(),OutputStream
+SimpleJavaFileObject,openReader(boolean ignoreEncodingErrors),Reader
+SimpleJavaFileObject,openWriter(),Writer
+SimpleJavaFileObject,toString(),String
+SimpleJavaFileObject,toUri(),URI
+ToolProvider,getSystemDocumentationTool(),static DocumentationTool
+ToolProvider,getSystemJavaCompiler(),static JavaCompiler
+ToolProvider,getSystemToolClassLoader(),static ClassLoader

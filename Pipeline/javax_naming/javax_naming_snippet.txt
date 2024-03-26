@@ -1,0 +1,395 @@
+Sample: 0 CompositeName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from javax.naming.CompositeName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `javax.naming.CompositeName` returns the number of components in the composite name.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.CompositeName;
+import javax.naming.Name;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) throws NamingException {
+        Name name = new CompositeName("cn=John Doe,ou=People,dc=example,dc=com");
+        CompositeName compositeName = (CompositeName) name;
+        int size = compositeName.size();
+        System.out.println("Number of components in the composite name: " + size);
+    }
+}
+```
+
+In this code snippet, we first create a `CompositeName` object by parsing a string that represents a composite name. Then we call the `size()` method on the `CompositeName` object to get the number of components in the composite name. The result is then printed to the console.
+================================================================
+
+Sample: 1 InitialContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void close() from javax.naming.InitialContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void close()` method in `javax.naming.InitialContext` is used to close the context. It is used to release any system resources associated with this context.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) {
+        InitialContext context = null;
+        try {
+            context = new InitialContext();
+            // Use context
+        } catch (NamingException e) {
+            e.printStackTrace();
+        } finally {
+            if (context!= null) {
+                try {
+                    context.close();
+                } catch (NamingException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we create an `InitialContext` object and use it. After that, we call the `close()` method on the `InitialContext` object. If an exception occurs during the use of the context or during its closing, it is caught and printed to the console.
+================================================================
+
+Sample: 2 InitialContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void rebind(String name, Object obj) from javax.naming.InitialContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void rebind(String name, Object obj)` method in `javax.naming.InitialContext` is used to rebind a name to a new object.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            InitialContext ctx = new InitialContext();
+            String name = "myObject";
+            Object obj = new Object();
+            ctx.rebind(name, obj);
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `InitialContext`, specify a name and an object, and then call the `rebind` method on the context.
+
+Please note that you need to have the necessary permissions to perform this operation and the object you are rebinding must be serializable.
+
+Also, you need to have the necessary JNDI provider in your classpath. The `InitialContext` class uses the JNDI provider to perform the operations.
+================================================================
+
+Sample: 3 InitialContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void bind(String name, Object obj) from javax.naming.InitialContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void bind(String name, Object obj)` method from `javax.naming.InitialContext` is used to bind a name to an object in the naming context.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            InitialContext ctx = new InitialContext();
+            String name = "myObject";
+            Object obj = new Object();
+            ctx.bind(name, obj);
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `InitialContext`, specify a name and an object, and then bind the name to the object using the `bind` method. If an error occurs during the binding process, it is caught and printed to the console.
+
+Please note that the `InitialContext` class is part of the Java Naming and Directory Interface (JNDI) API, which is used for managing and accessing resources in a distributed environment.
+================================================================
+
+Sample: 4 InitialContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void unbind(String name) from javax.naming.InitialContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `unbind(String name)` method in `javax.naming.InitialContext` is used to unbind a name from the context. It removes the name and its associated object from the context.
+
+Here is a complete code snippet of the `unbind(String name)` method:
+
+```java
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            InitialContext ctx = new InitialContext();
+            ctx.bind("myObject", "Hello, World!");
+            System.out.println(ctx.lookup("myObject")); // Outputs: Hello, World!
+            ctx.unbind("myObject");
+            System.out.println(ctx.lookup("myObject")); // Throws javax.naming.NameNotFoundException
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create an `InitialContext`. We then bind a string "Hello, World!" to the name "myObject" in the context. We then print out the object bound to "myObject". After that, we unbind "myObject" from the context. We then try to print out the object bound to "myObject" again, which should throw a `javax.naming.NameNotFoundException` because "myObject" is no longer bound in the context.
+================================================================
+
+Sample: 5 RefAddr
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getType() from javax.naming.RefAddr
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getType()` method in `javax.naming.RefAddr` is used to get the type of the reference address. It returns a string that represents the type of the reference address.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.RefAddr;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            RefAddr refAddr = new RefAddr("type", "value");
+            String type = refAddr.getType();
+            System.out.println("Type: " + type);
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `RefAddr` object with a type and a value. Then we call the `getType()` method on the `RefAddr` object to get the type of the reference address. The type is then printed to the console.
+
+Please note that the `RefAddr` class is part of the `javax.naming` package, which is not part of the standard Java API. It is a part of the Java Naming and Directory Interface (JNDI) API, which is used for managing and accessing directory services.
+================================================================
+
+Sample: 6 Reference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from javax.naming.Reference
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `clear()` method in `javax.naming.Reference` is used to remove all of the elements from this reference. It does not remove the reference itself.
+
+Here is a complete code snippet of the `clear()` method:
+
+```java
+import javax.naming.Reference;
+import javax.naming.NamingException;
+
+public class Main {
+    public static void main(String[] args) throws NamingException {
+        Reference ref = new Reference("java.lang.String", "String", null);
+        ref.add("Hello");
+        ref.add("World");
+        System.out.println(ref);
+        ref.clear();
+        System.out.println(ref);
+    }
+}
+```
+
+In this code, we create a new `Reference` object and add two elements to it. Then we print the reference to the console. After that, we call the `clear()` method on the reference, which removes all elements from it, but does not remove the reference itself. Finally, we print the reference again to the console, and we can see that it is empty.
+================================================================
+

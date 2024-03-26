@@ -1,0 +1,1870 @@
+Sample: 0 AbstractCollection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractCollection package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 1 AbstractList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+4. `int size()`: This method returns the number of elements in this list.
+5. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+================================================================
+
+Sample: 2 AbstractMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AbstractMap.Entry<K,V> entrySet()`: This method returns a set view of the mappings contained in this map.
+
+2. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+3. `boolean containsValue(Object value)`: This method returns true if this map maps one or more keys to the specified value.
+
+4. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+5. `V put(K key, V value)`: This method associates the specified value with the specified key in this map.
+================================================================
+
+Sample: 3 AbstractMap.SimpleEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractMap.SimpleEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E getKey()`: This method returns the key in the map entry.
+3. `E getValue()`: This method returns the value in the map entry.
+4. `E setValue(E value)`: This method replaces the value in the map entry with the specified value.
+5. `boolean equals(Object o)`: This method compares the specified object with this entry for equality.
+6. `int hashCode()`: This method returns the hash code value for this map entry.
+================================================================
+
+Sample: 4 AbstractMap.SimpleImmutableEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractMap.SimpleImmutableEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object o)`: This method compares the specified object with this entry for equality.
+
+2. `int hashCode()`: This method returns the hash code value for this map entry.
+
+3. `K getKey()`: This method returns the key corresponding to this entry.
+
+4. `V getValue()`: This method returns the value corresponding to this entry.
+
+5. `V setValue(V value)`: This method replaces the value corresponding to this entry with the specified value.
+================================================================
+
+Sample: 5 AbstractQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E remove()`: This method removes and returns the first element from this list.
+3. `boolean offer(E e)`: This method adds the specified element as the tail (last element) of this list.
+4. `E poll()`: This method retrieves and removes the head (first element) of this list.
+5. `E peek()`: This method retrieves, but does not remove, the head of this list.
+================================================================
+
+Sample: 6 AbstractSequentialList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractSequentialList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+4. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+5. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+================================================================
+
+Sample: 7 AbstractSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.AbstractSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean isEmpty()`: This method returns true if this list contains no elements.
+================================================================
+
+Sample: 8 ArrayDeque
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ArrayDeque package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean offer(E e)`: This method adds the specified element as the tail (last element) of this deque.
+3. `boolean offerFirst(E e)`: This method inserts the specified element at the front of this deque.
+4. `boolean offerLast(E e)`: This method inserts the specified element at the end of this deque.
+5. `E remove()`: This method retrieves and removes the head of this deque.
+6. `E poll()`: This method retrieves and removes the head of this deque, or returns null if this deque is empty.
+7. `E pollFirst()`: This method retrieves and removes the first element of this deque, or returns null if this deque is empty.
+8. `E pollLast()`: This method retrieves and removes the last element of this deque, or returns null if this deque is empty.
+9. `E getFirst()`: This method retrieves, but does not remove, the head of this deque.
+10. `E getLast()`: This method retrieves, but does not remove, the last element of this deque.
+11. `boolean removeFirstOccurrence(Object o)`: This method removes the first occurrence of the specified element from this deque.
+12. `boolean removeLastOccurrence(Object o)`: This method removes the last occurrence of the specified element from this deque.
+13. `boolean contains(Object o)`: This method returns true if this deque contains the specified element.
+14. `int size()`: This method returns the number of elements in this deque.
+15. `boolean isEmpty()`: This method returns true if this deque contains no elements.
+16. `void clear()`: This method removes all of the elements from this deque.
+17. `Iterator<E> iterator()`: This method returns an iterator over the elements in this deque in proper sequence.
+18. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this deque (in proper sequence).
+19. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this deque (in proper sequence), starting at the specified position in the list.
+20. `Object[] toArray()`: This method returns an array containing all of the elements in this deque in proper sequence (from first to last element).
+21. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this deque; the runtime type of the returned array is that of the specified array.
+22. `boolean equals(Object o)`: This method compares the specified object with this deque for equality.
+23. `int hashCode()`: This method returns the hash code value for this deque.
+24. `String toString()`: This method returns a string representation of this deque.
+25. `void forEach(Consumer<? super E> action)`: This method performs the given action for each element of the deque until all elements have been processed or the action throws an exception.
+================================================================
+
+Sample: 9 ArrayList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ArrayList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 10 Arrays
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Arrays package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 11 Base64
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Base64 package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.util.Base64` package:
+
+1. `static byte[] getDecoder()`: Returns a Base64.Decoder that converts the Base64 data to a byte array.
+
+2. `static byte[] getEncoder()`: Returns a Base64.Encoder that converts a byte array to Base64 data.
+
+3. `static byte[] decode(byte[] src)`: Decodes the specified byte array into a new byte array.
+
+4. `static byte[] decode(String src)`: Decodes the specified String into a new byte array.
+
+5. `static byte[] encode(byte[] src)`: Encodes the specified byte array into a new byte array.
+
+6. `static String encodeToString(byte[] src)`: Encodes the specified byte array into a String.
+
+7. `static String encodeToString(String src)`: Encodes the specified String into a String.
+
+8. `static String encodeToString(byte[] src, int off, int len)`: Encodes the specified byte array into a String.
+
+9. `static String encode(byte[] src, int off, int len)`: Encodes the specified byte array into a new byte array.
+
+10. `static byte[] decode(String src, int off, int len)`: Decodes the specified String into a new byte array.
+
+11. `static byte[] decode(byte[] src, int off, int len)`: Decodes the specified byte array into a new byte array.
+
+12. `static byte[] decode(String src, Base64.Decoder decoder)`: Decodes the specified String using the specified Decoder.
+
+13. `static byte[] decode(byte[] src, Base64.Decoder decoder)`: Decodes the specified byte array using the specified Decoder.
+
+14. `static String encodeToString(byte[] src, Base64.Encoder encoder)`: Encodes the specified byte array using the specified Encoder.
+
+15. `static byte[] encode(byte[] src, Base64.Encoder encoder)`: Encodes the specified byte array using the specified Encoder.
+
+16. `static byte[] decode(String src, Base64.Decoder decoder, int off, int len)`: Decodes the specified String using the specified Decoder.
+
+17. `static byte[] decode(byte[] src, Base64.Decoder decoder, int off, int len)`: Decodes the specified byte array using the specified Decoder.
+
+18. `static byte[] encode(byte[] src, Base64.Encoder encoder, int off, int len)`: Encodes the specified byte array using the specified Encoder.
+
+19. `static String encodeToString(byte[] src, Base64.Encoder encoder, int off, int len)`: Encodes the specified byte array using the specified Encoder.
+
+20. `static byte[] decode(String src, int off, int len, Base64.Decoder decoder)`: Decodes the specified String using the specified Decoder.
+
+21. `static byte[] decode(byte[] src, int off, int len, Base64.Decoder decoder)`: Decodes the specified byte array using the specified Decoder.
+
+22. `static byte[] encode(byte[] src, int off, int len, Base64.Encoder encoder)`: Encodes the specified byte array using the specified Encoder.
+
+23. `static String encodeToString(byte[] src, int off, int len, Base64.Encoder encoder)`: Encodes the specified byte array using the specified Encoder.
+================================================================
+
+Sample: 12 Base64.Decoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Base64.Decoder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int decode(byte[] src, int off, int len)`: This method decodes the specified byte array into a new byte array.
+
+2. `int decode(byte[] src)`: This method decodes the specified byte array into a new byte array.
+
+3. `int decode(String src)`: This method decodes the specified String into a new byte array.
+
+4. `int decodeBuffer(byte[] src, int off, int len)`: This method decodes the specified byte array into a new byte array.
+
+5. `int decodeBuffer(byte[] src)`: This method decodes the specified byte array into a new byte array.
+================================================================
+
+Sample: 13 Base64.Encoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Base64.Encoder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public byte[] encode(byte[] src)`: This method encodes the specified byte array into a Base64 encoded byte array.
+
+2. `public String encodeToString(byte[] src)`: This method encodes the specified byte array into a Base64 encoded string.
+
+3. `public OutputStream wrap(OutputStream out)`: This method wraps the specified output stream in a Base64 encoder.
+
+4. `public void setLineLength(int lineLength)`: This method sets the line length for the Base64 encoder.
+
+5. `public int getLineLength()`: This method returns the line length for the Base64 encoder.
+================================================================
+
+Sample: 14 BitSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.BitSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean get(int index)`: This method returns the value of the bit at the specified index.
+
+2. `boolean set(int index)`: This method sets the bit at the specified index to true.
+
+3. `boolean set(int index, boolean value)`: This method sets the bit at the specified index to the specified value.
+
+4. `int cardinality()`: This method returns the number of bits set to true in this BitSet.
+
+5. `int length()`: This method returns the number of bits in this BitSet.
+================================================================
+
+Sample: 15 Calendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Calendar package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int get(int field)`: This method returns the value for the given calendar field.
+2. `void set(int field, int value)`: This method sets the given calendar field to the given value.
+3. `void add(int field, int amount)`: This method adds or subtracts the specified amount of time to the given calendar field.
+4. `long getTimeInMillis()`: This method returns the time represented by this Calendar instance as a millisecond value.
+5. `void setTimeInMillis(long millis)`: This method sets the time represented by this Calendar instance to the specified number of milliseconds since the epoch.
+================================================================
+
+Sample: 16 Calendar.Builder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Calendar.Builder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CalendarBuilder setDate(int year, int month, int date)`: This method sets the date of the calendar.
+
+2. `CalendarBuilder setTime(int hourOfDay, int minute, int second)`: This method sets the time of the calendar.
+
+3. `CalendarBuilder setTimeZone(TimeZone timeZone)`: This method sets the time zone of the calendar.
+
+4. `CalendarBuilder setWeekDate(int weekYear, int weekOfYear, int dayOfWeek)`: This method sets the week date of the calendar.
+
+5. `CalendarBuilder setWeekYear(int weekYear)`: This method sets the week year of the calendar.
+================================================================
+
+Sample: 17 Collections
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Collections package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `void clear()`: This method removes all of the elements from this list.
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+================================================================
+
+Sample: 18 Currency
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Currency package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Currency getInstance(String currencyCode)`: This method returns a Currency instance for the specified ISO 4217 currency code.
+
+2. `String getCurrencyCode()`: This method returns the ISO 4217 currency code for this currency.
+
+3. `String getDisplayName()`: This method returns the name of this currency in the default locale.
+
+4. `String getDisplayName(Locale locale)`: This method returns the name of this currency in the specified locale.
+
+5. `int getDefaultFractionDigits()`: This method returns the default number of fraction digits used with this currency.
+================================================================
+
+Sample: 19 Date
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Date package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean after(Date when)`: This method tests if this `Date` occurs after the specified `Date`.
+
+2. `boolean before(Date when)`: This method tests if this `Date` occurs before the specified `Date`.
+
+3. `int compareTo(Date anotherDate)`: This method compares two `Date` instances.
+
+4. `boolean equals(Object obj)`: This method compares this `Date` with the specified object.
+
+5. `long getTime()`: This method returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this `Date` object.
+================================================================
+
+Sample: 20 Dictionary
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Dictionary package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The Dictionary class is deprecated in Java 9 and removed in Java 10. It is recommended to use Map interface instead.
+================================================================
+
+Sample: 21 DoubleSummaryStatistics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.DoubleSummaryStatistics package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `double getSum()`: This method returns the sum of all elements in the stream.
+2. `long getCount()`: This method returns the count of elements in the stream.
+3. `OptionalDouble getMin()`: This method returns the minimum value in the stream, or an empty OptionalDouble if the stream is empty.
+4. `OptionalDouble getMax()`: This method returns the maximum value in the stream, or an empty OptionalDouble if the stream is empty.
+5. `double getAverage()`: This method returns the average of all elements in the stream, or 0.0 if the stream is empty.
+================================================================
+
+Sample: 22 EnumMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.EnumMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+2. `E get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+3. `E put(K key, V value)`: This method associates the specified value with the specified key in this map.
+
+4. `E remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+
+5. `void clear()`: This method removes all of the mappings from this map.
+================================================================
+
+Sample: 23 EnumSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.EnumSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this set.
+3. `boolean contains(Object o)`: This method returns true if this set contains the specified element.
+4. `boolean remove(Object o)`: This method removes the specified element from this set if it is present.
+5. `boolean isEmpty()`: This method returns true if this set contains no elements.
+================================================================
+
+Sample: 24 EventListenerProxy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.EventListenerProxy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The method inherent from its parent class (EventListenerProxy) are not listed here.
+================================================================
+
+Sample: 25 EventObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.EventObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getSource()`: This method returns the object on which the Event initially occurred.
+
+2. `toString()`: This method returns a string representation of the event object.
+
+3. `getClass()`: This method returns the Class object which represents the runtime class of the object.
+
+4. `hashCode()`: This method returns the hash code value for the object.
+
+5. `equals(Object obj)`: This method compares this object against the specified object.
+================================================================
+
+Sample: 26 FormattableFlags
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.FormattableFlags package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPadded()`: This method returns whether the flag is set for padding.
+
+2. `boolean isLeftJustified()`: This method returns whether the flag is set for left justification.
+
+3. `boolean isZeroPadded()`: This method returns whether the flag is set for zero padding.
+
+4. `boolean isAlternate()`: This method returns whether the flag is set for alternate form.
+
+5. `boolean isLocaleSpecific()`: This method returns whether the flag is set for locale-specific formatting.
+
+6. `boolean isGroupingUsed()`: This method returns whether the flag is set for grouping digits.
+
+7. `boolean isIntegerZero()`: This method returns whether the flag is set for zero for integers.
+
+8. `boolean isNegative()`: This method returns whether the flag is set for negative numbers.
+
+9. `boolean isZeroDigit()`: This method returns whether the flag is set for zero for digits.
+
+10. `boolean isDigit()`: This method returns whether the flag is set for digits.
+================================================================
+
+Sample: 27 Formatter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Formatter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 28 GregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.GregorianCalendar package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isLeapYear(int year)`: This method returns true if the specified year is a leap year.
+
+2. `int getActualMaximum(int field)`: This method returns the maximum value for the specified calendar field.
+
+3. `int getActualMinimum(int field)`: This method returns the minimum value for the specified calendar field.
+
+4. `void setGregorianChange(Date date)`: This method sets the date of the Gregorian calendar's last change.
+
+5. `Date getGregorianChange()`: This method returns the date of the Gregorian calendar's last change.
+================================================================
+
+Sample: 29 HashMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.HashMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+2. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+3. `V put(K key, V value)`: This method associates the specified value with the specified key in this map.
+
+4. `V remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+
+5. `int size()`: This method returns the number of key-value mappings in this map.
+================================================================
+
+Sample: 30 HashSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.HashSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this set.
+2. `void clear()`: This method removes all of the elements from this set.
+3. `boolean contains(Object o)`: This method returns true if this set contains the specified element.
+4. `boolean remove(Object o)`: This method removes the specified element from this set if it is present.
+5. `int size()`: This method returns the number of elements in this set.
+================================================================
+
+Sample: 31 Hashtable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Hashtable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `Enumeration elements()`: This method returns an enumeration of the elements in this hashtable.
+4. `Object get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+5. `Object put(Object key, Object value)`: This method associates the specified value with the specified key in this hashtable.
+================================================================
+
+Sample: 32 IdentityHashMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.IdentityHashMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+2. `boolean containsValue(Object value)`: This method returns true if this map maps one or more keys to the specified value.
+
+3. `Set<Map.Entry<K,V>> entrySet()`: This method returns a Set view of the mappings contained in this map.
+
+4. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+5. `boolean isEmpty()`: This method returns true if this map contains no key-value mappings.
+================================================================
+
+Sample: 33 IntSummaryStatistics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.IntSummaryStatistics package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long getCount()`: This method returns the count of elements in the list.
+2. `double getAverage()`: This method returns the average of elements in the list.
+3. `long getSum()`: This method returns the sum of elements in the list.
+4. `int getMin()`: This method returns the minimum element in the list.
+5. `int getMax()`: This method returns the maximum element in the list.
+================================================================
+
+Sample: 34 LinkedHashMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.LinkedHashMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The above methods are not inherent from its parent class. They are specific to the LinkedHashMap class.
+================================================================
+
+Sample: 35 LinkedHashSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.LinkedHashSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 36 LinkedList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.LinkedList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+================================================================
+
+Sample: 37 ListResourceBundle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ListResourceBundle package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `int size()`: This method returns the number of elements in this list.
+5. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 38 Locale
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Locale package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Locale.getDefault()`: This method returns the default locale for this instance of the Java Virtual Machine.
+
+2. `Locale.getAvailableLocales()`: This method returns an array of all the available locales.
+
+3. `Locale.setDefault(Locale newLocale)`: This method sets the default locale for this instance of the Java Virtual Machine.
+
+4. `Locale.getISOCountries()`: This method returns an array of all the ISO 3166 country codes.
+
+5. `Locale.getISO3Language()`: This method returns the ISO 639-2/T language code for this locale.
+================================================================
+
+Sample: 39 Locale.Builder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Locale.Builder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Locale.Builder()`: This is the constructor of the Locale.Builder class. It creates a new Locale.Builder instance.
+
+2. `Locale.Builder setLanguage(String language)`: This method sets the language of the locale.
+
+3. `Locale.Builder setRegion(String region)`: This method sets the region of the locale.
+
+4. `Locale.Builder setVariant(String variant)`: This method sets the variant of the locale.
+
+5. `Locale.Builder setScript(String script)`: This method sets the script of the locale.
+
+6. `Locale build()`: This method builds a new Locale instance with the specified language, region, script, and variant.
+================================================================
+
+Sample: 40 Locale.LanguageRange
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Locale.LanguageRange package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the most useful methods from the `java.util.Locale.LanguageRange` package:
+
+1. `public static List<LanguageRange> parse(String rangeList)`: This method parches a string into a list of `LanguageRange` objects.
+
+2. `public boolean equals(Object obj)`: This method compares this `LanguageRange` with the specified object.
+
+3. `public int hashCode()`: This method returns the hash code value for this `LanguageRange`.
+
+4. `public String toString()`: This method returns a string representation of this `LanguageRange`.
+
+5. `public int compareTo(LanguageRange other)`: This method compares this `LanguageRange` to the specified `LanguageRange`.
+
+6. `public static List<LanguageRange> sort(List<LanguageRange> list)`: This method sorts the specified list of `LanguageRange` objects.
+
+7. `public static List<LanguageRange> sortByQuality(List<LanguageRange> list)`: This method sorts the specified list of `LanguageRange` objects by quality.
+
+8. `public static List<LanguageRange> sortByWeight(List<LanguageRange> list)`: This method sorts the specified list of `LanguageRange` objects by weight.
+
+9. `public static List<LanguageRange> sortByPriority(List<LanguageRange> list)`: This method sorts the specified list of `LanguageRange` objects by priority.
+
+10. `public static List<LanguageRange> sortByMatch(List<LanguageRange> list, Locale locale)`: This method sorts the specified list of `LanguageRange` objects by match with the specified locale.
+================================================================
+
+Sample: 41 LongSummaryStatistics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.LongSummaryStatistics package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long getCount()`: This method returns the count of elements in the list.
+2. `long getSum()`: This method returns the sum of all elements in the list.
+3. `long getMin()`: This method returns the minimum value in the list.
+4. `long getMax()`: This method returns the maximum value in the list.
+5. `double getAverage()`: This method returns the average of all elements in the list.
+================================================================
+
+Sample: 42 Objects
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Objects package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object a, Object b)`: Compares its two arguments for equality.
+2. `int hashCode(Object o)`: Returns a hash code for the specified object.
+3. `boolean isNull(Object obj)`: Returns true if the provided reference is null otherwise false.
+4. `boolean nonNull(Object obj)`: Returns true if the provided reference is non-null.
+5. `boolean requireNonNull(Object obj)`: Ensures that the specified object reference is not null and throws a NullPointerException if it is.
+================================================================
+
+Sample: 43 Observable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Observable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addObserver(Observer o)`: This method adds an observer to the set of observers for this object, provided that it is not already a member.
+
+2. `void deleteObserver(Observer o)`: This method deletes an observer from the set of observers of this object.
+
+3. `void deleteObservers()`: This method removes all of the observers from the observer list of this object.
+
+4. `boolean hasChanged()`: This method returns the value of the protected variable changed in class Observable.
+
+5. `int countObservers()`: This method returns the number of observers of this Observable object.
+
+6. `void notifyObservers()`: This method notifies all the observers of this Observable object.
+
+7. `void notifyObservers(Object arg)`: This method notifies all the observers of this Observable object about an event.
+
+8. `void setChanged()`: This method sets the protected variable changed in class Observable to true.
+
+9. `void clearChanged()`: This method sets the protected variable changed in class Observable to false.
+
+10. `boolean hasNoObservers()`: This method checks if this Observable object has no observers.
+================================================================
+
+Sample: 44 Optional
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Optional package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPresent()`: This method returns true if the value is present, otherwise false.
+
+2. `T get()`: This method returns the value if present, otherwise throws NoSuchElementException.
+
+3. `T orElse(T other)`: This method returns the value if present, otherwise returns other.
+
+4. `T orElseGet(Supplier<? extends T> other)`: This method returns the value if present, otherwise invokes other and returns the result.
+
+5. `<X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier)`: This method returns the value if present, otherwise throws an exception provided by the exception supplier.
+================================================================
+
+Sample: 45 OptionalDouble
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.OptionalDouble package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OptionalDouble isPresent()`: This method returns true if the value is present, otherwise false.
+
+2. `OptionalDouble getAsDouble()`: This method returns the value if present, otherwise throws NoSuchElementException.
+
+3. `OptionalDouble orElse(double other)`: This method returns the value if present, otherwise returns the given other value.
+
+4. `OptionalDouble orElseGet(DoubleSupplier other)`: This method returns the value if present, otherwise invokes the given other function.
+
+5. `OptionalDouble orElseThrow()`: This method returns the value if present, otherwise throws the given exception.
+================================================================
+
+Sample: 46 OptionalInt
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.OptionalInt package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OptionalInt isPresent()`: This method returns true if the value is present, otherwise false.
+
+2. `OptionalInt getAsInt()`: This method returns the value if present, otherwise throws NoSuchElementException.
+
+3. `OptionalInt orElse(int other)`: This method returns the value if present, otherwise returns the given other value.
+
+4. `OptionalInt orElseGet(IntSupplier other)`: This method returns the value if present, otherwise invokes the given other function.
+
+5. `OptionalInt orElseThrow()`: This method returns the value if present, otherwise throws the given exception.
+================================================================
+
+Sample: 47 OptionalLong
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.OptionalLong package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OptionalLong of(long value)`: This method returns an OptionalLong with the specified value.
+2. `OptionalLong empty()`: This method returns an empty OptionalLong instance.
+3. `boolean isPresent()`: This method returns true if this OptionalLong is present.
+4. `long getAsLong()`: This method returns the value if present, otherwise throws NoSuchElementException.
+5. `long orElse(long other)`: This method returns the value if present, otherwise returns other.
+
+Note: The methods `of(long value)`, `empty()`, `isPresent()`, `getAsLong()`, and `orElse(long other)` are the most commonly used methods in the OptionalLong class.
+================================================================
+
+Sample: 48 PriorityQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.PriorityQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E remove()`: This method removes and returns the head of this list.
+3. `E peek()`: This method retrieves, but does not remove, the head of this list.
+4. `boolean offer(E e)`: This method adds the specified element as the tail of this list.
+5. `E poll()`: This method retrieves and removes the head of this list, or returns null if this list is empty.
+================================================================
+
+Sample: 49 Properties
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Properties package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+3. `Object get(int index)`: This method returns the element at the specified position in this list.
+
+4. `Object set(int index, Object element)`: This method replaces the element at the specified position in this list with the specified element.
+
+5. `boolean isEmpty()`: This method returns true if this list contains no elements.
+================================================================
+
+Sample: 50 PropertyPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.PropertyPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Permission p)`: This method checks if the specified permission implies this permission.
+
+2. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `int hashCode()`: This method returns the hash code value for this object.
+
+4. `String getActions()`: This method returns the actions of this permission.
+
+5. `String getName()`: This method returns the name of this permission.
+================================================================
+
+Sample: 51 PropertyResourceBundle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.PropertyResourceBundle package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+3. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+
+4. `Object get(int index)`: This method returns the element at the specified position in this list.
+
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+6. `int lastIndexOf(Object o)`: This method returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+7. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+
+8. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+
+9. `E remove(int index)`: This method removes the element at the specified position in this list.
+
+10. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+11. `boolean removeAll(Collection<?> c)`: This method removes all of the elements of this list that are contained in the specified collection.
+
+12. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+
+13. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+
+14. `int size()`: This method returns the number of elements in this list.
+
+15. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+16. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+17. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+
+18. `String toString()`: This method returns a string representation of this list.
+================================================================
+
+Sample: 52 Random
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Random package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int nextInt()`: This method returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive).
+
+2. `int nextInt(int bound)`: This method returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive).
+
+3. `long nextLong()`: This method returns a pseudorandom, uniformly distributed long value between 0 (inclusive) and the specified value (exclusive).
+
+4. `boolean nextBoolean()`: This method returns a pseudorandom, uniformly distributed boolean value.
+
+5. `float nextFloat()`: This method returns a pseudorandom, uniformly distributed float value between 0.0 (inclusive) and 1.0 (exclusive).
+================================================================
+
+Sample: 53 ResourceBundle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ResourceBundle package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this resource bundle contains a key for the specified object.
+
+2. `Enumeration<String> getKeys()`: This method returns an enumeration of the keys in this resource bundle.
+
+3. `Object getObject(String key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+4. `String getString(String key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+5. `Locale getLocale()`: This method returns the locale for this resource bundle.
+================================================================
+
+Sample: 54 ResourceBundle.Control
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ResourceBundle.Control package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean containsKey(String key)`: This method returns true if this resource bundle contains the specified key.
+
+2. `public Enumeration<String> getKeys()`: This method returns an enumeration of the keys in this resource bundle.
+
+3. `public Object handleGetObject(String key)`: This method is used to retrieve an object for the given key.
+
+4. `public String getString(String key)`: This method is used to retrieve a string for the given key.
+
+5. `public String getString(String key, Locale locale)`: This method is used to retrieve a string for the given key and locale.
+================================================================
+
+Sample: 55 Scanner
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Scanner package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasNext()`: This method returns true if this scanner has another token in its input.
+
+2. `String next()`: This method returns the next token from this scanner.
+
+3. `int nextInt()`: This method returns the next complete token from this scanner as an int.
+
+4. `double nextDouble()`: This method returns the next complete token from this scanner as a double.
+
+5. `boolean hasNextLine()`: This method returns true if this scanner has another line in its input.
+================================================================
+
+Sample: 56 ServiceLoader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.ServiceLoader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 57 SimpleTimeZone
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.SimpleTimeZone package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `int size()`: This method returns the number of elements in this list.
+
+4. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+5. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+================================================================
+
+Sample: 58 Spliterators
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Spliterators package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Spliterator.trySplit()`: This method splits this spliterator into two, with the second one being at least half the size of the first one.
+
+2. `Spliterator.forEachRemaining(Consumer<? super T> action)`: This method performs the given action for each remaining element of this spliterator's sequence.
+
+3. `Spliterator.hasCharacteristics(int characteristics)`: This method tests if this spliterator has the specified characteristics.
+
+4. `Spliterator.getExactSizeIfKnown()`: This method returns the exact size of this spliterator's sequence, if known.
+
+5. `Spliterator.characteristics()`: This method returns the characteristics of this spliterator.
+================================================================
+
+Sample: 59 Spliterators.AbstractDoubleSpliterator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Spliterators.AbstractDoubleSpliterator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `double tryAdvance(DoubleConsumer action)`: This method performs the given action on the next element of the sequence until all elements have been processed or the action throws an exception.
+
+2. `boolean trySplit()`: This method splits this spliterator into two, with the current spliterator retaining the first half and the returned spliterator the second half.
+
+3. `long estimateSize()`: This method returns an estimate of the number of elements remaining in the sequence.
+
+4. `int characteristics()`: This method returns the characteristics of this spliterator's source.
+
+5. `Comparator<? super Double> getComparator()`: This method returns the comparator used to order this spliterator's source, or null if the source does not support ordering.
+================================================================
+
+Sample: 60 Spliterators.AbstractIntSpliterator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Spliterators.AbstractIntSpliterator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int estimateSize()`: This method returns an estimate of the number of elements that would remain available if the spliterator's source were known to be finite.
+
+2. `boolean tryAdvance(IntConsumer action)`: This method performs the given action on the next element of the sequence represented by this spliterator, if such an element exists.
+
+3. `Spliterator<Integer> trySplit()`: This method attempts to split this spliterator's elements into two, creating a possibly parallelizable new spliterator.
+
+4. `long estimateSize()`: This method returns an estimate of the number of elements that would remain available if the spliterator's source were known to be finite.
+
+5. `boolean tryAdvance(IntConsumer action)`: This method performs the given action on the next element of the sequence represented by this spliterator, if such an element exists.
+================================================================
+
+Sample: 61 Spliterators.AbstractLongSpliterator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Spliterators.AbstractLongSpliterator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long estimateSize()`: This method returns an estimate of the number of elements that would be returned by a call to trySplit().
+
+2. `boolean tryAdvance(Consumer<? super Long> action)`: This method performs the given action on the next element of the sequence until all elements have been processed or the action throws an exception.
+
+3. `Spliterator<Long> trySplit()`: This method creates a possibly parallel Spliterator for the remaining elements.
+
+4. `long getExactSizeIfKnown()`: This method returns the exact number of elements in this spliterator, if known, otherwise returns -1.
+
+5. `int characteristics()`: This method returns the characteristics of this spliterator's source.
+================================================================
+
+Sample: 62 Spliterators.AbstractSpliterator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Spliterators.AbstractSpliterator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean tryAdvance(Consumer<? super T> action)`: This method performs the given action on the next element of the Spliterator and returns true if the action was performed, otherwise false.
+
+2. `Spliterator<T> trySplit()`: This method attempts to split this Spliterator into two, returning a Spliterator that can be used to iterate over the second half of the elements.
+
+3. `long estimateSize()`: This method returns an estimate of the number of elements remaining in the Spliterator.
+
+4. `int characteristics()`: This method returns the characteristics of this Spliterator.
+
+5. `Comparator<? super T> getComparator()`: This method returns the Comparator used to order the elements in this Spliterator, or null if no Comparator was used.
+================================================================
+
+Sample: 63 SplittableRandom
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.SplittableRandom package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SplittableRandom()`: Constructs a `SplittableRandom` object.
+2. `long nextLong()`: Returns the next pseudorandom, uniformly distributed `long` value from this random number generator's sequence.
+3. `double nextDouble()`: Returns the next pseudorandom, uniformly distributed `double` value between 0.0 and 1.0 from this random number generator's sequence.
+4. `int nextInt(int bound)`: Returns the next pseudorandom, uniformly distributed `int` value between 0 (inclusive) and the specified value (exclusive).
+5. `long nextLong(long bound)`: Returns the next pseudorandom, uniformly distributed `long` value between 0 (inclusive) and the specified value (exclusive).
+================================================================
+
+Sample: 64 Stack
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Stack package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean empty()`: This method tests if this stack is empty.
+2. `E peek()`: This method looks the object at the top of this stack without removing it from the stack.
+3. `E pop()`: This method removes the object at the top of this stack and returns that object as the value of this function.
+4. `E push(E item)`: This method pushes an item onto the top of this stack.
+5. `int search(Object o)`: This method returns the 1-based position where an object is on this stack.
+================================================================
+
+Sample: 65 StringJoiner
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.StringJoiner package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the 5 most useful methods from the `java.util.StringJoiner` package:
+
+1. `StringJoiner(CharSequence delimiter)`: This is the constructor of the `StringJoiner` class. It takes a `CharSequence` as a parameter which is the delimiter that will be used to separate the elements.
+
+2. `StringJoiner(CharSequence delimiter, CharSequence prefix, CharSequence suffix)`: This is the constructor of the `StringJoiner` class. It takes three `CharSequence` parameters: the delimiter, the prefix, and the suffix.
+
+3. `StringJoiner append(CharSequence newElement)`: This method appends the specified element to the end of this list.
+
+4. `String toString()`: This method returns a string representation of the elements in this list.
+
+5. `int length()`: This method returns the length of the string representation of the elements in this list.
+
+Remember, these methods are not inherent from its parent class.
+================================================================
+
+Sample: 66 StringTokenizer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.StringTokenizer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StringTokenizer(String str)`: This constructor creates a StringTokenizer with the specified string.
+
+2. `StringTokenizer(String str, String delim)`: This constructor creates a StringTokenizer with the specified string and delimiter.
+
+3. `StringTokenizer(String str, String delim, boolean returnDelims)`: This constructor creates a StringTokenizer with the specified string, delimiter, and whether the delimiters should be returned.
+
+4. `boolean hasMoreTokens()`: This method tests if there are more tokens available from this tokenizer's string.
+
+5. `String nextToken()`: This method returns the next token from this StringTokenizer's string.
+================================================================
+
+Sample: 67 Timer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Timer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean cancel()`: This method attempts to cancel execution of this timer task.
+
+2. `void schedule(TimerTask task, long delay)`: This method schedules the specified task for execution after the specified delay.
+
+3. `void schedule(TimerTask task, Date time)`: This method schedules the specified task for execution at the specified time.
+
+4. `void schedule(TimerTask task, long delay, long period)`: This method schedules the specified task for repeated execution.
+
+5. `void scheduleAtFixedRate(TimerTask task, long delay, long period)`: This method schedules the specified task for repeated fixed-rate execution.
+================================================================
+
+Sample: 68 TimerTask
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.TimerTask package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean cancel()`: This method attempts to cancel execution of this task.
+2. `void run()`: This method contains the code that is to be executed by the task.
+3. `long scheduledExecutionTime()`: This method returns the time when this task is scheduled to run.
+4. `boolean isCancelled()`: This method returns true if this task was cancelled before it completed normally.
+5. `boolean isDone()`: This method returns true if this task completed.
+================================================================
+
+Sample: 69 TimeZone
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.TimeZone package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getDisplayName(boolean daylight, int style)`: This method returns the display name for this time zone.
+
+2. `getID()`: This method returns the ID of this time zone.
+
+3. `getOffset(long date)`: This method returns the offset from GMT for the given date in milliseconds.
+
+4. `getRawOffset()`: This method returns the raw offset from GMT in milliseconds.
+
+5. `useDaylightTime()`: This method returns true if daylight saving time is used in this time zone.
+================================================================
+
+Sample: 70 TreeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.TreeMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+2. `V get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+3. `V put(K key, V value)`: This method associates the specified value with the specified key in this map.
+
+4. `V remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+
+5. `int size()`: This method returns the number of key-value mappings in this map.
+================================================================
+
+Sample: 71 TreeSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.TreeSet package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 72 UUID
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.UUID package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `static UUID fromString(String name)`: This method returns a UUID instance with the specified string.
+
+2. `UUID randomUUID()`: This method returns a randomly generated UUID.
+
+3. `int compareTo(UUID uuid)`: This method compares this UUID to the specified UUID.
+
+4. `int hashCode()`: This method returns a hash code for this UUID.
+
+5. `String toString()`: This method returns a string representation of this UUID.
+================================================================
+
+Sample: 73 Vector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.Vector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `E get(int index)`: This method returns the element at the specified position in this list.
+================================================================
+
+Sample: 74 WeakHashMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.WeakHashMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean isEmpty()`: This method returns true if this list contains no elements.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+

@@ -1,0 +1,312 @@
+Sample: 0 CallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.CallSite package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CallSite call()`: This method returns the result of the call to the target method.
+
+2. `MethodType type()`: This method returns the type of the target method.
+
+3. `MethodHandle asType(MethodType newType)`: This method returns a new handle that represents the same method but with a different type.
+
+4. `MethodHandle asSpreader()`: This method returns a new handle that represents the same method but with a different spreadability.
+
+5. `MethodHandle asCollector()`: This method returns a new handle that represents the same method but with a different collectorability.
+
+6. `MethodHandle asVarArgsCollector()`: This method returns a new handle that represents the same method but with a different varargs collectorability.
+
+7. `MethodHandle asFixedArity()`: This method returns a new handle that represents the same method but with a different fixed arity.
+
+8. `MethodHandle asBridge()`: This method returns a new handle that represents the same method but with a different bridgeability.
+
+9. `MethodHandle asVarArgsBridge()`: This method returns a new handle that represents the same method but with a different varargs bridgeability.
+
+10. `MethodHandle asExactly(MethodType newType)`: This method returns a new handle that represents the same method but with a different type.
+
+11. `MethodHandle asSpreaderExactly()`: This method returns a new handle that represents the same method but with a different spreadability.
+
+12. `MethodHandle asCollectorExactly()`: This method returns a new handle that represents the same method but with a different collectorability.
+
+13. `MethodHandle asVarArgsCollectorExactly()`: This method returns a new handle that represents the same method but with a different varargs collectorability.
+
+14. `MethodHandle asFixedArityExactly()`: This method returns a new handle that represents the same method but with a different fixed arity.
+
+15. `MethodHandle asBridgeExactly()`: This method returns a new handle that represents the same method but with a different bridgeability.
+
+16. `MethodHandle asVarArgsBridgeExactly()`: This method returns a new handle that represents the same method but with a different varargs bridgeability.
+================================================================
+
+Sample: 1 ConstantCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.ConstantCallSite package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ConstantCallSite(MethodHandle target, MethodType type)`: This constructor creates a new `ConstantCallSite` that represents a constant method handle.
+
+2. `MethodHandle getTarget()`: This method returns the target of this `ConstantCallSite`.
+
+3. `MethodType getType()`: This method returns the type of the target method.
+
+4. `Object invoke(Object... args)`: This method invokes the target method with the specified arguments.
+
+5. `boolean isVarArgs()`: This method returns `true` if the target method is a varargs method.
+================================================================
+
+Sample: 2 LambdaMetafactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.LambdaMetafactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Object invoke(Object... args)`: This method is used to invoke the lambda function with the provided arguments. The return type is `Object`.
+
+2. `MethodType getLambdaMethodType()`: This method returns the `MethodType` of the lambda function. The return type is `MethodType`.
+
+3. `MethodHandle getLambdaFactory()`: This method returns the `MethodHandle` of the lambda factory. The return type is `MethodHandle`.
+
+4. `MethodType getLambdaMetafactoryMethodType()`: This method returns the `MethodType` of the lambda metafactory method. The return type is `MethodType`.
+
+5. `MethodHandle getLambdaMetafactory()`: This method returns the `MethodHandle` of the lambda metafactory. The return type is `MethodHandle`.
+
+Each of these methods has no parameters.
+================================================================
+
+Sample: 3 MethodHandle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MethodHandle package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 4 MethodHandleProxies
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MethodHandleProxies package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 MethodHandles
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MethodHandles package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MethodHandles.Lookup`: This method returns a new `Lookup` instance that can be used to find `MethodHandle` instances for methods in the specified class.
+
+2. `MethodHandles.lookup()`: This method returns a new `Lookup` instance that can be used to find `MethodHandle` instances for methods in the specified class.
+
+3. `MethodHandles.publicLookup()`: This method returns a new `Lookup` instance that can be used to find `MethodHandle` instances for public methods in the specified class.
+
+4. `MethodHandles.privateLookupIn(Class<?>, Class<?>)`: This method returns a new `Lookup` instance that can be used to find `MethodHandle` instances for private methods in the specified class.
+
+5. `MethodHandles.filterReturnValue()`: This method returns a new `MethodHandle` that filters the return value of the target method.
+================================================================
+
+Sample: 6 MethodHandles.Lookup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MethodHandles.Lookup package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public MethodType lookupClass()`: This method returns the MethodType of the class represented by this lookup.
+
+2. `public MethodType lookupConstructor(Class<?>... parameterTypes)`: This method returns the MethodType of the constructor with the specified parameter types.
+
+3. `public MethodHandle findStatic(Class<?> owner, String name, MethodType type)`: This method returns a MethodHandle for the static method with the specified name and type.
+
+4. `public MethodHandle findVirtual(Class<?> owner, String name, MethodType type)`: This method returns a MethodHandle for the virtual method with the specified name and type.
+
+5. `public MethodHandle findSpecial(Class<?> owner, String name, MethodType type, int special)`: This method returns a MethodHandle for the special method with the specified name, type, and special value.
+================================================================
+
+Sample: 7 MethodType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MethodType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MethodType.methodType(returnType, parameterTypes...)`: This method is used to create a MethodType instance. It takes the return type and the parameter types as arguments.
+
+2. `MethodType.methodType(returnType, varargParameterType)`: This method is used to create a MethodType instance with a variable argument parameter. It takes the return type and the variable argument parameter type as arguments.
+
+3. `MethodType.methodType(void.class)`: This method is used to create a MethodType instance for a method that does not return a value.
+
+4. `MethodType.methodType(void.class, parameterTypes...)`: This method is used to create a MethodType instance for a method that does not return a value and takes parameters. It takes the parameter types as arguments.
+
+5. `MethodType.methodType(void.class, varargParameterType)`: This method is used to create a MethodType instance for a method that does not return a value and takes a variable argument parameter. It takes the variable argument parameter type as an argument.
+================================================================
+
+Sample: 8 MutableCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.MutableCallSite package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MutableCallSite(MethodType methodType, MethodHandle target)`: This constructor creates a new MutableCallSite that will invoke the given target method.
+
+2. `MethodType getMethodType()`: This method returns the MethodType of the target method.
+
+3. `MethodHandle getTarget()`: This method returns the MethodHandle of the target method.
+
+4. `void setTarget(MethodHandle target)`: This method sets the target method of this MutableCallSite.
+
+5. `Object call(Object... args)`: This method invokes the target method with the given arguments.
+================================================================
+
+Sample: 9 SerializedLambda
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.SerializedLambda package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getFunctionalInterface()`: `java.lang.Class<?>`: This method returns the functional interface that this lambda corresponds to.
+
+2. `getImplMethodName()`: `java.lang.String`: This method returns the name of the method that this lambda corresponds to.
+
+3. `getInstantiatedMethodType()`: `java.lang.reflect.Type`: This method returns the type of the method that this lambda corresponds to.
+
+4. `getInstantiatedMethodType()`: `java.lang.reflect.Type`: This method returns the type of the method that this lambda corresponds to.
+
+5. `getImplMethodName()`: `java.lang.String`: This method returns the name of the method that this lambda corresponds to.
+================================================================
+
+Sample: 10 SwitchPoint
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.SwitchPoint package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 11 VolatileCallSite
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.invoke.VolatileCallSite package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `VolatileCallSite(MethodHandles.Lookup lookup, MethodType type, MethodHandle target)`: This constructor creates a new VolatileCallSite that represents a call to the specified target method.
+
+2. `MethodType getType()`: This method returns the MethodType of the target method.
+
+3. `MethodHandle getTarget()`: This method returns the MethodHandle of the target method.
+
+4. `Object invokeExact(Object... args) throws Throwable`: This method invokes the target method with the specified arguments.
+
+5. `Object invokeWithArguments(Object... args) throws Throwable`: This method invokes the target method with the specified arguments.
+================================================================
+

@@ -1,0 +1,317 @@
+Sample: 0 DatatypeConverter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String printHexBinary(byte[] bytes) from javax.xml.bind.DatatypeConverter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the code snippet for the `printHexBinary(byte[] bytes)` method from `javax.xml.bind.DatatypeConverter`:
+
+```java
+import javax.xml.bind.DatatypeConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        byte[] bytes = {1, 2, 3, 4, 5};
+        String hexString = DatatypeConverter.printHexBinary(bytes);
+        System.out.println(hexString);
+    }
+}
+```
+
+In this code snippet, we first import the `DatatypeConverter` class from `javax.xml.bind` package. Then we create a byte array `bytes` with some values. The `printHexBinary(byte[] bytes)` method is then used to convert the byte array into a hexadecimal string. Finally, we print the hexadecimal string.
+
+The output of this code snippet will be:
+
+```
+0102030405
+```
+
+This is because the byte array `{1, 2, 3, 4, 5}` is converted to a hexadecimal string. Each byte in the byte array is converted to two hexadecimal digits.
+================================================================
+
+Sample: 1 DatatypeConverter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] parseHexBinary(String s) from javax.xml.bind.DatatypeConverter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `parseHexBinary(String s)` method from `javax.xml.bind.DatatypeConverter`:
+
+```java
+import javax.xml.bind.DatatypeConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String hexString = "48656C6C6F"; // Hexadecimal representation of "Hello"
+        byte[] bytes = DatatypeConverter.parseHexBinary(hexString);
+        String result = new String(bytes);
+        System.out.println(result);
+    }
+}
+```
+
+In this code snippet, we first create a hexadecimal string `hexString`. Then we use the `parseHexBinary(String s)` method to convert this hexadecimal string into a byte array. Finally, we convert the byte array back into a string and print it out.
+
+Please note that the `parseHexBinary(String s)` method throws a `NumberFormatException` if the string is not a valid hexadecimal string.
+================================================================
+
+Sample: 2 DatatypeConverter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String printBase64Binary(byte[] bytes) from javax.xml.bind.DatatypeConverter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a code snippet that uses the `printBase64Binary` method from `javax.xml.bind.DatatypeConverter`:
+
+```java
+import javax.xml.bind.DatatypeConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        byte[] bytes = {1, 2, 3, 4, 5};
+        String base64 = DatatypeConverter.printBase64Binary(bytes);
+        System.out.println(base64);
+    }
+}
+```
+
+In this code snippet, we first import the `DatatypeConverter` class from the `javax.xml.bind` package. Then, we create a byte array with some arbitrary values. The `printBase64Binary` method is then used to convert these bytes into a Base64 string. Finally, we print the resulting string.
+
+Please note that this code snippet will only work if you are using a Java environment that supports the `javax.xml.bind` package. If you are using a Java environment that does not support this package, you will need to find an alternative way to convert bytes to a Base64 string.
+================================================================
+
+Sample: 3 DatatypeConverter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use byte[] parseBase64Binary(String s) from javax.xml.bind.DatatypeConverter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `parseBase64Binary(String s)` method from `javax.xml.bind.DatatypeConverter`:
+
+```java
+import javax.xml.bind.DatatypeConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String base64String = "SGVsbG8gd29ybGQ="; // "Hello world" in base64
+        byte[] bytes = DatatypeConverter.parseBase64Binary(base64String);
+        System.out.println(new String(bytes));
+    }
+}
+```
+
+In this code snippet, we first create a `base64String` which is a base64 representation of "Hello world". Then we use the `parseBase64Binary(String s)` method to convert this string into a byte array. Finally, we print out the byte array as a string to verify that it matches the original string.
+================================================================
+
+Sample: 4 Unmarshaller.Listener
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void beforeUnmarshal(Object target, Object parent) from javax.xml.bind.Unmarshaller.Listener
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void beforeUnmarshal(Object target, Object parent)` method is a part of the `Unmarshaller.Listener` interface in Java. This method is called before the unmarshalling process begins.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.bind.Unmarshaller;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        Unmarshaller.Listener listener = new Unmarshaller.Listener() {
+            @Override
+            public void beforeUnmarshal(Object target, Object parent) {
+                System.out.println("Before unmarshalling: " + target + ", " + parent);
+            }
+        };
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+```
+
+In this code snippet, we create a `Unmarshaller.Listener` that overrides the `beforeUnmarshal` method. This method is called before the unmarshalling process begins, and it prints out the target and parent objects.
+
+Please note that this is a simple example and does not involve actual unmarshalling. The actual unmarshalling process would involve more complex setup and usage.
+================================================================
+
+Sample: 5 Unmarshaller.Listener
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void afterUnmarshal(Object target, Object parent) from javax.xml.bind.Unmarshaller.Listener
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void afterUnmarshal(Object target, Object parent)` method is a part of the `Unmarshaller.Listener` interface in Java. This method is called after the unmarshalling process is completed.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.Unmarshaller.Listener;
+
+public class Main {
+    public static void main(String[] args) {
+        Unmarshaller unmarshaller =...; // initialize your unmarshaller
+        unmarshaller.setListener(new Listener() {
+            @Override
+            public void afterUnmarshal(Object target, Object parent) {
+                // your code here
+                System.out.println("Unmarshalling completed for: " + target);
+            }
+        });
+    }
+}
+```
+
+In this example, we are setting a listener to our unmarshaller. When the unmarshalling process is completed, the `afterUnmarshal` method will be called. The `target` parameter is the object that was unmarshalled, and the `parent` parameter is the parent of the unmarshalled object.
+
+Please note that you need to replace `...` with your actual unmarshaller initialization code.
+================================================================
+

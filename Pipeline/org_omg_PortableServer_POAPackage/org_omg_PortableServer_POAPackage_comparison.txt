@@ -1,0 +1,230 @@
+Sample: 0 AdapterAlreadyExistsHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.AdapterAlreadyExistsHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 AdapterNonExistentHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.AdapterNonExistentHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isAdapterNonExistent(PortableServer.POA _poa)`: This method checks if the adapter is non-existent.
+
+2. `PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa)`: This method returns the POA that is non-existent.
+
+3. `PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name)`: This method returns the POA that is non-existent with the specified name.
+
+4. `PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name, String _id)`: This method returns the POA that is non-existent with the specified name and id.
+
+5. `PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name, String _id, String _type)`: This method returns the POA that is non-existent with the specified name, id, and type.
+================================================================
+
+Sample: 2 InvalidPolicyHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.InvalidPolicyHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean is_equivalent(InvalidPolicy p1, InvalidPolicy p2)`: This method checks if two InvalidPolicy objects are equivalent.
+
+2. `InvalidPolicy create(String id)`: This method creates a new InvalidPolicy object with the specified id.
+
+3. `InvalidPolicy create_from_repository(String id, IDLRepository idl_repo)`: This method creates a new InvalidPolicy object from the specified id and IDLRepository.
+
+4. `InvalidPolicy read(String id)`: This method reads an InvalidPolicy object from the repository with the specified id.
+
+5. `InvalidPolicy read_w_repoid(String repository_id, String type_id)`: This method reads an InvalidPolicy object from the repository with the specified repository id and type id.
+================================================================
+
+Sample: 3 NoServantHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.NoServantHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 4 ObjectAlreadyActiveHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.ObjectAlreadyActiveHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 ObjectNotActiveHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.ObjectNotActiveHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+
+Sample: 6 ServantAlreadyActiveHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.ServantAlreadyActiveHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 7 ServantNotActiveHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.ServantNotActiveHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean is_servant_not_active()`: This method checks if the servant is not active.
+
+2. `void servant_not_active()`: This method sets the servant as not active.
+
+3. `void servant_active()`: This method sets the servant as active.
+
+4. `boolean is_servant_active()`: This method checks if the servant is active.
+
+5. `void set_servant_not_active_timeout(long timeout)`: This method sets the timeout for the servant to be not active.
+================================================================
+
+Sample: 8 WrongAdapterHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.WrongAdapterHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 9 WrongPolicyHelper
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use org.omg.PortableServer.POAPackage.WrongPolicyHelper package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isWrongPolicy(PortableServer.POA _poa, PortableServer.POAPackage.WrongPolicy _policy)`: This method checks if the given policy is wrong.
+
+2. `PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version)`: This method creates a new WrongPolicy object.
+
+3. `PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description)`: This method creates a new WrongPolicy object with a description.
+
+4. `PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description, String _details)`: This method creates a new WrongPolicy object with a description and details.
+
+5. `PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description, String _details, String _administration)`: This method creates a new WrongPolicy object with a description, details, and administration.
+================================================================
+

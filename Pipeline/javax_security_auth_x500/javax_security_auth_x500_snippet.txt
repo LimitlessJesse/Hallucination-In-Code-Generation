@@ -1,0 +1,104 @@
+Sample: 0 X500Principal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getName() from javax.security.auth.x500.X500Principal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getName()` method from `javax.security.auth.x500.X500Principal` is used to get the name of the principal. Here is a simple example:
+
+```java
+import javax.security.auth.x500.X500Principal;
+
+public class Main {
+    public static void main(String[] args) {
+        X500Principal principal = new X500Principal("CN=John Doe, OU=IT, O=Example Inc., L=New York, ST=New York, C=US");
+        String name = principal.getName();
+        System.out.println(name);
+    }
+}
+```
+
+In this example, we create a new `X500Principal` with a name. Then we call the `getName()` method on the principal to get the name of the principal. The output of this program will be:
+
+```
+CN=John Doe, OU=IT, O=Example Inc., L=New York, ST=New York, C=US
+```
+
+Please note that the `javax.security.auth.x500.X500Principal` class is part of the Java Security API and is not part of the standard Java API. It is used for handling X.500 name strings.
+================================================================
+
+Sample: 1 X500PrivateCredential
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use PrivateKey getPrivateKey() from javax.security.auth.x500.X500PrivateCredential
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getPrivateKey()` method is not available in the `X500PrivateCredential` class. However, you can use the `PrivateKey` from the `KeyPair` class. Here is a simple example:
+
+```java
+import java.security.*;
+
+public class Main {
+    public static void main(String[] args) throws NoSuchAlgorithmException {
+        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+        keyPairGenerator.initialize(2048);
+        KeyPair keyPair = keyPairGenerator.generateKeyPair();
+        PrivateKey privateKey = keyPair.getPrivate();
+        System.out.println(privateKey);
+    }
+}
+```
+
+In this example, we are generating a `KeyPair` using the `RSA` algorithm. Then we are getting the `PrivateKey` from the `KeyPair` and printing it.
+
+Please note that the `PrivateKey` is a sensitive information and should be handled with care. If you want to use it for cryptographic operations, you should consider using a `KeyFactory` to convert it back to a `PrivateKey`.
+================================================================
+

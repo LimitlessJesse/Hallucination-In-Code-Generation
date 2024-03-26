@@ -1,0 +1,42 @@
+Sample: 0 Timer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.timer.Timer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean cancel()`: This method attempts to cancel execution of this task.
+2. `void schedule(Date time, TimerTask task)`: This method schedules the specified task for execution at the specified time.
+3. `void schedule(Date firstTime, long period)`: This method schedules the task for repeated execution.
+4. `void schedule(long delay, TimerTask task)`: This method schedules the specified task for execution after the specified delay.
+5. `void schedule(long delay, long period)`: This method schedules the task for repeated execution.
+================================================================
+
+Sample: 1 TimerNotification
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.timer.TimerNotification package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean cancel()`: This method cancels the timer.
+2. `boolean isCanceled()`: This method returns true if the timer has been canceled.
+3. `boolean isPersistent()`: This method returns true if the timer is persistent.
+4. `long getTime()`: This method returns the time at which the notification is delivered.
+5. `long getSequenceNumber()`: This method returns the sequence number of the notification.
+================================================================
+

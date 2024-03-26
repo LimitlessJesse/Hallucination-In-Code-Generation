@@ -1,0 +1,1453 @@
+Sample: 0 DefaultMutableTreeNode
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getChildCount() from javax.swing.tree.DefaultMutableTreeNode
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getChildCount()` method from `javax.swing.tree.DefaultMutableTreeNode` is used to get the number of children of the node.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+
+        root.add(child1);
+        root.add(child2);
+
+        int childCount = root.getChildCount();
+        System.out.println("Number of children: " + childCount);
+    }
+}
+```
+
+In this code, we create a tree with a root node and two child nodes. We then call the `getChildCount()` method on the root node, which returns the number of children it has. The result is then printed to the console.
+================================================================
+
+Sample: 1 DefaultTreeCellEditor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isCellEditable(EventObject event) from javax.swing.tree.DefaultTreeCellEditor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isCellEditable(EventObject event)` method in `DefaultTreeCellEditor` is used to determine whether a cell in a tree is editable. It takes an `EventObject` as a parameter and returns a `boolean` value indicating whether the cell is editable.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.event.TreeModelEvent;
+import javax.swing.tree.DefaultTreeCellEditor;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreeNode;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeModel model = new DefaultTreeModel(new DefaultMutableTreeNode("Root"));
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor(model);
+
+        TreeNode root = model.getRoot();
+        TreeNode node1 = new DefaultMutableTreeNode("Node 1");
+        TreeNode node2 = new DefaultMutableTreeNode("Node 2");
+        root.add(node1);
+        root.add(node2);
+
+        TreeModelEvent event = new TreeModelEvent(model, new Object[] { node1 });
+        boolean isEditable = editor.isCellEditable(event);
+
+        System.out.println("Is node1 editable? " + isEditable);
+    }
+}
+```
+
+In this code, we create a `DefaultTreeModel` and a `DefaultTreeCellEditor`. We then add two nodes to the root of the tree and create a `TreeModelEvent` for the first node. The `isCellEditable(event)` method is then called with this event, and the result is printed to the console.
+
+Please note that this is a simple example and may not fully demonstrate the functionality of the `isCellEditable(event)` method. In a real-world scenario, you would likely need to set up a more complex tree model and event handling to fully test this method.
+================================================================
+
+Sample: 2 DefaultTreeCellEditor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void cancelCellEditing() from javax.swing.tree.DefaultTreeCellEditor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `cancelCellEditing()` method is not a part of the `DefaultTreeCellEditor` class. It is a part of the `DefaultTreeCellRenderer` class.
+
+Here is a complete code snippet of the `cancelCellEditing()` method from `DefaultTreeCellRenderer`:
+
+```java
+import javax.swing.tree.DefaultTreeCellRenderer;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
+        renderer.cancelCellEditing();
+    }
+}
+```
+
+In this code snippet, we create an instance of `DefaultTreeCellRenderer` and call the `cancelCellEditing()` method on it. This method is used to cancel the editing of a cell in a tree.
+
+Please note that this method is not part of the `DefaultTreeCellEditor` class, but it is part of the `DefaultTreeCellRenderer` class. The `DefaultTreeCellEditor` class is used to edit the cells in a tree, while the `DefaultTreeCellRenderer` class is used to render the cells in a tree.
+================================================================
+
+Sample: 3 DefaultTreeCellEditor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void removeCellEditorListener(CellEditorListener l) from javax.swing.tree.DefaultTreeCellEditor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `removeCellEditorListener(CellEditorListener l)` method is not a part of the `DefaultTreeCellEditor` class. It is a part of the `CellEditor` interface, which is implemented by `DefaultTreeCellEditor`.
+
+Here is an example of how you can use the `removeCellEditorListener(CellEditorListener l)` method:
+
+```java
+import javax.swing.event.CellEditorListener;
+import javax.swing.tree.DefaultTreeCellEditor;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor();
+        CellEditorListener listener = new CellEditorListener() {
+            // Implement the methods here
+        };
+        editor.addCellEditorListener(listener);
+        // Now you can remove the listener
+        editor.removeCellEditorListener(listener);
+    }
+}
+```
+
+In the above code, we first create a `DefaultTreeCellEditor` object. Then we create a `CellEditorListener` object and add it to the editor. Finally, we remove the listener from the editor.
+
+Please note that you need to implement the methods in the `CellEditorListener` interface to make the code work.
+================================================================
+
+Sample: 4 DefaultTreeCellEditor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void addCellEditorListener(CellEditorListener l) from javax.swing.tree.DefaultTreeCellEditor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `addCellEditorListener(CellEditorListener l)` method is not a method of `DefaultTreeCellEditor`. It is a method of `CellEditor` interface.
+
+Here is an example of how you can use it:
+
+```java
+import javax.swing.event.CellEditorListener;
+import javax.swing.tree.DefaultTreeCellEditor;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellEditor editor = new DefaultTreeCellEditor();
+        editor.addCellEditorListener(new CellEditorListener() {
+            @Override
+            public void editingStopped(ChangeEvent e) {
+                // Handle editing stopped event
+            }
+
+            @Override
+            public void editingCanceled(ChangeEvent e) {
+                // Handle editing canceled event
+            }
+        });
+    }
+}
+```
+
+In this example, we create a `DefaultTreeCellEditor` and add a `CellEditorListener` to it. The `editingStopped(ChangeEvent e)` method is called when the editing is stopped, and the `editingCanceled(ChangeEvent e)` method is called when the editing is canceled.
+
+Please note that the `CellEditorListener` is a listener interface and you need to provide an implementation for the methods. In this example, we provide a simple implementation that does nothing. You would replace these with your own logic.
+================================================================
+
+Sample: 5 DefaultTreeCellEditor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Component getTreeCellEditorComponent(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row) from javax.swing.tree.DefaultTreeCellEditor
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getTreeCellEditorComponent` method from `DefaultTreeCellEditor` class:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeCellEditor;
+import javax.swing.tree.TreeCellEditor;
+import javax.swing.tree.TreePath;
+import javax.swing.JTree;
+import javax.swing.JTextField;
+import javax.swing.tree.TreeCellEditor;
+import javax.swing.tree.TreePath;
+import javax.swing.JTree;
+import javax.swing.JTextField;
+
+public class Main {
+    public static void main(String[] args) {
+        JTree tree = new JTree();
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        tree.setModel(new javax.swing.tree.DefaultTreeModel(root));
+
+        TreeCellEditor editor = new DefaultTreeCellEditor(tree) {
+            @Override
+            public Component getTreeCellEditorComponent(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row) {
+                JTextField textField = (JTextField) super.getTreeCellEditorComponent(tree, value, isSelected, expanded, leaf, row);
+                // Add your custom logic here
+                return textField;
+            }
+        };
+
+        tree.setCellEditor(editor);
+    }
+}
+```
+
+In the above code, we are creating a `JTree` and setting it up with a `DefaultTreeModel`. We then create a `TreeCellEditor` that extends `DefaultTreeCellEditor` and overrides the `getTreeCellEditorComponent` method. Inside this method, we are getting the `JTextField` returned by the superclass method and then adding our custom logic.
+
+Please note that this is a simple example and does not include any error checking or other important aspects of a real-world application.
+================================================================
+
+Sample: 6 DefaultTreeCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setLeafIcon(Icon icon) from javax.swing.tree.DefaultTreeCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setLeafIcon(Icon icon)` method is a part of `DefaultTreeCellRenderer` class in Java Swing. It sets the icon to be used for leaf nodes in the tree.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
+        renderer.setLeafIcon(UIManager.getIcon("Tree.leafIcon"));
+    }
+}
+```
+
+In this code snippet, we create a `DefaultTreeCellRenderer` object and then call the `setLeafIcon(Icon icon)` method on it. The `UIManager.getIcon("Tree.leafIcon")` is used to get the default leaf icon.
+
+Please note that you need to have a running Swing application to use this method. If you are running this code in a standalone Java application, you will need to add the necessary Swing components and containers to your application to see the effect of this method.
+================================================================
+
+Sample: 7 DefaultTreeCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setOpenIcon(Icon icon) from javax.swing.tree.DefaultTreeCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setOpenIcon(Icon icon)` method is a part of `DefaultTreeCellRenderer` class in Java Swing. It sets the icon to be displayed when a node is open.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
+        renderer.setOpenIcon(new ImageIcon("path_to_your_image.png"));
+    }
+}
+```
+
+In this code snippet, we create a new `DefaultTreeCellRenderer` object and then call the `setOpenIcon(Icon icon)` method on it. The `setOpenIcon(Icon icon)` method takes an `Icon` object as a parameter, which is the icon to be displayed when a node is open.
+
+Please replace `"path_to_your_image.png"` with the actual path to your image file.
+
+Note: This code snippet should be placed inside a method or a class, as it is not a standalone program.
+================================================================
+
+Sample: 8 DefaultTreeCellRenderer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setClosedIcon(Icon icon) from javax.swing.tree.DefaultTreeCellRenderer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setClosedIcon(Icon icon)` method is a part of `DefaultTreeCellRenderer` class in Java Swing. It sets the icon to be displayed when the node is closed.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.*;
+import javax.swing.tree.*;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();
+        renderer.setClosedIcon(new ImageIcon("path_to_your_image.png"));
+    }
+}
+```
+
+In this code snippet, we create a new `DefaultTreeCellRenderer` object and then call the `setClosedIcon(Icon icon)` method on it. The `setClosedIcon(Icon icon)` method takes an `Icon` object as a parameter, which is the icon to be displayed when the node is closed.
+
+Please replace `"path_to_your_image.png"` with the actual path to your image file.
+
+Note: This code snippet should be placed inside a method or a class, as it is not a standalone program.
+================================================================
+
+Sample: 9 DefaultTreeModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void nodeStructureChanged(TreeNode node) from javax.swing.tree.DefaultTreeModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void nodeStructureChanged(TreeNode node)` method is a part of the `DefaultTreeModel` class in the `javax.swing.tree` package. This method is used to notify the model that the structure of the tree has changed.
+
+Here is a simple example of how you can use this method:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a root node
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+
+        // Create a tree model
+        DefaultTreeModel model = new DefaultTreeModel(root);
+
+        // Add a child node
+        DefaultMutableTreeNode child = new DefaultMutableTreeNode("Child");
+        model.insertNodeInto(child, root, 0);
+
+        // Change the structure of the tree
+        model.removeNodeFromParent(child);
+
+        // Notify the model that the structure has changed
+        model.nodeStructureChanged(root);
+    }
+}
+```
+
+In this example, we first create a root node and a tree model. We then add a child node to the root node. After that, we remove the child node from its parent and notify the model that the structure of the tree has changed.
+
+Please note that the `nodeStructureChanged(TreeNode node)` method is not typically used directly in your code. It is typically used by the tree model when it needs to notify the tree that the structure of the tree has changed.
+================================================================
+
+Sample: 10 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void addSelectionPath(TreePath path) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `addSelectionPath(TreePath path)` method from `DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel model = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+
+        // Add a selection path
+        TreePath path = new TreePath(new Object[] {root, child1});
+        selectionModel.addSelectionPath(path);
+
+        // Print the selected paths
+        for (TreePath selectedPath : selectionModel.getSelectionPaths()) {
+            System.out.println(selectedPath);
+        }
+    }
+}
+```
+
+In this code, we first create a tree model with a root node and two child nodes. Then we create a tree selection model and add a selection path that includes the root and one of its child nodes. Finally, we print out the selected paths.
+
+Please note that you need to have a running Java environment to run this code. Also, this code is a simple example and may not cover all the possible scenarios.
+================================================================
+
+Sample: 11 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void removeSelectionPath(TreePath path) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use the `removeSelectionPath(TreePath path)` method from `javax.swing.tree.DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a root node
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+
+        // Create a tree model
+        DefaultTreeModel model = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+
+        // Add a child node
+        DefaultMutableTreeNode child = new DefaultMutableTreeNode("Child");
+        model.insertNodeInto(child, root, 0);
+
+        // Select the child node
+        selectionModel.addSelectionPath(new TreePath(child.getPath()));
+
+        // Remove the selection
+        selectionModel.removeSelectionPath(new TreePath(child.getPath()));
+    }
+}
+```
+
+In this example, we first create a root node and a tree model. Then we create a tree selection model. We add a child node to the tree model and select this child node. Finally, we remove the selection from the child node.
+================================================================
+
+Sample: 12 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSelectionPath(TreePath path) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `setSelectionPath(TreePath path)` method from `javax.swing.tree.DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel treeModel = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+
+        // Set the selection path
+        TreePath path = new TreePath(new Object[] {root, child1});
+        selectionModel.setSelectionPath(path);
+    }
+}
+```
+
+In this code, we first create a tree model with a root node and two child nodes. Then we create a tree selection model and set the selection path to the child node of the root node.
+================================================================
+
+Sample: 13 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setSelectionPaths(TreePath[] paths) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use the `setSelectionPaths(TreePath[] paths)` method from `javax.swing.tree.DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a root node
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+
+        // Create a child node
+        DefaultMutableTreeNode child = new DefaultMutableTreeNode("Child");
+
+        // Add the child node to the root node
+        root.add(child);
+
+        // Create a tree model and set the root node
+        DefaultTreeModel treeModel = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+
+        // Set the tree model
+        selectionModel.setModel(treeModel);
+
+        // Create a tree path for the child node
+        TreePath childPath = new TreePath(child.getPath());
+
+        // Set the selection paths
+        selectionModel.setSelectionPaths(new TreePath[] { childPath });
+    }
+}
+```
+
+In this example, we first create a root node and a child node. We then create a tree model and set the root node. We create a tree selection model and set the tree model. We then create a tree path for the child node and set the selection paths to the child path.
+================================================================
+
+Sample: 14 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use TreePath[] getSelectionPaths() from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSelectionPaths()` method in `DefaultTreeSelectionModel` returns an array of `TreePath` objects representing the currently selected paths in the tree.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel treeModel = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+        selectionModel.setSelectionPath(new TreePath(root.getPath()));
+
+        // Get the selection paths
+        TreePath[] selectionPaths = selectionModel.getSelectionPaths();
+
+        // Print the selection paths
+        for (TreePath path : selectionPaths) {
+            System.out.println(path);
+        }
+    }
+}
+```
+
+In this code, we first create a tree model with a root node and two child nodes. We then create a tree selection model and select the root node. Finally, we get the selection paths and print them.
+
+Please note that this code is a simple example and may not work as expected in a real-world application. It is also important to note that the `getSelectionPaths()` method is part of the `DefaultTreeSelectionModel` class and is not available in all versions of Java.
+================================================================
+
+Sample: 15 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use TreePath getSelectionPath() from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSelectionPath()` method in `DefaultTreeSelectionModel` returns the `TreePath` of the currently selected node in the tree.
+
+Here is a complete code snippet:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel model = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+        selectionModel.setSelectionPath(new TreePath(root.getPath()));
+
+        // Get the selection path
+        TreePath selectionPath = selectionModel.getSelectionPath();
+
+        // Print the selected node
+        System.out.println("Selected node: " + selectionPath.getLastPathComponent());
+    }
+}
+```
+
+In this code, we first create a tree model with a root node and two child nodes. We then create a tree selection model and select the root node. Finally, we get the selection path and print the selected node.
+================================================================
+
+Sample: 16 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use TreePath getLeadSelectionPath() from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getLeadSelectionPath()` method in `DefaultTreeSelectionModel` returns the path of the currently selected node in the tree. Here is a complete code snippet:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel treeModel = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel(treeModel);
+
+        // Select a node
+        selectionModel.setSelectionPath(new TreePath(child1.getPath()));
+
+        // Get the lead selection path
+        TreePath leadSelectionPath = selectionModel.getLeadSelectionPath();
+
+        // Print the selected node
+        System.out.println("Selected node: " + leadSelectionPath.getLastPathComponent());
+    }
+}
+```
+
+In this code, we first create a tree model with two nodes, "Root" and "Child 1". We then create a tree selection model and select "Child 1". Finally, we get the lead selection path and print the selected node.
+================================================================
+
+Sample: 17 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getLeadSelectionRow() from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getLeadSelectionRow()` method from `DefaultTreeSelectionModel` class is used to get the row index of the lead selection.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeModel model = new DefaultTreeModel(null);
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel(model);
+
+        // Add some nodes to the tree model
+        model.insertNodeInto(new DefaultMutableTreeNode("Node 1"), null, 0);
+        model.insertNodeInto(new DefaultMutableTreeNode("Node 2"), null, 1);
+
+        // Select the first node
+        selectionModel.setSelectionPath(new TreePath(model.getPathToRoot(model.getRoot())));
+
+        // Get the lead selection row
+        int leadSelectionRow = selectionModel.getLeadSelectionRow();
+
+        System.out.println("Lead selection row: " + leadSelectionRow);
+    }
+}
+```
+
+In this code snippet, we first create a `DefaultTreeModel` and a `DefaultTreeSelectionModel`. We then add some nodes to the tree model and select the first node. Finally, we get the lead selection row and print it out.
+================================================================
+
+Sample: 18 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isPathSelected(TreePath path) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `isPathSelected(TreePath path)` method from `DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a tree model
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+        root.add(child1);
+        root.add(child2);
+        DefaultTreeModel model = new DefaultTreeModel(root);
+
+        // Create a tree selection model
+        DefaultTreeSelectionModel selectionModel = new DefaultTreeSelectionModel();
+        selectionModel.setSelectionPath(new TreePath(root.getPath()));
+
+        // Check if a path is selected
+        TreePath path = new TreePath(child1.getPath());
+        boolean isSelected = selectionModel.isPathSelected(path);
+        System.out.println("Is path selected? " + isSelected);
+    }
+}
+```
+
+In this code, we first create a tree model with a root node and two child nodes. Then we create a tree selection model and select the root node. Finally, we check if a path (in this case, the path to the child1 node) is selected. The result is printed to the console.
+================================================================
+
+Sample: 19 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void removeTreeSelectionListener(TreeSelectionListener l) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `removeTreeSelectionListener(TreeSelectionListener l)` method from `javax.swing.tree.DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.DefaultTreeSelectionModel;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultTreeSelectionModel model = new DefaultTreeSelectionModel();
+        TreeSelectionListener listener = null; // replace with your listener
+        model.removeTreeSelectionListener(listener);
+    }
+}
+```
+
+In this code snippet, we create a `DefaultTreeSelectionModel` object and a `TreeSelectionListener` object. We then call the `removeTreeSelectionListener(TreeSelectionListener l)` method on the `DefaultTreeSelectionModel` object, passing our `TreeSelectionListener` object.
+
+Please replace `listener` with your actual `TreeSelectionListener` object.
+================================================================
+
+Sample: 20 DefaultTreeSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void addTreeSelectionListener(TreeSelectionListener l) from javax.swing.tree.DefaultTreeSelectionModel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how you can use the `addTreeSelectionListener(TreeSelectionListener l)` method from `javax.swing.tree.DefaultTreeSelectionModel`:
+
+```java
+import javax.swing.*;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.DefaultTreeSelectionModel;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Tree Selection Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child 1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child 2");
+
+        root.add(child1);
+        root.add(child2);
+
+        JTree tree = new JTree(root);
+        DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+        DefaultTreeSelectionModel selectionModel = (DefaultTreeSelectionModel) model.getSelectionPaths();
+
+        selectionModel.addTreeSelectionListener(new TreeSelectionListener() {
+            @Override
+            public void valueChanged(TreeSelectionEvent e) {
+                System.out.println("Tree selection changed: " + e.getPath());
+            }
+        });
+
+        frame.getContentPane().add(new JScrollPane(tree));
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
+```
+
+In this example, we create a tree with two nodes, "Root" and "Child 1". We then add a `TreeSelectionListener` to the `DefaultTreeSelectionModel`. This listener is triggered whenever the selection in the tree changes. The `valueChanged` method prints the path of the selected node.
+================================================================
+
+Sample: 21 TreePath
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getPathCount() from javax.swing.tree.TreePath
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getPathCount()` method in `javax.swing.tree.TreePath` is used to get the number of paths in the tree.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child2");
+        root.add(child1);
+        root.add(child2);
+
+        TreePath treePath = new TreePath(root.getPath());
+        int pathCount = treePath.getPathCount();
+
+        System.out.println("Number of paths in the tree: " + pathCount);
+    }
+}
+```
+
+In this code, we create a tree with a root node and two child nodes. We then create a `TreePath` object from the root node's path and get the number of paths in the tree using the `getPathCount()` method. The result is then printed to the console.
+================================================================
+
+Sample: 22 TreePath
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object getLastPathComponent() from javax.swing.tree.TreePath
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getLastPathComponent()` method in `javax.swing.tree.TreePath` class is used to get the last component of the path. It returns the last component of the path as an Object.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Root");
+        DefaultMutableTreeNode child1 = new DefaultMutableTreeNode("Child1");
+        DefaultMutableTreeNode child2 = new DefaultMutableTreeNode("Child2");
+        root.add(child1);
+        root.add(child2);
+
+        TreePath path = new TreePath(new Object[] {root, child1});
+        Object lastComponent = path.getLastPathComponent();
+
+        System.out.println("Last component of the path: " + lastComponent);
+    }
+}
+```
+
+In this code, we create a tree with a root node and two child nodes. We then create a `TreePath` object that represents the path from the root to the first child node. The `getLastPathComponent()` method is then called on this path, and the result is printed to the console.
+================================================================
+
+Sample: 23 TreePath
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object getPathComponent(int index) from javax.swing.tree.TreePath
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use the `getPathComponent(int index)` method from `javax.swing.tree.TreePath`:
+
+```java
+import javax.swing.tree.TreePath;
+
+public class Main {
+    public static void main(String[] args) {
+        TreePath treePath = new TreePath(new Object[] { "Node1", "Node2", "Node3" });
+        Object pathComponent = treePath.getPathComponent(1);
+        System.out.println(pathComponent);
+    }
+}
+```
+
+In this example, we create a `TreePath` with three nodes. Then we call `getPathComponent(1)` to get the second node in the path. The output will be `Node2`.
+
+Please note that `TreePath` is a part of the `javax.swing.tree` package, which is not part of the standard Java API. If you are using JavaFX, you can use `javafx.scene.control.TreeItem` and `javafx.scene.control.TreePath` instead.
+================================================================
+

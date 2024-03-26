@@ -1,0 +1,61 @@
+Sample: 0 StAXSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getSystemId() from javax.xml.transform.stax.StAXSource
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getSystemId()` method in `javax.xml.transform.stax.StAXSource` is used to get the system identifier of the source.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.transform.stax.StAXSource;
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) {
+        String xml = "<root><element>Content</element></root>";
+        XMLInputFactory factory = XMLInputFactory.newInstance();
+        try {
+            XMLEventReader eventReader = factory.createXMLEventReader(new StringReader(xml));
+            StAXSource source = new StAXSource(eventReader);
+            System.out.println(source.getSystemId());
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a new `StAXSource` object by passing an `XMLEventReader`. The `XMLEventReader` is created by parsing an XML string using an `XMLInputFactory`. The `getSystemId()` method is then called on the `StAXSource` object to get the system identifier of the source.
+
+Please note that the system identifier of the source in this case is the XML string itself. If the source was a file, the system identifier would be the file path.
+================================================================
+

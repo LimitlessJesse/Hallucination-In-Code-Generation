@@ -1,0 +1,31 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,IsoFields,1,int get(TemporalField field),False
+0,IsoFields,2,Temporal adjustInto(Temporal temporal),False
+0,IsoFields,3,Temporal adjustInto(TemporalAdjuster adjuster),False
+0,IsoFields,4,"Temporal with(TemporalField field, long newValue)",False
+0,IsoFields,5,Temporal with(TemporalAdjuster adjuster),False
+1,JulianFields,1,boolean isSupported(TemporalField field),False
+1,JulianFields,2,long get(TemporalField field),False
+1,JulianFields,3,Temporal adjustInto(Temporal temporal),False
+1,JulianFields,4,"Temporal adjustIfPresent(Temporal temporal, TemporalAdjuster adjuster)",False
+1,JulianFields,5,"Temporal with(TemporalField field, long newValue)",False
+2,TemporalAdjusters,1,TemporalAdjuster next(TemporalField field),False
+2,TemporalAdjusters,2,TemporalAdjuster nextOrSame(TemporalField field),False
+2,TemporalAdjusters,3,TemporalAdjuster previous(TemporalField field),False
+2,TemporalAdjusters,4,TemporalAdjuster previousOrSame(TemporalField field),False
+2,TemporalAdjusters,5,TemporalAdjuster with(TemporalAdjuster adjuster),False
+3,TemporalQueries,1,TemporalQuery<R> queryFrom(TemporalAccessor temporal),False
+3,TemporalQueries,2,TemporalQuery<R> queryRange(TemporalUnit unit),False
+3,TemporalQueries,3,"TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster)",False
+3,TemporalQueries,4,"TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster, TemporalAdjuster secondAdjuster)",False
+3,TemporalQueries,5,"TemporalQuery<R> queryRange(TemporalUnit unit, TemporalAdjuster adjuster, TemporalAdjuster secondAdjuster, TemporalAdjuster thirdAdjuster)",False
+4,ValueRange,1,boolean isFixed(),True
+4,ValueRange,2,boolean isPermitted(Temporal field),False
+4,ValueRange,3,boolean isValidIntValue(int value),False
+4,ValueRange,4,boolean isValidLongValue(long value),False
+4,ValueRange,5,ValueRange shift(TemporalAmount amount),False
+5,WeekFields,1,WeekFields getFirstDayOfWeek(),False
+5,WeekFields,2,WeekFields getMinimalDaysInFirstWeek(),False
+5,WeekFields,3,WeekFields withFirstDayOfWeek(DayOfWeek firstDayOfWeek),False
+5,WeekFields,4,WeekFields withMinimalDaysInFirstWeek(int minimalDaysInFirstWeek),False
+5,WeekFields,5,WeekFields withWeekend(DayOfWeek... weekend),False

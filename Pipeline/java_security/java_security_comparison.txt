@@ -1,0 +1,1398 @@
+Sample: 0 AccessControlContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AccessControlContext package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean checkPermission(Permission perm)`: This method checks whether the current security context has the specified permission.
+
+2. `public void checkPermission(Permission perm, Object context)`: This method checks whether the current security context has the specified permission.
+
+3. `public void setReadOnly()`: This method sets the list to read-only.
+
+4. `public void setReadOnly(boolean readOnly)`: This method sets the list to read-only.
+
+5. `public boolean isReadOnly()`: This method returns true if the list is read-only.
+================================================================
+
+Sample: 1 AccessController
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AccessController package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean checkPermission(Permission perm)`: This method checks whether the current thread has the specified permission.
+
+2. `public void checkPermission(Permission perm, Object context)`: This method checks whether the current thread has the specified permission.
+
+3. `public void checkSecurityAccess(String target)`: This method checks whether the current thread has the specified security access.
+
+4. `public void checkSecurityAccess(String target, Object context)`: This method checks whether the current thread has the specified security access.
+
+5. `public void checkSecurityAccess(String target, Object context, ProtectionDomain domain)`: This method checks whether the current thread has the specified security access.
+================================================================
+
+Sample: 2 AlgorithmParameterGenerator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AlgorithmParameterGenerator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AlgorithmParameterGenerator`: This is the class that generates the parameters for an algorithm.
+
+2. `init(SecureRandom random)`: This method initializes the algorithm parameter generator with the specified random number generator.
+
+3. `init(AlgorithmParameterSpec params)`: This method initializes the algorithm parameter generator with the specified parameter set.
+
+4. `generateParameters()`: This method generates the parameters for the algorithm.
+
+5. `getParameterSpec(Class<T> parameterSpec)`: This method returns the parameters in the specified parameter specification class.
+
+6. `getParameterSpec(AlgorithmParameterSpec parameterSpec)`: This method returns the parameters in the specified parameter specification.
+
+7. `getParameterSpec(Class<T> parameterSpec, AlgorithmParameterSpec parameterSpec)`: This method returns the parameters in the specified parameter specification class.
+
+8. `getParameterSpec(AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)`: This method returns the parameters in the specified parameter specification.
+
+9. `getParameterSpec(Class<T> parameterSpec, AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)`: This method returns the parameters in the specified parameter specification class.
+
+10. `getParameterSpec(AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec, AlgorithmParameterSpec parameterSpec)`: This method returns the parameters in the specified parameter specification.
+================================================================
+
+Sample: 3 AlgorithmParameterGeneratorSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AlgorithmParameterGeneratorSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AlgorithmParameterGeneratorSpi()`: This is the constructor of the class.
+
+2. `init(SecureRandom random)`: This method initializes the algorithm parameter generator.
+
+3. `generateParameters()`: This method generates the parameters for the algorithm.
+
+4. `getParameterSpec(Class<T> parameterSpec)`: This method returns the parameter specification for the algorithm.
+
+5. `setParameter(byte[] params)`: This method sets the parameters for the algorithm.
+================================================================
+
+Sample: 4 AlgorithmParameters
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AlgorithmParameters package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getParameterSpec(Class<T> parameterSpec)`: This method returns the parameter specification of the specified class.
+
+2. `getParameterSpecs(Class<T> parameterSpec)`: This method returns an array of the parameter specifications of the specified class.
+
+3. `getParameter(String parameterName)`: This method returns the value of the specified parameter.
+
+4. `getParameterNames()`: This method returns an enumeration of the names of the parameters.
+
+5. `getParameter(String parameterName)`: This method returns the value of the specified parameter.
+================================================================
+
+Sample: 5 AlgorithmParametersSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AlgorithmParametersSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isInitialized()`: This method returns true if the parameters object has been initialized.
+
+2. `void init(SecureRandom sr)`: This method initializes the parameters object with the specified secure random number generator.
+
+3. `void setParameter(String name, byte[] value)`: This method sets the named parameter to the specified value.
+
+4. `byte[] getParameter(String name)`: This method returns the value of the named parameter.
+
+5. `byte[] getEncoded()`: This method returns the encoded form of the parameters.
+================================================================
+
+Sample: 6 AllPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AllPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The above methods are not inherent from its parent class. They are part of the List interface.
+================================================================
+
+Sample: 7 AuthProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.AuthProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The methods inherent from its parent class (`java.util.List`) are not included in the list.
+================================================================
+
+Sample: 8 BasicPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.BasicPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean implies(Permission p)`: This method checks if the specified permission is implied by this permission.
+
+2. `public boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `public String getActions()`: This method returns the actions of this permission.
+
+4. `public int hashCode()`: This method returns a hash code for this permission.
+
+5. `public String getName()`: This method returns the name of this permission.
+================================================================
+
+Sample: 9 CodeSigner
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.CodeSigner package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the java.security.CodeSigner package:
+
+1. `public String getSignerCertPath()`: This method returns the signer's certificate path.
+
+2. `public String getSignerCertPath(String type)`: This method returns the signer's certificate path of the specified type.
+
+3. `public String getSignerCertPath(String type, String algorithm)`: This method returns the signer's certificate path of the specified type and algorithm.
+
+4. `public String getSignerCertPath(String type, String algorithm, String provider)`: This method returns the signer's certificate path of the specified type, algorithm, and provider.
+
+5. `public String getSignerCertPath(String type, String algorithm, String provider, String parameter)`: This method returns the signer's certificate path of the specified type, algorithm, provider, and parameter.
+================================================================
+
+Sample: 10 CodeSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.CodeSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs from the java.security.CodeSource package:
+
+1. `public URL getLocation()`: This method returns the location of the code source.
+
+2. `public boolean equals(Object obj)`: This method compares this CodeSource object to the specified object.
+
+3. `public int hashCode()`: This method returns the hash code value for this CodeSource object.
+
+4. `public String toString()`: This method returns a string representation of the CodeSource object.
+
+5. `public boolean implies(CodeSource cs)`: This method checks if this CodeSource object implies the specified CodeSource object.
+================================================================
+
+Sample: 11 DigestInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.DigestInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DigestInputStream(InputStream in, MessageDigest md)`: This constructor creates a new DigestInputStream that uses the specified MessageDigest for computing the message digest.
+
+2. `int read()`: This method reads the next byte of data from the input stream.
+
+3. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+4. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+5. `void close()`: This method closes the input stream and releases any system resources associated with the stream.
+================================================================
+
+Sample: 12 DigestOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.DigestOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DigestOutputStream(OutputStream out, MessageDigest md)`: This constructor creates a new DigestOutputStream that uses the specified MessageDigest for computing the message digest.
+
+2. `void write(int b)`: This method writes the specified byte to the output stream.
+
+3. `void write(byte[] b)`: This method writes the specified byte array to the output stream.
+
+4. `void write(byte[] b, int off, int len)`: This method writes the specified byte array to the output stream.
+
+5. `void flush()`: This method forces any buffered output bytes to be written out.
+================================================================
+
+Sample: 13 DomainLoadStoreParameter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.DomainLoadStoreParameter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 14 GuardedObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.GuardedObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `int size()`: This method returns the number of elements in this list.
+================================================================
+
+Sample: 15 Identity
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Identity package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 16 IdentityScope
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.IdentityScope package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 17 KeyFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyFactory.getInstance(String algorithm)`: This method returns a KeyFactory object that generates keys for the specified algorithm.
+
+2. `PublicKey getPublicKey()`: This method returns the public key.
+
+3. `PrivateKey getPrivateKey()`: This method returns the private key.
+
+4. `KeySpec getKeySpec(Key key, Class<? extends KeySpec> keySpec)`: This method returns a KeySpec object that represents the specified key.
+
+5. `Key generatePublic(KeySpec keySpec)`: This method generates a public key from the given key specification.
+
+6. `Key generatePrivate(KeySpec keySpec)`: This method generates a private key from the given key specification.
+
+7. `KeyFactory.getInstance(String algorithm, String provider)`: This method returns a KeyFactory object that generates keys for the specified algorithm and provider.
+
+8. `KeyFactory.getInstance(String algorithm, Provider provider)`: This method returns a KeyFactory object that generates keys for the specified algorithm and provider.
+
+9. `KeyFactory.getInstance(String algorithm, String provider, ClassLoader loader)`: This method returns a KeyFactory object that generates keys for the specified algorithm, provider, and class loader.
+
+10. `KeyFactory.getInstance(String algorithm, Provider provider, ClassLoader loader)`: This method returns a KeyFactory object that generates keys for the specified algorithm, provider, and class loader.
+================================================================
+
+Sample: 18 KeyFactorySpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyFactorySpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyFactorySpi()`: This is a constructor of the KeyFactorySpi class.
+
+2. `KeyFactorySpi(Provider provider)`: This is a constructor of the KeyFactorySpi class that takes a Provider object as a parameter.
+
+3. `KeyFactorySpi(Provider provider, AlgorithmParameterSpec params)`: This is a constructor of the KeyFactorySpi class that takes a Provider object and an AlgorithmParameterSpec object as parameters.
+
+4. `KeyFactorySpi(AlgorithmParameterSpec params)`: This is a constructor of the KeyFactorySpi class that takes an AlgorithmParameterSpec object as a parameter.
+
+5. `KeyFactorySpi(String algorithm)`: This is a constructor of the KeyFactorySpi class that takes a String object as a parameter.
+
+6. `KeyFactorySpi(String algorithm, Provider provider)`: This is a constructor of the KeyFactorySpi class that takes a String object and a Provider object as parameters.
+
+7. `KeyFactorySpi(String algorithm, Provider provider, AlgorithmParameterSpec params)`: This is a constructor of the KeyFactorySpi class that takes a String object, a Provider object, and an AlgorithmParameterSpec object as parameters.
+
+8. `KeyFactorySpi(String algorithm, AlgorithmParameterSpec params)`: This is a constructor of the KeyFactorySpi class that takes a String object and an AlgorithmParameterSpec object as parameters.
+================================================================
+
+Sample: 19 KeyPair
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyPair package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyPairGenerator.getInstance(String algorithm)`: This method returns a KeyPairGenerator object that generates key pairs for the specified algorithm.
+
+2. `KeyPairGenerator.initialize(int keySize)`: This method initializes the key pair generator with the specified key size.
+
+3. `KeyPairGenerator.generateKeyPair()`: This method generates a new key pair.
+
+4. `KeyPair.getPrivate()`: This method returns the private key.
+
+5. `KeyPair.getPublic()`: This method returns the public key.
+================================================================
+
+Sample: 20 KeyPairGenerator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyPairGenerator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyPairGenerator(String algorithm)`: This method creates a KeyPairGenerator object for the specified algorithm.
+
+2. `void initialize(int keySize)`: This method initializes the KeyPairGenerator object with the specified key size.
+
+3. `KeyPair generateKeyPair()`: This method generates a new key pair.
+
+4. `void initialize(AlgorithmParameterSpec params)`: This method initializes the KeyPairGenerator object with the specified algorithm parameters.
+
+5. `AlgorithmParameterSpec getParameters()`: This method returns the parameters associated with this KeyPairGenerator.
+================================================================
+
+Sample: 21 KeyPairGeneratorSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyPairGeneratorSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyPairGeneratorSpi()`: This is the constructor of the KeyPairGeneratorSpi class.
+
+2. `initialize(int keySize, SecureRandom random)`: This method initializes the KeyPairGeneratorSpi object with the specified key size and SecureRandom object.
+
+3. `generateKeyPair()`: This method generates a new key pair.
+
+4. `getAlgorithm()`: This method returns the name of the algorithm.
+
+5. `getProvider()`: This method returns the provider of the algorithm.
+================================================================
+
+Sample: 22 KeyRep
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyRep package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 23 KeyStore
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyStore.getInstance(String algorithm)`: This method returns a KeyStore object that implements the specified KeyStoreSpi.
+
+2. `KeyStore.load(InputStream inStream, char[] password)`: This method loads the KeyStore from the specified input stream.
+
+3. `KeyStore.setKeyEntry(String alias, PrivateKey key, char[] password, Certificate[] chain)`: This method sets the entry at the specified alias to the specified private key and certificate chain.
+
+4. `KeyStore.getCertificate(String alias)`: This method returns the certificate associated with the specified alias.
+
+5. `KeyStore.getCertificateChain(String alias)`: This method returns the certificate chain associated with the specified alias.
+================================================================
+
+Sample: 24 KeyStore.Builder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.Builder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyStore.Builder.newInstance(String type)`: This method creates a new KeyStore.Builder instance of the specified type.
+
+2. `KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain)`: This method sets a new key entry in the KeyStore.
+
+3. `KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new key entry in the KeyStore with a protection parameter.
+
+4. `KeyStore.Builder setCertificateEntry(String alias, Certificate certificate)`: This method sets a new certificate entry in the KeyStore.
+
+5. `KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new certificate entry in the KeyStore with a protection parameter.
+
+6. `KeyStore build()`: This method builds the KeyStore.
+
+7. `KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new key entry in the KeyStore with a protection parameter.
+
+8. `KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new certificate entry in the KeyStore with a protection parameter.
+
+9. `KeyStore build(KeyStore.ProtectionParameter protectionParameter)`: This method builds the KeyStore with a protection parameter.
+
+10. `KeyStore.Builder setKeyEntry(String alias, PrivateKey privateKey, char[] password, Certificate[] certificateChain, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new key entry in the KeyStore with a protection parameter.
+
+11. `KeyStore.Builder setCertificateEntry(String alias, Certificate certificate, KeyStore.ProtectionParameter protectionParameter)`: This method sets a new certificate entry in the KeyStore with a protection parameter.
+
+12. `KeyStore build(KeyStore.ProtectionParameter protectionParameter)`: This method builds the KeyStore with a protection parameter.
+================================================================
+
+Sample: 25 KeyStore.CallbackHandlerProtection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.CallbackHandlerProtection package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isKeyEntry(String alias)`: This method returns true if the specified alias is a key entry in the keystore.
+
+2. `ProtectionParameter getProtectionParameter(String alias)`: This method returns the protection parameter for the specified alias.
+
+3. `ProtectionParameter getProtectionParameter(Key key)`: This method returns the protection parameter for the specified key.
+
+4. `KeyStore.Entry getEntry(String alias, char[] password)`: This method returns the entry for the specified alias and password.
+
+5. `KeyStore.Entry getEntry(String alias, KeyStore.ProtectionParameter protParam)`: This method returns the entry for the specified alias and protection parameter.
+================================================================
+
+Sample: 26 KeyStore.PasswordProtection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.PasswordProtection package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KeyStore.PasswordProtection(char[] password)`: This constructor creates a new PasswordProtection object with the specified password.
+
+2. `char[] getPassword()`: This method returns the password used to protect the key store.
+
+3. `void setPassword(char[] password)`: This method sets the password used to protect the key store.
+
+4. `boolean isDestroyed()`: This method returns true if the key store has been destroyed.
+
+5. `void destroy()`: This method destroys the key store, making it unavailable for further use.
+================================================================
+
+Sample: 27 KeyStore.PrivateKeyEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.PrivateKeyEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PrivateKeyEntry(PrivateKey privateKey, Certificate[] certificateChain)`: This constructor creates a new PrivateKeyEntry instance with the specified private key and certificate chain.
+
+2. `PrivateKey getPrivateKey()`: This method returns the private key associated with this entry.
+
+3. `Certificate[] getCertificateChain()`: This method returns the certificate chain associated with this entry.
+
+4. `boolean equals(Object obj)`: This method compares this PrivateKeyEntry instance with the specified object.
+
+5. `int hashCode()`: This method returns the hash code value for this PrivateKeyEntry instance.
+================================================================
+
+Sample: 28 KeyStore.SecretKeyEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.SecretKeyEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `boolean isEmpty()`: This method returns true if this list contains no elements.
+
+4. `int size()`: This method returns the number of elements in this list.
+
+5. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+================================================================
+
+Sample: 29 KeyStore.TrustedCertificateEntry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStore.TrustedCertificateEntry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+================================================================
+
+Sample: 30 KeyStoreSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.KeyStoreSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsAlias(String alias)`: This method returns true if this keystore contains a key entry with the specified alias.
+
+2. `Enumeration<String> aliases()`: This method returns an enumeration of all aliases in this keystore.
+
+3. `Key key(String alias)`: This method returns the key with the specified alias.
+
+4. `Certificate certificate(String alias)`: This method returns the certificate with the specified alias.
+
+5. `PrivateKey privateKey(String alias)`: This method returns the private key with the specified alias.
+
+6. `SecretKey secretKey(String alias)`: This method returns the secret key with the specified alias.
+
+7. `KeyStore.ProtectionParameter getKey(String alias, KeyStore.ProtectionParameter protParam)`: This method returns the key with the specified alias.
+
+8. `KeyStore.ProtectionParameter getCertificate(String alias, KeyStore.ProtectionParameter protParam)`: This method returns the certificate with the specified alias.
+
+9. `KeyStore.ProtectionParameter getKey(String alias, char[] password, KeyStore.ProtectionParameter protParam)`: This method returns the key with the specified alias.
+
+10. `KeyStore.ProtectionParameter getCertificate(String alias, char[] password, KeyStore.ProtectionParameter protParam)`: This method returns the certificate with the specified alias.
+================================================================
+
+Sample: 31 MessageDigest
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.MessageDigest package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of 5 useful methods from the java.security.MessageDigest package:
+
+1. `MessageDigest update(byte[] input)`: This method updates the digest using the specified array of bytes.
+
+2. `byte[] digest()`: This method completes the hash computation by performing final operations such as padding.
+
+3. `void reset()`: This method resets the digest.
+
+4. `String getAlgorithm()`: This method returns the name of the algorithm the MessageDigest object is using.
+
+5. `int getDigestLength()`: This method returns the length of the digest (the number of bytes it will return).
+================================================================
+
+Sample: 32 MessageDigestSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.MessageDigestSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.security.MessageDigestSpi` package:
+
+1. `void update(byte input[])`: This method updates the digest with the specified byte.
+
+2. `void update(byte input[], int offset, int len)`: This method updates the digest with the specified byte range.
+
+3. `byte[] digest()`: This method completes the hash computation by performing final operations such as padding.
+
+4. `void reset()`: This method resets the digest for further use.
+
+5. `int engineGetDigestLength()`: This method returns the length of the digest produced by the engine.
+
+6. `void engineUpdate(byte input)`: This method updates the digest with the specified byte.
+
+7. `void engineUpdate(byte input[], int offset, int len)`: This method updates the digest with the specified byte range.
+
+8. `byte[] engineDigest()`: This method completes the hash computation by performing final operations such as padding.
+
+9. `void engineReset()`: This method resets the digest for further use.
+
+10. `int engineGetDigestLength()`: This method returns the length of the digest produced by the engine.
+================================================================
+
+Sample: 33 Permission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Permission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Permission p)`: This method checks if the specified permission implies this permission.
+
+2. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `int hashCode()`: This method returns the hash code value for this object.
+
+4. `String getActions()`: This method returns the actions of this permission.
+
+5. `String getName()`: This method returns the name of this permission.
+================================================================
+
+Sample: 34 PermissionCollection
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.PermissionCollection package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Permission p)`: This method checks if the specified permission is implied by this permission collection.
+
+2. `boolean implies(PermissionCollection pc)`: This method checks if the specified permission collection is implied by this permission collection.
+
+3. `Enumeration elements()`: This method returns an enumeration of all the elements in this collection.
+
+4. `boolean isReadOnly()`: This method returns true if this collection is read-only.
+
+5. `int size()`: This method returns the number of elements in this collection.
+================================================================
+
+Sample: 35 Permissions
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Permissions package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Permission p)`: This method checks if the specified permission is implied by this permission collection.
+
+2. `void setReadOnly()`: This method sets this permission collection to be read-only.
+
+3. `boolean isReadOnly()`: This method checks if this permission collection is read-only.
+
+4. `Enumeration elements()`: This method returns an enumeration of all the elements in this permission collection.
+
+5. `boolean equals(Object obj)`: This method compares the specified object with this permission collection for equality.
+================================================================
+
+Sample: 36 PKCS12Attribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.PKCS12Attribute package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean isEmpty()`: This method returns true if this list contains no elements.
+
+3. `int size()`: This method returns the number of elements in this list.
+
+4. `Object clone()`: This method returns a shallow copy of this ArrayList instance.
+
+5. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+================================================================
+
+Sample: 37 Policy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Policy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 38 PolicySpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.PolicySpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 39 ProtectionDomain
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.ProtectionDomain package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getCodeSource()`: This method returns the ProtectionDomain object that represents the code source.
+
+2. `getClassLoader()`: This method returns the ClassLoader object that loaded the class or interface.
+
+3. `getPermissions()`: This method returns a PermissionCollection object that represents the permissions associated with this ProtectionDomain.
+
+4. `getReadLocalClasses()`: This method returns a boolean value that indicates whether the code source is readable.
+
+5. `getImmutable()`: This method returns a boolean value that indicates whether the ProtectionDomain object is immutable.
+================================================================
+
+Sample: 40 Provider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Provider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 41 Provider.Service
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Provider.Service package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 42 SecureClassLoader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SecureClassLoader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 43 SecureRandom
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SecureRandom package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SecureRandom()`: Constructs a new secure random number generator.
+2. `void setSeed(long seed)`: Sets the seed of this random number generator using a single long seed.
+3. `void setSeed(byte[] seed)`: Sets the seed of this random number generator using a user-provided seed.
+4. `void nextBytes(byte[] bytes)`: Fills the specified byte array with random bytes.
+5. `int nextInt()`: Returns the next pseudorandom, uniformly distributed int value from this random number generator's sequence.
+6. `int nextInt(int n)`: Returns the next pseudorandom, uniformly distributed int value between 0 (inclusive) and n (exclusive).
+7. `long nextLong()`: Returns the next pseudorandom, uniformly distributed long value from this random number generator's sequence.
+8. `boolean nextBoolean()`: Returns the next pseudorandom, uniformly distributed boolean value from this random number generator's sequence.
+9. `float nextFloat()`: Returns the next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from this random number generator's sequence.
+10. `double nextDouble()`: Returns the next pseudorandom, uniformly distributed double value between 0.0 and 1.0 from this random number generator's sequence.
+11. `double nextGaussian()`: Returns the next pseudorandom, Gaussian ("normally") distributed double value with mean 0.0 and standard deviation 1.0 from this random number generator's sequence.
+================================================================
+
+Sample: 44 SecureRandomSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SecureRandomSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SecureRandomSpi()`: This is a constructor. It creates a new instance of SecureRandomSpi.
+
+2. `void setSeed(byte[] seed)`: This method sets the seed of the random number generator.
+
+3. `void nextBytes(byte[] bytes)`: This method fills the specified byte array with random bytes.
+
+4. `int nextInt()`: This method returns the next pseudorandom, uniformly distributed int value from this random number generator's sequence.
+
+5. `long nextLong()`: This method returns the next pseudorandom, uniformly distributed long value from this random number generator's sequence.
+
+6. `boolean nextBoolean()`: This method returns the next pseudorandom, uniformly distributed boolean value from this random number generator's sequence.
+
+7. `float nextFloat()`: This method returns the next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from this random number generator's sequence.
+
+8. `double nextDouble()`: This method returns the next pseudorandom, uniformly distributed double value between 0.0 and 1.0 from this random number generator's sequence.
+
+9. `double nextGaussian()`: This method returns the next pseudorandom, Gaussian ("normally") distributed double value with mean 0.0 and standard deviation 1.0 from this random number generator's sequence.
+
+10. `void setSeed(long seed)`: This method sets the seed of the random number generator.
+================================================================
+
+Sample: 45 Security
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Security package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Security.addProvider(Provider p)`: This method adds the specified provider to the set of providers in the security manager.
+
+2. `Security.getProviders()`: This method returns an enumeration of all the providers in the security manager.
+
+3. `Security.getProperty(String key)`: This method returns the value of the specified security property.
+
+4. `Security.setProperty(String key, String value)`: This method sets the value of the specified security property.
+
+5. `Security.removeProvider(String providerName)`: This method removes the specified provider from the set of providers in the security manager.
+================================================================
+
+Sample: 46 SecurityPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SecurityPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 47 Signature
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Signature package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `initVerify(PublicKey key)`: This method initializes the Signature object for verification.
+
+2. `update(byte[] data)`: This method updates the Signature object with the specified byte array.
+
+3. `verify(byte[] signature)`: This method verifies the signature of the data that was passed to the update method.
+
+4. `getInstance(String algorithm)`: This method returns a Signature object that implements the specified signature algorithm.
+
+5. `initSign(PrivateKey key)`: This method initializes the Signature object for signing.
+================================================================
+
+Sample: 48 SignatureSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SignatureSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `initSign(PrivateKey privateKey)`: This method initializes the Signature object for signature generation or verification.
+
+2. `update(byte[] data)`: This method updates the data to be signed or verified.
+
+3. `sign()`: This method generates a signature for the updated data.
+
+4. `verify(byte[] signature)`: This method verifies the signature for the updated data.
+
+5. `getAlgorithm()`: This method returns the name of the algorithm used for the signature.
+================================================================
+
+Sample: 49 SignedObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.SignedObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SignedObject(PrivateKey privateKey, Object object)`: This constructor creates a new SignedObject that wraps the specified object and is signed with the specified private key.
+
+2. `Object getObject()`: This method returns the object that was wrapped by this SignedObject.
+
+3. `byte[] getSignature()`: This method returns the signature of the object that was wrapped by this SignedObject.
+
+4. `boolean verify(PublicKey publicKey)`: This method verifies the signature of the object that was wrapped by this SignedObject using the specified public key.
+
+5. `boolean verify(PublicKey publicKey, byte[] signature)`: This method verifies the specified signature of the object that was wrapped by this SignedObject using the specified public key.
+================================================================
+
+Sample: 50 Signer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Signer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean verify(byte[] signature)`: This method verifies the signature of the data that was signed using the sign method.
+
+2. `void update(byte[] data)`: This method updates the signer with the specified data.
+
+3. `void update(byte[] data, int offset, int len)`: This method updates the signer with the specified data.
+
+4. `byte[] sign()`: This method signs the data that was updated using the update method.
+
+5. `void setParameter(String param, Object value)`: This method sets the specified parameter to the specified value.
+================================================================
+
+Sample: 51 Timestamp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.Timestamp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 52 UnresolvedPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.UnresolvedPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The methods `remove(Object o)`, `removeAll(Collection<?> c)`, `retainAll(Collection<?> c)`, `set(int index, E element)`, `addAll(int index, Collection<? extends E> c)`, `lastIndexOf(Object o)`, `listIterator(int index)`, `listIterator()`, `remove(int index)`, `subList(int fromIndex, int toIndex)`, `toArray()`, `toArray(T[] a)`, `equals(Object o)`, `hashCode()`, `toString()`, `clone()`, `notify()`, `notifyAll()`, `wait()`, `wait(long timeout)`, `wait(long timeout, int nanos)`, `finalize()` are inherent from their parent class and are not recommended for use.
+================================================================
+
+Sample: 53 URIParameter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.URIParameter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+

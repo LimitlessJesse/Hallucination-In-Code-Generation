@@ -1,0 +1,30 @@
+ClassName,Method,Return Type
+DefaultLoaderRepository,loadClass(String className),static Class<?>
+DefaultLoaderRepository,"loadClassWithout(ClassLoader loader, String className)",static Class<?>
+MLet,addURL(String url),void
+MLet,addURL(URL url),void
+MLet,"check(String version, URL codebase, String jarfile, MLetContent mlet)",protected URL
+MLet,findClass(String name),protected Class<?>
+MLet,findLibrary(String libname),protected String
+MLet,getLibraryDirectory(),String
+MLet,getMBeansFromURL(String url),Set<Object>
+MLet,getMBeansFromURL(URL url),Set<Object>
+MLet,getURLs(),URL[]
+MLet,"loadClass(String name, ClassLoaderRepository clr)",Class<?>
+MLet,postDeregister(),void
+MLet,postRegister(Boolean registrationDone),void
+MLet,preDeregister(),void
+MLet,"preRegister(MBeanServer server, ObjectName name)",ObjectName
+MLet,readExternal(ObjectInput in),void
+MLet,setLibraryDirectory(String libdir),void
+MLet,writeExternal(ObjectOutput out),void
+MLetContent,getAttributes(),"Map<String,String>"
+MLetContent,getCode(),String
+MLetContent,getCodeBase(),URL
+MLetContent,getDocumentBase(),URL
+MLetContent,getJarFiles(),String
+MLetContent,getName(),String
+MLetContent,getParameterTypes(),List<String>
+MLetContent,getParameterValues(),List<String>
+MLetContent,getSerializedObject(),String
+MLetContent,getVersion(),String

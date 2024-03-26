@@ -1,0 +1,2275 @@
+Sample: 0 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AsynchronousChannelGroup withThreadPool(ExecutorService executor) from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use AsynchronousChannelGroup withThreadPool(ExecutorService executor) method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Main {
+    public static void main(String[] args) {
+        ExecutorService executor = Executors.newFixedThreadPool(10);
+        AsynchronousChannelGroup group = null;
+        try {
+            group = AsynchronousChannelGroup.withThreadPool(executor);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (group!= null) {
+                try {
+                    group.shutdown();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+```
+
+In this example, we create an ExecutorService with a fixed thread pool of size 10. We then create an AsynchronousChannelGroup using this ExecutorService. If any exception occurs during this process, it is caught and printed to the console. Finally, if the AsynchronousChannelGroup is not null, it is shut down.
+
+Please note that the AsynchronousChannelGroup.withThreadPool(ExecutorService executor) method is used to create an AsynchronousChannelGroup that uses the specified ExecutorService for its threads. The ExecutorService must not be null and must not be shutdown.
+================================================================
+
+Sample: 1 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void shutdown() from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `shutdown()` method in `java.nio.channels.AsynchronousChannelGroup` is used to close all the channels in the group and then shutdown the group.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.Executors;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+        //...
+        // Use the group
+        //...
+        group.shutdown();
+    }
+}
+```
+
+In this code snippet, we first create an `AsynchronousChannelGroup` using `withThreadPool` method of `AsynchronousChannelGroup`. This method takes a `ExecutorService` as a parameter. We then use this group to create channels and perform operations. Finally, we call the `shutdown()` method to close all the channels in the group and then shutdown the group.
+
+Please note that you need to handle exceptions properly in a real-world application.
+================================================================
+
+Sample: 2 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void shutdownNow() from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `shutdownNow()` method in `java.nio.channels.AsynchronousChannelGroup` is used to shut down the channel group and all its channels. It will attempt to cancel all pending tasks and close all open channels.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+
+        // Your code here
+
+        group.shutdownNow();
+        group.awaitTermination(10, TimeUnit.SECONDS);
+    }
+}
+```
+
+In the above code, we first create an `AsynchronousChannelGroup` with a thread pool of size 10. Then we call the `shutdownNow()` method on the group. This will attempt to cancel all pending tasks and close all open channels. Finally, we call the `awaitTermination()` method to wait for the group to terminate.
+
+Please note that the `awaitTermination()` method will throw an `InterruptedException` if the current thread is interrupted while waiting. You should handle this exception appropriately in your code.
+================================================================
+
+Sample: 3 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isShutdown() from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isShutdown()` method in `java.nio.channels.AsynchronousChannelGroup` is used to check whether the channel group has been shut down.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.Executors;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+        System.out.println(group.isShutdown());
+        group.shutdown();
+        System.out.println(group.isShutdown());
+    }
+}
+```
+
+In this code snippet, we first create an `AsynchronousChannelGroup` with a thread pool of size 10. We then check if the group is shutdown (which it is not in this case) and then shutdown the group. After that, we check if the group is shutdown (which it is in this case).
+================================================================
+
+Sample: 4 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isTerminated() from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isTerminated()` method in `java.nio.channels.AsynchronousChannelGroup` is used to check if all tasks in the group have completed. It returns `true` if all tasks have completed, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.Executors;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+
+        // Add tasks to the group
+        for (int i = 0; i < 10; i++) {
+            group.execute(() -> {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            });
+        }
+
+        // Wait for all tasks to complete
+        while (!group.isTerminated()) {
+            Thread.sleep(100);
+        }
+
+        System.out.println("All tasks have completed.");
+
+        group.shutdown();
+    }
+}
+```
+
+In this example, we create an `AsynchronousChannelGroup` with a thread pool of size 10. We then add 10 tasks to the group, each sleeping for 1 second. We then use a while loop to keep checking if all tasks have completed. Once all tasks have completed, we print a message and shutdown the group.
+================================================================
+
+Sample: 5 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean awaitTermination(long timeout, TimeUnit unit) from java.nio.channels.AsynchronousChannelGroup
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `boolean awaitTermination(long timeout, TimeUnit unit)` method in `java.nio.channels.AsynchronousChannelGroup` is used to wait for the termination of all channels in the group. It returns `true` if the group is terminated within the specified timeout, otherwise `false`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.AsynchronousChannelGroup;
+import java.util.concurrent.TimeUnit;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+
+        // Add channels to the group
+        AsynchronousChannel channel1 = AsynchronousChannel.open(group);
+        AsynchronousChannel channel2 = AsynchronousChannel.open(group);
+
+        // Wait for the termination of all channels in the group
+        boolean isTerminated = group.awaitTermination(10, TimeUnit.SECONDS);
+
+        if (isTerminated) {
+            System.out.println("All channels in the group have been terminated.");
+        } else {
+            System.out.println("Not all channels in the group have been terminated within the specified timeout.");
+        }
+
+        // Close the group
+        group.close();
+    }
+}
+```
+
+In this code snippet, we first create an `AsynchronousChannelGroup` with a thread pool of size 10. Then we open two `AsynchronousChannel` instances and add them to the group. We then call the `awaitTermination` method to wait for the termination of all channels in the group. If all channels have been terminated within 10 seconds, the method returns `true`, otherwise it returns `false`. Finally, we close the group.
+================================================================
+
+Sample: 6 AsynchronousFileChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long size() from java.nio.channels.AsynchronousFileChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `size()` method from `java.nio.channels.AsynchronousFileChannel`:
+
+```java
+import java.io.IOException;
+import java.nio.channels.AsynchronousFileChannel;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.concurrent.Future;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Path path = Path.of("file.txt");
+        AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.READ);
+        Future<Long> sizeFuture = channel.size();
+        long size = sizeFuture.get();
+        System.out.println("Size of the file: " + size);
+        channel.close();
+    }
+}
+```
+
+In this code snippet, we are opening an asynchronous file channel and then using the `size()` method to get the size of the file. The `size()` method returns a `Future` object that will eventually contain the size of the file. We then get the size of the file by calling the `get()` method on the `Future` object. Finally, we close the file channel.
+
+Please note that this code snippet assumes that the file "file.txt" exists in the same directory as the Java program. If the file is in a different directory, you will need to provide the full path to the file.
+================================================================
+
+Sample: 7 AsynchronousFileChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void force(boolean metaData) from java.nio.channels.AsynchronousFileChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void force(boolean metaData)` method in `java.nio.channels.AsynchronousFileChannel` is used to force the file system to write all modified metadata and data to the underlying storage device.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.IOException;
+import java.nio.channels.AsynchronousFileChannel;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Path path = Path.of("file.txt");
+        AsynchronousFileChannel channel = AsynchronousFileChannel.open(path, StandardOpenOption.WRITE);
+        channel.force(true);
+        channel.close();
+    }
+}
+```
+
+In this code snippet, we open an `AsynchronousFileChannel` to a file named "file.txt" in write mode. Then we call the `force(true)` method on the channel, which forces the file system to write all modified metadata and data to the underlying storage device. Finally, we close the channel.
+
+Please note that this method should be used with caution, as it can potentially cause data loss if not used correctly.
+================================================================
+
+Sample: 8 AsynchronousServerSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AsynchronousServerSocketChannel open() from java.nio.channels.AsynchronousServerSocketChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of AsynchronousServerSocketChannel open() method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.AsynchronousServerSocketChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        AsynchronousServerSocketChannel serverChannel = AsynchronousServerSocketChannel.open();
+        serverChannel.bind(new InetSocketAddress(8080));
+    }
+}
+```
+
+In this code snippet, we are opening an AsynchronousServerSocketChannel and binding it to a specific port (8080 in this case). The `bind()` method is used to associate the channel with a local address.
+
+Please note that you need to handle exceptions properly in a real-world application. This is just a basic example to show how to use the `open()` method.
+================================================================
+
+Sample: 9 AsynchronousSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AsynchronousSocketChannel open() from java.nio.channels.AsynchronousSocketChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of AsynchronousSocketChannel open() method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.AsynchronousSocketChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        AsynchronousSocketChannel socketChannel = AsynchronousSocketChannel.open();
+        socketChannel.connect(new InetSocketAddress("localhost", 8080));
+    }
+}
+```
+
+In this code snippet, we are opening an AsynchronousSocketChannel and connecting it to a server running on localhost at port 8080.
+
+Please note that this code will not run as is, as it requires a server to connect to. You would need to replace "localhost" and 8080 with the actual server details.
+
+Also, the AsynchronousSocketChannel.open() method is a static method, so you don't need to create an instance of AsynchronousSocketChannel to call the open() method.
+================================================================
+
+Sample: 10 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DatagramChannel open() from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `open()` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.bind(new InetSocketAddress(9999));
+    }
+}
+```
+
+In this code snippet, we are opening a `DatagramChannel` and binding it to a specific port (9999 in this case). The `open()` method is a static factory method that creates a new DatagramChannel.
+
+Please note that you need to handle the `IOException` that can be thrown by the `open()` method. In a real-world application, you would want to handle these exceptions in a more graceful way.
+================================================================
+
+Sample: 11 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DatagramChannel bind(SocketAddress local) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `bind(SocketAddress local)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.net.InetSocketAddress;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.bind(new InetSocketAddress(9999));
+    }
+}
+```
+
+In this code snippet, we are opening a `DatagramChannel` and binding it to a `SocketAddress` (`InetSocketAddress` in this case) on port 9999.
+
+Please note that you need to handle exceptions in a real-world application. Also, remember that the `bind()` method can only be called on a non-connected channel. If you try to call `bind()` on a connected channel, it will throw a `ClosedChannelException`.
+================================================================
+
+Sample: 12 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int read(ByteBuffer dst) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `int read(ByteBuffer dst)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.bind(new InetSocketAddress(9999));
+
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        InetSocketAddress remoteAddress = new InetSocketAddress("localhost", 9999);
+
+        int bytesRead = channel.read(buffer);
+        if (bytesRead!= -1) {
+            buffer.flip();
+            while (buffer.hasRemaining()) {
+                System.out.print((char) buffer.get());
+            }
+            System.out.println();
+        }
+
+        channel.close();
+    }
+}
+```
+
+This code snippet creates a `DatagramChannel`, binds it to a specific port, and then reads data from the channel into a `ByteBuffer`. The data is then printed to the console.
+
+Please note that this is a simple example and may not work as expected in all scenarios. For example, it assumes that the data being read is a string and that the data is being sent from a remote host on the same machine. Also, it does not handle any exceptions that may occur during the process.
+================================================================
+
+Sample: 13 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int write(ByteBuffer src) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `write(ByteBuffer src)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        InetSocketAddress address = new InetSocketAddress("localhost", 8080);
+        String message = "Hello, World!";
+        ByteBuffer buffer = ByteBuffer.wrap(message.getBytes());
+
+        channel.send(buffer, address);
+        channel.close();
+    }
+}
+```
+
+In this example, we open a `DatagramChannel` and send a message to a server at the specified address. The message is converted to a byte array and wrapped in a `ByteBuffer`, which is then sent through the channel.
+
+Please note that you need to replace "localhost" and 8080 with your server's address and port. Also, you need to handle any potential `IOException` that may be thrown by the `send` method.
+================================================================
+
+Sample: 14 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long read(ByteBuffer[] dsts, int offset, int length) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `long read(ByteBuffer[] dsts, int offset, int length)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.bind(new InetSocketAddress(9999));
+
+        ByteBuffer[] buffers = new ByteBuffer[2];
+        buffers[0] = ByteBuffer.allocate(48);
+        buffers[1] = ByteBuffer.allocate(48);
+
+        channel.receive(buffers);
+
+        for (ByteBuffer buffer : buffers) {
+            System.out.println("Position: " + buffer.position() + ", Limit: " + buffer.limit());
+            buffer.flip();
+            while (buffer.hasRemaining()) {
+                System.out.print((char) buffer.get());
+            }
+            System.out.println();
+            buffer.clear();
+        }
+
+        channel.close();
+    }
+}
+```
+
+This code snippet creates a `DatagramChannel`, binds it to a specific port, and then receives data into two `ByteBuffer` objects. The `receive()` method is then used to read the data into the buffers. The data is then printed to the console. Finally, the channel is closed.
+
+Please note that this code snippet is a simple example and may not work as expected in all scenarios. It's also important to handle exceptions properly in a production environment.
+================================================================
+
+Sample: 15 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long write(ByteBuffer[] srcs, int offset, int length) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `long write(ByteBuffer[] srcs, int offset, int length)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.connect(new InetSocketAddress("localhost", 8080));
+
+        String message = "Hello, World!";
+        ByteBuffer buffer = ByteBuffer.wrap(message.getBytes());
+
+        channel.write(new ByteBuffer[]{buffer}, 0, message.length());
+
+        channel.close();
+    }
+}
+```
+
+In this example, we open a `DatagramChannel` to a server at `localhost:8080`. We then create a `ByteBuffer` from a string message, and write it to the channel. Finally, we close the channel.
+
+Please note that you need to replace `"localhost"` and `8080` with your actual server's host and port. Also, you need to have a server running at the specified address to receive the message.
+================================================================
+
+Sample: 16 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SocketAddress receive(ByteBuffer dst) from java.nio.channels.DatagramChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `receive(ByteBuffer dst)` method from `java.nio.channels.DatagramChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.DatagramChannel;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel channel = DatagramChannel.open();
+        channel.bind(new InetSocketAddress(4321));
+
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        channel.receive(buffer);
+
+        buffer.flip();
+        while (buffer.hasRemaining()) {
+            System.out.print((char) buffer.get());
+        }
+        buffer.clear();
+
+        channel.close();
+    }
+}
+```
+
+In this example, we create a `DatagramChannel` and bind it to a specific port (4321 in this case). We then create a `ByteBuffer` of size 1024 and use the `receive(ByteBuffer dst)` method to fill the buffer with data from the channel.
+
+After that, we flip the buffer to prepare it for reading, and then we read and print the data from the buffer. Finally, we clear the buffer and close the channel.
+
+Please note that this is a very basic example and does not handle any exceptions or edge cases. In a real-world application, you would need to add error handling and other necessary code.
+================================================================
+
+Sample: 17 FileLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void release() from java.nio.channels.FileLock
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void release()` method in `java.nio.channels.FileLock` is used to release the lock on the file.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.FileOutputStream;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        FileOutputStream fos = new FileOutputStream("test.txt");
+        FileChannel fc = fos.getChannel();
+        FileLock lock = fc.tryLock();
+
+        // do something with the file
+
+        lock.release(); // release the lock
+        fc.close();
+        fos.close();
+    }
+}
+```
+
+In this code snippet, we first create a `FileOutputStream` and get its `FileChannel`. We then try to acquire a lock on the file. If the lock is successfully acquired, we do something with the file. After that, we release the lock using the `release()` method. Finally, we close the `FileChannel` and `FileOutputStream`.
+================================================================
+
+Sample: 18 FileLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isShared() from java.nio.channels.FileLock
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isShared()` method in `java.nio.channels.FileLock` is used to check if the lock is shared or not. It returns `true` if the lock is shared, and `false` if it is not.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        FileOutputStream fos = new FileOutputStream("file.txt");
+        FileChannel fc = fos.getChannel();
+        FileLock lock = fc.tryLock();
+
+        if (lock!= null) {
+            System.out.println("Lock is shared: " + lock.isShared());
+        }
+
+        lock.release();
+        fc.close();
+        fos.close();
+    }
+}
+```
+
+In this code, we first create a `FileOutputStream` and a `FileChannel` from it. Then we try to acquire a lock on the channel. If the lock is acquired successfully, we print out whether the lock is shared or not. Finally, we release the lock and close the channel and the output stream.
+================================================================
+
+Sample: 19 FileLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long position() from java.nio.channels.FileLock
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `long position()` method in `java.nio.channels.FileLock` is used to get the position of the file lock. This method returns the position of the file lock in terms of bytes from the beginning of the file.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.File;
+import java.io.IOException;
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            File file = new File("test.txt");
+            FileChannel channel = FileChannel.open(file.toPath());
+            FileLock lock = channel.lock();
+            long position = lock.position();
+            System.out.println("Position of the file lock: " + position);
+            lock.release();
+            channel.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a new file named "test.txt". Then we open a `FileChannel` for this file. After that, we lock the file channel and get the `FileLock`. Finally, we get the position of the file lock and print it out. After that, we release the lock and close the channel.
+
+Please note that this code snippet is just an example and may not work as expected in your environment. You need to replace "test.txt" with the path to your actual file.
+================================================================
+
+Sample: 20 FileLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long size() from java.nio.channels.FileLock
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `java.nio.channels.FileLock` returns the size of the lock in bytes.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        FileOutputStream fos = new FileOutputStream("test.txt");
+        FileChannel fc = fos.getChannel();
+        FileLock lock = fc.lock();
+        System.out.println("Lock size: " + lock.size());
+        lock.release();
+        fc.close();
+        fos.close();
+    }
+}
+```
+
+In this code snippet, we first create a `FileOutputStream` to write to a file. We then get a `FileChannel` from this `FileOutputStream`. We then lock a portion of the file with `FileChannel.lock()`. The `size()` method is then called on the returned `FileLock` object to get the size of the lock in bytes. Finally, we release the lock and close the `FileChannel` and `FileOutputStream`.
+
+Please note that the size of the lock is not necessarily the size of the file, but the size of the portion of the file that is locked.
+================================================================
+
+Sample: 21 MembershipKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isValid() from java.nio.channels.MembershipKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isValid()` method in `java.nio.channels.MembershipKey` is used to check if the membership key is still valid. It returns `true` if the key is still valid, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.MembershipKey;
+import java.nio.channels.MulticastChannel;
+import java.net.InetSocketAddress;
+import java.net.NetworkInterface;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // Create a multicast channel
+        MulticastChannel channel = MulticastChannel.open();
+
+        // Bind the channel to a local address
+        channel.bind(new InetSocketAddress("localhost", 0));
+
+        // Get the network interface
+        NetworkInterface networkInterface = NetworkInterface.getByName("eth0");
+
+        // Join the multicast group
+        MembershipKey membershipKey = channel.join(new InetSocketAddress("224.0.0.1", 5007), networkInterface);
+
+        // Check if the membership key is still valid
+        boolean isValid = membershipKey.isValid();
+
+        System.out.println("Membership key is valid: " + isValid);
+
+        // Leave the multicast group
+        channel.leave(membershipKey);
+
+        // Check if the membership key is still valid after leaving the group
+        isValid = membershipKey.isValid();
+
+        System.out.println("Membership key is valid after leaving the group: " + isValid);
+
+        // Close the channel
+        channel.close();
+    }
+}
+```
+
+In this code snippet, we first open a multicast channel and bind it to a local address. Then we get the network interface and join a multicast group using the `join()` method. After that, we check if the membership key is still valid using the `isValid()` method. After leaving the group, we again check if the membership key is still valid. Finally, we close the channel.
+================================================================
+
+Sample: 22 Pipe
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Pipe.SourceChannel source() from java.nio.channels.Pipe
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `source()` method from `java.nio.channels.Pipe`:
+
+```java
+import java.nio.channels.Pipe;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.channels.WritableByteChannel;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Pipe pipe = Pipe.open();
+        WritableByteChannel outChannel = pipe.sink().channel();
+        ReadableByteChannel inChannel = pipe.source().channel();
+
+        outChannel.write(java.nio.charset.Charset.defaultCharset().encode("Hello"));
+
+        byte[] buffer = new byte[1024];
+        int bytesRead = inChannel.read(buffer);
+        String message = new String(buffer, 0, bytesRead);
+
+        System.out.println(message);
+    }
+}
+```
+
+In this code snippet, we first open a `Pipe`. Then we get the `WritableByteChannel` from the `Pipe.SinkChannel` and the `ReadableByteChannel` from the `Pipe.SourceChannel`.
+
+We then write a message to the `WritableByteChannel` and read the message from the `ReadableByteChannel`.
+
+Finally, we print the message to the console.
+================================================================
+
+Sample: 23 Pipe
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Pipe.SinkChannel sink() from java.nio.channels.Pipe
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `Pipe.SinkChannel sink()` method:
+
+```java
+import java.io.IOException;
+import java.nio.channels.Pipe;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Pipe pipe = Pipe.open();
+        Pipe.SinkChannel sinkChannel = pipe.sink();
+        // Now you can write to the sinkChannel
+    }
+}
+```
+
+In this code snippet, we first open a new Pipe using `Pipe.open()`. Then we get the SinkChannel from the pipe using `pipe.sink()`. From here, you can write to the SinkChannel just like you would with any other OutputStream.
+
+Please note that the `Pipe.SinkChannel sink()` method returns a `Pipe.SinkChannel` object which is used to write data to the Pipe. The `Pipe.SourceChannel source()` method returns a `Pipe.SourceChannel` object which is used to read data from the Pipe.
+================================================================
+
+Sample: 24 SelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectorProvider provider() from java.nio.channels.SelectableChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SelectorProvider` class is a factory for `Selector` objects. It is used to create a new `Selector` object.
+
+Here is a complete code snippet of the `SelectorProvider` method:
+
+```java
+import java.nio.channels.Selector;
+import java.nio.channels.SelectorProvider;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        SelectorProvider provider = SelectorProvider.provider();
+        Selector selector = provider.openSelector();
+        System.out.println(selector);
+    }
+}
+```
+
+In this code snippet, we first get the `SelectorProvider` instance using `SelectorProvider.provider()`. Then we open a `Selector` using `SelectorProvider.openSelector()`. The `Selector` is then printed to the console.
+
+Please note that the `SelectorProvider.openSelector()` method can throw an `IOException` if it fails to open the selector. Therefore, it is recommended to handle this exception in a production-ready code.
+================================================================
+
+Sample: 25 SelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectionKey register(Selector sel, int ops) from java.nio.channels.SelectableChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SelectionKey register(Selector sel, int ops)` method is used to register a channel with a selector. It returns a SelectionKey object that represents the registration of the channel.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+
+        Selector selector = Selector.open();
+        SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            Set<SelectionKey> selectedKeys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = selectedKeys.iterator();
+
+            while (iterator.hasNext()) {
+                SelectionKey key = iterator.next();
+
+                if (key.isAcceptable()) {
+                    // Handle accept event
+                }
+
+                if (key.isReadable()) {
+                    // Handle read event
+                }
+
+                if (key.isWritable()) {
+                    // Handle write event
+                }
+
+                iterator.remove();
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a server socket channel and registering it with a selector. We are also setting the interest set (the operations we are interested in) to `SelectionKey.OP_ACCEPT`, which means we are interested in connection acceptance events.
+
+The `selector.select()` method blocks until at least one of the registered channels has something to say. The `selector.selectedKeys()` method returns a set of keys whose corresponding channels have something to say.
+
+We then iterate over the selected keys and handle the events accordingly. If the key is acceptable, we handle the accept event. If the key is readable, we handle the read event. If the key is writable, we handle the write event.
+
+Finally, we remove the processed keys from the selected keys set to avoid processing the same key multiple times.
+================================================================
+
+Sample: 26 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int interestOps() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `int interestOps()` method from `java.nio.channels.SelectionKey` is used to get the currently selected interest set of operations.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Selector selector = Selector.open();
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.configureBlocking(false);
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            Set<SelectionKey> keys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = keys.iterator();
+
+            while (iterator.hasNext()) {
+                SelectionKey key = iterator.next();
+
+                if (key.isAcceptable()) {
+                    SocketChannel client = serverSocketChannel.accept();
+                    client.configureBlocking(false);
+                    client.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    System.out.println("Interest ops: " + key.interestOps());
+                    // Handle read operation
+                }
+
+                iterator.remove();
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we are using a `Selector` to select the `SelectionKey` instances that are ready for I/O operations. We are registering a `ServerSocketChannel` with the `Selector` and setting the interest set to `SelectionKey.OP_ACCEPT`. When a client connects to the server, the `Selector` will select the `SelectionKey` for the `ServerSocketChannel` and set the interest set to `SelectionKey.OP_READ`.
+
+The `key.interestOps()` method is used to get the currently selected interest set of operations.
+================================================================
+
+Sample: 27 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isAcceptable() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isAcceptable()` method in `java.nio.channels.SelectionKey` is used to check if the channel is ready for reading. It returns `true` if the channel is ready for reading, otherwise `false`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.Selector;
+import java.nio.ByteBuffer;
+import java.net.InetSocketAddress;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+
+        Selector selector = Selector.open();
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            for (SelectionKey key : selector.selectedKeys()) {
+                if (key.isAcceptable()) {
+                    SocketChannel client = serverSocketChannel.accept();
+                    client.configureBlocking(false);
+                    client.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    ByteBuffer buffer = ByteBuffer.allocate(1024);
+                    client.read(buffer);
+                    buffer.flip();
+                    System.out.println(new String(buffer.array(), 0, buffer.limit()));
+                    client.close();
+                }
+            }
+            selector.selectedKeys().clear();
+        }
+    }
+}
+```
+
+In this code, we first open a server socket channel and bind it to a port. We then configure the channel to be non-blocking and register it with a selector.
+
+In the main loop, we select on the selector, which blocks until there are some keys to select. For each selected key, we check if it's acceptable (i.e., the channel is ready for reading). If it is, we accept the connection and register the client channel with the selector for reading.
+
+If the key is readable (i.e., the channel is ready for reading), we read data from the channel, flip the buffer, and print the data. Finally, we close the client channel.
+
+Finally, we clear the selected keys to prepare for the next selection.
+================================================================
+
+Sample: 28 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isConnectable() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isConnectable()` method in `java.nio.channels.SelectionKey` is used to check if the channel is in the connectable state. It returns `true` if the channel is in the connectable state, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.AsynchronousServerSocketChannel;
+import java.nio.channels.AsynchronousSocketChannel;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        // Create a ServerSocketChannel
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+
+        // Create a SocketChannel
+        SocketChannel socketChannel = SocketChannel.open();
+
+        // Create an AsynchronousServerSocketChannel
+        AsynchronousServerSocketChannel asyncServerSocketChannel = AsynchronousServerSocketChannel.open();
+
+        // Create an AsynchronousSocketChannel
+        AsynchronousSocketChannel asyncSocketChannel = AsynchronousSocketChannel.open();
+
+        // Get SelectionKey for the ServerSocketChannel
+        SelectionKey serverKey = serverSocketChannel.register(null, SelectionKey.OP_ACCEPT);
+
+        // Get SelectionKey for the SocketChannel
+        SelectionKey socketKey = socketChannel.register(null, SelectionKey.OP_CONNECT);
+
+        // Get SelectionKey for the AsynchronousServerSocketChannel
+        SelectionKey asyncServerKey = asyncServerSocketChannel.register(null, SelectionKey.OP_ACCEPT);
+
+        // Get SelectionKey for the AsynchronousSocketChannel
+        SelectionKey asyncSocketKey = asyncSocketChannel.register(null, SelectionKey.OP_CONNECT);
+
+        // Check if the channel is in the connectable state
+        System.out.println("ServerSocketChannel is connectable: " + serverKey.isConnectable());
+        System.out.println("SocketChannel is connectable: " + socketKey.isConnectable());
+        System.out.println("AsynchronousServerSocketChannel is connectable: " + asyncServerKey.isConnectable());
+        System.out.println("AsynchronousSocketChannel is connectable: " + asyncSocketKey.isConnectable());
+    }
+}
+```
+
+In this code snippet, we create different types of channels and get their SelectionKeys. We then check if the channels are in the connectable state using the `isConnectable()` method. The result is printed to the console.
+================================================================
+
+Sample: 29 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isReadable() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isReadable()` method in `java.nio.channels.SelectionKey` is used to check if the channel is ready for reading. It returns `true` if the channel is ready for reading, otherwise `false`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.Selector;
+import java.nio.ByteBuffer;
+import java.net.InetSocketAddress;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+
+        Selector selector = Selector.open();
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            for (SelectionKey key : selector.selectedKeys()) {
+                if (key.isAcceptable()) {
+                    SocketChannel client = serverSocketChannel.accept();
+                    client.configureBlocking(false);
+                    client.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    ByteBuffer buffer = ByteBuffer.allocate(1024);
+                    int read = client.read(buffer);
+                    if (read!= -1) {
+                        System.out.println("Received: " + new String(buffer.array(), 0, read));
+                    } else {
+                        client.close();
+                    }
+                }
+            }
+            selector.selectedKeys().clear();
+        }
+    }
+}
+```
+
+In this code, we are creating a server socket channel and registering it with a selector. The selector is then used to select the keys that are ready for I/O operations. If the key is acceptable, we accept the connection and register it for reading. If the key is readable, we read the data from the channel and print it. If the read operation returns -1, it means the client has closed the connection and we close the channel.
+================================================================
+
+Sample: 30 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isWritable() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isWritable()` method in `java.nio.channels.SelectionKey` is used to check if the channel is ready for writing. It returns `true` if the channel is ready for writing, otherwise `false`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.Selector;
+import java.nio.ByteBuffer;
+import java.net.InetSocketAddress;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(8080));
+        serverSocketChannel.configureBlocking(false);
+
+        Selector selector = Selector.open();
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            for (SelectionKey key : selector.selectedKeys()) {
+                if (key.isAcceptable()) {
+                    SocketChannel client = serverSocketChannel.accept();
+                    client.configureBlocking(false);
+                    client.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    ByteBuffer buffer = ByteBuffer.allocate(1024);
+                    int read = client.read(buffer);
+                    if (read!= -1) {
+                        buffer.flip();
+                        System.out.println(new String(buffer.array(), 0, read));
+                        client.register(selector, SelectionKey.OP_WRITE);
+                    }
+                } else if (key.isWritable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    ByteBuffer buffer = ByteBuffer.wrap("Hello, World!".getBytes());
+                    client.write(buffer);
+                    client.register(selector, SelectionKey.OP_READ);
+                }
+                key.cancel();
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we are using a `Selector` to handle multiple `SelectionKey` instances. When a client connects to the server, it is registered for reading. When data is read from the client, it is echoed back to the client and the client is registered for writing. When data is written to the client, the client is registered for reading again. This is a simple example of how to use `isWritable()`.
+================================================================
+
+Sample: 31 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void cancel() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void cancel()` method in `java.nio.channels.SelectionKey` is used to cancel the selection key. Once a selection key is cancelled, it cannot be used again.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Selector selector = Selector.open();
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.configureBlocking(false);
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        SocketChannel socketChannel = serverSocketChannel.accept();
+        socketChannel.configureBlocking(false);
+        SelectionKey key = socketChannel.register(selector, SelectionKey.OP_READ);
+
+        // Cancel the selection key
+        key.cancel();
+
+        // Check if the key is still valid
+        if (key.isValid()) {
+            System.out.println("Key is still valid");
+        } else {
+            System.out.println("Key is no longer valid");
+        }
+
+        // Select and process ready keys
+        selector.select();
+        Set<SelectionKey> selectedKeys = selector.selectedKeys();
+        Iterator<SelectionKey> iterator = selectedKeys.iterator();
+        while (iterator.hasNext()) {
+            SelectionKey selectedKey = iterator.next();
+            if (selectedKey.isAcceptable()) {
+                // Accept the connection
+            } else if (selectedKey.isReadable()) {
+                // Read data
+            }
+            iterator.remove();
+        }
+    }
+}
+```
+
+In this code snippet, we first open a selector and a server socket channel. We then register the server socket channel with the selector to accept incoming connections. After that, we accept a connection and register it with the selector to read data.
+
+We then cancel the selection key for the socket channel. After that, we check if the key is still valid. If the key is still valid, it means the key is still associated with the selector and can be used to select and process events. If the key is no longer valid, it means the key has been cancelled and cannot be used anymore.
+
+Finally, we select and process the ready keys. We iterate over the selected keys, check if they are acceptable or readable, and process them accordingly.
+================================================================
+
+Sample: 32 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SelectableChannel channel() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `channel()` method from `java.nio.channels.SelectionKey` is used to get the `SelectableChannel` associated with this key.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Selector selector = Selector.open();
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.bind(new InetSocketAddress("localhost", 8080));
+        serverSocketChannel.configureBlocking(false);
+        serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
+
+        while (true) {
+            selector.select();
+            Set<SelectionKey> selectedKeys = selector.selectedKeys();
+            Iterator<SelectionKey> iterator = selectedKeys.iterator();
+
+            while (iterator.hasNext()) {
+                SelectionKey key = iterator.next();
+
+                if (key.isAcceptable()) {
+                    ServerSocketChannel server = (ServerSocketChannel) key.channel();
+                    SocketChannel client = server.accept();
+                    client.configureBlocking(false);
+                    client.register(selector, SelectionKey.OP_READ);
+                } else if (key.isReadable()) {
+                    SocketChannel client = (SocketChannel) key.channel();
+                    System.out.println("Channel: " + client.getLocalAddress() + " is ready for reading");
+                    System.out.println("Channel: " + client.getRemoteAddress() + " is ready for reading");
+                }
+
+                iterator.remove();
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we are using a `Selector` to monitor multiple `SelectableChannels`. When a `SelectionKey` is ready for reading, we print out the local and remote addresses of the `SocketChannel` associated with the `SelectionKey`.
+================================================================
+
+Sample: 33 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Selector selector() from java.nio.channels.SelectionKey
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `Selector` class in Java NIO is used to monitor multiple `SelectableChannel` objects. It provides methods to register, deregister, and select on these channels.
+
+The `Selector` class has a method called `selector()` which returns a new instance of `Selector`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.channels.Selector;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        Selector selector = Selector.open();
+        System.out.println(selector);
+    }
+}
+```
+
+In this code snippet, we are opening a new `Selector` and printing it. The `Selector.open()` method returns a new instance of `Selector`.
+
+Please note that the `Selector.open()` method can throw a `IOException` if it fails to open the selector. So, it's a good practice to handle this exception in a production-level code.
+================================================================
+
+Sample: 34 ServerSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ServerSocketChannel open() from java.nio.channels.ServerSocketChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the complete code snippet of the `open()` method from `java.nio.channels.ServerSocketChannel`:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.ServerSocketChannel;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+            serverSocketChannel.bind(new InetSocketAddress(8080));
+            System.out.println("Server is listening on port 8080");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are opening a ServerSocketChannel and binding it to a specific port (8080 in this case). If an IOException occurs during this process, it will be caught and printed to the console.
+================================================================
+
+Sample: 35 ServerSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ServerSocketChannel bind(SocketAddress local) from java.nio.channels.ServerSocketChannel
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `ServerSocketChannel.bind(SocketAddress local)` method:
+
+```java
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.channels.ServerSocketChannel;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+            serverSocketChannel.bind(new InetSocketAddress("localhost", 8080));
+            System.out.println("Server is listening on port 8080");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are opening a ServerSocketChannel and binding it to a local address (localhost:8080). If the binding is successful, it will print "Server is listening on port 8080". If an IOException occurs during the binding process, it will be caught and printed to the console.
+================================================================
+

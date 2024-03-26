@@ -1,0 +1,21 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,ZoneOffsetTransition,1,ZoneOffsetTransition.getOffsetAfter(ZonedDateTime instant),False
+0,ZoneOffsetTransition,2,ZoneOffsetTransition.getOffsetBefore(ZonedDateTime instant),False
+0,ZoneOffsetTransition,3,ZoneOffsetTransition.getTransitionDate(),False
+0,ZoneOffsetTransition,4,ZoneOffsetTransition.getTransitionType(),False
+0,ZoneOffsetTransition,5,ZoneOffsetTransition.getOffset(),False
+1,ZoneOffsetTransitionRule,1,ZoneOffsetTransitionRule.getFromInstant(),False
+1,ZoneOffsetTransitionRule,2,ZoneOffsetTransitionRule.getToInstant(),False
+1,ZoneOffsetTransitionRule,3,ZoneOffsetTransitionRule.getTransitionType(),False
+1,ZoneOffsetTransitionRule,4,ZoneOffsetTransitionRule.getWallOffset(),False
+1,ZoneOffsetTransitionRule,5,ZoneOffsetTransitionRule.getStandardOffset(),False
+2,ZoneRules,1,ZoneRules getRules(ZoneId zoneId),False
+2,ZoneRules,2,ZoneOffset getOffset(Instant instant),True
+2,ZoneRules,3,ZoneOffset getOffset(LocalDateTime dateTime),True
+2,ZoneRules,4,ZoneOffset getOffset(LocalDate date),False
+2,ZoneRules,5,ZoneOffset getOffset(LocalTime time),False
+3,ZoneRulesProvider,1,ZoneRulesProvider.getAvailableZoneIds(),False
+3,ZoneRulesProvider,2,ZoneRulesProvider.getAvailableZoneIds(ZoneId.systemDefault()),False
+3,ZoneRulesProvider,3,"ZoneRulesProvider.getAvailableZoneIds(ZoneId.of(""America/Los_Angeles""))",False
+3,ZoneRulesProvider,4,"ZoneRulesProvider.getAvailableZoneIds(ZoneId.of(""Asia/Kolkata""))",False
+3,ZoneRulesProvider,5,"ZoneRulesProvider.getAvailableZoneIds(ZoneId.of(""Australia/Sydney""))",False

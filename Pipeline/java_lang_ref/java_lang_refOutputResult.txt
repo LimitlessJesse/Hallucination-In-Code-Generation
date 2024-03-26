@@ -1,0 +1,29 @@
+Sample: Reference_2
+----------------------------------------------------------------
+output:
+./java_lang_ref/javaFiles/Reference_2.java:7: error: Reference is abstract; cannot be instantiated
+        Reference<Object> ref = new Reference<>(new Object(), queue);
+                                ^
+./java_lang_ref/javaFiles/Reference_2.java:8: error: cannot find symbol
+        queue.add(ref);
+             ^
+  symbol:   method add(Reference<Object>)
+  location: variable queue of type ReferenceQueue<Object>
+./java_lang_ref/javaFiles/Reference_2.java:10: error: cannot find symbol
+        queue.clear();
+             ^
+  symbol:   method clear()
+  location: variable queue of type ReferenceQueue<Object>
+3 errors
+
+
+================================================================
+
+Sample: SoftReference_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+Hello, World!
+
+================================================================
+

@@ -1,0 +1,51 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AdapterAlreadyExistsHelper,1,boolean add(E e),False
+0,AdapterAlreadyExistsHelper,2,"void add(int index, E element)",False
+0,AdapterAlreadyExistsHelper,3,boolean addAll(Collection<? extends E> c),False
+0,AdapterAlreadyExistsHelper,4,"boolean addAll(int index, Collection<? extends E> c)",False
+0,AdapterAlreadyExistsHelper,5,void clear(),False
+1,AdapterNonExistentHelper,1,boolean isAdapterNonExistent(PortableServer.POA _poa),False
+1,AdapterNonExistentHelper,2,PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa),False
+1,AdapterNonExistentHelper,3,"PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name)",False
+1,AdapterNonExistentHelper,4,"PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name, String _id)",False
+1,AdapterNonExistentHelper,5,"PortableServer.POA getAdapterNonExistentPOA(PortableServer.POA _poa, String _name, String _id, String _type)",False
+2,InvalidPolicyHelper,1,"boolean is_equivalent(InvalidPolicy p1, InvalidPolicy p2)",False
+2,InvalidPolicyHelper,2,InvalidPolicy create(String id),False
+2,InvalidPolicyHelper,3,"InvalidPolicy create_from_repository(String id, IDLRepository idl_repo)",False
+2,InvalidPolicyHelper,4,InvalidPolicy read(String id),False
+2,InvalidPolicyHelper,5,"InvalidPolicy read_w_repoid(String repository_id, String type_id)",False
+3,NoServantHelper,1,boolean add(E e),False
+3,NoServantHelper,2,"void add(int index, E element)",False
+3,NoServantHelper,3,boolean addAll(Collection<? extends E> c),False
+3,NoServantHelper,4,"boolean addAll(int index, Collection<? extends E> c)",False
+3,NoServantHelper,5,void clear(),False
+4,ObjectAlreadyActiveHelper,1,boolean add(E e),False
+4,ObjectAlreadyActiveHelper,2,"void add(int index, E element)",False
+4,ObjectAlreadyActiveHelper,3,boolean addAll(Collection<? extends E> c),False
+4,ObjectAlreadyActiveHelper,4,"boolean addAll(int index, Collection<? extends E> c)",False
+4,ObjectAlreadyActiveHelper,5,void clear(),False
+5,ObjectNotActiveHelper,1,boolean contains(Object o),False
+5,ObjectNotActiveHelper,2,boolean remove(Object o),False
+5,ObjectNotActiveHelper,3,boolean addAll(Collection<? extends E> c),False
+5,ObjectNotActiveHelper,4,boolean removeAll(Collection<?> c),False
+5,ObjectNotActiveHelper,5,boolean retainAll(Collection<?> c),False
+6,ServantAlreadyActiveHelper,1,boolean add(E e),False
+6,ServantAlreadyActiveHelper,2,"void add(int index, E element)",False
+6,ServantAlreadyActiveHelper,3,boolean addAll(Collection<? extends E> c),False
+6,ServantAlreadyActiveHelper,4,"boolean addAll(int index, Collection<? extends E> c)",False
+6,ServantAlreadyActiveHelper,5,void clear(),False
+7,ServantNotActiveHelper,1,boolean is_servant_not_active(),False
+7,ServantNotActiveHelper,2,void servant_not_active(),False
+7,ServantNotActiveHelper,3,void servant_active(),False
+7,ServantNotActiveHelper,4,boolean is_servant_active(),False
+7,ServantNotActiveHelper,5,void set_servant_not_active_timeout(long timeout),False
+8,WrongAdapterHelper,1,boolean add(E e),False
+8,WrongAdapterHelper,2,"void add(int index, E element)",False
+8,WrongAdapterHelper,3,boolean addAll(Collection<? extends E> c),False
+8,WrongAdapterHelper,4,"boolean addAll(int index, Collection<? extends E> c)",False
+8,WrongAdapterHelper,5,void clear(),False
+9,WrongPolicyHelper,1,"boolean isWrongPolicy(PortableServer.POA _poa, PortableServer.POAPackage.WrongPolicy _policy)",False
+9,WrongPolicyHelper,2,"PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version)",False
+9,WrongPolicyHelper,3,"PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description)",False
+9,WrongPolicyHelper,4,"PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description, String _details)",False
+9,WrongPolicyHelper,5,"PortableServer.POAPackage.WrongPolicy create(PortableServer.POA _poa, String _id, String _name, String _version, String _description, String _details, String _administration)",False

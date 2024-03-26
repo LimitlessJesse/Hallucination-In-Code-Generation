@@ -1,0 +1,37 @@
+Sample: PageFormat_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PageFormat_3
+----------------------------------------------------------------
+================================================================
+
+Sample: PrinterJob_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.print.PSPrinterJob.printDialog(PSPrinterJob.java:429)
+	at PrinterJob_2.main(PrinterJob_2.java:6)
+
+================================================================
+
+Sample: PrinterJob_6
+----------------------------------------------------------------
+output:
+./java_awt_print/javaFiles/PrinterJob_6.java:2: error: cannot find symbol
+import java.awt.print.PrintService;
+                     ^
+  symbol:   class PrintService
+  location: package java.awt.print
+./java_awt_print/javaFiles/PrinterJob_6.java:7: error: cannot find symbol
+        PrintService printService = printerJob.getPrintService();
+        ^
+  symbol:   class PrintService
+  location: class PrinterJob_6
+2 errors
+
+
+================================================================
+

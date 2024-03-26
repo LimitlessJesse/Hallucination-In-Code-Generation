@@ -1,0 +1,251 @@
+ClassName,Method,Return Type
+Attribute,equals(Object object),boolean
+Attribute,getName(),String
+Attribute,getValue(),Object
+Attribute,hashCode(),int
+Attribute,toString(),String
+AttributeChangeNotification,getAttributeName(),String
+AttributeChangeNotification,getAttributeType(),String
+AttributeChangeNotification,getNewValue(),Object
+AttributeChangeNotification,getOldValue(),Object
+AttributeChangeNotificationFilter,disableAllAttributes(),void
+AttributeChangeNotificationFilter,disableAttribute(String name),void
+AttributeChangeNotificationFilter,enableAttribute(String name),void
+AttributeChangeNotificationFilter,getEnabledAttributes(),Vector<String>
+AttributeChangeNotificationFilter,isNotificationEnabled(Notification notification),boolean
+AttributeList,add(Attribute object),void
+AttributeList,"add(int index, Attribute object)",void
+AttributeList,"add(int index, Object element)",void
+AttributeList,add(Object element),boolean
+AttributeList,addAll(AttributeList list),boolean
+AttributeList,addAll(Collection<?> c),boolean
+AttributeList,"addAll(int index, AttributeList list)",boolean
+AttributeList,"addAll(int index, Collection<?> c)",boolean
+AttributeList,asList(),List<Attribute>
+AttributeList,"set(int index, Attribute object)",void
+AttributeList,"set(int index, Object element)",Object
+AttributeValueExp,apply(ObjectName name),ValueExp
+AttributeValueExp,getAttribute(ObjectName name),protected Object
+AttributeValueExp,getAttributeName(),String
+AttributeValueExp,setMBeanServer(MBeanServer s),void
+AttributeValueExp,toString(),String
+DefaultLoaderRepository,loadClass(String className),static Class<?>
+DefaultLoaderRepository,"loadClassWithout(ClassLoader loader, String className)",static Class<?>
+ImmutableDescriptor,clone(),Descriptor
+ImmutableDescriptor,equals(Object o),boolean
+ImmutableDescriptor,getFieldNames(),String[]
+ImmutableDescriptor,getFields(),String[]
+ImmutableDescriptor,getFieldValue(String fieldName),Object
+ImmutableDescriptor,getFieldValues(String... fieldNames),Object[]
+ImmutableDescriptor,hashCode(),int
+ImmutableDescriptor,isValid(),boolean
+ImmutableDescriptor,removeField(String fieldName),void
+ImmutableDescriptor,"setField(String fieldName, Object fieldValue)",void
+ImmutableDescriptor,"setFields(String[] fieldNames, Object[] fieldValues)",void
+ImmutableDescriptor,toString(),String
+ImmutableDescriptor,union(Descriptor... descriptors),static ImmutableDescriptor
+JMX,isMXBeanInterface(Class<?> interfaceClass),static boolean
+JMX,"newMBeanProxy(MBeanServerConnection connection, ObjectName objectName, Class<T> interfaceClass)",static <T> T
+JMX,"newMBeanProxy(MBeanServerConnection connection, ObjectName objectName, Class<T> interfaceClass, boolean notificationEmitter)",static <T> T
+JMX,"newMXBeanProxy(MBeanServerConnection connection, ObjectName objectName, Class<T> interfaceClass)",static <T> T
+JMX,"newMXBeanProxy(MBeanServerConnection connection, ObjectName objectName, Class<T> interfaceClass, boolean notificationEmitter)",static <T> T
+MBeanAttributeInfo,clone(),Object
+MBeanAttributeInfo,equals(Object o),boolean
+MBeanAttributeInfo,getType(),String
+MBeanAttributeInfo,hashCode(),int
+MBeanAttributeInfo,isIs(),boolean
+MBeanAttributeInfo,isReadable(),boolean
+MBeanAttributeInfo,isWritable(),boolean
+MBeanAttributeInfo,toString(),String
+MBeanConstructorInfo,clone(),Object
+MBeanConstructorInfo,equals(Object o),boolean
+MBeanConstructorInfo,getSignature(),MBeanParameterInfo[]
+MBeanConstructorInfo,hashCode(),int
+MBeanConstructorInfo,toString(),String
+MBeanFeatureInfo,equals(Object o),boolean
+MBeanFeatureInfo,getDescription(),String
+MBeanFeatureInfo,getDescriptor(),Descriptor
+MBeanFeatureInfo,getName(),String
+MBeanFeatureInfo,hashCode(),int
+MBeanInfo,clone(),Object
+MBeanInfo,equals(Object o),boolean
+MBeanInfo,getAttributes(),MBeanAttributeInfo[]
+MBeanInfo,getClassName(),String
+MBeanInfo,getConstructors(),MBeanConstructorInfo[]
+MBeanInfo,getDescription(),String
+MBeanInfo,getDescriptor(),Descriptor
+MBeanInfo,getNotifications(),MBeanNotificationInfo[]
+MBeanInfo,getOperations(),MBeanOperationInfo[]
+MBeanInfo,hashCode(),int
+MBeanInfo,toString(),String
+MBeanNotificationInfo,clone(),Object
+MBeanNotificationInfo,equals(Object o),boolean
+MBeanNotificationInfo,getNotifTypes(),String[]
+MBeanNotificationInfo,hashCode(),int
+MBeanNotificationInfo,toString(),String
+MBeanOperationInfo,clone(),Object
+MBeanOperationInfo,equals(Object o),boolean
+MBeanOperationInfo,getImpact(),int
+MBeanOperationInfo,getReturnType(),String
+MBeanOperationInfo,getSignature(),MBeanParameterInfo[]
+MBeanOperationInfo,hashCode(),int
+MBeanOperationInfo,toString(),String
+MBeanParameterInfo,clone(),Object
+MBeanParameterInfo,equals(Object o),boolean
+MBeanParameterInfo,getType(),String
+MBeanParameterInfo,hashCode(),int
+MBeanParameterInfo,toString(),String
+MBeanPermission,equals(Object obj),boolean
+MBeanPermission,getActions(),String
+MBeanPermission,hashCode(),int
+MBeanPermission,implies(Permission p),boolean
+MBeanServerBuilder,"newMBeanServer(String defaultDomain, MBeanServer outer, MBeanServerDelegate delegate)",MBeanServer
+MBeanServerBuilder,newMBeanServerDelegate(),MBeanServerDelegate
+MBeanServerDelegate,"addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+MBeanServerDelegate,getImplementationName(),String
+MBeanServerDelegate,getImplementationVendor(),String
+MBeanServerDelegate,getImplementationVersion(),String
+MBeanServerDelegate,getMBeanServerId(),String
+MBeanServerDelegate,getNotificationInfo(),MBeanNotificationInfo[]
+MBeanServerDelegate,getSpecificationName(),String
+MBeanServerDelegate,getSpecificationVendor(),String
+MBeanServerDelegate,getSpecificationVersion(),String
+MBeanServerDelegate,removeNotificationListener(NotificationListener listener),void
+MBeanServerDelegate,"removeNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+MBeanServerDelegate,sendNotification(Notification notification),void
+MBeanServerFactory,createMBeanServer(),static MBeanServer
+MBeanServerFactory,createMBeanServer(String domain),static MBeanServer
+MBeanServerFactory,findMBeanServer(String agentId),static ArrayList<MBeanServer>
+MBeanServerFactory,getClassLoaderRepository(MBeanServer server),static ClassLoaderRepository
+MBeanServerFactory,newMBeanServer(),static MBeanServer
+MBeanServerFactory,newMBeanServer(String domain),static MBeanServer
+MBeanServerFactory,releaseMBeanServer(MBeanServer mbeanServer),static void
+MBeanServerInvocationHandler,getMBeanServerConnection(),MBeanServerConnection
+MBeanServerInvocationHandler,getObjectName(),ObjectName
+MBeanServerInvocationHandler,"invoke(Object proxy, Method method, Object[] args)",Object
+MBeanServerInvocationHandler,isMXBean(),boolean
+MBeanServerInvocationHandler,"newProxyInstance(MBeanServerConnection connection, ObjectName objectName, Class<T> interfaceClass, boolean notificationBroadcaster)",static <T> T
+MBeanServerNotification,getMBeanName(),ObjectName
+MBeanServerNotification,toString(),String
+MBeanServerPermission,equals(Object obj),boolean
+MBeanServerPermission,hashCode(),int
+MBeanServerPermission,implies(Permission p),boolean
+MBeanServerPermission,newPermissionCollection(),PermissionCollection
+Notification,getMessage(),String
+Notification,getSequenceNumber(),long
+Notification,getTimeStamp(),long
+Notification,getType(),String
+Notification,getUserData(),Object
+Notification,setSequenceNumber(long sequenceNumber),void
+Notification,setSource(Object source),void
+Notification,setTimeStamp(long timeStamp),void
+Notification,setUserData(Object userData),void
+Notification,toString(),String
+NotificationBroadcasterSupport,"addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+NotificationBroadcasterSupport,getNotificationInfo(),MBeanNotificationInfo[]
+NotificationBroadcasterSupport,"handleNotification(NotificationListener listener, Notification notif, Object handback)",protected void
+NotificationBroadcasterSupport,removeNotificationListener(NotificationListener listener),void
+NotificationBroadcasterSupport,"removeNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+NotificationBroadcasterSupport,sendNotification(Notification notification),void
+NotificationFilterSupport,disableAllTypes(),void
+NotificationFilterSupport,disableType(String prefix),void
+NotificationFilterSupport,enableType(String prefix),void
+NotificationFilterSupport,getEnabledTypes(),Vector<String>
+NotificationFilterSupport,isNotificationEnabled(Notification notification),boolean
+ObjectInstance,equals(Object object),boolean
+ObjectInstance,getClassName(),String
+ObjectInstance,getObjectName(),ObjectName
+ObjectInstance,hashCode(),int
+ObjectInstance,toString(),String
+ObjectName,apply(ObjectName name),boolean
+ObjectName,compareTo(ObjectName name),int
+ObjectName,equals(Object object),boolean
+ObjectName,getCanonicalKeyPropertyListString(),String
+ObjectName,getCanonicalName(),String
+ObjectName,getDomain(),String
+ObjectName,getInstance(ObjectName name),static ObjectName
+ObjectName,getInstance(String name),static ObjectName
+ObjectName,"getInstance(String domain, Hashtable<String,String> table)",static ObjectName
+ObjectName,"getInstance(String domain, String key, String value)",static ObjectName
+ObjectName,getKeyProperty(String property),String
+ObjectName,getKeyPropertyList(),"Hashtable<String,String>"
+ObjectName,getKeyPropertyListString(),String
+ObjectName,hashCode(),int
+ObjectName,isDomainPattern(),boolean
+ObjectName,isPattern(),boolean
+ObjectName,isPropertyListPattern(),boolean
+ObjectName,isPropertyPattern(),boolean
+ObjectName,isPropertyValuePattern(),boolean
+ObjectName,isPropertyValuePattern(String property),boolean
+ObjectName,quote(String s),static String
+ObjectName,setMBeanServer(MBeanServer mbs),void
+ObjectName,toString(),String
+ObjectName,unquote(String q),static String
+Query,"and(QueryExp q1, QueryExp q2)",static QueryExp
+Query,"anySubString(AttributeValueExp a, StringValueExp s)",static QueryExp
+Query,attr(String name),static AttributeValueExp
+Query,"attr(String className, String name)",static AttributeValueExp
+Query,"between(ValueExp v1, ValueExp v2, ValueExp v3)",static QueryExp
+Query,classattr(),static AttributeValueExp
+Query,"div(ValueExp value1, ValueExp value2)",static ValueExp
+Query,"eq(ValueExp v1, ValueExp v2)",static QueryExp
+Query,"finalSubString(AttributeValueExp a, StringValueExp s)",static QueryExp
+Query,"geq(ValueExp v1, ValueExp v2)",static QueryExp
+Query,"gt(ValueExp v1, ValueExp v2)",static QueryExp
+Query,"in(ValueExp val, ValueExp[] valueList)",static QueryExp
+Query,"initialSubString(AttributeValueExp a, StringValueExp s)",static QueryExp
+Query,isInstanceOf(StringValueExp classNameValue),static QueryExp
+Query,"leq(ValueExp v1, ValueExp v2)",static QueryExp
+Query,"lt(ValueExp v1, ValueExp v2)",static QueryExp
+Query,"match(AttributeValueExp a, StringValueExp s)",static QueryExp
+Query,"minus(ValueExp value1, ValueExp value2)",static ValueExp
+Query,not(QueryExp queryExp),static QueryExp
+Query,"or(QueryExp q1, QueryExp q2)",static QueryExp
+Query,"plus(ValueExp value1, ValueExp value2)",static ValueExp
+Query,"times(ValueExp value1, ValueExp value2)",static ValueExp
+Query,value(boolean val),static ValueExp
+Query,value(double val),static ValueExp
+Query,value(float val),static ValueExp
+Query,value(int val),static ValueExp
+Query,value(long val),static ValueExp
+Query,value(Number val),static ValueExp
+Query,value(String val),static StringValueExp
+QueryEval,getMBeanServer(),static MBeanServer
+QueryEval,setMBeanServer(MBeanServer s),void
+StandardEmitterMBean,"addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+StandardEmitterMBean,getNotificationInfo(),MBeanNotificationInfo[]
+StandardEmitterMBean,removeNotificationListener(NotificationListener listener),void
+StandardEmitterMBean,"removeNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback)",void
+StandardEmitterMBean,sendNotification(Notification n),void
+StandardMBean,cacheMBeanInfo(MBeanInfo info),protected void
+StandardMBean,getAttribute(String attribute),Object
+StandardMBean,getAttributes(String[] attributes),AttributeList
+StandardMBean,getCachedMBeanInfo(),protected MBeanInfo
+StandardMBean,getClassName(MBeanInfo info),protected String
+StandardMBean,"getConstructors(MBeanConstructorInfo[] ctors, Object impl)",protected MBeanConstructorInfo[]
+StandardMBean,getDescription(MBeanAttributeInfo info),protected String
+StandardMBean,getDescription(MBeanConstructorInfo info),protected String
+StandardMBean,"getDescription(MBeanConstructorInfo ctor, MBeanParameterInfo param, int sequence)",protected String
+StandardMBean,getDescription(MBeanFeatureInfo info),protected String
+StandardMBean,getDescription(MBeanInfo info),protected String
+StandardMBean,getDescription(MBeanOperationInfo info),protected String
+StandardMBean,"getDescription(MBeanOperationInfo op, MBeanParameterInfo param, int sequence)",protected String
+StandardMBean,getImpact(MBeanOperationInfo info),protected int
+StandardMBean,getImplementation(),Object
+StandardMBean,getImplementationClass(),Class<?>
+StandardMBean,getMBeanInfo(),MBeanInfo
+StandardMBean,getMBeanInterface(),Class<?>
+StandardMBean,"getParameterName(MBeanConstructorInfo ctor, MBeanParameterInfo param, int sequence)",protected String
+StandardMBean,"getParameterName(MBeanOperationInfo op, MBeanParameterInfo param, int sequence)",protected String
+StandardMBean,"invoke(String actionName, Object[] params, String[] signature)",Object
+StandardMBean,postDeregister(),void
+StandardMBean,postRegister(Boolean registrationDone),void
+StandardMBean,preDeregister(),void
+StandardMBean,"preRegister(MBeanServer server, ObjectName name)",ObjectName
+StandardMBean,setAttribute(Attribute attribute),void
+StandardMBean,setAttributes(AttributeList attributes),AttributeList
+StandardMBean,setImplementation(Object implementation),void
+StringValueExp,apply(ObjectName name),ValueExp
+StringValueExp,getValue(),String
+StringValueExp,setMBeanServer(MBeanServer s),void
+StringValueExp,toString(),String

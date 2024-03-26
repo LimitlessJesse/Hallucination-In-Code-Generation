@@ -1,0 +1,117 @@
+ClassName,Method,Return Type
+BeanContextChildSupport,"addPropertyChangeListener(String name, PropertyChangeListener pcl)",void
+BeanContextChildSupport,"addVetoableChangeListener(String name, VetoableChangeListener vcl)",void
+BeanContextChildSupport,"firePropertyChange(String name, Object oldValue, Object newValue)",void
+BeanContextChildSupport,"fireVetoableChange(String name, Object oldValue, Object newValue)",void
+BeanContextChildSupport,getBeanContext(),BeanContext
+BeanContextChildSupport,getBeanContextChildPeer(),BeanContextChild
+BeanContextChildSupport,initializeBeanContextResources(),protected void
+BeanContextChildSupport,isDelegated(),boolean
+BeanContextChildSupport,releaseBeanContextResources(),protected void
+BeanContextChildSupport,"removePropertyChangeListener(String name, PropertyChangeListener pcl)",void
+BeanContextChildSupport,"removeVetoableChangeListener(String name, VetoableChangeListener vcl)",void
+BeanContextChildSupport,serviceAvailable(BeanContextServiceAvailableEvent bcsae),void
+BeanContextChildSupport,serviceRevoked(BeanContextServiceRevokedEvent bcsre),void
+BeanContextChildSupport,setBeanContext(BeanContext bc),void
+BeanContextChildSupport,validatePendingSetBeanContext(BeanContext newValue),boolean
+BeanContextEvent,getBeanContext(),BeanContext
+BeanContextEvent,getPropagatedFrom(),BeanContext
+BeanContextEvent,isPropagated(),boolean
+BeanContextEvent,setPropagatedFrom(BeanContext bc),void
+BeanContextMembershipEvent,contains(Object child),boolean
+BeanContextMembershipEvent,iterator(),Iterator
+BeanContextMembershipEvent,size(),int
+BeanContextMembershipEvent,toArray(),Object[]
+BeanContextServiceAvailableEvent,getCurrentServiceSelectors(),Iterator
+BeanContextServiceAvailableEvent,getServiceClass(),Class
+BeanContextServiceAvailableEvent,getSourceAsBeanContextServices(),BeanContextServices
+BeanContextServiceRevokedEvent,getServiceClass(),Class
+BeanContextServiceRevokedEvent,getSourceAsBeanContextServices(),BeanContextServices
+BeanContextServiceRevokedEvent,isCurrentServiceInvalidNow(),boolean
+BeanContextServiceRevokedEvent,isServiceClass(Class service),boolean
+BeanContextServicesSupport,addBeanContextServicesListener(BeanContextServicesListener bcsl),void
+BeanContextServicesSupport,"addService(Class serviceClass, BeanContextServiceProvider bcsp)",boolean
+BeanContextServicesSupport,"addService(Class serviceClass, BeanContextServiceProvider bcsp, boolean fireEvent)",protected boolean
+BeanContextServicesSupport,bcsPreDeserializationHook(ObjectInputStream ois),protected void
+BeanContextServicesSupport,bcsPreSerializationHook(ObjectOutputStream oos),protected void
+BeanContextServicesSupport,"childJustRemovedHook(Object child, BeanContextSupport.BCSChild bcsc)",protected void
+BeanContextServicesSupport,"createBCSChild(Object targetChild, Object peer)",protected BeanContextSupport.BCSChild
+BeanContextServicesSupport,"createBCSSServiceProvider(Class sc, BeanContextServiceProvider bcsp)",protected BeanContextServicesSupport.BCSSServiceProvider
+BeanContextServicesSupport,fireServiceAdded(BeanContextServiceAvailableEvent bcssae),protected void
+BeanContextServicesSupport,fireServiceAdded(Class serviceClass),protected void
+BeanContextServicesSupport,fireServiceRevoked(BeanContextServiceRevokedEvent bcsre),protected void
+BeanContextServicesSupport,"fireServiceRevoked(Class serviceClass, boolean revokeNow)",protected void
+BeanContextServicesSupport,getBeanContextServicesPeer(),BeanContextServices
+BeanContextServicesSupport,getChildBeanContextServicesListener(Object child),protected static BeanContextServicesListener
+BeanContextServicesSupport,getCurrentServiceClasses(),Iterator
+BeanContextServicesSupport,getCurrentServiceSelectors(Class serviceClass),Iterator
+BeanContextServicesSupport,"getService(BeanContextChild child, Object requestor, Class serviceClass, Object serviceSelector, BeanContextServiceRevokedListener bcsrl)",Object
+BeanContextServicesSupport,hasService(Class serviceClass),boolean
+BeanContextServicesSupport,initialize(),void
+BeanContextServicesSupport,initializeBeanContextResources(),protected void
+BeanContextServicesSupport,releaseBeanContextResources(),protected void
+BeanContextServicesSupport,"releaseService(BeanContextChild child, Object requestor, Object service)",void
+BeanContextServicesSupport,removeBeanContextServicesListener(BeanContextServicesListener bcsl),void
+BeanContextServicesSupport,"revokeService(Class serviceClass, BeanContextServiceProvider bcsp, boolean revokeCurrentServicesNow)",void
+BeanContextServicesSupport,serviceAvailable(BeanContextServiceAvailableEvent bcssae),void
+BeanContextServicesSupport,serviceRevoked(BeanContextServiceRevokedEvent bcssre),void
+BeanContextServicesSupport.BCSSServiceProvider,getServiceProvider(),protected BeanContextServiceProvider
+BeanContextSupport,add(Object targetChild),boolean
+BeanContextSupport,addAll(Collection c),boolean
+BeanContextSupport,addBeanContextMembershipListener(BeanContextMembershipListener bcml),void
+BeanContextSupport,avoidingGui(),boolean
+BeanContextSupport,bcsChildren(),protected Iterator
+BeanContextSupport,bcsPreDeserializationHook(ObjectInputStream ois),protected void
+BeanContextSupport,bcsPreSerializationHook(ObjectOutputStream oos),protected void
+BeanContextSupport,"childDeserializedHook(Object child, BeanContextSupport.BCSChild bcsc)",protected void
+BeanContextSupport,"childJustAddedHook(Object child, BeanContextSupport.BCSChild bcsc)",protected void
+BeanContextSupport,"childJustRemovedHook(Object child, BeanContextSupport.BCSChild bcsc)",protected void
+BeanContextSupport,"classEquals(Class first, Class second)",protected static boolean
+BeanContextSupport,clear(),void
+BeanContextSupport,contains(Object o),boolean
+BeanContextSupport,containsAll(Collection c),boolean
+BeanContextSupport,containsKey(Object o),boolean
+BeanContextSupport,copyChildren(),protected Object[]
+BeanContextSupport,"createBCSChild(Object targetChild, Object peer)",protected BeanContextSupport.BCSChild
+BeanContextSupport,"deserialize(ObjectInputStream ois, Collection coll)",protected void
+BeanContextSupport,dontUseGui(),void
+BeanContextSupport,fireChildrenAdded(BeanContextMembershipEvent bcme),protected void
+BeanContextSupport,fireChildrenRemoved(BeanContextMembershipEvent bcme),protected void
+BeanContextSupport,getBeanContextPeer(),BeanContext
+BeanContextSupport,getChildBeanContextChild(Object child),protected static BeanContextChild
+BeanContextSupport,getChildBeanContextMembershipListener(Object child),protected static BeanContextMembershipListener
+BeanContextSupport,getChildPropertyChangeListener(Object child),protected static PropertyChangeListener
+BeanContextSupport,getChildSerializable(Object child),protected static Serializable
+BeanContextSupport,getChildVetoableChangeListener(Object child),protected static VetoableChangeListener
+BeanContextSupport,getChildVisibility(Object child),protected static Visibility
+BeanContextSupport,getLocale(),Locale
+BeanContextSupport,"getResource(String name, BeanContextChild bcc)",URL
+BeanContextSupport,"getResourceAsStream(String name, BeanContextChild bcc)",InputStream
+BeanContextSupport,initialize(),protected void
+BeanContextSupport,instantiateChild(String beanName),Object
+BeanContextSupport,isDesignTime(),boolean
+BeanContextSupport,isEmpty(),boolean
+BeanContextSupport,isSerializing(),boolean
+BeanContextSupport,iterator(),Iterator
+BeanContextSupport,needsGui(),boolean
+BeanContextSupport,okToUseGui(),void
+BeanContextSupport,propertyChange(PropertyChangeEvent pce),void
+BeanContextSupport,readChildren(ObjectInputStream ois),void
+BeanContextSupport,remove(Object targetChild),boolean
+BeanContextSupport,"remove(Object targetChild, boolean callChildSetBC)",protected boolean
+BeanContextSupport,removeAll(Collection c),boolean
+BeanContextSupport,removeBeanContextMembershipListener(BeanContextMembershipListener bcml),void
+BeanContextSupport,retainAll(Collection c),boolean
+BeanContextSupport,"serialize(ObjectOutputStream oos, Collection coll)",protected void
+BeanContextSupport,setDesignTime(boolean dTime),void
+BeanContextSupport,setLocale(Locale newLocale),void
+BeanContextSupport,size(),int
+BeanContextSupport,toArray(),Object[]
+BeanContextSupport,toArray(Object[] arry),Object[]
+BeanContextSupport,validatePendingAdd(Object targetChild),protected boolean
+BeanContextSupport,validatePendingRemove(Object targetChild),protected boolean
+BeanContextSupport,vetoableChange(PropertyChangeEvent pce),void
+BeanContextSupport,writeChildren(ObjectOutputStream oos),void
+BeanContextSupport.BCSIterator,hasNext(),boolean
+BeanContextSupport.BCSIterator,next(),Object
+BeanContextSupport.BCSIterator,remove(),void

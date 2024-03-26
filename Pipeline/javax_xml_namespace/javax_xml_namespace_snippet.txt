@@ -1,0 +1,314 @@
+Sample: 0 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object obj) from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object obj)` method in `QName` class is used to compare the specified object with this `QName` for equality.
+
+Here is a complete code snippet:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qname1 = new QName("http://www.example.com/schema", "element");
+        QName qname2 = new QName("http://www.example.com/schema", "element");
+        QName qname3 = new QName("http://www.example.com/schema", "otherElement");
+
+        System.out.println(qname1.equals(qname2));  // true
+        System.out.println(qname1.equals(qname3));  // false
+    }
+}
+```
+
+In this code, we create two `QName` objects with the same namespace and local part, and one with a different local part. The `equals()` method is then used to compare these `QName` objects. The output of the program will be:
+
+```
+true
+false
+```
+
+This shows that the `equals()` method correctly identifies that the first two `QName` objects are equal (because they have the same namespace and local part), but that the third `QName` object is not equal (because it has a different local part).
+================================================================
+
+Sample: 1 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int hashCode() from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hashCode()` method in `QName` class is used to get the hash code value of the object. The hash code of an object is a unique integer value that is used to identify the object in a hash-based collection.
+
+Here is a complete code snippet of the `hashCode()` method from `QName` class:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qName = new QName("http://www.example.com", "example", "example");
+        int hashCode = qName.hashCode();
+        System.out.println("Hash code: " + hashCode);
+    }
+}
+```
+
+In this code, we create a new `QName` object with namespace, local part, and prefix. Then we call the `hashCode()` method on this object and print the result. The hash code of the `QName` object is then printed to the console.
+================================================================
+
+Sample: 2 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getLocalPart() from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getLocalPart()` method in the `QName` class of the `javax.xml.namespace` package is used to get the local part of the qualified name. The local part is the last part of the qualified name.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qName = new QName("http://www.example.com", "localPart");
+        String localPart = qName.getLocalPart();
+        System.out.println("Local Part: " + localPart);
+    }
+}
+```
+
+In this code snippet, we create a new `QName` object with a namespace URI and a local part. Then we call the `getLocalPart()` method on the `QName` object to get the local part. Finally, we print the local part to the console.
+================================================================
+
+Sample: 3 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getNamespaceURI() from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getNamespaceURI()` method in the `QName` class of the `javax.xml.namespace` package is used to get the namespace URI of the QName.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qName = new QName("http://www.example.com", "example", "ex");
+        String namespaceURI = qName.getNamespaceURI();
+        System.out.println("Namespace URI: " + namespaceURI);
+    }
+}
+```
+
+In this code snippet, we create a new `QName` object with a namespace URI, local part, and prefix. Then we call the `getNamespaceURI()` method on the `QName` object to get the namespace URI. Finally, we print the namespace URI to the console.
+
+Please replace the namespace URI, local part, and prefix with your own values to test the method.
+================================================================
+
+Sample: 4 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getPrefix() from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getPrefix()` method in `QName` class of `javax.xml.namespace` package is used to get the prefix of the QName.
+
+Here is the complete code snippet:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qName = new QName("http://www.example.com/book", "book", "bk");
+        System.out.println("Prefix: " + qName.getPrefix());
+    }
+}
+```
+
+In this code snippet, we create a new `QName` object with a namespace URI, local part, and a prefix. Then we call the `getPrefix()` method on the `QName` object to get the prefix.
+
+Please note that the `getPrefix()` method will return the prefix if the QName has a prefix, otherwise it will return an empty string.
+================================================================
+
+Sample: 5 QName
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String toString() from javax.xml.namespace.QName
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `toString()` method in `QName` class is used to return a string representation of the object. The string representation consists of the namespace URI, the local part, and the prefix.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.namespace.QName;
+
+public class Main {
+    public static void main(String[] args) {
+        QName qName = new QName("http://www.example.com", "example", "ex");
+        System.out.println(qName.toString());
+    }
+}
+```
+
+In this code, we create a new `QName` object with a namespace URI, a local part, and a prefix. Then we call the `toString()` method on this object, which returns a string representation of the object. This string is then printed to the console.
+
+The output of this code will be:
+
+```
+{http://www.example.com}example:ex
+```
+
+This output shows the namespace URI, the local part, and the prefix of the `QName` object.
+================================================================
+

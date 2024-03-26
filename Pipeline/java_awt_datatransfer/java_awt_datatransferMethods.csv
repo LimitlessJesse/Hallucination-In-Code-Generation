@@ -1,0 +1,65 @@
+ClassName,Method,Return Type
+Clipboard,addFlavorListener(FlavorListener listener),void
+Clipboard,getAvailableDataFlavors(),DataFlavor[]
+Clipboard,getContents(Object requestor),Transferable
+Clipboard,getData(DataFlavor flavor),Object
+Clipboard,getFlavorListeners(),FlavorListener[]
+Clipboard,getName(),String
+Clipboard,isDataFlavorAvailable(DataFlavor flavor),boolean
+Clipboard,removeFlavorListener(FlavorListener listener),void
+Clipboard,"setContents(Transferable contents, ClipboardOwner owner)",void
+DataFlavor,clone(),Object
+DataFlavor,equals(DataFlavor that),boolean
+DataFlavor,equals(Object o),boolean
+DataFlavor,equals(String s),boolean
+DataFlavor,getDefaultRepresentationClass(),Class<?>
+DataFlavor,getDefaultRepresentationClassAsString(),String
+DataFlavor,getHumanPresentableName(),String
+DataFlavor,getMimeType(),String
+DataFlavor,getParameter(String paramName),String
+DataFlavor,getPrimaryType(),String
+DataFlavor,getReaderForText(Transferable transferable),Reader
+DataFlavor,getRepresentationClass(),Class<?>
+DataFlavor,getSubType(),String
+DataFlavor,getTextPlainUnicodeFlavor(),static DataFlavor
+DataFlavor,hashCode(),int
+DataFlavor,isFlavorJavaFileListType(),boolean
+DataFlavor,isFlavorRemoteObjectType(),boolean
+DataFlavor,isFlavorSerializedObjectType(),boolean
+DataFlavor,isFlavorTextType(),boolean
+DataFlavor,isMimeTypeEqual(DataFlavor dataFlavor),boolean
+DataFlavor,isMimeTypeEqual(String mimeType),boolean
+DataFlavor,isMimeTypeSerializedObject(),boolean
+DataFlavor,isRepresentationClassByteBuffer(),boolean
+DataFlavor,isRepresentationClassCharBuffer(),boolean
+DataFlavor,isRepresentationClassInputStream(),boolean
+DataFlavor,isRepresentationClassReader(),boolean
+DataFlavor,isRepresentationClassRemote(),boolean
+DataFlavor,isRepresentationClassSerializable(),boolean
+DataFlavor,match(DataFlavor that),boolean
+DataFlavor,normalizeMimeType(String mimeType),protected String
+DataFlavor,"normalizeMimeTypeParameter(String parameterName, String parameterValue)",protected String
+DataFlavor,readExternal(ObjectInput is),void
+DataFlavor,selectBestTextFlavor(DataFlavor[] availableFlavors),static DataFlavor
+DataFlavor,setHumanPresentableName(String humanPresentableName),void
+DataFlavor,toString(),String
+DataFlavor,"tryToLoadClass(String className, ClassLoader fallback)",protected static Class<?>
+DataFlavor,writeExternal(ObjectOutput os),void
+StringSelection,getTransferData(DataFlavor flavor),Object
+StringSelection,getTransferDataFlavors(),DataFlavor[]
+StringSelection,isDataFlavorSupported(DataFlavor flavor),boolean
+StringSelection,"lostOwnership(Clipboard clipboard, Transferable contents)",void
+SystemFlavorMap,"addFlavorForUnencodedNative(String nat, DataFlavor flav)",void
+SystemFlavorMap,"addUnencodedNativeForFlavor(DataFlavor flav, String nat)",void
+SystemFlavorMap,decodeDataFlavor(String nat),static DataFlavor
+SystemFlavorMap,decodeJavaMIMEType(String nat),static String
+SystemFlavorMap,encodeDataFlavor(DataFlavor flav),static String
+SystemFlavorMap,encodeJavaMIMEType(String mimeType),static String
+SystemFlavorMap,getDefaultFlavorMap(),static FlavorMap
+SystemFlavorMap,getFlavorsForNative(String nat),List<DataFlavor>
+SystemFlavorMap,getFlavorsForNatives(String[] natives),"Map<String,DataFlavor>"
+SystemFlavorMap,getNativesForFlavor(DataFlavor flav),List<String>
+SystemFlavorMap,getNativesForFlavors(DataFlavor[] flavors),"Map<DataFlavor,String>"
+SystemFlavorMap,isJavaMIMEType(String str),static boolean
+SystemFlavorMap,"setFlavorsForNative(String nat, DataFlavor[] flavors)",void
+SystemFlavorMap,"setNativesForFlavor(DataFlavor flav, String[] natives)",void

@@ -1,0 +1,302 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+1,AudioFileFormat.Type,1,AudioFileFormat.Type getType(),False
+1,AudioFileFormat.Type,2,AudioFileFormat getAudioFileFormat(URL url),False
+1,AudioFileFormat.Type,3,AudioFileFormat getAudioFileFormat(File file),False
+1,AudioFileFormat.Type,4,AudioFileFormat getAudioFileFormat(AudioInputStream stream),False
+1,AudioFileFormat.Type,5,"AudioFileFormat getAudioFileFormat(URL url, AudioInputStream stream)",False
+2,AudioFormat,1,AudioFormat.Encoding getEncoding(),True
+2,AudioFormat,2,float getSampleRate(),True
+2,AudioFormat,3,int getSampleSizeInBits(),True
+2,AudioFormat,4,int getChannels(),True
+2,AudioFormat,5,int getFrameSize(),True
+2,AudioFormat,6,float getFrameRate(),True
+2,AudioFormat,7,boolean isBigEndian(),True
+2,AudioFormat,8,boolean isSigned(),False
+2,AudioFormat,9,boolean isEncodingChangeable(),False
+2,AudioFormat,10,boolean isFrameLengthChangeable(),False
+2,AudioFormat,11,boolean isFrameRateChangeable(),False
+2,AudioFormat,12,boolean isSampleRateChangeable(),False
+2,AudioFormat,13,boolean isChannelsChangeable(),False
+2,AudioFormat,14,boolean isSignedChangeable(),False
+2,AudioFormat,15,boolean isBigEndianChangeable(),False
+3,AudioFormat.Encoding,1,AudioFormat.Encoding getEncoding(),False
+3,AudioFormat.Encoding,2,float getSampleRate(),False
+3,AudioFormat.Encoding,3,int getSampleSizeInBits(),False
+3,AudioFormat.Encoding,4,int getChannels(),False
+3,AudioFormat.Encoding,5,boolean isBigEndian(),False
+3,AudioFormat.Encoding,6,boolean isSigned(),False
+3,AudioFormat.Encoding,7,boolean isFloat(),False
+3,AudioFormat.Encoding,8,boolean isPCM_Signed(),False
+3,AudioFormat.Encoding,9,boolean isPCM_Unsigned(),False
+3,AudioFormat.Encoding,10,boolean isULAW(),False
+3,AudioFormat.Encoding,11,boolean isALAW(),False
+3,AudioFormat.Encoding,12,boolean isMULAW(),False
+3,AudioFormat.Encoding,13,boolean isAES(),False
+3,AudioFormat.Encoding,14,boolean isDVI_R_DVI_L(),False
+3,AudioFormat.Encoding,15,boolean isTHP(),False
+3,AudioFormat.Encoding,16,boolean isGSM(),False
+3,AudioFormat.Encoding,17,boolean isQCELP(),False
+3,AudioFormat.Encoding,18,boolean isEvrc(),False
+3,AudioFormat.Encoding,19,boolean isSMV(),False
+3,AudioFormat.Encoding,20,boolean isG723_24(),False
+3,AudioFormat.Encoding,21,boolean isG723_40(),False
+3,AudioFormat.Encoding,22,boolean isDVI_R_DVI_L(),False
+3,AudioFormat.Encoding,23,boolean isG729(),False
+3,AudioFormat.Encoding,24,boolean isMPEG(),False
+3,AudioFormat.Encoding,25,boolean isG726(),False
+4,AudioInputStream,1,AudioFormat getFormat(),True
+4,AudioInputStream,2,int getFrameLength(),False
+4,AudioInputStream,3,"int read(byte[] b, int off, int len)",True
+4,AudioInputStream,4,int read(byte[] b),True
+4,AudioInputStream,5,int skipBytes(int n),False
+5,AudioPermission,1,AudioPermission(String actions),False
+5,AudioPermission,2,boolean implies(Permission permission),False
+5,AudioPermission,3,String getActions(),False
+5,AudioPermission,4,boolean equals(Object obj),False
+5,AudioPermission,5,int hashCode(),False
+6,AudioSystem,1,AudioSystem.getAudioFileFormat(File file),False
+6,AudioSystem,2,AudioSystem.getAudioInputStream(File file),False
+6,AudioSystem,3,AudioSystem.getMixer(Mixer.Info mixerInfo),False
+6,AudioSystem,4,AudioSystem.getSourceDataLine(DataLine.Info dataLineInfo),False
+6,AudioSystem,5,AudioSystem.getTargetDataLine(DataLine.Info dataLineInfo),False
+7,BooleanControl,1,boolean isEnabled(),False
+7,BooleanControl,2,void setValue(boolean value),True
+7,BooleanControl,3,boolean isValueSupported(boolean value),False
+7,BooleanControl,4,boolean isPrecise(),False
+7,BooleanControl,5,boolean isRelative(),False
+8,BooleanControl.Type,1,boolean isEnabled(),False
+8,BooleanControl.Type,2,void setValue(boolean value),False
+8,BooleanControl.Type,3,boolean isValueSupported(boolean value),False
+8,BooleanControl.Type,4,boolean isPrecise(),False
+8,BooleanControl.Type,5,boolean isPreciseSupported(),False
+9,CompoundControl,1,boolean isEnabled(),False
+9,CompoundControl,2,void setEnabled(boolean enable),False
+9,CompoundControl,3,float getValue(),False
+9,CompoundControl,4,void setValue(float value),False
+9,CompoundControl,5,float getMaximum(),False
+9,CompoundControl,6,float getMinimum(),False
+9,CompoundControl,7,float getMajorTickSpacing(),False
+9,CompoundControl,8,float getMinorTickSpacing(),False
+9,CompoundControl,9,float getPaintTickMarks(),False
+9,CompoundControl,10,float getPaintLabels(),False
+9,CompoundControl,11,float getPaintValue(),False
+9,CompoundControl,12,float getPaintTicks(),False
+9,CompoundControl,13,float getPaintBaseline(),False
+9,CompoundControl,14,float getPaintBorder(),False
+9,CompoundControl,15,float getPaintFocus(),False
+9,CompoundControl,16,float getDisplayedValue(),False
+9,CompoundControl,17,float getDisplayedValueMinimum(),False
+9,CompoundControl,18,float getDisplayedValueMaximum(),False
+9,CompoundControl,19,float getDisplayedValueIncrement(),False
+9,CompoundControl,20,float getDisplayedValuePrecision(),False
+10,CompoundControl.Type,1,boolean isEnabled(),False
+10,CompoundControl.Type,2,void setEnabled(boolean enabled),False
+10,CompoundControl.Type,3,float getValue(),False
+10,CompoundControl.Type,4,void setValue(float value),False
+10,CompoundControl.Type,5,float getMaximum(),False
+10,CompoundControl.Type,6,float getMinimum(),False
+10,CompoundControl.Type,7,float getNormalValue(),False
+10,CompoundControl.Type,8,float getPrecision(),False
+10,CompoundControl.Type,9,float getValueIncrement(),False
+10,CompoundControl.Type,10,float getValueIncrementStepSize(),False
+10,CompoundControl.Type,11,float getValueStepSize(),False
+10,CompoundControl.Type,12,float getValueStepSizeIncrement(),False
+10,CompoundControl.Type,13,float getValueStepSizeIncrementStepSize(),False
+10,CompoundControl.Type,14,float getValueStepSizeIncrementStepSizeIncrement(),False
+10,CompoundControl.Type,15,float getValueStepSizeIncrementStepSizeIncrementIncrement(),False
+10,CompoundControl.Type,16,float getValueStepSizeIncrementStepSizeIncrementIncrementIncrement(),False
+10,CompoundControl.Type,17,float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrement(),False
+10,CompoundControl.Type,18,float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrement(),False
+10,CompoundControl.Type,19,float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrementIncrement(),False
+10,CompoundControl.Type,20,float getValueStepSizeIncrementStepSizeIncrementIncrementIncrementIncrementIncrementIncrementIncrement(),False
+11,Control,1,boolean isPrecise(),False
+11,Control,2,boolean isMute(),False
+11,Control,3,boolean isEnabled(),False
+11,Control,4,void setValue(float value),False
+11,Control,5,float getValue(),False
+11,Control,6,float getMinimumValue(),False
+11,Control,7,float getMaximumValue(),False
+11,Control,8,float getPrecision(),False
+11,Control,9,float getMuteValue(),False
+11,Control,10,float getEnabledValue(),False
+11,Control,11,float getValueChangeIncrement(),False
+11,Control,12,float getValueChangeIncrement(),False
+11,Control,13,float getValueChangeIncrement(),False
+11,Control,14,float getValueChangeIncrement(),False
+11,Control,15,float getValueChangeIncrement(),False
+11,Control,16,float getValueChangeIncrement(),False
+11,Control,17,float getValueChangeIncrement(),False
+11,Control,18,float getValueChangeIncrement(),False
+11,Control,19,float getValueChangeIncrement(),False
+11,Control,20,float getValueChangeIncrement(),False
+12,Control.Type,1,boolean isPrecise(),False
+12,Control.Type,2,boolean isMomentary(),False
+12,Control.Type,3,boolean isRelative(),False
+12,Control.Type,4,boolean isToggle(),False
+12,Control.Type,5,boolean isOnOff(),False
+13,DataLine.Info,1,"DataLine.Info(Class lineClass, Format format)",False
+13,DataLine.Info,2,"DataLine.Info(Class lineClass, Format format, Object target)",False
+13,DataLine.Info,3,"DataLine.Info(Class lineClass, Format format, Object target, int bufferSize)",False
+13,DataLine.Info,4,"DataLine.Info(Class lineClass, Format format, Object target, int bufferSize, int flags)",False
+13,DataLine.Info,5,"DataLine.Info(Class lineClass, Format format, Object target, int bufferSize, int flags, int maxBufferSize)",False
+14,EnumControl,1,boolean isMicrophoneSupported(),False
+14,EnumControl,2,boolean isSpeakerSupported(),False
+14,EnumControl,3,boolean isLineSupported(),False
+14,EnumControl,4,boolean isMuteSupported(),False
+14,EnumControl,5,boolean isVolumeSupported(),False
+14,EnumControl,6,boolean isRelativeSupported(),False
+14,EnumControl,7,boolean isAbsoluteSupported(),False
+14,EnumControl,8,boolean isToggleSupported(),False
+14,EnumControl,9,boolean isBypassSupported(),False
+14,EnumControl,10,boolean isPrecisionSupported(),False
+14,EnumControl,11,boolean isPolaritySupported(),False
+14,EnumControl,12,boolean isRampSupported(),False
+14,EnumControl,13,boolean isWrapSupported(),False
+14,EnumControl,14,boolean isSoloSupported(),False
+14,EnumControl,15,boolean isMute(),False
+14,EnumControl,16,boolean isBypass(),False
+14,EnumControl,17,boolean isSolo(),False
+14,EnumControl,18,int getMicrophoneMaximum(),False
+14,EnumControl,19,int getMicrophoneMinimum(),False
+14,EnumControl,20,int getSpeakerMaximum(),False
+14,EnumControl,21,int getSpeakerMinimum(),False
+14,EnumControl,22,int getLineMaximum(),False
+14,EnumControl,23,int getLineMinimum(),False
+14,EnumControl,24,int getVolumeMaximum(),False
+14,EnumControl,25,int getVolumeMinimum(),False
+14,EnumControl,26,int getRelativeMaximum(),False
+14,EnumControl,27,int getRelativeMinimum(),False
+14,EnumControl,28,int getAbsoluteMaximum(),False
+14,EnumControl,29,int getAbsoluteMinimum(),False
+14,EnumControl,30,int getToggleMaximum(),False
+14,EnumControl,31,int getToggleMinimum(),False
+14,EnumControl,32,int getPrecision(),False
+14,EnumControl,33,int getPolarity(),False
+14,EnumControl,34,int getRamp(),False
+14,EnumControl,35,int getWrap(),False
+14,EnumControl,36,void setMicrophone(boolean value),False
+14,EnumControl,37,void setSpeaker(boolean value),False
+14,EnumControl,38,void setLine(boolean value),False
+14,EnumControl,39,void setMute(boolean value),False
+14,EnumControl,40,void setBypass(boolean value),False
+14,EnumControl,41,void setSolo(boolean value),False
+14,EnumControl,42,void setVolume(int value),False
+14,EnumControl,43,void setRelative(int value),False
+14,EnumControl,44,void setAbsolute(int value),False
+14,EnumControl,45,void setToggle(int value),False
+14,EnumControl,46,void setPrecision(int value),False
+14,EnumControl,47,void setPolarity(int value),False
+14,EnumControl,48,void setRamp(int value),False
+14,EnumControl,49,void setWrap(int value),False
+14,EnumControl,50,void setValue(int value),False
+15,EnumControl.Type,1,boolean isMute(),False
+15,EnumControl.Type,2,boolean isPrecise(),False
+15,EnumControl.Type,3,boolean isSigned(),False
+15,EnumControl.Type,4,boolean isSupported(),False
+15,EnumControl.Type,5,boolean isToggle(),False
+15,EnumControl.Type,6,boolean isVolatile(),False
+15,EnumControl.Type,7,int getMaximum(),False
+15,EnumControl.Type,8,int getMinimum(),False
+15,EnumControl.Type,9,int getValue(),False
+15,EnumControl.Type,10,void setValue(int value),False
+15,EnumControl.Type,11,void setValue(float value),False
+15,EnumControl.Type,12,void setValue(double value),False
+15,EnumControl.Type,13,void setValue(long value),False
+15,EnumControl.Type,14,void setValue(float[] values),False
+15,EnumControl.Type,15,void setValue(double[] values),False
+15,EnumControl.Type,16,void setValue(long[] values),False
+15,EnumControl.Type,17,void setValue(int[] values),False
+15,EnumControl.Type,18,void setValue(float[][] values),False
+15,EnumControl.Type,19,void setValue(double[][] values),False
+15,EnumControl.Type,20,void setValue(long[][] values),False
+15,EnumControl.Type,21,void setValue(int[][] values),False
+16,FloatControl,1,get(),False
+16,FloatControl,2,getMaximum(),False
+16,FloatControl,3,getMinimum(),False
+16,FloatControl,4,getNormalizedValue(),False
+16,FloatControl,5,setValue(float newValue),False
+17,FloatControl.Type,1,getValue(),False
+17,FloatControl.Type,2,getMinimumValue(),False
+17,FloatControl.Type,3,getMaximumValue(),False
+17,FloatControl.Type,4,getValue(),False
+17,FloatControl.Type,5,setValue(float newValue),False
+17,FloatControl.Type,6,getNormalizedValue(),False
+17,FloatControl.Type,7,setNormalizedValue(float newNormalizedValue),False
+17,FloatControl.Type,8,getMajorTickSpacing(),False
+17,FloatControl.Type,9,getMinorTickSpacing(),False
+17,FloatControl.Type,10,getTickUnitSize(),False
+17,FloatControl.Type,11,getCurrentTickLabel(),False
+17,FloatControl.Type,12,getCurrentTickPosition(),False
+17,FloatControl.Type,13,getCurrentTickLabels(),False
+17,FloatControl.Type,14,getCurrentTickPositions(),False
+17,FloatControl.Type,15,getCurrentTickLabels(int[] tickPositions),False
+17,FloatControl.Type,16,getCurrentTickPositions(String[] tickLabels),False
+17,FloatControl.Type,17,"getCurrentTickLabels(int[] tickPositions, String[] tickLabels)",False
+17,FloatControl.Type,18,"getCurrentTickPositions(String[] tickLabels, int[] tickPositions)",False
+17,FloatControl.Type,19,"getCurrentTickLabels(int[] tickPositions, String[] tickLabels, int[] tickPositions2, String[] tickLabels2)",False
+17,FloatControl.Type,20,"getCurrentTickPositions(String[] tickLabels, int[] tickPositions, String[] tickLabels2, int[] tickPositions2)",False
+18,Line.Info,1,Line.Info getLineInfo(),False
+18,Line.Info,2,Line.Info[] getSupportedLineInfos(),False
+18,Line.Info,3,boolean isOpen(),False
+18,Line.Info,4,boolean isActive(),False
+18,Line.Info,5,boolean isSupported(Line.Info info),False
+19,LineEvent,1,LineEvent.Type getType(),True
+19,LineEvent,2,Line getLine(),True
+19,LineEvent,3,long getFramePosition(),True
+19,LineEvent,4,long getMicrosecondPosition(),False
+19,LineEvent,5,long getSamplePosition(),False
+20,LineEvent.Type,1,LineEvent.Type getType(),False
+20,LineEvent.Type,2,Line getLine(),False
+20,LineEvent.Type,3,long getFramePosition(),False
+20,LineEvent.Type,4,long getMicrosecondPosition(),False
+20,LineEvent.Type,5,long getSampleFramePosition(),False
+20,LineEvent.Type,6,long getSampleMicrosecondPosition(),False
+20,LineEvent.Type,7,long getSampleTimePosition(),False
+20,LineEvent.Type,8,long getTimePosition(),False
+20,LineEvent.Type,9,long getBytePosition(),False
+20,LineEvent.Type,10,long getFrameLength(),False
+20,LineEvent.Type,11,long getMicrosecondLength(),False
+20,LineEvent.Type,12,long getSampleFrameLength(),False
+20,LineEvent.Type,13,long getSampleMicrosecondLength(),False
+20,LineEvent.Type,14,long getSampleTimeLength(),False
+20,LineEvent.Type,15,long getTimeLength(),False
+20,LineEvent.Type,16,long getByteLength(),False
+20,LineEvent.Type,17,long getFramePosition(),False
+20,LineEvent.Type,18,long getMicrosecondPosition(),False
+20,LineEvent.Type,19,long getSampleFramePosition(),False
+20,LineEvent.Type,20,long getSampleMicrosecondPosition(),False
+20,LineEvent.Type,21,long getSampleTimePosition(),False
+20,LineEvent.Type,22,long getTimePosition(),False
+20,LineEvent.Type,23,long getBytePosition(),False
+20,LineEvent.Type,24,long getFrameLength(),False
+20,LineEvent.Type,25,long getMicrosecondLength(),False
+20,LineEvent.Type,26,long getSampleFrameLength(),False
+20,LineEvent.Type,27,long getSampleMicrosecondLength(),False
+20,LineEvent.Type,28,long getSampleTimeLength(),False
+20,LineEvent.Type,29,long getTimeLength(),False
+20,LineEvent.Type,30,long getByteLength(),False
+21,Mixer.Info,1,Mixer.Info getMixerInfo(),False
+21,Mixer.Info,2,String getName(),True
+21,Mixer.Info,3,String getVendor(),True
+21,Mixer.Info,4,String getDescription(),True
+21,Mixer.Info,5,boolean isLineSupported(Line.Info info),False
+21,Mixer.Info,6,Line.Info[] getSourceLineInfo(),False
+21,Mixer.Info,7,Line.Info[] getTargetLineInfo(),False
+21,Mixer.Info,8,Line.Info[] getSourceLineInfo(Control[] controls),False
+21,Mixer.Info,9,Line.Info[] getTargetLineInfo(Control[] controls),False
+21,Mixer.Info,10,Line[] getSourceLines(),False
+21,Mixer.Info,11,Line[] getTargetLines(),False
+21,Mixer.Info,12,Line[] getSourceLines(Control[] controls),False
+21,Mixer.Info,13,Line[] getTargetLines(Control[] controls),False
+21,Mixer.Info,14,Line getLine(Line.Info info),False
+21,Mixer.Info,15,"Line getLine(Line.Info info, AudioFormat format)",False
+22,Port.Info,1,Port.Info getPortInfo(),False
+22,Port.Info,2,Port.Info getPortInfo(String name),False
+22,Port.Info,3,"Port.Info getPortInfo(String name, String vendor)",False
+22,Port.Info,4,"Port.Info getPortInfo(String name, String vendor, String version)",False
+22,Port.Info,5,"Port.Info getPortInfo(String name, String vendor, String version, String description)",False
+23,ReverbType,1,ReverbType.getReverbDefinition(),False
+23,ReverbType,2,ReverbType.getReverbPreset(),False
+23,ReverbType,3,ReverbType.getReverbPresetName(),False
+23,ReverbType,4,ReverbType.getReverbPresetType(),False
+23,ReverbType,5,ReverbType.getReverbType(),False

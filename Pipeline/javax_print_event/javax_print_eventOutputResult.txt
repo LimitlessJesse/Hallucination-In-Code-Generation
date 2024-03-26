@@ -1,0 +1,73 @@
+Sample: PrintJobAdapter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintJobAdapter_3
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintJobAdapter_4
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintJobAdapter_5
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintJobAdapter_6
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintJobAdapter_7
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintServiceAttributeEvent_2
+----------------------------------------------------------------
+output:
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:2: error: cannot find symbol
+import javax.print.PrintServiceAttributeSet;
+                  ^
+  symbol:   class PrintServiceAttributeSet
+  location: package javax.print
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:11: error: cannot find symbol
+    public static PrintServiceAttributeSet getAttributeSet() {
+                  ^
+  symbol:   class PrintServiceAttributeSet
+  location: class PrintServiceAttributeEvent_2
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:7: error: cannot find symbol
+        PrintServiceAttributeSet attributeSet = getAttributeSet();
+        ^
+  symbol:   class PrintServiceAttributeSet
+  location: class PrintServiceAttributeEvent_2
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:12: error: cannot find symbol
+        PrintService[] services = PrintServiceLookup.lookupPrintServices(null, null);
+                                  ^
+  symbol:   variable PrintServiceLookup
+  location: class PrintServiceAttributeEvent_2
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:13: error: cannot find symbol
+        PrintServiceAttributeSet attributeSet = null;
+        ^
+  symbol:   class PrintServiceAttributeSet
+  location: class PrintServiceAttributeEvent_2
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_2.java:15: error: cannot find symbol
+            PrintServiceAttributeSet serviceAttributes = service.getAttributes();
+            ^
+  symbol:   class PrintServiceAttributeSet
+  location: class PrintServiceAttributeEvent_2
+6 errors
+
+
+================================================================
+
+Sample: PrintServiceAttributeEvent_3
+----------------------------------------------------------------
+output:
+./javax_print_event/javaFiles/PrintServiceAttributeEvent_3.java:7: error: PrintService is abstract; cannot be instantiated
+        PrintServiceAttributeEvent event = new PrintServiceAttributeEvent(new PrintService());
+                                                                          ^
+1 error
+
+
+================================================================
+

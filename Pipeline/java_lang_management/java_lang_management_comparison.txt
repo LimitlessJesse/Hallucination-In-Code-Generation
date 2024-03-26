@@ -1,0 +1,171 @@
+Sample: 0 LockInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.LockInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isSynchronized()`: This method returns true if the lock is held by the current thread.
+
+2. `boolean isReentrant()`: This method returns true if the lock is reentrant.
+
+3. `boolean isClassLock()`: This method returns true if the lock is a class lock.
+
+4. `String getClassName()`: This method returns the name of the class that holds the lock.
+
+5. `String getIdentityHashCode()`: This method returns the identity hash code of the object that holds the lock.
+================================================================
+
+Sample: 1 ManagementFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.ManagementFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `List<GarbageCollectorMXBean> getGarbageCollectorMXBeans()`: This method returns a list of all GarbageCollectorMXBeans.
+
+2. `MemoryMXBean getMemoryMXBean()`: This method returns the MemoryMXBean for the Java virtual machine.
+
+3. `OperatingSystemMXBean getOperatingSystemMXBean()`: This method returns the OperatingSystemMXBean for the Java virtual machine.
+
+4. `ThreadMXBean getThreadMXBean()`: This method returns the ThreadMXBean for the Java virtual machine.
+
+5. `com.sun.management.Unsafe getUnsafe()`: This method returns the Unsafe object for the Java virtual machine.
+================================================================
+
+Sample: 2 ManagementPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.ManagementPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 3 MemoryNotificationInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.MemoryNotificationInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long getCommitted()`: This method returns the amount of memory in bytes that is guaranteed to be available to the JVM for use by the memory manager.
+
+2. `long getInit()`: This method returns the amount of memory in bytes that the JVM started with.
+
+3. `long getMax()`: This method returns the maximum amount of memory in bytes that can be used for memory management.
+
+4. `long getUsed()`: This method returns the amount of memory in bytes that is currently in use by the JVM for memory management.
+
+5. `long getSwapUsed()`: This method returns the amount of swap space in bytes that is currently being used.
+================================================================
+
+Sample: 4 MemoryUsage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.MemoryUsage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long getInit()`: This method returns the amount of memory in bytes that was initially allocated for the object.
+
+2. `long getUsed()`: This method returns the amount of memory in bytes that is used for the object.
+
+3. `long getCommitted()`: This method returns the amount of memory in bytes that is guaranteed to be available for use by the JVM.
+
+4. `long getMax()`: This method returns the maximum amount of memory in bytes that can be used for memory management on the Java virtual machine.
+
+5. `boolean isValid()`: This method returns true if the memory usage is valid.
+================================================================
+
+Sample: 5 MonitorInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.MonitorInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getCount()`: This method returns the number of threads that are currently blocked by this monitor.
+
+2. `ThreadInfo[] getThreads()`: This method returns an array of ThreadInfo objects that describes the threads that are blocked on this monitor.
+
+3. `boolean isSynchronizer()`: This method returns true if this monitor is a synchronizer (i.e., it has the same effect as a synchronized method).
+
+4. `boolean isWait()`: This method returns true if this monitor is a wait set.
+
+5. `boolean isReentrant()`: This method returns true if this monitor is reentrant.
+================================================================
+
+Sample: 6 ThreadInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.management.ThreadInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public ThreadInfo[] dumpAllThreads(boolean live, boolean sanitize)`: This method returns an array of ThreadInfo objects representing all threads in the Java virtual machine.
+
+2. `public ThreadInfo[] dumpThreads(long[] ids, boolean live, boolean sanitize)`: This method returns an array of ThreadInfo objects representing the threads with the specified ids.
+
+3. `public ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize)`: This method returns an array of ThreadInfo objects representing the threads in the specified thread group.
+
+4. `public ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize, long[] ids)`: This method returns an array of ThreadInfo objects representing the threads in the specified thread group with the specified ids.
+
+5. `public ThreadInfo[] dumpThreads(ThreadGroup group, boolean live, boolean sanitize, long[] ids, boolean lockedMonitors)`: This method returns an array of ThreadInfo objects representing the threads in the specified thread group with the specified ids and whether to include locked monitors.
+================================================================
+

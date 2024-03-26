@@ -1,0 +1,34 @@
+ClassName,Method,Return Type
+DocFlavor,equals(Object obj),boolean
+DocFlavor,getMediaSubtype(),String
+DocFlavor,getMediaType(),String
+DocFlavor,getMimeType(),String
+DocFlavor,getParameter(String paramName),String
+DocFlavor,getRepresentationClassName(),String
+DocFlavor,hashCode(),int
+DocFlavor,toString(),String
+PrintServiceLookup,getDefaultPrintService(),abstract PrintService
+PrintServiceLookup,"getMultiDocPrintServices(DocFlavor[] flavors, AttributeSet attributes)",abstract MultiDocPrintService[]
+PrintServiceLookup,getPrintServices(),abstract PrintService[]
+PrintServiceLookup,"getPrintServices(DocFlavor flavor, AttributeSet attributes)",abstract PrintService[]
+PrintServiceLookup,lookupDefaultPrintService(),static PrintService
+PrintServiceLookup,"lookupMultiDocPrintServices(DocFlavor[] flavors, AttributeSet attributes)",static MultiDocPrintService[]
+PrintServiceLookup,"lookupPrintServices(DocFlavor flavor, AttributeSet attributes)",static PrintService[]
+PrintServiceLookup,registerService(PrintService service),static boolean
+PrintServiceLookup,registerServiceProvider(PrintServiceLookup sp),static boolean
+ServiceUI,"printDialog(GraphicsConfiguration gc, int x, int y, PrintService[] services, PrintService defaultService, DocFlavor flavor, PrintRequestAttributeSet attributes)",static PrintService
+ServiceUIFactory,"getUI(int role, String ui)",abstract Object
+ServiceUIFactory,getUIClassNamesForRole(int role),abstract String[]
+SimpleDoc,getAttributes(),DocAttributeSet
+SimpleDoc,getDocFlavor(),DocFlavor
+SimpleDoc,getPrintData(),Object
+SimpleDoc,getReaderForText(),Reader
+SimpleDoc,getStreamForBytes(),InputStream
+StreamPrintService,dispose(),void
+StreamPrintService,getOutputFormat(),abstract String
+StreamPrintService,getOutputStream(),OutputStream
+StreamPrintService,isDisposed(),boolean
+StreamPrintServiceFactory,getOutputFormat(),abstract String
+StreamPrintServiceFactory,getPrintService(OutputStream out),abstract StreamPrintService
+StreamPrintServiceFactory,getSupportedDocFlavors(),abstract DocFlavor[]
+StreamPrintServiceFactory,"lookupStreamPrintServiceFactories(DocFlavor flavor, String outputMimeType)",static StreamPrintServiceFactory[]

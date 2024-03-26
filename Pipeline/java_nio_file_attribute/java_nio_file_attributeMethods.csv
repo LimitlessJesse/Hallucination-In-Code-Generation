@@ -1,0 +1,32 @@
+ClassName,Method,Return Type
+AclEntry,equals(Object ob),boolean
+AclEntry,flags(),Set<AclEntryFlag>
+AclEntry,hashCode(),int
+AclEntry,newBuilder(),static AclEntry.Builder
+AclEntry,newBuilder(AclEntry entry),static AclEntry.Builder
+AclEntry,permissions(),Set<AclEntryPermission>
+AclEntry,principal(),UserPrincipal
+AclEntry,toString(),String
+AclEntry,type(),AclEntryType
+AclEntry.Builder,build(),AclEntry
+AclEntry.Builder,setFlags(AclEntryFlag... flags),AclEntry.Builder
+AclEntry.Builder,setFlags(Set<AclEntryFlag> flags),AclEntry.Builder
+AclEntry.Builder,setPermissions(AclEntryPermission... perms),AclEntry.Builder
+AclEntry.Builder,setPermissions(Set<AclEntryPermission> perms),AclEntry.Builder
+AclEntry.Builder,setPrincipal(UserPrincipal who),AclEntry.Builder
+AclEntry.Builder,setType(AclEntryType type),AclEntry.Builder
+FileTime,compareTo(FileTime other),int
+FileTime,equals(Object obj),boolean
+FileTime,from(Instant instant),static FileTime
+FileTime,"from(long value, TimeUnit unit)",static FileTime
+FileTime,fromMillis(long value),static FileTime
+FileTime,hashCode(),int
+FileTime,to(TimeUnit unit),long
+FileTime,toInstant(),Instant
+FileTime,toMillis(),long
+FileTime,toString(),String
+PosixFilePermissions,asFileAttribute(Set<PosixFilePermission> perms),static FileAttribute<Set<PosixFilePermission>>
+PosixFilePermissions,fromString(String perms),static Set<PosixFilePermission>
+PosixFilePermissions,toString(Set<PosixFilePermission> perms),static String
+UserPrincipalLookupService,lookupPrincipalByGroupName(String group),abstract GroupPrincipal
+UserPrincipalLookupService,lookupPrincipalByName(String name),abstract UserPrincipal

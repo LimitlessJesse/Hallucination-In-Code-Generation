@@ -1,0 +1,217 @@
+Sample: 0 CollatorProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Collator getInstance(Locale locale) from java.text.spi.CollatorProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getInstance(Locale locale)` method from `java.text.spi.CollatorProvider` is used to get a collator for the specified locale. Here is a complete code snippet:
+
+```java
+import java.text.Collator;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        Locale locale = new Locale("en", "US");
+        Collator collator = Collator.getInstance(locale);
+        System.out.println(collator);
+    }
+}
+```
+
+In this code snippet, we are creating a new `Locale` object for the English language in the United States. Then we are getting a `Collator` instance for this locale using the `getInstance(Locale locale)` method. Finally, we are printing the collator to the console.
+
+Please note that the `Collator` class is part of the `java.text` package, and the `getInstance(Locale locale)` method is a static method of the `Collator` class.
+================================================================
+
+Sample: 1 DateFormatProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DateFormat getDateInstance(int style, Locale locale) from java.text.spi.DateFormatProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDateInstance(int style, Locale locale)` method from `java.text.spi.DateFormatProvider` is used to get a date format instance for the specified style and locale.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.text.DateFormat;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        int style = DateFormat.FULL;
+        Locale locale = new Locale("en", "US");
+        DateFormat dateFormat = DateFormat.getDateInstance(style, locale);
+        System.out.println(dateFormat.format(new java.util.Date()));
+    }
+}
+```
+
+In this code snippet, we are creating a `DateFormat` instance for the specified style (`FULL`) and locale (`en_US`). We then format the current date and print it out.
+
+Please replace `"en"` and `"US"` with your desired locale. The `FULL` style is used here, but you can use other styles like `LONG`, `MEDIUM`, `SHORT`, etc. based on your requirements.
+================================================================
+
+Sample: 2 DateFormatProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DateFormat getTimeInstance(int style, Locale locale) from java.text.spi.DateFormatProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTimeInstance(int style, Locale locale)` method from `java.text.spi.DateFormatProvider` is used to get a `DateFormat` instance that formats or parses time.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.text.DateFormat;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        int style = DateFormat.MEDIUM;
+        Locale locale = Locale.US;
+        DateFormat timeInstance = DateFormat.getTimeInstance(style, locale);
+        System.out.println(timeInstance.getClass().getName());
+    }
+}
+```
+
+In this code snippet, we are creating a `DateFormat` instance using `getTimeInstance(int style, Locale locale)` method. The `style` parameter is used to specify the style of the date format. The `locale` parameter is used to specify the locale for the date format.
+
+The `getClass().getName()` method is used to print the class name of the `DateFormat` instance. This will output `java.text.DateFormat`.
+
+Please replace `DateFormat.MEDIUM` and `Locale.US` with your desired style and locale.
+================================================================
+
+Sample: 3 DateFormatProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use DateFormat getDateTimeInstance(int dateStyle, int timeStyle, Locale locale) from java.text.spi.DateFormatProvider
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDateTimeInstance(int dateStyle, int timeStyle, Locale locale)` method is a static method of the `DateFormat` class. It returns a `DateFormat` instance that formats and parses dates and times.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        int dateStyle = DateFormat.FULL;
+        int timeStyle = DateFormat.FULL;
+        Locale locale = new Locale("en", "US");
+
+        Date currentDate = new Date();
+        DateFormat dateTimeInstance = DateFormat.getDateTimeInstance(dateStyle, timeStyle, locale);
+
+        String formattedDate = dateTimeInstance.format(currentDate);
+        System.out.println(formattedDate);
+    }
+}
+```
+
+In this code snippet, we are creating a `Date` object for the current date and time. Then we are getting a `DateFormat` instance using `getDateTimeInstance` method. The `dateStyle` and `timeStyle` parameters are set to `DateFormat.FULL` which means the date and time will be displayed in full format. The `locale` parameter is set to `Locale("en", "US")` which means the date and time will be displayed in English (US) locale.
+
+Finally, we are formatting the date and time using the `DateFormat` instance and printing it to the console.
+================================================================
+

@@ -1,0 +1,65 @@
+ClassName,Method,Return Type
+DelegationPermission,equals(Object obj),boolean
+DelegationPermission,hashCode(),int
+DelegationPermission,implies(Permission p),boolean
+DelegationPermission,newPermissionCollection(),PermissionCollection
+KerberosKey,destroy(),void
+KerberosKey,equals(Object other),boolean
+KerberosKey,getAlgorithm(),String
+KerberosKey,getEncoded(),byte[]
+KerberosKey,getFormat(),String
+KerberosKey,getKeyType(),int
+KerberosKey,getPrincipal(),KerberosPrincipal
+KerberosKey,getVersionNumber(),int
+KerberosKey,hashCode(),int
+KerberosKey,isDestroyed(),boolean
+KerberosKey,toString(),String
+KerberosPrincipal,equals(Object other),boolean
+KerberosPrincipal,getName(),String
+KerberosPrincipal,getNameType(),int
+KerberosPrincipal,getRealm(),String
+KerberosPrincipal,hashCode(),int
+KerberosPrincipal,toString(),String
+KerberosTicket,destroy(),void
+KerberosTicket,equals(Object other),boolean
+KerberosTicket,getAuthTime(),Date
+KerberosTicket,getClient(),KerberosPrincipal
+KerberosTicket,getClientAddresses(),InetAddress[]
+KerberosTicket,getEncoded(),byte[]
+KerberosTicket,getEndTime(),Date
+KerberosTicket,getFlags(),boolean[]
+KerberosTicket,getRenewTill(),Date
+KerberosTicket,getServer(),KerberosPrincipal
+KerberosTicket,getSessionKey(),SecretKey
+KerberosTicket,getSessionKeyType(),int
+KerberosTicket,getStartTime(),Date
+KerberosTicket,hashCode(),int
+KerberosTicket,isCurrent(),boolean
+KerberosTicket,isDestroyed(),boolean
+KerberosTicket,isForwardable(),boolean
+KerberosTicket,isForwarded(),boolean
+KerberosTicket,isInitial(),boolean
+KerberosTicket,isPostdated(),boolean
+KerberosTicket,isProxiable(),boolean
+KerberosTicket,isProxy(),boolean
+KerberosTicket,isRenewable(),boolean
+KerberosTicket,refresh(),void
+KerberosTicket,toString(),String
+KeyTab,equals(Object other),boolean
+KeyTab,exists(),boolean
+KeyTab,getInstance(),static KeyTab
+KeyTab,getInstance(File file),static KeyTab
+KeyTab,getInstance(KerberosPrincipal princ),static KeyTab
+KeyTab,"getInstance(KerberosPrincipal princ, File file)",static KeyTab
+KeyTab,getKeys(KerberosPrincipal principal),KerberosKey[]
+KeyTab,getPrincipal(),KerberosPrincipal
+KeyTab,getUnboundInstance(),static KeyTab
+KeyTab,getUnboundInstance(File file),static KeyTab
+KeyTab,hashCode(),int
+KeyTab,isBound(),boolean
+KeyTab,toString(),String
+ServicePermission,equals(Object obj),boolean
+ServicePermission,getActions(),String
+ServicePermission,hashCode(),int
+ServicePermission,implies(Permission p),boolean
+ServicePermission,newPermissionCollection(),PermissionCollection

@@ -1,0 +1,141 @@
+Sample: IIOImage_2
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at IIOImage_2.main(IIOImage_2.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: IIOImage_5
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at IIOImage_5.main(IIOImage_5.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: ImageIO_1
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at ImageIO_1.main(ImageIO_1.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: ImageIO_5
+----------------------------------------------------------------
+output:
+./javax_imageio/javaFiles/ImageIO_5.java:11: error: method getFormatName in class ImageReader cannot be applied to given types;
+            System.out.println(reader.getFormatName(0));
+                                     ^
+  required: no arguments
+  found:    int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: ImageIO_6
+----------------------------------------------------------------
+stdout:
+com.sun.imageio.plugins.jpeg.JPEGImageWriter
+
+================================================================
+
+Sample: ImageIO_7
+----------------------------------------------------------------
+stdout:
+com.sun.imageio.plugins.jpeg.JPEGImageReader
+
+================================================================
+
+Sample: ImageIO_8
+----------------------------------------------------------------
+stdout:
+com.sun.imageio.plugins.jpeg.JPEGImageWriter
+
+================================================================
+
+Sample: ImageIO_9
+----------------------------------------------------------------
+stdout:
+com.sun.imageio.plugins.jpeg.JPEGImageReader
+
+================================================================
+
+Sample: ImageIO_10
+----------------------------------------------------------------
+stdout:
+com.sun.imageio.plugins.jpeg.JPEGImageWriter
+
+================================================================
+
+Sample: ImageReader_2
+----------------------------------------------------------------
+output:
+./javax_imageio/javaFiles/ImageReader_2.java:11: error: unreported exception IOException; must be caught or declared to be thrown
+                int numImages = reader.getNumImages(true);
+                                                   ^
+1 error
+
+
+================================================================
+
+Sample: ImageWriteParam_1
+----------------------------------------------------------------
+output:
+./javax_imageio/javaFiles/ImageWriteParam_1.java:5: error: constructor ImageWriteParam in class ImageWriteParam cannot be applied to given types;
+        ImageWriteParam param = new ImageWriteParam();
+                                ^
+  required: no arguments
+  found:    no arguments
+  reason: ImageWriteParam() has protected access in ImageWriteParam
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: ImageWriteParam_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.UnsupportedOperationException: Compression not supported
+	at java.desktop/javax.imageio.ImageWriteParam.setCompressionQuality(ImageWriteParam.java:1235)
+	at ImageWriteParam_2.main(ImageWriteParam_2.java:6)
+
+================================================================
+
+Sample: ImageWriteParam_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.UnsupportedOperationException: Progressive output not supported
+	at java.desktop/javax.imageio.ImageWriteParam.setProgressiveMode(ImageWriteParam.java:830)
+	at ImageWriteParam_3.main(ImageWriteParam_3.java:6)
+
+================================================================
+

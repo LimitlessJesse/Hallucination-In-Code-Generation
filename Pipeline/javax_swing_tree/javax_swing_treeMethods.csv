@@ -1,0 +1,268 @@
+ClassName,Method,Return Type
+AbstractLayoutCache,"getBounds(TreePath path, Rectangle placeIn)",abstract Rectangle
+AbstractLayoutCache,getExpandedState(TreePath path),abstract boolean
+AbstractLayoutCache,getModel(),TreeModel
+AbstractLayoutCache,getNodeDimensions(),AbstractLayoutCache.NodeDimensions
+AbstractLayoutCache,"getNodeDimensions(Object value, int row, int depth, boolean expanded, Rectangle placeIn)",protected Rectangle
+AbstractLayoutCache,"getPathClosestTo(int x, int y)",abstract TreePath
+AbstractLayoutCache,getPathForRow(int row),abstract TreePath
+AbstractLayoutCache,getPreferredHeight(),int
+AbstractLayoutCache,getPreferredWidth(Rectangle bounds),int
+AbstractLayoutCache,getRowCount(),abstract int
+AbstractLayoutCache,getRowForPath(TreePath path),abstract int
+AbstractLayoutCache,getRowHeight(),int
+AbstractLayoutCache,getRowsForPaths(TreePath[] paths),int[]
+AbstractLayoutCache,getSelectionModel(),TreeSelectionModel
+AbstractLayoutCache,getVisibleChildCount(TreePath path),abstract int
+AbstractLayoutCache,getVisiblePathsFrom(TreePath path),abstract Enumeration<TreePath>
+AbstractLayoutCache,invalidatePathBounds(TreePath path),abstract void
+AbstractLayoutCache,invalidateSizes(),abstract void
+AbstractLayoutCache,isExpanded(TreePath path),abstract boolean
+AbstractLayoutCache,isFixedRowHeight(),protected boolean
+AbstractLayoutCache,isRootVisible(),boolean
+AbstractLayoutCache,"setExpandedState(TreePath path, boolean isExpanded)",abstract void
+AbstractLayoutCache,setModel(TreeModel newModel),void
+AbstractLayoutCache,setNodeDimensions(AbstractLayoutCache.NodeDimensions nd),void
+AbstractLayoutCache,setRootVisible(boolean rootVisible),void
+AbstractLayoutCache,setRowHeight(int rowHeight),void
+AbstractLayoutCache,setSelectionModel(TreeSelectionModel newLSM),void
+AbstractLayoutCache,treeNodesChanged(TreeModelEvent e),abstract void
+AbstractLayoutCache,treeNodesInserted(TreeModelEvent e),abstract void
+AbstractLayoutCache,treeNodesRemoved(TreeModelEvent e),abstract void
+AbstractLayoutCache,treeStructureChanged(TreeModelEvent e),abstract void
+AbstractLayoutCache.NodeDimensions,"getNodeDimensions(Object value, int row, int depth, boolean expanded, Rectangle bounds)",abstract Rectangle
+DefaultMutableTreeNode,add(MutableTreeNode newChild),void
+DefaultMutableTreeNode,breadthFirstEnumeration(),Enumeration
+DefaultMutableTreeNode,children(),Enumeration
+DefaultMutableTreeNode,clone(),Object
+DefaultMutableTreeNode,depthFirstEnumeration(),Enumeration
+DefaultMutableTreeNode,getAllowsChildren(),boolean
+DefaultMutableTreeNode,getChildAfter(TreeNode aChild),TreeNode
+DefaultMutableTreeNode,getChildAt(int index),TreeNode
+DefaultMutableTreeNode,getChildBefore(TreeNode aChild),TreeNode
+DefaultMutableTreeNode,getChildCount(),int
+DefaultMutableTreeNode,getDepth(),int
+DefaultMutableTreeNode,getFirstChild(),TreeNode
+DefaultMutableTreeNode,getFirstLeaf(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getIndex(TreeNode aChild),int
+DefaultMutableTreeNode,getLastChild(),TreeNode
+DefaultMutableTreeNode,getLastLeaf(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getLeafCount(),int
+DefaultMutableTreeNode,getLevel(),int
+DefaultMutableTreeNode,getNextLeaf(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getNextNode(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getNextSibling(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getParent(),TreeNode
+DefaultMutableTreeNode,getPath(),TreeNode[]
+DefaultMutableTreeNode,"getPathToRoot(TreeNode aNode, int depth)",protected TreeNode[]
+DefaultMutableTreeNode,getPreviousLeaf(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getPreviousNode(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getPreviousSibling(),DefaultMutableTreeNode
+DefaultMutableTreeNode,getRoot(),TreeNode
+DefaultMutableTreeNode,getSharedAncestor(DefaultMutableTreeNode aNode),TreeNode
+DefaultMutableTreeNode,getSiblingCount(),int
+DefaultMutableTreeNode,getUserObject(),Object
+DefaultMutableTreeNode,getUserObjectPath(),Object[]
+DefaultMutableTreeNode,"insert(MutableTreeNode newChild, int childIndex)",void
+DefaultMutableTreeNode,isLeaf(),boolean
+DefaultMutableTreeNode,isNodeAncestor(TreeNode anotherNode),boolean
+DefaultMutableTreeNode,isNodeChild(TreeNode aNode),boolean
+DefaultMutableTreeNode,isNodeDescendant(DefaultMutableTreeNode anotherNode),boolean
+DefaultMutableTreeNode,isNodeRelated(DefaultMutableTreeNode aNode),boolean
+DefaultMutableTreeNode,isNodeSibling(TreeNode anotherNode),boolean
+DefaultMutableTreeNode,isRoot(),boolean
+DefaultMutableTreeNode,pathFromAncestorEnumeration(TreeNode ancestor),Enumeration
+DefaultMutableTreeNode,postorderEnumeration(),Enumeration
+DefaultMutableTreeNode,preorderEnumeration(),Enumeration
+DefaultMutableTreeNode,remove(int childIndex),void
+DefaultMutableTreeNode,remove(MutableTreeNode aChild),void
+DefaultMutableTreeNode,removeAllChildren(),void
+DefaultMutableTreeNode,removeFromParent(),void
+DefaultMutableTreeNode,setAllowsChildren(boolean allows),void
+DefaultMutableTreeNode,setParent(MutableTreeNode newParent),void
+DefaultMutableTreeNode,setUserObject(Object userObject),void
+DefaultMutableTreeNode,toString(),String
+DefaultTreeCellEditor,actionPerformed(ActionEvent e),void
+DefaultTreeCellEditor,addCellEditorListener(CellEditorListener l),void
+DefaultTreeCellEditor,cancelCellEditing(),void
+DefaultTreeCellEditor,canEditImmediately(EventObject event),protected boolean
+DefaultTreeCellEditor,createContainer(),protected Container
+DefaultTreeCellEditor,createTreeCellEditor(),protected TreeCellEditor
+DefaultTreeCellEditor,"determineOffset(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row)",protected void
+DefaultTreeCellEditor,getBorderSelectionColor(),Color
+DefaultTreeCellEditor,getCellEditorListeners(),CellEditorListener[]
+DefaultTreeCellEditor,getCellEditorValue(),Object
+DefaultTreeCellEditor,getFont(),Font
+DefaultTreeCellEditor,"getTreeCellEditorComponent(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row)",Component
+DefaultTreeCellEditor,"inHitRegion(int x, int y)",protected boolean
+DefaultTreeCellEditor,isCellEditable(EventObject event),boolean
+DefaultTreeCellEditor,prepareForEditing(),protected void
+DefaultTreeCellEditor,removeCellEditorListener(CellEditorListener l),void
+DefaultTreeCellEditor,setBorderSelectionColor(Color newColor),void
+DefaultTreeCellEditor,setFont(Font font),void
+DefaultTreeCellEditor,setTree(JTree newTree),protected void
+DefaultTreeCellEditor,shouldSelectCell(EventObject event),boolean
+DefaultTreeCellEditor,shouldStartEditingTimer(EventObject event),protected boolean
+DefaultTreeCellEditor,startEditingTimer(),protected void
+DefaultTreeCellEditor,stopCellEditing(),boolean
+DefaultTreeCellEditor,valueChanged(TreeSelectionEvent e),void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, boolean oldValue, boolean newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, byte oldValue, byte newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, char oldValue, char newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, double oldValue, double newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, float oldValue, float newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, int oldValue, int newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, long oldValue, long newValue)",void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, Object oldValue, Object newValue)",protected void
+DefaultTreeCellRenderer,"firePropertyChange(String propertyName, short oldValue, short newValue)",void
+DefaultTreeCellRenderer,getBackgroundNonSelectionColor(),Color
+DefaultTreeCellRenderer,getBackgroundSelectionColor(),Color
+DefaultTreeCellRenderer,getBorderSelectionColor(),Color
+DefaultTreeCellRenderer,getClosedIcon(),Icon
+DefaultTreeCellRenderer,getDefaultClosedIcon(),Icon
+DefaultTreeCellRenderer,getDefaultLeafIcon(),Icon
+DefaultTreeCellRenderer,getDefaultOpenIcon(),Icon
+DefaultTreeCellRenderer,getFont(),Font
+DefaultTreeCellRenderer,getLeafIcon(),Icon
+DefaultTreeCellRenderer,getOpenIcon(),Icon
+DefaultTreeCellRenderer,getPreferredSize(),Dimension
+DefaultTreeCellRenderer,getTextNonSelectionColor(),Color
+DefaultTreeCellRenderer,getTextSelectionColor(),Color
+DefaultTreeCellRenderer,"getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus)",Component
+DefaultTreeCellRenderer,invalidate(),void
+DefaultTreeCellRenderer,paint(Graphics g),void
+DefaultTreeCellRenderer,repaint(),void
+DefaultTreeCellRenderer,"repaint(long tm, int x, int y, int width, int height)",void
+DefaultTreeCellRenderer,repaint(Rectangle r),void
+DefaultTreeCellRenderer,revalidate(),void
+DefaultTreeCellRenderer,setBackground(Color color),void
+DefaultTreeCellRenderer,setBackgroundNonSelectionColor(Color newColor),void
+DefaultTreeCellRenderer,setBackgroundSelectionColor(Color newColor),void
+DefaultTreeCellRenderer,setBorderSelectionColor(Color newColor),void
+DefaultTreeCellRenderer,setClosedIcon(Icon newIcon),void
+DefaultTreeCellRenderer,setFont(Font font),void
+DefaultTreeCellRenderer,setLeafIcon(Icon newIcon),void
+DefaultTreeCellRenderer,setOpenIcon(Icon newIcon),void
+DefaultTreeCellRenderer,setTextNonSelectionColor(Color newColor),void
+DefaultTreeCellRenderer,setTextSelectionColor(Color newColor),void
+DefaultTreeCellRenderer,updateUI(),void
+DefaultTreeCellRenderer,validate(),void
+DefaultTreeModel,addTreeModelListener(TreeModelListener l),void
+DefaultTreeModel,asksAllowsChildren(),boolean
+DefaultTreeModel,"fireTreeNodesChanged(Object source, Object[] path, int[] childIndices, Object[] children)",protected void
+DefaultTreeModel,"fireTreeNodesInserted(Object source, Object[] path, int[] childIndices, Object[] children)",protected void
+DefaultTreeModel,"fireTreeNodesRemoved(Object source, Object[] path, int[] childIndices, Object[] children)",protected void
+DefaultTreeModel,"fireTreeStructureChanged(Object source, Object[] path, int[] childIndices, Object[] children)",protected void
+DefaultTreeModel,"getChild(Object parent, int index)",Object
+DefaultTreeModel,getChildCount(Object parent),int
+DefaultTreeModel,"getIndexOfChild(Object parent, Object child)",int
+DefaultTreeModel,getListeners(Class<T> listenerType),<T extends EventListener>T[]
+DefaultTreeModel,getPathToRoot(TreeNode aNode),TreeNode[]
+DefaultTreeModel,"getPathToRoot(TreeNode aNode, int depth)",protected TreeNode[]
+DefaultTreeModel,getRoot(),Object
+DefaultTreeModel,getTreeModelListeners(),TreeModelListener[]
+DefaultTreeModel,"insertNodeInto(MutableTreeNode newChild, MutableTreeNode parent, int index)",void
+DefaultTreeModel,isLeaf(Object node),boolean
+DefaultTreeModel,nodeChanged(TreeNode node),void
+DefaultTreeModel,"nodesChanged(TreeNode node, int[] childIndices)",void
+DefaultTreeModel,nodeStructureChanged(TreeNode node),void
+DefaultTreeModel,"nodesWereInserted(TreeNode node, int[] childIndices)",void
+DefaultTreeModel,"nodesWereRemoved(TreeNode node, int[] childIndices, Object[] removedChildren)",void
+DefaultTreeModel,reload(),void
+DefaultTreeModel,reload(TreeNode node),void
+DefaultTreeModel,removeNodeFromParent(MutableTreeNode node),void
+DefaultTreeModel,removeTreeModelListener(TreeModelListener l),void
+DefaultTreeModel,setAsksAllowsChildren(boolean newValue),void
+DefaultTreeModel,setRoot(TreeNode root),void
+DefaultTreeModel,"valueForPathChanged(TreePath path, Object newValue)",void
+DefaultTreeSelectionModel,addPropertyChangeListener(PropertyChangeListener listener),void
+DefaultTreeSelectionModel,addSelectionPath(TreePath path),void
+DefaultTreeSelectionModel,addSelectionPaths(TreePath[] paths),void
+DefaultTreeSelectionModel,addTreeSelectionListener(TreeSelectionListener x),void
+DefaultTreeSelectionModel,arePathsContiguous(TreePath[] paths),protected boolean
+DefaultTreeSelectionModel,canPathsBeAdded(TreePath[] paths),protected boolean
+DefaultTreeSelectionModel,canPathsBeRemoved(TreePath[] paths),protected boolean
+DefaultTreeSelectionModel,clearSelection(),void
+DefaultTreeSelectionModel,clone(),Object
+DefaultTreeSelectionModel,fireValueChanged(TreeSelectionEvent e),protected void
+DefaultTreeSelectionModel,getLeadSelectionPath(),TreePath
+DefaultTreeSelectionModel,getLeadSelectionRow(),int
+DefaultTreeSelectionModel,getListeners(Class<T> listenerType),<T extends EventListener>T[]
+DefaultTreeSelectionModel,getMaxSelectionRow(),int
+DefaultTreeSelectionModel,getMinSelectionRow(),int
+DefaultTreeSelectionModel,getPropertyChangeListeners(),PropertyChangeListener[]
+DefaultTreeSelectionModel,getRowMapper(),RowMapper
+DefaultTreeSelectionModel,getSelectionCount(),int
+DefaultTreeSelectionModel,getSelectionMode(),int
+DefaultTreeSelectionModel,getSelectionPath(),TreePath
+DefaultTreeSelectionModel,getSelectionPaths(),TreePath[]
+DefaultTreeSelectionModel,getSelectionRows(),int[]
+DefaultTreeSelectionModel,getTreeSelectionListeners(),TreeSelectionListener[]
+DefaultTreeSelectionModel,insureRowContinuity(),protected void
+DefaultTreeSelectionModel,insureUniqueness(),protected void
+DefaultTreeSelectionModel,isPathSelected(TreePath path),boolean
+DefaultTreeSelectionModel,isRowSelected(int row),boolean
+DefaultTreeSelectionModel,isSelectionEmpty(),boolean
+DefaultTreeSelectionModel,"notifyPathChange(Vector<?> changedPaths, TreePath oldLeadSelection)",protected void
+DefaultTreeSelectionModel,removePropertyChangeListener(PropertyChangeListener listener),void
+DefaultTreeSelectionModel,removeSelectionPath(TreePath path),void
+DefaultTreeSelectionModel,removeSelectionPaths(TreePath[] paths),void
+DefaultTreeSelectionModel,removeTreeSelectionListener(TreeSelectionListener x),void
+DefaultTreeSelectionModel,resetRowSelection(),void
+DefaultTreeSelectionModel,setRowMapper(RowMapper newMapper),void
+DefaultTreeSelectionModel,setSelectionMode(int mode),void
+DefaultTreeSelectionModel,setSelectionPath(TreePath path),void
+DefaultTreeSelectionModel,setSelectionPaths(TreePath[] pPaths),void
+DefaultTreeSelectionModel,toString(),String
+DefaultTreeSelectionModel,updateLeadIndex(),protected void
+FixedHeightLayoutCache,"getBounds(TreePath path, Rectangle placeIn)",Rectangle
+FixedHeightLayoutCache,getExpandedState(TreePath path),boolean
+FixedHeightLayoutCache,"getPathClosestTo(int x, int y)",TreePath
+FixedHeightLayoutCache,getPathForRow(int row),TreePath
+FixedHeightLayoutCache,getRowCount(),int
+FixedHeightLayoutCache,getRowForPath(TreePath path),int
+FixedHeightLayoutCache,getVisibleChildCount(TreePath path),int
+FixedHeightLayoutCache,getVisiblePathsFrom(TreePath path),Enumeration<TreePath>
+FixedHeightLayoutCache,invalidatePathBounds(TreePath path),void
+FixedHeightLayoutCache,invalidateSizes(),void
+FixedHeightLayoutCache,isExpanded(TreePath path),boolean
+FixedHeightLayoutCache,"setExpandedState(TreePath path, boolean isExpanded)",void
+FixedHeightLayoutCache,setModel(TreeModel newModel),void
+FixedHeightLayoutCache,setRootVisible(boolean rootVisible),void
+FixedHeightLayoutCache,setRowHeight(int rowHeight),void
+FixedHeightLayoutCache,treeNodesChanged(TreeModelEvent e),void
+FixedHeightLayoutCache,treeNodesInserted(TreeModelEvent e),void
+FixedHeightLayoutCache,treeNodesRemoved(TreeModelEvent e),void
+FixedHeightLayoutCache,treeStructureChanged(TreeModelEvent e),void
+TreePath,equals(Object o),boolean
+TreePath,getLastPathComponent(),Object
+TreePath,getParentPath(),TreePath
+TreePath,getPath(),Object[]
+TreePath,getPathComponent(int index),Object
+TreePath,getPathCount(),int
+TreePath,hashCode(),int
+TreePath,isDescendant(TreePath aTreePath),boolean
+TreePath,pathByAddingChild(Object child),TreePath
+TreePath,toString(),String
+VariableHeightLayoutCache,"getBounds(TreePath path, Rectangle placeIn)",Rectangle
+VariableHeightLayoutCache,getExpandedState(TreePath path),boolean
+VariableHeightLayoutCache,"getPathClosestTo(int x, int y)",TreePath
+VariableHeightLayoutCache,getPathForRow(int row),TreePath
+VariableHeightLayoutCache,getPreferredHeight(),int
+VariableHeightLayoutCache,getPreferredWidth(Rectangle bounds),int
+VariableHeightLayoutCache,getRowCount(),int
+VariableHeightLayoutCache,getRowForPath(TreePath path),int
+VariableHeightLayoutCache,getVisibleChildCount(TreePath path),int
+VariableHeightLayoutCache,getVisiblePathsFrom(TreePath path),Enumeration<TreePath>
+VariableHeightLayoutCache,invalidatePathBounds(TreePath path),void
+VariableHeightLayoutCache,invalidateSizes(),void
+VariableHeightLayoutCache,isExpanded(TreePath path),boolean
+VariableHeightLayoutCache,"setExpandedState(TreePath path, boolean isExpanded)",void
+VariableHeightLayoutCache,setModel(TreeModel newModel),void
+VariableHeightLayoutCache,setNodeDimensions(AbstractLayoutCache.NodeDimensions nd),void
+VariableHeightLayoutCache,setRootVisible(boolean rootVisible),void
+VariableHeightLayoutCache,setRowHeight(int rowHeight),void
+VariableHeightLayoutCache,treeNodesChanged(TreeModelEvent e),void
+VariableHeightLayoutCache,treeNodesInserted(TreeModelEvent e),void
+VariableHeightLayoutCache,treeNodesRemoved(TreeModelEvent e),void
+VariableHeightLayoutCache,treeStructureChanged(TreeModelEvent e),void

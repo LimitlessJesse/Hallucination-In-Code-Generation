@@ -1,0 +1,1259 @@
+Sample: 0 AffineTransformOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.AffineTransformOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AffineTransformOp(AffineTransform at, int type)`: This constructor creates an AffineTransformOp object that performs the specified affine transformation and the specified type of filtering.
+
+2. `BufferedImage filter(BufferedImage src, BufferedImage dst)`: This method applies the affine transformation to the source image and stores the result in the destination image.
+
+3. `AffineTransform getTransform()`: This method returns the affine transformation associated with this AffineTransformOp object.
+
+4. `void setTransform(AffineTransform at)`: This method sets the affine transformation associated with this AffineTransformOp object to the specified AffineTransform.
+
+5. `int getType()`: This method returns the type of filtering associated with this AffineTransformOp object.
+================================================================
+
+Sample: 1 AreaAveragingScaleFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.AreaAveragingScaleFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+
+Sample: 2 BandCombineOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.BandCombineOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getNumBands()`: This method returns the number of bands in the source and destination images.
+
+2. `void setPixel(int x, int y, int[] inPixels, int[] outPixels)`: This method sets the pixel at the specified position in the destination image to the value obtained by combining the corresponding pixels in the source image.
+
+3. `void filter(Raster src, Raster dst)`: This method applies the operation to the source and destination images.
+
+4. `void setBand(int band)`: This method sets the band to be used in the operation.
+
+5. `void setBandMasks(int[] bandMasks)`: This method sets the band masks for the operation.
+================================================================
+
+Sample: 3 BandedSampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.BandedSampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getNumBands()`: This method returns the number of bands in the sample model.
+
+2. `int getSampleSizeInBits(int band)`: This method returns the number of bits per sample in the specified band.
+
+3. `int getPixelStride()`: This method returns the number of bytes between the start of each pixel in the image.
+
+4. `int getWidth()`: This method returns the width of the image.
+
+5. `int getHeight()`: This method returns the height of the image.
+
+6. `int getTransferType(int band)`: This method returns the transfer type for the specified band.
+
+7. `int getBandOffset(int band)`: This method returns the offset in bytes from the start of the image to the start of the specified band.
+
+8. `int getBandOffsetInBytes(int band)`: This method returns the offset in bytes from the start of the image to the start of the specified band.
+
+9. `int getBandOffsetInWords(int band)`: This method returns the offset in words from the start of the image to the start of the specified band.
+
+10. `int getBandOffsetInPixels(int band)`: This method returns the offset in pixels from the start of the image to the start of the specified band.
+
+11. `int getBandOffsetInSamples(int band)`: This method returns the offset in samples from the start of the image to the start of the specified band.
+
+12. `int getBandOffsetInScanLines(int band)`: This method returns the offset in scan lines from the start of the image to the start of the specified band.
+
+13. `int getBandOffsetInTiles(int band)`: This method returns the offset in tiles from the start of the image to the start of the specified band.
+
+14. `int getBandOffsetInTileLines(int band)`: This method returns the offset in tile lines from the start of the image to the start of the specified band.
+
+15. `int getBandOffsetInTilePixels(int band)`: This method returns the offset in tile pixels from the start of the image to the start of the specified band.
+
+16. `int getBandOffsetInTileSamples(int band)`: This method returns the offset in tile samples from the start of the image to the start of the specified band.
+
+17. `int getBandOffsetInTileScanLines(int band)`: This method returns the offset in tile scan lines from the start of the image to the start of the specified band.
+
+18. `int getBandOffsetInTileTiles(int band)`: This method returns the offset in tile tiles from the start of the image to the start of the specified band.
+
+19. `int getBandOffsetInTileTileLines(int band)`: This method returns the offset in tile tile lines from the start of the image to the start of the specified band.
+
+20. `int getBandOffsetInTileTilePixels(int band)`: This method returns the offset in tile tile pixels from the start of the image to the start of the specified band.
+
+21. `int getBandOffsetInTileTileSamples(int band)`: This method returns the offset in tile tile samples from the start of the image to the start of the specified band.
+
+22. `int getBandOffsetInTileTileScanLines(int band)`: This method returns the offset in tile tile scan lines from the start of the image to the start of the specified band.
+
+23. `int getBandOffsetInTileTileTiles(int band)`: This method returns the offset in tile tile tiles from the start of the image to the start of the specified band.
+
+24. `int getBandOffsetInTileTileTileLines(int band)`: This method returns the offset in tile tile tile lines from the start of the image to the start of the specified band.
+
+25. `int getBandOffsetInTileTileTilePixels(int band)`: This method returns the offset in tile tile tile pixels from the start of the image to the start of the specified band.
+
+26. `int getBandOffsetInTileTileTileSamples(int band)`: This method returns the offset in tile tile tile samples from the start of the image to the start of the specified band.
+
+27. `int getBandOffsetInTileTileTileScanLines(int band)`: This method returns the offset in tile tile tile scan lines from the start of the image to the start of the specified band.
+
+28. `int getBandOffsetInTileTileTileTiles(int band)`: This method returns the offset in tile tile tile tiles from the start of the image to the start of the specified band.
+
+29. `int getBandOffsetInTileTileTileTileLines(int band)`: This method returns the offset in tile tile tile tile lines from the start of the image to the start of the specified band.
+
+30. `int getBandOffsetInTileTileTileTilePixels(int band)`: This method returns the offset in tile tile tile tile pixels from the start of the image to the start of the specified band.
+
+31. `int getBandOffsetInTileTileTileTileSamples(int band)`: This method returns the offset in tile tile tile tile samples from the start of the image to the start of the specified band.
+
+32. `int getBandOffsetInTileTileTileTileScanLines(int band)`: This method returns the offset in tile tile tile tile scan lines from the start of the image to the start of the specified band.
+
+33. `int getBandOffsetInTileTileTileTileTiles(int band)`: This method returns the offset in tile tile tile tile tiles from the start of the image to the start of the specified band.
+
+34. `int getBandOffsetInTileTileTileTileTileLines(int band
+================================================================
+
+Sample: 4 BufferedImage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.BufferedImage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getHeight()`: This method returns the height of the BufferedImage.
+2. `int getWidth()`: This method returns the width of the BufferedImage.
+3. `int getType()`: This method returns the type of the BufferedImage.
+4. `ColorModel getColorModel()`: This method returns the ColorModel of the BufferedImage.
+5. `WritableRaster getRaster()`: This method returns the WritableRaster of the BufferedImage.
+================================================================
+
+Sample: 5 BufferedImageFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.BufferedImageFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BufferedImageFilter`: This is the base class for all image filters.
+
+2. `BufferedImageOp`: This is the base class for all image operations.
+
+3. `RGBImageFilter`: This is the base class for all RGB image filters.
+
+4. `AbstractRegion`: This is the base class for all regions.
+
+5. `FilteredImageSource`: This is the base class for all filtered image sources.
+
+6. `ImageProducer`: This is the base class for all image producers.
+
+7. `ImageFilter`: This is the base class for all image filters.
+
+8. `ImageFilterInput`: This is the base class for all image filter inputs.
+
+9. `ImageConsumer`: This is the base class for all image consumers.
+
+10. `ImageConsumer`: This is the base class for all image consumers.
+
+11. `ImageProducer`: This is the base class for all image producers.
+
+12. `ImageObserver`: This is the base class for all image observers.
+
+13. `ImageProducer`: This is the base class for all image producers.
+
+14. `ImageConsumer`: This is the base class for all image consumers.
+
+15. `ImageProducer`: This is the base class for all image producers.
+
+16. `ImageConsumer`: This is the base class for all image consumers.
+
+17. `ImageProducer`: This is the base class for all image producers.
+
+18. `ImageConsumer`: This is the base class for all image consumers.
+
+19. `ImageProducer`: This is the base class for all image producers.
+
+20. `ImageConsumer`: This is the base class for all image consumers.
+================================================================
+
+Sample: 6 BufferStrategy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.BufferStrategy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean contentsLost()`: This method returns true if the contents of the BufferStrategy have been lost.
+
+2. `public void dispose()`: This method releases any system resources associated with this BufferStrategy.
+
+3. `public Graphics getDrawGraphics()`: This method returns a Graphics object that can be used to draw into the buffers of this BufferStrategy.
+
+4. `public int getDrawBuffer()`: This method returns the index of the buffer that is currently being drawn.
+
+5. `public int getPixelWidth()`: This method returns the width of the buffers in pixels.
+
+6. `public int getPixelHeight()`: This method returns the height of the buffers in pixels.
+
+7. `public int getBufferCount()`: This method returns the number of buffers in this BufferStrategy.
+
+8. `public void setSize(int width, int height)`: This method sets the size of the buffers in this BufferStrategy.
+
+9. `public void setMaximumBufferCount(int maxBufferCount)`: This method sets the maximum number of buffers that this BufferStrategy can have.
+
+10. `public void setMinimumBufferCount(int minBufferCount)`: This method sets the minimum number of buffers that this BufferStrategy can have.
+
+11. `public void setSurfaceSize(int width, int height)`: This method sets the size of the surface that this BufferStrategy is associated with.
+
+12. `public void setSurface(Surface surface)`: This method sets the surface that this BufferStrategy is associated with.
+
+13. `public void setDrawSurface(Surface surface)`: This method sets the surface that this BufferStrategy is associated with for drawing.
+
+14. `public void setDrawBuffer(int buffer)`: This method sets the buffer that is currently being drawn.
+
+15. `public void setDoubleBuffered(boolean doubleBuffered)`: This method sets whether this BufferStrategy is double buffered.
+
+16. `public void setIgnoreRepaint(boolean ignoreRepaint)`: This method sets whether this BufferStrategy should ignore repaints.
+
+17. `public void setBlitHeuristic(BlitHeuristic blitHeuristic)`: This method sets the blit heuristic for this BufferStrategy.
+
+18. `public void setClip(Rectangle clip)`: This method sets the clip rectangle for this BufferStrategy.
+
+19. `public void setBackground(Color color)`: This method sets the background color for this BufferStrategy.
+
+20. `public void setBackground(int r, int g, int b)`: This method sets the background color for this BufferStrategy.
+
+21. `public void setBackground(int r, int g, int b, int a)`: This method sets the background color for this BufferStrategy.
+
+22. `public void setBackground(int rgba)`: This method sets the background color for this BufferStrategy.
+
+23. `public void setBackground(BufferedImage image)`: This method sets the background image for this BufferStrategy.
+
+24. `public void setBackground(BufferedImage image, int x, int y)`: This method sets the background image for this BufferStrategy.
+
+25. `public void setBackground(BufferedImage image, int x, int y, int width, int height)`: This method sets the background image for this BufferStrategy.
+
+26. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh)`: This method sets the background image for this BufferStrategy.
+
+27. `public void setBackground(BufferedImage image, int dx, int dy)`: This method sets the background image for this BufferStrategy.
+
+28. `public void setBackground(BufferedImage image, int dx, int dy, int dw, int dh)`: This method sets the background image for this BufferStrategy.
+
+29. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh, int dx2, int dy2, int dw2, int dh2)`: This method sets the background image for this BufferStrategy.
+
+30. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh, int dx2, int dy2, int dw2, int dh2, int dx3, int dy3, int dw3, int dh3)`: This method sets the background image for this BufferStrategy.
+
+31. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh, int dx2, int dy2, int dw2, int dh2, int dx3, int dy3, int dw3, int dh3, int dx4, int dy4, int dw4, int dh4)`: This method sets the background image for this BufferStrategy.
+
+32. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh, int dx2, int dy2, int dw2, int dh2, int dx3, int dy3, int dw3, int dh3, int dx4, int dy4, int dw4, int dh4, int dx5, int dy5, int dw5, int dh5)`: This method sets the background image for this BufferStrategy.
+
+33. `public void setBackground(BufferedImage image, int sx, int sy, int sw, int sh, int dx, int dy, int dw, int dh, int dx2, int dy2, int dw2, int dh2, int dx3, int dy3, int dw3, int dh
+================================================================
+
+Sample: 7 ByteLookupTable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ByteLookupTable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int[] lookupPixel(int pixel)`: This method returns the pixel value in the lookup table corresponding to the given pixel value.
+
+2. `void setPixel(int index, int pixel)`: This method sets the pixel value in the lookup table at the specified index.
+
+3. `int[] getPixels()`: This method returns an array containing the pixel values in the lookup table.
+
+4. `void setPixels(int[] pixels)`: This method sets the pixel values in the lookup table to the specified array.
+
+5. `int[] getLUT()`: This method returns the lookup table.
+================================================================
+
+Sample: 8 ColorConvertOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ColorConvertOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public BufferedImage filter(BufferedImage src, BufferedImage dst)`: This method applies the color conversion operation to the source image and stores the result in the destination image.
+
+2. `public RenderingHints getRenderingHints()`: This method returns the rendering hints for the color conversion operation.
+
+3. `public void setColorConversion(int op)`: This method sets the color conversion operation to be performed.
+
+4. `public void setColorSpace(ColorSpace cs)`: This method sets the color space to which the source image is converted.
+
+5. `public void setRGBConversion(int op)`: This method sets the RGB conversion operation to be performed.
+================================================================
+
+Sample: 9 ColorModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ColorModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getAlpha(int pixel)`: This method returns the alpha value of the specified pixel.
+2. `int getBlue(int pixel)`: This method returns the blue value of the specified pixel.
+3. `int getGreen(int pixel)`: This method returns the green value of the specified pixel.
+4. `int getRed(int pixel)`: This method returns the red value of the specified pixel.
+5. `int getTransparency()`: This method returns the transparency of this color model.
+================================================================
+
+Sample: 10 ComponentColorModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ComponentColorModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getAlpha(int pixel)`: This method returns the alpha value of the specified pixel.
+
+2. `int getBlue(int pixel)`: This method returns the blue value of the specified pixel.
+
+3. `int getGreen(int pixel)`: This method returns the green value of the specified pixel.
+
+4. `int getRed(int pixel)`: This method returns the red value of the specified pixel.
+
+5. `int getRGB(int pixel)`: This method returns the RGB value of the specified pixel.
+================================================================
+
+Sample: 11 ComponentSampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ComponentSampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getSampleSize(int band)`: This method returns the number of bits per sample for the specified band.
+
+2. `int getSampleSize()`: This method returns the number of bits per sample for all bands.
+
+3. `int getSampleModelStride()`: This method returns the stride between samples in the sample model.
+
+4. `int getSampleStride()`: This method returns the stride between samples in the image.
+
+5. `int getSample(int x, int y, int band)`: This method returns the sample value for the specified pixel and band.
+================================================================
+
+Sample: 12 ConvolveOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ConvolveOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ConvolveOp(Kernel kernel)`: This constructor creates a ConvolveOp object that performs a convolution operation using the specified kernel.
+
+2. `BufferedImage filter(BufferedImage src, BufferedImage dst)`: This method applies the convolution operation to the source image and stores the result in the destination image.
+
+3. `BufferedImage filter(BufferedImage src, RenderingHints hints)`: This method applies the convolution operation to the source image using the specified rendering hints and returns the result as a new BufferedImage.
+
+4. `BufferedImage filter(BufferedImage src, BufferedImage dst, RenderingHints hints)`: This method applies the convolution operation to the source image using the specified rendering hints and stores the result in the destination image.
+
+5. `BufferedImage filter(BufferedImage src, RenderingHints hints, ImageObserver observer)`: This method applies the convolution operation to the source image using the specified rendering hints and notifies the specified ImageObserver when the operation is complete.
+================================================================
+
+Sample: 13 CropImageFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.CropImageFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public BufferedImage filter(BufferedImage src, BufferedImage dest)`: This method applies the filter to the source image and stores the result in the destination image.
+
+2. `public Rectangle getCropSize()`: This method returns the size of the cropped image.
+
+3. `public void setCropSize(Rectangle cropSize)`: This method sets the size of the cropped image.
+
+4. `public void setCropSize(int x, int y, int width, int height)`: This method sets the size of the cropped image.
+
+5. `public void setCropSize(double x, double y, double width, double height)`: This method sets the size of the cropped image.
+================================================================
+
+Sample: 14 DataBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getElem(int bank, int i)`: This method returns the value of the element at the specified position in the specified bank.
+
+2. `int getNumBanks()`: This method returns the number of banks in the data buffer.
+
+3. `int getSize()`: This method returns the number of elements in the data buffer.
+
+4. `void setElem(int bank, int i, int val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+5. `void setElem(int bank, int i, float val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+6. `void setElem(int bank, int i, double val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+7. `void setElem(int bank, int i, byte val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+8. `void setElem(int bank, int i, short val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+9. `void setElem(int bank, int i, int val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+10. `void setElem(int bank, int i, long val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+================================================================
+
+Sample: 15 DataBufferByte
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferByte package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getElem(int bank, int i)`: This method returns the element at the specified position in the specified bank.
+
+2. `setElem(int bank, int i, int val)`: This method sets the element at the specified position in the specified bank to the specified value.
+
+3. `getNumBanks()`: This method returns the number of banks in this DataBuffer.
+
+4. `getSize()`: This method returns the size of this DataBuffer.
+
+5. `getData()`: This method returns the raw data of this DataBuffer.
+================================================================
+
+Sample: 16 DataBufferDouble
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferDouble package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getElem(int band, int pixel)`: This method returns the value of the pixel at the specified position. The parameters are the band index and the pixel index.
+
+2. `setElem(int band, int pixel, double value)`: This method sets the value of the pixel at the specified position. The parameters are the band index, the pixel index, and the new value.
+
+3. `getNumBands()`: This method returns the number of bands in the data buffer.
+
+4. `getSize()`: This method returns the number of pixels in the data buffer.
+
+5. `getAsDouble(int band, int pixel)`: This method returns the value of the pixel at the specified position as a double. The parameters are the band index and the pixel index.
+================================================================
+
+Sample: 17 DataBufferFloat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferFloat package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getElem(int band, int pixel)`: This method returns the value of the pixel at the specified position. The parameters are the band index and the pixel index.
+
+2. `setElem(int band, int pixel, float value)`: This method sets the value of the pixel at the specified position. The parameters are the band index, the pixel index, and the new value.
+
+3. `getNumBands()`: This method returns the number of bands in the data buffer.
+
+4. `getSize()`: This method returns the number of pixels in the data buffer.
+
+5. `getAsFloatBuffer(int band)`: This method returns a FloatBuffer that contains the data for the specified band.
+================================================================
+
+Sample: 18 DataBufferInt
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferInt package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getElem(int bank, int i)`: This method returns the value of the pixel at the specified index.
+
+2. `int getElem(int i)`: This method returns the value of the pixel at the specified index.
+
+3. `int getElem(int bank, int i, int bank2, int i2)`: This method returns the value of the pixel at the specified index.
+
+4. `int getElem(int bank, int i, int bank2, int i2, int bank3, int i3)`: This method returns the value of the pixel at the specified index.
+
+5. `int getElem(int bank, int i, int bank2, int i2, int bank3, int i3, int bank4, int i4)`: This method returns the value of the pixel at the specified index.
+================================================================
+
+Sample: 19 DataBufferShort
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferShort package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getElem(int bank, int i)`: This method returns the value of the element at the specified position in the DataBuffer.
+
+2. `setElem(int bank, int i, short val)`: This method sets the value of the element at the specified position in the DataBuffer.
+
+3. `getNumBanks()`: This method returns the number of banks in the DataBuffer.
+
+4. `getSize()`: This method returns the number of elements in the DataBuffer.
+
+5. `getData()`: This method returns the raw data of the DataBuffer.
+================================================================
+
+Sample: 20 DataBufferUShort
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DataBufferUShort package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getElem(int bank, int i)`: This method returns the value of the element at the specified position in the specified bank.
+
+2. `void setElem(int bank, int i, int val)`: This method sets the value of the element at the specified position in the specified bank to the specified value.
+
+3. `int getNumBanks()`: This method returns the number of banks in this DataBuffer.
+
+4. `int getSize()`: This method returns the number of elements in this DataBuffer.
+
+5. `int getDataType()`: This method returns the data type of the elements in this DataBuffer.
+================================================================
+
+Sample: 21 DirectColorModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.DirectColorModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getPixelSize()`: This method returns the number of bits per pixel.
+
+2. `int getRedMask()`: This method returns the bit mask for the red component.
+
+3. `int getGreenMask()`: This method returns the bit mask for the green component.
+
+4. `int getBlueMask()`: This method returns the bit mask for the blue component.
+
+5. `int getAlphaMask()`: This method returns the bit mask for the alpha component.
+
+6. `int getRGB(int x, int y)`: This method returns the RGB value of the pixel at the specified location.
+
+7. `int getAlpha(int rgb)`: This method returns the alpha value of the specified RGB value.
+
+8. `int getRed(int rgb)`: This method returns the red component of the specified RGB value.
+
+9. `int getGreen(int rgb)`: This method returns the green component of the specified RGB value.
+
+10. `int getBlue(int rgb)`: This method returns the blue component of the specified RGB value.
+
+11. `int getTransparency()`: This method returns the transparency of the image.
+
+12. `int getAlpha(int x, int y)`: This method returns the alpha value of the pixel at the specified location.
+
+13. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[])`: This method copies the pixels from the specified rectangle into the specified array.
+
+14. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex)`: This method copies the pixels from the specified rectangle into the specified array.
+
+15. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize)`: This method copies the pixels from the specified rectangle into the specified array.
+
+16. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize, int xgap, int ygap)`: This method copies the pixels from the specified rectangle into the specified array.
+
+17. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize, int xgap, int ygap, int xoffset, int yoffset)`: This method copies the pixels from the specified rectangle into the specified array.
+
+18. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize, int xgap, int ygap, int xoffset, int yoffset, int xscale, int yscale)`: This method copies the pixels from the specified rectangle into the specified array.
+
+19. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize, int xgap, int ygap, int xoffset, int yoffset, int xscale, int yscale, int xdither, int ydither)`: This method copies the pixels from the specified rectangle into the specified array.
+
+20. `int getRGB(int x, int y, int width, int height, int scanSize[], int src[], int dst[], int startIndex, int scansize, int xgap, int ygap, int xoffset, int yoffset, int xscale, int yscale, int xdither, int ydither, int xquant, int yquant)`: This method copies the pixels from the specified rectangle into the specified array.
+================================================================
+
+Sample: 22 FilteredImageSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.FilteredImageSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getWidth(ImageFilter filter)`: This method returns the width of the image.
+2. `int getHeight(ImageFilter filter)`: This method returns the height of the image.
+3. `BufferedImage getFilteredImage(ImageFilter filter)`: This method returns a filtered image.
+4. `ImageProducer getSource()`: This method returns the source of the image.
+5. `Object getProperty(String name)`: This method returns the property of the image.
+================================================================
+
+Sample: 23 ImageFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ImageFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ImageFilter getSource()`: This method returns the source image.
+2. `ImageFilter getMask()`: This method returns the mask image.
+3. `ImageFilter getBackground()`: This method returns the background image.
+4. `ImageFilter getPaint()`: This method returns the paint image.
+5. `ImageFilter getTransparency()`: This method returns the transparency image.
+================================================================
+
+Sample: 24 IndexColorModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.IndexColorModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getRGB(int x, int y)`: This method returns the color of the pixel at the specified location in this Image.
+
+2. `int getPixel(int x, int y)`: This method returns the color of the pixel at the specified location in this Image.
+
+3. `int getPixel(int x, int y, int[] pixels)`: This method fills the specified array with the color of the pixel at the specified location in this Image.
+
+4. `int getPixel(int x, int y, int[] pixels, int offset, int scansize)`: This method fills the specified array with the color of the pixel at the specified location in this Image.
+
+5. `int getPixel(int x, int y, int[] pixels, int offset, int scansize, int scanlength)`: This method fills the specified array with the color of the pixel at the specified location in this Image.
+================================================================
+
+Sample: 25 Kernel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.Kernel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Kernel(int width, int height, float[] kernel)`: This constructor creates a new Kernel with the specified width, height, and kernel data.
+
+2. `int getWidth()`: This method returns the width of this Kernel.
+
+3. `int getHeight()`: This method returns the height of this Kernel.
+
+4. `float[] getKernelData()`: This method returns the kernel data of this Kernel.
+
+5. `void setKernelData(float[] kernel)`: This method sets the kernel data of this Kernel.
+================================================================
+
+Sample: 26 LookupOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.LookupOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getPixel(int x, int y)`: This method returns the pixel value at the specified location.
+
+2. `void setPixel(int x, int y, int rgb)`: This method sets the pixel value at the specified location.
+
+3. `void setPixelInverted(int x, int y)`: This method inverts the pixel value at the specified location.
+
+4. `void setPixel(int x, int y, int rgb, int mask)`: This method sets the pixel value at the specified location using the specified mask.
+
+5. `void setPixel(int x, int y, int rgb, int mask, int src)`: This method sets the pixel value at the specified location using the specified mask and source.
+================================================================
+
+Sample: 27 LookupTable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.LookupTable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int[] lookupPixel(int pixel, int alpha)`: This method returns the pixel value in the lookup table for the specified pixel and alpha value.
+
+2. `void setPixel(int index, int pixel)`: This method sets the pixel value in the lookup table for the specified index.
+
+3. `int[] getPixels(int start, int length)`: This method returns an array containing the pixel values in the lookup table from the specified start index to the end of the table.
+
+4. `void setPixels(int start, int[] pixels)`: This method sets the pixel values in the lookup table from the specified start index to the end of the table to the specified array of pixels.
+
+5. `int[] getLUT()`: This method returns the lookup table as an array of int values.
+================================================================
+
+Sample: 28 MemoryImageSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.MemoryImageSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getWidth()`: This method returns the width of the image.
+2. `int getHeight()`: This method returns the height of the image.
+3. `int getPixel(int x, int y)`: This method returns the pixel value at the specified position.
+4. `int getRGB(int x, int y)`: This method returns the RGB value of the pixel at the specified position.
+5. `int[] getPixels(int x, int y, int w, int h)`: This method returns an array of pixel values for the specified rectangle.
+================================================================
+
+Sample: 29 MultiPixelPackedSampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.MultiPixelPackedSampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getSampleSize(int band)`: This method returns the number of bits per pixel for the specified band.
+
+2. `int getNumBands()`: This method returns the number of bands in the image.
+
+3. `int getTransparency()`: This method returns the type of transparency of the image.
+
+4. `int getPixelStride()`: This method returns the number of bytes between the start of each pixel in the image.
+
+5. `int getWidth()`: This method returns the width of the image.
+
+6. `int getHeight()`: This method returns the height of the image.
+
+7. `int getMinimumBand()`: This method returns the minimum band index.
+
+8. `int getMaximumBand()`: This method returns the maximum band index.
+
+9. `int getMinimumSampleValue(int band)`: This method returns the minimum sample value for the specified band.
+
+10. `int getMaximumSampleValue(int band)`: This method returns the maximum sample value for the specified band.
+
+11. `int getSample(int x, int y, int band)`: This method returns the sample value at the specified position and band.
+
+12. `int getSample(int x, int y, int band, int[] sample)`: This method fills the specified array with the sample values at the specified position and band.
+
+13. `int getSampleSize(int band)`: This method returns the number of bits per pixel for the specified band.
+
+14. `int getNumBands()`: This method returns the number of bands in the image.
+
+15. `int getTransparency()`: This method returns the type of transparency of the image.
+
+16. `int getPixelStride()`: This method returns the number of bytes between the start of each pixel in the image.
+
+17. `int getWidth()`: This method returns the width of the image.
+
+18. `int getHeight()`: This method returns the height of the image.
+
+19. `int getMinimumBand()`: This method returns the minimum band index.
+
+20. `int getMaximumBand()`: This method returns the maximum band index.
+
+21. `int getMinimumSampleValue(int band)`: This method returns the minimum sample value for the specified band.
+
+22. `int getMaximumSampleValue(int band)`: This method returns the maximum sample value for the specified band.
+
+23. `int getSample(int x, int y, int band)`: This method returns the sample value at the specified position and band.
+
+24. `int getSample(int x, int y, int band, int[] sample)`: This method fills the specified array with the sample values at the specified position and band.
+================================================================
+
+Sample: 30 PackedColorModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.PackedColorModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getAlphaMask()`: This method returns the alpha mask for this color model.
+2. `int getBlueMask()`: This method returns the blue mask for this color model.
+3. `int getGreenMask()`: This method returns the green mask for this color model.
+4. `int getRedMask()`: This method returns the red mask for this color model.
+5. `int getTransparency()`: This method returns the transparency of this color model.
+================================================================
+
+Sample: 31 PixelGrabber
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.PixelGrabber package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getPixel(int x, int y)`: This method returns the pixel value at the specified location.
+
+2. `int getPixel(int x, int y, int[] pixel)`: This method fills the specified array with the pixel value at the specified location.
+
+3. `int getPixel(int x, int y, int[] pixel, int offset)`: This method fills the specified array starting at the specified offset with the pixel value at the specified location.
+
+4. `int getPixel(int x, int y, int[] pixel, int offset, int scansize)`: This method fills the specified array starting at the specified offset with the pixel value at the specified location. The scansize parameter specifies the number of pixels to be read.
+
+5. `int getPixel(int x, int y, int[] pixel, int offset, int scansize, int scanlength)`: This method fills the specified array starting at the specified offset with the pixel value at the specified location. The scansize parameter specifies the number of pixels to be read, and the scanlength parameter specifies the number of pixels to be skipped before reading the next pixel.
+================================================================
+
+Sample: 32 PixelInterleavedSampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.PixelInterleavedSampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getWidth()`: This method returns the width of the image.
+2. `int getHeight()`: This method returns the height of the image.
+3. `int getMinX()`: This method returns the minimum X coordinate of the image.
+4. `int getMinY()`: This method returns the minimum Y coordinate of the image.
+5. `int getSampleSize(int band)`: This method returns the number of bits per sample for the specified band.
+6. `int getNumBands()`: This method returns the number of bands in the image.
+7. `int getTransferType(int band)`: This method returns the transfer type for the specified band.
+8. `int getPixelStride()`: This method returns the pixel stride.
+9. `int getScanlineStride()`: This method returns the scanline stride.
+10. `int getBandOffset(int band)`: This method returns the offset for the specified band.
+11. `int getBand(int band)`: This method returns the band for the specified band.
+12. `int getSample(int x, int y, int band)`: This method returns the sample for the specified x, y, and band.
+13. `int getSample(int x, int y, int band, int[] sample)`: This method returns the sample for the specified x, y, and band.
+14. `int getSample(int x, int y, int band, int[] sample, int offset)`: This method returns the sample for the specified x, y, and band.
+15. `int getSample(int x, int y, int band, int[] sample, int offset, int len)`: This method returns the sample for the specified x, y, and band.
+16. `int getSample(int x, int y, int band, int[] sample, int offset, int len, int start)`: This method returns the sample for the specified x, y, and band.
+17. `int getSample(int x, int y, int band, int[] sample, int offset, int len, int start, int stride)`: This method returns the sample for the specified x, y, and band.
+18. `int getSample(int x, int y, int band, int[] sample, int offset, int len, int start, int stride, int[] bandOffsets)`: This method returns the sample for the specified x, y, and band.
+19. `int getSample(int x, int y, int band, int[] sample, int offset, int len, int start, int stride, int[] bandOffsets, int[] bandStrides)`: This method returns the sample for the specified x, y, and band.
+20. `int getSample(int x, int y, int band, int[] sample, int offset, int len, int start, int stride, int[] bandOffsets, int[] bandStrides, int[] bandMasks)`: This method returns the sample for the specified x, y, and band.
+================================================================
+
+Sample: 33 Raster
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.Raster package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getNumBands()`: This method returns the number of bands in the raster.
+
+2. `int getNumDataElements()`: This method returns the number of data elements in the raster.
+
+3. `int getNumRows()`: This method returns the number of rows in the raster.
+
+4. `int getNumColumns()`: This method returns the number of columns in the raster.
+
+5. `int getSample(int band, int x, int y, int[] sample)`: This method returns the sample values for the specified pixel in the specified band.
+
+6. `int getSampleModel()`: This method returns the sample model of the raster.
+
+7. `int getSample(int x, int y, int[] sample)`: This method returns the sample values for the specified pixel.
+
+8. `int getSample(int band, int x, int y)`: This method returns the sample value for the specified pixel in the specified band.
+
+9. `int getSample(int x, int y)`: This method returns the sample value for the specified pixel.
+
+10. `int getMinSampleValue(int band)`: This method returns the minimum sample value for the specified band.
+
+11. `int getMaxSampleValue(int band)`: This method returns the maximum sample value for the specified band.
+
+12. `int getMinSampleValue()`: This method returns the minimum sample value.
+
+13. `int getMaxSampleValue()`: This method returns the maximum sample value.
+
+14. `int getSample(int x, int y, int[] sample, Rectangle rect)`: This method returns the sample values for the specified pixel in the specified rectangle.
+
+15. `int getSample(int band, int x, int y, int[] sample, Rectangle rect)`: This method returns the sample values for the specified pixel in the specified rectangle in the specified band.
+================================================================
+
+Sample: 34 ReplicateScaleFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ReplicateScaleFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getScale()`: This method returns the scale factor.
+2. `void setScale(int scale)`: This method sets the scale factor.
+3. `BufferedImage filter(BufferedImage src, BufferedImage dst)`: This method applies the filter to the source image and stores the result in the destination image.
+4. `Rectangle2D getTransferArea(Rectangle2D srcBounds)`: This method returns the area of the source image that will be transferred to the destination image.
+5. `Rectangle2D getTransferArea(Rectangle2D srcBounds, Rectangle2D dstBounds)`: This method returns the area of the source image that will be transferred to the destination image, given the destination image bounds.
+================================================================
+
+Sample: 35 RescaleOp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.RescaleOp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setScale(float scale)`: This method sets the scale factor.
+
+2. `public void setOffset(float offset)`: This method sets the offset.
+
+3. `public void setPixel(int pixel)`: This method sets the pixel.
+
+4. `public void setSaturation(float saturation)`: This method sets the saturation.
+
+5. `public void setHueIncrement(float hueIncrement)`: This method sets the hue increment.
+================================================================
+
+Sample: 36 RGBImageFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.RGBImageFilter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int filterRGB(int x, int y, int rgb)`: This method filters the RGB value of a pixel. The x and y parameters specify the pixel location, and the rgb parameter is the original RGB value of the pixel. The method returns the filtered RGB value.
+
+2. `int filterRGB(int x, int y, Rectangle rect, Raster src, WritableRaster dst)`: This method filters the RGB values of a rectangular area of pixels. The x and y parameters specify the upper-left corner of the area, the rect parameter specifies the dimensions of the area, the src parameter is the source raster, and the dst parameter is the destination raster. The method returns the filtered RGB values.
+
+3. `int filterRGBPixels(int[] pixels, int start, int length)`: This method filters an array of RGB values. The pixels parameter is the array of RGB values, the start parameter is the starting index of the array, and the length parameter is the number of pixels to filter. The method returns the filtered RGB values.
+
+4. `int filterRGBPixels(int[] pixels, int start, int length, WritableRaster dstIn)`: This method filters an array of RGB values and writes the results to a WritableRaster. The pixels parameter is the array of RGB values, the start parameter is the starting index of the array, the length parameter is the number of pixels to filter, and the dstIn parameter is the destination raster. The method returns the filtered RGB values.
+
+5. `int[] filterPixels(int width, int height, int[] inPixels, int[] outPixels)`: This method filters an array of pixels. The width and height parameters specify the dimensions of the image, the inPixels parameter is the input array of pixels, and the outPixels parameter is the output array of pixels. The method returns the filtered pixels.
+================================================================
+
+Sample: 37 SampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.SampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getSampleSize(int band)`: This method returns the number of bits per sample for the specified band.
+
+2. `int getNumBands()`: This method returns the number of bands in the sample model.
+
+3. `int getTransferSize()`: This method returns the number of bytes per pixel.
+
+4. `int getSample(int x, int y, int band)`: This method returns the sample value for the specified pixel and band.
+
+5. `int getPixelStride()`: This method returns the number of bytes between the start of each pixel in the image.
+================================================================
+
+Sample: 38 ShortLookupTable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.ShortLookupTable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int[] getPixel()`: This method returns the pixel value.
+2. `void setPixel(int[] pixel)`: This method sets the pixel value.
+3. `int[][] getPixels(int x, int y, int w, int h)`: This method returns the pixel values in the specified rectangle.
+4. `void setPixels(int x, int y, int w, int h, int[] pixels)`: This method sets the pixel values in the specified rectangle.
+5. `int[] getPixels(int x, int y, int w, int h, int[] pixels, int off)`: This method returns the pixel values in the specified rectangle into the specified array.
+================================================================
+
+Sample: 39 SinglePixelPackedSampleModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.SinglePixelPackedSampleModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getSampleSize(int band)`: This method returns the number of bits per sample for the specified band.
+
+2. `int getSample(int x, int y, int band)`: This method returns the sample value for the specified pixel and band.
+
+3. `int getSampleModelIndex(int x, int y)`: This method returns the index of the sample model for the specified pixel.
+
+4. `int getSampleSize(int[] bands)`: This method returns the number of bits per sample for the specified bands.
+
+5. `int getSample(int x, int y, int[] bands)`: This method returns the sample values for the specified pixel and bands.
+================================================================
+
+Sample: 40 VolatileImage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.VolatileImage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getWidth()`: This method returns the width of the VolatileImage.
+2. `int getHeight()`: This method returns the height of the VolatileImage.
+3. `Graphics2D createGraphics()`: This method creates a Graphics2D object that can be used to draw into the VolatileImage.
+4. `void flush()`: This method flushes the VolatileImage to the screen.
+5. `void validate()`: This method validates the VolatileImage.
+================================================================
+
+Sample: 41 WritableRaster
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.awt.image.WritableRaster package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getNumBands()`: This method returns the number of bands in the raster.
+2. `int getWidth()`: This method returns the width of the raster.
+3. `int getHeight()`: This method returns the height of the raster.
+4. `int getSample(int x, int y, int b)`: This method returns the sample value at the specified pixel location and band.
+5. `void setSample(int x, int y, int b, int sample)`: This method sets the sample value at the specified pixel location and band.
+================================================================
+

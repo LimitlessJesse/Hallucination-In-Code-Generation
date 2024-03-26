@@ -1,0 +1,129 @@
+ClassName,Method,Return Type
+MBeanServerNotificationFilter,disableAllObjectNames(),void
+MBeanServerNotificationFilter,disableObjectName(ObjectName objectName),void
+MBeanServerNotificationFilter,enableAllObjectNames(),void
+MBeanServerNotificationFilter,enableObjectName(ObjectName objectName),void
+MBeanServerNotificationFilter,getDisabledObjectNames(),Vector<ObjectName>
+MBeanServerNotificationFilter,getEnabledObjectNames(),Vector<ObjectName>
+MBeanServerNotificationFilter,isNotificationEnabled(Notification notif),boolean
+RelationNotification,getMBeansToUnregister(),List<ObjectName>
+RelationNotification,getNewRoleValue(),List<ObjectName>
+RelationNotification,getObjectName(),ObjectName
+RelationNotification,getOldRoleValue(),List<ObjectName>
+RelationNotification,getRelationId(),String
+RelationNotification,getRelationTypeName(),String
+RelationNotification,getRoleName(),String
+RelationService,addRelation(ObjectName relationObjectName),void
+RelationService,addRelationType(RelationType relationTypeObj),void
+RelationService,"checkRoleReading(String roleName, String relationTypeName)",Integer
+RelationService,"checkRoleWriting(Role role, String relationTypeName, Boolean initFlag)",Integer
+RelationService,"createRelation(String relationId, String relationTypeName, RoleList roleList)",void
+RelationService,"createRelationType(String relationTypeName, RoleInfo[] roleInfoArray)",void
+RelationService,"findAssociatedMBeans(ObjectName mbeanName, String relationTypeName, String roleName)","Map<ObjectName,List<String>>"
+RelationService,"findReferencingRelations(ObjectName mbeanName, String relationTypeName, String roleName)","Map<String,List<String>>"
+RelationService,findRelationsOfType(String relationTypeName),List<String>
+RelationService,getAllRelationIds(),List<String>
+RelationService,getAllRelationTypeNames(),List<String>
+RelationService,getAllRoles(String relationId),RoleResult
+RelationService,getNotificationInfo(),MBeanNotificationInfo[]
+RelationService,getPurgeFlag(),boolean
+RelationService,getReferencedMBeans(String relationId),"Map<ObjectName,List<String>>"
+RelationService,getRelationTypeName(String relationId),String
+RelationService,"getRole(String relationId, String roleName)",List<ObjectName>
+RelationService,"getRoleCardinality(String relationId, String roleName)",Integer
+RelationService,"getRoleInfo(String relationTypeName, String roleInfoName)",RoleInfo
+RelationService,getRoleInfos(String relationTypeName),List<RoleInfo>
+RelationService,"getRoles(String relationId, String[] roleNameArray)",RoleResult
+RelationService,"handleNotification(Notification notif, Object handback)",void
+RelationService,hasRelation(String relationId),Boolean
+RelationService,isActive(),void
+RelationService,isRelation(ObjectName objectName),String
+RelationService,isRelationMBean(String relationId),ObjectName
+RelationService,postDeregister(),void
+RelationService,postRegister(Boolean registrationDone),void
+RelationService,preDeregister(),void
+RelationService,"preRegister(MBeanServer server, ObjectName name)",ObjectName
+RelationService,purgeRelations(),void
+RelationService,removeRelation(String relationId),void
+RelationService,removeRelationType(String relationTypeName),void
+RelationService,sendRelationCreationNotification(String relationId),void
+RelationService,"sendRelationRemovalNotification(String relationId, List<ObjectName> unregMBeanList)",void
+RelationService,"sendRoleUpdateNotification(String relationId, Role newRole, List<ObjectName> oldValue)",void
+RelationService,setPurgeFlag(boolean purgeFlag),void
+RelationService,"setRole(String relationId, Role role)",void
+RelationService,"setRoles(String relationId, RoleList roleList)",RoleResult
+RelationService,"updateRoleMap(String relationId, Role newRole, List<ObjectName> oldValue)",void
+RelationSupport,getAllRoles(),RoleResult
+RelationSupport,getReferencedMBeans(),"Map<ObjectName,List<String>>"
+RelationSupport,getRelationId(),String
+RelationSupport,getRelationServiceName(),ObjectName
+RelationSupport,getRelationTypeName(),String
+RelationSupport,getRole(String roleName),List<ObjectName>
+RelationSupport,getRoleCardinality(String roleName),Integer
+RelationSupport,getRoles(String[] roleNameArray),RoleResult
+RelationSupport,"handleMBeanUnregistration(ObjectName objectName, String roleName)",void
+RelationSupport,isInRelationService(),Boolean
+RelationSupport,postDeregister(),void
+RelationSupport,postRegister(Boolean registrationDone),void
+RelationSupport,preDeregister(),void
+RelationSupport,"preRegister(MBeanServer server, ObjectName name)",ObjectName
+RelationSupport,retrieveAllRoles(),RoleList
+RelationSupport,setRelationServiceManagementFlag(Boolean flag),void
+RelationSupport,setRole(Role role),void
+RelationSupport,setRoles(RoleList list),RoleResult
+RelationTypeSupport,addRoleInfo(RoleInfo roleInfo),protected void
+RelationTypeSupport,getRelationTypeName(),String
+RelationTypeSupport,getRoleInfo(String roleInfoName),RoleInfo
+RelationTypeSupport,getRoleInfos(),List<RoleInfo>
+Role,clone(),Object
+Role,getRoleName(),String
+Role,getRoleValue(),List<ObjectName>
+Role,roleValueToString(List<ObjectName> roleValue),static String
+Role,setRoleName(String roleName),void
+Role,setRoleValue(List<ObjectName> roleValue),void
+Role,toString(),String
+RoleInfo,checkMaxDegree(int value),boolean
+RoleInfo,checkMinDegree(int value),boolean
+RoleInfo,getDescription(),String
+RoleInfo,getMaxDegree(),int
+RoleInfo,getMinDegree(),int
+RoleInfo,getName(),String
+RoleInfo,getRefMBeanClassName(),String
+RoleInfo,isReadable(),boolean
+RoleInfo,isWritable(),boolean
+RoleInfo,toString(),String
+RoleList,"add(int index, Object element)",void
+RoleList,"add(int index, Role role)",void
+RoleList,add(Object o),boolean
+RoleList,add(Role role),void
+RoleList,addAll(Collection<?> c),boolean
+RoleList,"addAll(int index, Collection<?> c)",boolean
+RoleList,"addAll(int index, RoleList roleList)",boolean
+RoleList,addAll(RoleList roleList),boolean
+RoleList,asList(),List<Role>
+RoleList,"set(int index, Object element)",Object
+RoleList,"set(int index, Role role)",void
+RoleResult,getRoles(),RoleList
+RoleResult,getRolesUnresolved(),RoleUnresolvedList
+RoleResult,setRoles(RoleList list),void
+RoleResult,setRolesUnresolved(RoleUnresolvedList unresolvedList),void
+RoleStatus,isRoleStatus(int status),static boolean
+RoleUnresolved,clone(),Object
+RoleUnresolved,getProblemType(),int
+RoleUnresolved,getRoleName(),String
+RoleUnresolved,getRoleValue(),List<ObjectName>
+RoleUnresolved,setProblemType(int pbType),void
+RoleUnresolved,setRoleName(String name),void
+RoleUnresolved,setRoleValue(List<ObjectName> value),void
+RoleUnresolved,toString(),String
+RoleUnresolvedList,"add(int index, Object element)",void
+RoleUnresolvedList,"add(int index, RoleUnresolved role)",void
+RoleUnresolvedList,add(Object o),boolean
+RoleUnresolvedList,add(RoleUnresolved role),void
+RoleUnresolvedList,addAll(Collection<?> c),boolean
+RoleUnresolvedList,"addAll(int index, Collection<?> c)",boolean
+RoleUnresolvedList,"addAll(int index, RoleUnresolvedList roleList)",boolean
+RoleUnresolvedList,addAll(RoleUnresolvedList roleList),boolean
+RoleUnresolvedList,asList(),List<RoleUnresolved>
+RoleUnresolvedList,"set(int index, Object element)",Object
+RoleUnresolvedList,"set(int index, RoleUnresolved role)",void

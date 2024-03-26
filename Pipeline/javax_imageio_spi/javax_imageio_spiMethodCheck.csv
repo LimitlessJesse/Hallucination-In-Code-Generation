@@ -1,0 +1,91 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,IIORegistry,1,boolean add(E e),False
+0,IIORegistry,2,boolean addAll(Collection<? extends E> c),False
+0,IIORegistry,3,void clear(),False
+0,IIORegistry,4,boolean contains(Object o),False
+0,IIORegistry,5,boolean containsAll(Collection<?> c),False
+0,IIORegistry,6,E get(int index),False
+0,IIORegistry,7,int indexOf(Object o),False
+0,IIORegistry,8,boolean isEmpty(),False
+0,IIORegistry,9,Iterator<E> iterator(),False
+0,IIORegistry,10,E remove(int index),False
+0,IIORegistry,11,boolean remove(Object o),False
+0,IIORegistry,12,boolean removeAll(Collection<?> c),False
+0,IIORegistry,13,boolean retainAll(Collection<?> c),False
+0,IIORegistry,14,"E set(int index, E element)",False
+0,IIORegistry,15,int size(),False
+0,IIORegistry,16,"List<E> subList(int fromIndex, int toIndex)",False
+0,IIORegistry,17,Object[] toArray(),False
+0,IIORegistry,18,<T> T[] toArray(T[] a),False
+0,IIORegistry,19,ListIterator<E> listIterator(),False
+0,IIORegistry,20,ListIterator<E> listIterator(int index),False
+1,IIOServiceProvider,1,boolean add(E e),False
+1,IIOServiceProvider,2,"void add(int index, E element)",False
+1,IIOServiceProvider,3,boolean addAll(Collection<? extends E> c),False
+1,IIOServiceProvider,4,"boolean addAll(int index, Collection<? extends E> c)",False
+1,IIOServiceProvider,5,void clear(),False
+2,ImageInputStreamSpi,1,boolean canDecodeInput(Object source),False
+2,ImageInputStreamSpi,2,"ImageInputStream createInputStreamInstance(Object source, boolean useCache, File cacheDirectory)",True
+2,ImageInputStreamSpi,3,String getDescription(),False
+2,ImageInputStreamSpi,4,String getSpiVersion(),False
+2,ImageInputStreamSpi,5,String[] getMIMETypes(),False
+3,ImageOutputStreamSpi,1,boolean canEncodeImage(String imageType),False
+3,ImageOutputStreamSpi,2,ImageOutputStream createOutputStreamInstance(),False
+3,ImageOutputStreamSpi,3,String getDescription(),False
+3,ImageOutputStreamSpi,4,String getOutputType(),False
+3,ImageOutputStreamSpi,5,String getRegistryId(),False
+4,ImageReaderSpi,1,boolean canDecodeInput(Object input),True
+4,ImageReaderSpi,2,Iterator<ImageReader> createIterator(Object input),False
+4,ImageReaderSpi,3,String getDescription(),False
+4,ImageReaderSpi,4,String getExtension(),False
+4,ImageReaderSpi,5,String getMIMEType(),False
+4,ImageReaderSpi,6,String getName(),False
+4,ImageReaderSpi,7,String getVersion(),False
+4,ImageReaderSpi,8,boolean isInputAcceptable(Object input),False
+4,ImageReaderSpi,9,boolean isOutputAcceptable(Object output),False
+4,ImageReaderSpi,10,boolean isMIMETypeAcceptable(String mimeType),False
+4,ImageReaderSpi,11,boolean isExtensionAcceptable(String extension),False
+4,ImageReaderSpi,12,"boolean isOutputAcceptable(Object output, String mimeType)",False
+4,ImageReaderSpi,13,"boolean isOutputAcceptable(Object output, String mimeType, String extension)",False
+4,ImageReaderSpi,14,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version)",False
+4,ImageReaderSpi,15,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor)",False
+4,ImageReaderSpi,16,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform)",False
+4,ImageReaderSpi,17,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname)",False
+4,ImageReaderSpi,18,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location)",False
+4,ImageReaderSpi,19,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location, String spec)",False
+4,ImageReaderSpi,20,"boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location, String spec, String specVersion)",False
+5,ImageReaderWriterSpi,1,boolean canDecodeInput(Object source),False
+5,ImageReaderWriterSpi,2,"Iterator<ImageReader> getImageReaders(ImageReaderSpi spi, Object input)",False
+5,ImageReaderWriterSpi,3,"Iterator<ImageWriter> getImageWriters(ImageWriterSpi spi, int outputType)",False
+5,ImageReaderWriterSpi,4,"Iterator<ImageReader> getImageReaders(ImageReaderSpi spi, Object input, int index, int hint)",False
+5,ImageReaderWriterSpi,5,"Iterator<ImageWriter> getImageWriters(ImageWriterSpi spi, int outputType, int index, int hint)",False
+6,ImageTranscoderSpi,1,boolean add(E e),False
+6,ImageTranscoderSpi,2,"void add(int index, E element)",False
+6,ImageTranscoderSpi,3,boolean addAll(Collection<? extends E> c),False
+6,ImageTranscoderSpi,4,"boolean addAll(int index, Collection<? extends E> c)",False
+6,ImageTranscoderSpi,5,void clear(),False
+7,ImageWriterSpi,1,"boolean canWrite(ImageOutputStream out, ImageWriteParam param)",False
+7,ImageWriterSpi,2,String getDescription(Locale locale),False
+7,ImageWriterSpi,3,String getFormatName(),False
+7,ImageWriterSpi,4,String[] getOutputTypes(int index),False
+7,ImageWriterSpi,5,ImageWriter createWriterInstance(Object extension),True
+8,ServiceRegistry,1,boolean add(E e),False
+8,ServiceRegistry,2,boolean addAll(Collection<? extends E> c),False
+8,ServiceRegistry,3,void clear(),False
+8,ServiceRegistry,4,boolean contains(Object o),True
+8,ServiceRegistry,5,boolean containsAll(Collection<?> c),False
+8,ServiceRegistry,6,E get(int index),False
+8,ServiceRegistry,7,int indexOf(Object o),False
+8,ServiceRegistry,8,boolean isEmpty(),False
+8,ServiceRegistry,9,Iterator<E> iterator(),False
+8,ServiceRegistry,10,E remove(int index),False
+8,ServiceRegistry,11,boolean remove(Object o),False
+8,ServiceRegistry,12,boolean removeAll(Collection<?> c),False
+8,ServiceRegistry,13,boolean retainAll(Collection<?> c),False
+8,ServiceRegistry,14,"E set(int index, E element)",False
+8,ServiceRegistry,15,int size(),False
+8,ServiceRegistry,16,"List<E> subList(int fromIndex, int toIndex)",False
+8,ServiceRegistry,17,Object[] toArray(),False
+8,ServiceRegistry,18,<T> T[] toArray(T[] a),False
+8,ServiceRegistry,19,ListIterator<E> listIterator(),False
+8,ServiceRegistry,20,ListIterator<E> listIterator(int index),False

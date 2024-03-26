@@ -1,0 +1,521 @@
+ClassName,Method,Return Type
+AffineTransform,clone(),Object
+AffineTransform,concatenate(AffineTransform Tx),void
+AffineTransform,createInverse(),AffineTransform
+AffineTransform,createTransformedShape(Shape pSrc),Shape
+AffineTransform,"deltaTransform(double[] srcPts, int srcOff, double[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"deltaTransform(Point2D ptSrc, Point2D ptDst)",Point2D
+AffineTransform,equals(Object obj),boolean
+AffineTransform,getDeterminant(),double
+AffineTransform,getMatrix(double[] flatmatrix),void
+AffineTransform,getQuadrantRotateInstance(int numquadrants),static AffineTransform
+AffineTransform,"getQuadrantRotateInstance(int numquadrants, double anchorx, double anchory)",static AffineTransform
+AffineTransform,getRotateInstance(double theta),static AffineTransform
+AffineTransform,"getRotateInstance(double vecx, double vecy)",static AffineTransform
+AffineTransform,"getRotateInstance(double theta, double anchorx, double anchory)",static AffineTransform
+AffineTransform,"getRotateInstance(double vecx, double vecy, double anchorx, double anchory)",static AffineTransform
+AffineTransform,"getScaleInstance(double sx, double sy)",static AffineTransform
+AffineTransform,getScaleX(),double
+AffineTransform,getScaleY(),double
+AffineTransform,"getShearInstance(double shx, double shy)",static AffineTransform
+AffineTransform,getShearX(),double
+AffineTransform,getShearY(),double
+AffineTransform,"getTranslateInstance(double tx, double ty)",static AffineTransform
+AffineTransform,getTranslateX(),double
+AffineTransform,getTranslateY(),double
+AffineTransform,getType(),int
+AffineTransform,hashCode(),int
+AffineTransform,"inverseTransform(double[] srcPts, int srcOff, double[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"inverseTransform(Point2D ptSrc, Point2D ptDst)",Point2D
+AffineTransform,invert(),void
+AffineTransform,isIdentity(),boolean
+AffineTransform,preConcatenate(AffineTransform Tx),void
+AffineTransform,quadrantRotate(int numquadrants),void
+AffineTransform,"quadrantRotate(int numquadrants, double anchorx, double anchory)",void
+AffineTransform,rotate(double theta),void
+AffineTransform,"rotate(double vecx, double vecy)",void
+AffineTransform,"rotate(double theta, double anchorx, double anchory)",void
+AffineTransform,"rotate(double vecx, double vecy, double anchorx, double anchory)",void
+AffineTransform,"scale(double sx, double sy)",void
+AffineTransform,setToIdentity(),void
+AffineTransform,setToQuadrantRotation(int numquadrants),void
+AffineTransform,"setToQuadrantRotation(int numquadrants, double anchorx, double anchory)",void
+AffineTransform,setToRotation(double theta),void
+AffineTransform,"setToRotation(double vecx, double vecy)",void
+AffineTransform,"setToRotation(double theta, double anchorx, double anchory)",void
+AffineTransform,"setToRotation(double vecx, double vecy, double anchorx, double anchory)",void
+AffineTransform,"setToScale(double sx, double sy)",void
+AffineTransform,"setToShear(double shx, double shy)",void
+AffineTransform,"setToTranslation(double tx, double ty)",void
+AffineTransform,setTransform(AffineTransform Tx),void
+AffineTransform,"setTransform(double m00, double m10, double m01, double m11, double m02, double m12)",void
+AffineTransform,"shear(double shx, double shy)",void
+AffineTransform,toString(),String
+AffineTransform,"transform(double[] srcPts, int srcOff, double[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"transform(double[] srcPts, int srcOff, float[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"transform(float[] srcPts, int srcOff, double[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"transform(float[] srcPts, int srcOff, float[] dstPts, int dstOff, int numPts)",void
+AffineTransform,"transform(Point2D[] ptSrc, int srcOff, Point2D[] ptDst, int dstOff, int numPts)",void
+AffineTransform,"transform(Point2D ptSrc, Point2D ptDst)",Point2D
+AffineTransform,"translate(double tx, double ty)",void
+Arc2D,"contains(double x, double y)",boolean
+Arc2D,"contains(double x, double y, double w, double h)",boolean
+Arc2D,contains(Rectangle2D r),boolean
+Arc2D,containsAngle(double angle),boolean
+Arc2D,equals(Object obj),boolean
+Arc2D,getAngleExtent(),abstract double
+Arc2D,getAngleStart(),abstract double
+Arc2D,getArcType(),int
+Arc2D,getBounds2D(),Rectangle2D
+Arc2D,getEndPoint(),Point2D
+Arc2D,getPathIterator(AffineTransform at),PathIterator
+Arc2D,getStartPoint(),Point2D
+Arc2D,hashCode(),int
+Arc2D,"intersects(double x, double y, double w, double h)",boolean
+Arc2D,"makeBounds(double x, double y, double w, double h)",protected abstract Rectangle2D
+Arc2D,setAngleExtent(double angExt),abstract void
+Arc2D,"setAngles(double x1, double y1, double x2, double y2)",void
+Arc2D,"setAngles(Point2D p1, Point2D p2)",void
+Arc2D,setAngleStart(double angSt),abstract void
+Arc2D,setAngleStart(Point2D p),void
+Arc2D,setArc(Arc2D a),void
+Arc2D,"setArc(double x, double y, double w, double h, double angSt, double angExt, int closure)",abstract void
+Arc2D,"setArc(Point2D loc, Dimension2D size, double angSt, double angExt, int closure)",void
+Arc2D,"setArc(Rectangle2D rect, double angSt, double angExt, int closure)",void
+Arc2D,"setArcByCenter(double x, double y, double radius, double angSt, double angExt, int closure)",void
+Arc2D,"setArcByTangent(Point2D p1, Point2D p2, Point2D p3, double radius)",void
+Arc2D,setArcType(int type),void
+Arc2D,"setFrame(double x, double y, double w, double h)",void
+Arc2D.Double,getAngleExtent(),double
+Arc2D.Double,getAngleStart(),double
+Arc2D.Double,getHeight(),double
+Arc2D.Double,getWidth(),double
+Arc2D.Double,getX(),double
+Arc2D.Double,getY(),double
+Arc2D.Double,isEmpty(),boolean
+Arc2D.Double,"makeBounds(double x, double y, double w, double h)",protected Rectangle2D
+Arc2D.Double,setAngleExtent(double angExt),void
+Arc2D.Double,setAngleStart(double angSt),void
+Arc2D.Double,"setArc(double x, double y, double w, double h, double angSt, double angExt, int closure)",void
+Arc2D.Float,getAngleExtent(),double
+Arc2D.Float,getAngleStart(),double
+Arc2D.Float,getHeight(),double
+Arc2D.Float,getWidth(),double
+Arc2D.Float,getX(),double
+Arc2D.Float,getY(),double
+Arc2D.Float,isEmpty(),boolean
+Arc2D.Float,"makeBounds(double x, double y, double w, double h)",protected Rectangle2D
+Arc2D.Float,setAngleExtent(double angExt),void
+Arc2D.Float,setAngleStart(double angSt),void
+Arc2D.Float,"setArc(double x, double y, double w, double h, double angSt, double angExt, int closure)",void
+Area,add(Area rhs),void
+Area,clone(),Object
+Area,"contains(double x, double y)",boolean
+Area,"contains(double x, double y, double w, double h)",boolean
+Area,contains(Point2D p),boolean
+Area,contains(Rectangle2D r),boolean
+Area,createTransformedArea(AffineTransform t),Area
+Area,equals(Area other),boolean
+Area,exclusiveOr(Area rhs),void
+Area,getBounds(),Rectangle
+Area,getBounds2D(),Rectangle2D
+Area,getPathIterator(AffineTransform at),PathIterator
+Area,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+Area,intersect(Area rhs),void
+Area,"intersects(double x, double y, double w, double h)",boolean
+Area,intersects(Rectangle2D r),boolean
+Area,isEmpty(),boolean
+Area,isPolygonal(),boolean
+Area,isRectangular(),boolean
+Area,isSingular(),boolean
+Area,reset(),void
+Area,subtract(Area rhs),void
+Area,transform(AffineTransform t),void
+CubicCurve2D,clone(),Object
+CubicCurve2D,"contains(double x, double y)",boolean
+CubicCurve2D,"contains(double x, double y, double w, double h)",boolean
+CubicCurve2D,contains(Point2D p),boolean
+CubicCurve2D,contains(Rectangle2D r),boolean
+CubicCurve2D,getBounds(),Rectangle
+CubicCurve2D,getCtrlP1(),abstract Point2D
+CubicCurve2D,getCtrlP2(),abstract Point2D
+CubicCurve2D,getCtrlX1(),abstract double
+CubicCurve2D,getCtrlX2(),abstract double
+CubicCurve2D,getCtrlY1(),abstract double
+CubicCurve2D,getCtrlY2(),abstract double
+CubicCurve2D,getFlatness(),double
+CubicCurve2D,"getFlatness(double[] coords, int offset)",static double
+CubicCurve2D,"getFlatness(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)",static double
+CubicCurve2D,getFlatnessSq(),double
+CubicCurve2D,"getFlatnessSq(double[] coords, int offset)",static double
+CubicCurve2D,"getFlatnessSq(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)",static double
+CubicCurve2D,getP1(),abstract Point2D
+CubicCurve2D,getP2(),abstract Point2D
+CubicCurve2D,getPathIterator(AffineTransform at),PathIterator
+CubicCurve2D,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+CubicCurve2D,getX1(),abstract double
+CubicCurve2D,getX2(),abstract double
+CubicCurve2D,getY1(),abstract double
+CubicCurve2D,getY2(),abstract double
+CubicCurve2D,"intersects(double x, double y, double w, double h)",boolean
+CubicCurve2D,intersects(Rectangle2D r),boolean
+CubicCurve2D,setCurve(CubicCurve2D c),void
+CubicCurve2D,"setCurve(double[] coords, int offset)",void
+CubicCurve2D,"setCurve(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)",abstract void
+CubicCurve2D,"setCurve(Point2D[] pts, int offset)",void
+CubicCurve2D,"setCurve(Point2D p1, Point2D cp1, Point2D cp2, Point2D p2)",void
+CubicCurve2D,solveCubic(double[] eqn),static int
+CubicCurve2D,"solveCubic(double[] eqn, double[] res)",static int
+CubicCurve2D,"subdivide(CubicCurve2D left, CubicCurve2D right)",void
+CubicCurve2D,"subdivide(CubicCurve2D src, CubicCurve2D left, CubicCurve2D right)",static void
+CubicCurve2D,"subdivide(double[] src, int srcoff, double[] left, int leftoff, double[] right, int rightoff)",static void
+CubicCurve2D.Double,getBounds2D(),Rectangle2D
+CubicCurve2D.Double,getCtrlP1(),Point2D
+CubicCurve2D.Double,getCtrlP2(),Point2D
+CubicCurve2D.Double,getCtrlX1(),double
+CubicCurve2D.Double,getCtrlX2(),double
+CubicCurve2D.Double,getCtrlY1(),double
+CubicCurve2D.Double,getCtrlY2(),double
+CubicCurve2D.Double,getP1(),Point2D
+CubicCurve2D.Double,getP2(),Point2D
+CubicCurve2D.Double,getX1(),double
+CubicCurve2D.Double,getX2(),double
+CubicCurve2D.Double,getY1(),double
+CubicCurve2D.Double,getY2(),double
+CubicCurve2D.Double,"setCurve(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)",void
+CubicCurve2D.Float,getBounds2D(),Rectangle2D
+CubicCurve2D.Float,getCtrlP1(),Point2D
+CubicCurve2D.Float,getCtrlP2(),Point2D
+CubicCurve2D.Float,getCtrlX1(),double
+CubicCurve2D.Float,getCtrlX2(),double
+CubicCurve2D.Float,getCtrlY1(),double
+CubicCurve2D.Float,getCtrlY2(),double
+CubicCurve2D.Float,getP1(),Point2D
+CubicCurve2D.Float,getP2(),Point2D
+CubicCurve2D.Float,getX1(),double
+CubicCurve2D.Float,getX2(),double
+CubicCurve2D.Float,getY1(),double
+CubicCurve2D.Float,getY2(),double
+CubicCurve2D.Float,"setCurve(double x1, double y1, double ctrlx1, double ctrly1, double ctrlx2, double ctrly2, double x2, double y2)",void
+CubicCurve2D.Float,"setCurve(float x1, float y1, float ctrlx1, float ctrly1, float ctrlx2, float ctrly2, float x2, float y2)",void
+Dimension2D,clone(),Object
+Dimension2D,getHeight(),abstract double
+Dimension2D,getWidth(),abstract double
+Dimension2D,setSize(Dimension2D d),void
+Dimension2D,"setSize(double width, double height)",abstract void
+Ellipse2D,"contains(double x, double y)",boolean
+Ellipse2D,"contains(double x, double y, double w, double h)",boolean
+Ellipse2D,equals(Object obj),boolean
+Ellipse2D,getPathIterator(AffineTransform at),PathIterator
+Ellipse2D,hashCode(),int
+Ellipse2D,"intersects(double x, double y, double w, double h)",boolean
+Ellipse2D.Double,getBounds2D(),Rectangle2D
+Ellipse2D.Double,getHeight(),double
+Ellipse2D.Double,getWidth(),double
+Ellipse2D.Double,getX(),double
+Ellipse2D.Double,getY(),double
+Ellipse2D.Double,isEmpty(),boolean
+Ellipse2D.Double,"setFrame(double x, double y, double w, double h)",void
+Ellipse2D.Float,getBounds2D(),Rectangle2D
+Ellipse2D.Float,getHeight(),double
+Ellipse2D.Float,getWidth(),double
+Ellipse2D.Float,getX(),double
+Ellipse2D.Float,getY(),double
+Ellipse2D.Float,isEmpty(),boolean
+Ellipse2D.Float,"setFrame(double x, double y, double w, double h)",void
+Ellipse2D.Float,"setFrame(float x, float y, float w, float h)",void
+FlatteningPathIterator,currentSegment(double[] coords),int
+FlatteningPathIterator,currentSegment(float[] coords),int
+FlatteningPathIterator,getFlatness(),double
+FlatteningPathIterator,getRecursionLimit(),int
+FlatteningPathIterator,getWindingRule(),int
+FlatteningPathIterator,isDone(),boolean
+FlatteningPathIterator,next(),void
+Line2D,clone(),Object
+Line2D,"contains(double x, double y)",boolean
+Line2D,"contains(double x, double y, double w, double h)",boolean
+Line2D,contains(Point2D p),boolean
+Line2D,contains(Rectangle2D r),boolean
+Line2D,getBounds(),Rectangle
+Line2D,getP1(),abstract Point2D
+Line2D,getP2(),abstract Point2D
+Line2D,getPathIterator(AffineTransform at),PathIterator
+Line2D,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+Line2D,getX1(),abstract double
+Line2D,getX2(),abstract double
+Line2D,getY1(),abstract double
+Line2D,getY2(),abstract double
+Line2D,"intersects(double x, double y, double w, double h)",boolean
+Line2D,intersects(Rectangle2D r),boolean
+Line2D,"intersectsLine(double x1, double y1, double x2, double y2)",boolean
+Line2D,intersectsLine(Line2D l),boolean
+Line2D,"linesIntersect(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)",static boolean
+Line2D,"ptLineDist(double px, double py)",double
+Line2D,"ptLineDist(double x1, double y1, double x2, double y2, double px, double py)",static double
+Line2D,ptLineDist(Point2D pt),double
+Line2D,"ptLineDistSq(double px, double py)",double
+Line2D,"ptLineDistSq(double x1, double y1, double x2, double y2, double px, double py)",static double
+Line2D,ptLineDistSq(Point2D pt),double
+Line2D,"ptSegDist(double px, double py)",double
+Line2D,"ptSegDist(double x1, double y1, double x2, double y2, double px, double py)",static double
+Line2D,ptSegDist(Point2D pt),double
+Line2D,"ptSegDistSq(double px, double py)",double
+Line2D,"ptSegDistSq(double x1, double y1, double x2, double y2, double px, double py)",static double
+Line2D,ptSegDistSq(Point2D pt),double
+Line2D,"relativeCCW(double px, double py)",int
+Line2D,"relativeCCW(double x1, double y1, double x2, double y2, double px, double py)",static int
+Line2D,relativeCCW(Point2D p),int
+Line2D,"setLine(double x1, double y1, double x2, double y2)",abstract void
+Line2D,setLine(Line2D l),void
+Line2D,"setLine(Point2D p1, Point2D p2)",void
+Line2D.Double,getBounds2D(),Rectangle2D
+Line2D.Double,getP1(),Point2D
+Line2D.Double,getP2(),Point2D
+Line2D.Double,getX1(),double
+Line2D.Double,getX2(),double
+Line2D.Double,getY1(),double
+Line2D.Double,getY2(),double
+Line2D.Double,"setLine(double x1, double y1, double x2, double y2)",void
+Line2D.Float,getBounds2D(),Rectangle2D
+Line2D.Float,getP1(),Point2D
+Line2D.Float,getP2(),Point2D
+Line2D.Float,getX1(),double
+Line2D.Float,getX2(),double
+Line2D.Float,getY1(),double
+Line2D.Float,getY2(),double
+Line2D.Float,"setLine(double x1, double y1, double x2, double y2)",void
+Line2D.Float,"setLine(float x1, float y1, float x2, float y2)",void
+Path2D,"append(PathIterator pi, boolean connect)",abstract void
+Path2D,"append(Shape s, boolean connect)",void
+Path2D,clone(),abstract Object
+Path2D,closePath(),void
+Path2D,"contains(double x, double y)",boolean
+Path2D,"contains(double x, double y, double w, double h)",boolean
+Path2D,"contains(PathIterator pi, double x, double y)",static boolean
+Path2D,"contains(PathIterator pi, double x, double y, double w, double h)",static boolean
+Path2D,"contains(PathIterator pi, Point2D p)",static boolean
+Path2D,"contains(PathIterator pi, Rectangle2D r)",static boolean
+Path2D,contains(Point2D p),boolean
+Path2D,contains(Rectangle2D r),boolean
+Path2D,createTransformedShape(AffineTransform at),Shape
+Path2D,"curveTo(double x1, double y1, double x2, double y2, double x3, double y3)",abstract void
+Path2D,getBounds(),Rectangle
+Path2D,getCurrentPoint(),Point2D
+Path2D,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+Path2D,getWindingRule(),int
+Path2D,"intersects(double x, double y, double w, double h)",boolean
+Path2D,"intersects(PathIterator pi, double x, double y, double w, double h)",static boolean
+Path2D,"intersects(PathIterator pi, Rectangle2D r)",static boolean
+Path2D,intersects(Rectangle2D r),boolean
+Path2D,"lineTo(double x, double y)",abstract void
+Path2D,"moveTo(double x, double y)",abstract void
+Path2D,"quadTo(double x1, double y1, double x2, double y2)",abstract void
+Path2D,reset(),void
+Path2D,setWindingRule(int rule),void
+Path2D,transform(AffineTransform at),abstract void
+Path2D.Double,"append(PathIterator pi, boolean connect)",void
+Path2D.Double,clone(),Object
+Path2D.Double,"curveTo(double x1, double y1, double x2, double y2, double x3, double y3)",void
+Path2D.Double,getBounds2D(),Rectangle2D
+Path2D.Double,getPathIterator(AffineTransform at),PathIterator
+Path2D.Double,"lineTo(double x, double y)",void
+Path2D.Double,"moveTo(double x, double y)",void
+Path2D.Double,"quadTo(double x1, double y1, double x2, double y2)",void
+Path2D.Double,transform(AffineTransform at),void
+Path2D.Float,"append(PathIterator pi, boolean connect)",void
+Path2D.Float,clone(),Object
+Path2D.Float,"curveTo(double x1, double y1, double x2, double y2, double x3, double y3)",void
+Path2D.Float,"curveTo(float x1, float y1, float x2, float y2, float x3, float y3)",void
+Path2D.Float,getBounds2D(),Rectangle2D
+Path2D.Float,getPathIterator(AffineTransform at),PathIterator
+Path2D.Float,"lineTo(double x, double y)",void
+Path2D.Float,"lineTo(float x, float y)",void
+Path2D.Float,"moveTo(double x, double y)",void
+Path2D.Float,"moveTo(float x, float y)",void
+Path2D.Float,"quadTo(double x1, double y1, double x2, double y2)",void
+Path2D.Float,"quadTo(float x1, float y1, float x2, float y2)",void
+Path2D.Float,transform(AffineTransform at),void
+Point2D,clone(),Object
+Point2D,"distance(double px, double py)",double
+Point2D,"distance(double x1, double y1, double x2, double y2)",static double
+Point2D,distance(Point2D pt),double
+Point2D,"distanceSq(double px, double py)",double
+Point2D,"distanceSq(double x1, double y1, double x2, double y2)",static double
+Point2D,distanceSq(Point2D pt),double
+Point2D,equals(Object obj),boolean
+Point2D,getX(),abstract double
+Point2D,getY(),abstract double
+Point2D,hashCode(),int
+Point2D,"setLocation(double x, double y)",abstract void
+Point2D,setLocation(Point2D p),void
+Point2D.Double,getX(),double
+Point2D.Double,getY(),double
+Point2D.Double,"setLocation(double x, double y)",void
+Point2D.Double,toString(),String
+Point2D.Float,getX(),double
+Point2D.Float,getY(),double
+Point2D.Float,"setLocation(double x, double y)",void
+Point2D.Float,"setLocation(float x, float y)",void
+Point2D.Float,toString(),String
+QuadCurve2D,clone(),Object
+QuadCurve2D,"contains(double x, double y)",boolean
+QuadCurve2D,"contains(double x, double y, double w, double h)",boolean
+QuadCurve2D,contains(Point2D p),boolean
+QuadCurve2D,contains(Rectangle2D r),boolean
+QuadCurve2D,getBounds(),Rectangle
+QuadCurve2D,getCtrlPt(),abstract Point2D
+QuadCurve2D,getCtrlX(),abstract double
+QuadCurve2D,getCtrlY(),abstract double
+QuadCurve2D,getFlatness(),double
+QuadCurve2D,"getFlatness(double[] coords, int offset)",static double
+QuadCurve2D,"getFlatness(double x1, double y1, double ctrlx, double ctrly, double x2, double y2)",static double
+QuadCurve2D,getFlatnessSq(),double
+QuadCurve2D,"getFlatnessSq(double[] coords, int offset)",static double
+QuadCurve2D,"getFlatnessSq(double x1, double y1, double ctrlx, double ctrly, double x2, double y2)",static double
+QuadCurve2D,getP1(),abstract Point2D
+QuadCurve2D,getP2(),abstract Point2D
+QuadCurve2D,getPathIterator(AffineTransform at),PathIterator
+QuadCurve2D,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+QuadCurve2D,getX1(),abstract double
+QuadCurve2D,getX2(),abstract double
+QuadCurve2D,getY1(),abstract double
+QuadCurve2D,getY2(),abstract double
+QuadCurve2D,"intersects(double x, double y, double w, double h)",boolean
+QuadCurve2D,intersects(Rectangle2D r),boolean
+QuadCurve2D,"setCurve(double[] coords, int offset)",void
+QuadCurve2D,"setCurve(double x1, double y1, double ctrlx, double ctrly, double x2, double y2)",abstract void
+QuadCurve2D,"setCurve(Point2D[] pts, int offset)",void
+QuadCurve2D,"setCurve(Point2D p1, Point2D cp, Point2D p2)",void
+QuadCurve2D,setCurve(QuadCurve2D c),void
+QuadCurve2D,solveQuadratic(double[] eqn),static int
+QuadCurve2D,"solveQuadratic(double[] eqn, double[] res)",static int
+QuadCurve2D,"subdivide(double[] src, int srcoff, double[] left, int leftoff, double[] right, int rightoff)",static void
+QuadCurve2D,"subdivide(QuadCurve2D left, QuadCurve2D right)",void
+QuadCurve2D,"subdivide(QuadCurve2D src, QuadCurve2D left, QuadCurve2D right)",static void
+QuadCurve2D.Double,getBounds2D(),Rectangle2D
+QuadCurve2D.Double,getCtrlPt(),Point2D
+QuadCurve2D.Double,getCtrlX(),double
+QuadCurve2D.Double,getCtrlY(),double
+QuadCurve2D.Double,getP1(),Point2D
+QuadCurve2D.Double,getP2(),Point2D
+QuadCurve2D.Double,getX1(),double
+QuadCurve2D.Double,getX2(),double
+QuadCurve2D.Double,getY1(),double
+QuadCurve2D.Double,getY2(),double
+QuadCurve2D.Double,"setCurve(double x1, double y1, double ctrlx, double ctrly, double x2, double y2)",void
+QuadCurve2D.Float,getBounds2D(),Rectangle2D
+QuadCurve2D.Float,getCtrlPt(),Point2D
+QuadCurve2D.Float,getCtrlX(),double
+QuadCurve2D.Float,getCtrlY(),double
+QuadCurve2D.Float,getP1(),Point2D
+QuadCurve2D.Float,getP2(),Point2D
+QuadCurve2D.Float,getX1(),double
+QuadCurve2D.Float,getX2(),double
+QuadCurve2D.Float,getY1(),double
+QuadCurve2D.Float,getY2(),double
+QuadCurve2D.Float,"setCurve(double x1, double y1, double ctrlx, double ctrly, double x2, double y2)",void
+QuadCurve2D.Float,"setCurve(float x1, float y1, float ctrlx, float ctrly, float x2, float y2)",void
+Rectangle2D,"add(double newx, double newy)",void
+Rectangle2D,add(Point2D pt),void
+Rectangle2D,add(Rectangle2D r),void
+Rectangle2D,"contains(double x, double y)",boolean
+Rectangle2D,"contains(double x, double y, double w, double h)",boolean
+Rectangle2D,createIntersection(Rectangle2D r),abstract Rectangle2D
+Rectangle2D,createUnion(Rectangle2D r),abstract Rectangle2D
+Rectangle2D,equals(Object obj),boolean
+Rectangle2D,getBounds2D(),Rectangle2D
+Rectangle2D,getPathIterator(AffineTransform at),PathIterator
+Rectangle2D,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+Rectangle2D,hashCode(),int
+Rectangle2D,"intersect(Rectangle2D src1, Rectangle2D src2, Rectangle2D dest)",static void
+Rectangle2D,"intersects(double x, double y, double w, double h)",boolean
+Rectangle2D,"intersectsLine(double x1, double y1, double x2, double y2)",boolean
+Rectangle2D,intersectsLine(Line2D l),boolean
+Rectangle2D,"outcode(double x, double y)",abstract int
+Rectangle2D,outcode(Point2D p),int
+Rectangle2D,"setFrame(double x, double y, double w, double h)",void
+Rectangle2D,"setRect(double x, double y, double w, double h)",abstract void
+Rectangle2D,setRect(Rectangle2D r),void
+Rectangle2D,"union(Rectangle2D src1, Rectangle2D src2, Rectangle2D dest)",static void
+Rectangle2D.Double,createIntersection(Rectangle2D r),Rectangle2D
+Rectangle2D.Double,createUnion(Rectangle2D r),Rectangle2D
+Rectangle2D.Double,getBounds2D(),Rectangle2D
+Rectangle2D.Double,getHeight(),double
+Rectangle2D.Double,getWidth(),double
+Rectangle2D.Double,getX(),double
+Rectangle2D.Double,getY(),double
+Rectangle2D.Double,isEmpty(),boolean
+Rectangle2D.Double,"outcode(double x, double y)",int
+Rectangle2D.Double,"setRect(double x, double y, double w, double h)",void
+Rectangle2D.Double,setRect(Rectangle2D r),void
+Rectangle2D.Double,toString(),String
+Rectangle2D.Float,createIntersection(Rectangle2D r),Rectangle2D
+Rectangle2D.Float,createUnion(Rectangle2D r),Rectangle2D
+Rectangle2D.Float,getBounds2D(),Rectangle2D
+Rectangle2D.Float,getHeight(),double
+Rectangle2D.Float,getWidth(),double
+Rectangle2D.Float,getX(),double
+Rectangle2D.Float,getY(),double
+Rectangle2D.Float,isEmpty(),boolean
+Rectangle2D.Float,"outcode(double x, double y)",int
+Rectangle2D.Float,"setRect(double x, double y, double w, double h)",void
+Rectangle2D.Float,"setRect(float x, float y, float w, float h)",void
+Rectangle2D.Float,setRect(Rectangle2D r),void
+Rectangle2D.Float,toString(),String
+RectangularShape,clone(),Object
+RectangularShape,contains(Point2D p),boolean
+RectangularShape,contains(Rectangle2D r),boolean
+RectangularShape,getBounds(),Rectangle
+RectangularShape,getCenterX(),double
+RectangularShape,getCenterY(),double
+RectangularShape,getFrame(),Rectangle2D
+RectangularShape,getHeight(),abstract double
+RectangularShape,getMaxX(),double
+RectangularShape,getMaxY(),double
+RectangularShape,getMinX(),double
+RectangularShape,getMinY(),double
+RectangularShape,"getPathIterator(AffineTransform at, double flatness)",PathIterator
+RectangularShape,getWidth(),abstract double
+RectangularShape,getX(),abstract double
+RectangularShape,getY(),abstract double
+RectangularShape,intersects(Rectangle2D r),boolean
+RectangularShape,isEmpty(),abstract boolean
+RectangularShape,"setFrame(double x, double y, double w, double h)",abstract void
+RectangularShape,"setFrame(Point2D loc, Dimension2D size)",void
+RectangularShape,setFrame(Rectangle2D r),void
+RectangularShape,"setFrameFromCenter(double centerX, double centerY, double cornerX, double cornerY)",void
+RectangularShape,"setFrameFromCenter(Point2D center, Point2D corner)",void
+RectangularShape,"setFrameFromDiagonal(double x1, double y1, double x2, double y2)",void
+RectangularShape,"setFrameFromDiagonal(Point2D p1, Point2D p2)",void
+RoundRectangle2D,"contains(double x, double y)",boolean
+RoundRectangle2D,"contains(double x, double y, double w, double h)",boolean
+RoundRectangle2D,equals(Object obj),boolean
+RoundRectangle2D,getArcHeight(),abstract double
+RoundRectangle2D,getArcWidth(),abstract double
+RoundRectangle2D,getPathIterator(AffineTransform at),PathIterator
+RoundRectangle2D,hashCode(),int
+RoundRectangle2D,"intersects(double x, double y, double w, double h)",boolean
+RoundRectangle2D,"setFrame(double x, double y, double w, double h)",void
+RoundRectangle2D,"setRoundRect(double x, double y, double w, double h, double arcWidth, double arcHeight)",abstract void
+RoundRectangle2D,setRoundRect(RoundRectangle2D rr),void
+RoundRectangle2D.Double,getArcHeight(),double
+RoundRectangle2D.Double,getArcWidth(),double
+RoundRectangle2D.Double,getBounds2D(),Rectangle2D
+RoundRectangle2D.Double,getHeight(),double
+RoundRectangle2D.Double,getWidth(),double
+RoundRectangle2D.Double,getX(),double
+RoundRectangle2D.Double,getY(),double
+RoundRectangle2D.Double,isEmpty(),boolean
+RoundRectangle2D.Double,"setRoundRect(double x, double y, double w, double h, double arcw, double arch)",void
+RoundRectangle2D.Double,setRoundRect(RoundRectangle2D rr),void
+RoundRectangle2D.Float,getArcHeight(),double
+RoundRectangle2D.Float,getArcWidth(),double
+RoundRectangle2D.Float,getBounds2D(),Rectangle2D
+RoundRectangle2D.Float,getHeight(),double
+RoundRectangle2D.Float,getWidth(),double
+RoundRectangle2D.Float,getX(),double
+RoundRectangle2D.Float,getY(),double
+RoundRectangle2D.Float,isEmpty(),boolean
+RoundRectangle2D.Float,"setRoundRect(double x, double y, double w, double h, double arcw, double arch)",void
+RoundRectangle2D.Float,"setRoundRect(float x, float y, float w, float h, float arcw, float arch)",void
+RoundRectangle2D.Float,setRoundRect(RoundRectangle2D rr),void

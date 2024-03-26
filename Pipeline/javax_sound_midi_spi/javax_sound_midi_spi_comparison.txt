@@ -1,0 +1,96 @@
+Sample: 0 MidiDeviceProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.spi.MidiDeviceProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasMoreDevices()`: This method returns true if this provider has more MIDI devices.
+
+2. `MidiDevice getDevice(Info info)`: This method returns a MidiDevice object for the specified device.
+
+3. `MidiDeviceInfo[] getDeviceInfo()`: This method returns an array of MidiDeviceInfo objects representing the devices provided by this provider.
+
+4. `void setDeviceConfiguration(Transmitter transmitter, Receiver receiver)`: This method sets the configuration of the specified transmitter and receiver.
+
+5. `void close()`: This method closes this provider.
+================================================================
+
+Sample: 1 MidiFileReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.spi.MidiFileReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean accept(File file)`: This method returns true if the MidiFileReader can read the specified file.
+
+2. `void setController(Controller controller)`: This method sets the controller for the MidiFileReader.
+
+3. `Sequence getSequence(File file) throws IOException, InvalidMidiDataException`: This method returns a Sequence object that represents the MIDI data in the specified file.
+
+4. `Sequence getSequence(InputStream stream, String format) throws IOException, InvalidMidiDataException`: This method returns a Sequence object that represents the MIDI data in the specified input stream.
+
+5. `Sequence getSequence(URL url) throws IOException, InvalidMidiDataException`: This method returns a Sequence object that represents the MIDI data at the specified URL.
+================================================================
+
+Sample: 2 MidiFileWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.spi.MidiFileWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 SoundbankReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.spi.SoundbankReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canReadBank(URL url)`: This method returns true if the SoundbankReader can read the soundbank at the specified URL.
+
+2. `Soundbank getBank(URL url)`: This method returns the Soundbank at the specified URL.
+
+3. `Soundbank getBank(URL url, MidiChannel channel)`: This method returns the Soundbank at the specified URL, using the specified MidiChannel for sound output.
+
+4. `Soundbank getBank(URL url, MidiChannel channel, MidiDevice device)`: This method returns the Soundbank at the specified URL, using the specified MidiChannel and MidiDevice for sound output.
+
+5. `Soundbank getBank(URL url, MidiChannel channel, MidiDevice device, boolean force)`: This method returns the Soundbank at the specified URL, using the specified MidiChannel and MidiDevice for sound output. If force is true, the SoundbankReader will attempt to force the Soundbank to play on the specified MidiChannel and MidiDevice.
+================================================================
+

@@ -1,0 +1,325 @@
+Sample: 0 AccessibleContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Accessible getAccessibleChild(int i) from javax.accessibility.AccessibleContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAccessibleChild(int i)` method in the `AccessibleContext` class of the `javax.accessibility` package is used to get the Accessible child at the specified index.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.accessibility.AccessibleContext;
+import javax.accessibility.AccessibleRole;
+import javax.accessibility.AccessibleState;
+import javax.accessibility.AccessibleValue;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Test");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            JPanel panel = new JPanel();
+            JButton button = new JButton("Button");
+            panel.add(button);
+
+            frame.getContentPane().add(panel);
+            frame.pack();
+            frame.setVisible(true);
+
+            AccessibleContext context = button.getAccessibleContext();
+            AccessibleContext childContext = (AccessibleContext) context.getAccessibleChild(0);
+
+            System.out.println("Role: " + childContext.getAccessibleRole());
+            System.out.println("State: " + childContext.getAccessibleStateSet());
+            System.out.println("Value: " + childContext.getAccessibleValue());
+        });
+    }
+}
+```
+
+In this code, we create a JFrame with a JPanel and a JButton. We then get the AccessibleContext of the JButton and get the AccessibleContext of the child (which is the JButton itself). We then print out the role, state, and value of the child.
+
+Please note that this code will only work if you are running it in an environment that supports Java Accessibility API.
+================================================================
+
+Sample: 1 AccessibleContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Accessible getAccessibleParent() from javax.accessibility.AccessibleContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAccessibleParent()` method in the `AccessibleContext` class of the `javax.accessibility` package is used to get the parent of the accessible object.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.accessibility.AccessibleContext;
+import javax.accessibility.AccessibleRole;
+import javax.accessibility.AccessibleState;
+import javax.accessibility.AccessibleValue;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("AccessibleContext Example");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            JPanel panel = new JPanel();
+            JButton button = new JButton("Click me");
+            JLabel label = new JLabel("Hello, World!");
+
+            panel.add(button);
+            panel.add(label);
+
+            frame.getContentPane().add(panel);
+            frame.pack();
+            frame.setVisible(true);
+
+            AccessibleContext buttonContext = button.getAccessibleContext();
+            AccessibleContext labelContext = label.getAccessibleContext();
+
+            AccessibleContext parentContext = buttonContext.getAccessibleParent();
+
+            if (parentContext!= null) {
+                System.out.println("Parent of the button is: " + parentContext.getAccessibleName());
+            } else {
+                System.out.println("No parent found for the button");
+            }
+
+            parentContext = labelContext.getAccessibleParent();
+
+            if (parentContext!= null) {
+                System.out.println("Parent of the label is: " + parentContext.getAccessibleName());
+            } else {
+                System.out.println("No parent found for the label");
+            }
+        });
+    }
+}
+```
+
+In this code, we create a JFrame with a JPanel containing a JButton and a JLabel. We then get the `AccessibleContext` of the button and the label, and use the `getAccessibleParent()` method to get the parent of each object. The parent of the button is the JPanel, and the parent of the label is the JPanel.
+================================================================
+
+Sample: 2 AccessibleContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AccessibleRole getAccessibleRole() from javax.accessibility.AccessibleContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAccessibleRole()` method in the `AccessibleContext` interface is used to get the role of an accessible object. The role of an accessible object is a description of what the object does or what it represents.
+
+Here is a complete code snippet of the `getAccessibleRole()` method:
+
+```java
+import javax.accessibility.AccessibleContext;
+import javax.accessibility.AccessibleRole;
+
+public class Main {
+    public static void main(String[] args) {
+        AccessibleContext context = new AccessibleContext() {
+            @Override
+            public AccessibleRole getAccessibleRole() {
+                return AccessibleRole.PUSH_BUTTON;
+            }
+        };
+
+        AccessibleRole role = context.getAccessibleRole();
+        System.out.println("Accessible Role: " + role);
+    }
+}
+```
+
+In this code snippet, we create a new `AccessibleContext` and override the `getAccessibleRole()` method to return `AccessibleRole.PUSH_BUTTON`. Then, we call `getAccessibleRole()` on the `AccessibleContext` and print the returned role.
+
+Please note that the `AccessibleRole` enum is part of the `javax.accessibility` package and it's used to represent the role of an accessible object. The `PUSH_BUTTON` role is just an example, you can replace it with any other role that you want to test.
+================================================================
+
+Sample: 3 AccessibleRelationSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from javax.accessibility.AccessibleRelationSet
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `clear()` method in `javax.accessibility.AccessibleRelationSet` is used to remove all of the elements from this set.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.accessibility.AccessibleRelationSet;
+
+public class Main {
+    public static void main(String[] args) {
+        AccessibleRelationSet set = new AccessibleRelationSet();
+        set.add(AccessibleRelation.LABEL_FOR);
+        set.add(AccessibleRelation.DESCRIBED_BY);
+        System.out.println("Before clear: " + set);
+        set.clear();
+        System.out.println("After clear: " + set);
+    }
+}
+```
+
+In this code snippet, we first create an `AccessibleRelationSet` and add some relations to it. Then we print the set before and after calling the `clear()` method. As expected, after calling `clear()`, the set is empty.
+================================================================
+
+Sample: 4 AccessibleStateSet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from javax.accessibility.AccessibleStateSet
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `clear()` method in `AccessibleStateSet` is used to remove all of the elements from this set.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.accessibility.AccessibleStateSet;
+
+public class Main {
+    public static void main(String[] args) {
+        AccessibleStateSet stateSet = new AccessibleStateSet();
+        stateSet.add(AccessibleStateSet.State.ACTIVE);
+        stateSet.add(AccessibleStateSet.State.CHECKED);
+        System.out.println("Initial state set: " + stateSet);
+
+        stateSet.clear();
+        System.out.println("State set after clear: " + stateSet);
+    }
+}
+```
+
+In this code, we first create an `AccessibleStateSet` and add some states to it. Then we call the `clear()` method to remove all the states from the set. Finally, we print out the state set to verify that it is empty.
+================================================================
+

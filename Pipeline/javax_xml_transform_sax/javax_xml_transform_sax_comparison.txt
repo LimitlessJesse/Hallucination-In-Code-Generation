@@ -1,0 +1,75 @@
+Sample: 0 SAXResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.sax.SAXResult package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setSystemId(String systemId)`: This method sets the system identifier for this result.
+
+2. `void setHandler(ContentHandler handler)`: This method sets the content handler for this result.
+
+3. `void setLexicalHandler(LexicalHandler handler)`: This method sets the lexical handler for this result.
+
+4. `void setDTDHandler(DTDHandler handler)`: This method sets the DTD handler for this result.
+
+5. `void setCharacterStream(Reader characterStream)`: This method sets the character stream for this result.
+================================================================
+
+Sample: 1 SAXSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.sax.SAXSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource)`: This constructor creates a SAXSource object that uses the specified XMLReader to parse the specified InputSource.
+
+2. `SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource, org.xml.sax.ContentHandler)`: This constructor creates a SAXSource object that uses the specified XMLReader to parse the specified InputSource, and uses the specified ContentHandler to handle the parsed events.
+
+3. `SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource, org.xml.sax.Attributes, org.xml.sax.ContentHandler)`: This constructor creates a SAXSource object that uses the specified XMLReader to parse the specified InputSource, and uses the specified ContentHandler to handle the parsed events. The specified Attributes are used as the initial attributes for the ContentHandler.
+
+4. `SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource, org.xml.sax.Attributes)`: This constructor creates a SAXSource object that uses the specified XMLReader to parse the specified InputSource, and uses the specified Attributes as the initial attributes for the ContentHandler.
+
+5. `SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource, org.xml.sax.Attributes, org.xml.sax.Locator)`: This constructor creates a SAXSource object that uses the specified XMLReader to parse the specified InputSource, and uses the specified Attributes and Locator as the initial attributes and locator for the ContentHandler.
+================================================================
+
+Sample: 2 SAXTransformerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.transform.sax.SAXTransformerFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SAXTransformerFactory`: `javax.xml.transform.sax.SAXTransformerFactory`
+
+2. `newTransformer()`: `javax.xml.transform.Transformer newTransformer()`
+
+3. `newTemplates()`: `javax.xml.transform.Templates newTemplates()`
+
+4. `newInstance()`: `javax.xml.transform.TransformerFactory newInstance()`
+
+5. `newSAXTransformer()`: `javax.xml.transform.sax.SAXTransformer newSAXTransformer()`
+================================================================
+

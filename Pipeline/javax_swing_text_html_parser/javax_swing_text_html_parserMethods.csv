@@ -1,0 +1,90 @@
+ClassName,Method,Return Type
+AttributeList,getModifier(),int
+AttributeList,getName(),String
+AttributeList,getNext(),AttributeList
+AttributeList,getType(),int
+AttributeList,getValue(),String
+AttributeList,getValues(),Enumeration<?>
+AttributeList,name2type(String nm),static int
+AttributeList,toString(),String
+AttributeList,type2name(int tp),static String
+ContentModel,empty(),boolean
+ContentModel,first(),Element
+ContentModel,first(Object token),boolean
+ContentModel,getElements(Vector<Element> elemVec),void
+ContentModel,toString(),String
+DocumentParser,handleComment(char[] text),protected void
+DocumentParser,handleEmptyTag(TagElement tag),protected void
+DocumentParser,handleEndTag(TagElement tag),protected void
+DocumentParser,"handleError(int ln, String errorMsg)",protected void
+DocumentParser,handleStartTag(TagElement tag),protected void
+DocumentParser,handleText(char[] data),protected void
+DocumentParser,"parse(Reader in, HTMLEditorKit.ParserCallback callback, boolean ignoreCharSet)",void
+DTD,"defAttributeList(String name, int type, int modifier, String value, String values, AttributeList atts)",protected AttributeList
+DTD,"defContentModel(int type, Object obj, ContentModel next)",protected ContentModel
+DTD,"defElement(String name, int type, boolean omitStart, boolean omitEnd, ContentModel content, String[] exclusions, String[] inclusions, AttributeList atts)",protected Element
+DTD,"defEntity(String name, int type, int ch)",Entity
+DTD,"defEntity(String name, int type, String str)",protected Entity
+DTD,"defineAttributes(String name, AttributeList atts)",void
+DTD,"defineElement(String name, int type, boolean omitStart, boolean omitEnd, ContentModel content, BitSet exclusions, BitSet inclusions, AttributeList atts)",Element
+DTD,"defineEntity(String name, int type, char[] data)",Entity
+DTD,getDTD(String name),static DTD
+DTD,getElement(int index),Element
+DTD,getElement(String name),Element
+DTD,getEntity(int ch),Entity
+DTD,getEntity(String name),Entity
+DTD,getName(),String
+DTD,"putDTDHash(String name, DTD dtd)",static void
+DTD,read(DataInputStream in),void
+DTD,toString(),String
+Element,getAttribute(String name),AttributeList
+Element,getAttributeByValue(String name),AttributeList
+Element,getAttributes(),AttributeList
+Element,getContent(),ContentModel
+Element,getIndex(),int
+Element,getName(),String
+Element,getType(),int
+Element,isEmpty(),boolean
+Element,name2type(String nm),static int
+Element,omitEnd(),boolean
+Element,omitStart(),boolean
+Element,toString(),String
+Entity,getData(),char[]
+Entity,getName(),String
+Entity,getString(),String
+Entity,getType(),int
+Entity,isGeneral(),boolean
+Entity,isParameter(),boolean
+Entity,name2type(String nm),static int
+Parser,endTag(boolean omitted),protected void
+Parser,error(String err),protected void
+Parser,"error(String err, String arg1)",protected void
+Parser,"error(String err, String arg1, String arg2)",protected void
+Parser,"error(String err, String arg1, String arg2, String arg3)",protected void
+Parser,flushAttributes(),protected void
+Parser,getAttributes(),protected SimpleAttributeSet
+Parser,getCurrentLine(),protected int
+Parser,getCurrentPos(),protected int
+Parser,handleComment(char[] text),protected void
+Parser,handleEmptyTag(TagElement tag),protected void
+Parser,handleEndTag(TagElement tag),protected void
+Parser,handleEOFInComment(),protected void
+Parser,"handleError(int ln, String msg)",protected void
+Parser,handleStartTag(TagElement tag),protected void
+Parser,handleText(char[] text),protected void
+Parser,handleTitle(char[] text),protected void
+Parser,makeTag(Element elem),protected TagElement
+Parser,"makeTag(Element elem, boolean fictional)",protected TagElement
+Parser,markFirstTime(Element elem),protected void
+Parser,parse(Reader in),void
+Parser,parseDTDMarkup(),String
+Parser,parseMarkupDeclarations(StringBuffer strBuff),protected boolean
+Parser,startTag(TagElement tag),protected void
+ParserDelegator,"createDTD(DTD dtd, String name)",protected static DTD
+ParserDelegator,"parse(Reader r, HTMLEditorKit.ParserCallback cb, boolean ignoreCharSet)",void
+ParserDelegator,setDefaultDTD(),protected static void
+TagElement,breaksFlow(),boolean
+TagElement,fictional(),boolean
+TagElement,getElement(),Element
+TagElement,getHTMLTag(),HTML.Tag
+TagElement,isPreformatted(),boolean

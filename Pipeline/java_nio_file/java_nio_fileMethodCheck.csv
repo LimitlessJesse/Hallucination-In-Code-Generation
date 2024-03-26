@@ -1,0 +1,85 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Files,1,"Path createDirectory(Path dir, FileAttribute<?>... attrs)",True
+0,Files,2,"Path createFile(Path path, FileAttribute<?>... attrs)",True
+0,Files,3,"Path copy(Path source, Path target, CopyOption... options)",True
+0,Files,4,"Path move(Path source, Path target, CopyOption... options)",True
+0,Files,5,Path delete(Path path),False
+0,Files,6,Path deleteIfExists(Path path),False
+0,Files,7,"Path link(Path existing, Path newLink)",False
+0,Files,8,Path readSymbolicLink(Path link),True
+0,Files,9,"Path write(Path path, byte[] bytes, OpenOption... options)",True
+0,Files,10,Path readAllBytes(Path path),False
+0,Files,11,"Path write(Path path, CharBuffer charBuffer, OpenOption... options)",False
+0,Files,12,Path readAllLines(Path path),False
+0,Files,13,"Path write(Path path, Iterable<? extends CharSequence> lines, OpenOption... options)",True
+0,Files,14,"Path readAttributes(Path path, Class<?> attributeView, LinkOption... options)",False
+0,Files,15,"Path setAttribute(Path path, String attribute, Object value, LinkOption... options)",True
+0,Files,16,"Path getLastModifiedTime(Path path, LinkOption... options)",False
+0,Files,17,"Path setLastModifiedTime(Path path, FileTime time)",True
+0,Files,18,"Path getOwner(Path path, LinkOption... options)",False
+0,Files,19,"Path setOwner(Path path, UserPrincipal owner)",True
+0,Files,20,Path getPosixFilePermissions(Path path),False
+0,Files,21,"Path setPosixFilePermissions(Path path, Set<PosixFilePermission> perms)",True
+0,Files,22,Path getFileStore(Path path),False
+0,Files,23,"Path isSameFile(Path path, Path path2)",False
+0,Files,24,"Path notExists(Path path, LinkOption... options)",False
+0,Files,25,"Path exists(Path path, LinkOption... options)",False
+0,Files,26,"Path isDirectory(Path path, LinkOption... options)",False
+0,Files,27,"Path isRegularFile(Path path, LinkOption... options)",False
+0,Files,28,Path isSymbolicLink(Path path),False
+0,Files,29,Path isHidden(Path path),False
+0,Files,30,Path isReadable(Path path),False
+0,Files,31,Path isWritable(Path path),False
+0,Files,32,Path isExecutable(Path path),False
+0,Files,33,Path probeContentType(Path path),False
+0,Files,34,"Path probeFile(Path path, LinkOption... options)",False
+0,Files,35,"Path probeDirectory(Path dir, LinkOption... options)",False
+0,Files,36,"Path createTempFile(Path dir, String prefix, String suffix)",False
+0,Files,37,"Path createTempDirectory(Path dir, String prefix)",False
+0,Files,38,"Path createLink(Path existing, Path newLink)",True
+0,Files,39,"Path createDirectory(Path dir, FileAttribute<?>... attrs)",True
+0,Files,40,"Path createFile(Path path, FileAttribute<?>... attrs)",True
+0,Files,41,"Path copy(Path source, Path target, CopyOption... options)",True
+0,Files,42,"Path move(Path source, Path target, CopyOption... options)",True
+0,Files,43,Path delete(Path path),False
+0,Files,44,Path deleteIfExists(Path path),False
+0,Files,45,"Path link(Path existing, Path newLink)",False
+0,Files,46,Path readSymbolicLink(Path link),True
+0,Files,47,"Path write(Path path, byte[] bytes, OpenOption... options)",True
+0,Files,48,Path readAllBytes(Path path),False
+1,FileStore,1,long getTotalSpace(),True
+1,FileStore,2,long getUsableSpace(),True
+1,FileStore,3,long getUnallocatedSpace(),True
+1,FileStore,4,boolean isReadOnly(),True
+1,FileStore,5,String name(),True
+2,FileSystem,1,"Path getPath(String first, String... more)",True
+2,FileSystem,2,PathMatcher getPathMatcher(String syntaxAndPattern),True
+2,FileSystem,3,FileSystem getFileSystem(),False
+2,FileSystem,4,FileSystemProvider getFileSystemProvider(),False
+2,FileSystem,5,WatchService newWatchService(),True
+3,FileSystems,1,FileSystem getFileSystem(),False
+3,FileSystems,2,Path getRoot(),False
+3,FileSystems,3,int getNameCount(),False
+3,FileSystems,4,Path getName(int index),False
+3,FileSystems,5,Path resolve(Path other),False
+4,LinkPermission,1,boolean checkPermission(FilePermission fp),False
+4,LinkPermission,2,boolean equals(Object obj),False
+4,LinkPermission,3,int hashCode(),False
+4,LinkPermission,4,boolean implies(Permission p),False
+4,LinkPermission,5,String getActions(),False
+5,Paths,1,"Paths.get(String first, String... more)",False
+5,Paths,2,Path resolve(Path other),False
+5,Paths,3,Path resolve(String other),False
+5,Paths,4,Path normalize(),False
+5,Paths,5,Path relativize(Path other),False
+6,SimpleFileVisitor,1,"FileVisitResult visitFile(Path file, BasicFileAttributes attrs)",False
+6,SimpleFileVisitor,2,"FileVisitResult postVisitDirectory(Path dir, IOException exc)",False
+6,SimpleFileVisitor,3,"FileVisitResult visitFileFailed(Path file, IOException exc)",False
+6,SimpleFileVisitor,4,"FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs)",False
+6,SimpleFileVisitor,5,"FileVisitResult visitFile(Path file, ReadOnlyFileAttributes attrs)",False
+7,StandardWatchEventKinds,1,StandardWatchEventKinds.ENTRY_CREATE,False
+7,StandardWatchEventKinds,2,StandardWatchEventKinds.ENTRY_DELETE,False
+7,StandardWatchEventKinds,3,StandardWatchEventKinds.ENTRY_MODIFY,False
+7,StandardWatchEventKinds,4,StandardWatchEventKinds.OVERFLOW,False
+7,StandardWatchEventKinds,5,StandardWatchEventKinds.ENTRY_MOVED_FROM,False
+7,StandardWatchEventKinds,6,StandardWatchEventKinds.ENTRY_MOVED_TO,False

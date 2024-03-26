@@ -1,0 +1,230 @@
+Sample: DESedeKeySpec_2
+----------------------------------------------------------------
+stderr:
+java.security.InvalidKeyException: Wrong key size
+	at java.base/javax.crypto.spec.DESedeKeySpec.<init>(DESedeKeySpec.java:85)
+	at java.base/javax.crypto.spec.DESedeKeySpec.<init>(DESedeKeySpec.java:62)
+	at DESedeKeySpec_2.main(DESedeKeySpec_2.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DESKeySpec_2
+----------------------------------------------------------------
+stdout:
+1 1 2 2 4 4 7 7 
+================================================================
+
+Sample: DHParameterSpec_2
+----------------------------------------------------------------
+stdout:
+P: 154309850213512620913097913874338590536161788958795560691369736229289937615781532975057543598236679030111705552513349258991939229834317283751278691933355316800855767994930495498017539000490204033802999042915936379751202302359453194205777664764847768135133344118456371008887660836397880100063516550145637375939
+
+================================================================
+
+Sample: DHPrivateKeySpec_1
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/DHPrivateKeySpec_1.java:7: error: incompatible types: int cannot be converted to BigInteger
+        DHPrivateKeySpec dhPrivateKeySpec = new DHPrivateKeySpec(privateValue, 1024, 1);
+                                                                               ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: DHPrivateKeySpec_2
+----------------------------------------------------------------
+stdout:
+Private Value: null
+
+================================================================
+
+Sample: DHPrivateKeySpec_3
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/DHPrivateKeySpec_3.java:7: error: incompatible types: int cannot be converted to BigInteger
+        DHPrivateKeySpec dhPrivateKeySpec = new DHPrivateKeySpec(g, 1024, 1024);
+                                                                    ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: DHPublicKeySpec_3
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/DHPublicKeySpec_3.java:8: error: constructor DHPublicKeySpec in class DHPublicKeySpec cannot be applied to given types;
+        DHPublicKeySpec dhPublicKeySpec = new DHPublicKeySpec(g, p);
+                                          ^
+  required: BigInteger,BigInteger,BigInteger
+  found:    BigInteger,BigInteger
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: DHPublicKeySpec_4
+----------------------------------------------------------------
+stdout:
+Public Value Y: 5
+
+================================================================
+
+Sample: GCMParameterSpec_2
+----------------------------------------------------------------
+stdout:
+0 0 0 0 0 0 0 0 0 0 0 0 
+================================================================
+
+Sample: GCMParameterSpec_3
+----------------------------------------------------------------
+stdout:
+Tag length: 128
+
+================================================================
+
+Sample: IvParameterSpec_2
+----------------------------------------------------------------
+stdout:
+IV: 
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 
+================================================================
+
+Sample: OAEPParameterSpec_2
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/OAEPParameterSpec_2.java:5: error: cannot find symbol
+        OAEPParameterSpec oaepParameterSpec = new OAEPParameterSpec("SHA-256", "MGF1", new MGF1ParameterSpec("SHA-256"), 20);
+                                                                                           ^
+  symbol:   class MGF1ParameterSpec
+  location: class OAEPParameterSpec_2
+1 error
+
+
+================================================================
+
+Sample: PBEKeySpec_2
+----------------------------------------------------------------
+stdout:
+Salt: salt
+
+================================================================
+
+Sample: PBEKeySpec_3
+----------------------------------------------------------------
+stdout:
+Iteration count: 0
+
+================================================================
+
+Sample: PBEKeySpec_4
+----------------------------------------------------------------
+stdout:
+Key length: 0
+
+================================================================
+
+Sample: PBEKeySpec_5
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/PBEKeySpec_5.java:8: error: cannot find symbol
+        char[] retrievedPassword = keySpec.getPassword();
+                                          ^
+  symbol:   method getPassword()
+  location: variable keySpec of type KeySpec
+1 error
+
+
+================================================================
+
+Sample: PBEParameterSpec_1
+----------------------------------------------------------------
+stdout:
+Iteration Count: 10
+
+================================================================
+
+Sample: PBEParameterSpec_2
+----------------------------------------------------------------
+stdout:
+1 2 3 4 5 6 7 8 
+================================================================
+
+Sample: RC2ParameterSpec_4
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/RC2ParameterSpec_4.java:5: error: incompatible types: int cannot be converted to byte[]
+        RC2ParameterSpec spec1 = new RC2ParameterSpec(128, 123);
+                                                           ^
+./javax_crypto_spec/javaFiles/RC2ParameterSpec_4.java:6: error: incompatible types: int cannot be converted to byte[]
+        RC2ParameterSpec spec2 = new RC2ParameterSpec(128, 123);
+                                                           ^
+./javax_crypto_spec/javaFiles/RC2ParameterSpec_4.java:7: error: incompatible types: int cannot be converted to byte[]
+        RC2ParameterSpec spec3 = new RC2ParameterSpec(192, 456);
+                                                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: RC2ParameterSpec_5
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/RC2ParameterSpec_5.java:5: error: incompatible types: int cannot be converted to byte[]
+        RC2ParameterSpec spec = new RC2ParameterSpec(128, 123);
+                                                          ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: RC5ParameterSpec_2
+----------------------------------------------------------------
+output:
+./javax_crypto_spec/javaFiles/RC5ParameterSpec_2.java:5: error: no suitable constructor found for RC5ParameterSpec(int,int)
+        RC5ParameterSpec spec = new RC5ParameterSpec(128, 10);
+                                ^
+    constructor RC5ParameterSpec.RC5ParameterSpec(int,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor RC5ParameterSpec.RC5ParameterSpec(int,int,int,byte[]) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor RC5ParameterSpec.RC5ParameterSpec(int,int,int,byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: SecretKeySpec_2
+----------------------------------------------------------------
+stdout:
+Encoded Key: myKey
+
+================================================================
+
+Sample: SecretKeySpec_3
+----------------------------------------------------------------
+stdout:
+Algorithm: AES
+
+================================================================
+
+Sample: SecretKeySpec_4
+----------------------------------------------------------------
+stdout:
+RAW
+
+================================================================
+

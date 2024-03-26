@@ -1,0 +1,106 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Cipher,1,int getBlockSize(),True
+0,Cipher,2,AlgorithmParameterSpec getParameters(),False
+0,Cipher,3,byte[] doFinal(byte[] input),True
+0,Cipher,4,"void init(int opmode, Key key, AlgorithmParameterSpec params)",True
+0,Cipher,5,void setIV(byte[] iv),False
+1,CipherInputStream,1,"CipherInputStream(InputStream in, Cipher cipher)",False
+1,CipherInputStream,2,"int read(byte[] b, int off, int len)",True
+1,CipherInputStream,3,void close(),True
+1,CipherInputStream,4,void reset(),False
+1,CipherInputStream,5,void mark(int readlimit),False
+2,CipherOutputStream,1,"CipherOutputStream(OutputStream out, Cipher cipher)",False
+2,CipherOutputStream,2,void write(int b),True
+2,CipherOutputStream,3,void write(byte[] b),True
+2,CipherOutputStream,4,"void write(byte[] b, int off, int len)",True
+2,CipherOutputStream,5,void flush(),True
+3,CipherSpi,1,byte[] doFinal(byte[] input),False
+3,CipherSpi,2,"void init(int opmode, Key key, AlgorithmParameterSpec params)",False
+3,CipherSpi,3,"void setParameter(String prop, Object value)",False
+3,CipherSpi,4,byte[] update(byte[] input),False
+3,CipherSpi,5,void reset(),False
+4,EncryptedPrivateKeyInfo,1,getAlgName(),False
+4,EncryptedPrivateKeyInfo,2,getEncAlgParameters(),False
+4,EncryptedPrivateKeyInfo,3,getKey(),False
+4,EncryptedPrivateKeyInfo,4,getEncryptedData(),False
+4,EncryptedPrivateKeyInfo,5,getSeqNum(),False
+5,ExemptionMechanism,1,boolean supportsExemption(int exemptionMechanism),False
+5,ExemptionMechanism,2,void setExemptionMechanism(int exemptionMechanism),False
+5,ExemptionMechanism,3,int getExemptionMechanism(),False
+5,ExemptionMechanism,4,"void setExemptionMechanism(int exemptionMechanism, int exemptionMechanism)",False
+5,ExemptionMechanism,5,"void setExemptionMechanism(int exemptionMechanism, int exemptionMechanism, int exemptionMechanism)",False
+6,ExemptionMechanismSpi,1,boolean supportsExemption(Key key),False
+6,ExemptionMechanismSpi,2,void exemptKey(Key key),False
+6,ExemptionMechanismSpi,3,void unexemptKey(Key key),False
+6,ExemptionMechanismSpi,4,boolean isKeyExempted(Key key),False
+6,ExemptionMechanismSpi,5,void clearExemption(),False
+7,KeyAgreement,1,init(KeyAgreement keyAgreement),False
+7,KeyAgreement,2,init(Cipher cipher),False
+7,KeyAgreement,3,"doPhase(byte[] input, int offset, int len)",False
+7,KeyAgreement,4,generateSecret(),False
+7,KeyAgreement,5,getLocalPublic(),False
+7,KeyAgreement,6,getRemotePublic(),False
+7,KeyAgreement,7,getKeySize(),False
+7,KeyAgreement,8,getAlgorithm(),False
+7,KeyAgreement,9,getProvider(),False
+7,KeyAgreement,10,getParameters(),False
+8,KeyAgreementSpi,1,init(Key key),False
+8,KeyAgreementSpi,2,"doPhase(byte[] input, int offset, int len)",False
+8,KeyAgreementSpi,3,generateSecret(),False
+8,KeyAgreementSpi,4,getAgreedValue(),False
+8,KeyAgreementSpi,5,getLocalPublic(),False
+8,KeyAgreementSpi,6,getRemotePublic(),False
+8,KeyAgreementSpi,7,getAgreedValue(),False
+8,KeyAgreementSpi,8,getLocalParameterSpec(),False
+8,KeyAgreementSpi,9,getRemoteParameterSpec(),False
+8,KeyAgreementSpi,10,getAgreedValue(),False
+8,KeyAgreementSpi,11,getAgreedValue(),False
+8,KeyAgreementSpi,12,getAgreedValue(),False
+8,KeyAgreementSpi,13,getAgreedValue(),False
+8,KeyAgreementSpi,14,getAgreedValue(),False
+8,KeyAgreementSpi,15,getAgreedValue(),False
+9,KeyGenerator,1,KeyGenerator(),False
+9,KeyGenerator,2,init(int keysize),False
+9,KeyGenerator,3,init(SecureRandom random),False
+9,KeyGenerator,4,generateKey(),False
+9,KeyGenerator,5,init(AlgorithmParameterSpec params),False
+10,KeyGeneratorSpi,1,KeyGeneratorSpi(),False
+10,KeyGeneratorSpi,2,init(SecureRandom random),False
+10,KeyGeneratorSpi,3,"init(AlgorithmParameterSpec params, SecureRandom random)",False
+10,KeyGeneratorSpi,4,generateKey(),False
+10,KeyGeneratorSpi,5,"engineInit(int keysize, SecureRandom random)",False
+11,Mac,1,Mac getInstance(String algorithm),True
+11,Mac,2,void init(Key key),True
+11,Mac,3,void update(byte[] input),True
+11,Mac,4,byte[] doFinal(),True
+11,Mac,5,void reset(),True
+12,MacSpi,1,void init(Key key),False
+12,MacSpi,2,void update(byte input),False
+12,MacSpi,3,"void update(byte[] input, int offset, int len)",False
+12,MacSpi,4,byte[] doFinal(),False
+12,MacSpi,5,void reset(),False
+13,NullCipher,1,NullCipher getInstance(String algorithm),False
+13,NullCipher,2,void init(int opmode),False
+13,NullCipher,3,int getBlockSize(),False
+13,NullCipher,4,AlgorithmParameterSpec getParameters(),False
+13,NullCipher,5,void setParameters(AlgorithmParameterSpec params),False
+14,SealedObject,1,SealedObject(Serializable obj),False
+14,SealedObject,2,Object getObject(),False
+14,SealedObject,3,SealedObject seal(Key key),False
+14,SealedObject,4,"SealedObject seal(Key key, AlgorithmParameterSpec param)",False
+14,SealedObject,5,"SealedObject seal(Key key, Cipher cipher)",False
+15,SecretKeyFactory,1,SecretKeyFactory.getInstance(String algorithm),False
+15,SecretKeyFactory,2,SecretKeyFactory.generateSecret(KeySpec keySpec),False
+15,SecretKeyFactory,3,"SecretKeyFactory.getKeySpec(SecretKey key, Class<? extends KeySpec> keySpec)",False
+15,SecretKeyFactory,4,SecretKeyFactory.getAlgorithmParameters(String algorithm),False
+15,SecretKeyFactory,5,SecretKeyFactory.getKeyTypes(),False
+16,SecretKeyFactorySpi,1,SecretKeyFactorySpi(),False
+16,SecretKeyFactorySpi,2,SecretKeyFactorySpi(Provider provider),False
+16,SecretKeyFactorySpi,3,"SecretKeyFactorySpi(Provider provider, AlgorithmParameterSpec params)",False
+16,SecretKeyFactorySpi,4,SecretKeyFactorySpi(AlgorithmParameterSpec params),False
+16,SecretKeyFactorySpi,5,SecretKeyFactorySpi(String algorithm),False
+16,SecretKeyFactorySpi,6,"SecretKeyFactorySpi(String algorithm, Provider provider)",False
+16,SecretKeyFactorySpi,7,"SecretKeyFactorySpi(String algorithm, AlgorithmParameterSpec params)",False
+16,SecretKeyFactorySpi,8,"SecretKeyFactorySpi(String algorithm, Provider provider, AlgorithmParameterSpec params)",False
+16,SecretKeyFactorySpi,9,"SecretKeyFactorySpi(String algorithm, String provider)",False
+16,SecretKeyFactorySpi,10,"SecretKeyFactorySpi(String algorithm, String provider, AlgorithmParameterSpec params)",False

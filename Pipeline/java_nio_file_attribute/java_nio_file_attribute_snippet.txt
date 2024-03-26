@@ -1,0 +1,154 @@
+Sample: 0 AclEntry.Builder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AclEntry build() from java.nio.file.attribute.AclEntry.Builder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `AclEntry.Builder` class in Java NIO is used to build an `AclEntry` object. The `build()` method is used to create an immutable `AclEntry` object.
+
+Here is a complete code snippet of the `build()` method:
+
+```java
+import java.nio.file.attribute.AclEntry;
+import java.nio.file.attribute.AclEntry.Builder;
+import java.nio.file.attribute.UserPrincipal;
+import java.nio.file.attribute.AclEntryFlag;
+import java.nio.file.attribute.AclEntryPermission;
+import java.util.EnumSet;
+
+public class Main {
+    public static void main(String[] args) {
+        UserPrincipal userPrincipal = null; // replace with your UserPrincipal
+        Builder builder = AclEntry.newBuilder(userPrincipal);
+        builder.setType(AclEntry.Type.ALLOW);
+        builder.setPermissions(EnumSet.of(AclEntryPermission.READ, AclEntryPermission.WRITE));
+        builder.setFlags(EnumSet.of(AclEntryFlag.FILE_INHERIT, AclEntryFlag.DIRECTORY_INHERIT));
+        AclEntry aclEntry = builder.build();
+        System.out.println(aclEntry);
+    }
+}
+```
+
+In this code snippet, we first create a new `Builder` object using `AclEntry.newBuilder(userPrincipal)`. Then we set the type of the ACL entry to `ALLOW` using `builder.setType(AclEntry.Type.ALLOW)`. We set the permissions for the ACL entry to `READ` and `WRITE` using `builder.setPermissions(EnumSet.of(AclEntryPermission.READ, AclEntryPermission.WRITE))`. We set the flags for the ACL entry to `FILE_INHERIT` and `DIRECTORY_INHERIT` using `builder.setFlags(EnumSet.of(AclEntryFlag.FILE_INHERIT, AclEntryFlag.DIRECTORY_INHERIT))`. Finally, we build the ACL entry using `builder.build()` and print it out.
+================================================================
+
+Sample: 1 PosixFilePermissions
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Set<PosixFilePermission> fromString(String string) from java.nio.file.attribute.PosixFilePermissions
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is the code snippet for the `Set<PosixFilePermission> fromString(String string)` method:
+
+```java
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        String permString = "rwxr-xr-x";
+        Set<PosixFilePermission> perms = PosixFilePermissions.fromString(permString);
+        System.out.println(perms);
+    }
+}
+```
+
+In this code snippet, we are creating a string `permString` that represents the permissions we want to convert to a `Set<PosixFilePermission>`. We then use the `fromString` method from `PosixFilePermissions` to convert the string to a set of `PosixFilePermission` objects. Finally, we print out the set of permissions.
+
+Please note that the `fromString` method throws `IllegalArgumentException` if the string is not a valid set of permissions.
+================================================================
+
+Sample: 2 UserPrincipalLookupService
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use UserPrincipal lookupPrincipalByName(String name) from java.nio.file.attribute.UserPrincipalLookupService
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `UserPrincipalLookupService` interface is not part of the standard Java API. It is a proprietary interface used by the Java NIO.2 File System implementation.
+
+The `lookupPrincipalByName(String name)` method is used to retrieve a `UserPrincipal` object for the specified user name.
+
+However, the `UserPrincipal` interface is also not part of the standard Java API. It is a proprietary interface used by the Java NIO.2 File System implementation.
+
+So, you cannot use this method in a standard Java program.
+
+If you are using a Java NIO.2 File System implementation, you can use this method to retrieve a `UserPrincipal` object for the specified user name.
+
+If you are using a different type of file system, or if you are using a different programming language, the method may not exist or may be named differently.
+
+In any case, you should refer to the documentation or source code of the specific implementation you are using.
+================================================================
+

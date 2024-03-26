@@ -1,0 +1,46 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,SerialArray,1,boolean add(E e),False
+0,SerialArray,2,"void add(int index, E element)",False
+0,SerialArray,3,boolean addAll(Collection<? extends E> c),False
+0,SerialArray,4,"boolean addAll(int index, Collection<? extends E> c)",False
+0,SerialArray,5,void clear(),False
+1,SerialBlob,1,Blob getBlob(),False
+1,SerialBlob,2,void setBlob(Blob blob),False
+1,SerialBlob,3,void truncate(long len),True
+1,SerialBlob,4,void free(),True
+1,SerialBlob,5,InputStream getBinaryStream(),True
+2,SerialClob,1,void setString(String str),False
+2,SerialClob,2,String getString(),False
+2,SerialClob,3,Reader getCharacterStream(),True
+2,SerialClob,4,Writer setCharacterStream(Reader reader),False
+2,SerialClob,5,void truncate(long len),True
+3,SerialDatalink,1,boolean add(E e),False
+3,SerialDatalink,2,E get(int index),False
+3,SerialDatalink,3,E remove(int index),False
+3,SerialDatalink,4,int size(),False
+3,SerialDatalink,5,"List<E> subList(int fromIndex, int toIndex)",False
+4,SerialJavaObject,1,boolean add(E e),False
+4,SerialJavaObject,2,void clear(),False
+4,SerialJavaObject,3,boolean contains(Object o),False
+4,SerialJavaObject,4,E get(int index),False
+4,SerialJavaObject,5,int indexOf(Object o),False
+5,SerialRef,1,boolean add(E e),False
+5,SerialRef,2,void clear(),False
+5,SerialRef,3,boolean contains(Object o),False
+5,SerialRef,4,E get(int index),False
+5,SerialRef,5,int indexOf(Object o),False
+6,SerialStruct,1,boolean add(E e),False
+6,SerialStruct,2,void clear(),False
+6,SerialStruct,3,boolean contains(Object o),False
+6,SerialStruct,4,E get(int index),False
+6,SerialStruct,5,int indexOf(Object o),False
+7,SQLInputImpl,1,boolean read(),False
+7,SQLInputImpl,2,boolean read(int rowNumber),False
+7,SQLInputImpl,3,"boolean read(int rowNumber, int columnNumber)",False
+7,SQLInputImpl,4,"boolean read(int rowNumber, int columnNumber, int length)",False
+7,SQLInputImpl,5,"boolean read(int rowNumber, int columnNumber, int length, int offset)",False
+8,SQLOutputImpl,1,boolean add(E e),False
+8,SQLOutputImpl,2,"void writeArray(SQLOutput out, String table, String col)",False
+8,SQLOutputImpl,3,"void writeArray(SQLOutput out, String table, String col, int start, int length)",False
+8,SQLOutputImpl,4,void writeRow(SQLOutput out),False
+8,SQLOutputImpl,5,"void writeRow(SQLOutput out, int start, int length)",False

@@ -1,0 +1,245 @@
+Sample: 0 Buffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.Buffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int capacity()`: This method returns the number of elements that can be held in this buffer.
+
+2. `Buffer flip()`: This method repositions this buffer's position at zero and its limit at the current position.
+
+3. `Buffer clear()`: This method clears this buffer. The position is set to zero, the limit is set to the capacity, and the mark is discarded.
+
+4. `Buffer rewind()`: This method repositions this buffer's position to zero.
+
+5. `Buffer hasRemaining()`: This method returns true if, and only if, there are any remaining elements between the current position and the limit.
+================================================================
+
+Sample: 1 ByteBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.ByteBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int capacity()`: This method returns the number of elements that can be held in this buffer.
+2. `int position()`: This method returns the current position within this buffer.
+3. `Buffer put(byte b)`: This method puts the byte into this buffer at the current position, and then increments the position.
+4. `Buffer flip()`: This method rewinds this buffer. The position is set to zero and the limit is set to the current position.
+5. `Buffer get(byte[] dst, int offset, int length)`: This method attempts to get the bytes from this buffer into the specified destination array.
+================================================================
+
+Sample: 2 ByteOrder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.ByteOrder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ByteOrder littleEndian()`: This method returns the ByteOrder value representing the little-endian byte order.
+
+2. `ByteOrder bigEndian()`: This method returns the ByteOrder value representing the big-endian byte order.
+
+3. `ByteOrder nativeOrder()`: This method returns the ByteOrder of the underlying system.
+
+4. `ByteOrder order()`: This method returns the current ByteOrder.
+
+5. `ByteOrder reverse()`: This method returns the ByteOrder with bytes in reversed order.
+================================================================
+
+Sample: 3 CharBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.CharBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CharBuffer get(int index)`: This method returns the character at the specified position in this buffer.
+
+2. `CharBuffer put(int index, char b)`: This method replaces the character at the specified position in this buffer with the specified character.
+
+3. `CharBuffer flip()`: This method limits this buffer's capacity to the current position and then resets the position to zero.
+
+4. `CharBuffer rewind()`: This method resets the position to zero and the mark to -1.
+
+5. `CharBuffer clear()`: This method resets this buffer. The position is set to zero, the limit is set to the capacity, and the mark is discarded.
+================================================================
+
+Sample: 4 DoubleBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.DoubleBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DoubleBuffer put(double x)`: This method puts the double value into this buffer at the current position, and then increments the position.
+
+2. `DoubleBuffer get()`: This method gets the double value at the current position in this buffer and then increments the position.
+
+3. `DoubleBuffer get(double[] dst, int offset, int length)`: This method attempts to get the double values at the current position in this buffer into the dst array starting at the offset, and then increments the position by length.
+
+4. `DoubleBuffer asReadOnlyBuffer()`: This method creates a read-only view of this buffer.
+
+5. `DoubleBuffer duplicate()`: This method creates a new buffer that is a duplicate of this buffer.
+================================================================
+
+Sample: 5 FloatBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.FloatBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FloatBuffer asFloatBuffer()`: This method returns a new FloatBuffer whose content is this buffer.
+2. `FloatBuffer compact()`: This method discards the elements that have been read from this buffer and compacts the rest of the elements into the beginning of the buffer.
+3. `FloatBuffer duplicate()`: This method creates a new buffer that is a duplicate of this buffer.
+4. `FloatBuffer flip()`: This method flips this buffer.
+5. `FloatBuffer get(int index)`: This method returns the float at the specified index.
+6. `FloatBuffer get()`: This method returns the float at the current position.
+7. `FloatBuffer limit(int newLimit)`: This method sets the limit of this buffer to the new given limit.
+8. `FloatBuffer mark()`: This method sets the mark to the current position.
+9. `FloatBuffer position(int newPosition)`: This method sets the position to the new given position.
+10. `FloatBuffer put(int index, float x)`: This method puts the float into this buffer at the specified index.
+11. `FloatBuffer put(float x)`: This method puts the float into this buffer at the current position.
+12. `FloatBuffer rewind()`: This method resets the position to zero.
+13. `FloatBuffer slice()`: This method creates a new buffer that is a slice of this buffer.
+14. `FloatBuffer clear()`: This method clears this buffer.
+15. `FloatBuffer mark()`: This method resets the buffer's mark to its position.
+16. `FloatBuffer remaining()`: This method returns the number of elements remaining in this buffer.
+17. `FloatBuffer hasRemaining()`: This method tests if there are any remaining elements in this buffer.
+18. `FloatBuffer get(FloatBuffer dst)`: This method gets the elements from this buffer into the specified destination buffer.
+19. `FloatBuffer put(FloatBuffer src)`: This method puts the elements from the specified source buffer into this buffer.
+20. `FloatBuffer compact(FloatBuffer dst)`: This method compacts the elements of this buffer into the specified destination buffer.
+================================================================
+
+Sample: 6 IntBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.IntBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int capacity()`: This method returns the number of elements that can be held in this buffer.
+2. `IntBuffer duplicate()`: This method creates a new buffer that is a duplicate of this buffer.
+3. `int get()`: This method retrieves the int value at the current position, and then increments the position.
+4. `int get(int index)`: This method retrieves the int value at the specified index.
+5. `IntBuffer limit(int newLimit)`: This method sets the limit of this buffer to the current position, and then resets the position to zero.
+================================================================
+
+Sample: 7 LongBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.LongBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long get()`: This method is used to get the current element pointed by the position.
+2. `long get(int index)`: This method is used to get the element at the specified position in the buffer.
+3. `LongBuffer put(long x)`: This method is used to put the specified long value into this buffer at the current position, and then increment the position.
+4. `LongBuffer put(int index, long x)`: This method is used to put the specified long value at the given index in the buffer.
+5. `LongBuffer flip()`: This method is used to flip this buffer. The limit is set to the current position and then the position is set to zero.
+================================================================
+
+Sample: 8 MappedByteBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.MappedByteBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MappedByteBuffer get(int index)`: This method returns the byte at the specified position in this buffer.
+
+2. `MappedByteBuffer put(int index, byte b)`: This method replaces the byte at the specified position in this buffer with the specified byte.
+
+3. `MappedByteBuffer get(byte[] dst, int offset, int length)`: This method attempts to get the remaining bytes from this buffer into the specified destination array.
+
+4. `MappedByteBuffer put(byte[] src, int offset, int length)`: This method attempts to put the remaining bytes from the specified source array into this buffer.
+
+5. `MappedByteBuffer slice()`: This method creates a new mapped byte buffer that is a slice of this buffer.
+================================================================
+
+Sample: 9 ShortBuffer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.ShortBuffer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `short get()`: This method is used to get the current element pointed by the position.
+2. `short get(int index)`: This method is used to get the element at the specified position in the buffer.
+3. `ShortBuffer put(short x)`: This method is used to put the specified short into this buffer at the current position, and then increment the position.
+4. `ShortBuffer put(int index, short x)`: This method is used to put the specified short into this buffer at the given index.
+5. `ShortBuffer flip()`: This method is used to flip this buffer. The limit is set to the current position and then the position is set to zero.
+================================================================
+

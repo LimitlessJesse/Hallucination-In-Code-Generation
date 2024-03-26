@@ -1,0 +1,61 @@
+Sample: DefaultHandler_2
+----------------------------------------------------------------
+output:
+./org_xml_sax_helpers/javaFiles/DefaultHandler_2.java:15: error: unreported exception SAXException; must be caught or declared to be thrown
+        handler.endDocument();
+                           ^
+1 error
+
+
+================================================================
+
+Sample: DefaultHandler_4
+----------------------------------------------------------------
+output:
+./org_xml_sax_helpers/javaFiles/DefaultHandler_4.java:5: error: class MyHandler is public, should be declared in a file named MyHandler.java
+public class MyHandler extends DefaultHandler {
+       ^
+1 error
+
+
+================================================================
+
+Sample: LocatorImpl_1
+----------------------------------------------------------------
+stdout:
+10
+
+================================================================
+
+Sample: LocatorImpl_2
+----------------------------------------------------------------
+output:
+./org_xml_sax_helpers/javaFiles/LocatorImpl_2.java:3: error: cannot find symbol
+        MyLocatorImpl locator = new MyLocatorImpl();
+        ^
+  symbol:   class MyLocatorImpl
+  location: class LocatorImpl_2
+./org_xml_sax_helpers/javaFiles/LocatorImpl_2.java:3: error: cannot find symbol
+        MyLocatorImpl locator = new MyLocatorImpl();
+                                    ^
+  symbol:   class MyLocatorImpl
+  location: class LocatorImpl_2
+2 errors
+
+
+================================================================
+
+Sample: LocatorImpl_3
+----------------------------------------------------------------
+stdout:
+publicId
+
+================================================================
+
+Sample: LocatorImpl_4
+----------------------------------------------------------------
+stdout:
+file.xml
+
+================================================================
+

@@ -1,0 +1,269 @@
+Sample: 0 IIORegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.IIORegistry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+7. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+9. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+12. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+13. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+14. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+15. `int size()`: This method returns the number of elements in this list.
+16. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+17. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+18. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+19. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+20. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+================================================================
+
+Sample: 1 IIOServiceProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.IIOServiceProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 2 ImageInputStreamSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageInputStreamSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canDecodeInput(Object source)`: This method returns true if the ImageInputStreamSpi can decode the specified source.
+
+2. `ImageInputStream createInputStreamInstance(Object source, boolean useCache, File cacheDirectory)`: This method creates a new ImageInputStream instance for the specified source.
+
+3. `String getDescription()`: This method returns a description of this ImageInputStreamSpi.
+
+4. `String getSpiVersion()`: This method returns the version of this ImageInputStreamSpi.
+
+5. `String[] getMIMETypes()`: This method returns an array of MIME types that this ImageInputStreamSpi can decode.
+================================================================
+
+Sample: 3 ImageOutputStreamSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageOutputStreamSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canEncodeImage(String imageType)`: This method returns true if the ImageOutputStreamSpi can encode images of the specified type.
+
+2. `ImageOutputStream createOutputStreamInstance()`: This method creates a new ImageOutputStream instance.
+
+3. `String getDescription()`: This method returns a description of the ImageOutputStreamSpi.
+
+4. `String getOutputType()`: This method returns the output type of the ImageOutputStreamSpi.
+
+5. `String getRegistryId()`: This method returns the registry ID of the ImageOutputStreamSpi.
+================================================================
+
+Sample: 4 ImageReaderSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageReaderSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canDecodeInput(Object input)`: This method returns true if the ImageReader can decode the specified input.
+
+2. `Iterator<ImageReader> createIterator(Object input)`: This method returns an iterator over the ImageReaders that can decode the specified input.
+
+3. `String getDescription()`: This method returns a description of this ImageReaderSPI.
+
+4. `String getExtension()`: This method returns the file extension for this ImageReaderSPI.
+
+5. `String getMIMEType()`: This method returns the MIME type for this ImageReaderSPI.
+
+6. `String getName()`: This method returns the name of this ImageReaderSPI.
+
+7. `String getVersion()`: This method returns the version of this ImageReaderSPI.
+
+8. `boolean isInputAcceptable(Object input)`: This method returns true if the ImageReader can decode the specified input.
+
+9. `boolean isOutputAcceptable(Object output)`: This method returns true if the ImageReader can encode the specified output.
+
+10. `boolean isMIMETypeAcceptable(String mimeType)`: This method returns true if the ImageReader can decode the specified MIME type.
+
+11. `boolean isExtensionAcceptable(String extension)`: This method returns true if the ImageReader can decode the specified file extension.
+
+12. `boolean isOutputAcceptable(Object output, String mimeType)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type.
+
+13. `boolean isOutputAcceptable(Object output, String mimeType, String extension)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type and file extension.
+
+14. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, and version.
+
+15. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, and vendor.
+
+16. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, vendor, and platform.
+
+17. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, vendor, platform, and class name.
+
+18. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, vendor, platform, class name, and location.
+
+19. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location, String spec)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, vendor, platform, class name, location, and specification.
+
+20. `boolean isOutputAcceptable(Object output, String mimeType, String extension, String version, String vendor, String platform, String classname, String location, String spec, String specVersion)`: This method returns true if the ImageReader can encode the specified output with the specified MIME type, file extension, version, vendor, platform, class name, location, specification, and specification version.
+================================================================
+
+Sample: 5 ImageReaderWriterSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageReaderWriterSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canDecodeInput(Object source)`: This method returns true if the ImageReader can decode the specified input.
+
+2. `Iterator<ImageReader> getImageReaders(ImageReaderSpi spi, Object input)`: This method returns an iterator over the ImageReaders that can decode the specified input.
+
+3. `Iterator<ImageWriter> getImageWriters(ImageWriterSpi spi, int outputType)`: This method returns an iterator over the ImageWriters that can encode the specified output type.
+
+4. `Iterator<ImageReader> getImageReaders(ImageReaderSpi spi, Object input, int index, int hint)`: This method returns an iterator over the ImageReaders that can decode the specified input.
+
+5. `Iterator<ImageWriter> getImageWriters(ImageWriterSpi spi, int outputType, int index, int hint)`: This method returns an iterator over the ImageWriters that can encode the specified output type.
+================================================================
+
+Sample: 6 ImageTranscoderSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageTranscoderSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 7 ImageWriterSpi
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ImageWriterSpi package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canWrite(ImageOutputStream out, ImageWriteParam param)`: This method checks if the ImageWriter can write the specified ImageOutputStream.
+
+2. `String getDescription(Locale locale)`: This method returns a description of the ImageWriter in the specified locale.
+
+3. `String getFormatName()`: This method returns the format name of the ImageWriter.
+
+4. `String[] getOutputTypes(int index)`: This method returns the output types of the ImageWriter at the specified index.
+
+5. `ImageWriter createWriterInstance(Object extension)`: This method creates a new ImageWriter instance with the specified extension.
+================================================================
+
+Sample: 8 ServiceRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.spi.ServiceRegistry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+7. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+9. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+12. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+13. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+14. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+15. `int size()`: This method returns the number of elements in this list.
+16. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+17. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+18. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+19. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+20. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+================================================================
+

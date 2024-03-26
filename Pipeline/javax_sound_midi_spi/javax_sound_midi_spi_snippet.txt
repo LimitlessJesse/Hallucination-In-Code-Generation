@@ -1,0 +1,116 @@
+Sample: 0 MidiFileReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Sequence getSequence(File file) throws IOException, InvalidMidiDataException from javax.sound.midi.spi.MidiFileReader
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `getSequence(File file)` method from `javax.sound.midi.spi.MidiFileReader`:
+
+```java
+import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            File midiFile = new File("path_to_your_midi_file");
+            Sequence sequence = MidiSystem.getSequence(midiFile);
+            System.out.println("Sequence loaded successfully!");
+        } catch (IOException | InvalidMidiDataException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, replace `"path_to_your_midi_file"` with the actual path to your MIDI file.
+
+This code will load the MIDI file and print a success message if the file is loaded successfully. If an error occurs (like the file does not exist or is not a valid MIDI file), the `IOException` or `InvalidMidiDataException` will be caught and the error message will be printed to the console.
+================================================================
+
+Sample: 1 MidiFileReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Sequence getSequence(URL url) throws IOException, InvalidMidiDataException from javax.sound.midi.spi.MidiFileReader
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getSequence(URL url)` method from `javax.sound.midi.spi.MidiFileReader`:
+
+```java
+import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import java.io.IOException;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("http://example.com/midi.mid");
+            Sequence sequence = MidiSystem.getSequence(url);
+            System.out.println(sequence);
+        } catch (IOException | InvalidMidiDataException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a URL object pointing to a MIDI file. We then call `MidiSystem.getSequence(url)` to get a `Sequence` object representing the MIDI file.
+
+Please replace `"http://example.com/midi.mid"` with the actual URL of your MIDI file.
+
+Note: This code assumes that you have the necessary permissions to access the URL and that the URL points to a valid MIDI file. If the URL is not valid or you do not have the necessary permissions, the `getSequence(URL url)` method will throw an `IOException`. Similarly, if the MIDI file is not valid, the `getSequence(URL url)` method will throw an `InvalidMidiDataException`. These exceptions are caught and printed to the console in the `main` method.
+================================================================
+

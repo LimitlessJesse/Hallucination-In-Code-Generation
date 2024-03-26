@@ -1,0 +1,150 @@
+ClassName,Method,Return Type
+AbstractOwnableSynchronizer,getExclusiveOwnerThread(),protected Thread
+AbstractOwnableSynchronizer,setExclusiveOwnerThread(Thread thread),protected void
+AbstractQueuedLongSynchronizer,acquire(long arg),void
+AbstractQueuedLongSynchronizer,acquireInterruptibly(long arg),void
+AbstractQueuedLongSynchronizer,acquireShared(long arg),void
+AbstractQueuedLongSynchronizer,acquireSharedInterruptibly(long arg),void
+AbstractQueuedLongSynchronizer,"compareAndSetState(long expect, long update)",protected boolean
+AbstractQueuedLongSynchronizer,getExclusiveQueuedThreads(),Collection<Thread>
+AbstractQueuedLongSynchronizer,getFirstQueuedThread(),Thread
+AbstractQueuedLongSynchronizer,getQueuedThreads(),Collection<Thread>
+AbstractQueuedLongSynchronizer,getQueueLength(),int
+AbstractQueuedLongSynchronizer,getSharedQueuedThreads(),Collection<Thread>
+AbstractQueuedLongSynchronizer,getState(),protected long
+AbstractQueuedLongSynchronizer,getWaitingThreads(AbstractQueuedLongSynchronizer.ConditionObject condition),Collection<Thread>
+AbstractQueuedLongSynchronizer,getWaitQueueLength(AbstractQueuedLongSynchronizer.ConditionObject condition),int
+AbstractQueuedLongSynchronizer,hasContended(),boolean
+AbstractQueuedLongSynchronizer,hasQueuedPredecessors(),boolean
+AbstractQueuedLongSynchronizer,hasQueuedThreads(),boolean
+AbstractQueuedLongSynchronizer,hasWaiters(AbstractQueuedLongSynchronizer.ConditionObject condition),boolean
+AbstractQueuedLongSynchronizer,isHeldExclusively(),protected boolean
+AbstractQueuedLongSynchronizer,isQueued(Thread thread),boolean
+AbstractQueuedLongSynchronizer,owns(AbstractQueuedLongSynchronizer.ConditionObject condition),boolean
+AbstractQueuedLongSynchronizer,release(long arg),boolean
+AbstractQueuedLongSynchronizer,releaseShared(long arg),boolean
+AbstractQueuedLongSynchronizer,setState(long newState),protected void
+AbstractQueuedLongSynchronizer,toString(),String
+AbstractQueuedLongSynchronizer,tryAcquire(long arg),protected boolean
+AbstractQueuedLongSynchronizer,"tryAcquireNanos(long arg, long nanosTimeout)",boolean
+AbstractQueuedLongSynchronizer,tryAcquireShared(long arg),protected long
+AbstractQueuedLongSynchronizer,"tryAcquireSharedNanos(long arg, long nanosTimeout)",boolean
+AbstractQueuedLongSynchronizer,tryRelease(long arg),protected boolean
+AbstractQueuedLongSynchronizer,tryReleaseShared(long arg),protected boolean
+AbstractQueuedSynchronizer,acquire(int arg),void
+AbstractQueuedSynchronizer,acquireInterruptibly(int arg),void
+AbstractQueuedSynchronizer,acquireShared(int arg),void
+AbstractQueuedSynchronizer,acquireSharedInterruptibly(int arg),void
+AbstractQueuedSynchronizer,"compareAndSetState(int expect, int update)",protected boolean
+AbstractQueuedSynchronizer,getExclusiveQueuedThreads(),Collection<Thread>
+AbstractQueuedSynchronizer,getFirstQueuedThread(),Thread
+AbstractQueuedSynchronizer,getQueuedThreads(),Collection<Thread>
+AbstractQueuedSynchronizer,getQueueLength(),int
+AbstractQueuedSynchronizer,getSharedQueuedThreads(),Collection<Thread>
+AbstractQueuedSynchronizer,getState(),protected int
+AbstractQueuedSynchronizer,getWaitingThreads(AbstractQueuedSynchronizer.ConditionObject condition),Collection<Thread>
+AbstractQueuedSynchronizer,getWaitQueueLength(AbstractQueuedSynchronizer.ConditionObject condition),int
+AbstractQueuedSynchronizer,hasContended(),boolean
+AbstractQueuedSynchronizer,hasQueuedPredecessors(),boolean
+AbstractQueuedSynchronizer,hasQueuedThreads(),boolean
+AbstractQueuedSynchronizer,hasWaiters(AbstractQueuedSynchronizer.ConditionObject condition),boolean
+AbstractQueuedSynchronizer,isHeldExclusively(),protected boolean
+AbstractQueuedSynchronizer,isQueued(Thread thread),boolean
+AbstractQueuedSynchronizer,owns(AbstractQueuedSynchronizer.ConditionObject condition),boolean
+AbstractQueuedSynchronizer,release(int arg),boolean
+AbstractQueuedSynchronizer,releaseShared(int arg),boolean
+AbstractQueuedSynchronizer,setState(int newState),protected void
+AbstractQueuedSynchronizer,toString(),String
+AbstractQueuedSynchronizer,tryAcquire(int arg),protected boolean
+AbstractQueuedSynchronizer,"tryAcquireNanos(int arg, long nanosTimeout)",boolean
+AbstractQueuedSynchronizer,tryAcquireShared(int arg),protected int
+AbstractQueuedSynchronizer,"tryAcquireSharedNanos(int arg, long nanosTimeout)",boolean
+AbstractQueuedSynchronizer,tryRelease(int arg),protected boolean
+AbstractQueuedSynchronizer,tryReleaseShared(int arg),protected boolean
+LockSupport,getBlocker(Thread t),static Object
+LockSupport,park(),static void
+LockSupport,park(Object blocker),static void
+LockSupport,parkNanos(long nanos),static void
+LockSupport,"parkNanos(Object blocker, long nanos)",static void
+LockSupport,parkUntil(long deadline),static void
+LockSupport,"parkUntil(Object blocker, long deadline)",static void
+LockSupport,unpark(Thread thread),static void
+ReentrantLock,getHoldCount(),int
+ReentrantLock,getOwner(),protected Thread
+ReentrantLock,getQueuedThreads(),protected Collection<Thread>
+ReentrantLock,getQueueLength(),int
+ReentrantLock,getWaitingThreads(Condition condition),protected Collection<Thread>
+ReentrantLock,getWaitQueueLength(Condition condition),int
+ReentrantLock,hasQueuedThread(Thread thread),boolean
+ReentrantLock,hasQueuedThreads(),boolean
+ReentrantLock,hasWaiters(Condition condition),boolean
+ReentrantLock,isFair(),boolean
+ReentrantLock,isHeldByCurrentThread(),boolean
+ReentrantLock,isLocked(),boolean
+ReentrantLock,lock(),void
+ReentrantLock,lockInterruptibly(),void
+ReentrantLock,newCondition(),Condition
+ReentrantLock,toString(),String
+ReentrantLock,tryLock(),boolean
+ReentrantLock,"tryLock(long timeout, TimeUnit unit)",boolean
+ReentrantLock,unlock(),void
+ReentrantReadWriteLock,getOwner(),protected Thread
+ReentrantReadWriteLock,getQueuedReaderThreads(),protected Collection<Thread>
+ReentrantReadWriteLock,getQueuedThreads(),protected Collection<Thread>
+ReentrantReadWriteLock,getQueuedWriterThreads(),protected Collection<Thread>
+ReentrantReadWriteLock,getQueueLength(),int
+ReentrantReadWriteLock,getReadHoldCount(),int
+ReentrantReadWriteLock,getReadLockCount(),int
+ReentrantReadWriteLock,getWaitingThreads(Condition condition),protected Collection<Thread>
+ReentrantReadWriteLock,getWaitQueueLength(Condition condition),int
+ReentrantReadWriteLock,getWriteHoldCount(),int
+ReentrantReadWriteLock,hasQueuedThread(Thread thread),boolean
+ReentrantReadWriteLock,hasQueuedThreads(),boolean
+ReentrantReadWriteLock,hasWaiters(Condition condition),boolean
+ReentrantReadWriteLock,isFair(),boolean
+ReentrantReadWriteLock,isWriteLocked(),boolean
+ReentrantReadWriteLock,isWriteLockedByCurrentThread(),boolean
+ReentrantReadWriteLock,readLock(),ReentrantReadWriteLock.ReadLock
+ReentrantReadWriteLock,toString(),String
+ReentrantReadWriteLock,writeLock(),ReentrantReadWriteLock.WriteLock
+ReentrantReadWriteLock.ReadLock,lock(),void
+ReentrantReadWriteLock.ReadLock,lockInterruptibly(),void
+ReentrantReadWriteLock.ReadLock,newCondition(),Condition
+ReentrantReadWriteLock.ReadLock,toString(),String
+ReentrantReadWriteLock.ReadLock,tryLock(),boolean
+ReentrantReadWriteLock.ReadLock,"tryLock(long timeout, TimeUnit unit)",boolean
+ReentrantReadWriteLock.ReadLock,unlock(),void
+ReentrantReadWriteLock.WriteLock,getHoldCount(),int
+ReentrantReadWriteLock.WriteLock,isHeldByCurrentThread(),boolean
+ReentrantReadWriteLock.WriteLock,lock(),void
+ReentrantReadWriteLock.WriteLock,lockInterruptibly(),void
+ReentrantReadWriteLock.WriteLock,newCondition(),Condition
+ReentrantReadWriteLock.WriteLock,toString(),String
+ReentrantReadWriteLock.WriteLock,tryLock(),boolean
+ReentrantReadWriteLock.WriteLock,"tryLock(long timeout, TimeUnit unit)",boolean
+ReentrantReadWriteLock.WriteLock,unlock(),void
+StampedLock,asReadLock(),Lock
+StampedLock,asReadWriteLock(),ReadWriteLock
+StampedLock,asWriteLock(),Lock
+StampedLock,getReadLockCount(),int
+StampedLock,isReadLocked(),boolean
+StampedLock,isWriteLocked(),boolean
+StampedLock,readLock(),long
+StampedLock,readLockInterruptibly(),long
+StampedLock,toString(),String
+StampedLock,tryConvertToOptimisticRead(long stamp),long
+StampedLock,tryConvertToReadLock(long stamp),long
+StampedLock,tryConvertToWriteLock(long stamp),long
+StampedLock,tryOptimisticRead(),long
+StampedLock,tryReadLock(),long
+StampedLock,"tryReadLock(long time, TimeUnit unit)",long
+StampedLock,tryUnlockRead(),boolean
+StampedLock,tryUnlockWrite(),boolean
+StampedLock,tryWriteLock(),long
+StampedLock,"tryWriteLock(long time, TimeUnit unit)",long
+StampedLock,unlock(long stamp),void
+StampedLock,unlockRead(long stamp),void
+StampedLock,unlockWrite(long stamp),void
+StampedLock,validate(long stamp),boolean
+StampedLock,writeLock(),long
+StampedLock,writeLockInterruptibly(),long

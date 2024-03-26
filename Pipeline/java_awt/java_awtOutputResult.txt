@@ -1,0 +1,824 @@
+Sample: AlphaComposite_1
+----------------------------------------------------------------
+stderr:
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1310)
+	at AlphaComposite_1.main(AlphaComposite_1.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BasicStroke_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/BasicStroke_2.java:11: error: cannot find symbol
+        float lineWidth = stroke.createStrokedShape(shape).getLineWidth();
+                                                          ^
+  symbol:   method getLineWidth()
+  location: interface Shape
+1 error
+
+
+================================================================
+
+Sample: BasicStroke_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.awt.Graphics2D.setStroke(java.awt.Stroke)" because "<local2>" is null
+	at BasicStroke_3.main(BasicStroke_3.java:11)
+
+================================================================
+
+Sample: BasicStroke_4
+----------------------------------------------------------------
+stdout:
+Line join style: 0
+
+================================================================
+
+Sample: BasicStroke_5
+----------------------------------------------------------------
+stdout:
+java.awt.geom.Path2D$Double@768b970c
+
+================================================================
+
+Sample: Button_2
+----------------------------------------------------------------
+stdout:
+Click me
+
+stderr:
+Note: ./java_awt/javaFiles/Button_2.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: Button_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Button.<init>(Button.java:161)
+	at Button_3.main(Button_3.java:5)
+
+================================================================
+
+Sample: Canvas_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Canvas_2.java:10: error: cannot find symbol
+        Main canvas = new Main();
+        ^
+  symbol:   class Main
+  location: class Canvas_2
+./java_awt/javaFiles/Canvas_2.java:10: error: cannot find symbol
+        Main canvas = new Main();
+                          ^
+  symbol:   class Main
+  location: class Canvas_2
+2 errors
+
+
+================================================================
+
+Sample: CardLayout_1
+----------------------------------------------------------------
+stderr:
+Note: ./java_awt/javaFiles/CardLayout_1.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Label.<init>(Label.java:155)
+	at java.desktop/java.awt.Label.<init>(Label.java:137)
+	at CardLayout_1.main(CardLayout_1.java:12)
+
+================================================================
+
+Sample: CardLayout_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/CardLayout_2.java:7: error: Component is abstract; cannot be instantiated
+        Component component = new Component();
+                              ^
+1 error
+
+
+================================================================
+
+Sample: CardLayout_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at CardLayout_4.main(CardLayout_4.java:10)
+
+================================================================
+
+Sample: CardLayout_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at CardLayout_5.main(CardLayout_5.java:10)
+
+================================================================
+
+Sample: Checkbox_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Checkbox_2.java:6: error: cannot find symbol
+        checkbox.setSelected(true);
+                ^
+  symbol:   method setSelected(boolean)
+  location: variable checkbox of type Checkbox
+1 error
+
+
+================================================================
+
+Sample: Checkbox_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Checkbox.<init>(Checkbox.java:207)
+	at java.desktop/java.awt.Checkbox.<init>(Checkbox.java:233)
+	at Checkbox_3.main(Checkbox_3.java:6)
+
+================================================================
+
+Sample: Checkbox_4
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Checkbox_4.java:11: error: cannot find symbol
+        Checkbox[] selectedCheckboxes = group.getCheckboxes();
+                                             ^
+  symbol:   method getCheckboxes()
+  location: variable group of type CheckboxGroup
+1 error
+
+
+================================================================
+
+Sample: CheckboxGroup_5
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/CheckboxGroup_5.java:30: error: cannot find symbol
+                Checkbox[] selectedCheckboxes = cbg.getSelectedCheckboxes();
+                                                   ^
+  symbol:   method getSelectedCheckboxes()
+  location: variable cbg of type CheckboxGroup
+1 error
+
+
+================================================================
+
+Sample: CheckboxMenuItem_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.MenuComponent.<init>(MenuComponent.java:185)
+	at java.desktop/java.awt.MenuItem.<init>(MenuItem.java:226)
+	at java.desktop/java.awt.MenuItem.<init>(MenuItem.java:210)
+	at java.desktop/java.awt.CheckboxMenuItem.<init>(CheckboxMenuItem.java:150)
+	at java.desktop/java.awt.CheckboxMenuItem.<init>(CheckboxMenuItem.java:133)
+	at CheckboxMenuItem_2.main(CheckboxMenuItem_2.java:5)
+
+================================================================
+
+Sample: Choice_2
+----------------------------------------------------------------
+stderr:
+Note: ./java_awt/javaFiles/Choice_2.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at Choice_2.main(Choice_2.java:5)
+
+================================================================
+
+Sample: Choice_3
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Choice_3.java:20: error: cannot find symbol
+        JFrame frame = new JFrame();
+        ^
+  symbol:   class JFrame
+  location: class Choice_3
+./java_awt/javaFiles/Choice_3.java:20: error: cannot find symbol
+        JFrame frame = new JFrame();
+                           ^
+  symbol:   class JFrame
+  location: class Choice_3
+2 errors
+
+
+================================================================
+
+Sample: Choice_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Choice.<init>(Choice.java:134)
+	at Choice_4.main(Choice_4.java:5)
+
+================================================================
+
+Sample: Choice_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Choice.<init>(Choice.java:134)
+	at Choice_5.main(Choice_5.java:5)
+
+================================================================
+
+Sample: Color_1
+----------------------------------------------------------------
+stdout:
+Blue component: 255
+
+================================================================
+
+Sample: Color_2
+----------------------------------------------------------------
+stdout:
+Green component: 128
+
+================================================================
+
+Sample: Color_3
+----------------------------------------------------------------
+stdout:
+Red component: 255
+
+================================================================
+
+Sample: Color_4
+----------------------------------------------------------------
+stdout:
+RGB value: ff64c896
+
+================================================================
+
+Sample: Color_5
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: Component_1
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Component_1.java:5: error: invalid method declaration; return type required
+    public Main() {
+           ^
+1 error
+
+
+================================================================
+
+Sample: Component_2
+----------------------------------------------------------------
+================================================================
+
+Sample: Component_3
+----------------------------------------------------------------
+================================================================
+
+Sample: Component_4
+----------------------------------------------------------------
+================================================================
+
+Sample: Desktop_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Desktop_2.java:11: error: exception AWTException is never thrown in body of corresponding try statement
+        } catch (URISyntaxException | java.awt.AWTException e) {
+                                              ^
+./java_awt/javaFiles/Desktop_2.java:10: error: unreported exception IOException; must be caught or declared to be thrown
+            desktop.browse(uri);
+                          ^
+2 errors
+
+
+================================================================
+
+Sample: Desktop_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.Desktop.getDesktop(Desktop.java:302)
+	at Desktop_3.main(Desktop_3.java:9)
+
+================================================================
+
+Sample: Dialog_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at Dialog_4.main(Dialog_4.java:8)
+
+================================================================
+
+Sample: Dimension_3
+----------------------------------------------------------------
+stdout:
+Width: 100.0
+Height: 200.0
+
+================================================================
+
+Sample: Dimension_4
+----------------------------------------------------------------
+stdout:
+New width: 200
+New height: 200
+
+================================================================
+
+Sample: Dimension_5
+----------------------------------------------------------------
+stdout:
+Width: 100.0
+Height: 200.0
+
+================================================================
+
+Sample: FileDialog_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FileDialog_2.main(FileDialog_2.java:6)
+
+================================================================
+
+Sample: FileDialog_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FileDialog_3.main(FileDialog_3.java:6)
+
+================================================================
+
+Sample: FileDialog_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FileDialog_5.main(FileDialog_5.java:6)
+
+================================================================
+
+Sample: FileDialog_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FileDialog_10.main(FileDialog_10.java:6)
+
+================================================================
+
+Sample: FileDialog_11
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FileDialog_11.main(FileDialog_11.java:6)
+
+================================================================
+
+Sample: FlowLayout_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at FlowLayout_4.main(FlowLayout_4.java:7)
+
+================================================================
+
+Sample: FlowLayout_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at FlowLayout_5.main(FlowLayout_5.java:7)
+
+================================================================
+
+Sample: FlowLayout_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at FlowLayout_6.main(FlowLayout_6.java:7)
+
+================================================================
+
+Sample: FlowLayout_15
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at FlowLayout_15.main(FlowLayout_15.java:7)
+
+================================================================
+
+Sample: FlowLayout_16
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Button.<init>(Button.java:161)
+	at FlowLayout_16.main(FlowLayout_16.java:9)
+
+================================================================
+
+Sample: FocusTraversalPolicy_6
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/FocusTraversalPolicy_6.java:7: error: <anonymous FocusTraversalPolicy_6$1> is not abstract and does not override abstract method getLastComponent(Container) in FocusTraversalPolicy
+        FocusTraversalPolicy policy = new FocusTraversalPolicy() {
+                                                                 ^
+1 error
+
+
+================================================================
+
+Sample: Font_3
+----------------------------------------------------------------
+stdout:
+Original Font: java.awt.Font[family=Dialog,name=Arial,style=plain,size=12]
+Larger Font: java.awt.Font[family=Dialog,name=Arial,style=plain,size=15]
+Smaller Font: java.awt.Font[family=Dialog,name=Arial,style=plain,size=10]
+
+================================================================
+
+Sample: FontMetrics_1
+----------------------------------------------------------------
+stdout:
+0
+
+================================================================
+
+Sample: FontMetrics_2
+----------------------------------------------------------------
+stdout:
+0
+
+================================================================
+
+Sample: FontMetrics_3
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/FontMetrics_3.java:9: error: cannot find symbol
+        Graphics g = ge.getDefaultScreenDevice().getDefaultConfiguration().createCompatibleGraphics(null);
+                                                                          ^
+  symbol:   method createCompatibleGraphics(<null>)
+  location: class GraphicsConfiguration
+1 error
+
+
+================================================================
+
+Sample: FontMetrics_4
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/FontMetrics_4.java:11: error: cannot find symbol
+        Graphics g = ge.getDefaultScreenDevice().getDefaultConfiguration().createCompatibleGraphics(null);
+                                                                          ^
+  symbol:   method createCompatibleGraphics(<null>)
+  location: class GraphicsConfiguration
+1 error
+
+
+================================================================
+
+Sample: Frame_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at Frame_3.main(Frame_3.java:5)
+
+================================================================
+
+Sample: Graphics_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at Graphics_1.main(Graphics_1.java:8)
+
+================================================================
+
+Sample: Graphics_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at Graphics_2.main(Graphics_2.java:8)
+
+================================================================
+
+Sample: Graphics_3
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/Graphics_3.java:7: error: Graphics2D is abstract; cannot be instantiated
+        Graphics g = new Graphics2D();
+                     ^
+1 error
+
+
+================================================================
+
+Sample: Graphics_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at Graphics_4.main(Graphics_4.java:9)
+
+================================================================
+
+Sample: Graphics_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at Graphics_5.main(Graphics_5.java:9)
+
+================================================================
+
+Sample: Graphics2D_5
+----------------------------------------------------------------
+================================================================
+
+Sample: GraphicsConfiguration_2
+----------------------------------------------------------------
+output:
+./java_awt/javaFiles/GraphicsConfiguration_2.java:6: error: cannot find symbol
+        GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration();
+                                   ^
+  symbol:   variable GraphicsEnvironment
+  location: class GraphicsConfiguration_2
+1 error
+
+
+================================================================
+
+Sample: GraphicsConfiguration_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getDefaultScreenDevice(HeadlessGraphicsEnvironment.java:58)
+	at GraphicsConfiguration_3.main(GraphicsConfiguration_3.java:8)
+
+================================================================
+
+Sample: GraphicsConfiguration_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getDefaultScreenDevice(HeadlessGraphicsEnvironment.java:58)
+	at GraphicsConfiguration_4.main(GraphicsConfiguration_4.java:7)
+
+================================================================
+
+Sample: GraphicsConfiguration_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getDefaultScreenDevice(HeadlessGraphicsEnvironment.java:58)
+	at GraphicsConfiguration_5.main(GraphicsConfiguration_5.java:8)
+
+================================================================
+
+Sample: GraphicsDevice_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_2.main(GraphicsDevice_2.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_4.main(GraphicsDevice_4.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_5.main(GraphicsDevice_5.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_7
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_7.main(GraphicsDevice_7.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_8
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_8.main(GraphicsDevice_8.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_10.main(GraphicsDevice_10.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_11
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_11.main(GraphicsDevice_11.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_13
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_13.main(GraphicsDevice_13.java:7)
+
+================================================================
+
+Sample: GraphicsDevice_14
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getScreenDevices(HeadlessGraphicsEnvironment.java:52)
+	at GraphicsDevice_14.main(GraphicsDevice_14.java:7)
+
+================================================================
+

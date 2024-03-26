@@ -1,0 +1,40 @@
+ClassName,Method,Return Type
+AbstractInterruptibleChannel,begin(),protected void
+AbstractInterruptibleChannel,close(),void
+AbstractInterruptibleChannel,end(boolean completed),protected void
+AbstractInterruptibleChannel,implCloseChannel(),protected abstract void
+AbstractInterruptibleChannel,isOpen(),boolean
+AbstractSelectableChannel,blockingLock(),Object
+AbstractSelectableChannel,configureBlocking(boolean block),SelectableChannel
+AbstractSelectableChannel,implCloseChannel(),protected void
+AbstractSelectableChannel,implCloseSelectableChannel(),protected abstract void
+AbstractSelectableChannel,implConfigureBlocking(boolean block),protected abstract void
+AbstractSelectableChannel,isBlocking(),boolean
+AbstractSelectableChannel,isRegistered(),boolean
+AbstractSelectableChannel,keyFor(Selector sel),SelectionKey
+AbstractSelectableChannel,provider(),SelectorProvider
+AbstractSelectableChannel,"register(Selector sel, int ops, Object att)",SelectionKey
+AbstractSelectionKey,cancel(),void
+AbstractSelectionKey,isValid(),boolean
+AbstractSelector,begin(),protected void
+AbstractSelector,cancelledKeys(),protected Set<SelectionKey>
+AbstractSelector,close(),void
+AbstractSelector,deregister(AbstractSelectionKey key),protected void
+AbstractSelector,end(),protected void
+AbstractSelector,implCloseSelector(),protected abstract void
+AbstractSelector,isOpen(),boolean
+AbstractSelector,provider(),SelectorProvider
+AbstractSelector,"register(AbstractSelectableChannel ch, int ops, Object att)",protected abstract SelectionKey
+AsynchronousChannelProvider,"openAsynchronousChannelGroup(ExecutorService executor, int initialSize)",abstract AsynchronousChannelGroup
+AsynchronousChannelProvider,"openAsynchronousChannelGroup(int nThreads, ThreadFactory threadFactory)",abstract AsynchronousChannelGroup
+AsynchronousChannelProvider,openAsynchronousServerSocketChannel(AsynchronousChannelGroup group),abstract AsynchronousServerSocketChannel
+AsynchronousChannelProvider,openAsynchronousSocketChannel(AsynchronousChannelGroup group),abstract AsynchronousSocketChannel
+AsynchronousChannelProvider,provider(),static AsynchronousChannelProvider
+SelectorProvider,inheritedChannel(),Channel
+SelectorProvider,openDatagramChannel(),abstract DatagramChannel
+SelectorProvider,openDatagramChannel(ProtocolFamily family),abstract DatagramChannel
+SelectorProvider,openPipe(),abstract Pipe
+SelectorProvider,openSelector(),abstract AbstractSelector
+SelectorProvider,openServerSocketChannel(),abstract ServerSocketChannel
+SelectorProvider,openSocketChannel(),abstract SocketChannel
+SelectorProvider,provider(),static SelectorProvider

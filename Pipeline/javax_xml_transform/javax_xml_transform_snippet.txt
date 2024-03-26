@@ -1,0 +1,99 @@
+Sample: 0 TransformerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use TransformerFactory newInstance() from javax.xml.transform.TransformerFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `TransformerFactory.newInstance()` method is used to create a new instance of the default TransformerFactory.
+
+Here is a complete code snippet:
+
+```java
+import javax.xml.transform.TransformerFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        TransformerFactory tf = TransformerFactory.newInstance();
+        System.out.println(tf);
+    }
+}
+```
+
+In this code, we are importing the `TransformerFactory` class from the `javax.xml.transform` package. We then create a new instance of `TransformerFactory` using the `newInstance()` method and store it in the `tf` variable. Finally, we print the `tf` variable to the console.
+
+Please note that the `javax.xml.transform` package is part of the Java XML API and is used for XML transformations. The `TransformerFactory` class is a factory for creating `Transformer` instances, which are used to perform XML transformations.
+================================================================
+
+Sample: 1 TransformerFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Transformer newTransformer() from javax.xml.transform.TransformerFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `newTransformer()` method in the `TransformerFactory` class is used to create a new Transformer instance. Here is a complete code snippet of this method:
+
+```java
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        TransformerFactory factory = TransformerFactory.newInstance();
+        Transformer transformer = factory.newTransformer();
+    }
+}
+```
+
+In this code snippet, we first import the `Transformer` and `TransformerFactory` classes from the `javax.xml.transform` package. Then, we create a new instance of `TransformerFactory` using the `newInstance()` method. After that, we create a new `Transformer` instance using the `newTransformer()` method.
+
+Please note that the `newTransformer()` method does not actually perform any transformation, it just creates a new `Transformer` instance. You would need to configure the `Transformer` instance (e.g., set input and output sources, set transformation parameters) before it can be used to perform a transformation.
+================================================================
+

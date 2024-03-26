@@ -1,0 +1,50 @@
+Sample: 0 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.regex.Matcher package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean find()`: This method tries to find the next subsequence of the input sequence that matches the pattern.
+
+2. `boolean find(int start)`: This method tries to find the next subsequence of the input sequence that matches the pattern, starting at the specified index.
+
+3. `Matcher appendReplacement(StringBuffer sb, String replacement)`: This method appends to a string buffer the next subsequence of the input sequence that matches the pattern, and then appends the given replacement string.
+
+4. `StringBuffer appendTail(StringBuffer sb)`: This method appends to a string buffer the remainder of the input sequence after the last match.
+
+5. `int end()`: This method returns the index immediately after the last character of the last matching subsequence.
+================================================================
+
+Sample: 1 Pattern
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.regex.Pattern package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Pattern compile(String regex)`: This method compiles the given regular expression into a pattern.
+
+2. `Matcher matcher(CharSequence input)`: This method creates a matcher that will match the given input against this pattern.
+
+3. `boolean matches()`: This method attempts to match the entire region against the pattern.
+
+4. `String[] split(CharSequence input)`: This method splits the given input sequence around matches of this pattern.
+
+5. `String replaceAll(String replacement)`: This method replaces each substring that matches the pattern with the given replacement string.
+================================================================
+

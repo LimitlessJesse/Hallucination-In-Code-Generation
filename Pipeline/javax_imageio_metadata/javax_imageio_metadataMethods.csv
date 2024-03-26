@@ -1,0 +1,130 @@
+ClassName,Method,Return Type
+IIOMetadata,activateController(),boolean
+IIOMetadata,getAsTree(String formatName),abstract Node
+IIOMetadata,getController(),IIOMetadataController
+IIOMetadata,getDefaultController(),IIOMetadataController
+IIOMetadata,getExtraMetadataFormatNames(),String[]
+IIOMetadata,getMetadataFormat(String formatName),IIOMetadataFormat
+IIOMetadata,getMetadataFormatNames(),String[]
+IIOMetadata,getNativeMetadataFormatName(),String
+IIOMetadata,getStandardChromaNode(),protected IIOMetadataNode
+IIOMetadata,getStandardCompressionNode(),protected IIOMetadataNode
+IIOMetadata,getStandardDataNode(),protected IIOMetadataNode
+IIOMetadata,getStandardDimensionNode(),protected IIOMetadataNode
+IIOMetadata,getStandardDocumentNode(),protected IIOMetadataNode
+IIOMetadata,getStandardTextNode(),protected IIOMetadataNode
+IIOMetadata,getStandardTileNode(),protected IIOMetadataNode
+IIOMetadata,getStandardTransparencyNode(),protected IIOMetadataNode
+IIOMetadata,getStandardTree(),protected IIOMetadataNode
+IIOMetadata,hasController(),boolean
+IIOMetadata,isReadOnly(),abstract boolean
+IIOMetadata,isStandardMetadataFormatSupported(),boolean
+IIOMetadata,"mergeTree(String formatName, Node root)",abstract void
+IIOMetadata,reset(),abstract void
+IIOMetadata,setController(IIOMetadataController controller),void
+IIOMetadata,"setFromTree(String formatName, Node root)",void
+IIOMetadataFormatImpl,"addAttribute(String elementName, String attrName, int dataType, boolean required, int listMinLength, int listMaxLength)",protected void
+IIOMetadataFormatImpl,"addAttribute(String elementName, String attrName, int dataType, boolean required, String defaultValue)",protected void
+IIOMetadataFormatImpl,"addAttribute(String elementName, String attrName, int dataType, boolean required, String defaultValue, List<String> enumeratedValues)",protected void
+IIOMetadataFormatImpl,"addAttribute(String elementName, String attrName, int dataType, boolean required, String defaultValue, String minValue, String maxValue, boolean minInclusive, boolean maxInclusive)",protected void
+IIOMetadataFormatImpl,"addBooleanAttribute(String elementName, String attrName, boolean hasDefaultValue, boolean defaultValue)",protected void
+IIOMetadataFormatImpl,"addChildElement(String elementName, String parentName)",protected void
+IIOMetadataFormatImpl,"addElement(String elementName, String parentName, int childPolicy)",protected void
+IIOMetadataFormatImpl,"addElement(String elementName, String parentName, int minChildren, int maxChildren)",protected void
+IIOMetadataFormatImpl,"addObjectValue(String elementName, Class<?> classType, int arrayMinLength, int arrayMaxLength)",protected void
+IIOMetadataFormatImpl,"addObjectValue(String elementName, Class<T> classType, boolean required, T defaultValue)",protected <T> void
+IIOMetadataFormatImpl,"addObjectValue(String elementName, Class<T> classType, boolean required, T defaultValue, List<? extends T> enumeratedValues)",protected <T> void
+IIOMetadataFormatImpl,"addObjectValue(String elementName, Class<T> classType, T defaultValue, Comparable<? super T> minValue, Comparable<? super T> maxValue, boolean minInclusive, boolean maxInclusive)",protected <T extends Object & Comparable<? super T>>void
+IIOMetadataFormatImpl,"canNodeAppear(String elementName, ImageTypeSpecifier imageType)",abstract boolean
+IIOMetadataFormatImpl,"getAttributeDataType(String elementName, String attrName)",int
+IIOMetadataFormatImpl,"getAttributeDefaultValue(String elementName, String attrName)",String
+IIOMetadataFormatImpl,"getAttributeDescription(String elementName, String attrName, Locale locale)",String
+IIOMetadataFormatImpl,"getAttributeEnumerations(String elementName, String attrName)",String[]
+IIOMetadataFormatImpl,"getAttributeListMaxLength(String elementName, String attrName)",int
+IIOMetadataFormatImpl,"getAttributeListMinLength(String elementName, String attrName)",int
+IIOMetadataFormatImpl,"getAttributeMaxValue(String elementName, String attrName)",String
+IIOMetadataFormatImpl,"getAttributeMinValue(String elementName, String attrName)",String
+IIOMetadataFormatImpl,getAttributeNames(String elementName),String[]
+IIOMetadataFormatImpl,"getAttributeValueType(String elementName, String attrName)",int
+IIOMetadataFormatImpl,getChildNames(String elementName),String[]
+IIOMetadataFormatImpl,getChildPolicy(String elementName),int
+IIOMetadataFormatImpl,"getElementDescription(String elementName, Locale locale)",String
+IIOMetadataFormatImpl,getElementMaxChildren(String elementName),int
+IIOMetadataFormatImpl,getElementMinChildren(String elementName),int
+IIOMetadataFormatImpl,getObjectArrayMaxLength(String elementName),int
+IIOMetadataFormatImpl,getObjectArrayMinLength(String elementName),int
+IIOMetadataFormatImpl,getObjectClass(String elementName),Class<?>
+IIOMetadataFormatImpl,getObjectDefaultValue(String elementName),Object
+IIOMetadataFormatImpl,getObjectEnumerations(String elementName),Object[]
+IIOMetadataFormatImpl,getObjectMaxValue(String elementName),Comparable<?>
+IIOMetadataFormatImpl,getObjectMinValue(String elementName),Comparable<?>
+IIOMetadataFormatImpl,getObjectValueType(String elementName),int
+IIOMetadataFormatImpl,getResourceBaseName(),protected String
+IIOMetadataFormatImpl,getRootName(),String
+IIOMetadataFormatImpl,getStandardFormatInstance(),static IIOMetadataFormat
+IIOMetadataFormatImpl,"isAttributeRequired(String elementName, String attrName)",boolean
+IIOMetadataFormatImpl,"removeAttribute(String elementName, String attrName)",protected void
+IIOMetadataFormatImpl,removeElement(String elementName),protected void
+IIOMetadataFormatImpl,removeObjectValue(String elementName),protected void
+IIOMetadataFormatImpl,setResourceBaseName(String resourceBaseName),protected void
+IIOMetadataNode,appendChild(Node newChild),Node
+IIOMetadataNode,cloneNode(boolean deep),Node
+IIOMetadataNode,compareDocumentPosition(Node other),short
+IIOMetadataNode,getAttribute(String name),String
+IIOMetadataNode,getAttributeNode(String name),Attr
+IIOMetadataNode,"getAttributeNodeNS(String namespaceURI, String localName)",Attr
+IIOMetadataNode,"getAttributeNS(String namespaceURI, String localName)",String
+IIOMetadataNode,getAttributes(),NamedNodeMap
+IIOMetadataNode,getBaseURI(),String
+IIOMetadataNode,getChildNodes(),NodeList
+IIOMetadataNode,getElementsByTagName(String name),NodeList
+IIOMetadataNode,"getElementsByTagNameNS(String namespaceURI, String localName)",NodeList
+IIOMetadataNode,"getFeature(String feature, String version)",Object
+IIOMetadataNode,getFirstChild(),Node
+IIOMetadataNode,getLastChild(),Node
+IIOMetadataNode,getLength(),int
+IIOMetadataNode,getLocalName(),String
+IIOMetadataNode,getNamespaceURI(),String
+IIOMetadataNode,getNextSibling(),Node
+IIOMetadataNode,getNodeName(),String
+IIOMetadataNode,getNodeType(),short
+IIOMetadataNode,getNodeValue(),String
+IIOMetadataNode,getOwnerDocument(),Document
+IIOMetadataNode,getParentNode(),Node
+IIOMetadataNode,getPrefix(),String
+IIOMetadataNode,getPreviousSibling(),Node
+IIOMetadataNode,getSchemaTypeInfo(),TypeInfo
+IIOMetadataNode,getTagName(),String
+IIOMetadataNode,getTextContent(),String
+IIOMetadataNode,getUserData(String key),Object
+IIOMetadataNode,getUserObject(),Object
+IIOMetadataNode,hasAttribute(String name),boolean
+IIOMetadataNode,"hasAttributeNS(String namespaceURI, String localName)",boolean
+IIOMetadataNode,hasAttributes(),boolean
+IIOMetadataNode,hasChildNodes(),boolean
+IIOMetadataNode,"insertBefore(Node newChild, Node refChild)",Node
+IIOMetadataNode,isDefaultNamespace(String namespaceURI),boolean
+IIOMetadataNode,isEqualNode(Node node),boolean
+IIOMetadataNode,isSameNode(Node node),boolean
+IIOMetadataNode,"isSupported(String feature, String version)",boolean
+IIOMetadataNode,item(int index),Node
+IIOMetadataNode,lookupNamespaceURI(String prefix),String
+IIOMetadataNode,lookupPrefix(String namespaceURI),String
+IIOMetadataNode,normalize(),void
+IIOMetadataNode,removeAttribute(String name),void
+IIOMetadataNode,removeAttributeNode(Attr oldAttr),Attr
+IIOMetadataNode,"removeAttributeNS(String namespaceURI, String localName)",void
+IIOMetadataNode,removeChild(Node oldChild),Node
+IIOMetadataNode,"replaceChild(Node newChild, Node oldChild)",Node
+IIOMetadataNode,"setAttribute(String name, String value)",void
+IIOMetadataNode,setAttributeNode(Attr newAttr),Attr
+IIOMetadataNode,setAttributeNodeNS(Attr newAttr),Attr
+IIOMetadataNode,"setAttributeNS(String namespaceURI, String qualifiedName, String value)",void
+IIOMetadataNode,"setIdAttribute(String name, boolean isId)",void
+IIOMetadataNode,"setIdAttributeNode(Attr idAttr, boolean isId)",void
+IIOMetadataNode,"setIdAttributeNS(String namespaceURI, String localName, boolean isId)",void
+IIOMetadataNode,setNodeValue(String nodeValue),void
+IIOMetadataNode,setPrefix(String prefix),void
+IIOMetadataNode,setTextContent(String textContent),void
+IIOMetadataNode,"setUserData(String key, Object data, UserDataHandler handler)",Object
+IIOMetadataNode,setUserObject(Object userObject),void

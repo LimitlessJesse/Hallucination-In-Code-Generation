@@ -1,0 +1,95 @@
+Sample: DatatypeConverter_2
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/DatatypeConverter_2.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+./javax_xml_bind/javaFiles/DatatypeConverter_2.java:6: error: cannot find symbol
+        String hexString = DatatypeConverter.printHexBinary(bytes);
+                           ^
+  symbol:   variable DatatypeConverter
+  location: class DatatypeConverter_2
+2 errors
+
+
+================================================================
+
+Sample: DatatypeConverter_3
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/DatatypeConverter_3.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+./javax_xml_bind/javaFiles/DatatypeConverter_3.java:6: error: cannot find symbol
+        byte[] bytes = DatatypeConverter.parseHexBinary(hexString);
+                       ^
+  symbol:   variable DatatypeConverter
+  location: class DatatypeConverter_3
+2 errors
+
+
+================================================================
+
+Sample: DatatypeConverter_4
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/DatatypeConverter_4.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+./javax_xml_bind/javaFiles/DatatypeConverter_4.java:6: error: cannot find symbol
+        String base64 = DatatypeConverter.printBase64Binary(bytes);
+                        ^
+  symbol:   variable DatatypeConverter
+  location: class DatatypeConverter_4
+2 errors
+
+
+================================================================
+
+Sample: DatatypeConverter_5
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/DatatypeConverter_5.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.DatatypeConverter;
+                     ^
+./javax_xml_bind/javaFiles/DatatypeConverter_5.java:6: error: cannot find symbol
+        byte[] bytes = DatatypeConverter.parseBase64Binary(base64String);
+                       ^
+  symbol:   variable DatatypeConverter
+  location: class DatatypeConverter_5
+2 errors
+
+
+================================================================
+
+Sample: Unmarshaller_Listener_1
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/Unmarshaller_Listener_1.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.Unmarshaller;
+                     ^
+./javax_xml_bind/javaFiles/Unmarshaller_Listener_1.java:8: error: package Unmarshaller does not exist
+        Unmarshaller.Listener listener = new Unmarshaller.Listener() {
+                    ^
+./javax_xml_bind/javaFiles/Unmarshaller_Listener_1.java:8: error: package Unmarshaller does not exist
+        Unmarshaller.Listener listener = new Unmarshaller.Listener() {
+                                                         ^
+./javax_xml_bind/javaFiles/Unmarshaller_Listener_1.java:9: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+4 errors
+
+
+================================================================
+
+Sample: Unmarshaller_Listener_2
+----------------------------------------------------------------
+output:
+./javax_xml_bind/javaFiles/Unmarshaller_Listener_2.java:6: error: illegal start of expression
+        Unmarshaller unmarshaller =...; // initialize your unmarshaller
+                                   ^
+1 error
+
+
+================================================================
+

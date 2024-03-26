@@ -1,0 +1,566 @@
+ClassName,Method,Return Type
+BufferedInputStream,available(),int
+BufferedInputStream,close(),void
+BufferedInputStream,mark(int readlimit),void
+BufferedInputStream,markSupported(),boolean
+BufferedInputStream,read(),int
+BufferedInputStream,"read(byte[] b, int off, int len)",int
+BufferedInputStream,reset(),void
+BufferedInputStream,skip(long n),long
+BufferedOutputStream,flush(),void
+BufferedOutputStream,"write(byte[] b, int off, int len)",void
+BufferedOutputStream,write(int b),void
+BufferedReader,close(),void
+BufferedReader,lines(),Stream<String>
+BufferedReader,mark(int readAheadLimit),void
+BufferedReader,markSupported(),boolean
+BufferedReader,read(),int
+BufferedReader,"read(char[] cbuf, int off, int len)",int
+BufferedReader,readLine(),String
+BufferedReader,ready(),boolean
+BufferedReader,reset(),void
+BufferedReader,skip(long n),long
+BufferedWriter,close(),void
+BufferedWriter,flush(),void
+BufferedWriter,newLine(),void
+BufferedWriter,"write(char[] cbuf, int off, int len)",void
+BufferedWriter,write(int c),void
+BufferedWriter,"write(String s, int off, int len)",void
+ByteArrayInputStream,available(),int
+ByteArrayInputStream,close(),void
+ByteArrayInputStream,mark(int readAheadLimit),void
+ByteArrayInputStream,markSupported(),boolean
+ByteArrayInputStream,read(),int
+ByteArrayInputStream,"read(byte[] b, int off, int len)",int
+ByteArrayInputStream,reset(),void
+ByteArrayInputStream,skip(long n),long
+ByteArrayOutputStream,close(),void
+ByteArrayOutputStream,reset(),void
+ByteArrayOutputStream,size(),int
+ByteArrayOutputStream,toByteArray(),byte[]
+ByteArrayOutputStream,toString(),String
+ByteArrayOutputStream,toString(int hibyte),String
+ByteArrayOutputStream,toString(String charsetName),String
+ByteArrayOutputStream,"write(byte[] b, int off, int len)",void
+ByteArrayOutputStream,write(int b),void
+ByteArrayOutputStream,writeTo(OutputStream out),void
+CharArrayReader,close(),void
+CharArrayReader,mark(int readAheadLimit),void
+CharArrayReader,markSupported(),boolean
+CharArrayReader,read(),int
+CharArrayReader,"read(char[] b, int off, int len)",int
+CharArrayReader,ready(),boolean
+CharArrayReader,reset(),void
+CharArrayReader,skip(long n),long
+CharArrayWriter,append(char c),CharArrayWriter
+CharArrayWriter,append(CharSequence csq),CharArrayWriter
+CharArrayWriter,"append(CharSequence csq, int start, int end)",CharArrayWriter
+CharArrayWriter,close(),void
+CharArrayWriter,flush(),void
+CharArrayWriter,reset(),void
+CharArrayWriter,size(),int
+CharArrayWriter,toCharArray(),char[]
+CharArrayWriter,toString(),String
+CharArrayWriter,"write(char[] c, int off, int len)",void
+CharArrayWriter,write(int c),void
+CharArrayWriter,"write(String str, int off, int len)",void
+CharArrayWriter,writeTo(Writer out),void
+Console,flush(),void
+Console,"format(String fmt, Object... args)",Console
+Console,"printf(String format, Object... args)",Console
+Console,reader(),Reader
+Console,readLine(),String
+Console,"readLine(String fmt, Object... args)",String
+Console,readPassword(),char[]
+Console,"readPassword(String fmt, Object... args)",char[]
+Console,writer(),PrintWriter
+DataInputStream,read(byte[] b),int
+DataInputStream,"read(byte[] b, int off, int len)",int
+DataInputStream,readBoolean(),boolean
+DataInputStream,readByte(),byte
+DataInputStream,readChar(),char
+DataInputStream,readDouble(),double
+DataInputStream,readFloat(),float
+DataInputStream,readFully(byte[] b),void
+DataInputStream,"readFully(byte[] b, int off, int len)",void
+DataInputStream,readInt(),int
+DataInputStream,readLine(),String
+DataInputStream,readLong(),long
+DataInputStream,readShort(),short
+DataInputStream,readUnsignedByte(),int
+DataInputStream,readUnsignedShort(),int
+DataInputStream,readUTF(),String
+DataInputStream,readUTF(DataInput in),static String
+DataInputStream,skipBytes(int n),int
+DataOutputStream,flush(),void
+DataOutputStream,size(),int
+DataOutputStream,"write(byte[] b, int off, int len)",void
+DataOutputStream,write(int b),void
+DataOutputStream,writeBoolean(boolean v),void
+DataOutputStream,writeByte(int v),void
+DataOutputStream,writeBytes(String s),void
+DataOutputStream,writeChar(int v),void
+DataOutputStream,writeChars(String s),void
+DataOutputStream,writeDouble(double v),void
+DataOutputStream,writeFloat(float v),void
+DataOutputStream,writeInt(int v),void
+DataOutputStream,writeLong(long v),void
+DataOutputStream,writeShort(int v),void
+DataOutputStream,writeUTF(String str),void
+File,canExecute(),boolean
+File,canRead(),boolean
+File,canWrite(),boolean
+File,compareTo(File pathname),int
+File,createNewFile(),boolean
+File,"createTempFile(String prefix, String suffix)",static File
+File,"createTempFile(String prefix, String suffix, File directory)",static File
+File,delete(),boolean
+File,deleteOnExit(),void
+File,equals(Object obj),boolean
+File,exists(),boolean
+File,getAbsoluteFile(),File
+File,getAbsolutePath(),String
+File,getCanonicalFile(),File
+File,getCanonicalPath(),String
+File,getFreeSpace(),long
+File,getName(),String
+File,getParent(),String
+File,getParentFile(),File
+File,getPath(),String
+File,getTotalSpace(),long
+File,getUsableSpace(),long
+File,hashCode(),int
+File,isAbsolute(),boolean
+File,isDirectory(),boolean
+File,isFile(),boolean
+File,isHidden(),boolean
+File,lastModified(),long
+File,length(),long
+File,list(),String[]
+File,list(FilenameFilter filter),String[]
+File,listFiles(),File[]
+File,listFiles(FileFilter filter),File[]
+File,listFiles(FilenameFilter filter),File[]
+File,listRoots(),static File[]
+File,mkdir(),boolean
+File,mkdirs(),boolean
+File,renameTo(File dest),boolean
+File,setExecutable(boolean executable),boolean
+File,"setExecutable(boolean executable, boolean ownerOnly)",boolean
+File,setLastModified(long time),boolean
+File,setReadable(boolean readable),boolean
+File,"setReadable(boolean readable, boolean ownerOnly)",boolean
+File,setReadOnly(),boolean
+File,setWritable(boolean writable),boolean
+File,"setWritable(boolean writable, boolean ownerOnly)",boolean
+File,toPath(),Path
+File,toString(),String
+File,toURI(),URI
+File,toURL(),URL
+FileDescriptor,sync(),void
+FileDescriptor,valid(),boolean
+FileInputStream,available(),int
+FileInputStream,close(),void
+FileInputStream,finalize(),protected void
+FileInputStream,getChannel(),FileChannel
+FileInputStream,getFD(),FileDescriptor
+FileInputStream,read(),int
+FileInputStream,read(byte[] b),int
+FileInputStream,"read(byte[] b, int off, int len)",int
+FileInputStream,skip(long n),long
+FileOutputStream,close(),void
+FileOutputStream,finalize(),protected void
+FileOutputStream,getChannel(),FileChannel
+FileOutputStream,getFD(),FileDescriptor
+FileOutputStream,write(byte[] b),void
+FileOutputStream,"write(byte[] b, int off, int len)",void
+FileOutputStream,write(int b),void
+FilePermission,equals(Object obj),boolean
+FilePermission,getActions(),String
+FilePermission,hashCode(),int
+FilePermission,implies(Permission p),boolean
+FilePermission,newPermissionCollection(),PermissionCollection
+FilterInputStream,available(),int
+FilterInputStream,close(),void
+FilterInputStream,mark(int readlimit),void
+FilterInputStream,markSupported(),boolean
+FilterInputStream,read(),int
+FilterInputStream,read(byte[] b),int
+FilterInputStream,"read(byte[] b, int off, int len)",int
+FilterInputStream,reset(),void
+FilterInputStream,skip(long n),long
+FilterOutputStream,close(),void
+FilterOutputStream,flush(),void
+FilterOutputStream,write(byte[] b),void
+FilterOutputStream,"write(byte[] b, int off, int len)",void
+FilterOutputStream,write(int b),void
+FilterReader,close(),void
+FilterReader,mark(int readAheadLimit),void
+FilterReader,markSupported(),boolean
+FilterReader,read(),int
+FilterReader,"read(char[] cbuf, int off, int len)",int
+FilterReader,ready(),boolean
+FilterReader,reset(),void
+FilterReader,skip(long n),long
+FilterWriter,close(),void
+FilterWriter,flush(),void
+FilterWriter,"write(char[] cbuf, int off, int len)",void
+FilterWriter,write(int c),void
+FilterWriter,"write(String str, int off, int len)",void
+InputStream,available(),int
+InputStream,close(),void
+InputStream,mark(int readlimit),void
+InputStream,markSupported(),boolean
+InputStream,read(),abstract int
+InputStream,read(byte[] b),int
+InputStream,"read(byte[] b, int off, int len)",int
+InputStream,reset(),void
+InputStream,skip(long n),long
+InputStreamReader,close(),void
+InputStreamReader,getEncoding(),String
+InputStreamReader,read(),int
+InputStreamReader,"read(char[] cbuf, int offset, int length)",int
+InputStreamReader,ready(),boolean
+LineNumberInputStream,available(),int
+LineNumberInputStream,getLineNumber(),int
+LineNumberInputStream,mark(int readlimit),void
+LineNumberInputStream,read(),int
+LineNumberInputStream,"read(byte[] b, int off, int len)",int
+LineNumberInputStream,reset(),void
+LineNumberInputStream,setLineNumber(int lineNumber),void
+LineNumberInputStream,skip(long n),long
+LineNumberReader,getLineNumber(),int
+LineNumberReader,mark(int readAheadLimit),void
+LineNumberReader,read(),int
+LineNumberReader,"read(char[] cbuf, int off, int len)",int
+LineNumberReader,readLine(),String
+LineNumberReader,reset(),void
+LineNumberReader,setLineNumber(int lineNumber),void
+LineNumberReader,skip(long n),long
+ObjectInputStream,available(),int
+ObjectInputStream,close(),void
+ObjectInputStream,defaultReadObject(),void
+ObjectInputStream,enableResolveObject(boolean enable),protected boolean
+ObjectInputStream,read(),int
+ObjectInputStream,"read(byte[] buf, int off, int len)",int
+ObjectInputStream,readBoolean(),boolean
+ObjectInputStream,readByte(),byte
+ObjectInputStream,readChar(),char
+ObjectInputStream,readClassDescriptor(),protected ObjectStreamClass
+ObjectInputStream,readDouble(),double
+ObjectInputStream,readFields(),ObjectInputStream.GetField
+ObjectInputStream,readFloat(),float
+ObjectInputStream,readFully(byte[] buf),void
+ObjectInputStream,"readFully(byte[] buf, int off, int len)",void
+ObjectInputStream,readInt(),int
+ObjectInputStream,readLine(),String
+ObjectInputStream,readLong(),long
+ObjectInputStream,readObject(),Object
+ObjectInputStream,readObjectOverride(),protected Object
+ObjectInputStream,readShort(),short
+ObjectInputStream,readStreamHeader(),protected void
+ObjectInputStream,readUnshared(),Object
+ObjectInputStream,readUnsignedByte(),int
+ObjectInputStream,readUnsignedShort(),int
+ObjectInputStream,readUTF(),String
+ObjectInputStream,"registerValidation(ObjectInputValidation obj, int prio)",void
+ObjectInputStream,resolveClass(ObjectStreamClass desc),protected Class<?>
+ObjectInputStream,resolveObject(Object obj),protected Object
+ObjectInputStream,resolveProxyClass(String[] interfaces),protected Class<?>
+ObjectInputStream,skipBytes(int len),int
+ObjectInputStream.GetField,defaulted(String name),abstract boolean
+ObjectInputStream.GetField,"get(String name, boolean val)",abstract boolean
+ObjectInputStream.GetField,"get(String name, byte val)",abstract byte
+ObjectInputStream.GetField,"get(String name, char val)",abstract char
+ObjectInputStream.GetField,"get(String name, double val)",abstract double
+ObjectInputStream.GetField,"get(String name, float val)",abstract float
+ObjectInputStream.GetField,"get(String name, int val)",abstract int
+ObjectInputStream.GetField,"get(String name, long val)",abstract long
+ObjectInputStream.GetField,"get(String name, Object val)",abstract Object
+ObjectInputStream.GetField,"get(String name, short val)",abstract short
+ObjectInputStream.GetField,getObjectStreamClass(),abstract ObjectStreamClass
+ObjectOutputStream,annotateClass(Class<?> cl),protected void
+ObjectOutputStream,annotateProxyClass(Class<?> cl),protected void
+ObjectOutputStream,close(),void
+ObjectOutputStream,defaultWriteObject(),void
+ObjectOutputStream,drain(),protected void
+ObjectOutputStream,enableReplaceObject(boolean enable),protected boolean
+ObjectOutputStream,flush(),void
+ObjectOutputStream,putFields(),ObjectOutputStream.PutField
+ObjectOutputStream,replaceObject(Object obj),protected Object
+ObjectOutputStream,reset(),void
+ObjectOutputStream,useProtocolVersion(int version),void
+ObjectOutputStream,write(byte[] buf),void
+ObjectOutputStream,"write(byte[] buf, int off, int len)",void
+ObjectOutputStream,write(int val),void
+ObjectOutputStream,writeBoolean(boolean val),void
+ObjectOutputStream,writeByte(int val),void
+ObjectOutputStream,writeBytes(String str),void
+ObjectOutputStream,writeChar(int val),void
+ObjectOutputStream,writeChars(String str),void
+ObjectOutputStream,writeClassDescriptor(ObjectStreamClass desc),protected void
+ObjectOutputStream,writeDouble(double val),void
+ObjectOutputStream,writeFields(),void
+ObjectOutputStream,writeFloat(float val),void
+ObjectOutputStream,writeInt(int val),void
+ObjectOutputStream,writeLong(long val),void
+ObjectOutputStream,writeObject(Object obj),void
+ObjectOutputStream,writeObjectOverride(Object obj),protected void
+ObjectOutputStream,writeShort(int val),void
+ObjectOutputStream,writeStreamHeader(),protected void
+ObjectOutputStream,writeUnshared(Object obj),void
+ObjectOutputStream,writeUTF(String str),void
+ObjectOutputStream.PutField,"put(String name, boolean val)",abstract void
+ObjectOutputStream.PutField,"put(String name, byte val)",abstract void
+ObjectOutputStream.PutField,"put(String name, char val)",abstract void
+ObjectOutputStream.PutField,"put(String name, double val)",abstract void
+ObjectOutputStream.PutField,"put(String name, float val)",abstract void
+ObjectOutputStream.PutField,"put(String name, int val)",abstract void
+ObjectOutputStream.PutField,"put(String name, long val)",abstract void
+ObjectOutputStream.PutField,"put(String name, Object val)",abstract void
+ObjectOutputStream.PutField,"put(String name, short val)",abstract void
+ObjectOutputStream.PutField,write(ObjectOutput out),abstract void
+ObjectStreamClass,forClass(),Class<?>
+ObjectStreamClass,getField(String name),ObjectStreamField
+ObjectStreamClass,getFields(),ObjectStreamField[]
+ObjectStreamClass,getName(),String
+ObjectStreamClass,getSerialVersionUID(),long
+ObjectStreamClass,lookup(Class<?> cl),static ObjectStreamClass
+ObjectStreamClass,lookupAny(Class<?> cl),static ObjectStreamClass
+ObjectStreamClass,toString(),String
+ObjectStreamField,compareTo(Object obj),int
+ObjectStreamField,getName(),String
+ObjectStreamField,getOffset(),int
+ObjectStreamField,getType(),Class<?>
+ObjectStreamField,getTypeCode(),char
+ObjectStreamField,getTypeString(),String
+ObjectStreamField,isPrimitive(),boolean
+ObjectStreamField,isUnshared(),boolean
+ObjectStreamField,setOffset(int offset),protected void
+ObjectStreamField,toString(),String
+OutputStream,close(),void
+OutputStream,flush(),void
+OutputStream,write(byte[] b),void
+OutputStream,"write(byte[] b, int off, int len)",void
+OutputStream,write(int b),abstract void
+OutputStreamWriter,close(),void
+OutputStreamWriter,flush(),void
+OutputStreamWriter,getEncoding(),String
+OutputStreamWriter,"write(char[] cbuf, int off, int len)",void
+OutputStreamWriter,write(int c),void
+OutputStreamWriter,"write(String str, int off, int len)",void
+PipedInputStream,available(),int
+PipedInputStream,close(),void
+PipedInputStream,connect(PipedOutputStream src),void
+PipedInputStream,read(),int
+PipedInputStream,"read(byte[] b, int off, int len)",int
+PipedInputStream,receive(int b),protected void
+PipedOutputStream,close(),void
+PipedOutputStream,connect(PipedInputStream snk),void
+PipedOutputStream,flush(),void
+PipedOutputStream,"write(byte[] b, int off, int len)",void
+PipedOutputStream,write(int b),void
+PipedReader,close(),void
+PipedReader,connect(PipedWriter src),void
+PipedReader,read(),int
+PipedReader,"read(char[] cbuf, int off, int len)",int
+PipedReader,ready(),boolean
+PipedWriter,close(),void
+PipedWriter,connect(PipedReader snk),void
+PipedWriter,flush(),void
+PipedWriter,"write(char[] cbuf, int off, int len)",void
+PipedWriter,write(int c),void
+PrintStream,append(char c),PrintStream
+PrintStream,append(CharSequence csq),PrintStream
+PrintStream,"append(CharSequence csq, int start, int end)",PrintStream
+PrintStream,checkError(),boolean
+PrintStream,clearError(),protected void
+PrintStream,close(),void
+PrintStream,flush(),void
+PrintStream,"format(Locale l, String format, Object... args)",PrintStream
+PrintStream,"format(String format, Object... args)",PrintStream
+PrintStream,print(boolean b),void
+PrintStream,print(char c),void
+PrintStream,print(char[] s),void
+PrintStream,print(double d),void
+PrintStream,print(float f),void
+PrintStream,print(int i),void
+PrintStream,print(long l),void
+PrintStream,print(Object obj),void
+PrintStream,print(String s),void
+PrintStream,"printf(Locale l, String format, Object... args)",PrintStream
+PrintStream,"printf(String format, Object... args)",PrintStream
+PrintStream,println(),void
+PrintStream,println(boolean x),void
+PrintStream,println(char x),void
+PrintStream,println(char[] x),void
+PrintStream,println(double x),void
+PrintStream,println(float x),void
+PrintStream,println(int x),void
+PrintStream,println(long x),void
+PrintStream,println(Object x),void
+PrintStream,println(String x),void
+PrintStream,setError(),protected void
+PrintStream,"write(byte[] buf, int off, int len)",void
+PrintStream,write(int b),void
+PrintWriter,append(char c),PrintWriter
+PrintWriter,append(CharSequence csq),PrintWriter
+PrintWriter,"append(CharSequence csq, int start, int end)",PrintWriter
+PrintWriter,checkError(),boolean
+PrintWriter,clearError(),protected void
+PrintWriter,close(),void
+PrintWriter,flush(),void
+PrintWriter,"format(Locale l, String format, Object... args)",PrintWriter
+PrintWriter,"format(String format, Object... args)",PrintWriter
+PrintWriter,print(boolean b),void
+PrintWriter,print(char c),void
+PrintWriter,print(char[] s),void
+PrintWriter,print(double d),void
+PrintWriter,print(float f),void
+PrintWriter,print(int i),void
+PrintWriter,print(long l),void
+PrintWriter,print(Object obj),void
+PrintWriter,print(String s),void
+PrintWriter,"printf(Locale l, String format, Object... args)",PrintWriter
+PrintWriter,"printf(String format, Object... args)",PrintWriter
+PrintWriter,println(),void
+PrintWriter,println(boolean x),void
+PrintWriter,println(char x),void
+PrintWriter,println(char[] x),void
+PrintWriter,println(double x),void
+PrintWriter,println(float x),void
+PrintWriter,println(int x),void
+PrintWriter,println(long x),void
+PrintWriter,println(Object x),void
+PrintWriter,println(String x),void
+PrintWriter,setError(),protected void
+PrintWriter,write(char[] buf),void
+PrintWriter,"write(char[] buf, int off, int len)",void
+PrintWriter,write(int c),void
+PrintWriter,write(String s),void
+PrintWriter,"write(String s, int off, int len)",void
+PushbackInputStream,available(),int
+PushbackInputStream,close(),void
+PushbackInputStream,mark(int readlimit),void
+PushbackInputStream,markSupported(),boolean
+PushbackInputStream,read(),int
+PushbackInputStream,"read(byte[] b, int off, int len)",int
+PushbackInputStream,reset(),void
+PushbackInputStream,skip(long n),long
+PushbackInputStream,unread(byte[] b),void
+PushbackInputStream,"unread(byte[] b, int off, int len)",void
+PushbackInputStream,unread(int b),void
+PushbackReader,close(),void
+PushbackReader,mark(int readAheadLimit),void
+PushbackReader,markSupported(),boolean
+PushbackReader,read(),int
+PushbackReader,"read(char[] cbuf, int off, int len)",int
+PushbackReader,ready(),boolean
+PushbackReader,reset(),void
+PushbackReader,skip(long n),long
+PushbackReader,unread(char[] cbuf),void
+PushbackReader,"unread(char[] cbuf, int off, int len)",void
+PushbackReader,unread(int c),void
+RandomAccessFile,close(),void
+RandomAccessFile,getChannel(),FileChannel
+RandomAccessFile,getFD(),FileDescriptor
+RandomAccessFile,getFilePointer(),long
+RandomAccessFile,length(),long
+RandomAccessFile,read(),int
+RandomAccessFile,read(byte[] b),int
+RandomAccessFile,"read(byte[] b, int off, int len)",int
+RandomAccessFile,readBoolean(),boolean
+RandomAccessFile,readByte(),byte
+RandomAccessFile,readChar(),char
+RandomAccessFile,readDouble(),double
+RandomAccessFile,readFloat(),float
+RandomAccessFile,readFully(byte[] b),void
+RandomAccessFile,"readFully(byte[] b, int off, int len)",void
+RandomAccessFile,readInt(),int
+RandomAccessFile,readLine(),String
+RandomAccessFile,readLong(),long
+RandomAccessFile,readShort(),short
+RandomAccessFile,readUnsignedByte(),int
+RandomAccessFile,readUnsignedShort(),int
+RandomAccessFile,readUTF(),String
+RandomAccessFile,seek(long pos),void
+RandomAccessFile,setLength(long newLength),void
+RandomAccessFile,skipBytes(int n),int
+RandomAccessFile,write(byte[] b),void
+RandomAccessFile,"write(byte[] b, int off, int len)",void
+RandomAccessFile,write(int b),void
+RandomAccessFile,writeBoolean(boolean v),void
+RandomAccessFile,writeByte(int v),void
+RandomAccessFile,writeBytes(String s),void
+RandomAccessFile,writeChar(int v),void
+RandomAccessFile,writeChars(String s),void
+RandomAccessFile,writeDouble(double v),void
+RandomAccessFile,writeFloat(float v),void
+RandomAccessFile,writeInt(int v),void
+RandomAccessFile,writeLong(long v),void
+RandomAccessFile,writeShort(int v),void
+RandomAccessFile,writeUTF(String str),void
+Reader,close(),abstract void
+Reader,mark(int readAheadLimit),void
+Reader,markSupported(),boolean
+Reader,read(),int
+Reader,read(char[] cbuf),int
+Reader,"read(char[] cbuf, int off, int len)",abstract int
+Reader,read(CharBuffer target),int
+Reader,ready(),boolean
+Reader,reset(),void
+Reader,skip(long n),long
+SequenceInputStream,available(),int
+SequenceInputStream,close(),void
+SequenceInputStream,read(),int
+SequenceInputStream,"read(byte[] b, int off, int len)",int
+StreamTokenizer,commentChar(int ch),void
+StreamTokenizer,eolIsSignificant(boolean flag),void
+StreamTokenizer,lineno(),int
+StreamTokenizer,lowerCaseMode(boolean fl),void
+StreamTokenizer,nextToken(),int
+StreamTokenizer,ordinaryChar(int ch),void
+StreamTokenizer,"ordinaryChars(int low, int hi)",void
+StreamTokenizer,parseNumbers(),void
+StreamTokenizer,pushBack(),void
+StreamTokenizer,quoteChar(int ch),void
+StreamTokenizer,resetSyntax(),void
+StreamTokenizer,slashSlashComments(boolean flag),void
+StreamTokenizer,slashStarComments(boolean flag),void
+StreamTokenizer,toString(),String
+StreamTokenizer,"whitespaceChars(int low, int hi)",void
+StreamTokenizer,"wordChars(int low, int hi)",void
+StringBufferInputStream,available(),int
+StringBufferInputStream,read(),int
+StringBufferInputStream,"read(byte[] b, int off, int len)",int
+StringBufferInputStream,reset(),void
+StringBufferInputStream,skip(long n),long
+StringReader,close(),void
+StringReader,mark(int readAheadLimit),void
+StringReader,markSupported(),boolean
+StringReader,read(),int
+StringReader,"read(char[] cbuf, int off, int len)",int
+StringReader,ready(),boolean
+StringReader,reset(),void
+StringReader,skip(long ns),long
+StringWriter,append(char c),StringWriter
+StringWriter,append(CharSequence csq),StringWriter
+StringWriter,"append(CharSequence csq, int start, int end)",StringWriter
+StringWriter,close(),void
+StringWriter,flush(),void
+StringWriter,getBuffer(),StringBuffer
+StringWriter,toString(),String
+StringWriter,"write(char[] cbuf, int off, int len)",void
+StringWriter,write(int c),void
+StringWriter,write(String str),void
+StringWriter,"write(String str, int off, int len)",void
+Writer,append(char c),Writer
+Writer,append(CharSequence csq),Writer
+Writer,"append(CharSequence csq, int start, int end)",Writer
+Writer,close(),abstract void
+Writer,flush(),abstract void
+Writer,write(char[] cbuf),void
+Writer,"write(char[] cbuf, int off, int len)",abstract void
+Writer,write(int c),void
+Writer,write(String str),void
+Writer,"write(String str, int off, int len)",void

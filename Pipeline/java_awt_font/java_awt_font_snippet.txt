@@ -1,0 +1,818 @@
+Sample: 0 GlyphVector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getNumGlyphs() from java.awt.font.GlyphVector
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getNumGlyphs()` method in `java.awt.font.GlyphVector` is used to get the number of glyphs in the `GlyphVector`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.font.FontRenderContext;
+import java.awt.font.GlyphVector;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        GlyphVector gv = font.createGlyphVector(frc, "Hello");
+        int numGlyphs = gv.getNumGlyphs();
+        System.out.println("Number of glyphs: " + numGlyphs);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then, we create a `FontRenderContext` object. After that, we create a `GlyphVector` object using the `createGlyphVector` method of the `Font` object. Finally, we get the number of glyphs in the `GlyphVector` using the `getNumGlyphs` method and print it out.
+================================================================
+
+Sample: 1 GlyphVector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use GlyphMetrics getGlyphMetrics(int index) from java.awt.font.GlyphVector
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getGlyphMetrics(int index)` method in `java.awt.font.GlyphVector` is used to get the metrics of the glyph at the specified index.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.font.FontRenderContext;
+import java.awt.font.GlyphVector;
+import java.awt.font.TextLayout;
+import java.awt.geom.Rectangle2D;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        GlyphVector gv = font.createGlyphVector(frc, "Hello");
+
+        for (int i = 0; i < gv.getNumGlyphs(); i++) {
+            Rectangle2D bounds = gv.getGlyphMetrics(i).getBounds2D();
+            System.out.println("Glyph " + i + " bounds: " + bounds);
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `Font` and a `FontRenderContext`. Then we create a `GlyphVector` from the font and a string. We then loop through each glyph in the `GlyphVector` and print out its bounds.
+
+The bounds of a glyph are represented as a `Rectangle2D`, which is a rectangle in 2D space. The `getBounds2D()` method returns the bounds of the glyph.
+================================================================
+
+Sample: 2 LineBreakMeasurer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getPosition() from java.awt.font.LineBreakMeasurer
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getPosition()` method in `java.awt.font.LineBreakMeasurer` is used to get the current position of the measurer. It returns the current position as a float value.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.font.LineBreakMeasurer;
+import java.awt.font.TextLayout;
+import java.awt.font.TextAttribute;
+import java.text.AttributedCharacterIterator;
+import java.text.AttributedString;
+import java.text.BreakIterator;
+import java.awt.GraphicsEnvironment;
+import java.awt.Font;
+import java.awt.FontMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Hello, World!";
+        Font font = GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()[0];
+        FontMetrics fontMetrics = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getDefaultConfiguration().getFontMetrics(font);
+        AttributedString attributedString = new AttributedString(text);
+        attributedString.addAttribute(TextAttribute.FONT, font);
+        AttributedCharacterIterator iterator = attributedString.getIterator();
+        BreakIterator breakIterator = BreakIterator.getWordInstance();
+        breakIterator.setText(iterator);
+        LineBreakMeasurer measurer = new LineBreakMeasurer(iterator, breakIterator);
+        TextLayout layout = measurer.nextLayout(fontMetrics.getMaxAscent() + fontMetrics.getMaxDescent());
+        float position = measurer.getPosition();
+        System.out.println("Current position: " + position);
+    }
+}
+```
+
+In this code snippet, we first create a string and a font. We then create a `FontMetrics` object for the font. We create an `AttributedString` and add the font to it. We create an `AttributedCharacterIterator` from the `AttributedString`. We create a `BreakIterator` for words. We create a `LineBreakMeasurer` from the `AttributedCharacterIterator` and the `BreakIterator`. We then get the current position of the `LineBreakMeasurer` and print it out.
+================================================================
+
+Sample: 3 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getAscent() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAscent()` method in `java.awt.font.LineMetrics` is used to get the ascent of the line. The ascent is the distance from the baseline to the top of the line.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello World";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float ascent = lm.getAscent();
+        System.out.println("Ascent: " + ascent);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string and get the `LineMetrics` for the string using the `getStringMetrics()` method. Finally, we get the ascent of the line using the `getAscent()` method and print it out.
+================================================================
+
+Sample: 4 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getDescent() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescent()` method in `java.awt.font.LineMetrics` is used to get the descent of the line. The descent is the distance from the baseline to the lowest point of the line.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float descent = lm.getDescent();
+        System.out.println("Descent: " + descent);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string and get the `LineMetrics` for the string using the `getStringMetrics()` method. Finally, we get the descent from the `LineMetrics` object and print it out.
+
+Please note that you need to replace `"Hello"` with the text you want to measure and `12` with the size of the font you want to use.
+================================================================
+
+Sample: 5 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getLeading() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getLeading()` method in `java.awt.font.LineMetrics` is used to get the leading space of the line. The leading space is the space before the first character of the line.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello World";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float leading = lm.getLeading();
+        System.out.println("Leading space: " + leading);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string and get the `LineMetrics` for the string using the `getStringMetrics()` method. Finally, we get the leading space of the line using the `getLeading()` method and print it out.
+================================================================
+
+Sample: 6 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getHeight() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getHeight()` method in `java.awt.font.LineMetrics` is used to get the height of the line of text. It returns the height of the line of text in the font's units.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Hello, World!";
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float height = lm.getHeight();
+        System.out.println("Height of the line of text: " + height);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then, we create a `FontRenderContext` object. This object is used to get the metrics of the text. Finally, we get the `LineMetrics` object and call the `getHeight()` method to get the height of the line of text.
+================================================================
+
+Sample: 7 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getStrikethroughOffset() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getStrikethroughOffset()` method in `java.awt.font.LineMetrics` is used to get the offset of the strikethrough baseline.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        String text = "Hello";
+        FontMetrics fm = new FontMetrics(font) {
+            @Override
+            public int getStrikethroughOffset() {
+                return super.getStrikethroughOffset();
+            }
+        };
+        LineMetrics lm = fm.getLineMetrics(text, frc);
+        System.out.println(lm.getStrikethroughOffset());
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then, we create a `FontRenderContext` object. We also create a `String` object.
+
+Next, we create a `FontMetrics` object and override the `getStrikethroughOffset()` method.
+
+Finally, we get the `LineMetrics` of the text using the `getLineMetrics()` method and print the strikethrough offset.
+
+Please note that the strikethrough offset is a value between 0 and 1 that represents the percentage of the line height that the strikethrough is offset from the baseline.
+================================================================
+
+Sample: 8 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getStrikethroughThickness() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getStrikethroughThickness()` method in `java.awt.font.LineMetrics` is used to get the thickness of the strikethrough. It returns a float value which represents the thickness of the strikethrough.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float strikethroughThickness = lm.getStrikethroughThickness();
+        System.out.println("Strikethrough Thickness: " + strikethroughThickness);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string and get the `LineMetrics` for the string using the `getStringMetrics()` method. Finally, we get the strikethrough thickness from the `LineMetrics` object and print it out.
+
+Please note that you need to replace `"Arial"` and `12` with your desired font and size. Also, you need to replace `"Hello"` with your desired text.
+================================================================
+
+Sample: 9 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getUnderlineOffset() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUnderlineOffset()` method in `java.awt.font.LineMetrics` is used to get the offset of the underline relative to the baseline of the font.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+import java.awt.font.TextLayout;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        TextLayout layout = new TextLayout("Hello", font, frc);
+        LineMetrics lm = layout.getLineMetrics(0);
+        float underlineOffset = lm.getUnderlineOffset();
+        System.out.println("Underline offset: " + underlineOffset);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then, we create a `FontRenderContext` object. After that, we create a `TextLayout` object with the text "Hello" and the font we created. Finally, we get the `LineMetrics` object from the `TextLayout` object and get the underline offset using the `getUnderlineOffset()` method.
+
+Please note that the `getUnderlineOffset()` method returns the offset of the underline relative to the baseline of the font. If the underline is below the baseline, the value will be negative. If the underline is above the baseline, the value will be positive.
+================================================================
+
+Sample: 10 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getUnderlineThickness() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUnderlineThickness()` method in `java.awt.font.LineMetrics` is used to get the thickness of the underline of the text.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float underlineThickness = lm.getUnderlineThickness();
+        System.out.println("Underline Thickness: " + underlineThickness);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string to get the metrics for. We get the `LineMetrics` for the string using the `getStringMetrics` method of the `Font` object. Finally, we get the underline thickness from the `LineMetrics` object and print it out.
+
+Please note that you need to replace `"Hello"` with the text you want to get the underline thickness for. Also, you need to have a valid `Graphics` object to get the `FontRenderContext`.
+================================================================
+
+Sample: 11 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getStrikethroughOffset() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getStrikethroughOffset()` method in `java.awt.font.LineMetrics` is used to get the offset of the strikethrough baseline.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        FontRenderContext frc = new FontRenderContext(null, true, true);
+        String text = "Hello";
+        FontMetrics fm = new FontMetrics(font) {
+            @Override
+            public int getStrikethroughOffset() {
+                return super.getStrikethroughOffset();
+            }
+        };
+        LineMetrics lm = fm.getLineMetrics(text, frc);
+        System.out.println(lm.getStrikethroughOffset());
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then, we create a `FontRenderContext` object. We also create a `String` object.
+
+Next, we create a `FontMetrics` object and override the `getStrikethroughOffset()` method.
+
+Finally, we get the `LineMetrics` of the text using the `getLineMetrics()` method and print the strikethrough offset.
+
+Please note that the strikethrough offset is a value between 0 and 1 that represents the percentage of the line height that the strikethrough is offset from the baseline.
+================================================================
+
+Sample: 12 LineMetrics
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use float getStrikethroughThickness() from java.awt.font.LineMetrics
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getStrikethroughThickness()` method in `java.awt.font.LineMetrics` is used to get the thickness of the strikethrough. It returns a float value which represents the thickness of the strikethrough.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+
+public class Main {
+    public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 12);
+        Graphics g = null;
+        FontRenderContext frc = g.getFontRenderContext();
+        String text = "Hello";
+        LineMetrics lm = font.getStringMetrics(text, frc);
+        float strikethroughThickness = lm.getStrikethroughThickness();
+        System.out.println("Strikethrough Thickness: " + strikethroughThickness);
+    }
+}
+```
+
+In this code snippet, we first create a `Font` object. Then we create a `Graphics` object. We get the `FontRenderContext` from the `Graphics` object. We then create a string and get the `LineMetrics` for the string using the `getStringMetrics()` method. Finally, we get the strikethrough thickness from the `LineMetrics` object and print it out.
+
+Please note that you need to replace `"Arial"` and `12` with your desired font and size. Also, you need to replace `"Hello"` with your desired text.
+================================================================
+
+Sample: 13 TextHitInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getInsertionIndex() from java.awt.font.TextHitInfo
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getInsertionIndex()` method in `java.awt.font.TextHitInfo` is used to get the insertion index of the text hit. It returns the index where the text hit would be inserted into the text.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.font.TextHitInfo;
+
+public class Main {
+    public static void main(String[] args) {
+        TextHitInfo hitInfo = new TextHitInfo(10, true, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+================================================================
+

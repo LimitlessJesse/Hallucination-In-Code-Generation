@@ -1,0 +1,107 @@
+Sample: 0 ZoneRules
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ZoneOffset getOffset(Instant instant) from java.time.zone.ZoneRules
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how to use the `ZoneOffset getOffset(Instant instant)` method from `java.time.zone.ZoneRules`:
+
+```java
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+
+public class Main {
+    public static void main(String[] args) {
+        ZoneId zoneId = ZoneId.of("America/Los_Angeles");
+        ZoneRules zoneRules = zoneId.getRules();
+        Instant instant = Instant.now();
+        ZoneOffset zoneOffset = zoneRules.getOffset(instant);
+        System.out.println("Current offset for " + zoneId + " is " + zoneOffset);
+    }
+}
+```
+
+In this example, we first get the `ZoneRules` for a specific `ZoneId` (in this case, "America/Los_Angeles"). We then get the current `Instant` (the number of seconds and nanoseconds since the epoch). Finally, we get the `ZoneOffset` for this `Instant` using the `getOffset(Instant instant)` method.
+
+Please note that the `ZoneOffset` returned by this method is the offset from UTC at the given instant. It does not account for daylight saving adjustments. If you need to account for daylight saving adjustments, you should use the `getOffset(ZonedDateTime zdt)` method instead.
+================================================================
+
+Sample: 1 ZoneRules
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use ZoneOffset getOffset(LocalDateTime dateTime) from java.time.zone.ZoneRules
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getOffset(LocalDateTime dateTime)` method from `java.time.zone.ZoneRules`:
+
+```java
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.zone.ZoneRules;
+
+public class Main {
+    public static void main(String[] args) {
+        ZoneRules zoneRules = ZoneRules.of("America/New_York");
+        LocalDateTime dateTime = LocalDateTime.now();
+        ZoneOffset offset = zoneRules.getOffset(dateTime);
+        System.out.println("The offset for the given date and time is: " + offset);
+    }
+}
+```
+
+In this code snippet, we first create a `ZoneRules` object for the "America/New_York" time zone. Then we get the current date and time using `LocalDateTime.now()`. Finally, we use the `getOffset(LocalDateTime dateTime)` method to get the offset for the given date and time. The offset is then printed to the console.
+
+Please replace "America/New_York" with the time zone you want to use.
+================================================================
+

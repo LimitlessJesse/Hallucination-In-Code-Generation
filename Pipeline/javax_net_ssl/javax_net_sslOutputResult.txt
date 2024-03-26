@@ -1,0 +1,98 @@
+Sample: HttpsURLConnection_1
+----------------------------------------------------------------
+================================================================
+
+Sample: HttpsURLConnection_2
+----------------------------------------------------------------
+================================================================
+
+Sample: HttpsURLConnection_3
+----------------------------------------------------------------
+================================================================
+
+Sample: HttpsURLConnection_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: no default SSLSocketFactory specified
+	at java.base/javax.net.ssl.HttpsURLConnection.setDefaultSSLSocketFactory(HttpsURLConnection.java:311)
+	at HttpsURLConnection_4.main(HttpsURLConnection_4.java:7)
+
+================================================================
+
+Sample: KeyManagerFactory_2
+----------------------------------------------------------------
+output:
+./javax_net_ssl/javaFiles/KeyManagerFactory_2.java:15: error: exception CertificateException is never thrown in body of corresponding try statement
+        } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException | CertificateException e) {
+                                                                                            ^
+1 error
+
+
+================================================================
+
+Sample: KeyManagerFactory_3
+----------------------------------------------------------------
+output:
+./javax_net_ssl/javaFiles/KeyManagerFactory_3.java:13: error: unreported exception IOException; must be caught or declared to be thrown
+            ks.load(null, null);
+                   ^
+./javax_net_ssl/javaFiles/KeyManagerFactory_3.java:22: error: unreported exception InvalidAlgorithmParameterException; must be caught or declared to be thrown
+            kmf.init(spec);
+                    ^
+2 errors
+
+
+================================================================
+
+Sample: KeyManagerFactory_4
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: keystore.jks (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at KeyManagerFactory_4.main(KeyManagerFactory_4.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: X509ExtendedTrustManager_5
+----------------------------------------------------------------
+output:
+./javax_net_ssl/javaFiles/X509ExtendedTrustManager_5.java:7: error: <anonymous X509ExtendedTrustManager_5$1> is not abstract and does not override abstract method checkServerTrusted(X509Certificate[],String,SSLEngine) in X509ExtendedTrustManager
+        X509ExtendedTrustManager trustManager = new X509ExtendedTrustManager() {
+                                                                               ^
+1 error
+
+
+================================================================
+
+Sample: X509ExtendedTrustManager_6
+----------------------------------------------------------------
+output:
+./javax_net_ssl/javaFiles/X509ExtendedTrustManager_6.java:8: error: <anonymous X509ExtendedTrustManager_6$1> is not abstract and does not override abstract method checkServerTrusted(X509Certificate[],String,Socket) in X509ExtendedTrustManager
+        X509ExtendedTrustManager trustManager = new X509ExtendedTrustManager() {
+                                                                               ^
+1 error
+
+
+================================================================
+
+Sample: X509ExtendedTrustManager_7
+----------------------------------------------------------------
+output:
+./javax_net_ssl/javaFiles/X509ExtendedTrustManager_7.java:5: error: class MyTrustManager is public, should be declared in a file named MyTrustManager.java
+public class MyTrustManager extends X509ExtendedTrustManager {
+       ^
+1 error
+
+
+================================================================
+

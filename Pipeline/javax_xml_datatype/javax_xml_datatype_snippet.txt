@@ -1,0 +1,714 @@
+Sample: 0 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getYears() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getYears()` method from the `javax.xml.datatype.Duration` class is used to get the number of years in a duration.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            Duration duration = df.newDuration("P1Y2M3DT4H5M6S");
+            System.out.println("Years: " + duration.getYears());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `Duration` instance with a period of "P1Y2M3DT4H5M6S". Finally, we call the `getYears()` method on the `Duration` instance to get the number of years.
+
+Please note that the `getYears()` method returns the number of years in the duration. The duration is represented as a period of time in the format "PnYnMnDTnHnMnS". The "P" prefix indicates a period, "Y" for years, "M" for months, "D" for days, "T" for time, "H" for hours, "M" for minutes, and "S" for seconds.
+================================================================
+
+Sample: 1 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getMonths() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getMonths()` method from the `javax.xml.datatype.Duration` class is used to get the number of months in a duration.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            Duration duration = df.newDuration("P1Y2M3D");
+            System.out.println("Months: " + duration.getMonths());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `DatatypeFactory` and then creating a new `Duration` object with a period of 1 year, 2 months, and 3 days. We then call the `getMonths()` method on this `Duration` object to get the number of months in the duration.
+
+Please note that you need to add the necessary dependencies to your project to use the `javax.xml.datatype` package.
+================================================================
+
+Sample: 2 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getDays() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDays()` method is part of the `javax.xml.datatype.Duration` interface in Java. This method returns the number of days in the duration.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
+            Duration duration = datatypeFactory.newDuration("P1DT1H");
+            System.out.println(duration.getDays());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `DatatypeFactory` and then creating a new `Duration` object with a period of 1 day and 1 hour. The `getDays()` method is then called on this `Duration` object to get the number of days in the duration.
+
+Please note that you need to add the necessary dependencies to your project to use the `javax.xml.datatype` package.
+================================================================
+
+Sample: 3 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getHours() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getHours()` method from `javax.xml.datatype.Duration`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            Duration duration = df.newDuration("PT1H");
+            System.out.println(duration.getHours());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `DatatypeFactory` and then creating a new `Duration` object with a value of 1 hour. The `getHours()` method is then called on this `Duration` object to get the number of hours in the duration.
+
+Please note that you need to add the necessary dependencies to your project to use the `javax.xml.datatype` package.
+================================================================
+
+Sample: 4 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getMinutes() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getMinutes()` method from `javax.xml.datatype.Duration`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            Duration duration = df.newDuration("PT1H20M");
+            System.out.println(duration.getMinutes());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `DatatypeFactory` and then creating a new `Duration` object with a value of "PT1H20M". The `getMinutes()` method is then called on this `Duration` object to get the number of minutes.
+
+Please note that you need to have the necessary dependencies in your project to use the `DatatypeFactory` and `Duration` classes. If you are using Maven, you can add the following dependency to your `pom.xml`:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle`:
+
+```groovy
+dependencies {
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+}
+```
+================================================================
+
+Sample: 5 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getSeconds() from javax.xml.datatype.Duration
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getSeconds()` method from `javax.xml.datatype.Duration`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
+            Duration duration = datatypeFactory.newDuration("PT10S");
+            System.out.println(duration.getSeconds());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `DatatypeFactory` and then creating a new `Duration` object with a value of 10 seconds. The `getSeconds()` method is then called on this `Duration` object to get the number of seconds in the duration.
+
+Please note that you need to have the necessary dependencies in your project to use the `DatatypeFactory` and `Duration` classes. If you are using Maven, you can add the following dependency to your `pom.xml` file:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+</dependencies>
+```
+
+If you are using Gradle, you can add the following dependency to your `build.gradle` file:
+
+```groovy
+dependencies {
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+}
+```
+================================================================
+
+Sample: 6 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getMonth() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getMonth()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println(xgc.getMonth());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getMonth()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getMonth()` method returns the month of the year (1-12) as an integer.
+================================================================
+
+Sample: 7 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getYear() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getYear()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println(xgc.getYear());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getYear()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getYear()` method returns the year component of this `XMLGregorianCalendar` object as an `int`. The year is in the range [`-999999999`, `999999999`].
+================================================================
+
+Sample: 8 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getHour() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getHour()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println(xgc.getHour());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getHour()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getHour()` method returns the hour of the day (0-23) for the time represented by this `XMLGregorianCalendar` object. If the time represented by this `XMLGregorianCalendar` object is not available, the method returns `-1`.
+================================================================
+
+Sample: 9 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getMinute() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getMinute()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println("Minute: " + xgc.getMinute());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getMinute()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getMinute()` method returns the minute of the hour. The minute is represented as an integer between 0 and 59.
+================================================================
+
+Sample: 10 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getSecond() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getSecond()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println(xgc.getSecond());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getSecond()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getSecond()` method returns the second of the minute in the time represented by this `XMLGregorianCalendar` object. The value returned is in the range 0-59.
+================================================================
+
+Sample: 11 XMLGregorianCalendar
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getMillisecond() from javax.xml.datatype.XMLGregorianCalendar
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getMillisecond()` method from `javax.xml.datatype.XMLGregorianCalendar`:
+
+```java
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
+import java.util.GregorianCalendar;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            DatatypeFactory df = DatatypeFactory.newInstance();
+            GregorianCalendar gc = new GregorianCalendar();
+            XMLGregorianCalendar xgc = df.newXMLGregorianCalendar(gc);
+            System.out.println(xgc.getMillisecond());
+        } catch (DatatypeConfigurationException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `DatatypeFactory` instance. Then we create a `GregorianCalendar` instance and use it to create an `XMLGregorianCalendar` instance. Finally, we call the `getMillisecond()` method on the `XMLGregorianCalendar` instance and print the result.
+
+Please note that the `getMillisecond()` method returns the milliseconds in the current minute. If you want to get the milliseconds in the current second, you should use the `getSecond()` method instead.
+================================================================
+

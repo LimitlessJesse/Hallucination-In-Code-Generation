@@ -1,0 +1,675 @@
+Sample: AttributeChangeNotificationFilter_1
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/AttributeChangeNotificationFilter_1.java:9: error: non-static variable this cannot be referenced from a static context
+                this,
+                ^
+1 error
+
+
+================================================================
+
+Sample: AttributeChangeNotificationFilter_6
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/AttributeChangeNotificationFilter_6.java:9: error: non-static variable this cannot be referenced from a static context
+                this,
+                ^
+1 error
+
+
+================================================================
+
+Sample: MBeanAttributeInfo_1
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanAttributeInfo_1.java:5: error: no suitable constructor found for MBeanAttributeInfo(String,String,String,boolean,boolean,boolean,boolean,<null>)
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false, false, null);
+                                           ^
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,String,boolean,boolean,boolean) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,String,boolean,boolean,boolean,Descriptor) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,Method,Method) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MBeanAttributeInfo_2
+----------------------------------------------------------------
+stdout:
+Is attribute writable? false
+
+================================================================
+
+Sample: MBeanAttributeInfo_3
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanAttributeInfo_3.java:5: error: no suitable constructor found for MBeanAttributeInfo(String,String,String,boolean,boolean,boolean,boolean,<null>)
+        MBeanAttributeInfo attributeInfo = new MBeanAttributeInfo("name", "type", "description", true, false, false, false, null);
+                                           ^
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,String,boolean,boolean,boolean) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,String,boolean,boolean,boolean,Descriptor) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanAttributeInfo.MBeanAttributeInfo(String,String,Method,Method) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MBeanAttributeInfo_5
+----------------------------------------------------------------
+stdout:
+Type: type
+
+================================================================
+
+Sample: MBeanAttributeInfo_8
+----------------------------------------------------------------
+stdout:
+Type: type
+
+================================================================
+
+Sample: MBeanAttributeInfo_11
+----------------------------------------------------------------
+stdout:
+Type: type
+
+================================================================
+
+Sample: MBeanAttributeInfo_14
+----------------------------------------------------------------
+stdout:
+Type: type
+
+================================================================
+
+Sample: MBeanConstructorInfo_5
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanConstructorInfo_5.java:5: error: incompatible types: String[] cannot be converted to String
+        MBeanConstructorInfo constructorInfo1 = new MBeanConstructorInfo(new String[]{"arg1", "arg2"}, "description1");
+                                                                         ^
+./javax_management/javaFiles/MBeanConstructorInfo_5.java:6: error: incompatible types: String[] cannot be converted to String
+        MBeanConstructorInfo constructorInfo2 = new MBeanConstructorInfo(new String[]{"arg1", "arg2"}, "description1");
+                                                                         ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: MBeanFeatureInfo_3
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanFeatureInfo_3.java:5: error: no suitable constructor found for MBeanFeatureInfo(no arguments)
+        MBeanFeatureInfo featureInfo = new MBeanFeatureInfo();
+                                       ^
+    constructor MBeanFeatureInfo.MBeanFeatureInfo(String,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanFeatureInfo.MBeanFeatureInfo(String,String,Descriptor) is not applicable
+      (actual and formal argument lists differ in length)
+./javax_management/javaFiles/MBeanFeatureInfo_3.java:6: error: cannot find symbol
+        featureInfo.setName("myFeature");
+                   ^
+  symbol:   method setName(String)
+  location: variable featureInfo of type MBeanFeatureInfo
+2 errors
+
+
+================================================================
+
+Sample: MBeanFeatureInfo_4
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanFeatureInfo_4.java:5: error: no suitable constructor found for MBeanFeatureInfo(no arguments)
+        MBeanFeatureInfo featureInfo = new MBeanFeatureInfo();
+                                       ^
+    constructor MBeanFeatureInfo.MBeanFeatureInfo(String,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanFeatureInfo.MBeanFeatureInfo(String,String,Descriptor) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_2
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_2.java:5: error: cannot find symbol
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                          ^
+  symbol:   variable ManagementFactory
+  location: class MBeanInfo_2
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_3
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_3.java:5: error: cannot find symbol
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                          ^
+  symbol:   variable ManagementFactory
+  location: class MBeanInfo_3
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_5
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_5.java:7: error: cannot find symbol
+            MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                              ^
+  symbol:   variable ManagementFactory
+  location: class MBeanInfo_5
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_6
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_6.java:6: error: cannot find symbol
+            MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                              ^
+  symbol:   variable ManagementFactory
+  location: class MBeanInfo_6
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_7
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_7.java:17: error: cannot find symbol
+                System.out.println("Exception types: " + operation.getExceptionTypes());
+                                                                  ^
+  symbol:   method getExceptionTypes()
+  location: variable operation of type MBeanOperationInfo
+1 error
+
+
+================================================================
+
+Sample: MBeanInfo_8
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanInfo_8.java:11: error: cannot find symbol
+            MyMBean mb = new MyMBean();
+            ^
+  symbol:   class MyMBean
+  location: class MBeanInfo_8
+./javax_management/javaFiles/MBeanInfo_8.java:11: error: cannot find symbol
+            MyMBean mb = new MyMBean();
+                             ^
+  symbol:   class MyMBean
+  location: class MBeanInfo_8
+./javax_management/javaFiles/MBeanInfo_8.java:22: error: cannot find symbol
+                System.out.println("Notification Type: " + notification.getType());
+                                                                       ^
+  symbol:   method getType()
+  location: variable notification of type MBeanNotificationInfo
+./javax_management/javaFiles/MBeanInfo_8.java:23: error: cannot find symbol
+                System.out.println("Notification Class: " + notification.getClassName());
+                                                                        ^
+  symbol:   method getClassName()
+  location: variable notification of type MBeanNotificationInfo
+4 errors
+
+
+================================================================
+
+Sample: MBeanNotificationInfo_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: MBeanParameterInfo_2
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/MBeanParameterInfo_2.java:5: error: no suitable constructor found for MBeanParameterInfo(String,String,String,boolean,boolean)
+        MBeanParameterInfo parameterInfo = new MBeanParameterInfo("name", "type", "description", false, false);
+                                           ^
+    constructor MBeanParameterInfo.MBeanParameterInfo(String,String,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MBeanParameterInfo.MBeanParameterInfo(String,String,String,Descriptor) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MBeanServerPermission_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: Invalid MBeanServerPermission name: "permission1"
+	at java.management/javax.management.MBeanServerPermission.nameIndex(MBeanServerPermission.java:249)
+	at java.management/javax.management.MBeanServerPermission.parseMask(MBeanServerPermission.java:227)
+	at java.management/javax.management.MBeanServerPermission.<init>(MBeanServerPermission.java:144)
+	at MBeanServerPermission_3.main(MBeanServerPermission_3.java:5)
+
+================================================================
+
+Sample: MBeanServerPermission_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: Invalid MBeanServerPermission name: "register"
+	at java.management/javax.management.MBeanServerPermission.nameIndex(MBeanServerPermission.java:249)
+	at java.management/javax.management.MBeanServerPermission.parseMask(MBeanServerPermission.java:227)
+	at java.management/javax.management.MBeanServerPermission.<init>(MBeanServerPermission.java:144)
+	at MBeanServerPermission_4.main(MBeanServerPermission_4.java:5)
+
+================================================================
+
+Sample: Notification_3
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_3.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_3.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_3.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_3.java:6: error: <anonymous Notification_3$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: Notification_4
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_4.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_4.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_4.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_4.java:6: error: <anonymous Notification_4$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: Notification_5
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_5.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_5.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_5.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_5.java:6: error: <anonymous Notification_5$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: Notification_6
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_6.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_6.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_6.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_6.java:6: error: <anonymous Notification_6$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: Notification_7
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_7.java:6: error: <anonymous Notification_7$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_7.java:7: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+2 errors
+
+
+================================================================
+
+Sample: Notification_8
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_8.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_8.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_8.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_8.java:6: error: <anonymous Notification_8$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_8.java:16: error: no suitable constructor found for Notification(String,NotificationBroadcaster,int,long,String,String)
+        Notification notification = new Notification("Test", broadcaster, 0, System.currentTimeMillis(), "Test message", "Test user data");
+                                    ^
+    constructor Notification.Notification(String,Object,long) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,long,String) is not applicable
+      (actual and formal argument lists differ in length)
+5 errors
+
+
+================================================================
+
+Sample: Notification_11
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_11.java:6: error: <anonymous Notification_11$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_11.java:7: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_management/javaFiles/Notification_11.java:13: error: non-static variable this cannot be referenced from a static context
+        Notification notification = new Notification("Test", this, 0, System.currentTimeMillis(), "Test notification");
+                                                             ^
+./javax_management/javaFiles/Notification_11.java:16: error: cannot find symbol
+        broadcaster.sendNotification(notification);
+                   ^
+  symbol:   method sendNotification(Notification)
+  location: variable broadcaster of type NotificationBroadcaster
+4 errors
+
+
+================================================================
+
+Sample: Notification_12
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_12.java:20: error: cannot find symbol
+class TestMBean implements NotificationBroadcasterMBean {
+                           ^
+  symbol: class NotificationBroadcasterMBean
+./javax_management/javaFiles/Notification_12.java:5: error: cannot find symbol
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                          ^
+  symbol:   variable ManagementFactory
+  location: class Notification_12
+./javax_management/javaFiles/Notification_12.java:12: error: cannot find symbol
+            System.out.println("Type: " + info.getType());
+                                              ^
+  symbol:   method getType()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_12.java:13: error: cannot find symbol
+            System.out.println("Sequence Number: " + info.getSequenceNumber());
+                                                         ^
+  symbol:   method getSequenceNumber()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_12.java:14: error: cannot find symbol
+            info.setSequenceNumber(100);
+                ^
+  symbol:   method setSequenceNumber(int)
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_12.java:15: error: cannot find symbol
+            System.out.println("New Sequence Number: " + info.getSequenceNumber());
+                                                             ^
+  symbol:   method getSequenceNumber()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_12.java:24: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+7 errors
+
+
+================================================================
+
+Sample: Notification_13
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_13.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_13.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_13.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_13.java:6: error: <anonymous Notification_13$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: Notification_14
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_14.java:6: error: <anonymous Notification_14$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_14.java:7: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+2 errors
+
+
+================================================================
+
+Sample: Notification_15
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_15.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_15.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_15.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_15.java:6: error: <anonymous Notification_15$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_15.java:16: error: no suitable constructor found for Notification(String,NotificationBroadcaster,int,long,String,String)
+        Notification notification = new Notification("Test", broadcaster, 0, System.currentTimeMillis(), "Test message", "Test user data");
+                                    ^
+    constructor Notification.Notification(String,Object,long) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,String) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,long) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor Notification.Notification(String,Object,long,long,String) is not applicable
+      (actual and formal argument lists differ in length)
+5 errors
+
+
+================================================================
+
+Sample: Notification_18
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_18.java:6: error: <anonymous Notification_18$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+./javax_management/javaFiles/Notification_18.java:7: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_management/javaFiles/Notification_18.java:13: error: non-static variable this cannot be referenced from a static context
+        Notification notification = new Notification("Test", this, 0, System.currentTimeMillis(), "Test notification");
+                                                             ^
+./javax_management/javaFiles/Notification_18.java:16: error: cannot find symbol
+        broadcaster.sendNotification(notification);
+                   ^
+  symbol:   method sendNotification(Notification)
+  location: variable broadcaster of type NotificationBroadcaster
+4 errors
+
+
+================================================================
+
+Sample: Notification_19
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_19.java:20: error: cannot find symbol
+class TestMBean implements NotificationBroadcasterMBean {
+                           ^
+  symbol: class NotificationBroadcasterMBean
+./javax_management/javaFiles/Notification_19.java:5: error: cannot find symbol
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                          ^
+  symbol:   variable ManagementFactory
+  location: class Notification_19
+./javax_management/javaFiles/Notification_19.java:12: error: cannot find symbol
+            System.out.println("Type: " + info.getType());
+                                              ^
+  symbol:   method getType()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_19.java:13: error: cannot find symbol
+            System.out.println("Sequence Number: " + info.getSequenceNumber());
+                                                         ^
+  symbol:   method getSequenceNumber()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_19.java:14: error: cannot find symbol
+            info.setSequenceNumber(100);
+                ^
+  symbol:   method setSequenceNumber(int)
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_19.java:15: error: cannot find symbol
+            System.out.println("New Sequence Number: " + info.getSequenceNumber());
+                                                             ^
+  symbol:   method getSequenceNumber()
+  location: variable info of type MBeanNotificationInfo
+./javax_management/javaFiles/Notification_19.java:24: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+7 errors
+
+
+================================================================
+
+Sample: Notification_20
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/Notification_20.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_20.java:8: error: cannot find symbol
+            public void addNotificationListener(NotificationListener listener, NotificationFilter filter, Object handback) {
+                                                                               ^
+  symbol: class NotificationFilter
+./javax_management/javaFiles/Notification_20.java:12: error: cannot find symbol
+            public void removeNotificationListener(NotificationListener listener) {
+                                                   ^
+  symbol: class NotificationListener
+./javax_management/javaFiles/Notification_20.java:6: error: <anonymous Notification_20$1> is not abstract and does not override abstract method getNotificationInfo() in NotificationBroadcaster
+        NotificationBroadcaster broadcaster = new NotificationBroadcaster() {
+                                                                            ^
+4 errors
+
+
+================================================================
+
+Sample: NotificationBroadcasterSupport_2
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/NotificationBroadcasterSupport_2.java:19: error: unreported exception ListenerNotFoundException; must be caught or declared to be thrown
+        broadcaster.removeNotificationListener(listener);
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: NotificationBroadcasterSupport_3
+----------------------------------------------------------------
+stdout:
+Received notification: javax.management.Notification[source=java.lang.Object@15bfd87][type=TestNotification][message=]
+
+================================================================
+
+Sample: NotificationFilterSupport_1
+----------------------------------------------------------------
+stdout:
+Is notification enabled? false
+
+================================================================
+
+Sample: ObjectInstance_3
+----------------------------------------------------------------
+output:
+./javax_management/javaFiles/ObjectInstance_3.java:5: error: cannot find symbol
+        MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+                          ^
+  symbol:   variable ManagementFactory
+  location: class ObjectInstance_3
+1 error
+
+
+================================================================
+

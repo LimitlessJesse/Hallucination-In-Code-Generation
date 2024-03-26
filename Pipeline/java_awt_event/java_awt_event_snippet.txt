@@ -1,0 +1,2859 @@
+Sample: 0 AdjustmentEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getAdjustmentType() from java.awt.event.AdjustmentEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAdjustmentType()` method from `java.awt.event.AdjustmentEvent` returns an integer that represents the type of adjustment that occurred. The possible values are `AdjustmentEvent.TRACK`, `AdjustmentEvent.SCROLL`, and `AdjustmentEvent.LONG_DEC`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.AdjustmentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        AdjustmentEvent event = new AdjustmentEvent(null, AdjustmentEvent.TRACK, 0, 0);
+        int adjustmentType = event.getAdjustmentType();
+        System.out.println("Adjustment type: " + adjustmentType);
+    }
+}
+```
+
+In this code, we create a new `AdjustmentEvent` with the type `AdjustmentEvent.TRACK`. Then we call the `getAdjustmentType()` method on this event and print the result. The output will be `Adjustment type: 0`, which corresponds to `AdjustmentEvent.TRACK`.
+================================================================
+
+Sample: 1 AdjustmentEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getValue() from java.awt.event.AdjustmentEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getValue()` method from `java.awt.event.AdjustmentEvent` is used to get the current value of the adjustment source.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
+import javax.swing.JFrame;
+import javax.swing.JScrollBar;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Adjustment Event Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+
+        JScrollBar scrollBar = new JScrollBar(JScrollBar.HORIZONTAL);
+        scrollBar.setPreferredSize(new java.awt.Dimension(100, 16));
+        scrollBar.setMaximum(100);
+        scrollBar.addAdjustmentListener(new AdjustmentListener() {
+            public void adjustmentValueChanged(AdjustmentEvent e) {
+                int value = e.getValue();
+                System.out.println("Current value: " + value);
+            }
+        });
+
+        frame.getContentPane().add(scrollBar);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame with a JScrollBar. We add an AdjustmentListener to the JScrollBar, which prints the current value of the scrollbar whenever it's adjusted.
+
+Please note that this code is a Swing application and it needs to be run in a Swing-enabled environment.
+================================================================
+
+Sample: 2 AdjustmentEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getAdjustmentType() from java.awt.event.AdjustmentEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAdjustmentType()` method from `java.awt.event.AdjustmentEvent` returns an integer that represents the type of adjustment that occurred. The possible values are `AdjustmentEvent.TRACK`, `AdjustmentEvent.SCROLL`, and `AdjustmentEvent.LONG_DEC`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.AdjustmentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        AdjustmentEvent event = new AdjustmentEvent(null, AdjustmentEvent.TRACK, 0, 0);
+        int adjustmentType = event.getAdjustmentType();
+        System.out.println("Adjustment type: " + adjustmentType);
+    }
+}
+```
+
+In this code, we create a new `AdjustmentEvent` with the type `AdjustmentEvent.TRACK`. Then we call the `getAdjustmentType()` method on this event and print the result. The output will be `Adjustment type: 0`, which corresponds to `AdjustmentEvent.TRACK`.
+================================================================
+
+Sample: 3 ComponentAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void componentHidden(ComponentEvent e) from java.awt.event.ComponentAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void componentHidden(ComponentEvent e)` method is a part of the `ComponentAdapter` class in Java. This method is called when a component is hidden.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import javax.swing.JFrame;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentHidden(ComponentEvent e) {
+                System.out.println("Component is hidden.");
+            }
+        });
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code snippet, we create a JFrame and add a ComponentAdapter to it. When the frame is hidden, the `componentHidden(ComponentEvent e)` method will be called, and it will print "Component is hidden." to the console.
+
+Please note that this code snippet is using Swing, which is a part of Java's standard library. If you want to use AWT instead, you need to replace `JFrame` with `Frame` and `ComponentAdapter` with `WindowAdapter`.
+================================================================
+
+Sample: 4 ComponentAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void componentMoved(ComponentEvent e) from java.awt.event.ComponentAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `componentMoved(ComponentEvent e)` method from `java.awt.event.ComponentAdapter`:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        ComponentAdapter componentAdapter = new ComponentAdapter() {
+            @Override
+            public void componentMoved(ComponentEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In the above code, we are creating an anonymous class that extends `ComponentAdapter` and overrides the `componentMoved(ComponentEvent e)` method. This method is called whenever the component's position, size, or both, change.
+
+You can put your code inside the `componentMoved(ComponentEvent e)` method to be executed whenever the component's position, size, or both, change.
+
+For example, you can print the new position of the component:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        ComponentAdapter componentAdapter = new ComponentAdapter() {
+            @Override
+            public void componentMoved(ComponentEvent e) {
+                System.out.println("Component moved to: " + e.getComponent().getLocation());
+            }
+        };
+    }
+}
+```
+
+This will print the new position of the component every time it is moved.
+================================================================
+
+Sample: 5 ComponentAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void componentResized(ComponentEvent e) from java.awt.event.ComponentAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `componentResized(ComponentEvent e)` method from `java.awt.event.ComponentAdapter`:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        ComponentAdapter componentAdapter = new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In the above code, we are creating an anonymous class that extends `ComponentAdapter` and overrides the `componentResized(ComponentEvent e)` method. This method is called whenever the size of the component changes.
+
+You can put your code inside the `componentResized(ComponentEvent e)` method to be executed when the component is resized. For example, you can print the new size of the component:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        ComponentAdapter componentAdapter = new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                System.out.println("Component resized: " + e.getComponent().getSize());
+            }
+        };
+    }
+}
+```
+
+This will print the new size of the component every time it is resized.
+================================================================
+
+Sample: 6 ComponentAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void componentShown(ComponentEvent e) from java.awt.event.ComponentAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void componentShown(ComponentEvent e)` method is a part of `java.awt.event.ComponentAdapter` class. This method is called when a component is shown.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        ComponentAdapter componentAdapter = new ComponentAdapter() {
+            @Override
+            public void componentShown(ComponentEvent e) {
+                System.out.println("Component is shown");
+            }
+        };
+
+        // You can use this componentAdapter in your code
+    }
+}
+```
+
+In this code snippet, we create a `ComponentAdapter` and override the `componentShown(ComponentEvent e)` method. When the component is shown, the `componentShown(ComponentEvent e)` method will be called and print "Component is shown".
+
+Please note that this is a simple example and you may need to adjust it according to your specific needs.
+================================================================
+
+Sample: 7 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusGained(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `focusGained(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Focus Event Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JTextField textField = new JTextField(20);
+        textField.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                System.out.println("Focus gained");
+            }
+        });
+
+        frame.add(textField);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a `JFrame` and a `JTextField`. We add a `FocusListener` to the `JTextField` that prints a message to the console when the `JTextField` gains focus. When you run this code, you can click into the `JTextField` and you will see the message "Focus gained" printed to the console.
+================================================================
+
+Sample: 8 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusLost(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void focusLost(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyFocusAdapter focusAdapter = new MyFocusAdapter();
+        // Assuming we have a JTextField named textField
+        textField.addFocusListener(focusAdapter);
+    }
+}
+
+class MyFocusAdapter extends FocusAdapter {
+    @Override
+    public void focusLost(FocusEvent e) {
+        // Your code here
+    }
+}
+```
+
+In the above code, we create a new class `MyFocusAdapter` that extends `FocusAdapter`. We override the `focusLost(FocusEvent e)` method. This method is called when the focus is lost from the component. You can put your code inside this method to be executed when the focus is lost.
+
+Then, we create an instance of `MyFocusAdapter` and add it as a focus listener to our `JTextField`. When the focus is lost from the `JTextField`, the `focusLost(FocusEvent e)` method in `MyFocusAdapter` will be called.
+================================================================
+
+Sample: 9 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusGained(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `focusGained(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Focus Event Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JTextField textField = new JTextField(20);
+        textField.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                System.out.println("Focus gained");
+            }
+        });
+
+        frame.add(textField);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a `JFrame` and a `JTextField`. We add a `FocusListener` to the `JTextField` that prints a message to the console when the `JTextField` gains focus. When you run this code, you can click into the `JTextField` and you will see the message "Focus gained" printed to the console.
+================================================================
+
+Sample: 10 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusLost(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void focusLost(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyFocusAdapter focusAdapter = new MyFocusAdapter();
+        // Assuming we have a JTextField named textField
+        textField.addFocusListener(focusAdapter);
+    }
+}
+
+class MyFocusAdapter extends FocusAdapter {
+    @Override
+    public void focusLost(FocusEvent e) {
+        // Your code here
+    }
+}
+```
+
+In the above code, we create a new class `MyFocusAdapter` that extends `FocusAdapter`. We override the `focusLost(FocusEvent e)` method. This method is called when the focus is lost from the component. You can put your code inside this method to be executed when the focus is lost.
+
+Then, we create an instance of `MyFocusAdapter` and add it as a focus listener to our `JTextField`. When the focus is lost from the `JTextField`, the `focusLost(FocusEvent e)` method in `MyFocusAdapter` will be called.
+================================================================
+
+Sample: 11 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusGained(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `focusGained(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Focus Event Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JTextField textField = new JTextField(20);
+        textField.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                System.out.println("Focus gained");
+            }
+        });
+
+        frame.add(textField);
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a `JFrame` and a `JTextField`. We add a `FocusListener` to the `JTextField` that prints a message to the console when the `JTextField` gains focus. When you run this code, you can click into the `JTextField` and you will see the message "Focus gained" printed to the console.
+================================================================
+
+Sample: 12 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void focusLost(FocusEvent e) from java.awt.event.FocusAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void focusLost(FocusEvent e)` method from `java.awt.event.FocusAdapter`:
+
+```java
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyFocusAdapter focusAdapter = new MyFocusAdapter();
+        // Assuming we have a JTextField named textField
+        textField.addFocusListener(focusAdapter);
+    }
+}
+
+class MyFocusAdapter extends FocusAdapter {
+    @Override
+    public void focusLost(FocusEvent e) {
+        // Your code here
+    }
+}
+```
+
+In the above code, we create a new class `MyFocusAdapter` that extends `FocusAdapter`. We override the `focusLost(FocusEvent e)` method. This method is called when the focus is lost from the component. You can put your code inside this method to be executed when the focus is lost.
+
+Then, we create an instance of `MyFocusAdapter` and add it as a focus listener to our `JTextField`. When the focus is lost from the `JTextField`, the `focusLost(FocusEvent e)` method in `MyFocusAdapter` will be called.
+================================================================
+
+Sample: 13 InputEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isMetaDown() from java.awt.event.InputEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isMetaDown()` method is a part of `java.awt.event.InputEvent` class and it is used to check if the Meta key is pressed.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.InputEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        InputEvent event = new InputEvent();
+        boolean isMetaDown = event.isMetaDown();
+        System.out.println("Is Meta key down? " + isMetaDown);
+    }
+}
+```
+
+In this code snippet, we create an instance of `InputEvent` and then call the `isMetaDown()` method on it. The result is then printed to the console.
+
+Please note that this code snippet is just a demonstration and does not represent a real-world scenario. In a real-world scenario, you would need to handle the event that triggers the `isMetaDown()` method, which is not covered in this example.
+================================================================
+
+Sample: 14 InputEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isAltDown() from java.awt.event.InputEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isAltDown()` method is a part of `java.awt.event.InputEvent` class and it is used to check if the ALT key is pressed.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.InputEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        InputEvent event = new InputEvent();
+        boolean isAltDown = event.isAltDown();
+        System.out.println("Is ALT key down? " + isAltDown);
+    }
+}
+```
+
+In this code snippet, we create an instance of `InputEvent` and then call the `isAltDown()` method on it. The result is then printed to the console.
+
+Please note that this code snippet is a simple example and may not work as expected in a real-world scenario. The `isAltDown()` method is typically used in conjunction with other event handling code, and it is not typically called directly.
+================================================================
+
+Sample: 15 InputEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isControlDown() from java.awt.event.InputEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isControlDown()` method is a part of `java.awt.event.InputEvent` class and it is used to check if the control key is pressed.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.InputEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        InputEvent event = new InputEvent();
+        boolean isControlDown = event.isControlDown();
+        System.out.println("Is control key down? " + isControlDown);
+    }
+}
+```
+
+In this code snippet, we create an instance of `InputEvent` and then call the `isControlDown()` method on it. The result is then printed to the console.
+
+Please note that this code snippet is just a demonstration and does not represent a real-world scenario. In a real-world scenario, you would need to handle the event that triggers the `isControlDown()` method, which is not covered in this example.
+================================================================
+
+Sample: 16 InputEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isShiftDown() from java.awt.event.InputEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isShiftDown()` method from `java.awt.event.InputEvent` is used to check if the shift key is pressed. It returns `true` if the shift key is pressed, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.InputEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        InputEvent event = new InputEvent() {
+            @Override
+            public boolean isShiftDown() {
+                // Implement the logic to check if the shift key is pressed
+                // For example, return true if the shift key is pressed
+                return true;
+            }
+        };
+
+        boolean shiftDown = event.isShiftDown();
+        System.out.println("Is shift key down? " + shiftDown);
+    }
+}
+```
+
+In this code snippet, we create a new `InputEvent` object and override the `isShiftDown()` method to return `true`. This is just for demonstration purposes, in a real-world scenario, you would need to implement the logic to check if the shift key is pressed.
+================================================================
+
+Sample: 17 KeyAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void keyPressed(KeyEvent e) from java.awt.event.KeyAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `keyPressed(KeyEvent e)` method from `java.awt.event.KeyAdapter`:
+
+```java
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Main extends KeyAdapter {
+    public static void main(String[] args) {
+        // Create a new instance of Main
+        Main main = new Main();
+
+        // Simulate a key press
+        main.keyPressed(new KeyEvent(null, 0, 0, 0, 'a', 'a'));
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        // Print the key that was pressed
+        System.out.println("Key pressed: " + e.getKeyChar());
+    }
+}
+```
+
+In this example, we create a new instance of `Main` and call the `keyPressed(KeyEvent e)` method with a simulated `KeyEvent`. The `keyPressed(KeyEvent e)` method is overridden from `KeyAdapter` and prints the key that was pressed.
+
+Please note that this is a simple example and may not be suitable for a real-world application. In a real-world application, you would likely want to handle the key press event in a more complex way, such as updating the state of your application or triggering some action.
+================================================================
+
+Sample: 18 KeyAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void keyReleased(KeyEvent e) from java.awt.event.KeyAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `keyReleased(KeyEvent e)` method from `java.awt.event.KeyAdapter`:
+
+```java
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In the `keyReleased(KeyEvent e)` method, you can add your code that will be executed when a key is released. The `KeyEvent e` parameter contains information about the key that was released.
+
+For example, you can print the key code of the released key:
+
+```java
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        KeyAdapter keyAdapter = new KeyAdapter() {
+            @Override
+            public void keyReleased(KeyEvent e) {
+                System.out.println("Key released: " + e.getKeyCode());
+            }
+        };
+    }
+}
+```
+
+This code will print the key code of the released key to the console. The key code is a numerical representation of the key that was released. For example, the key code for the 'A' key is 65, the 'B' key is 66, and so on.
+================================================================
+
+Sample: 19 KeyAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void keyTyped(KeyEvent e) from java.awt.event.KeyAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `keyTyped(KeyEvent e)` method from `java.awt.event.KeyAdapter`:
+
+```java
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Main extends KeyAdapter {
+    public static void main(String[] args) {
+        // You can test the keyTyped method by creating a new instance of Main and adding it as a KeyListener to a component
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        // This method is called when a key is typed.
+        // You can get the key code and character typed with e.getKeyChar() and e.getKeyCode() respectively.
+        System.out.println("Key typed: " + e.getKeyChar());
+    }
+}
+```
+
+In this code, `keyTyped(KeyEvent e)` is an overridden method from `java.awt.event.KeyAdapter`. This method is called when a key is typed. The `KeyEvent` object `e` contains information about the key that was typed, such as the key code and character typed.
+
+You can test this method by creating a new instance of `Main` and adding it as a KeyListener to a component. When a key is typed, the `keyTyped(KeyEvent e)` method will be called, and you can print the key character to the console.
+================================================================
+
+Sample: 20 KeyEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getKeyCode() from java.awt.event.KeyEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getKeyCode()` method from `java.awt.event.KeyEvent` is used to get the key code of the key that was pressed. The key code is a numerical value that represents the key on the keyboard.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.KeyEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        int keyCode = KeyEvent.VK_A; // For example, we are getting the key code for 'A'
+        System.out.println("Key code for 'A' is: " + keyCode);
+    }
+}
+```
+
+In this code, we are getting the key code for the key 'A'. The key code for 'A' is `65`.
+
+Please note that this code will not run in a regular Java environment. It is meant to be used in a Java environment that supports AWT (Abstract Window Toolkit).
+================================================================
+
+Sample: 21 KeyEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getKeyLocation() from java.awt.event.KeyEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getKeyLocation()` method in `java.awt.event.KeyEvent` is used to get the location of the key that was pressed. It returns an integer value that represents the location of the key.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.KeyEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        int keyCode = KeyEvent.VK_A; // for example, we are using 'A' key
+        int keyLocation = KeyEvent.getKeyLocation(keyCode);
+        System.out.println("The location of the key is: " + keyLocation);
+    }
+}
+```
+
+In this code snippet, we are using the `VK_A` constant which represents the 'A' key. The `getKeyLocation()` method is then called with this key code as an argument. The result is then printed to the console.
+
+The `getKeyLocation()` method returns an integer value that represents the location of the key. This value can be one of the following:
+
+- `KeyEvent.KEY_LOCATION_STANDARD`: The key is a standard key.
+- `KeyEvent.KEY_LOCATION_LEFT`: The key is a left modifier key.
+- `KeyEvent.KEY_LOCATION_RIGHT`: The key is a right modifier key.
+- `KeyEvent.KEY_LOCATION_NUMPAD`: The key is a numpad key.
+- `KeyEvent.KEY_LOCATION_UNKNOWN`: The location of the key is unknown.
+================================================================
+
+Sample: 22 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseClicked(MouseEvent e) from java.awt.event.MouseAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseClicked(MouseEvent e)` method from `java.awt.event.MouseAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In this code snippet, we create a `MouseAdapter` and override the `mouseClicked(MouseEvent e)` method. This method is called whenever the mouse is clicked. You can put your code inside this method to be executed when the mouse is clicked.
+
+For example, if you want to print a message to the console when the mouse is clicked, you can do this:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                System.out.println("Mouse clicked!");
+            }
+        };
+    }
+}
+```
+
+This will print "Mouse clicked!" to the console every time the mouse is clicked.
+================================================================
+
+Sample: 23 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mousePressed(MouseEvent e) from java.awt.event.MouseAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mousePressed(MouseEvent e)` method from `java.awt.event.MouseAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In this code snippet, we create a `MouseAdapter` and override the `mousePressed(MouseEvent e)` method. This method is called when the mouse button is pressed on a component.
+
+You can put your code inside the `mousePressed(MouseEvent e)` method to be executed when the mouse button is pressed. For example:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                System.out.println("Mouse button pressed at: " + e.getX() + ", " + e.getY());
+            }
+        };
+    }
+}
+```
+
+In this example, when the mouse button is pressed, it prints the coordinates of the mouse pointer.
+================================================================
+
+Sample: 24 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseReleased(MouseEvent e) from java.awt.event.MouseAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseReleased(MouseEvent e)` method from `java.awt.event.MouseAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In the `mouseReleased(MouseEvent e)` method, you can add your own code that will be executed when the mouse button is released. The `MouseEvent e` parameter provides information about the mouse event, such as the position of the mouse cursor and the state of the mouse buttons.
+
+For example, you can print the position of the mouse cursor when the mouse button is released:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseAdapter mouseAdapter = new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                System.out.println("Mouse released at position: (" + x + ", " + y + ")");
+            }
+        };
+    }
+}
+```
+
+This code will print the position of the mouse cursor when the mouse button is released.
+================================================================
+
+Sample: 25 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseEntered(MouseEvent e) from java.awt.event.MouseAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseEntered(MouseEvent e)` method from `java.awt.event.MouseAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyMouseAdapter mouseAdapter = new MyMouseAdapter();
+        // Assuming you have a JComponent component
+        component.addMouseListener(mouseAdapter);
+    }
+}
+
+class MyMouseAdapter extends MouseAdapter {
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        // Your code here
+    }
+}
+```
+
+In the `mouseEntered(MouseEvent e)` method, you can add your own logic to be executed when the mouse enters the component. For example, you can change the background color of the component when the mouse enters:
+
+```java
+@Override
+public void mouseEntered(MouseEvent e) {
+    component.setBackground(Color.GREEN);
+}
+```
+
+Remember to replace `component` with the actual name of your JComponent.
+================================================================
+
+Sample: 26 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseExited(MouseEvent e) from java.awt.event.MouseAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseExited(MouseEvent e)` method from `java.awt.event.MouseAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyMouseAdapter mouseAdapter = new MyMouseAdapter();
+        // Assuming you have a JComponent component
+        component.addMouseListener(mouseAdapter);
+    }
+}
+
+class MyMouseAdapter extends MouseAdapter {
+    @Override
+    public void mouseExited(MouseEvent e) {
+        // Your code here
+    }
+}
+```
+
+In the `mouseExited(MouseEvent e)` method, you can add your own logic that will be executed when the mouse cursor leaves the component.
+
+Please replace `component` with the actual name of your JComponent.
+
+Note: You need to extend `MouseAdapter` and override the `mouseExited(MouseEvent e)` method. Then, you can add an instance of your class to the `MouseListener` of your component.
+================================================================
+
+Sample: 27 MouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getX() from java.awt.event.MouseEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getX()` method in `java.awt.event.MouseEvent` is used to get the X coordinate of the mouse pointer relative to the origin of the component.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseAdapter;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("MouseEvent Example");
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JLabel label = new JLabel("Click and Drag");
+        frame.add(label);
+
+        frame.addMouseMotionListener(new MouseAdapter() {
+            public void mouseDragged(MouseEvent e) {
+                int x = e.getX();
+                int y = e.getY();
+                label.setText("Mouse pointer is at: (" + x + ", " + y + ")");
+            }
+        });
+
+        frame.setVisible(true);
+    }
+}
+```
+
+In this code, we create a JFrame and a JLabel. We add a MouseMotionListener to the JFrame. When the mouse is dragged, the `mouseDragged()` method is called. Inside this method, we get the X and Y coordinates of the mouse pointer using `e.getX()` and `e.getY()`, respectively. We then set the text of the JLabel to the coordinates.
+================================================================
+
+Sample: 28 MouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getY() from java.awt.event.MouseEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getY()` method in `java.awt.event.MouseEvent` is used to get the Y coordinate of the mouse pointer relative to the top of the component.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseEvent event = new MouseEvent(null, 0, 0, 0, 100, 200, 1, false);
+        int y = event.getY();
+        System.out.println("Y coordinate: " + y);
+    }
+}
+```
+
+In this code, we create a `MouseEvent` object with the X and Y coordinates as 100 and 200 respectively. Then we call the `getY()` method on this event object to get the Y coordinate.
+
+Please note that the `MouseEvent` object is created with null as the source component, 0 as the ID, and 0 as the modifiers. These values are arbitrary and do not represent any real mouse event.
+================================================================
+
+Sample: 29 MouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getClickCount() from java.awt.event.MouseEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getClickCount()` method from `java.awt.event.MouseEvent` is used to get the number of times a mouse button has been clicked.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseEvent event = new MouseEvent(null, 0, 0, 0, 0, 0, 0, false, 0);
+        int clickCount = event.getClickCount();
+        System.out.println("Number of times the mouse button has been clicked: " + clickCount);
+    }
+}
+```
+
+In this code snippet, we create a `MouseEvent` object with a `getClickCount()` method. The `getClickCount()` method returns the number of times the mouse button has been clicked.
+
+Please note that the `MouseEvent` object is created with dummy parameters. The actual parameters are not important for this method. The `getClickCount()` method is called on the `MouseEvent` object and the result is printed to the console.
+================================================================
+
+Sample: 30 MouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getButton() from java.awt.event.MouseEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getButton()` method from `java.awt.event.MouseEvent` is used to get the button that was pressed when the mouse event occurred. The button can be one of the following:
+
+- `BUTTON1`: The primary button (normally the left button).
+- `BUTTON2`: The middle button.
+- `BUTTON3`: The secondary button (normally the right button).
+- `BUTTON4`: The mouse wheel button.
+- `BUTTON5`: The mouse wheel button.
+- `NOBUTTON`: No button was pressed.
+
+Here is a complete code snippet that demonstrates how to use this method:
+
+```java
+import java.awt.event.MouseEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseEvent event = new MouseEvent(null, 0, 0, 0, 0, MouseEvent.BUTTON1, false);
+        int button = event.getButton();
+        System.out.println("Button pressed: " + button);
+    }
+}
+```
+
+In this code, we create a `MouseEvent` object with the `BUTTON1` (the primary button) pressed. Then we call the `getButton()` method on this event to get the button that was pressed. The result is printed to the console.
+================================================================
+
+Sample: 31 MouseMotionAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseDragged(MouseEvent e) from java.awt.event.MouseMotionAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseDragged(MouseEvent e)` method from `java.awt.event.MouseMotionAdapter`:
+
+```java
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseMotionAdapter mouseMotionAdapter = new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In the `mouseDragged(MouseEvent e)` method, you can add your own code that will be executed every time the mouse is dragged. The `MouseEvent e` parameter contains information about the mouse event, such as the position of the mouse cursor.
+
+For example, you can use it to draw a line on a panel:
+
+```java
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(300, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        MyPanel panel = new MyPanel();
+        frame.add(panel);
+
+        frame.setVisible(true);
+    }
+
+    static class MyPanel extends JPanel {
+        private int x, y;
+
+        public MyPanel() {
+            addMouseMotionListener(new MouseMotionAdapter() {
+                @Override
+                public void mouseDragged(MouseEvent e) {
+                    int newX = e.getX();
+                    int newY = e.getY();
+                    if (x > 0 && y > 0) {
+                        Graphics g = getGraphics();
+                        g.drawLine(x, y, newX, newY);
+                        g.dispose();
+                    }
+                    x = newX;
+                    y = newY;
+                }
+            });
+        }
+    }
+}
+```
+
+In this example, a line is drawn from the previous position of the mouse to the current position. The `mouseDragged(MouseEvent e)` method is called every time the mouse is dragged, and the position of the mouse is updated in the `x` and `y` variables. The line is then drawn from the previous position to the current position.
+================================================================
+
+Sample: 32 MouseMotionAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void mouseMoved(MouseEvent e) from java.awt.event.MouseMotionAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `mouseMoved(MouseEvent e)` method from `java.awt.event.MouseMotionAdapter`:
+
+```java
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class Main extends MouseAdapter {
+    public static void main(String[] args) {
+        // Create a new instance of Main
+        Main main = new Main();
+
+        // Add the instance as a MouseListener to a component
+        // For example, a JFrame
+        // JFrame frame = new JFrame();
+        // frame.addMouseMotionListener(main);
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        // This method is called when the mouse cursor is moved
+        // You can get the x and y coordinates of the cursor here
+        int x = e.getX();
+        int y = e.getY();
+
+        System.out.println("Mouse moved to: (" + x + ", " + y + ")");
+    }
+}
+```
+
+In this code, we create a new class `Main` that extends `MouseAdapter`. We override the `mouseMoved(MouseEvent e)` method to handle the mouse movement event. We get the x and y coordinates of the mouse cursor from the `MouseEvent` object and print them out.
+
+Note: This code needs to be run in a context where a `MouseMotionListener` is added to a component (like a `JFrame`). The `MouseMotionListener` is added to the `JFrame` in the `main` method.
+================================================================
+
+Sample: 33 MouseWheelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getScrollType() from java.awt.event.MouseWheelEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getScrollType()` method in `java.awt.event.MouseWheelEvent` returns the scroll type of the mouse wheel event. The scroll type can be either `WHEEL_UNIT_SCROLL` or `WHEEL_BLOCK_SCROLL`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 0, 0, 0, false, MouseWheelEvent.WHEEL_UNIT_SCROLL);
+        System.out.println(event.getScrollType());
+    }
+}
+```
+
+In this code snippet, we create a `MouseWheelEvent` with a scroll type of `WHEEL_UNIT_SCROLL`. Then we print the scroll type of the event using the `getScrollType()` method.
+
+Please note that this code snippet is just an example and may not work as expected in your environment. You need to replace `null` with the appropriate source of the event.
+================================================================
+
+Sample: 34 MouseWheelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getUnitsToScroll() from java.awt.event.MouseWheelEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUnitsToScroll()` method in `java.awt.event.MouseWheelEvent` returns the number of scroll units that the mouse wheel was rotated. A positive value indicates that the wheel was rotated away from the user; a negative value indicates that the wheel was rotated toward the user.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 1, false, false, false, false, 1);
+        System.out.println(event.getUnitsToScroll());
+    }
+}
+```
+
+In this code, we create a `MouseWheelEvent` with a positive scroll amount (1 unit). Then we call `getUnitsToScroll()` on this event, which will return 1.
+
+Please note that this is a simple example and may not be suitable for real-world applications. In a real-world application, you would likely use this method in conjunction with a `MouseWheelListener` to respond to mouse wheel events.
+================================================================
+
+Sample: 35 MouseWheelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getWheelRotation() from java.awt.event.MouseWheelEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getWheelRotation()` method from `java.awt.event.MouseWheelEvent` is used to get the rotation of the mouse wheel. It returns a positive value if the wheel was rotated forward, and a negative value if the wheel was rotated backward.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseWheelEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 0, 1, false, 1);
+        int rotation = event.getWheelRotation();
+        System.out.println("Wheel rotation: " + rotation);
+    }
+}
+```
+
+In this code, we create a `MouseWheelEvent` object with a rotation of 1. Then we call the `getWheelRotation()` method on this event, and print the result.
+
+Please note that this code will not run in a regular Java environment, as it requires a graphical user interface (GUI) environment. It is used for illustrative purposes.
+================================================================
+
+Sample: 36 MouseWheelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getScrollAmount() from java.awt.event.MouseWheelEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getScrollAmount()` method from `java.awt.event.MouseWheelEvent` is used to get the scroll amount of the mouse wheel. It returns the scroll amount as a positive or negative integer value.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.event.MouseWheelEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MouseWheelEvent event = new MouseWheelEvent(null, 0, 0, 0, 1, false, false, false, false, 1);
+        int scrollAmount = event.getScrollAmount();
+        System.out.println("Scroll Amount: " + scrollAmount);
+    }
+}
+```
+
+In this code, we create a `MouseWheelEvent` object with a scroll amount of 1. Then we call the `getScrollAmount()` method on this event object and print the result.
+
+Please note that this is a simple example and may not work as expected in a real-world application. The `MouseWheelEvent` class is typically used in conjunction with a `MouseWheelListener`, which is a listener interface for receiving mouse wheel events.
+================================================================
+
+Sample: 37 PaintEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Rectangle getUpdateRect() from java.awt.event.PaintEvent
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getUpdateRect()` method in `java.awt.event.PaintEvent` is used to get the rectangle that needs to be updated. It returns a `Rectangle` object which represents the area of the screen that needs to be updated.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.Rectangle;
+import java.awt.event.PaintEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        PaintEvent event = new PaintEvent(null, 0, 0, 0, 0, false);
+        Rectangle updateRect = event.getUpdateRect();
+        System.out.println("Update Rectangle: " + updateRect);
+    }
+}
+```
+
+In this code, we create a `PaintEvent` object with some dummy values for the parameters. Then we call the `getUpdateRect()` method on this event object, which returns a `Rectangle` object representing the area of the screen that needs to be updated. Finally, we print this rectangle to the console.
+
+Please note that the `PaintEvent` constructor is private, so we can't create a `PaintEvent` object directly. We use a null value for the source and the coordinates are also dummy values. The `getUpdateRect()` method is called on a `PaintEvent` object, which is not a real event, but a placeholder for the method.
+================================================================
+
+Sample: 38 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowActivated(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowActivated(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowActivated(WindowEvent e) {
+        // Your code here
+        System.out.println("Window activated");
+    }
+}
+```
+
+In this code, we create a subclass of `WindowAdapter` and override the `windowActivated(WindowEvent e)` method. This method is called when the window is activated. The `WindowEvent e` parameter is an event object that contains information about the window event.
+
+In the `main` method, we create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame. When the window is activated, the `windowActivated(WindowEvent e)` method will be called.
+================================================================
+
+Sample: 39 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowClosed(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowClosed(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowClosed(WindowEvent e) {
+        // Put your code here
+        System.out.println("Window closed");
+    }
+}
+```
+
+In this code, we create a new class `MyWindowAdapter` that extends `WindowAdapter`. We override the `windowClosed(WindowEvent e)` method and put our code inside it. This code will be executed when the window is closed.
+
+Then, we create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame. When the window is closed, the `windowClosed(WindowEvent e)` method will be called.
+================================================================
+
+Sample: 40 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowClosing(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowClosing(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main extends WindowAdapter {
+    public static void main(String[] args) {
+        // Create a new window
+        Window window = new Window();
+
+        // Add a WindowListener to the window
+        window.addWindowListener(new Main());
+
+        // Display the window
+        window.setVisible(true);
+    }
+
+    @Override
+    public void windowClosing(WindowEvent e) {
+        // This method is called when the window is closed
+        System.out.println("Window is closing");
+    }
+}
+```
+
+In this code, we create a new window and add a `WindowListener` to it. The `windowClosing(WindowEvent e)` method is overridden to print a message when the window is closed.
+================================================================
+
+Sample: 41 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowDeactivated(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowDeactivated(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowDeactivated(WindowEvent e) {
+        // Your code here
+        System.out.println("Window deactivated");
+    }
+}
+```
+
+In this code, we create a new class `MyWindowAdapter` that extends `WindowAdapter`. We override the `windowDeactivated(WindowEvent e)` method and put our code there.
+
+Then, in the `main` method, we create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame. When the window is deactivated, the `windowDeactivated(WindowEvent e)` method will be called.
+
+Please replace `frame` with your actual JFrame instance.
+================================================================
+
+Sample: 42 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowDeiconified(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowDeiconified(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowDeiconified(WindowEvent e) {
+        // Your code here
+        System.out.println("Window deiconified");
+    }
+}
+```
+
+In this code, we create a new class `MyWindowAdapter` that extends `WindowAdapter`. We override the `windowDeiconified(WindowEvent e)` method and put our code there.
+
+Then, in the `main` method, we create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame.
+
+When the window is deiconified, the `windowDeiconified(WindowEvent e)` method will be called, and the code inside it will be executed. In this case, it simply prints "Window deiconified".
+================================================================
+
+Sample: 43 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowIconified(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowIconified(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowIconified(WindowEvent e) {
+        // Your code here
+        System.out.println("Window is iconified");
+    }
+}
+```
+
+In this code, we create a subclass of `WindowAdapter` and override the `windowIconified(WindowEvent e)` method. This method is called when the window is iconified (minimized). The `WindowEvent e` parameter is the event that triggered the call to this method.
+
+In the `main` method, we create an instance of our `MyWindowAdapter` and add it as a window listener to our JFrame. This means that whenever the window is iconified, the `windowIconified(WindowEvent e)` method will be called.
+================================================================
+
+Sample: 44 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowOpened(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowOpened(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowOpened(WindowEvent e) {
+        // Put your code here
+        System.out.println("Window opened");
+    }
+}
+```
+
+In this code, we create a new class `MyWindowAdapter` that extends `WindowAdapter`. We override the `windowOpened(WindowEvent e)` method and put our code inside it. We then create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame.
+
+When the window is opened, the `windowOpened(WindowEvent e)` method will be called, and the code inside it will be executed. In this case, it simply prints "Window opened".
+================================================================
+
+Sample: 45 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowGainedFocus(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowGainedFocus(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        WindowAdapter windowAdapter = new WindowAdapter() {
+            @Override
+            public void windowGainedFocus(WindowEvent e) {
+                // Your code here
+            }
+        };
+    }
+}
+```
+
+In this code snippet, we create a new `WindowAdapter` and override the `windowGainedFocus(WindowEvent e)` method. This method is called when the window that this adapter is registered with gains the focus.
+
+You can put your code inside this method to be executed when the window gains focus. For example, you can print a message to the console:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        WindowAdapter windowAdapter = new WindowAdapter() {
+            @Override
+            public void windowGainedFocus(WindowEvent e) {
+                System.out.println("The window gained focus!");
+            }
+        };
+    }
+}
+```
+
+This will print "The window gained focus!" to the console every time the window gains focus.
+================================================================
+
+Sample: 46 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowLostFocus(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void windowLostFocus(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main {
+    public static void main(String[] args) {
+        MyWindowAdapter adapter = new MyWindowAdapter();
+        // Assuming we have a JFrame named frame
+        frame.addWindowListener(adapter);
+    }
+}
+
+class MyWindowAdapter extends WindowAdapter {
+    @Override
+    public void windowLostFocus(WindowEvent e) {
+        // Your code here
+        System.out.println("Window lost focus");
+    }
+}
+```
+
+In this code, we create a new class `MyWindowAdapter` that extends `WindowAdapter`. We override the `windowLostFocus(WindowEvent e)` method and put our code there.
+
+Then, in the `main` method, we create an instance of `MyWindowAdapter` and add it as a window listener to our JFrame.
+
+This code will print "Window lost focus" to the console every time the window loses focus.
+================================================================
+
+Sample: 47 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void windowStateChanged(WindowEvent e) from java.awt.event.WindowAdapter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is an example of how you can use the `void windowStateChanged(WindowEvent e)` method from `java.awt.event.WindowAdapter`:
+
+```java
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Main extends WindowAdapter {
+    public static void main(String[] args) {
+        // Create a new window
+        Window window = new Window();
+
+        // Add a WindowAdapter to the window
+        window.addWindowListener(new Main());
+
+        // Simulate a window state change
+        window.setState(Window.NORMAL);
+    }
+
+    @Override
+    public void windowStateChanged(WindowEvent e) {
+        // This method is called when the window's state changes
+        System.out.println("Window state changed: " + e.getNewState());
+    }
+}
+```
+
+In this example, we create a new window and add a `WindowAdapter` to it. We then simulate a window state change by setting the window's state to `NORMAL`. The `windowStateChanged(WindowEvent e)` method will be called when the window's state changes, printing the new state to the console.
+================================================================
+

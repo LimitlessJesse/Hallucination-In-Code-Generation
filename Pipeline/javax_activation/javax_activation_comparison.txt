@@ -1,0 +1,259 @@
+Sample: 0 ActivationDataFlavor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.ActivationDataFlavor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 CommandInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.CommandInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isCommand()`: This method returns true if the command is a command, false otherwise.
+
+2. `String getCommandName()`: This method returns the name of the command.
+
+3. `String getCommandClassName()`: This method returns the fully qualified class name of the command class.
+
+4. `String getMimeType()`: This method returns the MIME type of the command.
+
+5. `String getParameter(String name)`: This method returns the value of the specified parameter.
+================================================================
+
+Sample: 2 CommandMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.CommandMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean containsKey(Object key)`: This method returns true if this map contains a mapping for the specified key.
+
+2. `Object get(Object key)`: This method returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+
+3. `Object put(Object key, Object value)`: This method associates the specified value with the specified key in this map.
+
+4. `Object remove(Object key)`: This method removes the mapping for a key from this map if it is present.
+
+5. `int size()`: This method returns the number of key-value mappings in this map.
+================================================================
+
+Sample: 3 DataHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.DataHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DataHandler getDataHandler()`: This method returns the DataHandler object.
+
+2. `void setDataHandler(DataHandler dataHandler)`: This method sets the DataHandler object.
+
+3. `String getContentType()`: This method returns the content type of the data.
+
+4. `void setContentType(String type)`: This method sets the content type of the data.
+
+5. `String getName()`: This method returns the name of the data.
+================================================================
+
+Sample: 4 FileDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.FileDataSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public FileDataSource(File file)`: This constructor creates a FileDataSource object for the specified File.
+
+2. `public String getContentType()`: This method returns the content type of the data source.
+
+3. `public InputStream getInputStream() throws IOException`: This method returns an InputStream for reading the data.
+
+4. `public String getName()`: This method returns the name of the data source.
+
+5. `public OutputStream getOutputStream() throws IOException`: This method returns an OutputStream for writing the data.
+================================================================
+
+Sample: 5 FileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.FileTypeMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static FileTypeMap getDefaultFileTypeMap()`: This method returns the default FileTypeMap instance.
+
+2. `public String getContentType(File file)`: This method returns the MIME type of the specified file.
+
+3. `public String getContentType(String fileName)`: This method returns the MIME type of the specified file name.
+
+4. `public void setContentTypeForExtension(String extension, String type)`: This method sets the MIME type for the specified file extension.
+
+5. `public void setDefaultFileTypeMap(FileTypeMap map)`: This method sets the default FileTypeMap instance.
+================================================================
+
+Sample: 6 MailcapCommandMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.MailcapCommandMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 7 MimeType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.MimeType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isMimeType(String type)`: This method checks if the given string is a valid MIME type.
+
+2. `boolean isMimeType(String type, String subType)`: This method checks if the given string is a valid MIME type and subtype.
+
+3. `String getPrimaryType(String type)`: This method returns the primary type of the given MIME type.
+
+4. `String getSubType(String type)`: This method returns the subtype of the given MIME type.
+
+5. `String getParameter(String type, String parameterName)`: This method returns the parameter value of the given MIME type for the specified parameter name.
+================================================================
+
+Sample: 8 MimeTypeParameterList
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.MimeTypeParameterList package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `E get(int index)`: This method returns the element at the specified position in this list.
+================================================================
+
+Sample: 9 MimetypesFileTypeMap
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.MimetypesFileTypeMap package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getContentType(String filename)`: This method returns the MIME type for the specified file name.
+
+2. `getContentTypeFor(String url)`: This method returns the MIME type for the specified URL.
+
+3. `getDefaultContentType()`: This method returns the default MIME type.
+
+4. `setDefaultContentType(String type)`: This method sets the default MIME type.
+
+5. `useCaches(boolean useCaches)`: This method sets whether the MIME type map should use a cache.
+================================================================
+
+Sample: 10 URLDataSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.activation.URLDataSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public URL getURL()`: This method returns the URL of the data source.
+2. `public InputStream getInputStream()`: This method returns an input stream for reading the data.
+3. `public OutputStream getOutputStream()`: This method returns an output stream for writing the data.
+4. `public String getContentType()`: This method returns the content type of the data.
+5. `public String getName()`: This method returns the name of the data source.
+================================================================
+

@@ -1,0 +1,71 @@
+Sample: 0 AbstractColorChooserPanel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.colorchooser.AbstractColorChooserPanel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 ColorChooserComponentFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.colorchooser.ColorChooserComponentFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ColorChooserComponentFactory.createColorChooser()`: This method creates a new JColorChooser.
+
+2. `ColorChooserComponentFactory.createColorChooser(Color initialColor)`: This method creates a new JColorChooser with the specified initial color.
+
+3. `ColorChooserComponentFactory.createColorChooser(Color initialColor, boolean showAlphaChannel)`: This method creates a new JColorChooser with the specified initial color and alpha channel visibility.
+
+4. `ColorChooserComponentFactory.createColorChooser(Color initialColor, boolean showAlphaChannel, boolean showHSB)`: This method creates a new JColorChooser with the specified initial color, alpha channel visibility, and HSB visibility.
+
+5. `ColorChooserComponentFactory.createColorChooser(Color initialColor, boolean showAlphaChannel, boolean showHSB, boolean showRGB)`: This method creates a new JColorChooser with the specified initial color, alpha channel visibility, HSB visibility, and RGB visibility.
+================================================================
+
+Sample: 2 DefaultColorSelectionModel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.colorchooser.DefaultColorSelectionModel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isSelected()`: This method returns true if the color is selected.
+
+2. `void setSelected(boolean b)`: This method sets the selected state of the color.
+
+3. `Color getSelectedColor()`: This method returns the selected color.
+
+4. `void setSelectedColor(Color color)`: This method sets the selected color.
+
+5. `Color[] getColors()`: This method returns an array of colors.
+================================================================
+

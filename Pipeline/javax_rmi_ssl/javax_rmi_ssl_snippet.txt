@@ -1,0 +1,115 @@
+Sample: 0 SslRMIClientSocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Socket createSocket(String host, int port) from javax.rmi.ssl.SslRMIClientSocketFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `createSocket(String host, int port)` method from `javax.rmi.ssl.SslRMIClientSocketFactory` is used to create a socket connection to a specified host and port.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.rmi.ssl.SslRMIClientSocketFactory;
+import java.net.Socket;
+
+public class Main {
+    public static void main(String[] args) {
+        SslRMIClientSocketFactory sslRMIClientSocketFactory = new SslRMIClientSocketFactory();
+        try {
+            Socket socket = sslRMIClientSocketFactory.createSocket("www.example.com", 80);
+            System.out.println("Socket created successfully");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating an instance of `SslRMIClientSocketFactory` and then calling the `createSocket` method with a host and port. If the socket is created successfully, a message "Socket created successfully" is printed. If an exception occurs during the socket creation, it is caught and printed to the console.
+
+Please replace "www.example.com" and 80 with your actual host and port.
+================================================================
+
+Sample: 1 SslRMIServerSocketFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean getNeedClientAuth() from javax.rmi.ssl.SslRMIServerSocketFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getNeedClientAuth()` method is not a part of the `SslRMIServerSocketFactory` class. It is a part of the `SslRMIClientSocketFactory` class.
+
+Here is a complete code snippet of the `getNeedClientAuth()` method from the `SslRMIClientSocketFactory` class:
+
+```java
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.rmi.ssl.SslRMIClientSocketFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        SSLContext sslContext = null;
+        try {
+            sslContext = SSLContext.getInstance("TLS");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        SSLSocketFactory sslSocketFactory = new SslRMIClientSocketFactory(sslContext);
+        boolean needClientAuth = sslSocketFactory.getNeedClientAuth();
+        System.out.println("Need client authentication: " + needClientAuth);
+    }
+}
+```
+
+In this code snippet, we create an `SSLContext` object and then use it to create an `SSLSocketFactory` object. We then call the `getNeedClientAuth()` method on this `SSLSocketFactory` object and print the result.
+
+Please note that this code snippet is just an example and may not work as expected in your environment. You need to replace the `"TLS"` with the appropriate protocol for your environment.
+================================================================
+

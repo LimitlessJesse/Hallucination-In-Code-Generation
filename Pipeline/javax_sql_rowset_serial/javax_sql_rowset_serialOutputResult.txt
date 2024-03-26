@@ -1,0 +1,54 @@
+Sample: SerialBlob_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: SerialBlob_4
+----------------------------------------------------------------
+stdout:
+Blob created successfully
+Blob freed successfully
+
+================================================================
+
+Sample: SerialBlob_5
+----------------------------------------------------------------
+stderr:
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost:3306/test
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:706)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at SerialBlob_5.main(SerialBlob_5.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: SerialClob_3
+----------------------------------------------------------------
+stderr:
+java.lang.ClassNotFoundException: org.h2.Driver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main$MemoryClassLoader.loadClass(Main.java:600)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:375)
+	at SerialClob_3.main(SerialClob_3.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+

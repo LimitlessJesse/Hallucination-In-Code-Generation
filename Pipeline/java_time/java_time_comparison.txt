@@ -1,0 +1,460 @@
+Sample: 0 Clock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.Clock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Clock.systemDefaultZone()`: This method returns a `Clock` that uses the system clock in the default time-zone.
+
+2. `Clock.systemUTC()`: This method returns a `Clock` that uses the system clock in UTC.
+
+3. `Clock.tickSeconds(Duration duration)`: This method returns a `Clock` that ticks every second.
+
+4. `Clock.fixed(Instant instant, ZoneId zone)`: This method returns a `Clock` that always returns the same instant.
+
+5. `Clock.offset(Clock baseClock, Duration offset)`: This method returns a `Clock` that is offset from the base clock.
+================================================================
+
+Sample: 1 Duration
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.Duration package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Duration duration = Duration.between(start, end);`: This method returns a Duration representing the amount of time between two instants.
+
+2. `long toDays()`: This method returns the duration as a quantity of whole days.
+
+3. `long toHours()`: This method returns the duration as a quantity of whole hours.
+
+4. `long toMinutes()`: This method returns the duration as a quantity of whole minutes.
+
+5. `long toSeconds()`: This method returns the duration as a quantity of whole seconds.
+
+6. `long toMillis()`: This method returns the duration as a quantity of whole milliseconds.
+
+7. `long toNanos()`: This method returns the duration as a quantity of whole nanoseconds.
+
+8. `long toDaysPart()`: This method returns the number of whole days in this duration.
+
+9. `long toHoursPart()`: This method returns the number of whole hours in this duration.
+
+10. `long toMinutesPart()`: This method returns the number of whole minutes in this duration.
+
+11. `long toSecondsPart()`: This method returns the number of whole seconds in this duration.
+
+12. `long toMillisPart()`: This method returns the number of whole milliseconds in this duration.
+
+13. `long toNanosPart()`: This method returns the number of whole nanoseconds in this duration.
+
+14. `Duration plus(Duration duration)`: This method adds the specified duration to this duration.
+
+15. `Duration minus(Duration duration)`: This method subtracts the specified duration from this duration.
+
+16. `Duration multipliedBy(long factor)`: This method multiplies this duration by the specified factor.
+
+17. `Duration dividedBy(long divisor)`: This method divides this duration by the specified divisor.
+
+18. `Duration abs()`: This method returns the absolute value of this duration.
+
+19. `Duration negated()`: This method returns the negation of this duration.
+
+20. `int compareTo(Duration other)`: This method compares this duration to the specified duration.
+================================================================
+
+Sample: 2 Instant
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.Instant package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Instant.now()`: This method returns the current date and time.
+
+2. `Instant.ofEpochSecond(long epochSecond)`: This method returns an Instant representing the specified epoch second.
+
+3. `Instant.ofEpochMilli(long epochMilli)`: This method returns an Instant representing the specified epoch millisecond.
+
+4. `Instant.ofEpochSecond(long epochSecond, long nanoAdjustment)`: This method returns an Instant representing the specified epoch second and nano-adjustment.
+
+5. `Instant.ofEpochSecond(long epochSecond, int nanoAdjustment)`: This method returns an Instant representing the specified epoch second and nano-adjustment.
+================================================================
+
+Sample: 3 LocalDate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.LocalDate package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LocalDate now()`: This method returns the current date from the system clock.
+
+2. `LocalDate of(int year, int month, int dayOfMonth)`: This method returns the LocalDate instance of the specified year, month, and day.
+
+3. `int getYear()`: This method returns the year.
+
+4. `Month getMonth()`: This method returns the month.
+
+5. `int getDayOfMonth()`: This method returns the day of the month.
+
+6. `DayOfWeek getDayOfWeek()`: This method returns the day of the week.
+
+7. `LocalDate plusDays(long days)`: This method adds the given number of days to this date.
+
+8. `LocalDate minusDays(long days)`: This method subtracts the given number of days from this date.
+
+9. `LocalDate plusWeeks(long weeks)`: This method adds the given number of weeks to this date.
+
+10. `LocalDate minusWeeks(long weeks)`: This method subtracts the given number of weeks from this date.
+
+11. `LocalDate plusMonths(long months)`: This method adds the given number of months to this date.
+
+12. `LocalDate minusMonths(long months)`: This method subtracts the given number of months from this date.
+
+13. `LocalDate plusYears(long years)`: This method adds the given number of years to this date.
+
+14. `LocalDate minusYears(long years)`: This method subtracts the given number of years from this date.
+
+15. `long until(Temporal endExclusive, TemporalUnit unit)`: This method returns the amount of time until another date-time.
+
+16. `boolean isBefore(LocalDate other)`: This method checks if this date is before the specified date.
+
+17. `boolean isAfter(LocalDate other)`: This method checks if this date is after the specified date.
+
+18. `boolean isLeapYear()`: This method checks if the year is a leap year.
+
+19. `int lengthOfMonth()`: This method returns the length of the month in this date's year.
+
+20. `int lengthOfYear()`: This method returns the length of the year in this date's year.
+
+21. `boolean isSupported(TemporalField field)`: This method checks if the field is supported by this date.
+
+22. `long getLong(TemporalField field)`: This method returns the value of the field.
+
+23. `LocalDate with(TemporalAdjuster adjuster)`: This method adjusts the date-time by a TemporalAdjuster.
+
+24. `LocalDate with(TemporalAdjusters adjuster)`: This method adjusts the date-time by a TemporalAdjusters.
+
+25. `LocalDate with(TemporalField field, long newValue)`: This method adjusts the date-time by setting the field to the given value.
+================================================================
+
+Sample: 4 LocalDateTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.LocalDateTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LocalDateTime now()`: This method returns the current date-time.
+2. `LocalDateTime of(int year, int month, int dayOfMonth, int hour, int minute)`: This method returns an instance of LocalDateTime with the specified year, month, day (of month and hour, minute).
+3. `LocalDateTime parse(CharSequence text, DateTimeFormatter formatter)`: This method parses the date-time string into a LocalDateTime.
+4. `LocalDateTime plusDays(long days)`: This method adds or subtracts the specified amount of time to the date-time.
+5. `int getDayOfMonth()`: This method returns the day-of-month field of this date-time.
+================================================================
+
+Sample: 5 LocalTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.LocalTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LocalTime now()`: This method returns the current date-time.
+2. `LocalTime of(int hour, int minute)`: This method returns a LocalTime instance with the specified hour and minute.
+3. `LocalTime parse(CharSequence text)`: This method parses a text string representing a time.
+4. `int getHour()`: This method returns the hour-of-day.
+5. `int getMinute()`: This method returns the minute-of-hour.
+================================================================
+
+Sample: 6 MonthDay
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.MonthDay package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MonthDay.of(int month, int dayOfMonth)`: This method returns an instance of MonthDay representing the specified month and day of month.
+
+2. `MonthDay.from(TemporalAccessor temporal)`: This method returns an instance of MonthDay representing the month and day of month extracted from the given temporal.
+
+3. `MonthDay.now()`: This method returns the current date-time as seen in the best available system clock, not counting time zone adjustments.
+
+4. `MonthDay.parse(CharSequence text)`: This method parses the text to create a MonthDay.
+
+5. `MonthDay.now(Clock clock)`: This method returns the current date-time as seen on the given clock, not counting time zone adjustments.
+================================================================
+
+Sample: 7 OffsetDateTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.OffsetDateTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OffsetDateTime parse(CharSequence text)`: This method parses the text using the ISO-8601 extended offset date-time format.
+
+2. `OffsetDateTime plusYears(long years)`: This method adds the specified years to the current date-time.
+
+3. `OffsetDateTime plusMonths(long months)`: This method adds the specified months to the current date-time.
+
+4. `OffsetDateTime plusWeeks(long weeks)`: This method adds the specified weeks to the current date-time.
+
+5. `OffsetDateTime plusDays(long days)`: This method adds the specified days to the current date-time.
+
+6. `OffsetDateTime plusHours(long hours)`: This method adds the specified hours to the current date-time.
+
+7. `OffsetDateTime plusMinutes(long minutes)`: This method adds the specified minutes to the current date-time.
+
+8. `OffsetDateTime plusSeconds(long seconds)`: This method adds the specified seconds to the current date-time.
+
+9. `OffsetDateTime plusNanos(long nanos)`: This method adds the specified nanoseconds to the current date-time.
+
+10. `OffsetDateTime plus(TemporalAmount amountToAdd)`: This method adds the amount of time to the current date-time.
+
+11. `OffsetDateTime minusYears(long years)`: This method subtracts the specified years from the current date-time.
+
+12. `OffsetDateTime minusMonths(long months)`: This method subtracts the specified months from the current date-time.
+
+13. `OffsetDateTime minusWeeks(long weeks)`: This method subtracts the specified weeks from the current date-time.
+
+14. `OffsetDateTime minusDays(long days)`: This method subtracts the specified days from the current date-time.
+
+15. `OffsetDateTime minusHours(long hours)`: This method subtracts the specified hours from the current date-time.
+
+16. `OffsetDateTime minusMinutes(long minutes)`: This method subtracts the specified minutes from the current date-time.
+
+17. `OffsetDateTime minusSeconds(long seconds)`: This method subtracts the specified seconds from the current date-time.
+
+18. `OffsetDateTime minusNanos(long nanos)`: This method subtracts the specified nanoseconds from the current date-time.
+
+19. `OffsetDateTime minus(TemporalAmount amountToSubtract)`: This method subtracts the amount of time from the current date-time.
+
+20. `OffsetDateTime withOffsetSameInstant(ZoneOffset newOffset)`: This method returns a copy of this date-time with the time-zone offset set to the given offset.
+================================================================
+
+Sample: 8 OffsetTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.OffsetTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OffsetTime.of(int hour, int minute, int second, int nanoOfSecond, ZoneOffset offset)`: This method creates an OffsetTime with the specified hour, minute, second, nano of second, and offset.
+
+2. `OffsetTime.parse(CharSequence text)`: This method parses a text string as an OffsetTime.
+
+3. `OffsetTime.now()`: This method obtains the current date-time from the system clock in the default time-zone.
+
+4. `OffsetTime.now(ZoneId zone)`: This method obtains the current date-time from the system clock in the specified time-zone.
+
+5. `OffsetTime.from(TemporalAccessor temporal)`: This method obtains an OffsetTime from a TemporalAccessor.
+================================================================
+
+Sample: 9 Period
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.Period package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Period getYears()`: This method returns the number of years represented by this period.
+2. `Period getMonths()`: This method returns the number of months represented by this period.
+3. `Period getDays()`: This method returns the number of days represented by this period.
+4. `Period plusYears(long yearsToAdd)`: This method returns a copy of this Period with the specified number of years added.
+5. `Period plusMonths(long monthsToAdd)`: This method returns a copy of this Period with the specified number of months added.
+6. `Period plusDays(long daysToAdd)`: This method returns a copy of this Period with the specified number of days added.
+================================================================
+
+Sample: 10 Year
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.Year package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Year.now()`: Returns the current year.
+2. `Year.of(int year)`: Returns a Year instance representing the specified year.
+3. `Year.parse(CharSequence text)`: Parses the year from the text.
+4. `Year.isLeap()`: Returns true if this year is a leap year.
+5. `Year.length()`: Returns the length of the year in days.
+================================================================
+
+Sample: 11 YearMonth
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.YearMonth package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `YearMonth.of(int year, int month)`: This method returns an instance of YearMonth with the specified year and month.
+
+2. `YearMonth.now()`: This method returns the current year-month.
+
+3. `YearMonth.from(TemporalAccessor temporal)`: This method returns an instance of YearMonth from a temporal object.
+
+4. `YearMonth.plusMonths(long monthsToAdd)`: This method adds the specified number of months to this year-month.
+
+5. `YearMonth.minusMonths(long monthsToSubtract)`: This method subtracts the specified number of months from this year-month.
+================================================================
+
+Sample: 12 ZonedDateTime
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.ZonedDateTime package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ZonedDateTime now()`: This method returns the current date-time of the system, with the time-zone set to the default time-zone of the system.
+
+2. `ZonedDateTime of(int year, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneId zone)`: This method returns a ZonedDateTime instance with the specified date and time, and the specified time-zone.
+
+3. `ZonedDateTime withYear(int year)`: This method returns a copy of this ZonedDateTime with the year field set to the specified year.
+
+4. `ZonedDateTime withMonth(int month)`: This method returns a copy of this ZonedDateTime with the month field set to the specified month.
+
+5. `ZonedDateTime withDayOfMonth(int dayOfMonth)`: This method returns a copy of this ZonedDateTime with the day-of-month field set to the specified day of the month.
+================================================================
+
+Sample: 13 ZoneId
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.ZoneId package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ZoneId.getAvailableZoneIds()`: This method returns a set of all available time-zone IDs.
+
+2. `ZoneId.of(String id)`: This method returns a ZoneId instance for the specified time-zone ID.
+
+3. `ZoneId.systemDefault()`: This method returns the system's default time-zone.
+
+4. `ZoneId.of(String id, ZoneOffset offset)`: This method returns a ZoneId instance for the specified time-zone ID and offset.
+
+5. `ZoneId.of(String id, ZoneOffset offset, String description)`: This method returns a ZoneId instance for the specified time-zone ID, offset, and description.
+================================================================
+
+Sample: 14 ZoneOffset
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.time.ZoneOffset package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `of(String offsetId)`: This method returns a ZoneOffset instance with the specified offsetId.
+
+2. `ofHours(int hours)`: This method returns a ZoneOffset instance with the specified number of hours.
+
+3. `ofHoursMinutes(int hours, int minutes)`: This method returns a ZoneOffset instance with the specified number of hours and minutes.
+
+4. `ofTotalSeconds(long seconds)`: This method returns a ZoneOffset instance with the specified total seconds.
+
+5. `ofTotalSeconds(long seconds, int nanoAdjustment)`: This method returns a ZoneOffset instance with the specified total seconds and nanoAdjustment.
+================================================================
+

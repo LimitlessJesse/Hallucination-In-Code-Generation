@@ -1,0 +1,120 @@
+ClassName,Method,Return Type
+Delegate,"create_request(Object obj, Context ctx, String operation, NVList arg_list, NamedValue result)",abstract Request
+Delegate,"create_request(Object obj, Context ctx, String operation, NVList arg_list, NamedValue result, ExceptionList exclist, ContextList ctxlist)",abstract Request
+Delegate,duplicate(Object obj),abstract Object
+Delegate,"equals(Object self, Object obj)",boolean
+Delegate,get_domain_managers(Object self),DomainManager[]
+Delegate,get_interface_def(Object self),abstract Object
+Delegate,"get_policy(Object self, int policy_type)",Policy
+Delegate,"hash(Object obj, int max)",abstract int
+Delegate,hashCode(Object self),int
+Delegate,"invoke(Object self, OutputStream output)",InputStream
+Delegate,"is_a(Object obj, String repository_id)",abstract boolean
+Delegate,"is_equivalent(Object obj, Object other)",abstract boolean
+Delegate,is_local(Object self),boolean
+Delegate,non_existent(Object obj),abstract boolean
+Delegate,orb(Object obj),ORB
+Delegate,release(Object obj),abstract void
+Delegate,"releaseReply(Object self, InputStream input)",void
+Delegate,"request(Object obj, String operation)",abstract Request
+Delegate,"request(Object self, String operation, boolean responseExpected)",OutputStream
+Delegate,"servant_postinvoke(Object self, ServantObject servant)",void
+Delegate,"servant_preinvoke(Object self, String operation, Class expectedType)",ServantObject
+Delegate,"set_policy_override(Object self, Policy[] policies, SetOverrideType set_add)",Object
+Delegate,toString(Object self),String
+InputStream,orb(),ORB
+InputStream,read_any(),abstract Any
+InputStream,"read_boolean_array(boolean[] value, int offset, int length)",abstract void
+InputStream,read_boolean(),abstract boolean
+InputStream,"read_char_array(char[] value, int offset, int length)",abstract void
+InputStream,read_char(),abstract char
+InputStream,read_Context(),Context
+InputStream,"read_double_array(double[] value, int offset, int length)",abstract void
+InputStream,read_double(),abstract double
+InputStream,read_fixed(),BigDecimal
+InputStream,"read_float_array(float[] value, int offset, int length)",abstract void
+InputStream,read_float(),abstract float
+InputStream,"read_long_array(int[] value, int offset, int length)",abstract void
+InputStream,read_long(),abstract int
+InputStream,"read_longlong_array(long[] value, int offset, int length)",abstract void
+InputStream,read_longlong(),abstract long
+InputStream,read_Object(),abstract Object
+InputStream,read_Object(Class clz),Object
+InputStream,"read_octet_array(byte[] value, int offset, int length)",abstract void
+InputStream,read_octet(),abstract byte
+InputStream,read_Principal(),Principal
+InputStream,"read_short_array(short[] value, int offset, int length)",abstract void
+InputStream,read_short(),abstract short
+InputStream,read_string(),abstract String
+InputStream,read_TypeCode(),abstract TypeCode
+InputStream,"read_ulong_array(int[] value, int offset, int length)",abstract void
+InputStream,read_ulong(),abstract int
+InputStream,"read_ulonglong_array(long[] value, int offset, int length)",abstract void
+InputStream,read_ulonglong(),abstract long
+InputStream,"read_ushort_array(short[] value, int offset, int length)",abstract void
+InputStream,read_ushort(),abstract short
+InputStream,"read_wchar_array(char[] value, int offset, int length)",abstract void
+InputStream,read_wchar(),abstract char
+InputStream,read_wstring(),abstract String
+InputStream,read(),int
+ObjectImpl,"_create_request(Context ctx, String operation, NVList arg_list, NamedValue result)",Request
+ObjectImpl,"_create_request(Context ctx, String operation, NVList arg_list, NamedValue result, ExceptionList exceptions, ContextList contexts)",Request
+ObjectImpl,_duplicate(),Object
+ObjectImpl,_get_delegate(),Delegate
+ObjectImpl,_get_domain_managers(),DomainManager[]
+ObjectImpl,_get_interface_def(),Object
+ObjectImpl,_get_policy(int policy_type),Policy
+ObjectImpl,_hash(int maximum),int
+ObjectImpl,_ids(),abstract String[]
+ObjectImpl,_invoke(OutputStream output),InputStream
+ObjectImpl,_is_a(String repository_id),boolean
+ObjectImpl,_is_equivalent(Object that),boolean
+ObjectImpl,_is_local(),boolean
+ObjectImpl,_non_existent(),boolean
+ObjectImpl,_orb(),ORB
+ObjectImpl,_release(),void
+ObjectImpl,_releaseReply(InputStream input),void
+ObjectImpl,_request(String operation),Request
+ObjectImpl,"_request(String operation, boolean responseExpected)",OutputStream
+ObjectImpl,_servant_postinvoke(ServantObject servant),void
+ObjectImpl,"_servant_preinvoke(String operation, Class expectedType)",ServantObject
+ObjectImpl,_set_delegate(Delegate delegate),void
+ObjectImpl,"_set_policy_override(Policy[] policies, SetOverrideType set_add)",Object
+ObjectImpl,equals(Object obj),boolean
+ObjectImpl,hashCode(),int
+ObjectImpl,toString(),String
+OutputStream,create_input_stream(),abstract InputStream
+OutputStream,orb(),ORB
+OutputStream,write_any(Any value),abstract void
+OutputStream,"write_boolean_array(boolean[] value, int offset, int length)",abstract void
+OutputStream,write_boolean(boolean value),abstract void
+OutputStream,"write_char_array(char[] value, int offset, int length)",abstract void
+OutputStream,write_char(char value),abstract void
+OutputStream,"write_Context(Context ctx, ContextList contexts)",void
+OutputStream,"write_double_array(double[] value, int offset, int length)",abstract void
+OutputStream,write_double(double value),abstract void
+OutputStream,write_fixed(BigDecimal value),void
+OutputStream,"write_float_array(float[] value, int offset, int length)",abstract void
+OutputStream,write_float(float value),abstract void
+OutputStream,"write_long_array(int[] value, int offset, int length)",abstract void
+OutputStream,write_long(int value),abstract void
+OutputStream,"write_longlong_array(long[] value, int offset, int length)",abstract void
+OutputStream,write_longlong(long value),abstract void
+OutputStream,write_Object(Object value),abstract void
+OutputStream,"write_octet_array(byte[] value, int offset, int length)",abstract void
+OutputStream,write_octet(byte value),abstract void
+OutputStream,write_Principal(Principal value),void
+OutputStream,"write_short_array(short[] value, int offset, int length)",abstract void
+OutputStream,write_short(short value),abstract void
+OutputStream,write_string(String value),abstract void
+OutputStream,write_TypeCode(TypeCode value),abstract void
+OutputStream,"write_ulong_array(int[] value, int offset, int length)",abstract void
+OutputStream,write_ulong(int value),abstract void
+OutputStream,"write_ulonglong_array(long[] value, int offset, int length)",abstract void
+OutputStream,write_ulonglong(long value),abstract void
+OutputStream,"write_ushort_array(short[] value, int offset, int length)",abstract void
+OutputStream,write_ushort(short value),abstract void
+OutputStream,"write_wchar_array(char[] value, int offset, int length)",abstract void
+OutputStream,write_wchar(char value),abstract void
+OutputStream,write_wstring(String value),abstract void
+OutputStream,write(int b),void

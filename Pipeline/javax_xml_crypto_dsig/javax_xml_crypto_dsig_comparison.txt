@@ -1,0 +1,46 @@
+Sample: 0 TransformService
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.crypto.dsig.TransformService package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 XMLSignatureFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.crypto.dsig.XMLSignatureFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `XMLSignatureFactory.getInstance(String algorithm)`: This method returns an instance of the XMLSignatureFactory class.
+
+2. `XMLSignatureFactory.getInstance(String algorithm, String provider)`: This method returns an instance of the XMLSignatureFactory class.
+
+3. `XMLSignatureFactory.getInstance(String algorithm, String provider, ClassLoader classLoader)`: This method returns an instance of the XMLSignatureFactory class.
+
+4. `XMLSignatureFactory.getInstance(String algorithm, ClassLoader classLoader)`: This method returns an instance of the XMLSignatureFactory class.
+
+5. `XMLSignatureFactory.getInstance(String algorithm, String provider, ClassLoader classLoader, ClassLoader classLoader1)`: This method returns an instance of the XMLSignatureFactory class.
+================================================================
+

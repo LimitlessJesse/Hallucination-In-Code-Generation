@@ -1,0 +1,88 @@
+Sample: HTMLEditorKit_ParserCallback_1
+----------------------------------------------------------------
+output:
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_1.java:10: error: cannot find symbol
+        kit.getViewFactory().addView(new HTMLEditorKit.ParserCallback() {
+                            ^
+  symbol:   method addView(<anonymous ParserCallback>)
+  location: interface ViewFactory
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_1.java:17: error: cannot find symbol
+            delegator.parse(new StringReader(html), kit.createReader(new StringReader(html)), true);
+                                                       ^
+  symbol:   method createReader(StringReader)
+  location: variable kit of type HTMLEditorKit
+2 errors
+
+
+================================================================
+
+Sample: HTMLEditorKit_ParserCallback_2
+----------------------------------------------------------------
+output:
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_2.java:14: error: package HTML does not exist
+            public void handleStartTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                                           ^
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_2.java:14: error: cannot find symbol
+            public void handleStartTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                                                   ^
+  symbol: class MutableAttributeSet
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_2.java:15: error: package HTML does not exist
+                if (t == HTML.Tag.BODY) {
+                             ^
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_2.java:17: error: package HTML does not exist
+                } else if (t == HTML.Tag.H1) {
+                                    ^
+4 errors
+
+
+================================================================
+
+Sample: HTMLEditorKit_ParserCallback_3
+----------------------------------------------------------------
+output:
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_3.java:10: error: cannot find symbol
+        kit.setParser(delegator);
+           ^
+  symbol:   method setParser(ParserDelegator)
+  location: variable kit of type HTMLEditorKit
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_3.java:13: error: package HTML does not exist
+            public void handleEndTag(HTML.Tag t, int pos) {
+                                         ^
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_3.java:11: error: cannot find symbol
+        kit.setOut(new HTMLEditorKit.ParserCallback() {
+           ^
+  symbol:   method setOut(<anonymous ParserCallback>)
+  location: variable kit of type HTMLEditorKit
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_3.java:19: error: cannot find symbol
+            kit.parse(reader, true);
+               ^
+  symbol:   method parse(StringReader,boolean)
+  location: variable kit of type HTMLEditorKit
+4 errors
+
+
+================================================================
+
+Sample: HTMLEditorKit_ParserCallback_4
+----------------------------------------------------------------
+output:
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_4.java:11: error: package HTML does not exist
+            public void handleSimpleTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                                            ^
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_4.java:11: error: cannot find symbol
+            public void handleSimpleTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                                                    ^
+  symbol: class MutableAttributeSet
+./javax_swing_text_html/javaFiles/HTMLEditorKit_ParserCallback_4.java:9: error: incompatible types: <anonymous ParserCallback> cannot be converted to Reader
+        delegator.parse(new HTMLEditorKit.ParserCallback() {
+                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: StyleSheet_1
+----------------------------------------------------------------
+================================================================
+

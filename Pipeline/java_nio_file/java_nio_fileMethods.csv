@@ -1,0 +1,99 @@
+ClassName,Method,Return Type
+Files,"copy(InputStream in, Path target, CopyOption... options)",static long
+Files,"copy(Path source, OutputStream out)",static long
+Files,"copy(Path source, Path target, CopyOption... options)",static Path
+Files,"createDirectories(Path dir, FileAttribute<?>... attrs)",static Path
+Files,"createDirectory(Path dir, FileAttribute<?>... attrs)",static Path
+Files,"createFile(Path path, FileAttribute<?>... attrs)",static Path
+Files,"createLink(Path link, Path existing)",static Path
+Files,"createSymbolicLink(Path link, Path target, FileAttribute<?>... attrs)",static Path
+Files,"createTempDirectory(Path dir, String prefix, FileAttribute<?>... attrs)",static Path
+Files,"createTempDirectory(String prefix, FileAttribute<?>... attrs)",static Path
+Files,"createTempFile(Path dir, String prefix, String suffix, FileAttribute<?>... attrs)",static Path
+Files,"createTempFile(String prefix, String suffix, FileAttribute<?>... attrs)",static Path
+Files,delete(Path path),static void
+Files,deleteIfExists(Path path),static boolean
+Files,"exists(Path path, LinkOption... options)",static boolean
+Files,"find(Path start, int maxDepth, BiPredicate<Path,BasicFileAttributes> matcher, FileVisitOption... options)",static Stream<Path>
+Files,"getAttribute(Path path, String attribute, LinkOption... options)",static Object
+Files,"getFileAttributeView(Path path, Class<V> type, LinkOption... options)",static <V extends FileAttributeView>V
+Files,getFileStore(Path path),static FileStore
+Files,"getLastModifiedTime(Path path, LinkOption... options)",static FileTime
+Files,"getOwner(Path path, LinkOption... options)",static UserPrincipal
+Files,"getPosixFilePermissions(Path path, LinkOption... options)",static Set<PosixFilePermission>
+Files,"isDirectory(Path path, LinkOption... options)",static boolean
+Files,isExecutable(Path path),static boolean
+Files,isHidden(Path path),static boolean
+Files,isReadable(Path path),static boolean
+Files,"isRegularFile(Path path, LinkOption... options)",static boolean
+Files,"isSameFile(Path path, Path path2)",static boolean
+Files,isSymbolicLink(Path path),static boolean
+Files,isWritable(Path path),static boolean
+Files,lines(Path path),static Stream<String>
+Files,"lines(Path path, Charset cs)",static Stream<String>
+Files,list(Path dir),static Stream<Path>
+Files,"move(Path source, Path target, CopyOption... options)",static Path
+Files,newBufferedReader(Path path),static BufferedReader
+Files,"newBufferedReader(Path path, Charset cs)",static BufferedReader
+Files,"newBufferedWriter(Path path, Charset cs, OpenOption... options)",static BufferedWriter
+Files,"newBufferedWriter(Path path, OpenOption... options)",static BufferedWriter
+Files,"newByteChannel(Path path, OpenOption... options)",static SeekableByteChannel
+Files,"newByteChannel(Path path, Set<? extends OpenOption> options, FileAttribute<?>... attrs)",static SeekableByteChannel
+Files,newDirectoryStream(Path dir),static DirectoryStream<Path>
+Files,"newDirectoryStream(Path dir, DirectoryStream.Filter<? super Path> filter)",static DirectoryStream<Path>
+Files,"newDirectoryStream(Path dir, String glob)",static DirectoryStream<Path>
+Files,"newInputStream(Path path, OpenOption... options)",static InputStream
+Files,"newOutputStream(Path path, OpenOption... options)",static OutputStream
+Files,"notExists(Path path, LinkOption... options)",static boolean
+Files,probeContentType(Path path),static String
+Files,readAllBytes(Path path),static byte[]
+Files,readAllLines(Path path),static List<String>
+Files,"readAllLines(Path path, Charset cs)",static List<String>
+Files,"readAttributes(Path path, Class<A> type, LinkOption... options)",static <A extends BasicFileAttributes>A
+Files,"readAttributes(Path path, String attributes, LinkOption... options)","static Map<String,Object>"
+Files,readSymbolicLink(Path link),static Path
+Files,"setAttribute(Path path, String attribute, Object value, LinkOption... options)",static Path
+Files,"setLastModifiedTime(Path path, FileTime time)",static Path
+Files,"setOwner(Path path, UserPrincipal owner)",static Path
+Files,"setPosixFilePermissions(Path path, Set<PosixFilePermission> perms)",static Path
+Files,size(Path path),static long
+Files,"walk(Path start, FileVisitOption... options)",static Stream<Path>
+Files,"walk(Path start, int maxDepth, FileVisitOption... options)",static Stream<Path>
+Files,"walkFileTree(Path start, FileVisitor<? super Path> visitor)",static Path
+Files,"walkFileTree(Path start, Set<FileVisitOption> options, int maxDepth, FileVisitor<? super Path> visitor)",static Path
+Files,"write(Path path, byte[] bytes, OpenOption... options)",static Path
+Files,"write(Path path, Iterable<? extends CharSequence> lines, Charset cs, OpenOption... options)",static Path
+Files,"write(Path path, Iterable<? extends CharSequence> lines, OpenOption... options)",static Path
+FileStore,getAttribute(String attribute),abstract Object
+FileStore,getFileStoreAttributeView(Class<V> type),abstract <V extends FileStoreAttributeView>V
+FileStore,getTotalSpace(),abstract long
+FileStore,getUnallocatedSpace(),abstract long
+FileStore,getUsableSpace(),abstract long
+FileStore,isReadOnly(),abstract boolean
+FileStore,name(),abstract String
+FileStore,supportsFileAttributeView(Class<? extends FileAttributeView> type),abstract boolean
+FileStore,supportsFileAttributeView(String name),abstract boolean
+FileStore,type(),abstract String
+FileSystem,close(),abstract void
+FileSystem,getFileStores(),abstract Iterable<FileStore>
+FileSystem,"getPath(String first, String... more)",abstract Path
+FileSystem,getPathMatcher(String syntaxAndPattern),abstract PathMatcher
+FileSystem,getRootDirectories(),abstract Iterable<Path>
+FileSystem,getSeparator(),abstract String
+FileSystem,getUserPrincipalLookupService(),abstract UserPrincipalLookupService
+FileSystem,isOpen(),abstract boolean
+FileSystem,isReadOnly(),abstract boolean
+FileSystem,newWatchService(),abstract WatchService
+FileSystem,provider(),abstract FileSystemProvider
+FileSystem,supportedFileAttributeViews(),abstract Set<String>
+FileSystems,getDefault(),static FileSystem
+FileSystems,getFileSystem(URI uri),static FileSystem
+FileSystems,"newFileSystem(Path path, ClassLoader loader)",static FileSystem
+FileSystems,"newFileSystem(URI uri, Map<String,?> env)",static FileSystem
+FileSystems,"newFileSystem(URI uri, Map<String,?> env, ClassLoader loader)",static FileSystem
+Paths,"get(String first, String... more)",static Path
+Paths,get(URI uri),static Path
+SimpleFileVisitor,"postVisitDirectory(T dir, IOException exc)",FileVisitResult
+SimpleFileVisitor,"preVisitDirectory(T dir, BasicFileAttributes attrs)",FileVisitResult
+SimpleFileVisitor,"visitFile(T file, BasicFileAttributes attrs)",FileVisitResult
+SimpleFileVisitor,"visitFileFailed(T file, IOException exc)",FileVisitResult

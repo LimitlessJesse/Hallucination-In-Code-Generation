@@ -1,0 +1,66 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Buffer,1,int capacity(),True
+0,Buffer,2,Buffer flip(),True
+0,Buffer,3,Buffer clear(),True
+0,Buffer,4,Buffer rewind(),True
+0,Buffer,5,Buffer hasRemaining(),False
+1,ByteBuffer,1,int capacity(),False
+1,ByteBuffer,2,int position(),False
+1,ByteBuffer,3,Buffer put(byte b),False
+1,ByteBuffer,4,Buffer flip(),False
+1,ByteBuffer,5,"Buffer get(byte[] dst, int offset, int length)",False
+2,ByteOrder,1,ByteOrder littleEndian(),False
+2,ByteOrder,2,ByteOrder bigEndian(),False
+2,ByteOrder,3,ByteOrder nativeOrder(),True
+2,ByteOrder,4,ByteOrder order(),False
+2,ByteOrder,5,ByteOrder reverse(),False
+3,CharBuffer,1,CharBuffer get(int index),False
+3,CharBuffer,2,"CharBuffer put(int index, char b)",True
+3,CharBuffer,3,CharBuffer flip(),False
+3,CharBuffer,4,CharBuffer rewind(),False
+3,CharBuffer,5,CharBuffer clear(),False
+4,DoubleBuffer,1,DoubleBuffer put(double x),True
+4,DoubleBuffer,2,DoubleBuffer get(),False
+4,DoubleBuffer,3,"DoubleBuffer get(double[] dst, int offset, int length)",True
+4,DoubleBuffer,4,DoubleBuffer asReadOnlyBuffer(),True
+4,DoubleBuffer,5,DoubleBuffer duplicate(),True
+5,FloatBuffer,1,FloatBuffer asFloatBuffer(),False
+5,FloatBuffer,2,FloatBuffer compact(),True
+5,FloatBuffer,3,FloatBuffer duplicate(),True
+5,FloatBuffer,4,FloatBuffer flip(),False
+5,FloatBuffer,5,FloatBuffer get(int index),False
+5,FloatBuffer,6,FloatBuffer get(),False
+5,FloatBuffer,7,FloatBuffer limit(int newLimit),False
+5,FloatBuffer,8,FloatBuffer mark(),False
+5,FloatBuffer,9,FloatBuffer position(int newPosition),False
+5,FloatBuffer,10,"FloatBuffer put(int index, float x)",True
+5,FloatBuffer,11,FloatBuffer put(float x),True
+5,FloatBuffer,12,FloatBuffer rewind(),False
+5,FloatBuffer,13,FloatBuffer slice(),True
+5,FloatBuffer,14,FloatBuffer clear(),False
+5,FloatBuffer,15,FloatBuffer mark(),False
+5,FloatBuffer,16,FloatBuffer remaining(),False
+5,FloatBuffer,17,FloatBuffer hasRemaining(),False
+5,FloatBuffer,18,FloatBuffer get(FloatBuffer dst),False
+5,FloatBuffer,19,FloatBuffer put(FloatBuffer src),True
+5,FloatBuffer,20,FloatBuffer compact(FloatBuffer dst),False
+6,IntBuffer,1,int capacity(),False
+6,IntBuffer,2,IntBuffer duplicate(),True
+6,IntBuffer,3,int get(),True
+6,IntBuffer,4,int get(int index),True
+6,IntBuffer,5,IntBuffer limit(int newLimit),False
+7,LongBuffer,1,long get(),True
+7,LongBuffer,2,long get(int index),True
+7,LongBuffer,3,LongBuffer put(long x),True
+7,LongBuffer,4,"LongBuffer put(int index, long x)",True
+7,LongBuffer,5,LongBuffer flip(),False
+8,MappedByteBuffer,1,MappedByteBuffer get(int index),False
+8,MappedByteBuffer,2,"MappedByteBuffer put(int index, byte b)",False
+8,MappedByteBuffer,3,"MappedByteBuffer get(byte[] dst, int offset, int length)",False
+8,MappedByteBuffer,4,"MappedByteBuffer put(byte[] src, int offset, int length)",False
+8,MappedByteBuffer,5,MappedByteBuffer slice(),False
+9,ShortBuffer,1,short get(),True
+9,ShortBuffer,2,short get(int index),True
+9,ShortBuffer,3,ShortBuffer put(short x),True
+9,ShortBuffer,4,"ShortBuffer put(int index, short x)",True
+9,ShortBuffer,5,ShortBuffer flip(),False

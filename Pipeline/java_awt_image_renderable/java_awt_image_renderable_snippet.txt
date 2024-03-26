@@ -1,0 +1,105 @@
+Sample: 0 RenderContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTransform(AffineTransform tx) from java.awt.image.renderable.RenderContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTransform(AffineTransform tx)` method is not a part of the `java.awt.image.renderable.RenderContext` class. It is a part of the `java.awt.Graphics2D` class.
+
+Here is a complete code snippet of the `setTransform(AffineTransform tx)` method:
+
+```java
+import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
+
+public class Main {
+    public static void main(String[] args) {
+        Graphics2D g2d = new Graphics2D();
+        AffineTransform tx = new AffineTransform();
+        tx.translate(10, 10);
+        g2d.setTransform(tx);
+    }
+}
+```
+
+In this code snippet, we first create a `Graphics2D` object. Then we create an `AffineTransform` object and translate it by 10 units in both x and y directions. Finally, we set the transform of the `Graphics2D` object to the `AffineTransform` object.
+
+Please note that this code snippet is a simple example and may not be suitable for your specific use case. You would need to replace the `Graphics2D` and `AffineTransform` objects with your own objects and methods.
+================================================================
+
+Sample: 1 RenderContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use AffineTransform getTransform() from java.awt.image.renderable.RenderContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getTransform()` method is part of the `java.awt.geom` package and it is used to get the AffineTransform of the RenderContext.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.geom.AffineTransform;
+import java.awt.image.renderable.RenderContext;
+
+public class Main {
+    public static void main(String[] args) {
+        RenderContext rc = null; // initialize RenderContext
+        AffineTransform at = rc.getTransform();
+        System.out.println(at);
+    }
+}
+```
+
+In this code snippet, we are initializing a `RenderContext` object `rc` and then calling the `getTransform()` method on it. The `getTransform()` method returns an `AffineTransform` object which represents the current transformation of the RenderContext.
+
+Please note that you need to replace `rc = null;` with your actual `RenderContext` object.
+================================================================
+

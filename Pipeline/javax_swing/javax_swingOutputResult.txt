@@ -1,0 +1,1974 @@
+Sample: AbstractCellEditor_1
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/AbstractCellEditor_1.java:20: error: cannot find symbol
+class CustomCellEditor extends AbstractCellEditor {
+                               ^
+  symbol: class AbstractCellEditor
+./javax_swing/javaFiles/AbstractCellEditor_1.java:22: error: cannot find symbol
+    public boolean isCellEditable(EventObject anEvent) {
+                                  ^
+  symbol:   class EventObject
+  location: class CustomCellEditor
+./javax_swing/javaFiles/AbstractCellEditor_1.java:21: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./javax_swing/javaFiles/AbstractCellEditor_1.java:25: error: cannot find symbol
+        if (anEvent instanceof MouseEvent) {
+                               ^
+  symbol:   class MouseEvent
+  location: class CustomCellEditor
+./javax_swing/javaFiles/AbstractCellEditor_1.java:26: error: cannot find symbol
+            MouseEvent mouseEvent = (MouseEvent) anEvent;
+            ^
+  symbol:   class MouseEvent
+  location: class CustomCellEditor
+./javax_swing/javaFiles/AbstractCellEditor_1.java:26: error: cannot find symbol
+            MouseEvent mouseEvent = (MouseEvent) anEvent;
+                                     ^
+  symbol:   class MouseEvent
+  location: class CustomCellEditor
+6 errors
+
+
+================================================================
+
+Sample: ActionMap_3
+----------------------------------------------------------------
+stdout:
+Saving...
+
+================================================================
+
+Sample: BorderFactory_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at BorderFactory_1.main(BorderFactory_1.java:8)
+
+================================================================
+
+Sample: BorderFactory_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at BorderFactory_2.main(BorderFactory_2.java:8)
+
+================================================================
+
+Sample: BorderFactory_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at BorderFactory_4.main(BorderFactory_4.java:8)
+
+================================================================
+
+Sample: BorderFactory_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at BorderFactory_5.main(BorderFactory_5.java:8)
+
+================================================================
+
+Sample: ComponentInputMap_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/ComponentInputMap_5.java:6: error: constructor ComponentInputMap in class ComponentInputMap cannot be applied to given types;
+        ComponentInputMap map = new ComponentInputMap();
+                                ^
+  required: JComponent
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+./javax_swing/javaFiles/ComponentInputMap_5.java:8: error: incompatible types: JButton cannot be converted to KeyStroke
+        map.put(button, "click");
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: DefaultBoundedRangeModel_2
+----------------------------------------------------------------
+stdout:
+Extent: 0
+
+================================================================
+
+Sample: DefaultBoundedRangeModel_3
+----------------------------------------------------------------
+stdout:
+Maximum value: 100
+
+================================================================
+
+Sample: DefaultBoundedRangeModel_4
+----------------------------------------------------------------
+stdout:
+Minimum value: 0
+
+================================================================
+
+Sample: DefaultBoundedRangeModel_5
+----------------------------------------------------------------
+stdout:
+Current value: 0
+
+================================================================
+
+Sample: DefaultBoundedRangeModel_6
+----------------------------------------------------------------
+stdout:
+Value is adjusting: true
+
+================================================================
+
+Sample: DefaultButtonModel_1
+----------------------------------------------------------------
+stdout:
+Button is rolled over: true
+Button is rolled over: false
+
+================================================================
+
+Sample: DefaultButtonModel_3
+----------------------------------------------------------------
+stdout:
+Button is pressed: true
+
+================================================================
+
+Sample: DefaultButtonModel_4
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultButtonModel_7
+----------------------------------------------------------------
+stdout:
+Is the button selected? true
+
+================================================================
+
+Sample: DefaultButtonModel_8
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultButtonModel_9
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: DefaultButtonModel_10
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultListModel_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/DefaultListModel_2.java:6: error: method add in class DefaultListModel<E> cannot be applied to given types;
+        listModel.add("Hello");
+                 ^
+  required: int,String
+  found:    String
+  reason: actual and formal argument lists differ in length
+  where E is a type-variable:
+    E extends Object declared in class DefaultListModel
+./javax_swing/javaFiles/DefaultListModel_2.java:7: error: method add in class DefaultListModel<E> cannot be applied to given types;
+        listModel.add("World");
+                 ^
+  required: int,String
+  found:    String
+  reason: actual and formal argument lists differ in length
+  where E is a type-variable:
+    E extends Object declared in class DefaultListModel
+2 errors
+
+
+================================================================
+
+Sample: DefaultListModel_5
+----------------------------------------------------------------
+stdout:
+Before clear: [Hello, World]
+After clear: []
+
+================================================================
+
+Sample: DefaultListSelectionModel_1
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultListSelectionModel_2
+----------------------------------------------------------------
+stdout:
+Current Selection: [I@7ed7259e
+Current Selection after clearing: [I@28eaa59a
+
+================================================================
+
+Sample: DefaultListSelectionModel_3
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/DefaultListSelectionModel_3.java:7: error: cannot infer type arguments for JList<>
+        JList<String> list = new JList<>(Arrays.asList("Item 1", "Item 2", "Item 3"));
+                             ^
+1 error
+
+
+================================================================
+
+Sample: DefaultListSelectionModel_4
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultListSelectionModel_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DefaultSingleSelectionModel_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/DefaultSingleSelectionModel_5.java:11: error: type DefaultSingleSelectionModel does not take parameters
+        DefaultSingleSelectionModel<String> selectionModel = new DefaultSingleSelectionModel<>(listModel);
+                                   ^
+./javax_swing/javaFiles/DefaultSingleSelectionModel_5.java:11: error: cannot infer type arguments for DefaultSingleSelectionModel
+        DefaultSingleSelectionModel<String> selectionModel = new DefaultSingleSelectionModel<>(listModel);
+                                                                                            ^
+  reason: cannot use '<>' with non-generic class DefaultSingleSelectionModel
+2 errors
+
+
+================================================================
+
+Sample: GroupLayout_1
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/GroupLayout_1.java:13: error: cannot find symbol
+        panel.addLayoutComponent("Button", button);
+             ^
+  symbol:   method addLayoutComponent(String,JButton)
+  location: variable panel of type JPanel
+1 error
+
+
+================================================================
+
+Sample: GroupLayout_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/GroupLayout_2.java:13: error: cannot find symbol
+        panel.addLayoutComponent(button, "Button");
+             ^
+  symbol:   method addLayoutComponent(JButton,String)
+  location: variable panel of type JPanel
+1 error
+
+
+================================================================
+
+Sample: InputMap_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/InputMap_5.java:7: error: JComponent is abstract; cannot be instantiated
+        JComponent component = new JComponent();
+                               ^
+1 error
+
+
+================================================================
+
+Sample: InputVerifier_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at InputVerifier_1.main(InputVerifier_1.java:6)
+
+================================================================
+
+Sample: InputVerifier_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/InputVerifier_2.java:6: error: <anonymous InputVerifier_2$1> is not abstract and does not override abstract method verify(JComponent) in InputVerifier
+        textField.setInputVerifier(new InputVerifier() {
+                                                       ^
+Note: ./javax_swing/javaFiles/InputVerifier_2.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+
+
+================================================================
+
+Sample: JCheckBoxMenuItem_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JCheckBoxMenuItem_3.main(JCheckBoxMenuItem_3.java:6)
+
+================================================================
+
+Sample: JComboBox_4
+----------------------------------------------------------------
+stdout:
+Before removing: javax.swing.JComboBox[,0,0,0x0,invalid,layout=javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=8,selectedItemReminder=Item 1]
+After removing: javax.swing.JComboBox[,0,0,0x0,invalid,layout=javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=8,selectedItemReminder=Item 1]
+
+================================================================
+
+Sample: JComboBox_5
+----------------------------------------------------------------
+stdout:
+Before removing: javax.swing.JComboBox[,0,0,0x0,invalid,layout=javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=8,selectedItemReminder=Item 1]
+After removing: javax.swing.JComboBox[,0,0,0x0,invalid,layout=javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager,alignmentX=0.0,alignmentY=0.0,border=,flags=328,maximumSize=,minimumSize=,preferredSize=,isEditable=false,lightWeightPopupEnabled=true,maximumRowCount=8,selectedItemReminder=Item 1]
+
+================================================================
+
+Sample: JEditorPane_1
+----------------------------------------------------------------
+================================================================
+
+Sample: JEditorPane_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: JEditorPane_3
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JEditorPane_3.java:9: error: incompatible types: Document cannot be converted to HTMLDocument
+        kit.insertHTML(editorPane.getDocument(), 0, "<b>Hello, World!</b>", 0, 0, null);
+                                             ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: JEditorPane_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JEditorPane_4.main(JEditorPane_4.java:25)
+
+================================================================
+
+Sample: JEditorPane_5
+----------------------------------------------------------------
+================================================================
+
+Sample: JFileChooser_1
+----------------------------------------------------------------
+================================================================
+
+Sample: JFileChooser_2
+----------------------------------------------------------------
+================================================================
+
+Sample: JFileChooser_3
+----------------------------------------------------------------
+================================================================
+
+Sample: JFileChooser_4
+----------------------------------------------------------------
+================================================================
+
+Sample: JFileChooser_5
+----------------------------------------------------------------
+================================================================
+
+Sample: JFormattedTextField_4
+----------------------------------------------------------------
+stdout:
+10
+
+================================================================
+
+Sample: JFormattedTextField_5
+----------------------------------------------------------------
+stdout:
+Value: 10
+
+================================================================
+
+Sample: JFrame_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JFrame_3.main(JFrame_3.java:6)
+
+================================================================
+
+Sample: JInternalFrame_2
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_3
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_4
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_5
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_6
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JInternalFrame_6.java:6: error: unreported exception PropertyVetoException; must be caught or declared to be thrown
+        frame.setSelected(true);
+                         ^
+1 error
+
+
+================================================================
+
+Sample: JInternalFrame_8
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JInternalFrame_8.main(JInternalFrame_8.java:6)
+
+================================================================
+
+Sample: JInternalFrame_14
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_16
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JInternalFrame_16.java:16: error: cannot find symbol
+        internalFrame.addWindowListener(new WindowAdapter() {
+                     ^
+  symbol:   method addWindowListener(<anonymous WindowAdapter>)
+  location: variable internalFrame of type JInternalFrame
+1 error
+
+
+================================================================
+
+Sample: JInternalFrame_17
+----------------------------------------------------------------
+================================================================
+
+Sample: JInternalFrame_18
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JInternalFrame_18.java:6: error: unreported exception PropertyVetoException; must be caught or declared to be thrown
+        frame.setMaximum(true);
+                        ^
+1 error
+
+
+================================================================
+
+Sample: JInternalFrame_20
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JInternalFrame_20.java:6: error: unreported exception PropertyVetoException; must be caught or declared to be thrown
+        frame.setIcon(true);
+                     ^
+1 error
+
+
+================================================================
+
+Sample: JLabel_1
+----------------------------------------------------------------
+stdout:
+Hello World!
+
+================================================================
+
+Sample: JLabel_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: JLabel_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JLabel_3.main(JLabel_3.java:6)
+
+================================================================
+
+Sample: JLabel_4
+----------------------------------------------------------------
+stdout:
+No icon found
+
+================================================================
+
+Sample: JLabel_5
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: JList_DropLocation_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JList_DropLocation_2.java:10: error: cannot find symbol
+        model.addElement("Hello");
+             ^
+  symbol:   method addElement(String)
+  location: variable model of type ListModel<String>
+./javax_swing/javaFiles/JList_DropLocation_2.java:11: error: cannot find symbol
+        model.addElement("World");
+             ^
+  symbol:   method addElement(String)
+  location: variable model of type ListModel<String>
+2 errors
+
+
+================================================================
+
+Sample: JList_DropLocation_4
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JList_DropLocation_4.java:9: error: cannot find symbol
+        model.addElement("Hello");
+             ^
+  symbol:   method addElement(String)
+  location: variable model of type ListModel<String>
+1 error
+
+
+================================================================
+
+Sample: JMenuBar_5
+----------------------------------------------------------------
+stdout:
+File
+
+================================================================
+
+Sample: JMenuItem_5
+----------------------------------------------------------------
+================================================================
+
+Sample: JPasswordField_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JPasswordField_1.main(JPasswordField_1.java:7)
+
+================================================================
+
+Sample: JPasswordField_2
+----------------------------------------------------------------
+================================================================
+
+Sample: JPasswordField_3
+----------------------------------------------------------------
+stdout:
+Echo Char: •
+
+================================================================
+
+Sample: JRootPane_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JRootPane_3.main(JRootPane_3.java:6)
+
+================================================================
+
+Sample: JRootPane_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JRootPane_4.main(JRootPane_4.java:6)
+
+================================================================
+
+Sample: JScrollBar_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JScrollBar_1.main(JScrollBar_1.java:8)
+
+================================================================
+
+Sample: JScrollBar_2
+----------------------------------------------------------------
+stdout:
+Maximum value: 100
+
+================================================================
+
+Sample: JScrollBar_3
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JScrollBar_3.java:6: error: incompatible types: boolean cannot be converted to int
+        scrollBar.setValues(0, 100, 50, true);
+                                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: JScrollBar_4
+----------------------------------------------------------------
+stdout:
+Unit Increment: 1
+
+================================================================
+
+Sample: JScrollBar_5
+----------------------------------------------------------------
+stdout:
+Block Increment: 10
+
+================================================================
+
+Sample: JScrollPane_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JScrollPane_2.main(JScrollPane_2.java:6)
+
+================================================================
+
+Sample: JScrollPane_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JScrollPane_4.main(JScrollPane_4.java:6)
+
+================================================================
+
+Sample: JScrollPane_7
+----------------------------------------------------------------
+================================================================
+
+Sample: JScrollPane_8
+----------------------------------------------------------------
+================================================================
+
+Sample: JSeparator_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JSeparator_1.main(JSeparator_1.java:7)
+
+================================================================
+
+Sample: JSeparator_2
+----------------------------------------------------------------
+stdout:
+Orientation: 0
+
+================================================================
+
+Sample: JSpinner_1
+----------------------------------------------------------------
+stdout:
+javax.swing.SpinnerNumberModel@43195e57
+
+================================================================
+
+Sample: JSpinner_2
+----------------------------------------------------------------
+================================================================
+
+Sample: JSpinner_3
+----------------------------------------------------------------
+================================================================
+
+Sample: JSpinner_4
+----------------------------------------------------------------
+stdout:
+javax.swing.JSpinner$NumberEditor[,0,0,0x0,invalid,layout=javax.swing.JSpinner$NumberEditor,alignmentX=0.0,alignmentY=0.0,border=,flags=8388617,maximumSize=,minimumSize=,preferredSize=]
+
+================================================================
+
+Sample: JSpinner_5
+----------------------------------------------------------------
+stdout:
+New value: 75
+
+================================================================
+
+Sample: JSpinner_6
+----------------------------------------------------------------
+stdout:
+Value: 5
+
+================================================================
+
+Sample: JSpinner_8
+----------------------------------------------------------------
+stdout:
+Current Value: 5
+Next Value: 6
+
+================================================================
+
+Sample: JSpinner_10
+----------------------------------------------------------------
+stdout:
+Current Value: 5
+Previous Value: 4
+
+================================================================
+
+Sample: JSpinner_DefaultEditor_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JSpinner_DefaultEditor_5.java:9: error: unreported exception ParseException; must be caught or declared to be thrown
+        editor.commitEdit();
+                         ^
+1 error
+
+
+================================================================
+
+Sample: JTabbedPane_3
+----------------------------------------------------------------
+stdout:
+Before removing: 3
+After removing: 2
+
+================================================================
+
+Sample: JTabbedPane_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JTabbedPane_4.main(JTabbedPane_4.java:6)
+
+================================================================
+
+Sample: JTabbedPane_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_5.main(JTabbedPane_5.java:7)
+
+================================================================
+
+Sample: JTabbedPane_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_6.main(JTabbedPane_6.java:5)
+
+================================================================
+
+Sample: JTabbedPane_7
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_7.java:13: error: no suitable method found for add(String)
+        panel1.add("This is panel 1");
+              ^
+    method Component.add(PopupMenu) is not applicable
+      (argument mismatch; String cannot be converted to PopupMenu)
+    method Container.add(Component) is not applicable
+      (argument mismatch; String cannot be converted to Component)
+./javax_swing/javaFiles/JTabbedPane_7.java:17: error: no suitable method found for add(String)
+        panel2.add("This is panel 2");
+              ^
+    method Component.add(PopupMenu) is not applicable
+      (argument mismatch; String cannot be converted to PopupMenu)
+    method Container.add(Component) is not applicable
+      (argument mismatch; String cannot be converted to Component)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: JTabbedPane_8
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_8.main(JTabbedPane_8.java:6)
+
+================================================================
+
+Sample: JTabbedPane_9
+----------------------------------------------------------------
+================================================================
+
+Sample: JTabbedPane_10
+----------------------------------------------------------------
+stdout:
+Is Tab 1 enabled? true
+Is Tab 2 enabled? true
+Is Tab 3 enabled? true
+
+================================================================
+
+Sample: JTabbedPane_11
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_11.main(JTabbedPane_11.java:6)
+
+================================================================
+
+Sample: JTabbedPane_12
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_12.main(JTabbedPane_12.java:6)
+
+================================================================
+
+Sample: JTabbedPane_15
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_15.java:7: error: cannot find symbol
+        tabbedPane.setTabLayoutPolicy(SwingConstants.SCROLL_TAB_LAYOUT);
+                                                    ^
+  symbol:   variable SCROLL_TAB_LAYOUT
+  location: interface SwingConstants
+1 error
+
+
+================================================================
+
+Sample: JTabbedPane_16
+----------------------------------------------------------------
+stdout:
+Tab Layout Policy: 0
+
+================================================================
+
+Sample: JTabbedPane_17
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_17.main(JTabbedPane_17.java:6)
+
+================================================================
+
+Sample: JTabbedPane_18
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_18.java:11: error: cannot find symbol
+        tabbedPane.add("Tab 1", new JPanel());
+                                    ^
+  symbol:   class JPanel
+  location: class JTabbedPane_18
+./javax_swing/javaFiles/JTabbedPane_18.java:12: error: cannot find symbol
+        tabbedPane.add("Tab 2", new JPanel());
+                                    ^
+  symbol:   class JPanel
+  location: class JTabbedPane_18
+2 errors
+
+
+================================================================
+
+Sample: JTabbedPane_23
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_23.main(JTabbedPane_23.java:6)
+
+================================================================
+
+Sample: JTabbedPane_24
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_24.main(JTabbedPane_24.java:6)
+
+================================================================
+
+Sample: JTabbedPane_27
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_27.java:7: error: cannot find symbol
+        tabbedPane.setTabLayoutPolicy(SwingConstants.SCROLL_TAB_LAYOUT);
+                                                    ^
+  symbol:   variable SCROLL_TAB_LAYOUT
+  location: interface SwingConstants
+1 error
+
+
+================================================================
+
+Sample: JTabbedPane_28
+----------------------------------------------------------------
+stdout:
+Tab Layout Policy: 0
+
+================================================================
+
+Sample: JTabbedPane_29
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_29.main(JTabbedPane_29.java:6)
+
+================================================================
+
+Sample: JTabbedPane_30
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_30.java:11: error: cannot find symbol
+        tabbedPane.add("Tab 1", new JPanel());
+                                    ^
+  symbol:   class JPanel
+  location: class JTabbedPane_30
+./javax_swing/javaFiles/JTabbedPane_30.java:12: error: cannot find symbol
+        tabbedPane.add("Tab 2", new JPanel());
+                                    ^
+  symbol:   class JPanel
+  location: class JTabbedPane_30
+2 errors
+
+
+================================================================
+
+Sample: JTabbedPane_35
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_35.main(JTabbedPane_35.java:6)
+
+================================================================
+
+Sample: JTabbedPane_36
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_36.main(JTabbedPane_36.java:6)
+
+================================================================
+
+Sample: JTabbedPane_39
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTabbedPane_39.java:7: error: cannot find symbol
+        tabbedPane.setTabLayoutPolicy(SwingConstants.SCROLL_TAB_LAYOUT);
+                                                    ^
+  symbol:   variable SCROLL_TAB_LAYOUT
+  location: interface SwingConstants
+1 error
+
+
+================================================================
+
+Sample: JTabbedPane_40
+----------------------------------------------------------------
+stdout:
+Tab Layout Policy: 0
+
+================================================================
+
+Sample: JTabbedPane_41
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTabbedPane_41.main(JTabbedPane_41.java:6)
+
+================================================================
+
+Sample: JTable_1
+----------------------------------------------------------------
+stdout:
+Cell at row 0, column 0 is editable.
+Cell at row 0, column 1 is editable.
+Cell at row 1, column 0 is editable.
+Cell at row 1, column 1 is editable.
+
+================================================================
+
+Sample: JTable_2
+----------------------------------------------------------------
+stdout:
+null null null null null 
+null null null null null 
+null null Hello null null 
+null null null null null 
+null null null null null 
+
+================================================================
+
+Sample: JTable_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTable_3.main(JTable_3.java:9)
+
+================================================================
+
+Sample: JTable_6
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_7
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTable_7.java:12: error: cannot find symbol
+class MyTableCellEditor extends AbstractCellEditor implements TableCellEditor {
+                                ^
+  symbol: class AbstractCellEditor
+./javax_swing/javaFiles/JTable_7.java:12: error: MyTableCellEditor is not abstract and does not override abstract method getTableCellEditorComponent(JTable,Object,boolean,int,int) in TableCellEditor
+class MyTableCellEditor extends AbstractCellEditor implements TableCellEditor {
+^
+2 errors
+
+
+================================================================
+
+Sample: JTable_8
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_9
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JTable_9.main(JTable_9.java:14)
+
+================================================================
+
+Sample: JTable_11
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_12
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_13
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_15
+----------------------------------------------------------------
+================================================================
+
+Sample: JTable_DropLocation_1
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTable_DropLocation_1.java:7: error: constructor DropLocation in class DropLocation cannot be applied to given types;
+        JTable.DropLocation dropLocation = new JTable.DropLocation(table, 1, 1);
+                                           ^
+  required: Point,int,int,boolean,boolean
+  found:    JTable,int,int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: JTable_DropLocation_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JTable_DropLocation_2.java:14: error: constructor DropLocation in class DropLocation cannot be applied to given types;
+        JTable.DropLocation dropLocation = new JTable.DropLocation(table, 1, 1);
+                                           ^
+  required: Point,int,int,boolean,boolean
+  found:    JTable,int,int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: JTextArea_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: JTextArea_2
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: JTextField_4
+----------------------------------------------------------------
+================================================================
+
+Sample: JTextField_5
+----------------------------------------------------------------
+================================================================
+
+Sample: JToolTip_1
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JToolTip_1.java:12: error: cannot find symbol
+        label.setToolTip(toolTip);
+             ^
+  symbol:   method setToolTip(JToolTip)
+  location: variable label of type JLabel
+1 error
+
+
+================================================================
+
+Sample: JToolTip_2
+----------------------------------------------------------------
+stdout:
+This is a tooltip
+
+================================================================
+
+Sample: JTree_DropLocation_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "javax.swing.JTree$DropLocation.getPath()" because "<local5>" is null
+	at JTree_DropLocation_2.main(JTree_DropLocation_2.java:21)
+
+================================================================
+
+Sample: JViewport_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at JViewport_1.main(JViewport_1.java:6)
+
+================================================================
+
+Sample: JViewport_2
+----------------------------------------------------------------
+stdout:
+javax.swing.JPanel[,0,0,0x0,invalid,layout=java.awt.FlowLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+
+================================================================
+
+Sample: JViewport_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_3.main(JViewport_3.java:6)
+
+================================================================
+
+Sample: JViewport_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_4.main(JViewport_4.java:8)
+
+================================================================
+
+Sample: JViewport_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_5.main(JViewport_5.java:6)
+
+================================================================
+
+Sample: JViewport_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_6.main(JViewport_6.java:8)
+
+================================================================
+
+Sample: JViewport_12
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_12.main(JViewport_12.java:8)
+
+================================================================
+
+Sample: JViewport_22
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JViewport_22.java:15: error: cannot find symbol
+        viewport.setScrollMode(JViewport.SIMPLE_SCROLL);
+                                        ^
+  symbol:   variable SIMPLE_SCROLL
+  location: class JViewport
+1 error
+
+
+================================================================
+
+Sample: JViewport_23
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JViewport_23.java:11: error: cannot find symbol
+        if (scrollMode == ScrollPaneConstants.SCROLLBARS_AS_NEEDED) {
+                                             ^
+  symbol:   variable SCROLLBARS_AS_NEEDED
+  location: interface ScrollPaneConstants
+./javax_swing/javaFiles/JViewport_23.java:13: error: cannot find symbol
+        } else if (scrollMode == ScrollPaneConstants.SCROLLBARS_ALWAYS) {
+                                                    ^
+  symbol:   variable SCROLLBARS_ALWAYS
+  location: interface ScrollPaneConstants
+./javax_swing/javaFiles/JViewport_23.java:15: error: cannot find symbol
+        } else if (scrollMode == ScrollPaneConstants.SCROLLBARS_NEVER) {
+                                                    ^
+  symbol:   variable SCROLLBARS_NEVER
+  location: interface ScrollPaneConstants
+3 errors
+
+
+================================================================
+
+Sample: JViewport_28
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_28.main(JViewport_28.java:6)
+
+================================================================
+
+Sample: JViewport_29
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_29.main(JViewport_29.java:8)
+
+================================================================
+
+Sample: JViewport_30
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_30.main(JViewport_30.java:6)
+
+================================================================
+
+Sample: JViewport_31
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_31.main(JViewport_31.java:8)
+
+================================================================
+
+Sample: JViewport_37
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at JViewport_37.main(JViewport_37.java:8)
+
+================================================================
+
+Sample: JViewport_47
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JViewport_47.java:15: error: cannot find symbol
+        viewport.setScrollMode(JViewport.SIMPLE_SCROLL);
+                                        ^
+  symbol:   variable SIMPLE_SCROLL
+  location: class JViewport
+1 error
+
+
+================================================================
+
+Sample: JViewport_48
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/JViewport_48.java:11: error: cannot find symbol
+        if (scrollMode == ScrollPaneConstants.SCROLLBARS_AS_NEEDED) {
+                                             ^
+  symbol:   variable SCROLLBARS_AS_NEEDED
+  location: interface ScrollPaneConstants
+./javax_swing/javaFiles/JViewport_48.java:13: error: cannot find symbol
+        } else if (scrollMode == ScrollPaneConstants.SCROLLBARS_ALWAYS) {
+                                                    ^
+  symbol:   variable SCROLLBARS_ALWAYS
+  location: interface ScrollPaneConstants
+./javax_swing/javaFiles/JViewport_48.java:15: error: cannot find symbol
+        } else if (scrollMode == ScrollPaneConstants.SCROLLBARS_NEVER) {
+                                                    ^
+  symbol:   variable SCROLLBARS_NEVER
+  location: interface ScrollPaneConstants
+3 errors
+
+
+================================================================
+
+Sample: KeyStroke_1
+----------------------------------------------------------------
+stdout:
+ctrl alt pressed A
+
+================================================================
+
+Sample: KeyStroke_3
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/KeyStroke_3.java:5: error: cannot find symbol
+        KeyStroke keyStroke = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
+                                                     ^
+  symbol:   variable KeyEvent
+  location: class KeyStroke_3
+1 error
+
+
+================================================================
+
+Sample: KeyStroke_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/KeyStroke_5.java:5: error: cannot find symbol
+        KeyStroke keyStroke = KeyStroke.getKeyStroke(KeyStroke.VK_A, KeyStroke.CTRL_DOWN_MASK, true);
+                                                              ^
+  symbol:   variable VK_A
+  location: class KeyStroke
+./javax_swing/javaFiles/KeyStroke_5.java:5: error: cannot find symbol
+        KeyStroke keyStroke = KeyStroke.getKeyStroke(KeyStroke.VK_A, KeyStroke.CTRL_DOWN_MASK, true);
+                                                                              ^
+  symbol:   variable CTRL_DOWN_MASK
+  location: class KeyStroke
+2 errors
+
+
+================================================================
+
+Sample: ProgressMonitor_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "AWT-EventQueue-0" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at ProgressMonitor_2$1.run(ProgressMonitor_2.java:10)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+================================================================
+
+Sample: ProgressMonitor_4
+----------------------------------------------------------------
+================================================================
+
+Sample: ProgressMonitor_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.SwingUtilities$SharedOwnerFrame.<init>(SwingUtilities.java:1919)
+	at java.desktop/javax.swing.SwingUtilities.getSharedOwnerFrame(SwingUtilities.java:1995)
+	at java.desktop/javax.swing.JOptionPane.getRootFrame(JOptionPane.java:1695)
+	at java.desktop/javax.swing.JOptionPane.getWindowForComponent(JOptionPane.java:1636)
+	at java.desktop/javax.swing.ProgressMonitor$ProgressOptionPane.createDialog(ProgressMonitor.java:182)
+	at java.desktop/javax.swing.ProgressMonitor.setProgress(ProgressMonitor.java:294)
+	at ProgressMonitor_5.main(ProgressMonitor_5.java:7)
+
+================================================================
+
+Sample: ProgressMonitor_7
+----------------------------------------------------------------
+================================================================
+
+Sample: RepaintManager_4
+----------------------------------------------------------------
+================================================================
+
+Sample: RepaintManager_10
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/RepaintManager_10.java:5: error: non-static method setDoubleBufferingEnabled(boolean) cannot be referenced from a static context
+        RepaintManager.setDoubleBufferingEnabled(false);
+                      ^
+1 error
+
+
+================================================================
+
+Sample: RowSorter_4
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/RowSorter_4.java:15: error: MyTableModel is not abstract and does not override abstract method removeTableModelListener(TableModelListener) in TableModel
+class MyTableModel implements TableModel {
+^
+1 error
+
+
+================================================================
+
+Sample: ScrollPaneLayout_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at ScrollPaneLayout_5.main(ScrollPaneLayout_5.java:6)
+
+================================================================
+
+Sample: SpinnerDateModel_3
+----------------------------------------------------------------
+stdout:
+Fri Mar 08 23:36:50 CST 2024
+
+================================================================
+
+Sample: SpinnerDateModel_4
+----------------------------------------------------------------
+stdout:
+Fri Mar 08 23:36:51 CST 2024
+
+================================================================
+
+Sample: SpinnerDateModel_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/SpinnerDateModel_5.java:7: error: method getCalendarField in class SpinnerDateModel cannot be applied to given types;
+        int day = model.getCalendarField(Calendar.DAY_OF_MONTH);
+                       ^
+  required: no arguments
+  found:    int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: SpinnerDateModel_12
+----------------------------------------------------------------
+stdout:
+Fri Mar 08 23:36:55 CST 2024
+
+================================================================
+
+Sample: SpinnerDateModel_13
+----------------------------------------------------------------
+stdout:
+Current date: Fri Mar 08 23:36:56 CST 2024
+
+================================================================
+
+Sample: SpinnerDateModel_15
+----------------------------------------------------------------
+stdout:
+Next value: Sun Jan 02 23:36:58 CST 2022
+
+================================================================
+
+Sample: SpinnerDateModel_17
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/SpinnerDateModel_17.java:15: error: incompatible types: Object cannot be converted to Date
+        Date previousValue = spinnerDateModel.getPreviousValue();
+                                                              ^
+1 error
+
+
+================================================================
+
+Sample: SpinnerNumberModel_2
+----------------------------------------------------------------
+stdout:
+50
+
+================================================================
+
+Sample: SpinnerNumberModel_3
+----------------------------------------------------------------
+stdout:
+Current Value: 5
+
+================================================================
+
+Sample: SpringLayout_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:224)
+	at SpringLayout_1.main(SpringLayout_1.java:6)
+
+================================================================
+
+Sample: SpringLayout_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at SpringLayout_2.main(SpringLayout_2.java:6)
+
+================================================================
+
+Sample: SwingUtilities_1
+----------------------------------------------------------------
+stdout:
+Updating UI on EDT
+
+================================================================
+
+Sample: SwingUtilities_2
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/SwingUtilities_2.java:5: error: unreported exception InterruptedException; must be caught or declared to be thrown
+        SwingUtilities.invokeAndWait(new Runnable() {
+                                    ^
+1 error
+
+
+================================================================
+
+Sample: SwingUtilities_3
+----------------------------------------------------------------
+stdout:
+Is the current thread the event dispatch thread? false
+
+================================================================
+
+Sample: SwingWorker_1
+----------------------------------------------------------------
+================================================================
+
+Sample: SwingWorker_3
+----------------------------------------------------------------
+stdout:
+Task has not been cancelled
+
+================================================================
+
+Sample: SwingWorker_4
+----------------------------------------------------------------
+stdout:
+Task is done!
+
+================================================================
+
+Sample: Timer_2
+----------------------------------------------------------------
+================================================================
+
+Sample: Timer_3
+----------------------------------------------------------------
+stdout:
+Timer is running...
+Timer is running...
+Timer is running...
+Timer is running...
+
+================================================================
+
+Sample: Timer_4
+----------------------------------------------------------------
+================================================================
+
+Sample: Timer_5
+----------------------------------------------------------------
+================================================================
+
+Sample: ToolTipManager_1
+----------------------------------------------------------------
+================================================================
+
+Sample: ToolTipManager_2
+----------------------------------------------------------------
+================================================================
+
+Sample: ToolTipManager_4
+----------------------------------------------------------------
+================================================================
+
+Sample: ToolTipManager_5
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/ToolTipManager_5.java:5: error: non-static method setLightWeightPopupEnabled(boolean) cannot be referenced from a static context
+        ToolTipManager.setLightWeightPopupEnabled(true);
+                      ^
+1 error
+
+
+================================================================
+
+Sample: TransferHandler_3
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/TransferHandler_3.java:15: error: cannot find symbol
+        Transferable transferable = handler.createTransferable(panel);
+        ^
+  symbol:   class Transferable
+  location: class TransferHandler_3
+./javax_swing/javaFiles/TransferHandler_3.java:15: error: createTransferable(JComponent) has protected access in TransferHandler
+        Transferable transferable = handler.createTransferable(panel);
+                                           ^
+2 errors
+
+
+================================================================
+
+Sample: TransferHandler_4
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/TransferHandler_4.java:17: error: exportDone(JComponent,Transferable,int) has protected access in TransferHandler
+        transferHandler.exportDone(null, null, 0);
+                       ^
+1 error
+
+
+================================================================
+
+Sample: UIDefaults_1
+----------------------------------------------------------------
+output:
+./javax_swing/javaFiles/UIDefaults_1.java:11: error: cannot find symbol
+        button.setDefaults(defaults);
+              ^
+  symbol:   method setDefaults(UIDefaults)
+  location: variable button of type JButton
+1 error
+
+
+================================================================
+
+Sample: UIDefaults_2
+----------------------------------------------------------------
+stdout:
+Key: key, Value: value
+
+================================================================
+
+Sample: UIManager_1
+----------------------------------------------------------------
+stderr:
+java.lang.ClassNotFoundException: com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.desktop/javax.swing.SwingUtilities.loadSystemClass(SwingUtilities.java:2036)
+	at java.desktop/javax.swing.UIManager.setLookAndFeel(UIManager.java:638)
+	at UIManager_1.main(UIManager_1.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+

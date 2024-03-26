@@ -1,0 +1,458 @@
+Sample: 0 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean find() from java.util.regex.Matcher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `boolean find()` method in `java.util.regex.Matcher` is used to find the next subsequence of the input sequence that matches the pattern. It returns `true` if, and only if, a subsequence of the input sequence matches this matcher's pattern.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Hello, world! This is a test.";
+        String pattern = "test";
+
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(text);
+
+        boolean found = m.find();
+        System.out.println("Found: " + found);
+    }
+}
+```
+
+In this code snippet, we are searching for the word "test" in the string "Hello, world! This is a test.". The `find()` method returns `true` if it finds the pattern and `false` if it doesn't.
+================================================================
+
+Sample: 1 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean find(int start) from java.util.regex.Matcher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `find(int start)` method in `java.util.regex.Matcher` is used to find the next subsequence of the input sequence that matches the pattern. It starts the search at the specified index.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Hello, world! This is a test.";
+        String pattern = "test";
+
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(text);
+
+        int start = 10;
+        boolean found = m.find(start);
+
+        if(found){
+            System.out.println("Pattern found starting at index " + m.start());
+        } else {
+            System.out.println("Pattern not found");
+        }
+    }
+}
+```
+
+In this code, we are searching for the pattern "test" in the text "Hello, world! This is a test." starting from the index 10. The `find(int start)` method returns true if the pattern is found and false otherwise.
+================================================================
+
+Sample: 2 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Matcher appendReplacement(StringBuffer sb, String replacement) from java.util.regex.Matcher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `appendReplacement(StringBuffer sb, String replacement)` method from `java.util.regex.Matcher`:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "Hello, World!";
+        String regex = "World";
+        String replacement = "Java";
+
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+
+        StringBuffer sb = new StringBuffer();
+        while (matcher.find()) {
+            matcher.appendReplacement(sb, replacement);
+        }
+        matcher.appendTail(sb);
+
+        System.out.println(sb.toString());
+    }
+}
+```
+
+In this code snippet, we are using the `appendReplacement(StringBuffer sb, String replacement)` method to replace all occurrences of the word "World" with the word "Java". The `appendTail(StringBuffer sb)` method is then used to append the rest of the input string to the `StringBuffer`.
+================================================================
+
+Sample: 3 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use StringBuffer appendTail(StringBuffer sb) from java.util.regex.Matcher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `appendTail(StringBuffer sb)` method in `java.util.regex.Matcher` is used to append the remainder of the input sequence to the specified `StringBuffer`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "Hello, World!";
+        Pattern pattern = Pattern.compile("Hello");
+        Matcher matcher = pattern.matcher(input);
+
+        if (matcher.find()) {
+            StringBuffer sb = new StringBuffer();
+            matcher.appendTail(sb);
+            System.out.println(sb.toString());
+        }
+    }
+}
+```
+
+In this code snippet, we are using a `Matcher` to find a match in the input string. If a match is found, we create a `StringBuffer` and use the `appendTail(StringBuffer sb)` method to append the remainder of the input sequence to the `StringBuffer`. Finally, we print the contents of the `StringBuffer`.
+================================================================
+
+Sample: 4 Matcher
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int end() from java.util.regex.Matcher
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `end()` method in `java.util.regex.Matcher` is used to get the index position after the last character matched by the previous match operation.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Hello, World!";
+        Pattern pattern = Pattern.compile("\\w+");
+        Matcher matcher = pattern.matcher(text);
+
+        if (matcher.find()) {
+            int end = matcher.end();
+            System.out.println("The index position after the last character matched is: " + end);
+        }
+    }
+}
+```
+
+In this code snippet, we are using a regular expression to find the first word in the string "Hello, World!". The `find()` method is used to find the next subsequence of the input sequence that matches the pattern. The `end()` method is then used to get the index position after the last character matched.
+================================================================
+
+Sample: 5 Pattern
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Pattern compile(String regex) from java.util.regex.Pattern
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `Pattern.compile(String regex)` method is used to compile a regular expression into a pattern. It returns a `Pattern` object that can be used to match character sequences against this pattern.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        // Compile the regular expression
+        Pattern pattern = Pattern.compile("\\d+");
+        System.out.println(pattern);
+    }
+}
+```
+
+In this code snippet, `\\d+` is the regular expression that matches one or more digits. The `Pattern.compile(String regex)` method compiles this regular expression into a pattern, and the resulting `Pattern` object is stored in the `pattern` variable.
+
+The `System.out.println(pattern)` statement is used to print the `Pattern` object to the console. This will output the regular expression and other information about the pattern, such as its flags and the pattern's source string.
+================================================================
+
+Sample: 6 Pattern
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Matcher matcher(CharSequence input) from java.util.regex.Pattern
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `matcher(CharSequence input)` method from `java.util.regex.Pattern` is used to create a matcher that will match the given input against this pattern.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a pattern
+        Pattern pattern = Pattern.compile("\\d+");
+
+        // Create a matcher
+        Matcher matcher = pattern.matcher("12345");
+
+        // Use the matcher
+        while (matcher.find()) {
+            System.out.println("Found: " + matcher.group());
+        }
+    }
+}
+```
+
+In this code snippet, we first create a pattern that matches one or more digits. Then we create a matcher for this pattern and a string that contains digits. We use the `find()` method of the matcher to find matches in the string, and the `group()` method to get the matched string.
+
+Please replace the pattern and input string as per your requirement.
+================================================================
+
+Sample: 7 Pattern
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String[] split(CharSequence input) from java.util.regex.Pattern
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `split(CharSequence input)` method in the `java.util.regex.Pattern` class splits the input string around matches of the pattern.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.util.regex.Pattern;
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "Hello, World! This is a test.";
+        String[] words = Pattern.compile(",?").split(input);
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
+```
+
+In this code snippet, we are splitting the input string `input` around matches of the pattern `",?"`. The pattern `",?"` matches a comma followed by zero or one spaces. The `split(CharSequence input)` method splits the input string into an array of strings based on the matches of the pattern.
+
+The output of this code snippet will be:
+
+```
+Hello
+World!
+This
+is
+a
+test.
+```
+================================================================
+

@@ -1,0 +1,426 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Authenticator,1,void setDefault(Authenticator a),True
+0,Authenticator,2,PasswordAuthentication getPasswordAuthentication(),True
+0,Authenticator,3,Authenticator getDefault(),False
+0,Authenticator,4,void setDefault(Authenticator a),True
+0,Authenticator,5,"void requestPasswordAuthentication(String prompt, String message, String defaultMessage, String loginRequestor, HttpURLConnection httpConn, String scheme)",False
+1,CacheRequest,1,boolean add(E e),False
+1,CacheRequest,2,boolean addAll(Collection<? extends E> c),False
+1,CacheRequest,3,"void addHeader(String name, String value)",False
+1,CacheRequest,4,void abort(),True
+1,CacheRequest,5,String getRequestURI(),False
+2,CacheResponse,1,boolean add(E e),False
+2,CacheResponse,2,"void add(int index, E element)",False
+2,CacheResponse,3,void clear(),False
+2,CacheResponse,4,boolean contains(Object o),False
+2,CacheResponse,5,E get(int index),False
+3,ContentHandler,1,boolean add(E e),False
+3,ContentHandler,2,E get(int index),False
+3,ContentHandler,3,E remove(int index),False
+3,ContentHandler,4,"E set(int index, E element)",False
+3,ContentHandler,5,int size(),False
+4,CookieHandler,1,CookieHandler getDefault(),True
+4,CookieHandler,2,void setDefault(CookieHandler newDefault),True
+4,CookieHandler,3,"List<URI> get(URI uri, Map<String, List<String>> requestHeaders)",False
+4,CookieHandler,4,"boolean put(URI uri, Map<String, List<String>> responseHeaders)",False
+4,CookieHandler,5,void remove(URI uri),False
+5,CookieManager,1,add(E e),False
+5,CookieManager,2,"add(int index, E e)",False
+5,CookieManager,3,clear(),False
+5,CookieManager,4,contains(E e),False
+5,CookieManager,5,get(int index),False
+5,CookieManager,6,indexOf(E e),False
+5,CookieManager,7,remove(E e),False
+5,CookieManager,8,remove(int index),False
+5,CookieManager,9,"set(int index, E e)",False
+5,CookieManager,10,size(),False
+6,DatagramPacket,1,"DatagramPacket(byte buf[], int length)",False
+6,DatagramPacket,2,"DatagramPacket(byte buf[], int offset, int length)",False
+6,DatagramPacket,3,"DatagramPacket(byte buf[], int length, InetAddress address, int port)",False
+6,DatagramPacket,4,"DatagramPacket(byte buf[], int offset, int length, InetAddress address, int port)",False
+6,DatagramPacket,5,int getLength(),True
+6,DatagramPacket,6,byte[] getData(),True
+6,DatagramPacket,7,InetAddress getAddress(),True
+6,DatagramPacket,8,int getPort(),True
+6,DatagramPacket,9,void setData(byte buf[]),False
+6,DatagramPacket,10,"void setData(byte buf[], int offset, int length)",False
+6,DatagramPacket,11,void setAddress(InetAddress address),True
+6,DatagramPacket,12,void setPort(int port),True
+7,DatagramSocket,1,DatagramSocket(),False
+7,DatagramSocket,2,DatagramSocket(int port),False
+7,DatagramSocket,3,"DatagramSocket(int port, InetAddress laddr)",False
+7,DatagramSocket,4,"DatagramPacket(byte[] buf, int length)",False
+7,DatagramSocket,5,"DatagramPacket(byte[] buf, int offset, int length)",False
+7,DatagramSocket,6,"DatagramPacket(byte[] buf, int length, InetAddress address, int port)",False
+7,DatagramSocket,7,receive(DatagramPacket p),False
+7,DatagramSocket,8,send(DatagramPacket p),False
+7,DatagramSocket,9,close(),False
+7,DatagramSocket,10,getLocalAddress(),False
+7,DatagramSocket,11,getLocalPort(),False
+7,DatagramSocket,12,getInetAddress(),False
+7,DatagramSocket,13,getPort(),False
+7,DatagramSocket,14,setSoTimeout(int timeout),False
+7,DatagramSocket,15,getSoTimeout(),False
+7,DatagramSocket,16,setReuseAddress(boolean on),False
+7,DatagramSocket,17,getReuseAddress(),False
+7,DatagramSocket,18,setBroadcast(boolean on),False
+7,DatagramSocket,19,getBroadcast(),False
+7,DatagramSocket,20,setTrafficClass(int tc),False
+7,DatagramSocket,21,getTrafficClass(),False
+7,DatagramSocket,22,"setSoLinger(boolean on, int linger)",False
+7,DatagramSocket,23,getSoLinger(),False
+7,DatagramSocket,24,setSendBufferSize(int size),False
+7,DatagramSocket,25,getSendBufferSize(),False
+7,DatagramSocket,26,setReceiveBufferSize(int size),False
+7,DatagramSocket,27,getReceiveBufferSize(),False
+7,DatagramSocket,28,setTimeToLive(int ttl),False
+7,DatagramSocket,29,getTimeToLive(),False
+7,DatagramSocket,30,setMulticastInterface(InetAddress maddr),False
+7,DatagramSocket,31,getMulticastInterface(),False
+7,DatagramSocket,32,setMulticastLoopback(boolean on),False
+7,DatagramSocket,33,getMulticastLoopback(),False
+7,DatagramSocket,34,joinGroup(InetAddress maddr),False
+7,DatagramSocket,35,leaveGroup(InetAddress maddr),False
+7,DatagramSocket,36,setMulticastTTL(int ttl),False
+7,DatagramSocket,37,getMulticastTTL(),False
+7,DatagramSocket,38,setNetworkInterface(NetworkInterface net),False
+7,DatagramSocket,39,getNetworkInterface(),False
+7,DatagramSocket,40,setLoopbackMode(int mode),False
+7,DatagramSocket,41,getLoopbackMode(),False
+7,DatagramSocket,42,setOOBInline(boolean on),False
+7,DatagramSocket,43,getOOBInline(),False
+7,DatagramSocket,44,setReceiveBufferSize(int size),False
+7,DatagramSocket,45,getReceiveBufferSize(),False
+7,DatagramSocket,46,setReuseAddr(boolean on),False
+7,DatagramSocket,47,getReuseAddr(),False
+8,DatagramSocketImpl,1,protected void create(boolean connected),False
+8,DatagramSocketImpl,2,"protected void connect(InetAddress address, int port)",False
+8,DatagramSocketImpl,3,protected void connect(SocketAddress address),False
+8,DatagramSocketImpl,4,protected void bind(SocketAddress address),False
+8,DatagramSocketImpl,5,protected void send(DatagramPacket p),False
+9,HttpCookie,1,String getName(),True
+9,HttpCookie,2,String getValue(),True
+9,HttpCookie,3,String getComment(),True
+9,HttpCookie,4,String getDomain(),True
+9,HttpCookie,5,Date getExpiryDate(),False
+10,HttpURLConnection,1,void disconnect(),True
+10,HttpURLConnection,2,void setRequestMethod(String method),True
+10,HttpURLConnection,3,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,4,int getResponseCode(),True
+10,HttpURLConnection,5,InputStream getInputStream(),False
+10,HttpURLConnection,6,URL getURL(),False
+10,HttpURLConnection,7,void setDoOutput(boolean doOutput),False
+10,HttpURLConnection,8,OutputStream getOutputStream(),False
+10,HttpURLConnection,9,void setDoInput(boolean doInput),False
+10,HttpURLConnection,10,void setInstanceFollowRedirects(boolean instanceFollowRedirects),True
+10,HttpURLConnection,11,void setConnectTimeout(int timeout),False
+10,HttpURLConnection,12,void setReadTimeout(int timeout),False
+10,HttpURLConnection,13,void setUseCaches(boolean useCaches),False
+10,HttpURLConnection,14,void setDefaultUseCaches(boolean defaultUseCaches),False
+10,HttpURLConnection,15,"void setDefaultRequestProperty(String key, String value)",False
+10,HttpURLConnection,16,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,17,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,18,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,19,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,20,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,21,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,22,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,23,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,24,"void setRequestProperty(String key, String value)",False
+10,HttpURLConnection,25,"void setRequestProperty(String key, String value)",False
+11,IDN,1,String toASCII(String input),True
+11,IDN,2,String toUnicode(String input),True
+11,IDN,3,"String toUnicode(String input, int flags)",True
+11,IDN,4,"String toASCII(String input, int flags)",True
+11,IDN,5,"String toUnicode(String input, int flags, String unknown)",False
+11,IDN,6,"String toASCII(String input, int flags, String unknown)",False
+11,IDN,7,"String toASCII(String input, int flags, String unknown, String replacement)",False
+11,IDN,8,"String toUnicode(String input, int flags, String unknown, String replacement)",False
+11,IDN,9,"String toASCII(String input, int flags, String unknown, String replacement, String label)",False
+11,IDN,10,"String toUnicode(String input, int flags, String unknown, String replacement, String label)",False
+12,Inet4Address,1,getByName(String host),False
+12,Inet4Address,2,getLocalHost(),False
+12,Inet4Address,3,"isReachable(InetAddress address, int timeout)",False
+12,Inet4Address,4,isSiteLocalAddress(),False
+12,Inet4Address,5,isLoopbackAddress(),False
+13,Inet6Address,1,Inet6Address(String host),False
+13,Inet6Address,2,"Inet6Address(String host, String scope_id)",False
+13,Inet6Address,3,InetAddress getByName(String host),False
+13,Inet6Address,4,"InetAddress getByAddress(String host, byte[] addr)",False
+13,Inet6Address,5,String getHostName(),False
+14,InetAddress,1,InetAddress getByName(String host),True
+14,InetAddress,2,InetAddress getLocalHost(),True
+14,InetAddress,3,String getHostName(),True
+14,InetAddress,4,String getHostAddress(),True
+14,InetAddress,5,boolean isReachable(int timeout),True
+15,InetSocketAddress,1,"InetSocketAddress(String hostname, int port)",False
+15,InetSocketAddress,2,InetAddress getAddress(),True
+15,InetSocketAddress,3,int getPort(),True
+15,InetSocketAddress,4,InetAddress getHostAddress(),False
+15,InetSocketAddress,5,String getHostName(),True
+16,InterfaceAddress,1,List<InterfaceAddress> getInterfaceAddresses(),False
+16,InterfaceAddress,2,InetAddress getBroadcast(),True
+16,InterfaceAddress,3,InetAddress getAddress(),True
+16,InterfaceAddress,4,InetAddress getLoopbackAddress(),False
+16,InterfaceAddress,5,NetworkInterface getParent(),False
+17,JarURLConnection,1,JarURLConnection(URL url),False
+17,JarURLConnection,2,URL getJarFileURL(),True
+17,JarURLConnection,3,JarFile getJarFile(),True
+17,JarURLConnection,4,Manifest getManifest(),True
+17,JarURLConnection,5,JarEntry getJarEntry(),True
+17,JarURLConnection,6,URL getEntryName(),False
+17,JarURLConnection,7,URL getEntry(),False
+17,JarURLConnection,8,URL getJarFileURL(),True
+17,JarURLConnection,9,JarFile getJarFile(),True
+17,JarURLConnection,10,Manifest getManifest(),True
+17,JarURLConnection,11,JarEntry getJarEntry(),True
+17,JarURLConnection,12,URL getEntryName(),False
+17,JarURLConnection,13,URL getEntry(),False
+17,JarURLConnection,14,URL getJarFileURL(),True
+17,JarURLConnection,15,JarFile getJarFile(),True
+17,JarURLConnection,16,Manifest getManifest(),True
+17,JarURLConnection,17,JarEntry getJarEntry(),True
+17,JarURLConnection,18,URL getEntryName(),False
+17,JarURLConnection,19,URL getEntry(),False
+17,JarURLConnection,20,URL getJarFileURL(),True
+18,MulticastSocket,1,MulticastSocket(),False
+18,MulticastSocket,2,MulticastSocket(int port),False
+18,MulticastSocket,3,void joinGroup(InetAddress group),True
+18,MulticastSocket,4,void leaveGroup(InetAddress group),True
+18,MulticastSocket,5,void setTimeToLive(int ttl),True
+19,NetPermission,1,boolean equals(Object obj),False
+19,NetPermission,2,int hashCode(),False
+19,NetPermission,3,String getName(),False
+19,NetPermission,4,String getActions(),False
+19,NetPermission,5,String toString(),False
+20,NetworkInterface,1,getNetworkInterfaces(),False
+20,NetworkInterface,2,getHardwareAddress(),False
+20,NetworkInterface,3,getMTU(),False
+20,NetworkInterface,4,getSubnet(),False
+20,NetworkInterface,5,getInetAddresses(),False
+21,PasswordAuthentication,1,getPasswordAuthentication(),False
+21,PasswordAuthentication,2,setRequestingPrompt(String prompt),False
+21,PasswordAuthentication,3,setRequestingUserName(String username),False
+21,PasswordAuthentication,4,setRequestingPassword(char[] password),False
+21,PasswordAuthentication,5,setRequestingHost(String host),False
+21,PasswordAuthentication,6,setRequestingPort(int port),False
+21,PasswordAuthentication,7,setRequestingProtocol(String protocol),False
+21,PasswordAuthentication,8,setRequestingScheme(String scheme),False
+21,PasswordAuthentication,9,"setRequestingProperty(String key, String value)",False
+21,PasswordAuthentication,10,setRequestingInfo(String info),False
+22,Proxy,1,Proxy.NO_PROXY,False
+22,Proxy,2,Proxy.getProxy(URL url),False
+22,Proxy,3,Proxy.getProxy(InetSocketAddress address),False
+22,Proxy,4,Proxy.getDefault(),False
+22,Proxy,5,Proxy.setDefault(Proxy p),False
+22,Proxy,6,Proxy.Type getType(),False
+22,Proxy,7,InetSocketAddress getAddress(),False
+22,Proxy,8,boolean equals(Object obj),True
+22,Proxy,9,int hashCode(),True
+22,Proxy,10,String toString(),True
+23,ProxySelector,1,ProxySelector getDefault(),True
+23,ProxySelector,2,List<Proxy> select(URI uri),True
+23,ProxySelector,3,"void connectFailed(URI uri, SocketAddress sa, IOException ioe)",True
+23,ProxySelector,4,"void connectFailed(URI uri, Proxy proxy, IOException ioe)",False
+23,ProxySelector,5,void close(),False
+24,ResponseCache,1,boolean add(E e),False
+24,ResponseCache,2,void clear(),False
+24,ResponseCache,3,boolean contains(Object o),False
+24,ResponseCache,4,E get(int index),False
+24,ResponseCache,5,int indexOf(Object o),False
+25,SecureCacheResponse,1,boolean add(E e),False
+25,SecureCacheResponse,2,"void add(int index, E element)",False
+25,SecureCacheResponse,3,boolean addAll(Collection<? extends E> c),False
+25,SecureCacheResponse,4,"boolean addAll(int index, Collection<? extends E> c)",False
+25,SecureCacheResponse,5,void clear(),False
+26,ServerSocket,1,ServerSocket(int port),False
+26,ServerSocket,2,"ServerSocket(int port, int backlog)",False
+26,ServerSocket,3,"ServerSocket(int port, int backlog, InetAddress bindAddr)",False
+26,ServerSocket,4,Socket accept(),True
+26,ServerSocket,5,void close(),True
+26,ServerSocket,6,InetAddress getInetAddress(),True
+26,ServerSocket,7,int getLocalPort(),True
+26,ServerSocket,8,int getReceiveBufferSize(),True
+26,ServerSocket,9,int getSendBufferSize(),False
+26,ServerSocket,10,InetAddress getInetAddress(),True
+26,ServerSocket,11,int getPort(),False
+26,ServerSocket,12,void setReceiveBufferSize(int size),True
+26,ServerSocket,13,void setSendBufferSize(int size),False
+26,ServerSocket,14,void bind(SocketAddress endpoint),True
+26,ServerSocket,15,void connect(SocketAddress endpoint),False
+26,ServerSocket,16,"void connect(SocketAddress endpoint, int timeout)",False
+26,ServerSocket,17,void setSoTimeout(int timeout),True
+26,ServerSocket,18,int getSoTimeout(),True
+26,ServerSocket,19,void setReuseAddress(boolean on),True
+26,ServerSocket,20,boolean getReuseAddress(),True
+27,Socket,1,"Socket(InetAddress address, int port)",False
+27,Socket,2,"Socket(String host, int port)",False
+27,Socket,3,InputStream getInputStream(),True
+27,Socket,4,OutputStream getOutputStream(),True
+27,Socket,5,void close(),True
+27,Socket,6,void connect(SocketAddress endpoint),True
+27,Socket,7,"void connect(SocketAddress endpoint, int timeout)",True
+27,Socket,8,void bind(SocketAddress bindpoint),True
+27,Socket,9,InetAddress getInetAddress(),True
+27,Socket,10,int getPort(),True
+27,Socket,11,void setSoTimeout(int timeout),True
+27,Socket,12,int getSoTimeout(),True
+27,Socket,13,void setTcpNoDelay(boolean on),True
+27,Socket,14,boolean getTcpNoDelay(),True
+27,Socket,15,void setReuseAddress(boolean on),True
+27,Socket,16,boolean getReuseAddress(),True
+27,Socket,17,void setKeepAlive(boolean on),True
+27,Socket,18,boolean getKeepAlive(),True
+27,Socket,19,void setOOBInline(boolean on),True
+27,Socket,20,boolean getOOBInline(),True
+27,Socket,21,"void setSoLinger(boolean on, int linger)",True
+27,Socket,22,int getSendBufferSize(),True
+27,Socket,23,void setSendBufferSize(int size),True
+27,Socket,24,int getReceiveBufferSize(),True
+27,Socket,25,void setReceiveBufferSize(int size),True
+27,Socket,26,"void setPerformancePreferences(int connectionTime, int latency, int bandwidth)",True
+27,Socket,27,void shutdownInput(),True
+27,Socket,28,void shutdownOutput(),True
+27,Socket,29,void setTrafficClass(int tc),True
+27,Socket,30,int getTrafficClass(),True
+27,Socket,31,"void setOption(String name, Object value)",False
+27,Socket,32,Object getOption(String name),False
+27,Socket,33,"void setSoLinger(boolean on, int linger)",True
+27,Socket,34,boolean getSoLinger(),False
+27,Socket,35,void setSoTimeout(int timeout),True
+27,Socket,36,int getSoTimeout(),True
+27,Socket,37,void setTcpNoDelay(boolean on),True
+27,Socket,38,boolean getTcpNoDelay(),True
+27,Socket,39,void setReuseAddress(boolean on),True
+27,Socket,40,boolean getReuseAddress(),True
+27,Socket,41,void setKeepAlive(boolean on),True
+27,Socket,42,boolean getKeepAlive(),True
+27,Socket,43,void setOOBInline(boolean on),True
+27,Socket,44,boolean getOOBInline(),True
+27,Socket,45,void setSendBufferSize(int size),True
+27,Socket,46,int getSendBufferSize(),True
+27,Socket,47,void setReceiveBufferSize(int size),True
+27,Socket,48,int getReceiveBufferSize(),True
+27,Socket,49,"void setPerformancePreferences(int connectionTime, int latency, int bandwidth)",True
+27,Socket,50,void shutdownInput(),True
+27,Socket,51,void shutdownOutput(),True
+28,SocketAddress,1,SocketAddress getAddress(),False
+28,SocketAddress,2,int getPort(),False
+28,SocketAddress,3,InetAddress getInetAddress(),False
+28,SocketAddress,4,InetAddress getHost(),False
+28,SocketAddress,5,int getScopeId(),False
+29,SocketImpl,1,"boolean connect(String host, int port)",False
+29,SocketImpl,2,void close(),True
+29,SocketImpl,3,InetAddress getInetAddress(),True
+29,SocketImpl,4,int getPort(),True
+29,SocketImpl,5,SocketAddress getRemoteSocketAddress(),False
+30,SocketPermission,1,"boolean checkConnect(String host, int port, String protocol)",False
+30,SocketPermission,2,"boolean checkListen(int port, String protocol)",False
+30,SocketPermission,3,"boolean checkAccept(String host, int port, String protocol)",False
+30,SocketPermission,4,"boolean checkAccept(int port, String protocol)",False
+30,SocketPermission,5,"boolean checkConnect(String host, int port)",False
+30,SocketPermission,6,boolean checkListen(int port),False
+30,SocketPermission,7,"boolean checkAccept(String host, int port)",False
+30,SocketPermission,8,boolean checkAccept(int port),False
+30,SocketPermission,9,boolean checkConnect(String host),False
+30,SocketPermission,10,boolean checkListen(),False
+30,SocketPermission,11,boolean checkAccept(String host),False
+30,SocketPermission,12,boolean checkAccept(),False
+30,SocketPermission,13,boolean checkConnect(),False
+30,SocketPermission,14,boolean implies(Permission p),True
+30,SocketPermission,15,boolean equals(Object obj),True
+30,SocketPermission,16,int hashCode(),True
+30,SocketPermission,17,String getActions(),True
+30,SocketPermission,18,String getName(),False
+30,SocketPermission,19,String toString(),False
+30,SocketPermission,20,void newPermissionCollection(),False
+31,StandardSocketOptions,1,SO_REUSEADDR,False
+31,StandardSocketOptions,2,SO_BROADCAST,False
+31,StandardSocketOptions,3,SO_KEEPALIVE,False
+31,StandardSocketOptions,4,SO_OOBINLINE,False
+31,StandardSocketOptions,5,SO_SNDBUF,False
+31,StandardSocketOptions,6,SO_RCVBUF,False
+31,StandardSocketOptions,7,SO_ERROR,False
+31,StandardSocketOptions,8,SO_LINGER,False
+31,StandardSocketOptions,9,SO_TIMEOUT,False
+31,StandardSocketOptions,10,TCP_NODELAY,False
+32,URI,1,boolean add(E e),False
+32,URI,2,"void add(int index, E element)",False
+32,URI,3,boolean addAll(Collection<? extends E> c),False
+32,URI,4,boolean remove(Object o),False
+32,URI,5,E remove(int index),False
+33,URL,1,URL(String spec),False
+33,URL,2,"URL(String protocol, String host, int port, String file)",False
+33,URL,3,URLConnection openConnection(),True
+33,URL,4,String toString(),True
+33,URL,5,URLConnection getContent(),False
+34,URLClassLoader,1,"URLClassLoader(URL[] urls, ClassLoader parent)",False
+34,URLClassLoader,2,URLClassLoader(URL[] urls),False
+34,URLClassLoader,3,URLClassLoader(URL url),False
+34,URLClassLoader,4,"URLClassLoader(URL url, ClassLoader parent)",False
+34,URLClassLoader,5,addURL(URL url),False
+34,URLClassLoader,6,findClass(String name),False
+34,URLClassLoader,7,findResource(String name),False
+34,URLClassLoader,8,getResource(String name),False
+34,URLClassLoader,9,getResources(String name),False
+34,URLClassLoader,10,loadClass(String name),False
+35,URLConnection,1,void connect() throws IOException,True
+35,URLConnection,2,InputStream getInputStream() throws IOException,True
+35,URLConnection,3,OutputStream getOutputStream() throws IOException,True
+35,URLConnection,4,"void setRequestProperty(String key, String value)",True
+35,URLConnection,5,String getContentType(),True
+36,URLDecoder,1,"String decode(String s, String enc)",True
+36,URLDecoder,2,"String[] split(String s, String delimiter)",False
+36,URLDecoder,3,"String encode(String s, String enc)",False
+36,URLDecoder,4,String encode(String s),False
+36,URLDecoder,5,String decode(String s),True
+36,URLDecoder,6,"String decode(String s, String enc)",True
+36,URLDecoder,7,String encode(String s),False
+36,URLDecoder,8,String decode(String s),True
+36,URLDecoder,9,"String encode(String s, String enc)",False
+36,URLDecoder,10,"String decode(String s, String enc)",True
+36,URLDecoder,11,String encode(String s),False
+36,URLDecoder,12,String decode(String s),True
+36,URLDecoder,13,"String encode(String s, String enc)",False
+36,URLDecoder,14,"String decode(String s, String enc)",True
+36,URLDecoder,15,String encode(String s),False
+36,URLDecoder,16,String decode(String s),True
+36,URLDecoder,17,"String encode(String s, String enc)",False
+36,URLDecoder,18,"String decode(String s, String enc)",True
+36,URLDecoder,19,String encode(String s),False
+36,URLDecoder,20,String decode(String s),True
+37,URLEncoder,1,"String encode(String s, String enc)",True
+37,URLEncoder,2,String encode(String s),True
+37,URLEncoder,3,"String encode(String s, Charset charset)",False
+37,URLEncoder,4,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,5,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,6,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,7,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,8,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,9,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,10,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,11,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,12,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,13,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,14,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,15,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,16,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,17,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,18,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,19,"String encode(String s, String enc, String enc)",False
+37,URLEncoder,20,"String encode(String s, String enc, String enc)",False
+38,URLPermission,1,boolean implies(Permission p),True
+38,URLPermission,2,boolean equals(Object obj),True
+38,URLPermission,3,int hashCode(),True
+38,URLPermission,4,String getActions(),True
+38,URLPermission,5,String getName(),False
+38,URLPermission,6,String getPattern(),False
+38,URLPermission,7,String toString(),False
+38,URLPermission,8,void setActions(String actions),False
+38,URLPermission,9,void setName(String name),False
+38,URLPermission,10,void setPattern(String pattern),False
+39,URLStreamHandler,1,URLStreamHandler createURLStreamHandler(String protocol),False
+39,URLStreamHandler,2,URLStreamHandlerFactory setURLStreamHandlerFactory(URLStreamHandlerFactory factory),False
+39,URLStreamHandler,3,URLStreamHandlerFactory getURLStreamHandlerFactory(),False
+39,URLStreamHandler,4,URLStreamHandler getURLStreamHandler(String protocol),False
+39,URLStreamHandler,5,"URLStreamHandler getURLStreamHandler(String protocol, int handlerInstances)",False

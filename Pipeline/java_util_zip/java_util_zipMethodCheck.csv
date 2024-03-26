@@ -1,0 +1,127 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Adler32,1,long update(byte[] buffer),False
+0,Adler32,2,"long update(byte[] buffer, int offset, int len)",False
+0,Adler32,3,long update(int b),False
+0,Adler32,4,long getValue(),True
+0,Adler32,5,void reset(),True
+1,CheckedInputStream,1,int read(),True
+1,CheckedInputStream,2,int read(byte[] b),False
+1,CheckedInputStream,3,"int read(byte[] b, int off, int len)",True
+1,CheckedInputStream,4,long skip(long n),True
+1,CheckedInputStream,5,int available(),False
+2,CheckedOutputStream,1,"CheckedOutputStream(OutputStream out, Checksum ck)",False
+2,CheckedOutputStream,2,void write(int b),True
+2,CheckedOutputStream,3,void write(byte[] b),False
+2,CheckedOutputStream,4,"void write(byte[] b, int off, int len)",True
+2,CheckedOutputStream,5,void flush(),False
+3,CRC32,1,void update(int b),True
+3,CRC32,2,"void update(byte[] b, int off, int len)",True
+3,CRC32,3,void reset(),True
+3,CRC32,4,long getValue(),True
+3,CRC32,5,void setValue(long value),False
+4,Deflater,1,void setInput(byte[] input),True
+4,Deflater,2,void setDictionary(byte[] dictionary),True
+4,Deflater,3,void setLevel(int level),True
+4,Deflater,4,void setStrategy(int strategy),True
+4,Deflater,5,int deflate(byte[] output),True
+5,DeflaterInputStream,1,int deflate(byte[] buf),False
+5,DeflaterInputStream,2,"int deflate(byte[] buf, int off, int len)",False
+5,DeflaterInputStream,3,void end(),False
+5,DeflaterInputStream,4,boolean finished(),False
+5,DeflaterInputStream,5,void reset(),True
+6,DeflaterOutputStream,1,void setLevel(int level),False
+6,DeflaterOutputStream,2,void setDictionary(byte[] dictionary),False
+6,DeflaterOutputStream,3,void finish(),True
+6,DeflaterOutputStream,4,void reset(),False
+6,DeflaterOutputStream,5,boolean finished(),False
+7,GZIPInputStream,1,int read(),False
+7,GZIPInputStream,2,int read(byte[] b),False
+7,GZIPInputStream,3,"int read(byte[] b, int off, int len)",True
+7,GZIPInputStream,4,void close(),True
+7,GZIPInputStream,5,boolean eof(),False
+8,GZIPOutputStream,1,GZIPOutputStream(OutputStream out),False
+8,GZIPOutputStream,2,void write(int b),False
+8,GZIPOutputStream,3,void write(byte[] b),False
+8,GZIPOutputStream,4,"void write(byte[] b, int off, int len)",True
+8,GZIPOutputStream,5,void finish(),True
+9,Inflater,1,void setInput(byte[] input),True
+9,Inflater,2,"void setInput(byte[] input, int offset, int count)",True
+9,Inflater,3,int inflate(byte[] output),True
+9,Inflater,4,"int inflate(byte[] output, int offset, int count)",True
+9,Inflater,5,void end(),True
+10,InflaterInputStream,1,"int read(byte[] b, int off, int len)",True
+10,InflaterInputStream,2,int read(byte[] b),False
+10,InflaterInputStream,3,long skip(long n),True
+10,InflaterInputStream,4,int available(),True
+10,InflaterInputStream,5,void reset(),True
+11,InflaterOutputStream,1,void setInput(byte[] input),False
+11,InflaterOutputStream,2,"void setInput(byte[] input, int offset, int count)",False
+11,InflaterOutputStream,3,void setDictionary(byte[] dictionary),False
+11,InflaterOutputStream,4,"void setDictionary(byte[] dictionary, int offset, int count)",False
+11,InflaterOutputStream,5,void finish(),True
+12,ZipEntry,1,ZipEntry(String name),False
+12,ZipEntry,2,String getName(),True
+12,ZipEntry,3,void setMethod(int method),True
+12,ZipEntry,4,int getMethod(),True
+12,ZipEntry,5,void setSize(long size),True
+12,ZipEntry,6,long getSize(),True
+12,ZipEntry,7,void setCrc(long crc),True
+12,ZipEntry,8,long getCrc(),True
+12,ZipEntry,9,void setCompressedSize(long size),True
+12,ZipEntry,10,long getCompressedSize(),True
+12,ZipEntry,11,void setCompressedMethod(int method),False
+12,ZipEntry,12,int getCompressedMethod(),False
+12,ZipEntry,13,void setExtra(byte[] extra),True
+12,ZipEntry,14,byte[] getExtra(),True
+12,ZipEntry,15,void setComment(String comment),True
+12,ZipEntry,16,String getComment(),True
+12,ZipEntry,17,void setLastModifiedTime(long time),False
+12,ZipEntry,18,long getLastModifiedTime(),False
+12,ZipEntry,19,void setLastAccessTime(long time),False
+12,ZipEntry,20,long getLastAccessTime(),False
+12,ZipEntry,21,void setCreationTime(long time),False
+12,ZipEntry,22,long getCreationTime(),False
+12,ZipEntry,23,void setDataOffset(long offset),False
+12,ZipEntry,24,long getDataOffset(),False
+12,ZipEntry,25,void setInflater(Inflater inflater),False
+12,ZipEntry,26,Inflater getInflater(),False
+12,ZipEntry,27,"void setInflater(Inflater inflater, int level)",False
+12,ZipEntry,28,void setMethod(int method),True
+12,ZipEntry,29,int getMethod(),True
+12,ZipEntry,30,void setSize(long size),True
+12,ZipEntry,31,long getSize(),True
+12,ZipEntry,32,void setCrc(long crc),True
+12,ZipEntry,33,long getCrc(),True
+12,ZipEntry,34,void setCompressedSize(long size),True
+12,ZipEntry,35,long getCompressedSize(),True
+12,ZipEntry,36,void setCompressedMethod(int method),False
+12,ZipEntry,37,int getCompressedMethod(),False
+12,ZipEntry,38,void setExtra(byte[] extra),True
+12,ZipEntry,39,byte[] getExtra(),True
+12,ZipEntry,40,void setComment(String comment),True
+12,ZipEntry,41,String getComment(),True
+12,ZipEntry,42,void setLastModifiedTime(long time),False
+12,ZipEntry,43,long getLastModifiedTime(),False
+12,ZipEntry,44,void setLastAccessTime(long time),False
+12,ZipEntry,45,long getLastAccessTime(),False
+12,ZipEntry,46,void setCreationTime(long time),False
+12,ZipEntry,47,long getCreationTime(),False
+12,ZipEntry,48,void setDataOffset(long offset),False
+12,ZipEntry,49,long getDataOffset(),False
+12,ZipEntry,50,void setInflater(Inflater inflater),False
+12,ZipEntry,51,Inflater getInflater(),False
+13,ZipFile,1,ZipFile(File file),False
+13,ZipFile,2,ZipEntry getEntry(String name),True
+13,ZipFile,3,Enumeration<? extends ZipEntry> entries(),True
+13,ZipFile,4,InputStream getInputStream(ZipEntry e),True
+13,ZipFile,5,void close(),True
+14,ZipInputStream,1,ZipInputStream(InputStream in),False
+14,ZipInputStream,2,int read(),False
+14,ZipInputStream,3,int read(byte[] b),False
+14,ZipInputStream,4,"int read(byte[] b, int off, int len)",True
+14,ZipInputStream,5,void closeEntry(),True
+15,ZipOutputStream,1,void putNextEntry(ZipEntry ze),True
+15,ZipOutputStream,2,"void write(byte[] b, int off, int len)",True
+15,ZipOutputStream,3,void closeEntry(),True
+15,ZipOutputStream,4,void finish(),True
+15,ZipOutputStream,5,void write(int b),False

@@ -1,0 +1,371 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,BufferedInputStream,1,int read(),True
+0,BufferedInputStream,2,int read(byte[] b),False
+0,BufferedInputStream,3,"int read(byte[] b, int off, int len)",True
+0,BufferedInputStream,4,long skip(long n),True
+0,BufferedInputStream,5,int available(),True
+1,BufferedOutputStream,1,BufferedOutputStream(OutputStream out),False
+1,BufferedOutputStream,2,void write(int b),True
+1,BufferedOutputStream,3,void write(byte[] b),False
+1,BufferedOutputStream,4,"void write(byte[] b, int off, int len)",True
+1,BufferedOutputStream,5,void flush(),True
+2,BufferedReader,1,int read(),True
+2,BufferedReader,2,int read(char[] cbuf),False
+2,BufferedReader,3,String readLine(),True
+2,BufferedReader,4,long skip(long n),True
+2,BufferedReader,5,boolean ready(),True
+3,BufferedWriter,1,boolean newLine(),False
+3,BufferedWriter,2,void write(int c),True
+3,BufferedWriter,3,"void write(char[] cbuf, int off, int len)",True
+3,BufferedWriter,4,"void write(String s, int off, int len)",True
+3,BufferedWriter,5,void flush(),True
+4,ByteArrayInputStream,1,boolean add(E e),False
+4,ByteArrayInputStream,2,"void add(int index, E element)",False
+4,ByteArrayInputStream,3,boolean addAll(Collection<? extends E> c),False
+4,ByteArrayInputStream,4,"boolean addAll(int index, Collection<? extends E> c)",False
+4,ByteArrayInputStream,5,void clear(),False
+5,ByteArrayOutputStream,1,int size(),True
+5,ByteArrayOutputStream,2,boolean isEmpty(),False
+5,ByteArrayOutputStream,3,boolean contains(Object o),False
+5,ByteArrayOutputStream,4,byte[] toByteArray(),True
+5,ByteArrayOutputStream,5,void write(int b),True
+6,CharArrayReader,1,"int read(char[] cbuf, int off, int len)",True
+6,CharArrayReader,2,int read(),True
+6,CharArrayReader,3,long skip(long n),True
+6,CharArrayReader,4,boolean ready(),True
+6,CharArrayReader,5,void close(),True
+7,CharArrayWriter,1,CharArrayWriter(),False
+7,CharArrayWriter,2,void write(int c),True
+7,CharArrayWriter,3,void write(char[] cbuf),False
+7,CharArrayWriter,4,"void write(char[] cbuf, int off, int len)",True
+7,CharArrayWriter,5,void writeTo(Writer out),True
+8,Console,1,boolean readLine(),False
+8,Console,2,char[] readPassword(),True
+8,Console,3,"String readLine(String fmt, Object... args)",True
+8,Console,4,"void printf(String format, Object... args)",False
+8,Console,5,"void format(String format, Object... args)",False
+9,DataInputStream,1,int read(),False
+9,DataInputStream,2,int read(byte[] b),True
+9,DataInputStream,3,"int read(byte[] b, int off, int len)",True
+9,DataInputStream,4,String readUTF(),True
+9,DataInputStream,5,long skip(long n),False
+10,DataOutputStream,1,void write(int b),True
+10,DataOutputStream,2,void writeBoolean(boolean v),True
+10,DataOutputStream,3,void writeByte(int v),True
+10,DataOutputStream,4,void writeBytes(String s),True
+10,DataOutputStream,5,void writeChar(int v),True
+10,DataOutputStream,6,void writeChars(String s),True
+10,DataOutputStream,7,void writeDouble(double v),True
+10,DataOutputStream,8,void writeFloat(float v),True
+10,DataOutputStream,9,void writeInt(int v),True
+10,DataOutputStream,10,void writeLong(long v),True
+10,DataOutputStream,11,void writeShort(int v),True
+10,DataOutputStream,12,void writeUTF(String str),True
+10,DataOutputStream,13,void writeBytes(String s),True
+10,DataOutputStream,14,void writeChars(String s),True
+10,DataOutputStream,15,void writeUTF(String str),True
+11,File,1,boolean canRead(),True
+11,File,2,boolean canWrite(),True
+11,File,3,boolean createNewFile(),True
+11,File,4,boolean delete(),True
+11,File,5,boolean deleteOnExit(),False
+12,FileDescriptor,1,FileDescriptor getFD(),False
+12,FileDescriptor,2,void setFD(FileDescriptor fd),False
+12,FileDescriptor,3,void sync(),True
+12,FileDescriptor,4,void syncForWrite(long position),False
+12,FileDescriptor,5,void datasync(),False
+13,FileInputStream,1,FileInputStream(File file),False
+13,FileInputStream,2,FileInputStream(String name),False
+13,FileInputStream,3,int read(),True
+13,FileInputStream,4,int read(byte[] b),True
+13,FileInputStream,5,"int read(byte[] b, int off, int len)",True
+13,FileInputStream,6,void close(),True
+14,FileOutputStream,1,FileOutputStream(File file),False
+14,FileOutputStream,2,FileOutputStream(String name),False
+14,FileOutputStream,3,"FileOutputStream(File file, boolean append)",False
+14,FileOutputStream,4,"FileOutputStream(String name, boolean append)",False
+14,FileOutputStream,5,void write(int b),True
+14,FileOutputStream,6,void write(byte[] b),True
+14,FileOutputStream,7,"void write(byte[] b, int off, int len)",True
+14,FileOutputStream,8,void flush(),False
+14,FileOutputStream,9,void close(),True
+15,FilePermission,1,boolean checkNew(),False
+15,FilePermission,2,boolean implies(Permission p),True
+15,FilePermission,3,boolean equals(Object obj),True
+15,FilePermission,4,int hashCode(),True
+15,FilePermission,5,String getActions(),True
+16,FileReader,1,FileReader(String fileName),False
+16,FileReader,2,int read(),False
+16,FileReader,3,int read(char[] cbuf),False
+16,FileReader,4,"int read(char[] cbuf, int off, int len)",False
+16,FileReader,5,void close(),False
+17,FileWriter,1,FileWriter(File file),False
+17,FileWriter,2,FileWriter(String fileName),False
+17,FileWriter,3,void write(int c),False
+17,FileWriter,4,void write(char[] cbuf),False
+17,FileWriter,5,"void write(char[] cbuf, int off, int len)",False
+18,FilterInputStream,1,int read(),True
+18,FilterInputStream,2,int read(byte[] b),True
+18,FilterInputStream,3,"int read(byte[] b, int off, int len)",True
+18,FilterInputStream,4,long skip(long n),True
+18,FilterInputStream,5,int available(),True
+19,FilterOutputStream,1,void write(int b),True
+19,FilterOutputStream,2,void write(byte[] b),True
+19,FilterOutputStream,3,"void write(byte[] b, int off, int len)",True
+19,FilterOutputStream,4,void flush(),True
+19,FilterOutputStream,5,void close(),True
+20,FilterReader,1,int read(),True
+20,FilterReader,2,int read(char[] cbuf),False
+20,FilterReader,3,long skip(long n),True
+20,FilterReader,4,boolean ready(),True
+20,FilterReader,5,void close(),True
+21,FilterWriter,1,void write(int c),True
+21,FilterWriter,2,void write(char[] cbuf),False
+21,FilterWriter,3,"void write(char[] cbuf, int off, int len)",True
+21,FilterWriter,4,void write(String str),False
+21,FilterWriter,5,"void write(String str, int off, int len)",True
+22,InputStream,1,int read(),True
+22,InputStream,2,int read(byte[] b),True
+22,InputStream,3,"int read(byte[] b, int off, int len)",True
+22,InputStream,4,long skip(long n),True
+22,InputStream,5,int available(),True
+23,InputStreamReader,1,int read(),True
+23,InputStreamReader,2,int read(char[] cbuf),False
+23,InputStreamReader,3,"int read(char[] cbuf, int off, int len)",True
+23,InputStreamReader,4,long skip(long n),False
+23,InputStreamReader,5,boolean ready(),True
+24,LineNumberInputStream,1,int getLineNumber(),True
+24,LineNumberInputStream,2,void setLineNumber(int lineNumber),True
+24,LineNumberInputStream,3,int read(),True
+24,LineNumberInputStream,4,int read(byte[] b),False
+24,LineNumberInputStream,5,"int read(byte[] b, int off, int len)",True
+25,LineNumberReader,1,int getLineNumber(),True
+25,LineNumberReader,2,String readLine(),True
+25,LineNumberReader,3,void setLineNumber(int lineNumber),True
+25,LineNumberReader,4,void close(),False
+25,LineNumberReader,5,boolean ready(),False
+26,ObjectInputStream,1,readObject(),False
+26,ObjectInputStream,2,readUnshared(),False
+26,ObjectInputStream,3,readObjectOverride(),False
+26,ObjectInputStream,4,readUnsharedOverride(),False
+26,ObjectInputStream,5,readFields(),False
+27,ObjectInputStream.GetField,1,boolean add(E e),False
+27,ObjectInputStream.GetField,2,"void add(int index, E element)",False
+27,ObjectInputStream.GetField,3,boolean addAll(Collection<? extends E> c),False
+27,ObjectInputStream.GetField,4,"boolean addAll(int index, Collection<? extends E> c)",False
+27,ObjectInputStream.GetField,5,void clear(),False
+28,ObjectOutputStream,1,writeObject(Object obj),False
+28,ObjectOutputStream,2,write(int b),False
+28,ObjectOutputStream,3,write(byte[] b),False
+28,ObjectOutputStream,4,"write(byte[] b, int off, int len)",False
+28,ObjectOutputStream,5,flush(),False
+29,ObjectOutputStream.PutField,1,"void put(String name, int value)",True
+29,ObjectOutputStream.PutField,2,"void put(String name, long value)",True
+29,ObjectOutputStream.PutField,3,"void put(String name, float value)",True
+29,ObjectOutputStream.PutField,4,"void put(String name, double value)",True
+29,ObjectOutputStream.PutField,5,"void put(String name, boolean value)",True
+29,ObjectOutputStream.PutField,6,"void put(String name, char value)",True
+29,ObjectOutputStream.PutField,7,"void put(String name, String value)",False
+29,ObjectOutputStream.PutField,8,"void put(String name, Object value)",True
+29,ObjectOutputStream.PutField,9,"void put(String name, Object[] array)",False
+29,ObjectOutputStream.PutField,10,"void put(String name, Object value, Class<?> class_name)",False
+30,ObjectStreamClass,1,ObjectStreamClass forName(String className),False
+30,ObjectStreamClass,2,ObjectStreamClass forClass(Class<?> cl),False
+30,ObjectStreamClass,3,String getName(),True
+30,ObjectStreamClass,4,Class<?> getClass(),False
+30,ObjectStreamClass,5,ObjectStreamField[] getFields(),True
+31,ObjectStreamField,1,"ObjectStreamField(String name, Class<?> type)",False
+31,ObjectStreamField,2,String getName(),True
+31,ObjectStreamField,3,Class<?> getType(),True
+31,ObjectStreamField,4,void setName(String name),False
+31,ObjectStreamField,5,void setType(Class<?> type),False
+32,OutputStream,1,void write(int b),True
+32,OutputStream,2,void write(byte[] b),True
+32,OutputStream,3,"void write(byte[] b, int off, int len)",True
+32,OutputStream,4,void flush(),True
+32,OutputStream,5,void close(),True
+33,OutputStreamWriter,1,void write(int c),True
+33,OutputStreamWriter,2,void write(char[] cbuf),False
+33,OutputStreamWriter,3,"void write(char[] cbuf, int off, int len)",True
+33,OutputStreamWriter,4,void write(String str),False
+33,OutputStreamWriter,5,"void write(String str, int off, int len)",True
+34,PipedInputStream,1,int available(),True
+34,PipedInputStream,2,void connect(PipedOutputStream sink),True
+34,PipedInputStream,3,void close(),True
+34,PipedInputStream,4,"void connect(PipedOutputStream sink, int pipeSize)",False
+34,PipedInputStream,5,int read(),True
+35,PipedOutputStream,1,PipedOutputStream(),False
+35,PipedOutputStream,2,void connect(PipedInputStream src),True
+35,PipedOutputStream,3,void disconnect(),False
+35,PipedOutputStream,4,void write(int b),True
+35,PipedOutputStream,5,void write(byte[] b),False
+36,PipedReader,1,PipedReader(),False
+36,PipedReader,2,read(),False
+36,PipedReader,3,ready(),False
+36,PipedReader,4,close(),False
+36,PipedReader,5,connect(PipedWriter src),False
+37,PipedWriter,1,void connect(PipedReader src),True
+37,PipedWriter,2,void flush(),True
+37,PipedWriter,3,void write(int c),True
+37,PipedWriter,4,void write(char[] buf),False
+37,PipedWriter,5,"void write(char[] buf, int off, int len)",True
+37,PipedWriter,6,void write(String s),False
+37,PipedWriter,7,"void write(String s, int off, int len)",False
+38,PrintStream,1,void print(String s),True
+38,PrintStream,2,void print(char c),True
+38,PrintStream,3,void print(int i),True
+38,PrintStream,4,void print(double d),True
+38,PrintStream,5,void print(float f),True
+38,PrintStream,6,void print(boolean b),True
+38,PrintStream,7,void print(char[] s),True
+38,PrintStream,8,void print(Object obj),True
+38,PrintStream,9,void println(String s),True
+38,PrintStream,10,void println(char c),True
+38,PrintStream,11,void println(int i),True
+38,PrintStream,12,void println(double d),True
+38,PrintStream,13,void println(float f),True
+38,PrintStream,14,void println(boolean b),True
+38,PrintStream,15,void println(char[] s),True
+38,PrintStream,16,void println(Object obj),True
+38,PrintStream,17,void println(),True
+38,PrintStream,18,"void printf(String format, Object... args)",False
+38,PrintStream,19,"void printf(Locale l, String format, Object... args)",False
+38,PrintStream,20,"void format(String format, Object... args)",False
+39,PrintWriter,1,void print(String s),True
+39,PrintWriter,2,void print(boolean b),True
+39,PrintWriter,3,void print(char c),True
+39,PrintWriter,4,void print(int i),True
+39,PrintWriter,5,void print(double d),True
+39,PrintWriter,6,void print(char[] s),True
+39,PrintWriter,7,void print(Object obj),True
+39,PrintWriter,8,void println(String s),True
+39,PrintWriter,9,void println(boolean b),True
+39,PrintWriter,10,void println(char c),True
+39,PrintWriter,11,void println(int i),True
+39,PrintWriter,12,void println(double d),True
+39,PrintWriter,13,void println(char[] s),True
+39,PrintWriter,14,void println(Object obj),True
+39,PrintWriter,15,void println(),True
+40,PushbackInputStream,1,int read(),True
+40,PushbackInputStream,2,int read(byte[] b),False
+40,PushbackInputStream,3,"int read(byte[] b, int off, int len)",True
+40,PushbackInputStream,4,void unread(int b),True
+40,PushbackInputStream,5,void close(),True
+41,PushbackReader,1,int read(),True
+41,PushbackReader,2,int read(char[] cbuf),False
+41,PushbackReader,3,"int read(char[] cbuf, int off, int len)",True
+41,PushbackReader,4,void unread(int c),True
+41,PushbackReader,5,"void unread(char[] buf, int off, int len)",True
+42,RandomAccessFile,1,int read(),True
+42,RandomAccessFile,2,int read(byte[] b),True
+42,RandomAccessFile,3,"int read(byte[] b, int off, int len)",True
+42,RandomAccessFile,4,long skipBytes(long n),False
+42,RandomAccessFile,5,void write(int b),True
+42,RandomAccessFile,6,void write(byte[] b),True
+42,RandomAccessFile,7,"void write(byte[] b, int off, int len)",True
+42,RandomAccessFile,8,void seek(long pos),True
+42,RandomAccessFile,9,long length(),True
+42,RandomAccessFile,10,void setLength(long newLength),True
+42,RandomAccessFile,11,void close(),True
+42,RandomAccessFile,12,void mark(int readlimit),False
+42,RandomAccessFile,13,void reset(),False
+42,RandomAccessFile,14,boolean markSupported(),False
+42,RandomAccessFile,15,void writeBytes(String s),True
+42,RandomAccessFile,16,void writeChars(String s),True
+42,RandomAccessFile,17,void writeUTF(String str),True
+42,RandomAccessFile,18,String readUTF(),True
+42,RandomAccessFile,19,int readUnsignedByte(),True
+42,RandomAccessFile,20,void writeUnsignedByte(int v),False
+42,RandomAccessFile,21,int readInt(),True
+42,RandomAccessFile,22,void writeInt(int v),True
+42,RandomAccessFile,23,long readLong(),True
+42,RandomAccessFile,24,void writeLong(long v),True
+42,RandomAccessFile,25,float readFloat(),True
+42,RandomAccessFile,26,void writeFloat(float v),True
+42,RandomAccessFile,27,double readDouble(),True
+42,RandomAccessFile,28,void writeDouble(double v),True
+42,RandomAccessFile,29,boolean readBoolean(),True
+42,RandomAccessFile,30,void writeBoolean(boolean v),True
+42,RandomAccessFile,31,char readChar(),True
+42,RandomAccessFile,32,void writeChar(int v),True
+42,RandomAccessFile,33,short readShort(),True
+42,RandomAccessFile,34,void writeShort(int v),True
+42,RandomAccessFile,35,byte readByte(),True
+42,RandomAccessFile,36,void writeByte(int v),True
+42,RandomAccessFile,37,void newLine(),False
+42,RandomAccessFile,38,void writeBytes(String s),True
+42,RandomAccessFile,39,void writeChars(String s),True
+42,RandomAccessFile,40,void writeUTF(String str),True
+42,RandomAccessFile,41,String readUTF(),True
+42,RandomAccessFile,42,int readUnsignedByte(),True
+42,RandomAccessFile,43,void writeUnsignedByte(int v),False
+42,RandomAccessFile,44,int readInt(),True
+42,RandomAccessFile,45,void writeInt(int v),True
+42,RandomAccessFile,46,long readLong(),True
+42,RandomAccessFile,47,void writeLong(long v),True
+42,RandomAccessFile,48,float readFloat(),True
+42,RandomAccessFile,49,void writeFloat(float v),True
+42,RandomAccessFile,50,double readDouble(),True
+42,RandomAccessFile,51,void writeDouble(double v),True
+42,RandomAccessFile,52,boolean readBoolean(),True
+43,Reader,1,"int read(char[] cbuf, int off, int len)",True
+43,Reader,2,int read(),True
+43,Reader,3,long skip(long n),True
+43,Reader,4,boolean ready(),True
+43,Reader,5,void close(),True
+44,SequenceInputStream,1,SequenceInputStream(Enumeration<? extends InputStream> e),False
+44,SequenceInputStream,2,boolean hasMoreElements(),False
+44,SequenceInputStream,3,InputStream nextElement(),False
+44,SequenceInputStream,4,int read(),True
+44,SequenceInputStream,5,"int read(byte[] b, int off, int len)",True
+45,SerializablePermission,1,boolean equals(Object obj),False
+45,SerializablePermission,2,int hashCode(),False
+45,SerializablePermission,3,String toString(),False
+45,SerializablePermission,4,Object clone(),False
+45,SerializablePermission,5,void writeObject(java.io.ObjectOutputStream out),False
+46,StreamTokenizer,1,StreamTokenizer.nextToken(),False
+46,StreamTokenizer,2,StreamTokenizer.sval,False
+46,StreamTokenizer,3,StreamTokenizer.ttype,False
+46,StreamTokenizer,4,StreamTokenizer.lineno,False
+46,StreamTokenizer,5,StreamTokenizer.wordCount,False
+47,StringBufferInputStream,1,int read(),True
+47,StringBufferInputStream,2,int read(byte[] b),False
+47,StringBufferInputStream,3,"int read(byte[] b, int off, int len)",True
+47,StringBufferInputStream,4,long skip(long n),True
+47,StringBufferInputStream,5,int available(),True
+48,StringReader,1,int read(),True
+48,StringReader,2,"int read(char[] cbuf, int off, int len)",True
+48,StringReader,3,long skip(long n),True
+48,StringReader,4,boolean ready(),True
+48,StringReader,5,void close(),True
+49,StringWriter,1,StringWriter(),False
+49,StringWriter,2,StringWriter(int initialSize),False
+49,StringWriter,3,void write(int c),True
+49,StringWriter,4,void write(char[] cbuf),False
+49,StringWriter,5,"void write(char[] cbuf, int off, int len)",True
+49,StringWriter,6,void write(String str),True
+49,StringWriter,7,"void write(String str, int off, int len)",True
+49,StringWriter,8,StringWriter append(CharSequence csq),True
+49,StringWriter,9,"StringWriter append(CharSequence csq, int start, int end)",True
+49,StringWriter,10,StringWriter append(char c),True
+49,StringWriter,11,String toString(),True
+49,StringWriter,12,void flush(),True
+49,StringWriter,13,void close(),True
+49,StringWriter,14,void write(int c),True
+49,StringWriter,15,void write(char[] cbuf),False
+49,StringWriter,16,"void write(char[] cbuf, int off, int len)",True
+49,StringWriter,17,void write(String str),True
+49,StringWriter,18,"void write(String str, int off, int len)",True
+49,StringWriter,19,StringWriter append(CharSequence csq),True
+49,StringWriter,20,"StringWriter append(CharSequence csq, int start, int end)",True
+49,StringWriter,21,StringWriter append(char c),True
+49,StringWriter,22,String toString(),True
+49,StringWriter,23,void flush(),True
+49,StringWriter,24,void close(),True
+50,Writer,1,void write(int c),True
+50,Writer,2,void write(char[] cbuf),True
+50,Writer,3,"void write(char[] cbuf, int off, int len)",True
+50,Writer,4,void write(String str),True
+50,Writer,5,"void write(String str, int off, int len)",True
+50,Writer,6,void flush(),True
+50,Writer,7,void close(),True

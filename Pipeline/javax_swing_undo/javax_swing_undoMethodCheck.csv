@@ -1,0 +1,46 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractUndoableEdit,1,void undo(),True
+0,AbstractUndoableEdit,2,void redo(),True
+0,AbstractUndoableEdit,3,boolean canUndo(),True
+0,AbstractUndoableEdit,4,boolean canRedo(),True
+0,AbstractUndoableEdit,5,String getPresentationName(),True
+1,CompoundEdit,1,void addEdit(CompoundEdit.Edit edit),False
+1,CompoundEdit,2,CompoundEdit.Edit getEdit(int index),False
+1,CompoundEdit,3,int getEditCount(),False
+1,CompoundEdit,4,"void insertEdit(int index, CompoundEdit.Edit edit)",False
+1,CompoundEdit,5,void removeEdit(int index),False
+2,StateEdit,1,boolean canRedo(),False
+2,StateEdit,2,boolean canUndo(),False
+2,StateEdit,3,void redo(),True
+2,StateEdit,4,void undo(),True
+2,StateEdit,5,void discardEdits(),False
+3,UndoableEditSupport,1,void addEdit(UndoableEdit e),False
+3,UndoableEditSupport,2,boolean canRedo(),False
+3,UndoableEditSupport,3,boolean canUndo(),False
+3,UndoableEditSupport,4,void discardAllEdits(),False
+3,UndoableEditSupport,5,void end(),False
+3,UndoableEditSupport,6,void redo(),False
+3,UndoableEditSupport,7,void undo(),False
+3,UndoableEditSupport,8,void undoableEditHappened(UndoableEdit e),False
+3,UndoableEditSupport,9,void undoableEditRedone(UndoableEdit e),False
+3,UndoableEditSupport,10,void undoableEditUndone(UndoableEdit e),False
+4,UndoManager,1,void undo(),True
+4,UndoManager,2,void redo(),True
+4,UndoManager,3,boolean canUndo(),True
+4,UndoManager,4,boolean canRedo(),True
+4,UndoManager,5,void discardAllEdits(),True
+4,UndoManager,6,void addEdit(UndoableEdit e),False
+4,UndoManager,7,UndoableEdit[] getUndoableEdit(),False
+4,UndoManager,8,UndoableEdit[] getUndoableEdit(int index),False
+4,UndoManager,9,UndoableEdit getUndoableEdit(Object id),False
+4,UndoManager,10,Object[] getUndoableEditIDs(),False
+4,UndoManager,11,Object[] getUndoableEditIDs(int index),False
+4,UndoManager,12,int getUndoLimit(),False
+4,UndoManager,13,void setUndoLimit(int limit),False
+4,UndoManager,14,boolean isLimitExceeded(),False
+4,UndoManager,15,void setLimitExceeded(boolean exceeded),False
+4,UndoManager,16,boolean isSuspended(),False
+4,UndoManager,17,void setSuspended(boolean suspended),False
+4,UndoManager,18,void addUndoableEditListener(UndoableEditListener listener),False
+4,UndoManager,19,void removeUndoableEditListener(UndoableEditListener listener),False
+4,UndoManager,20,UndoableEditListener[] getUndoableEditListeners(),False

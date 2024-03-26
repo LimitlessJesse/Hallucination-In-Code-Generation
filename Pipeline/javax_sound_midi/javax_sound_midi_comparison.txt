@@ -1,0 +1,534 @@
+Sample: 0 Instrument
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.Instrument package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Instrument getInstrument(int bank, int program)`: This method returns an Instrument object that represents the specified bank and program.
+
+2. `Instrument[] getInstruments()`: This method returns an array of Instrument objects that represent all the instruments in the synthesizer.
+
+3. `int getMaxPolyphony()`: This method returns the maximum number of simultaneous voices that this synthesizer can play.
+
+4. `int getMaxRepeats()`: This method returns the maximum number of times a note can be repeated before it is automatically released.
+
+5. `int getMaxSoundbankSize()`: This method returns the maximum number of bytes that can be used to store a soundbank.
+
+6. `int getMaxTransmitters()`: This method returns the maximum number of transmitters that can be used by this synthesizer.
+
+7. `int getMaxVoices()`: This method returns the maximum number of voices that this synthesizer can play.
+
+8. `int getMaxVolume()`: This method returns the maximum volume level that this synthesizer can output.
+
+9. `int getMinPolyphony()`: This method returns the minimum number of simultaneous voices that this synthesizer can play.
+
+10. `int getMinRepeats()`: This method returns the minimum number of times a note can be repeated before it is automatically released.
+
+11. `int getMinTransmitters()`: This method returns the minimum number of transmitters that can be used by this synthesizer.
+
+12. `int getMinVoices()`: This method returns the minimum number of voices that this synthesizer can play.
+
+13. `int getMinVolume()`: This method returns the minimum volume level that this synthesizer can output.
+
+14. `int getPatchCount()`: This method returns the number of patches in the synthesizer.
+
+15. `int getPatchSize()`: This method returns the size of a patch in the synthesizer.
+
+16. `int getPatchSize(int bank, int program)`: This method returns the size of the specified patch in the synthesizer.
+
+17. `int getPatchSize(int bank, int program, int bank2, int program2)`: This method returns the size of the specified patch in the synthesizer.
+
+18. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3)`: This method returns the size of the specified patch in the synthesizer.
+
+19. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4)`: This method returns the size of the specified patch in the synthesizer.
+
+20. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5)`: This method returns the size of the specified patch in the synthesizer.
+
+21. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5, int bank6, int program6)`: This method returns the size of the specified patch in the synthesizer.
+
+22. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5, int bank6, int program6, int bank7, int program7)`: This method returns the size of the specified patch in the synthesizer.
+
+23. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5, int bank6, int program6, int bank7, int program7, int bank8, int program8)`: This method returns the size of the specified patch in the synthesizer.
+
+24. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5, int bank6, int program6, int bank7, int program7, int bank8, int program8, int bank9, int program9)`: This method returns the size of the specified patch in the synthesizer.
+
+25. `int getPatchSize(int bank, int program, int bank2, int program2, int bank3, int program3, int bank4, int program4, int bank5, int program5, int bank6, int program6, int bank7, int program7, int bank8, int program8, int bank9, int program9, int bank10, int program10)`: This method returns the size of the specified patch in the synthesizer.
+================================================================
+
+Sample: 1 MetaMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MetaMessage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getType()`: This method returns the type of the meta message.
+
+2. `int getLength()`: This method returns the length of the meta message.
+
+3. `byte[] getMessage()`: This method returns the message data.
+
+4. `void setMessage(byte[] message, int offset, int length)`: This method sets the message data.
+
+5. `void setSequenceNumber(int sequenceNumber)`: This method sets the sequence number of the meta message.
+================================================================
+
+Sample: 2 MidiDevice.Info
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MidiDevice.Info package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MidiDevice.Info getDeviceInfo()`: This method returns a MidiDevice.Info object that contains information about the device.
+
+2. `MidiDevice.Info getMidiDevice()`: This method returns the MidiDevice object associated with this MidiDevice.Info object.
+
+3. `String getName()`: This method returns the name of the device.
+
+4. `String getVendor()`: This method returns the vendor of the device.
+
+5. `String getDescription()`: This method returns a description of the device.
+
+6. `String getVersion()`: This method returns the version of the device.
+
+7. `String getDescription()`: This method returns a description of the device.
+
+8. `String getVersion()`: This method returns the version of the device.
+
+9. `String getDescription()`: This method returns a description of the device.
+
+10. `String getVersion()`: This method returns the version of the device.
+
+11. `String getDescription()`: This method returns a description of the device.
+
+12. `String getVersion()`: This method returns the version of the device.
+
+13. `String getDescription()`: This method returns a description of the device.
+
+14. `String getVersion()`: This method returns the version of the device.
+
+15. `String getDescription()`: This method returns a description of the device.
+
+16. `String getVersion()`: This method returns the version of the device.
+
+17. `String getDescription()`: This method returns a description of the device.
+
+18. `String getVersion()`: This method returns the version of the device.
+
+19. `String getDescription()`: This method returns a description of the device.
+
+20. `String getVersion()`: This method returns the version of the device.
+================================================================
+
+Sample: 3 MidiEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MidiEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+3. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+
+4. `void clear()`: This method removes all of the elements from this list.
+
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+
+7. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+
+9. `int lastIndexOf(Object o)`: This method returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+12. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+
+13. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+14. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+15. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+
+16. `int size()`: This method returns the number of elements in this list.
+
+17. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+
+18. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+
+19. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+
+20. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+21. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+
+22. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+
+23. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+
+24. `int hashCode()`: This method returns the hash code value for this list.
+
+25. `String toString()`: This method returns a string representation of this list.
+================================================================
+
+Sample: 4 MidiFileFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MidiFileFormat package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MidiFileFormat.getType()`: This method returns the type of the MIDI file format.
+
+2. `MidiFileFormat.getResolution()`: This method returns the resolution of the MIDI file format.
+
+3. `MidiFileFormat.getTicksPerBeat()`: This method returns the ticks per beat of the MIDI file format.
+
+4. `MidiFileFormat.getTrackCount()`: This method returns the number of tracks in the MIDI file format.
+
+5. `MidiFileFormat.getSequence()`: This method returns the sequence of the MIDI file format.
+================================================================
+
+Sample: 5 MidiMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MidiMessage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getChannel()`: This method returns the channel number of the MIDI message.
+
+2. `getData()`: This method returns the MIDI data of the MIDI message.
+
+3. `getLength()`: This method returns the length of the MIDI message.
+
+4. `setMessage(byte[] message, int length)`: This method sets the MIDI message.
+
+5. `setMessage(byte[] message, int length, long timeStamp)`: This method sets the MIDI message with a timestamp.
+================================================================
+
+Sample: 6 MidiSystem
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.MidiSystem package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MidiSystem.getMidiDeviceInfo()`: This method returns an array of `MidiDevice.Info` objects that describe the MIDI devices available on the system.
+
+2. `MidiSystem.getMidiDevice()`: This method returns a `MidiDevice` object that represents the specified MIDI device.
+
+3. `MidiSystem.getSynthesizer()`: This method returns a `Synthesizer` object that represents the default MIDI synthesizer.
+
+4. `MidiSystem.getTransmitter()`: This method returns a `Receiver` object that represents the default MIDI transmitter.
+
+5. `MidiSystem.getReceiver()`: This method returns a `Receiver` object that represents the default MIDI receiver.
+================================================================
+
+Sample: 7 Patch
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.Patch package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getPatchNumber()`: This method returns the patch number of the Patch.
+
+2. `String getName()`: This method returns the name of the Patch.
+
+3. `int getBank()`: This method returns the bank number of the Patch.
+
+4. `int getProgram()`: This method returns the program number of the Patch.
+
+5. `int getChannel()`: This method returns the channel number of the Patch.
+
+6. `int getBankMSB()`: This method returns the most significant byte of the bank number of the Patch.
+
+7. `int getBankLSB()`: This method returns the least significant byte of the bank number of the Patch.
+
+8. `int getProgramMSB()`: This method returns the most significant byte of the program number of the Patch.
+
+9. `int getProgramLSB()`: This method returns the least significant byte of the program number of the Patch.
+
+10. `int getChannelMSB()`: This method returns the most significant byte of the channel number of the Patch.
+
+11. `int getChannelLSB()`: This method returns the least significant byte of the channel number of the Patch.
+================================================================
+
+Sample: 8 Sequence
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.Sequence package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Sequence getSequence()`: This method returns the sequence of the MIDI data.
+2. `Track[] getTracks()`: This method returns an array of the tracks in the sequence.
+3. `int getTickLength()`: This method returns the length of the sequence in ticks.
+4. `void setTickLength(int tickLength)`: This method sets the length of the sequence in ticks.
+5. `void setTempoInBPM(float bpm)`: This method sets the tempo of the sequence in beats per minute.
+6. `float getTempoInBPM()`: This method returns the tempo of the sequence in beats per minute.
+7. `void setResolution(int resolution)`: This method sets the resolution of the sequence.
+8. `int getResolution()`: This method returns the resolution of the sequence.
+9. `void setFormat(int format)`: This method sets the format of the sequence.
+10. `int getFormat()`: This method returns the format of the sequence.
+11. `void setDivisionType(int divisionType)`: This method sets the division type of the sequence.
+12. `int getDivisionType()`: This method returns the division type of the sequence.
+13. `void setDivision(int division)`: This method sets the division of the sequence.
+14. `int getDivision()`: This method returns the division of the sequence.
+15. `void setSongPositionPointer(int songPositionPointer)`: This method sets the song position pointer of the sequence.
+16. `int getSongPositionPointer()`: This method returns the song position pointer of the sequence.
+17. `void setEndOfTrack(int endOfTrack)`: This method sets the end of track of the sequence.
+18. `int getEndOfTrack()`: This method returns the end of track of the sequence.
+19. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+20. `int getTickPosition()`: This method returns the tick position of the sequence.
+21. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+22. `int getTickPosition()`: This method returns the tick position of the sequence.
+23. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+24. `int getTickPosition()`: This method returns the tick position of the sequence.
+25. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+26. `int getTickPosition()`: This method returns the tick position of the sequence.
+27. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+28. `int getTickPosition()`: This method returns the tick position of the sequence.
+29. `void setTickPosition(int tickPosition)`: This method sets the tick position of the sequence.
+30. `int getTickPosition()`: This method returns the tick position of the sequence.
+================================================================
+
+Sample: 9 Sequencer.SyncMode
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.Sequencer.SyncMode package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setTickPosition(long tickPosition)`: This method sets the current tick position of the sequencer.
+
+2. `long getTickPosition()`: This method returns the current tick position of the sequencer.
+
+3. `void setTempoInBPM(float bpm)`: This method sets the tempo of the sequencer in beats per minute.
+
+4. `float getTempoInBPM()`: This method returns the tempo of the sequencer in beats per minute.
+
+5. `void setMasterSyncMode(int mode)`: This method sets the master sync mode of the sequencer.
+
+6. `int getMasterSyncMode()`: This method returns the master sync mode of the sequencer.
+
+7. `void setMasterSyncMode(int mode, long tickPosition)`: This method sets the master sync mode of the sequencer at the specified tick position.
+
+8. `void setMasterSyncMode(int mode, long tickPosition, int ppq)`: This method sets the master sync mode of the sequencer at the specified tick position and pulse per quarter note (ppq).
+
+9. `void setMasterSyncMode(int mode, long tickPosition, int ppq, int rate)`: This method sets the master sync mode of the sequencer at the specified tick position, ppq, and rate.
+
+10. `void setMasterSyncMode(int mode, long tickPosition, int ppq, int rate, int resolution)`: This method sets the master sync mode of the sequencer at the specified tick position, ppq, rate, and resolution.
+================================================================
+
+Sample: 10 ShortMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.ShortMessage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setMessage(int command, int channel, int data1, int data2)`: This method sets the command, channel, data1, and data2 fields of the ShortMessage object.
+
+2. `int getCommand()`: This method returns the command field of the ShortMessage object.
+
+3. `int getChannel()`: This method returns the channel field of the ShortMessage object.
+
+4. `int getData1()`: This method returns the data1 field of the ShortMessage object.
+
+5. `int getData2()`: This method returns the data2 field of the ShortMessage object.
+
+6. `void setMessage(int command, int channel, int data1)`: This method sets the command, channel, and data1 fields of the ShortMessage object.
+
+7. `void setMessage(int command, int channel, int data1, int data2, int velocity)`: This method sets the command, channel, data1, data2, and velocity fields of the ShortMessage object.
+
+8. `int getVelocity()`: This method returns the velocity field of the ShortMessage object.
+
+9. `void setMessage(int command, int channel, int data1, int data2, int velocity, int control)`: This method sets the command, channel, data1, data2, velocity, and control fields of the ShortMessage object.
+
+10. `int getControl()`: This method returns the control field of the ShortMessage object.
+================================================================
+
+Sample: 11 SoundbankResource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.SoundbankResource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+
+3. `int size()`: This method returns the number of elements in this list.
+
+4. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+
+5. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+================================================================
+
+Sample: 12 SysexMessage
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.SysexMessage package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `byte[] getData()`: This method returns the data of the sysex message.
+
+2. `int getLength()`: This method returns the length of the sysex message.
+
+3. `int getType()`: This method returns the type of the sysex message.
+
+4. `int getSysExSize()`: This method returns the size of the sysex message.
+
+5. `byte[] getSysExValue()`: This method returns the value of the sysex message.
+================================================================
+
+Sample: 13 Track
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.Track package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getTickPosition()`: This method returns the current tick position in the track.
+2. `int getSize()`: This method returns the number of events in the track.
+3. `MidiEvent get(int index)`: This method returns the event at the specified position in this track.
+4. `void add(MidiEvent event)`: This method appends the specified event to the end of this track.
+5. `void remove(int index)`: This method removes the event at the specified position in this track.
+================================================================
+
+Sample: 14 VoiceStatus
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sound.midi.VoiceStatus package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isActive()`: This method returns true if the voice is currently active.
+
+2. `boolean isPlaying()`: This method returns true if the voice is currently playing.
+
+3. `boolean isResting()`: This method returns true if the voice is currently resting.
+
+4. `boolean isSilent()`: This method returns true if the voice is currently silent.
+
+5. `boolean isStopped()`: This method returns true if the voice is currently stopped.
+================================================================
+

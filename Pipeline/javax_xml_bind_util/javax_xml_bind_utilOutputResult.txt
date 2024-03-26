@@ -1,0 +1,64 @@
+Sample: ValidationEventCollector_1
+----------------------------------------------------------------
+output:
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:1: error: package javax.xml.bind does not exist
+import javax.xml.bind.ValidationEvent;
+                     ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:2: error: package javax.xml.bind.util does not exist
+import javax.xml.bind.util.ValidationEventCollector;
+                          ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:6: error: cannot find symbol
+        ValidationEventCollector collector = new ValidationEventCollector();
+        ^
+  symbol:   class ValidationEventCollector
+  location: class ValidationEventCollector_1
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:6: error: cannot find symbol
+        ValidationEventCollector collector = new ValidationEventCollector();
+                                                 ^
+  symbol:   class ValidationEventCollector
+  location: class ValidationEventCollector_1
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:8: error: cannot find symbol
+        collector.add(new ValidationEvent() {
+                          ^
+  symbol:   class ValidationEvent
+  location: class ValidationEventCollector_1
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:10: error: cannot find symbol
+            public ValidationEventLocator getLocator() {
+                   ^
+  symbol: class ValidationEventLocator
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:25: error: cannot find symbol
+            public SourceLocator getLocator() {
+                   ^
+  symbol: class SourceLocator
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:30: error: method getLinkedException() is already defined in class <anonymous ValidationEventCollector_1$1>
+            public Throwable getLinkedException() {
+                             ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:9: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:14: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:19: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:24: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:29: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:34: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:39: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_xml_bind_util/javaFiles/ValidationEventCollector_1.java:44: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+16 errors
+
+
+================================================================
+

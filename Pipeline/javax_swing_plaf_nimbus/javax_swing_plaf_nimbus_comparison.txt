@@ -1,0 +1,131 @@
+Sample: 0 AbstractRegionPainter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.plaf.nimbus.AbstractRegionPainter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void paint(Graphics g, JComponent c, Rectangle bounds)`: This method paints the specified component.
+
+2. `void paintBorder(Graphics g, JComponent c, Rectangle bounds)`: This method paints the border of the specified component.
+
+3. `void paintFocus(Graphics g, JComponent c, Rectangle bounds)`: This method paints the focus of the specified component.
+
+4. `void paintSelection(Graphics g, JComponent c, Rectangle bounds)`: This method paints the selection of the specified component.
+
+5. `void paintText(Graphics g, JComponent c, Rectangle bounds)`: This method paints the text of the specified component.
+================================================================
+
+Sample: 1 AbstractRegionPainter.PaintContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+4. `void clear()`: This method removes all of the elements from this list.
+5. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+7. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+9. `E remove(int index)`: This method removes the element at the specified position in this list.
+10. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+11. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+12. `int size()`: This method returns the number of elements in this list.
+13. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+14. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+15. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+================================================================
+
+Sample: 2 NimbusLookAndFeel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.plaf.nimbus.NimbusLookAndFeel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setEnabled(boolean enabled)`: This method sets the enabled state of the component.
+
+2. `void setInheritable(boolean inheritable)`: This method sets the inheritable state of the component.
+
+3. `void setVisible(boolean visible)`: This method sets the visibility of the component.
+
+4. `void setFocusable(boolean focusable)`: This method sets the focusable state of the component.
+
+5. `void setFocusPainted(boolean focusPainted)`: This method sets the focusPainted state of the component.
+================================================================
+
+Sample: 3 NimbusStyle
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.plaf.nimbus.NimbusStyle package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setLookAndFeel(String className)`: This method sets the look and feel of the system.
+
+2. `void setFrameBorder(JFrame frame, String title)`: This method sets the border of the frame.
+
+3. `void setButtonText(JButton button, String text)`: This method sets the text of the button.
+
+4. `void setLabelText(JLabel label, String text)`: This method sets the text of the label.
+
+5. `void setComboBoxItems(JComboBox comboBox, String[] items)`: This method sets the items of the combo box.
+================================================================
+
+Sample: 4 State
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.plaf.nimbus.State package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isDefault()`: This method returns true if the state is the default state.
+
+2. `boolean isInactive()`: This method returns true if the state is inactive.
+
+3. `boolean isActive()`: This method returns true if the state is active.
+
+4. `boolean isSelected()`: This method returns true if the state is selected.
+
+5. `boolean isPressed()`: This method returns true if the state is pressed.
+================================================================
+

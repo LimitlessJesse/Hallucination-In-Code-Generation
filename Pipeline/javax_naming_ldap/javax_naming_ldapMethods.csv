@@ -1,0 +1,70 @@
+ClassName,Method,Return Type
+BasicControl,getEncodedValue(),byte[]
+BasicControl,getID(),String
+BasicControl,isCritical(),boolean
+ControlFactory,getControlInstance(Control ctl),abstract Control
+ControlFactory,"getControlInstance(Control ctl, Context ctx, Hashtable<?,?> env)",static Control
+InitialLdapContext,extendedOperation(ExtendedRequest request),ExtendedResponse
+InitialLdapContext,getConnectControls(),Control[]
+InitialLdapContext,getRequestControls(),Control[]
+InitialLdapContext,getResponseControls(),Control[]
+InitialLdapContext,newInstance(Control[] reqCtls),LdapContext
+InitialLdapContext,reconnect(Control[] connCtls),void
+InitialLdapContext,setRequestControls(Control[] requestControls),void
+LdapName,"add(int posn, Rdn comp)",Name
+LdapName,"add(int posn, String comp)",Name
+LdapName,add(Rdn comp),Name
+LdapName,add(String comp),Name
+LdapName,"addAll(int posn, List<Rdn> suffixRdns)",Name
+LdapName,"addAll(int posn, Name suffix)",Name
+LdapName,addAll(List<Rdn> suffixRdns),Name
+LdapName,addAll(Name suffix),Name
+LdapName,clone(),Object
+LdapName,compareTo(Object obj),int
+LdapName,endsWith(List<Rdn> rdns),boolean
+LdapName,endsWith(Name n),boolean
+LdapName,equals(Object obj),boolean
+LdapName,get(int posn),String
+LdapName,getAll(),Enumeration<String>
+LdapName,getPrefix(int posn),Name
+LdapName,getRdn(int posn),Rdn
+LdapName,getRdns(),List<Rdn>
+LdapName,getSuffix(int posn),Name
+LdapName,hashCode(),int
+LdapName,isEmpty(),boolean
+LdapName,remove(int posn),Object
+LdapName,size(),int
+LdapName,startsWith(List<Rdn> rdns),boolean
+LdapName,startsWith(Name n),boolean
+LdapName,toString(),String
+PagedResultsResponseControl,getCookie(),byte[]
+PagedResultsResponseControl,getResultSize(),int
+Rdn,compareTo(Object obj),int
+Rdn,equals(Object obj),boolean
+Rdn,escapeValue(Object val),static String
+Rdn,getType(),String
+Rdn,getValue(),Object
+Rdn,hashCode(),int
+Rdn,size(),int
+Rdn,toAttributes(),Attributes
+Rdn,toString(),String
+Rdn,unescapeValue(String val),static Object
+SortKey,getAttributeID(),String
+SortKey,getMatchingRuleID(),String
+SortKey,isAscending(),boolean
+SortResponseControl,getAttributeID(),String
+SortResponseControl,getException(),NamingException
+SortResponseControl,getResultCode(),int
+SortResponseControl,isSorted(),boolean
+StartTlsRequest,"createExtendedResponse(String id, byte[] berValue, int offset, int length)",ExtendedResponse
+StartTlsRequest,getEncodedValue(),byte[]
+StartTlsRequest,getID(),String
+StartTlsResponse,close(),abstract void
+StartTlsResponse,getEncodedValue(),byte[]
+StartTlsResponse,getID(),String
+StartTlsResponse,negotiate(),abstract SSLSession
+StartTlsResponse,negotiate(SSLSocketFactory factory),abstract SSLSession
+StartTlsResponse,setEnabledCipherSuites(String[] suites),abstract void
+StartTlsResponse,setHostnameVerifier(HostnameVerifier verifier),abstract void
+UnsolicitedNotificationEvent,dispatch(UnsolicitedNotificationListener listener),void
+UnsolicitedNotificationEvent,getNotification(),UnsolicitedNotification

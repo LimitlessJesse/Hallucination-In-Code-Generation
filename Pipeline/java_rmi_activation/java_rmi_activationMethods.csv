@@ -1,0 +1,43 @@
+ClassName,Method,Return Type
+Activatable,"exportObject(Remote obj, ActivationID id, int port)",static Remote
+Activatable,"exportObject(Remote obj, ActivationID id, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf)",static Remote
+Activatable,"exportObject(Remote obj, String location, MarshalledObject<?> data, boolean restart, int port)",static ActivationID
+Activatable,"exportObject(Remote obj, String location, MarshalledObject<?> data, boolean restart, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf)",static ActivationID
+Activatable,getID(),protected ActivationID
+Activatable,inactive(ActivationID id),static boolean
+Activatable,register(ActivationDesc desc),static Remote
+Activatable,"unexportObject(Remote obj, boolean force)",static boolean
+Activatable,unregister(ActivationID id),static void
+ActivationDesc,equals(Object obj),boolean
+ActivationDesc,getClassName(),String
+ActivationDesc,getData(),MarshalledObject<?>
+ActivationDesc,getGroupID(),ActivationGroupID
+ActivationDesc,getLocation(),String
+ActivationDesc,getRestartMode(),boolean
+ActivationDesc,hashCode(),int
+ActivationGroup,"activeObject(ActivationID id, MarshalledObject<? extends Remote> mobj)",protected void
+ActivationGroup,"activeObject(ActivationID id, Remote obj)",abstract void
+ActivationGroup,"createGroup(ActivationGroupID id, ActivationGroupDesc desc, long incarnation)",static ActivationGroup
+ActivationGroup,currentGroupID(),static ActivationGroupID
+ActivationGroup,getSystem(),static ActivationSystem
+ActivationGroup,inactiveGroup(),protected void
+ActivationGroup,inactiveObject(ActivationID id),boolean
+ActivationGroup,setSystem(ActivationSystem system),static void
+ActivationGroup_Stub,"newInstance(ActivationID id, ActivationDesc desc)",MarshalledObject
+ActivationGroupDesc,equals(Object obj),boolean
+ActivationGroupDesc,getClassName(),String
+ActivationGroupDesc,getCommandEnvironment(),ActivationGroupDesc.CommandEnvironment
+ActivationGroupDesc,getData(),MarshalledObject<?>
+ActivationGroupDesc,getLocation(),String
+ActivationGroupDesc,getPropertyOverrides(),Properties
+ActivationGroupDesc,hashCode(),int
+ActivationGroupDesc.CommandEnvironment,equals(Object obj),boolean
+ActivationGroupDesc.CommandEnvironment,getCommandOptions(),String[]
+ActivationGroupDesc.CommandEnvironment,getCommandPath(),String
+ActivationGroupDesc.CommandEnvironment,hashCode(),int
+ActivationGroupID,equals(Object obj),boolean
+ActivationGroupID,getSystem(),ActivationSystem
+ActivationGroupID,hashCode(),int
+ActivationID,activate(boolean force),Remote
+ActivationID,equals(Object obj),boolean
+ActivationID,hashCode(),int

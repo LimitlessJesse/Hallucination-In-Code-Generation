@@ -1,0 +1,289 @@
+Sample: 0 Date
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.Date package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public Date(long date)`: This constructor is used to initialize a Date object based on a long integer.
+
+2. `public long getTime()`: This method returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this Date object.
+
+3. `public void setTime(long time)`: This method sets this Date object to represent the specified number of milliseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT.
+
+4. `public int compareTo(Date anotherDate)`: This method compares two Dates.
+
+5. `public boolean after(Date when)`: This method tests if this Date is after the specified Date.
+
+6. `public boolean before(Date when)`: This method tests if this Date is before the specified Date.
+
+7. `public boolean equals(Object obj)`: This method compares this Date with the specified object.
+
+8. `public int hashCode()`: This method returns a hash code for this Date.
+
+9. `public String toString()`: This method returns a string representation of this Date.
+
+10. `public static Date valueOf(String s)`: This method returns a Date object representing the specified date.
+================================================================
+
+Sample: 1 DriverManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.DriverManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DriverManager.getConnection(String url, String user, String password)`: This method attempts to establish a connection to the database referenced by the given URL.
+
+2. `DriverManager.getDrivers()`: This method returns a Enumeration of all currently loaded JDBC drivers.
+
+3. `DriverManager.getDriver(String url)`: This method returns the Driver instance that would be used to connect to a database at the given URL.
+
+4. `DriverManager.registerDriver(Driver driver)`: This method registers a given driver.
+
+5. `DriverManager.unregisterDriver(Driver driver)`: This method unregisters a given driver.
+================================================================
+
+Sample: 2 DriverPropertyInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.DriverPropertyInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean acceptsURL(String url)`: This method tests if this driver can process the given URL.
+
+2. `public DriverPropertyInfo[] getPropertyInfo(String url, Properties info)`: This method returns an array of DriverPropertyInfo objects that can be used to set properties for this driver.
+
+3. `public int getMajorVersion()`: This method returns the major version number of the database product that this driver is a part of.
+
+4. `public int getMinorVersion()`: This method returns the minor version number of the database product that this driver is a part of.
+
+5. `public boolean jdbcCompliant()`: This method tests if this driver is a JDBC compliant one.
+================================================================
+
+Sample: 3 SQLPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.SQLPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs from java.sql.SQLPermission package:
+
+1. `public boolean implies(Permission permission)`: Tests if this Permission implies the specified permission.
+
+2. `public boolean equals(Object obj)`: Compares this object to the specified object.
+
+3. `public String getActions()`: Returns the actions string of this SQLPermission.
+
+4. `public String getName()`: Returns the name of this SQLPermission.
+
+5. `public int hashCode()`: Returns a hash code for this SQLPermission.
+
+Each API method is described in the following format:
+
+- `public boolean implies(Permission permission)`: This method tests if this Permission implies the specified permission.
+
+- `public boolean equals(Object obj)`: This method compares this object to the specified object.
+
+- `public String getActions()`: This method returns the actions string of this SQLPermission.
+
+- `public String getName()`: This method returns the name of this SQLPermission.
+
+- `public int hashCode()`: This method returns a hash code for this SQLPermission.
+================================================================
+
+Sample: 4 Time
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.Time package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Time(long time)`: This constructor is used to create a Time object from a long value representing the number of milliseconds since midnight, January 1, 1970, UTC.
+
+2. `Time(int hour, int minute, int second)`: This constructor is used to create a Time object from the specified hour, minute, and second values.
+
+3. `int getHours()`: This method returns the hour value of this Time object.
+
+4. `int getMinutes()`: This method returns the minute value of this Time object.
+
+5. `int getSeconds()`: This method returns the second value of this Time object.
+
+6. `long getTime()`: This method returns the time value of this Time object, represented in milliseconds since the standard base time known as "the epoch", namely midnight, January 1, 1970, in the UTC time zone.
+
+7. `int hashCode()`: This method returns the hash code value for this object.
+
+8. `void setHours(int hour)`: This method sets the hour value of this Time object.
+
+9. `void setMinutes(int minute)`: This method sets the minute value of this Time object.
+
+10. `void setSeconds(int second)`: This method sets the second value of this Time object.
+
+11. `void setTime(long time)`: This method sets the time value of this Time object to the specified long value.
+
+12. `String toString()`: This method returns a string representation of this Time object.
+
+13. `int compareTo(Time time)`: This method compares this Time object with the specified Time object.
+
+14. `boolean equals(Object obj)`: This method compares this Time object with the specified object.
+
+15. `int compareTo(Object obj)`: This method compares this Time object with the specified object.
+
+16. `int compareTo(Time time)`: This method compares this Time object with the specified Time object.
+
+17. `int compareTo(Object obj)`: This method compares this Time object with the specified object.
+
+18. `int compareTo(Time time)`: This method compares this Time object with the specified Time object.
+
+19. `int compareTo(Object obj)`: This method compares this Time object with the specified object.
+
+20. `int compareTo(Time time)`: This method compares this Time object with the specified Time object.
+================================================================
+
+Sample: 5 Timestamp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.Timestamp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Timestamp(long date)`: This constructor creates a Timestamp object that represents the specified number of milliseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT.
+
+2. `Timestamp(long date, int nano)`: This constructor creates a Timestamp object that represents the specified date and time in milliseconds and nanoseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT.
+
+3. `Timestamp(Date date)`: This constructor creates a Timestamp object that represents the specified Date object.
+
+4. `Timestamp(String s)`: This constructor creates a Timestamp object that represents the time contained in the specified string.
+
+5. `long getTime()`: This method returns the number of milliseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT, represented by this Timestamp object.
+================================================================
+
+Sample: 6 Types
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.sql.Types package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the java.sql.Types package:
+
+1. `public static int CHAR`: This method returns the SQL type code for a character string.
+
+2. `public static int VARCHAR`: This method returns the SQL type code for a variable character string.
+
+3. `public static int LONGVARCHAR`: This method returns the SQL type code for a long character string.
+
+4. `public static int NUMERIC`: This method returns the SQL type code for a numeric data type.
+
+5. `public static int DECIMAL`: This method returns the SQL type code for a decimal data type.
+
+6. `public static int BIT`: This method returns the SQL type code for a bit data type.
+
+7. `public static int TINYINT`: This method returns the SQL type code for a tiny integer data type.
+
+8. `public static int SMALLINT`: This method returns the SQL type code for a small integer data type.
+
+9. `public static int INTEGER`: This method returns the SQL type code for an integer data type.
+
+10. `public static int BIGINT`: This method returns the SQL type code for a big integer data type.
+
+11. `public static int REAL`: This method returns the SQL type code for a real data type.
+
+12. `public static int FLOAT`: This method returns the SQL type code for a float data type.
+
+13. `public static int DOUBLE`: This method returns the SQL type code for a double data type.
+
+14. `public static int BINARY`: This method returns the SQL type code for a binary data type.
+
+15. `public static int VARBINARY`: This method returns the SQL type code for a variable binary data type.
+
+16. `public static int LONGVARBINARY`: This method returns the SQL type code for a long binary data type.
+
+17. `public static int DATE`: This method returns the SQL type code for a date data type.
+
+18. `public static int TIME`: This method returns the SQL type code for a time data type.
+
+19. `public static int TIMESTAMP`: This method returns the SQL type code for a timestamp data type.
+
+20. `public static int CLOB`: This method returns the SQL type code for a character large object data type.
+
+21. `public static int BLOB`: This method returns the SQL type code for a binary large object data type.
+
+22. `public static int ARRAY`: This method returns the SQL type code for an array data type.
+
+23. `public static int STRUCT`: This method returns the SQL type code for a structured data type.
+
+24. `public static int JAVA_OBJECT`: This method returns the SQL type code for a Java object data type.
+
+25. `public static int DISTINCT`: This method returns the SQL type code for a distinct data type.
+
+26. `public static int REF`: This method returns the SQL type code for a reference data type.
+
+27. `public static int DATALINK`: This method returns the SQL type code for a data link data type.
+
+28. `public static int ROWID`: This method returns the SQL type code for a row ID data type.
+
+29. `public static int BLOB`: This method returns the SQL type code for a binary large object data type.
+
+30. `public static int CLOB`: This method returns the SQL type code for a character large object data type.
+
+31. `public static int SQLXML`: This method returns the SQL type code for a SQLXML data type.
+
+32. `public static int DATETIMEOFFSET`: This method returns the SQL type code for a datetimeoffset data type.
+
+33. `public static int TIME_WITH_TIMEZONE`: This method returns the SQL type code for a time with timezone data type.
+
+34. `public static int TIMESTAMP_WITH_TIMEZONE`: This method returns the SQL type code for a timestamp with timezone data type.
+================================================================
+

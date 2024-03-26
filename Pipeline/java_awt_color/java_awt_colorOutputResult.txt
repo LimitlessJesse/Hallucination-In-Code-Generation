@@ -1,0 +1,83 @@
+Sample: ColorSpace_1
+----------------------------------------------------------------
+output:
+./java_awt_color/javaFiles/ColorSpace_1.java:6: error: cannot find symbol
+        ColorSpace cs = ColorSpace.getInstance(ColorSpace.CS_RGB);
+                                                         ^
+  symbol:   variable CS_RGB
+  location: class ColorSpace
+1 error
+
+
+================================================================
+
+Sample: ColorSpace_2
+----------------------------------------------------------------
+output:
+./java_awt_color/javaFiles/ColorSpace_2.java:11: error: cannot find symbol
+            float[] ciexyz = profile.fromCIEXYZ(colorValue);
+                                    ^
+  symbol:   method fromCIEXYZ(float[])
+  location: variable profile of type ICC_Profile
+1 error
+
+
+================================================================
+
+Sample: ICC_ColorSpace_2
+----------------------------------------------------------------
+output:
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:5: error: cannot find symbol
+import java.awt.color.ICC_ProfileXYZ;
+                     ^
+  symbol:   class ICC_ProfileXYZ
+  location: package java.awt.color
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:6: error: cannot find symbol
+import java.awt.color.ICC_ProfileXYZ_float;
+                     ^
+  symbol:   class ICC_ProfileXYZ_float
+  location: package java.awt.color
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:11: error: cannot find symbol
+            ICC_Profile profile = ICC_Profile.getInstance(Main.class.getResourceAsStream("/icc/sRGB.icc"));
+                                                          ^
+  symbol:   class Main
+  location: class ICC_ColorSpace_2
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:12: error: no suitable constructor found for ICC_ProfileRGB(ICC_Profile)
+            ICC_ProfileRGB rgbProfile = new ICC_ProfileRGB(profile);
+                                        ^
+    constructor ICC_ProfileRGB.ICC_ProfileRGB(Profile) is not applicable
+      (argument mismatch; ICC_Profile cannot be converted to Profile)
+    constructor ICC_ProfileRGB.ICC_ProfileRGB(ProfileDeferralInfo) is not applicable
+      (argument mismatch; ICC_Profile cannot be converted to ProfileDeferralInfo)
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:13: error: no suitable constructor found for ICC_ProfileGray(ICC_Profile)
+            ICC_ProfileGray grayProfile = new ICC_ProfileGray(profile);
+                                          ^
+    constructor ICC_ProfileGray.ICC_ProfileGray(Profile) is not applicable
+      (argument mismatch; ICC_Profile cannot be converted to Profile)
+    constructor ICC_ProfileGray.ICC_ProfileGray(ProfileDeferralInfo) is not applicable
+      (argument mismatch; ICC_Profile cannot be converted to ProfileDeferralInfo)
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:14: error: cannot find symbol
+            ICC_ProfileXYZ xyzProfile = new ICC_ProfileXYZ(profile);
+            ^
+  symbol:   class ICC_ProfileXYZ
+  location: class ICC_ColorSpace_2
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:14: error: cannot find symbol
+            ICC_ProfileXYZ xyzProfile = new ICC_ProfileXYZ(profile);
+                                            ^
+  symbol:   class ICC_ProfileXYZ
+  location: class ICC_ColorSpace_2
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:15: error: cannot find symbol
+            ICC_ProfileXYZ_float xyzProfileFloat = new ICC_ProfileXYZ_float(profile);
+            ^
+  symbol:   class ICC_ProfileXYZ_float
+  location: class ICC_ColorSpace_2
+./java_awt_color/javaFiles/ICC_ColorSpace_2.java:15: error: cannot find symbol
+            ICC_ProfileXYZ_float xyzProfileFloat = new ICC_ProfileXYZ_float(profile);
+                                                       ^
+  symbol:   class ICC_ProfileXYZ_float
+  location: class ICC_ColorSpace_2
+9 errors
+
+
+================================================================
+

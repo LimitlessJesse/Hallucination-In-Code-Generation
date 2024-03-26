@@ -1,0 +1,25 @@
+Sample: BeanContextMembershipEvent_19
+----------------------------------------------------------------
+output:
+./java_beans_beancontext/javaFiles/BeanContextMembershipEvent_19.java:5: error: no suitable constructor found for BeanContextMembershipEvent(Object,String)
+        BeanContextMembershipEvent event = new BeanContextMembershipEvent(new Object(), "test");
+                                           ^
+    constructor BeanContextMembershipEvent.BeanContextMembershipEvent(BeanContext,Collection) is not applicable
+      (argument mismatch; Object cannot be converted to BeanContext)
+    constructor BeanContextMembershipEvent.BeanContextMembershipEvent(BeanContext,Object[]) is not applicable
+      (argument mismatch; Object cannot be converted to BeanContext)
+./java_beans_beancontext/javaFiles/BeanContextMembershipEvent_19.java:6: error: cannot find symbol
+        event.addBeanContextMembershipListener(e -> System.out.println("BeanContextMembershipEvent: " + e.getID()));
+             ^
+  symbol:   method addBeanContextMembershipListener((e)->Syste[...]ID()))
+  location: variable event of type BeanContextMembershipEvent
+./java_beans_beancontext/javaFiles/BeanContextMembershipEvent_19.java:7: error: cannot find symbol
+        event.addBeanContextMembershipListener(e -> System.out.println("BeanContextMembershipEvent size: " + e.size()));
+             ^
+  symbol:   method addBeanContextMembershipListener((e)->Syste[...]ze()))
+  location: variable event of type BeanContextMembershipEvent
+3 errors
+
+
+================================================================
+

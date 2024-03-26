@@ -1,0 +1,81 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,IIOImage,1,"IIOImage(RenderedImage image, RenderingHints hints)",False
+0,IIOImage,2,RenderedImage getRenderedImage(),True
+0,IIOImage,3,RenderingHints getRenderingHints(),False
+0,IIOImage,4,void setRenderingHints(RenderingHints hints),False
+0,IIOImage,5,void setRenderedImage(RenderedImage image),True
+1,IIOParam,1,IIOParam.getParamName(),False
+1,IIOParam,2,IIOParam.getParamValue(),False
+1,IIOParam,3,IIOParam.getParamValues(),False
+1,IIOParam,4,IIOParam.getParamType(),False
+1,IIOParam,5,IIOParam.getParamRange(),False
+2,ImageIO,1,BufferedImage read(InputStream in),True
+2,ImageIO,2,"void write(BufferedImage img, String formatName, OutputStream out)",False
+2,ImageIO,3,Iterator<ImageReader> getImageReaders(ImageInputStream iis),False
+2,ImageIO,4,Iterator<ImageWriter> getImageWriters(ImageOutputStream ios),False
+2,ImageIO,5,Iterator<ImageReader> getImageReadersByFormatName(String formatName),True
+2,ImageIO,6,Iterator<ImageWriter> getImageWritersByFormatName(String formatName),True
+2,ImageIO,7,Iterator<ImageReader> getImageReadersByMIMEType(String mimeType),True
+2,ImageIO,8,Iterator<ImageWriter> getImageWritersByMIMEType(String mimeType),True
+2,ImageIO,9,Iterator<ImageReader> getImageReadersBySuffix(String suffix),True
+2,ImageIO,10,Iterator<ImageWriter> getImageWritersBySuffix(String suffix),True
+3,ImageReader,1,boolean canDecode(String formatName),False
+3,ImageReader,2,int getNumImages(boolean deep),True
+3,ImageReader,3,int getNumThumbnails(),False
+3,ImageReader,4,int getNumResolutions(),False
+3,ImageReader,5,int getNumTiles(int imageIndex),False
+3,ImageReader,6,"int getNumTiles(int imageIndex, int resolutionIndex)",False
+3,ImageReader,7,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex)",False
+3,ImageReader,8,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex)",False
+3,ImageReader,9,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex)",False
+3,ImageReader,10,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex)",False
+3,ImageReader,11,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex)",False
+3,ImageReader,12,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex)",False
+3,ImageReader,13,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex)",False
+3,ImageReader,14,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex, int tileAreaOffsetSizeIndex)",False
+3,ImageReader,15,"int getNumTiles(int imageIndex, int resolutionIndex, int tileGridIndex, int tileIndex, int tileOffsetIndex, int tileSizeIndex, int tileAreaIndex, int tileAreaOffsetIndex, int tileAreaSizeIndex, int tileAreaOffsetSizeIndex, int tileAreaOffsetSizeIndex)",False
+4,ImageReadParam,1,void setSource(RenderedImage source),False
+4,ImageReadParam,2,void setDestination(RenderedImage destination),False
+4,ImageReadParam,3,void setRegion(Rectangle2D rect),False
+4,ImageReadParam,4,void setCropRect(Rectangle2D rect),False
+4,ImageReadParam,5,void setSourceRegion(Rectangle2D rect),False
+4,ImageReadParam,6,void setDestinationRegion(Rectangle2D rect),False
+4,ImageReadParam,7,void setSourceColorSpace(ColorSpace cspace),False
+4,ImageReadParam,8,void setDestinationColorSpace(ColorSpace cspace),False
+4,ImageReadParam,9,void setInterpolation(int interpolation),False
+4,ImageReadParam,10,void setRenderingHints(RenderingHints hints),False
+4,ImageReadParam,11,"void setSourceSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,12,"void setDestinationSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,13,"void setSourceSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,14,"void setDestinationSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,15,"void setSourceSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,16,"void setDestinationSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,17,"void setSourceSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,18,"void setDestinationSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,19,"void setSourceSubsampling(int x, int y, int width, int height)",False
+4,ImageReadParam,20,"void setDestinationSubsampling(int x, int y, int width, int height)",False
+5,ImageTypeSpecifier,1,boolean isComplex(),False
+5,ImageTypeSpecifier,2,boolean isIndexed(),False
+5,ImageTypeSpecifier,3,boolean isPalette(),False
+5,ImageTypeSpecifier,4,boolean isReadOnly(),False
+5,ImageTypeSpecifier,5,boolean isRegistered(),False
+5,ImageTypeSpecifier,6,boolean isSequence(),False
+5,ImageTypeSpecifier,7,boolean isVolatile(),False
+5,ImageTypeSpecifier,8,boolean isVector(),False
+5,ImageTypeSpecifier,9,boolean isWritable(),False
+5,ImageTypeSpecifier,10,boolean isWrapper(),False
+6,ImageWriteParam,1,void setCompressionMode(int mode),True
+6,ImageWriteParam,2,void setCompressionQuality(float quality),True
+6,ImageWriteParam,3,void setProgressiveMode(int mode),True
+6,ImageWriteParam,4,void setDestination(RenderedImage im),False
+6,ImageWriteParam,5,void setDestination(ImageWriteConfig config),False
+7,ImageWriter,1,boolean canEncode(RenderedImage im),False
+7,ImageWriter,2,"boolean canEncode(RenderedImage im, MediaType mediaType)",False
+7,ImageWriter,3,boolean canWriteSequence(ImageWriteParam param),False
+7,ImageWriter,4,"boolean canWriteSequence(ImageWriteParam param, MediaType mediaType)",False
+7,ImageWriter,5,"boolean canWriteSequence(ImageWriteParam param, MediaType mediaType, RenderedImage im)",False
+7,ImageWriter,6,"boolean canWriteSequence(ImageWriteParam param, RenderedImage im)",False
+7,ImageWriter,7,boolean canWriteSequence(RenderedImage im),False
+7,ImageWriter,8,"boolean canWriteSequence(RenderedImage im, MediaType mediaType)",False
+7,ImageWriter,9,"boolean canWriteSequence(RenderedImage im, MediaType mediaType, ImageWriteParam param)",False
+7,ImageWriter,10,"boolean canWriteSequence(RenderedImage im, ImageWriteParam param)",False

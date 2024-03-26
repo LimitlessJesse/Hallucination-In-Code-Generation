@@ -1,0 +1,133 @@
+Sample: 0 PhantomReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ref.PhantomReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PhantomReference(Object referent, ReferenceQueue<? super Object> q)`: This is the constructor of PhantomReference class. It takes two parameters, the object to which the reference is bound and the queue for the object.
+
+2. `get()`: This method returns the object to which this PhantomReference is bound or null if the object has been garbage collected.
+
+3. `isEnqueued()`: This method returns true if this reference has been enqueued.
+
+4. `enqueue()`: This method enqueues this reference.
+
+5. `finalize()`: This method is called by the garbage collector on an object when garbage collection begins.
+================================================================
+
+Sample: 1 Reference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ref.Reference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ReferenceQueue getQueue()`: This method returns the queue associated with this Reference object.
+
+2. `void clear()`: This method removes all references from this ReferenceQueue.
+
+3. `int size()`: This method returns the number of elements in this ReferenceQueue.
+
+4. `boolean remove(Object o)`: This method removes the specified object from this ReferenceQueue.
+
+5. `Object poll()`: This method retrieves and removes the head of this queue, or returns null if this queue is empty.
+================================================================
+
+Sample: 2 ReferenceQueue
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ref.ReferenceQueue package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E remove()`: This method removes and returns the first element from this list.
+3. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+4. `boolean removeIf(Predicate<? super E> filter)`: This method removes all of the elements of this list that satisfy the given predicate.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 SoftReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ref.SoftReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful APIs from the `java.lang.ref.SoftReference` package:
+
+1. `public T get()`: This method returns the object the soft reference refers to. If the object has been garbage collected, this method will return null.
+
+2. `public void clear()`: This method removes the soft reference from the reference queue.
+
+3. `public boolean isEnqueued()`: This method returns true if this soft reference is currently enqueued in the reference queue.
+
+4. `public void clear()`: This method removes the soft reference from the reference queue.
+
+5. `public boolean isEnqueued()`: This method returns true if this soft reference is currently enqueued in the reference queue.
+
+6. `public boolean equals(Object obj)`: This method compares this soft reference with the specified object.
+
+7. `public int hashCode()`: This method returns the hash code value for this soft reference.
+
+8. `public String toString()`: This method returns a string representation of this soft reference.
+
+9. `public static <T> SoftReference<T> referentOf(ReferenceQueue<? super T> q)`: This method returns a soft reference that refers to the given reference queue.
+
+10. `public static <T> SoftReference<T> referentOf(ReferenceQueue<? super T> q, T referent)`: This method returns a soft reference that refers to the given reference queue and the given referent.
+================================================================
+
+Sample: 4 WeakReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.lang.ref.WeakReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `WeakReference(T referent)`: This is the constructor of WeakReference class. It takes a reference to an object and keeps a weak reference to it.
+
+2. `get()`: This method returns the object the WeakReference is referring to, or null if that object has been garbage collected.
+
+3. `clear()`: This method sets the reference to null.
+
+4. `hashCode()`: This method returns the hash code value for this WeakReference.
+
+5. `equals(Object obj)`: This method compares the specified object with this WeakReference for equality.
+================================================================
+

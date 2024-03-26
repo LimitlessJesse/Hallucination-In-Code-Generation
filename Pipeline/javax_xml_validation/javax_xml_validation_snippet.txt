@@ -1,0 +1,241 @@
+Sample: 0 SchemaFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use SchemaFactory newInstance(String schemaLanguage) from javax.xml.validation.SchemaFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SchemaFactory.newInstance(String schemaLanguage)` method is used to create a new instance of a `SchemaFactory`. The `schemaLanguage` parameter is a string that represents the schema language.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.validation.SchemaFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+        System.out.println(factory);
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of `SchemaFactory` for the XML Schema language. The `newInstance` method returns a new instance of `SchemaFactory` for the specified schema language. The `System.out.println(factory)` statement is used to print the instance of `SchemaFactory`.
+
+Please note that you need to have the necessary dependencies in your project to use this method. The `javax.xml.validation` package is part of the Java XML Binding (JAXB) API, which is not included in the standard Java SE API. You may need to add the necessary dependencies to your project to use this method.
+================================================================
+
+Sample: 1 SchemaFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Schema newSchema(Source schemaSource) from javax.xml.validation.SchemaFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SchemaFactory` class is part of the `javax.xml.validation` package. It is used to create a new `Schema` object from a `Source`.
+
+Here is a complete code snippet of the `Schema newSchema(Source schemaSource)` method:
+
+```java
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a SchemaFactory capable of understanding WXS schemas
+            SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+
+            // Create a Source from a file
+            File schemaFile = new File("path_to_your_schema_file");
+            Source schemaSource = new StreamSource(schemaFile);
+
+            // Create a Schema from the Source
+            Schema schema = factory.newSchema(schemaSource);
+
+            // Now you can use the schema to validate XML documents
+            //...
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `SchemaFactory` instance that can understand WXS (Web eXtensible Language) schemas. Then we create a `Source` from a file that contains the schema. Finally, we create a `Schema` from the `Source` and use it to validate XML documents.
+
+Please replace `"path_to_your_schema_file"` with the actual path to your schema file.
+================================================================
+
+Sample: 2 SchemaFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Schema newSchema(URL schemaURL) from javax.xml.validation.SchemaFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `SchemaFactory` class is part of the `javax.xml.validation` package. The `newSchema(URL schemaURL)` method is used to create a new `Schema` object from a given URL.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import java.net.URL;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL schemaURL = new URL("http://www.example.com/schema.xsd");
+            SchemaFactory factory = SchemaFactory.newInstance();
+            Schema schema = factory.newSchema(schemaURL);
+            System.out.println("Schema created successfully");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a new `Schema` object from a URL. If the URL is valid and the schema file is accessible, the `newSchema(URL schemaURL)` method will return a new `Schema` object. If the URL is invalid or the schema file is not accessible, an `Exception` will be thrown.
+
+Please replace `"http://www.example.com/schema.xsd"` with the actual URL of your schema file.
+================================================================
+
+Sample: 3 SchemaFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Schema newSchema(File schemaFile) from javax.xml.validation.SchemaFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `Schema newSchema(File schemaFile)` method from `javax.xml.validation.SchemaFactory` is used to create a new schema from a file. Here is a complete code snippet of this method:
+
+```java
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a SchemaFactory capable of understanding WXS schemas
+            SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+
+            // Use the SchemaFactory to create a schema
+            File schemaFile = new File("path_to_your_schema_file");
+            Schema schema = factory.newSchema(schemaFile);
+
+            // Now you can use the schema to validate XML documents
+            //...
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `SchemaFactory` instance that can understand WXS (Web eXtensible Language) schemas. Then we use this factory to create a new schema from a file.
+
+Please replace `"path_to_your_schema_file"` with the actual path to your schema file.
+
+Note: This code snippet assumes that you have the necessary permissions to read the schema file and that the schema file is a valid WXS schema. If the schema file is not valid or you do not have the necessary permissions, the `newSchema` method will throw an exception.
+================================================================
+

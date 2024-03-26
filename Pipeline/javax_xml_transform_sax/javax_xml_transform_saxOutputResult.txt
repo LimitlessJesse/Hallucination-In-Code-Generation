@@ -1,0 +1,30 @@
+Sample: SAXResult_2
+----------------------------------------------------------------
+output:
+./javax_xml_transform_sax/javaFiles/SAXResult_2.java:14: error: incompatible types: <anonymous DefaultHandler> cannot be converted to XMLReader
+            SAXSource source = new SAXSource(new DefaultHandler() {
+                                             ^
+./javax_xml_transform_sax/javaFiles/SAXResult_2.java:43: error: cannot find symbol
+            source.getTransformer().transform(source.getXMLReader(), result);
+                  ^
+  symbol:   method getTransformer()
+  location: variable source of type SAXSource
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+
+Sample: SAXResult_3
+----------------------------------------------------------------
+output:
+./javax_xml_transform_sax/javaFiles/SAXResult_3.java:16: error: cannot find symbol
+            handler.setLexicalHandler(new DefaultHandler());
+                   ^
+  symbol:   method setLexicalHandler(DefaultHandler)
+  location: variable handler of type TransformerHandler
+1 error
+
+
+================================================================
+

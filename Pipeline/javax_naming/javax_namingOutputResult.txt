@@ -1,0 +1,94 @@
+Sample: CompositeName_5
+----------------------------------------------------------------
+stdout:
+Number of components in the composite name: 1
+
+================================================================
+
+Sample: InitialContext_2
+----------------------------------------------------------------
+================================================================
+
+Sample: InitialContext_3
+----------------------------------------------------------------
+stderr:
+javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+	at java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:704)
+	at java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305)
+	at java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342)
+	at java.naming/javax.naming.InitialContext.rebind(InitialContext.java:425)
+	at InitialContext_3.main(InitialContext_3.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: InitialContext_4
+----------------------------------------------------------------
+stderr:
+javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+	at java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:704)
+	at java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305)
+	at java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342)
+	at java.naming/javax.naming.InitialContext.bind(InitialContext.java:417)
+	at InitialContext_4.main(InitialContext_4.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: InitialContext_5
+----------------------------------------------------------------
+stderr:
+javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+	at java.naming/javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:704)
+	at java.naming/javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:305)
+	at java.naming/javax.naming.InitialContext.getURLOrDefaultInitCtx(InitialContext.java:342)
+	at java.naming/javax.naming.InitialContext.bind(InitialContext.java:417)
+	at InitialContext_5.main(InitialContext_5.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RefAddr_3
+----------------------------------------------------------------
+output:
+./javax_naming/javaFiles/RefAddr_3.java:7: error: RefAddr is abstract; cannot be instantiated
+            RefAddr refAddr = new RefAddr("type", "value");
+                              ^
+1 error
+
+
+================================================================
+
+Sample: Reference_5
+----------------------------------------------------------------
+output:
+./javax_naming/javaFiles/Reference_5.java:7: error: incompatible types: String cannot be converted to RefAddr
+        ref.add("Hello");
+                ^
+./javax_naming/javaFiles/Reference_5.java:8: error: incompatible types: String cannot be converted to RefAddr
+        ref.add("World");
+                ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+

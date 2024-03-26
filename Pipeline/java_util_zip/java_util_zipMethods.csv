@@ -1,0 +1,139 @@
+ClassName,Method,Return Type
+Adler32,getValue(),long
+Adler32,reset(),void
+Adler32,update(byte[] b),void
+Adler32,"update(byte[] b, int off, int len)",void
+Adler32,update(ByteBuffer buffer),void
+Adler32,update(int b),void
+CheckedInputStream,getChecksum(),Checksum
+CheckedInputStream,read(),int
+CheckedInputStream,"read(byte[] buf, int off, int len)",int
+CheckedInputStream,skip(long n),long
+CheckedOutputStream,getChecksum(),Checksum
+CheckedOutputStream,"write(byte[] b, int off, int len)",void
+CheckedOutputStream,write(int b),void
+CRC32,getValue(),long
+CRC32,reset(),void
+CRC32,update(byte[] b),void
+CRC32,"update(byte[] b, int off, int len)",void
+CRC32,update(ByteBuffer buffer),void
+CRC32,update(int b),void
+Deflater,deflate(byte[] b),int
+Deflater,"deflate(byte[] b, int off, int len)",int
+Deflater,"deflate(byte[] b, int off, int len, int flush)",int
+Deflater,end(),void
+Deflater,finalize(),protected void
+Deflater,finish(),void
+Deflater,finished(),boolean
+Deflater,getAdler(),int
+Deflater,getBytesRead(),long
+Deflater,getBytesWritten(),long
+Deflater,getTotalIn(),int
+Deflater,getTotalOut(),int
+Deflater,needsInput(),boolean
+Deflater,reset(),void
+Deflater,setDictionary(byte[] b),void
+Deflater,"setDictionary(byte[] b, int off, int len)",void
+Deflater,setInput(byte[] b),void
+Deflater,"setInput(byte[] b, int off, int len)",void
+Deflater,setLevel(int level),void
+Deflater,setStrategy(int strategy),void
+DeflaterInputStream,available(),int
+DeflaterInputStream,close(),void
+DeflaterInputStream,mark(int limit),void
+DeflaterInputStream,markSupported(),boolean
+DeflaterInputStream,read(),int
+DeflaterInputStream,"read(byte[] b, int off, int len)",int
+DeflaterInputStream,reset(),void
+DeflaterInputStream,skip(long n),long
+DeflaterOutputStream,close(),void
+DeflaterOutputStream,deflate(),protected void
+DeflaterOutputStream,finish(),void
+DeflaterOutputStream,flush(),void
+DeflaterOutputStream,"write(byte[] b, int off, int len)",void
+DeflaterOutputStream,write(int b),void
+GZIPInputStream,close(),void
+GZIPInputStream,"read(byte[] buf, int off, int len)",int
+GZIPOutputStream,finish(),void
+GZIPOutputStream,"write(byte[] buf, int off, int len)",void
+Inflater,end(),void
+Inflater,finalize(),protected void
+Inflater,finished(),boolean
+Inflater,getAdler(),int
+Inflater,getBytesRead(),long
+Inflater,getBytesWritten(),long
+Inflater,getRemaining(),int
+Inflater,getTotalIn(),int
+Inflater,getTotalOut(),int
+Inflater,inflate(byte[] b),int
+Inflater,"inflate(byte[] b, int off, int len)",int
+Inflater,needsDictionary(),boolean
+Inflater,needsInput(),boolean
+Inflater,reset(),void
+Inflater,setDictionary(byte[] b),void
+Inflater,"setDictionary(byte[] b, int off, int len)",void
+Inflater,setInput(byte[] b),void
+Inflater,"setInput(byte[] b, int off, int len)",void
+InflaterInputStream,available(),int
+InflaterInputStream,close(),void
+InflaterInputStream,fill(),protected void
+InflaterInputStream,mark(int readlimit),void
+InflaterInputStream,markSupported(),boolean
+InflaterInputStream,read(),int
+InflaterInputStream,"read(byte[] b, int off, int len)",int
+InflaterInputStream,reset(),void
+InflaterInputStream,skip(long n),long
+InflaterOutputStream,close(),void
+InflaterOutputStream,finish(),void
+InflaterOutputStream,flush(),void
+InflaterOutputStream,"write(byte[] b, int off, int len)",void
+InflaterOutputStream,write(int b),void
+ZipEntry,clone(),Object
+ZipEntry,getComment(),String
+ZipEntry,getCompressedSize(),long
+ZipEntry,getCrc(),long
+ZipEntry,getCreationTime(),FileTime
+ZipEntry,getExtra(),byte[]
+ZipEntry,getLastAccessTime(),FileTime
+ZipEntry,getLastModifiedTime(),FileTime
+ZipEntry,getMethod(),int
+ZipEntry,getName(),String
+ZipEntry,getSize(),long
+ZipEntry,getTime(),long
+ZipEntry,hashCode(),int
+ZipEntry,isDirectory(),boolean
+ZipEntry,setComment(String comment),void
+ZipEntry,setCompressedSize(long csize),void
+ZipEntry,setCrc(long crc),void
+ZipEntry,setCreationTime(FileTime time),ZipEntry
+ZipEntry,setExtra(byte[] extra),void
+ZipEntry,setLastAccessTime(FileTime time),ZipEntry
+ZipEntry,setLastModifiedTime(FileTime time),ZipEntry
+ZipEntry,setMethod(int method),void
+ZipEntry,setSize(long size),void
+ZipEntry,setTime(long time),void
+ZipEntry,toString(),String
+ZipFile,close(),void
+ZipFile,entries(),Enumeration<? extends ZipEntry>
+ZipFile,finalize(),protected void
+ZipFile,getComment(),String
+ZipFile,getEntry(String name),ZipEntry
+ZipFile,getInputStream(ZipEntry entry),InputStream
+ZipFile,getName(),String
+ZipFile,size(),int
+ZipFile,stream(),Stream<? extends ZipEntry>
+ZipInputStream,available(),int
+ZipInputStream,close(),void
+ZipInputStream,closeEntry(),void
+ZipInputStream,createZipEntry(String name),protected ZipEntry
+ZipInputStream,getNextEntry(),ZipEntry
+ZipInputStream,"read(byte[] b, int off, int len)",int
+ZipInputStream,skip(long n),long
+ZipOutputStream,close(),void
+ZipOutputStream,closeEntry(),void
+ZipOutputStream,finish(),void
+ZipOutputStream,putNextEntry(ZipEntry e),void
+ZipOutputStream,setComment(String comment),void
+ZipOutputStream,setLevel(int level),void
+ZipOutputStream,setMethod(int method),void
+ZipOutputStream,"write(byte[] b, int off, int len)",void

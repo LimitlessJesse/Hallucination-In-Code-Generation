@@ -1,0 +1,341 @@
+Sample: 0 SerialBlob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void truncate(long len) from javax.sql.rowset.serial.SerialBlob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void truncate(long len)` method from `javax.sql.rowset.serial.SerialBlob`:
+
+```java
+import java.sql.Blob;
+import java.sql.SQLException;
+import javax.sql.rowset.serial.SerialBlob;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Blob blob = new SerialBlob("Hello, World!".getBytes());
+            blob.truncate(5);
+            System.out.println(new String(((SerialBlob) blob).getBytes(1, (int) blob.length())));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a `SerialBlob` object and then truncate it to 5 bytes. We then print out the remaining bytes as a string.
+
+Please note that the `truncate(long len)` method is not available in the `java.sql.Blob` interface, but it is available in the `javax.sql.rowset.serial.SerialBlob` class. This is why we need to cast the `Blob` object to a `SerialBlob` object before calling the `truncate(long len)` method.
+================================================================
+
+Sample: 1 SerialBlob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void free() from javax.sql.rowset.serial.SerialBlob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void free()` method in `javax.sql.rowset.serial.SerialBlob` is used to release the resources held by the `SerialBlob` object. It does not return any value.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.sql.Blob;
+import java.sql.SQLException;
+import javax.sql.rowset.serial.SerialBlob;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Blob blob = new SerialBlob("Hello, World!".getBytes());
+            System.out.println("Blob created successfully");
+            blob.free();
+            System.out.println("Blob freed successfully");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we create a `SerialBlob` object and then call the `free()` method on it. The `free()` method is used to release the resources held by the `SerialBlob` object. If the `free()` method is not called, the `SerialBlob` object will not be garbage collected and will consume memory.
+================================================================
+
+Sample: 2 SerialBlob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use InputStream getBinaryStream() from javax.sql.rowset.serial.SerialBlob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getBinaryStream()` method of `SerialBlob` class is used to retrieve the binary stream of the BLOB. It returns an `InputStream` object that contains the binary data of the BLOB.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.SQLException;
+import javax.sql.rowset.serial.SerialBlob;
+import java.io.InputStream;
+
+public class Main {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/test";
+        String username = "root";
+        String password = "password";
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM blob_table")) {
+
+            while (resultSet.next()) {
+                Blob blob = resultSet.getBlob("blob_column");
+                if (blob!= null) {
+                    SerialBlob serialBlob = (SerialBlob) blob;
+                    InputStream inputStream = serialBlob.getBinaryStream();
+                    // Use the inputStream as needed...
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are connecting to a MySQL database, executing a query to get a BLOB from a table, and then getting the binary stream from the BLOB using the `getBinaryStream()` method.
+
+Please replace `"jdbc:mysql://localhost:3306/test"`, `"root"`, and `"password"` with your actual database URL, username, and password. Also, replace `"blob_table"` and `"blob_column"` with your actual table name and column name.
+================================================================
+
+Sample: 3 SerialClob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Reader getCharacterStream() from javax.sql.rowset.serial.SerialClob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `getCharacterStream()` method from `javax.sql.rowset.serial.SerialClob`:
+
+```java
+import javax.sql.rowset.serial.SerialClob;
+import java.io.Reader;
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Load the JDBC driver
+            Class.forName("org.h2.Driver");
+
+            // Establish a connection
+            Connection conn = DriverManager.getConnection("jdbc:h2:mem:", "sa", "");
+
+            // Create a CLOB
+            Clob clob = conn.createClob();
+
+            // Write to the CLOB
+            clob.setString(1, "Hello, World!");
+
+            // Create a SerialClob
+            SerialClob serialClob = new SerialClob(clob);
+
+            // Get a Reader for the CLOB
+            Reader reader = serialClob.getCharacterStream();
+
+            // Read the CLOB
+            int ch;
+            while ((ch = reader.read())!= -1) {
+                System.out.print((char) ch);
+            }
+
+            // Close the connection
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+This code snippet creates a new CLOB, writes a string to it, creates a SerialClob from the CLOB, and then gets a Reader for the CLOB. It then reads the CLOB character by character and prints it to the console.
+
+Please note that you need to have the H2 database driver in your classpath to run this code. You can download it from the H2 website.
+================================================================
+
+Sample: 4 SerialClob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void truncate(long len) from javax.sql.rowset.serial.SerialClob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `void truncate(long len)` method from `javax.sql.rowset.serial.SerialClob`:
+
+```java
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Register the JDBC driver
+            Class.forName("org.h2.Driver");
+
+            // Open a connection
+            Connection conn = DriverManager.getConnection("jdbc:h2:mem:", "sa", "");
+
+            // Create a CLOB
+            Clob clob = conn.createClob();
+
+            // Write to the CLOB
+            clob.setString(1, "Hello, World!");
+
+            // Truncate the CLOB
+            clob.truncate(5);
+
+            // Print the truncated CLOB
+            System.out.println(clob.getSubString(1, (int) clob.length()));
+
+            // Close the connection
+            conn.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+This code snippet demonstrates how to use the `truncate(long len)` method. It first registers the H2 JDBC driver, opens a connection, creates a `Clob`, writes a string to the `Clob`, truncates the `Clob` to a certain length, and then prints the truncated `Clob`.
+
+Please note that the `truncate(long len)` method is not available in the `java.sql.Clob` interface, but it is available in the `javax.sql.rowset.serial.SerialClob` class. The `javax.sql.rowset.serial.SerialClob` class is a subclass of `java.sql.Clob` and provides additional methods for serialization and deserialization.
+================================================================
+

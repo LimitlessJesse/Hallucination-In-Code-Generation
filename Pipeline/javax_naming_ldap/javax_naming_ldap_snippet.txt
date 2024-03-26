@@ -1,0 +1,67 @@
+Sample: 0 InitialLdapContext
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setRequestControls(Control[] controls) from javax.naming.ldap.InitialLdapContext
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setRequestControls(Control[] controls)` method is not a part of the `InitialLdapContext` class. It is a part of the `javax.naming.ldap.Control` class.
+
+Here is an example of how you can use it:
+
+```java
+import javax.naming.ldap.Control;
+import javax.naming.ldap.LdapContext;
+import javax.naming.ldap.InitialLdapContext;
+import javax.naming.NamingException;
+import javax.naming.directory.BasicControl;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new LDAP context
+            LdapContext ctx = new InitialLdapContext();
+
+            // Create a new control
+            Control control = new BasicControl("1.2.3.4", true, "control value".getBytes());
+
+            // Set the request controls
+            ctx.setRequestControls(new Control[] { control });
+
+            // Do something with the context...
+
+        } catch (NamingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we create a new LDAP context, a new control, and then set the request controls on the context. Note that you would need to replace the control's OID, criticality, and value with the actual values you need.
+
+Also, please note that the `setRequestControls(Control[] controls)` method is not a part of the `InitialLdapContext` class. It is a part of the `javax.naming.ldap.Control` class.
+================================================================
+

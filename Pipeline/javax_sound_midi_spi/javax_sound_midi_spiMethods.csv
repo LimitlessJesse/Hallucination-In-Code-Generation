@@ -1,0 +1,19 @@
+ClassName,Method,Return Type
+MidiDeviceProvider,getDevice(MidiDevice.Info info),abstract MidiDevice
+MidiDeviceProvider,getDeviceInfo(),abstract MidiDevice.Info[]
+MidiDeviceProvider,isDeviceSupported(MidiDevice.Info info),boolean
+MidiFileReader,getMidiFileFormat(File file),abstract MidiFileFormat
+MidiFileReader,getMidiFileFormat(InputStream stream),abstract MidiFileFormat
+MidiFileReader,getMidiFileFormat(URL url),abstract MidiFileFormat
+MidiFileReader,getSequence(File file),abstract Sequence
+MidiFileReader,getSequence(InputStream stream),abstract Sequence
+MidiFileReader,getSequence(URL url),abstract Sequence
+MidiFileWriter,getMidiFileTypes(),abstract int[]
+MidiFileWriter,getMidiFileTypes(Sequence sequence),abstract int[]
+MidiFileWriter,isFileTypeSupported(int fileType),boolean
+MidiFileWriter,"isFileTypeSupported(int fileType, Sequence sequence)",boolean
+MidiFileWriter,"write(Sequence in, int fileType, File out)",abstract int
+MidiFileWriter,"write(Sequence in, int fileType, OutputStream out)",abstract int
+SoundbankReader,getSoundbank(File file),abstract Soundbank
+SoundbankReader,getSoundbank(InputStream stream),abstract Soundbank
+SoundbankReader,getSoundbank(URL url),abstract Soundbank

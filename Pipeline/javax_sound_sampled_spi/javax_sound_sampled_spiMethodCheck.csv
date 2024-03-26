@@ -1,0 +1,21 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AudioFileReader,1,AudioFileReader.getAudioFileFormat(File file),False
+0,AudioFileReader,2,AudioFileReader.getAudioFileFormat(URL url),False
+0,AudioFileReader,3,AudioFileReader.getAudioFileFormat(InputStream stream),False
+0,AudioFileReader,4,AudioFileReader.getAudioFileFormat(byte[] data),False
+0,AudioFileReader,5,"AudioFileReader.getAudioFileFormat(byte[] data, int offset, int length)",False
+1,AudioFileWriter,1,boolean canWrite(AudioFileFormat.Type fileType),False
+1,AudioFileWriter,2,"boolean write(AudioInputStream stream, AudioFileFormat.Type fileType, File out)",False
+1,AudioFileWriter,3,"boolean write(AudioInputStream stream, AudioFileFormat.Type fileType, OutputStream out)",False
+1,AudioFileWriter,4,"boolean write(AudioFileFormat audioFileFormat, OutputStream out)",False
+1,AudioFileWriter,5,"boolean write(AudioFileFormat audioFileFormat, File out)",False
+2,FormatConversionProvider,1,boolean canConvertInput(AudioFormat sourceFormat),False
+2,FormatConversionProvider,2,boolean canConvertOutput(AudioFormat targetFormat),False
+2,FormatConversionProvider,3,AudioFormat[] getTargetFormats(AudioFormat sourceFormat),False
+2,FormatConversionProvider,4,AudioFormat[] getSourceFormats(AudioFormat targetFormat),False
+2,FormatConversionProvider,5,"AudioInputStream getAudioInputStream(AudioFormat targetFormat, AudioInputStream sourceStream)",True
+3,MixerProvider,1,MixerProvider getDefault(),False
+3,MixerProvider,2,Mixer.Info[] getMixerInfo(),True
+3,MixerProvider,3,Mixer getMixer(Mixer.Info info),True
+3,MixerProvider,4,boolean isMixerSupported(Mixer.Info info),True
+3,MixerProvider,5,ObjectProperty[] getObjectProperties(),False

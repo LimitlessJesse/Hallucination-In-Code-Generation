@@ -1,0 +1,472 @@
+Sample: 0 ConsoleHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.ConsoleHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setFormatter(Formatter newFormatter)`: This method sets the formatter for this handler.
+
+2. `public void setLevel(Level newLevel)`: This method sets the level for this handler.
+
+3. `public void setFilter(Filter newFilter)`: This method sets the filter for this handler.
+
+4. `public void publish(LogRecord record)`: This method publishes a log record.
+
+5. `public void flush()`: This method flushes the stream.
+================================================================
+
+Sample: 1 ErrorManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.ErrorManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void error(String message, Exception ex, int code)`: This method is called when an error occurs. The message parameter is a string that describes the error. The ex parameter is the exception that caused the error. The code parameter is an error code that can be used to identify the type of error.
+
+2. `void error(String message, int code)`: This method is called when an error occurs. The message parameter is a string that describes the error. The code parameter is an error code that can be used to identify the type of error.
+
+3. `void error(String message)`: This method is called when an error occurs. The message parameter is a string that describes the error.
+
+4. `void fail(String message, Exception ex, int code)`: This method is called when a failure occurs. The message parameter is a string that describes the failure. The ex parameter is the exception that caused the failure. The code parameter is a failure code that can be used to identify the type of failure.
+
+5. `void fail(String message, int code)`: This method is called when a failure occurs. The message parameter is a string that describes the failure. The code parameter is a failure code that can be used to identify the type of failure.
+
+6. `void fail(String message)`: This method is called when a failure occurs. The message parameter is a string that describes the failure.
+================================================================
+
+Sample: 2 FileHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.FileHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public FileHandler(String pattern, int limit, int count)`: This constructor creates a FileHandler object that will append to the specified file.
+
+2. `public FileHandler(String pattern, int limit, int count, boolean append)`: This constructor creates a FileHandler object that will append to the specified file.
+
+3. `public void publish(LogRecord record)`: This method is used to publish a LogRecord.
+
+4. `public void flush()`: This method is used to flush the FileHandler.
+
+5. `public void close()`: This method is used to close the FileHandler.
+================================================================
+
+Sample: 3 Formatter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.Formatter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public String format(LogRecord record)`: This method formats the given log record.
+
+2. `public String getHead(Handler h)`: This method returns the header string for the given handler.
+
+3. `public String getTail(Handler h)`: This method returns the tail string for the given handler.
+
+4. `public void setContext(LogRecord record)`: This method sets the context data for the given log record.
+
+5. `public void setFormatter(Formatter newFormatter)`: This method sets the formatter for this handler.
+================================================================
+
+Sample: 4 Handler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.Handler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `public void close()`: This method closes the underlying output stream.
+3. `public void flush()`: This method flushes the stream.
+4. `public void publish(LogRecord record)`: This method publishes a LogRecord.
+5. `public void setFormatter(Formatter newFormatter)`: This method sets the formatter for this handler.
+================================================================
+
+Sample: 5 Level
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.Level package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `public void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `public boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `public boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `public E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 6 Logger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.Logger package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addHandler(Handler h)`: This method adds the specified handler to the set of handlers for this logger.
+
+2. `void setLevel(Level newLevel)`: This method sets the level of this logger to the specified level.
+
+3. `void setParent(Logger parent)`: This method sets the parent of this logger to the specified logger.
+
+4. `void setUseParentHandlers(boolean useParentHandlers)`: This method sets whether this logger should use its parent's handlers.
+
+5. `void log(Level level, String msg)`: This method logs a message with the specified level.
+================================================================
+
+Sample: 7 LoggingPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.LoggingPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean equals(Object obj)`: Compares the specified object with this list for equality.
+2. `public int hashCode()`: Returns the hash code value for this list.
+3. `public boolean add(E e)`: Appends the specified element to the end of this list.
+4. `public boolean remove(Object o)`: Removes the first occurrence of the specified element from this list, if it is present.
+5. `public boolean contains(Object o)`: Returns true if this list contains the specified element.
+================================================================
+
+Sample: 8 LogManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.LogManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addAppender(Appender appender)`: This method adds the specified appender to this manager.
+2. `void readConfiguration()`: This method reads the configuration of the LogManager.
+3. `void reset()`: This method resets the LogManager to its initial state.
+4. `void resetToParent()`: This method resets the LogManager to its parent's state.
+5. `void setLogger(Logger logger)`: This method sets the specified logger to this manager.
+6. `void setLogger(String name, Logger logger)`: This method sets the specified logger to this manager with the specified name.
+7. `void setLogger(String name, String resourceBundleName)`: This method sets the specified logger to this manager with the specified name and resource bundle name.
+8. `void setLogger(String name, String resourceBundleName, Locale locale)`: This method sets the specified logger to this manager with the specified name, resource bundle name, and locale.
+9. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, and class loader.
+10. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, and resource bundle control.
+11. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, and resource bundle.
+12. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, and parent resource bundle.
+13. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, and hub resource bundle.
+14. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, and delegate parent resource bundle.
+15. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate parent resource bundle, and delegate resource bundle.
+16. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate parent resource bundle, delegate resource bundle, and delegate hub resource bundle.
+17. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate parent resource bundle, delegate resource bundle, delegate hub resource bundle, and delegate parent hub resource bundle.
+18. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate parent resource bundle, delegate resource bundle, delegate hub resource bundle, delegate parent hub resource bundle, and delegate delegate parent resource bundle.
+19. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent, ResourceBundle delegateDelegateHub)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate parent resource bundle, delegate resource bundle, delegate hub resource bundle, delegate parent hub resource bundle, delegate delegate parent resource bundle, and delegate delegate hub resource bundle.
+20. `void setLogger(String name, String resourceBundleName, Locale locale, ClassLoader loader, ResourceBundleControl control, ResourceBundle bundle, ResourceBundle parent, ResourceBundle hub, ResourceBundle delegateParent, ResourceBundle delegate, ResourceBundle delegateHub, ResourceBundle delegateParentHub, ResourceBundle delegateDelegateParent, ResourceBundle delegateDelegateHub, ResourceBundle delegateDelegateParentHub)`: This method sets the specified logger to this manager with the specified name, resource bundle name, locale, class loader, resource bundle control, resource bundle, parent resource bundle, hub resource bundle, delegate
+================================================================
+
+Sample: 9 LogRecord
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.LogRecord package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setMessage(String message)`: This method sets the message for this LogRecord.
+
+2. `public void setLoggerName(String loggerName)`: This method sets the name of the logger for this LogRecord.
+
+3. `public void setLevel(Level level)`: This method sets the level for this LogRecord.
+
+4. `public void setMillis(long millis)`: This method sets the time for this LogRecord.
+
+5. `public void setSourceClassName(String sourceClassName)`: This method sets the source class name for this LogRecord.
+
+6. `public void setSourceMethodName(String sourceMethodName)`: This method sets the source method name for this LogRecord.
+
+7. `public void setThrown(Throwable thrown)`: This method sets the Throwable object for this LogRecord.
+
+8. `public void setParameters(Object[] parameters)`: This method sets the parameters for this LogRecord.
+
+9. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+10. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+11. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+12. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+13. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+14. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+
+15. `public void setResourceBundle(ResourceBundle bundle)`: This method sets the ResourceBundle for this LogRecord.
+================================================================
+
+Sample: 10 MemoryHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.MemoryHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public MemoryHandler(Handler target, int size, boolean push)`: This constructor creates a MemoryHandler that will delegate logging to the specified target Handler. The size parameter specifies the maximum number of log records that will be buffered. The push parameter specifies whether the Handler should be pushed onto the Logger's handlers list.
+
+2. `public void push()`: This method pushes this MemoryHandler onto the Logger's handters list.
+
+3. `public void pop()`: This method pops this MemoryHandler from the Logger's handlers list.
+
+4. `public void setPush(boolean push)`: This method sets the push flag. If the push flag is true, this MemoryHandler will be pushed onto the Logger's handlers list when it is added to the Logger.
+
+5. `public boolean isPush()`: This method returns the push flag. If the push flag is true, this MemoryHandler will be pushed onto the Logger's handlers list when it is added to the Logger.
+================================================================
+
+Sample: 11 SimpleFormatter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.SimpleFormatter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public String format(LogRecord record)`: This method formats the given log record.
+
+2. `public String getHead()`: This method returns the head string.
+
+3. `public String getTail()`: This method returns the tail string.
+
+4. `public void setHead(String head)`: This method sets the head string.
+
+5. `public void setTail(String tail)`: This method sets the tail string.
+================================================================
+
+Sample: 12 SocketHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.SocketHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void close()`: This method closes the socket connection.
+
+2. `public void publish(LogRecord record)`: This method sends the specified log record to the socket.
+
+3. `public void flush()`: This method flushes the stream.
+
+4. `public void setFormatter(Formatter newFormatter)`: This method sets the formatter for this handler.
+
+5. `public void setLevel(Level newLevel)`: This method sets the level for this handler.
+
+6. `public void setFilter(Filter newFilter)`: This method sets the filter for this handler.
+
+7. `public void setEncoding(String encoding)`: This method sets the encoding for this handler.
+
+8. `public void setAddress(InetAddress address)`: This method sets the address for this handler.
+
+9. `public void setPort(int port)`: This method sets the port for this handler.
+
+10. `public void setSocket(Socket socket)`: This method sets the socket for this handler.
+================================================================
+
+Sample: 13 StreamHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.StreamHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void close()`: This method closes the stream.
+2. `public void flush()`: This method flushes the stream.
+3. `public void publish(LogRecord record)`: This method publishes a LogRecord.
+4. `public void setFormatter(Formatter formatter)`: This method sets the formatter for this handler.
+5. `public void setOutputStream(OutputStream out)`: This method sets the output stream for this handler.
+================================================================
+
+Sample: 14 XMLFormatter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.logging.XMLFormatter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setOutput(OutputStream out)`: This method sets the output stream where the XMLFormatter will write the formatted log records.
+
+2. `public void setEncoding(String encoding)`: This method sets the character encoding to be used by the XMLFormatter.
+
+3. `public void setIndent(int indent)`: This method sets the indentation level for the XMLFormatter.
+
+4. `public void setPrefix(String prefix)`: This method sets the prefix for the XMLFormatter.
+
+5. `public void setSuffix(String suffix)`: This method sets the suffix for the XMLFormatter.
+
+6. `public void setFacility(String facility)`: This method sets the facility for the XMLFormatter.
+
+7. `public void setFormat(String format)`: This method sets the format for the XMLFormatter.
+
+8. `public void setDateFormat(String dateFormat)`: This method sets the date format for the XMLFormatter.
+
+9. `public void setTimeZone(String timeZone)`: This method sets the time zone for the XMLFormatter.
+
+10. `public void setContext(String context)`: This method sets the context for the XMLFormatter.
+
+11. `public void setMessageFormat(String messageFormat)`: This method sets the message format for the XMLFormatter.
+
+12. `public void setHeader(String header)`: This method sets the header for the XMLFormatter.
+
+13. `public void setFooter(String footer)`: This method sets the footer for the XMLFormatter.
+
+14. `public void setRecordSeparator(String recordSeparator)`: This method sets the record separator for the XMLFormatter.
+
+15. `public void setRecordDelimiter(String recordDelimiter)`: This method sets the record delimiter for the XMLFormatter.
+
+16. `public void setBundle(String bundle)`: This method sets the bundle for the XMLFormatter.
+
+17. `public void setBundleName(String bundleName)`: This method sets the bundle name for the XMLFormatter.
+
+18. `public void setBundleVersion(String bundleVersion)`: This method sets the bundle version for the XMLFormatter.
+
+19. `public void setBundleVendor(String bundleVendor)`: This method sets the bundle vendor for the XMLFormatter.
+
+20. `public void setBundleClassName(String bundleClassName)`: This method sets the bundle class name for the XMLFormatter.
+
+21. `public void setBundleSymbolicName(String bundleSymbolicName)`: This method sets the bundle symbolic name for the XMLFormatter.
+
+22. `public void setBundleDescription(String bundleDescription)`: This method sets the bundle description for the XMLFormatter.
+
+23. `public void setBundleCopyright(String bundleCopyright)`: This method sets the bundle copyright for the XMLFormatter.
+
+24. `public void setBundleLicense(String bundleLicense)`: This method sets the bundle license for the XMLFormatter.
+
+25. `public void setBundleVendorURL(String bundleVendorURL)`: This method sets the bundle vendor URL for the XMLFormatter.
+
+26. `public void setBundleDocURL(String bundleDocURL)`: This method sets the bundle documentation URL for the XMLFormatter.
+
+27. `public void setBundleSigAlgName(String bundleSigAlgName)`: This method sets the bundle signature algorithm name for the XMLFormatter.
+
+28. `public void setBundleSigAlgProvider(String bundleSigAlgProvider)`: This method sets the bundle signature algorithm provider for the XMLFormatter.
+
+29. `public void setBundleSigAlgDigest(String bundleSigAlgDigest)`: This method sets the bundle signature algorithm digest for the XMLFormatter.
+
+30. `public void setBundleSigAlgCertificate(String bundleSigAlgCertificate)`: This method sets the bundle signature algorithm certificate for the XMLFormatter.
+
+31. `public void setBundleSigAlgCertificatePath(String bundleSigAlgCertificatePath)`: This method sets the bundle signature algorithm certificate path for the XMLFormatter.
+
+32. `public void setBundleSigAlgCertificateAlias(String bundleSigAlgCertificateAlias)`: This method sets the bundle signature algorithm certificate alias for the XMLFormatter.
+
+33. `public void setBundleSigAlgCertificateSerialNumber(String bundleSigAlgCertificateSerialNumber)`: This method sets the bundle signature algorithm certificate serial number for the XMLFormatter.
+
+34. `public void setBundleSigAlgCertificateValidity(String bundleSigAlgCertificateValidity)`: This method sets the bundle signature algorithm certificate validity for the XMLFormatter.
+
+35. `public void setBundleSigAlgCertificateIssuer(String bundleSigAlgCertificateIssuer)`: This method sets the bundle signature algorithm certificate issuer for the XMLFormatter.
+
+36. `public void setBundleSigAlgCertificateSubject(String bundleSigAlgCertificateSubject)`: This method sets the bundle signature algorithm certificate subject for the XMLFormatter.
+
+37. `public void setBundleSigAlgCertificateVersion(String bundleSigAlgCertificateVersion)`: This method sets the bundle signature algorithm certificate version for the XMLFormatter.
+
+38. `public void setBundleSigAlgCertificateNotBefore(String bundleSigAlgCertificateNotBefore)`: This method sets the bundle signature algorithm certificate not before for the XMLFormatter.
+
+39. `public void setBundleSigAlgCertificateNotAfter(String bundleSigAlgCertificateNotAfter)`: This method sets the bundle signature algorithm certificate not after for the XMLFormatter.
+
+40. `public void setBundleSigAlgCertificateKeyAlgorithm(String bundleSigAlgCertificateKeyAlgorithm)`: This method sets the bundle signature algorithm certificate key algorithm for the XMLFormatter
+================================================================
+

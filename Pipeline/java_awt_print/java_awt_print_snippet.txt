@@ -1,0 +1,209 @@
+Sample: 0 PageFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setOrientation(int orientation) from java.awt.print.PageFormat
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setOrientation(int orientation)` method in `java.awt.print.PageFormat` is used to set the orientation of the page. The orientation can be either `PageFormat.PORTRAIT` or `PageFormat.LANDSCAPE`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
+
+public class Main {
+    public static void main(String[] args) {
+        PageFormat pageFormat = new PageFormat();
+        Paper paper = new Paper();
+        paper.setSize(827, 1169); // A4 size in millimeters
+        pageFormat.setPaper(paper);
+
+        // Set the orientation to landscape
+        pageFormat.setOrientation(PageFormat.LANDSCAPE);
+    }
+}
+```
+
+In this code snippet, we first create a new `PageFormat` object and a new `Paper` object. We then set the size of the paper to A4 (827mm x 1169mm) and set the paper for the `PageFormat` object. Finally, we set the orientation of the page to landscape using the `setOrientation(int orientation)` method.
+================================================================
+
+Sample: 1 PageFormat
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setPaper(Paper paper) from java.awt.print.PageFormat
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setPaper(Paper paper)` method in `java.awt.print.PageFormat` is used to set the paper size and orientation.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
+
+public class Main {
+    public static void main(String[] args) {
+        PageFormat pageFormat = new PageFormat();
+        Paper paper = new Paper();
+        paper.setSize(8.5 * 72, 11 * 72); // A4 size
+        paper.setImageableArea(0, 0, paper.getWidth(), paper.getHeight());
+        pageFormat.setPaper(paper);
+    }
+}
+```
+
+In this code snippet, we first create a new `PageFormat` object and a new `Paper` object. We then set the size of the paper to A4 (8.5 inches by 11 inches) and the imageable area to the full paper size. Finally, we set the paper in the `PageFormat` object.
+
+Please note that this is a simple example and does not actually print anything. For a more complete example, you would need to use a `PrintJob` or `PrintService` to actually print something.
+================================================================
+
+Sample: 2 PrinterJob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean printDialog() from java.awt.print.PrinterJob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `printDialog()` method in `java.awt.print.PrinterJob` is used to display a print dialog box to the user. It returns a boolean value indicating whether the user has chosen to print or not.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.print.PrinterJob;
+
+public class Main {
+    public static void main(String[] args) {
+        PrinterJob job = PrinterJob.getPrinterJob();
+        boolean doPrint = job.printDialog();
+        System.out.println("User chose to print: " + doPrint);
+    }
+}
+```
+
+In this code snippet, we first get a `PrinterJob` object using `PrinterJob.getPrinterJob()`. Then we call the `printDialog()` method on this object. This method displays a print dialog box to the user and returns `true` if the user has chosen to print, and `false` otherwise. The result is then printed to the console.
+================================================================
+
+Sample: 3 PrinterJob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use PrintService getPrintService() from java.awt.print.PrinterJob
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getPrintService()` method in `java.awt.print.PrinterJob` is used to get the `PrintService` object associated with the printer job.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.awt.print.PrinterJob;
+import java.awt.print.PrintService;
+
+public class Main {
+    public static void main(String[] args) {
+        PrinterJob printerJob = PrinterJob.getPrinterJob();
+        PrintService printService = printerJob.getPrintService();
+        System.out.println(printService);
+    }
+}
+```
+
+In this code snippet, we first get the `PrinterJob` object using `PrinterJob.getPrinterJob()`. Then we get the `PrintService` object associated with the printer job using `printerJob.getPrintService()`. Finally, we print the `PrintService` object to the console.
+
+Please note that this code snippet will print the `PrintService` object associated with the default printer. If you want to get the `PrintService` object for a specific printer, you would need to specify the printer name or index.
+================================================================
+

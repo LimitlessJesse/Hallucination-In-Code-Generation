@@ -1,0 +1,40 @@
+Sample: JMXPrincipal_6
+----------------------------------------------------------------
+output:
+./javax_management_remote/javaFiles/JMXPrincipal_6.java:5: error: constructor JMXPrincipal in class JMXPrincipal cannot be applied to given types;
+        JMXPrincipal principal1 = new JMXPrincipal("user1", "password1".toCharArray());
+                                  ^
+  required: String
+  found:    String,char[]
+  reason: actual and formal argument lists differ in length
+./javax_management_remote/javaFiles/JMXPrincipal_6.java:6: error: constructor JMXPrincipal in class JMXPrincipal cannot be applied to given types;
+        JMXPrincipal principal2 = new JMXPrincipal("user1", "password1".toCharArray());
+                                  ^
+  required: String
+  found:    String,char[]
+  reason: actual and formal argument lists differ in length
+./javax_management_remote/javaFiles/JMXPrincipal_6.java:7: error: constructor JMXPrincipal in class JMXPrincipal cannot be applied to given types;
+        JMXPrincipal principal3 = new JMXPrincipal("user2", "password2".toCharArray());
+                                  ^
+  required: String
+  found:    String,char[]
+  reason: actual and formal argument lists differ in length
+3 errors
+
+
+================================================================
+
+Sample: JMXPrincipal_23
+----------------------------------------------------------------
+stdout:
+JMXPrincipal:  username
+
+================================================================
+
+Sample: JMXServiceURL_6
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+

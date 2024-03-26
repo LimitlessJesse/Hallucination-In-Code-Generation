@@ -1,0 +1,300 @@
+Sample: 0 HTMLEditorKit.ParserCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void handleText(char[] text, int pos) from javax.swing.text.html.HTMLEditorKit.ParserCallback
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `handleText(char[] text, int pos)` method is a part of the `ParserCallback` interface in the `javax.swing.text.html` package. It is used to handle text data during the parsing of HTML content.
+
+Here is a simple example of how you can use it:
+
+```java
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.parser.ParserDelegator;
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><p>Hello, World!</p></body></html>";
+        ParserDelegator delegator = new ParserDelegator();
+        HTMLEditorKit kit = new HTMLEditorKit();
+        kit.getViewFactory().addView(new HTMLEditorKit.ParserCallback() {
+            @Override
+            public void handleText(char[] text, int pos) {
+                System.out.println(new String(text));
+            }
+        });
+        try {
+            delegator.parse(new StringReader(html), kit.createReader(new StringReader(html)), true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are creating a new `ParserDelegator` and `HTMLEditorKit`. We then add a `ParserCallback` to the `HTMLEditorKit` that prints the text data it receives. Finally, we parse the HTML content using the `ParserDelegator` and `HTMLEditorKit`.
+
+Please note that this is a very basic example and does not cover all the possible scenarios that can occur during the parsing process.
+================================================================
+
+Sample: 1 HTMLEditorKit.ParserCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void handleStartTag(HTML.Tag t, MutableAttributeSet a, int pos) from javax.swing.text.html.HTMLEditorKit.ParserCallback
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `handleStartTag` method from `javax.swing.text.html.HTMLEditorKit.ParserCallback`:
+
+```java
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.parser.ParserDelegator;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello, World!</h1></body></html>";
+        List<String> tags = new ArrayList<>();
+
+        HTMLEditorKit.ParserCallback parserCallback = new HTMLEditorKit.ParserCallback() {
+            @Override
+            public void handleStartTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                if (t == HTML.Tag.BODY) {
+                    tags.add("body");
+                } else if (t == HTML.Tag.H1) {
+                    tags.add("h1");
+                }
+            }
+        };
+
+        ParserDelegator delegator = new ParserDelegator();
+        delegator.parse(new StringReader(html), parserCallback, true);
+
+        System.out.println("Found tags: " + tags);
+    }
+}
+```
+
+In this code, we are creating a `ParserCallback` that will be called whenever a start tag is encountered in the HTML. If the tag is `BODY` or `H1`, we add it to the list of tags. We then use a `ParserDelegator` to parse the HTML string, passing our `ParserCallback`.
+
+Please note that this is a very basic example and does not handle all possible HTML tags or attributes. In a real-world application, you would need to handle more complex HTML structures and attributes.
+================================================================
+
+Sample: 2 HTMLEditorKit.ParserCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void handleEndTag(HTML.Tag t, int pos) from javax.swing.text.html.HTMLEditorKit.ParserCallback
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how you can use the `handleEndTag` method from `javax.swing.text.html.HTMLEditorKit.ParserCallback`:
+
+```java
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.parser.ParserDelegator;
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><p>Hello, World!</p></body></html>";
+        ParserDelegator delegator = new ParserDelegator();
+        HTMLEditorKit kit = new HTMLEditorKit();
+        kit.setParser(delegator);
+        kit.setOut(new HTMLEditorKit.ParserCallback() {
+            @Override
+            public void handleEndTag(HTML.Tag t, int pos) {
+                System.out.println("End tag: " + t.toString() + " at position: " + pos);
+            }
+        });
+        try {
+            StringReader reader = new StringReader(html);
+            kit.parse(reader, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are parsing an HTML string and printing the end tags as they are encountered. The `handleEndTag` method is called for each end tag in the HTML string. The `t` parameter is the tag that was encountered, and the `pos` parameter is the position in the HTML string where the tag was found.
+================================================================
+
+Sample: 3 HTMLEditorKit.ParserCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void handleSimpleTag(HTML.Tag t, MutableAttributeSet a, int pos) from javax.swing.text.html.HTMLEditorKit.ParserCallback
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how you can use the `handleSimpleTag` method from `javax.swing.text.html.HTMLEditorKit.ParserCallback`.
+
+```java
+import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.parser.ParserDelegator;
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><p>Hello, World!</p></body></html>";
+        ParserDelegator delegator = new ParserDelegator();
+        delegator.parse(new HTMLEditorKit.ParserCallback() {
+            @Override
+            public void handleSimpleTag(HTML.Tag t, MutableAttributeSet a, int pos) {
+                System.out.println("Simple tag: " + t.toString());
+            }
+        }, new StringReader(html), true);
+    }
+}
+```
+
+In this example, we are parsing an HTML string and printing out the simple tags (like `<p>`) that are found in the HTML.
+
+Please note that you need to have the necessary permissions and imports to run this code. Also, this is a very basic example and does not handle all possible HTML tags or attributes. For a more comprehensive example, you would need to extend the `ParserCallback` class and override other methods as well.
+================================================================
+
+Sample: 4 StyleSheet
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void addRule(String rule) from javax.swing.text.html.StyleSheet
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `addRule(String rule)` method is part of the `StyleSheet` class in the `javax.swing.text.html` package. This method is used to add a new rule to the style sheet.
+
+Here is a complete code snippet that demonstrates how to use this method:
+
+```java
+import javax.swing.text.html.StyleSheet;
+
+public class Main {
+    public static void main(String[] args) {
+        StyleSheet styleSheet = new StyleSheet();
+        styleSheet.addRule("body { color: red; }");
+    }
+}
+```
+
+In this code snippet, we create a new `StyleSheet` object and then use the `addRule` method to add a new rule to the style sheet. The rule we add is "body { color: red; }", which means that the text inside the body of the HTML document will be displayed in red.
+
+Please note that this is a very basic example and does not involve any GUI or HTML rendering. For a more complete example, you would need to use a `JEditorPane` or `HTMLEditorKit` to display the HTML content with the applied styles.
+================================================================
+

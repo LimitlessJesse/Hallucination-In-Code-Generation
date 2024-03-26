@@ -1,0 +1,172 @@
+Sample: 0 CalendarDataProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.CalendarDataProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 1 CalendarNameProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.CalendarNameProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+
+Note: The above methods are not inherent from its parent class. They are specific to the CalendarNameProvider class.
+================================================================
+
+Sample: 2 CurrencyNameProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.CurrencyNameProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 LocaleNameProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.LocaleNameProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 4 LocaleServiceProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.LocaleServiceProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Locale getLocale()`: This method returns the locale associated with this provider.
+
+2. `List<Locale> getAvailableLocales()`: This method returns a list of all locales supported by this provider.
+
+3. `List<String> getAvailableLanguageTags()`: This method returns a list of all language tags supported by this provider.
+
+4. `List<String> getAvailableCountryCodes()`: This method returns a list of all country codes supported by this provider.
+
+5. `List<String> getAvailableScriptCodes()`: This method returns a list of all script codes supported by this provider.
+
+6. `List<String> getAvailableCurrencyCodes()`: This method returns a list of all currency codes supported by this provider.
+
+7. `List<String> getAvailableCalendarTypes()`: This method returns a list of all calendar types supported by this provider.
+
+8. `List<String> getAvailableTimeZoneIDs()`: This method returns a list of all time zone IDs supported by this provider.
+
+9. `List<String> getAvailableDisplayLanguages()`: This method returns a list of all display languages supported by this provider.
+
+10. `List<String> getAvailableDisplayCountries()`: This method returns a list of all display countries supported by this provider.
+
+11. `List<String> getAvailableDisplayScripts()`: This method returns a list of all display scripts supported by this provider.
+
+12. `List<String> getAvailableDisplayVariants()`: This method returns a list of all display variants supported by this provider.
+
+13. `List<String> getAvailableDisplayRegions()`: This method returns a list of all display regions supported by this provider.
+
+14. `List<String> getAvailableDisplayLanguages(Locale locale)`: This method returns a list of all display languages supported by this provider for the specified locale.
+
+15. `List<String> getAvailableDisplayCountries(Locale locale)`: This method returns a list of all display countries supported by this provider for the specified locale.
+
+16. `List<String> getAvailableDisplayScripts(Locale locale)`: This method returns a list of all display scripts supported by this provider for the specified locale.
+
+17. `List<String> getAvailableDisplayVariants(Locale locale)`: This method returns a list of all display variants supported by this provider for the specified locale.
+
+18. `List<String> getAvailableDisplayRegions(Locale locale)`: This method returns a list of all display regions supported by this provider for the specified locale.
+
+19. `List<String> getAvailableDisplayLanguages(String languageTag)`: This method returns a list of all display languages supported by this provider for the specified language tag.
+
+20. `List<String> getAvailableDisplayCountries(String languageTag)`: This method returns a list of all display countries supported by this provider for the specified language tag.
+
+21. `List<String> getAvailableDisplayScripts(String languageTag)`: This method returns a list of all display scripts supported by this provider for the specified language tag.
+
+22. `List<String> getAvailableDisplayVariants(String languageTag)`: This method returns a list of all display variants supported by this provider for the specified language tag.
+
+23. `List<String> getAvailableDisplayRegions(String languageTag)`: This method returns a list of all display regions supported by this provider for the specified language tag.
+================================================================
+
+Sample: 5 TimeZoneNameProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.spi.TimeZoneNameProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+2. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+5. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+================================================================
+

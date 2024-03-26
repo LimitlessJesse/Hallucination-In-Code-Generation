@@ -1,0 +1,26 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Clipboard,1,"void setContents(Transferable contents, ClipboardOwner owner)",True
+0,Clipboard,2,Transferable getContents(Object requestor),True
+0,Clipboard,3,"Transferable getContents(Object requestor, Clipboard clipboard)",False
+0,Clipboard,4,"Transferable getContents(Object requestor, Clipboard clipboard, Transferable contents)",False
+0,Clipboard,5,"void requestContents(Object requestor, Clipboard clipboard, Transferable contents)",False
+1,DataFlavor,1,boolean isFlavorSupported(DataFlavor flavor),False
+1,DataFlavor,2,DataFlavor[] getAllFlavors(),False
+1,DataFlavor,3,DataFlavor getRepresentationClass(),False
+1,DataFlavor,4,String getHumanPresentableName(),True
+1,DataFlavor,5,String getMimeType(),True
+2,FlavorEvent,1,FlavorEvent(Flavor flavor),False
+2,FlavorEvent,2,Flavor getFlavor(),False
+2,FlavorEvent,3,void consume(),False
+2,FlavorEvent,4,void reset(),False
+2,FlavorEvent,5,void setSource(Object source),False
+3,StringSelection,1,StringSelection(String string),False
+3,StringSelection,2,getTransferData(DataFlavor flavor),False
+3,StringSelection,3,getTransferDataFlavors(),False
+3,StringSelection,4,isDataFlavorSupported(DataFlavor flavor),False
+3,StringSelection,5,"setContents(Transferable contents, DataFlavor[] flavors)",False
+4,SystemFlavorMap,1,boolean contains(Object o),False
+4,SystemFlavorMap,2,boolean remove(Object o),False
+4,SystemFlavorMap,3,boolean addAll(Collection<? extends E> c),False
+4,SystemFlavorMap,4,boolean removeAll(Collection<?> c),False
+4,SystemFlavorMap,5,boolean retainAll(Collection<?> c),False

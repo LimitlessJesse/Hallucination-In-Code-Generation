@@ -1,0 +1,1389 @@
+Sample: 0 BufferedInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.BufferedInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the BufferedInputStream class in Java:
+
+1. `int read()`: This method reads the next byte of data from the input stream. It returns the next byte of data, or -1 if the end of the stream is reached.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array b. It returns the total number of bytes read into the buffer, or -1 if there is no more data because the end of the stream has been reached.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes. It returns the total number of bytes read into the buffer, or -1 if there is no more data because the end of the stream has been reached.
+
+4. `long skip(long n)`: This method skips and discards n bytes of data from the input stream.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 1 BufferedOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.BufferedOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public BufferedOutputStream(OutputStream out)`: This constructor creates a new buffered output stream to write data to the specified underlying output stream.
+
+2. `public void write(int b)`: This method writes the specified byte to this buffered output stream.
+
+3. `public void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+
+4. `public void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+5. `public void flush()`: This method flushes this buffered output stream.
+================================================================
+
+Sample: 2 BufferedReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.BufferedReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads a single character. If the end of the stream has been reached, it returns -1.
+
+2. `int read(char[] cbuf)`: This method reads characters into a portion of an array.
+
+3. `String readLine()`: This method reads a line of text. A line is considered to be terminated by any one of a line feed ('\n'), a carriage return ('\r'), or a carriage return followed immediately by a linefeed.
+
+4. `long skip(long n)`: This method skips characters.
+
+5. `boolean ready()`: This method tests if the stream is ready to be read.
+================================================================
+
+Sample: 3 BufferedWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.BufferedWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean newLine()`: This method writes a line separator. The line separator string is defined by the system property line.separator, and is not necessarily a single newline ('\n') character.
+
+2. `void write(int c)`: This method writes a single character.
+
+3. `void write(char[] cbuf, int off, int len)`: This method writes an array of characters.
+
+4. `void write(String s, int off, int len)`: This method writes a portion of a string.
+
+5. `void flush()`: This method flushes the stream. It forces any buffered output bytes to be written out.
+================================================================
+
+Sample: 4 ByteArrayInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ByteArrayInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 5 ByteArrayOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ByteArrayOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int size()`: Returns the number of elements in this list.
+2. `public boolean isEmpty()`: Returns true if this list contains no elements.
+3. `public boolean contains(Object o)`: Returns true if this list contains the specified element.
+4. `public byte[] toByteArray()`: Returns a newly allocated byte array containing the elements of this ByteArrayOutputStream.
+5. `public void write(int b)`: Writes the specified byte to this byte array output stream.
+================================================================
+
+Sample: 6 CharArrayReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.CharArrayReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array.
+
+2. `public int read()`: This method reads a single character.
+
+3. `public long skip(long n)`: This method skips characters.
+
+4. `public boolean ready()`: This method tests if the stream is ready to be read.
+
+5. `public void close()`: This method closes the stream and releases any system resources associated with it.
+================================================================
+
+Sample: 7 CharArrayWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.CharArrayWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `CharArrayWriter()`: This is the constructor of CharArrayWriter class. It creates a new CharArrayWriter so that it can be used to create a string buffer.
+
+2. `void write(int c)`: This method writes a single character.
+
+3. `void write(char[] cbuf)`: This method writes an array of characters.
+
+4. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+
+5. `void writeTo(Writer out)`: This method writes the complete contents of this character-output stream to another output stream.
+================================================================
+
+Sample: 8 Console
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.Console package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean readLine()`: This method reads a line of text from the console.
+2. `char[] readPassword()`: This method reads a password from the console.
+3. `String readLine(String fmt, Object... args)`: This method reads a line of text from the console using the specified format string and arguments.
+4. `void printf(String format, Object... args)`: This method prints a formatted string to the console.
+5. `void format(String format, Object... args)`: This method formats the specified string using the specified arguments.
+================================================================
+
+Sample: 9 DataInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.DataInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream.
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+4. `String readUTF()`: This method reads a string from the input stream.
+5. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+================================================================
+
+Sample: 10 DataOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.DataOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void write(int b)`: Writes the specified byte to the output stream.
+2. `void writeBoolean(boolean v)`: Writes a boolean to the underlying output stream as a 1-byte value.
+3. `void writeByte(int v)`: Writes a byte to the output stream.
+4. `void writeBytes(String s)`: Writes the string to the output stream.
+5. `void writeChar(int v)`: Writes a character to the output stream.
+6. `void writeChars(String s)`: Writes the string to the output stream.
+7. `void writeDouble(double v)`: Writes a double to the output stream.
+8. `void writeFloat(float v)`: Writes a float to the output stream.
+9. `void writeInt(int v)`: Writes an integer to the output stream.
+10. `void writeLong(long v)`: Writes a long to the output stream.
+11. `void writeShort(int v)`: Writes a short to the output stream.
+12. `void writeUTF(String str)`: Writes a string to the output stream.
+13. `void writeBytes(String s)`: Writes the string to the output stream.
+14. `void writeChars(String s)`: Writes the string to the output stream.
+15. `void writeUTF(String str)`: Writes a string to the output stream.
+================================================================
+
+Sample: 11 File
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.File package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean canRead()`: This method tests whether the file denoted by this abstract pathname can be read.
+
+2. `boolean canWrite()`: This method tests whether the file denoted by this abstract pathname can be written.
+
+3. `boolean createNewFile()`: This method creates a new, empty file denoted by this abstract pathname.
+
+4. `boolean delete()`: This method deletes the file or directory denoted by this abstract pathname.
+
+5. `boolean deleteOnExit()`: This method schedules this file or directory to be deleted when the virtual machine terminates.
+================================================================
+
+Sample: 12 FileDescriptor
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FileDescriptor package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileDescriptor getFD()`: This method returns the file descriptor associated with this file.
+
+2. `void setFD(FileDescriptor fd)`: This method sets the file descriptor associated with this file.
+
+3. `void sync()`: This method forces any buffered output for this file descriptor to be written out.
+
+4. `void syncForWrite(long position)`: This method forces any buffered output for this file descriptor to be written out.
+
+5. `void datasync()`: This method forces any metadata changes for this file descriptor to be written out.
+================================================================
+
+Sample: 13 FileInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FileInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileInputStream(File file)`: This constructor creates a FileInputStream that will read from the file represented by the specified File object.
+
+2. `FileInputStream(String name)`: This constructor creates a FileInputStream that will read from the file represented by the specified file name.
+
+3. `int read()`: This method reads the next byte of data from the input stream.
+
+4. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+
+5. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+
+6. `void close()`: This method closes the input stream and releases any system resources associated with it.
+================================================================
+
+Sample: 14 FileOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FileOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileOutputStream(File file)`: This constructor creates a FileOutputStream to write to the specified File.
+
+2. `FileOutputStream(String name)`: This constructor creates a FileOutputStream to write to the specified file.
+
+3. `FileOutputStream(File file, boolean append)`: This constructor creates a FileOutputStream to write to the specified file, with the specified boolean indicating whether to append the data rather than overwrite it.
+
+4. `FileOutputStream(String name, boolean append)`: This constructor creates a FileOutputStream to write to the specified file, with the specified boolean indicating whether to append the data rather than overwrite it.
+
+5. `void write(int b)`: This method writes the specified byte to this output stream.
+
+6. `void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+
+7. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+8. `void flush()`: This method flushes this output stream and forces any buffered output bytes to be written out.
+
+9. `void close()`: This method closes this output stream and releases any system resources associated with this stream.
+================================================================
+
+Sample: 15 FilePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FilePermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean checkNew()`: This method checks whether the permission allows the creation of new files or directories.
+
+2. `boolean implies(Permission p)`: This method checks whether the permission implies the specified permission.
+
+3. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+4. `int hashCode()`: This method returns the hash code value for this object.
+
+5. `String getActions()`: This method returns the actions that this permission allows.
+================================================================
+
+Sample: 16 FileReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FileReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileReader(String fileName)`: This method creates a FileReader object given the name of the file to read from.
+
+2. `int read()`: This method reads a single character.
+
+3. `int read(char[] cbuf)`: This method reads characters into a portion of an array.
+
+4. `int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array.
+
+5. `void close()`: This method closes the stream and releases any system resources associated with it.
+================================================================
+
+Sample: 17 FileWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FileWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileWriter(File file)`: This constructor creates a FileWriter object given a File object.
+
+2. `FileWriter(String fileName)`: This constructor creates a FileWriter object given a string that represents the name of the file to write.
+
+3. `void write(int c)`: This method writes a single character.
+
+4. `void write(char[] cbuf)`: This method writes an array of characters.
+
+5. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+================================================================
+
+Sample: 18 FilterInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FilterInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of 5 useful methods from the `java.io.FilterInputStream` package:
+
+1. `int read()`: This method reads the next byte of data from the input stream. It returns the next byte of data, or -1 if the end of the stream is reached.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array b. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+4. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 19 FilterOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FilterOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of 5 useful methods from the `java.io.FilterOutputStream` package:
+
+1. `public void write(int b)`: This method writes the specified byte to this output stream.
+
+2. `public void write(byte[] b)`: This method writes the specified byte array to this output stream.
+
+3. `public void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to this output stream.
+
+4. `public void flush()`: This method forces any buffered output bytes to be written out.
+
+5. `public void close()`: This method closes this output stream and releases any system resources associated with this stream.
+================================================================
+
+Sample: 20 FilterReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FilterReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.io.FilterReader` package:
+
+1. `int read()`: This method reads a single character.
+2. `int read(char[] cbuf)`: This method reads characters into a portion of an array.
+3. `long skip(long n)`: This method skips characters.
+4. `boolean ready()`: This method tests if a stream is ready to be read.
+5. `void close()`: This method closes the stream and releases any system resources associated with it.
+================================================================
+
+Sample: 21 FilterWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.FilterWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.io.FilterWriter` package:
+
+1. `void write(int c)`: This method writes a single character.
+2. `void write(char[] cbuf)`: This method writes an array of characters.
+3. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+4. `void write(String str)`: This method writes a string.
+5. `void write(String str, int off, int len)`: This method writes a portion of a string.
+
+Each method has a specific return type and parameters. For example, `void write(int c)` returns void and takes an integer as a parameter.
+================================================================
+
+Sample: 22 InputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.InputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream. It returns the next byte of data, or -1 if the end of the stream is reached.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array b. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+4. `long skip(long n)`: This method skips over and discards n bytes of data from the input stream. It returns the actual number of bytes skipped.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 23 InputStreamReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.InputStreamReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.io.InputStreamReader` package:
+
+1. `int read()`: This method reads a single character. It returns the character read, or -1 if the end of the stream has been reached.
+
+2. `int read(char[] cbuf)`: This method reads characters into a portion of an array. It returns the number of characters read, or -1 if the end of the stream has been reached.
+
+3. `int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array. It returns the number of characters read, or -1 if the end of the stream has been reached.
+
+4. `long skip(long n)`: This method skips characters. It returns the number of characters that were skipped.
+
+5. `boolean ready()`: This method tells whether this stream is ready to be read.
+
+Each method has its own return type and parameters. For example, the `read()` method returns an integer, which is the character read, or -1 if the end of the stream has been reached. The `read(char[] cbuf)` method reads characters into a portion of an array and returns the number of characters read. The `skip(long n)` method skips characters and returns the number of characters that were skipped. The `ready()` method returns a boolean value indicating whether the stream is ready to be read.
+================================================================
+
+Sample: 24 LineNumberInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.LineNumberInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getLineNumber()`: This method returns the current line number.
+2. `void setLineNumber(int lineNumber)`: This method sets the current line number.
+3. `int read()`: This method reads a single character.
+4. `int read(byte[] b)`: This method reads some number of bytes and stores them into byte array.
+5. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes.
+================================================================
+
+Sample: 25 LineNumberReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.LineNumberReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the 5 most useful methods from the java.io.LineNumberReader package:
+
+1. `int getLineNumber()`: This method returns the current line number.
+
+2. `String readLine()`: This method reads a line of text. A line is considered to be terminated by any one of a line feed ('\n'), a carriage return ('\r'), or a carriage return followed immediately by a linefeed.
+
+3. `void setLineNumber(int lineNumber)`: This method sets the current line number.
+
+4. `void close()`: This method closes the stream and releases any system resources associated with it.
+
+5. `boolean ready()`: This method tests if a stream is ready to be read.
+================================================================
+
+Sample: 26 ObjectInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the 5 most useful methods from the java.io.ObjectInputStream package:
+
+1. `readObject()`: This method reads an object from the input stream.
+
+2. `readUnshared()`: This method reads an object from the input stream that is not shared.
+
+3. `readObjectOverride()`: This method reads an object from the input stream and overrides the default readObject method.
+
+4. `readUnsharedOverride()`: This method reads an object from the input stream that is not shared and overrides the default readUnshared method.
+
+5. `readFields()`: This method reads the fields of an object from the input stream.
+
+Each method has a different purpose and is used in different scenarios. For example, `readObject()` is used to read an object from the input stream, `readUnshared()` is used to read an object that is not shared, and `readFields()` is used to read the fields of an object.
+================================================================
+
+Sample: 27 ObjectInputStream.GetField
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectInputStream.GetField package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 28 ObjectOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `writeObject(Object obj)`: This method writes the specified object to the ObjectOutputStream.
+
+2. `write(int b)`: This method writes the specified byte to the underlying output stream.
+
+3. `write(byte[] b)`: This method writes the specified byte array to the underlying output stream.
+
+4. `write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to the underlying output stream.
+
+5. `flush()`: This method flushes the stream. It forces any buffered output bytes to be written out to the underlying stream.
+================================================================
+
+Sample: 29 ObjectOutputStream.PutField
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectOutputStream.PutField package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void put(String name, int value)`: This method writes an int value to the object output stream.
+
+2. `void put(String name, long value)`: This method writes a long value to the object output stream.
+
+3. `void put(String name, float value)`: This method writes a float value to the object output stream.
+
+4. `void put(String name, double value)`: This method writes a double value to the object output stream.
+
+5. `void put(String name, boolean value)`: This method writes a boolean value to the object output stream.
+
+6. `void put(String name, char value)`: This method writes a char value to the object output stream.
+
+7. `void put(String name, String value)`: This method writes a String value to the object output stream.
+
+8. `void put(String name, Object value)`: This method writes an Object value to the object output stream.
+
+9. `void put(String name, Object[] array)`: This method writes an array of Objects to the object output stream.
+
+10. `void put(String name, Object value, Class<?> class_name)`: This method writes an Object value to the object output stream with a specified class.
+================================================================
+
+Sample: 30 ObjectStreamClass
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectStreamClass package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static ObjectStreamClass forName(String className)`: This method returns an ObjectStreamClass object for the class with the specified name.
+
+2. `public static ObjectStreamClass forClass(Class<?> cl)`: This method returns an ObjectStreamClass object for the specified class.
+
+3. `public String getName()`: This method returns the name of the class represented by this ObjectStreamClass object.
+
+4. `public Class<?> getClass()`: This method returns the Class object for the class represented by this ObjectStreamClass object.
+
+5. `public ObjectStreamField[] getFields()`: This method returns an array of ObjectStreamField objects representing the fields of the class represented by this ObjectStreamClass object.
+================================================================
+
+Sample: 31 ObjectStreamField
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.ObjectStreamField package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ObjectStreamField(String name, Class<?> type)`: This constructor creates a new ObjectStreamField with the specified name and type.
+
+2. `String getName()`: This method returns the name of this ObjectStreamField.
+
+3. `Class<?> getType()`: This method returns the type of this ObjectStreamField.
+
+4. `void setName(String name)`: This method sets the name of this ObjectStreamField.
+
+5. `void setType(Class<?> type)`: This method sets the type of this ObjectStreamField.
+================================================================
+
+Sample: 32 OutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.OutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of 5 useful methods from the java.io.OutputStream package:
+
+1. `void write(int b)`: Writes the specified byte to this output stream.
+2. `void write(byte[] b)`: Writes b.length bytes from the specified byte array to this output stream.
+3. `void write(byte[] b, int off, int len)`: Writes len bytes from the specified byte array starting at offset off to this output stream.
+4. `void flush()`: Flushes this output stream and forces any buffered output bytes to be written out.
+5. `void close()`: Closes this output stream and releases any system resources associated with this stream.
+================================================================
+
+Sample: 33 OutputStreamWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.OutputStreamWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void write(int c)`: This method writes a single character.
+2. `void write(char[] cbuf)`: This method writes an array of characters.
+3. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+4. `void write(String str)`: This method writes a string.
+5. `void write(String str, int off, int len)`: This method writes a portion of a string.
+================================================================
+
+Sample: 34 PipedInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PipedInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+
+2. `public void connect(PipedOutputStream sink)`: This method connects this piped input stream to the specified piped output stream.
+
+3. `public void close()`: This method closes the input stream and releases any system resources associated with it.
+
+4. `public void connect(PipedOutputStream sink, int pipeSize)`: This method connects this piped input stream to the specified piped output stream with the specified pipe size.
+
+5. `public int read()`: This method reads the next byte of data from the input stream.
+================================================================
+
+Sample: 35 PipedOutputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PipedOutputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PipedOutputStream()`: This is the constructor of the PipedOutputStream class.
+
+2. `void connect(PipedInputStream src)`: This method connects this output stream to the input stream of the argument.
+
+3. `void disconnect()`: This method disconnects this output stream from its input stream.
+
+4. `void write(int b)`: This method writes the specified byte to this piped output stream.
+
+5. `void write(byte[] b)`: This method writes b.length bytes from the specified byte array to this output stream.
+================================================================
+
+Sample: 36 PipedReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PipedReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PipedReader()`: This is a constructor of PipedReader class.
+
+2. `read()`: This method reads a single character.
+
+3. `ready()`: This method tests if this input stream is ready to be read without blocking.
+
+4. `close()`: This method closes the input stream and releases any system resources associated with it.
+
+5. `connect(PipedWriter src)`: This method connects this piped input stream to the given piped output stream.
+================================================================
+
+Sample: 37 PipedWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PipedWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void connect(PipedReader src)`: This method connects this piped writer to the specified piped reader.
+2. `void flush()`: This method flushes the piped writer.
+3. `void write(int c)`: This method writes a single character.
+4. `void write(char[] buf)`: This method writes an array of characters.
+5. `void write(char[] buf, int off, int len)`: This method writes a portion of an array of characters.
+6. `void write(String s)`: This method writes a string.
+7. `void write(String s, int off, int len)`: This method writes a portion of a string.
+================================================================
+
+Sample: 38 PrintStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PrintStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void print(String s)`: This method prints a string.
+2. `void print(char c)`: This method prints a character.
+3. `void print(int i)`: This method prints an integer.
+4. `void print(double d)`: This method prints a double.
+5. `void print(float f)`: This method prints a float.
+6. `void print(boolean b)`: This method prints a boolean.
+7. `void print(char[] s)`: This method prints a character array.
+8. `void print(Object obj)`: This method prints an object.
+9. `void println(String s)`: This method prints a string followed by a newline.
+10. `void println(char c)`: This method prints a character followed by a newline.
+11. `void println(int i)`: This method prints an integer followed by a newline.
+12. `void println(double d)`: This method prints a double followed by a newline.
+13. `void println(float f)`: This method prints a float followed by a newline.
+14. `void println(boolean b)`: This method prints a boolean followed by a newline.
+15. `void println(char[] s)`: This method prints a character array followed by a newline.
+16. `void println(Object obj)`: This method prints an object followed by a newline.
+17. `void println()`: This method prints a newline.
+18. `void printf(String format, Object... args)`: This method prints a formatted string.
+19. `void printf(Locale l, String format, Object... args)`: This method prints a formatted string using a specific locale.
+20. `void format(String format, Object... args)`: This method formats and prints a string.
+================================================================
+
+Sample: 39 PrintWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PrintWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void print(String s)`: This method prints a string.
+2. `void print(boolean b)`: This method prints a boolean.
+3. `void print(char c)`: This method prints a character.
+4. `void print(int i)`: This method prints an integer.
+5. `void print(double d)`: This method prints a double.
+6. `void print(char[] s)`: This method prints a character array.
+7. `void print(Object obj)`: This method prints an object.
+8. `void println(String s)`: This method prints a string followed by a line separator.
+9. `void println(boolean b)`: This method prints a boolean followed by a line separator.
+10. `void println(char c)`: This method prints a character followed by a line separator.
+11. `void println(int i)`: This method prints an integer followed by a line separator.
+12. `void println(double d)`: This method prints a double followed by a line separator.
+13. `void println(char[] s)`: This method prints a character array followed by a line separator.
+14. `void println(Object obj)`: This method prints an object followed by a line separator.
+15. `void println()`: This method prints a line separator.
+================================================================
+
+Sample: 40 PushbackInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PushbackInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the input stream. It returns the next byte of data, or -1 if the end of the stream is reached.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array b. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the input stream into an array of bytes. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+4. `void unread(int b)`: This method pushes back the byte that has just been read from the input stream.
+
+5. `void close()`: This method closes the input stream and releases any system resources associated with it.
+================================================================
+
+Sample: 41 PushbackReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.PushbackReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the java.io.PushbackReader package:
+
+1. `int read()`: This method reads a single character.
+2. `int read(char[] cbuf)`: This method reads characters into a portion of an array.
+3. `int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array.
+4. `void unread(int c)`: This method pushes back a single character.
+5. `void unread(char[] buf, int off, int len)`: This method pushes back a portion of an array.
+
+Each method has its own return type and parameters. For example:
+
+- `int read()`: This method returns the character read, or -1 if the end of the stream has been reached.
+- `int read(char[] cbuf)`: This method reads characters into the specified array and returns the number of characters read.
+- `int read(char[] cbuf, int off, int len)`: This method reads characters into the specified portion of the array and returns the number of characters read.
+- `void unread(int c)`: This method does not return anything.
+- `void unread(char[] buf, int off, int len)`: This method does not return anything.
+================================================================
+
+Sample: 42 RandomAccessFile
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.RandomAccessFile package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read()`: This method reads the next byte of data from the file.
+2. `int read(byte[] b)`: This method reads some number of bytes from the file into an array of bytes.
+3. `int read(byte[] b, int off, int len)`: This method reads up to len bytes of data from the file into an array of bytes.
+4. `long skipBytes(long n)`: This method skips over and discards n bytes of data from the file.
+5. `void write(int b)`: This method writes the specified byte to the file.
+6. `void write(byte[] b)`: This method writes len bytes from the specified byte array to the file.
+7. `void write(byte[] b, int off, int len)`: This method writes len bytes from the specified byte array starting at offset off to the file.
+8. `void seek(long pos)`: This method sets the file-pointer offset, measured from the beginning of this file, at which the next read or write occurs.
+9. `long length()`: This method returns the length of the file in bytes.
+10. `void setLength(long newLength)`: This method sets the length of the file.
+11. `void close()`: This method closes the file.
+12. `void mark(int readlimit)`: This method sets a mark position in the file.
+13. `void reset()`: This method resets the file pointer to the last marked position.
+14. `boolean markSupported()`: This method tests if this file object supports the mark and reset methods.
+15. `void writeBytes(String s)`: This method writes the specified String to the file.
+16. `void writeChars(String s)`: This method writes the specified String to the file.
+17. `void writeUTF(String str)`: This method writes a UTF-encoded String to the file.
+18. `String readUTF()`: This method reads a UTF-encoded String from the file.
+19. `int readUnsignedByte()`: This method reads the next byte of data from the file as an unsigned byte.
+20. `void writeUnsignedByte(int v)`: This method writes the specified byte to the file as an unsigned byte.
+21. `int readInt()`: This method reads the next 4 bytes of data from the file into an int.
+22. `void writeInt(int v)`: This method writes the specified int to the file as four bytes.
+23. `long readLong()`: This method reads the next 8 bytes of data from the file into a long.
+24. `void writeLong(long v)`: This method writes the specified long to the file as eight bytes.
+25. `float readFloat()`: This method reads the next 4 bytes of data from the file into a float.
+26. `void writeFloat(float v)`: This method writes the specified float to the file as four bytes.
+27. `double readDouble()`: This method reads the next 8 bytes of data from the file into a double.
+28. `void writeDouble(double v)`: This method writes the specified double to the file as eight bytes.
+29. `boolean readBoolean()`: This method reads the next byte of data from the file as a boolean.
+30. `void writeBoolean(boolean v)`: This method writes the specified boolean to the file as one byte.
+31. `char readChar()`: This method reads the next 2 bytes of data from the file into a char.
+32. `void writeChar(int v)`: This method writes the specified char to the file as two bytes.
+33. `short readShort()`: This method reads the next 2 bytes of data from the file into a short.
+34. `void writeShort(int v)`: This method writes the specified short to the file as two bytes.
+35. `byte readByte()`: This method reads the next byte of data from the file as a byte.
+36. `void writeByte(int v)`: This method writes the specified byte to the file as one byte.
+37. `void newLine()`: This method writes a newline character to the file.
+38. `void writeBytes(String s)`: This method writes the specified String to the file.
+39. `void writeChars(String s)`: This method writes the specified String to the file.
+40. `void writeUTF(String str)`: This method writes a UTF-encoded String to the file.
+41. `String readUTF()`: This method reads a UTF-encoded String from the file.
+42. `int readUnsignedByte()`: This method reads the next byte of data from the file as an unsigned byte.
+43. `void writeUnsignedByte(int v)`: This method writes the specified byte to the file as an unsigned byte.
+44. `int readInt()`: This method reads the next 4 bytes of data from the file into an int.
+45. `void writeInt(int v)`: This method writes the specified int to the file as four bytes.
+46. `long readLong()`: This method reads the next 8 bytes of data from the file into a long.
+47. `void writeLong(long v)`: This method writes the specified long to the file as eight bytes.
+48. `float readFloat()`: This method reads the next 4 bytes of data from the file into a float.
+49. `void writeFloat(float v)`: This method writes the specified float to the file as four bytes.
+50. `double readDouble()`: This method reads the next 8 bytes of data from the file into a double.
+51. `void writeDouble(double v)`: This method writes the specified double to the file as eight bytes.
+52. `boolean readBoolean()`: This method reads the next
+================================================================
+
+Sample: 43 Reader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.Reader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array.
+
+2. `int read()`: This method reads a single character.
+
+3. `long skip(long n)`: This method skips characters.
+
+4. `boolean ready()`: This method tests if the stream is ready to be read.
+
+5. `void close()`: This method closes the stream and releases any system resources associated with it.
+================================================================
+
+Sample: 44 SequenceInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.SequenceInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here are the five most useful methods from the java.io.SequenceInputStream package:
+
+1. `public SequenceInputStream(Enumeration<? extends InputStream> e)`: This constructor creates a SequenceInputStream that reads from the specified input stream.
+
+2. `public boolean hasMoreElements()`: This method returns true if there are more streams to read.
+
+3. `public InputStream nextElement()`: This method returns the next input stream.
+
+4. `public int read()`: This method reads the next byte of data from the input stream.
+
+5. `public int read(byte[] b, int off, int len)`: This method reads some number of bytes from the input stream and stores them into the buffer array b.
+================================================================
+
+Sample: 45 SerializablePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.SerializablePermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object obj)`: Compares the specified object with this list for equality.
+2. `int hashCode()`: Returns the hash code value for this list.
+3. `String toString()`: Returns a string representation of this list.
+4. `Object clone()`: Returns a shallow copy of this `SerializablePermission` list.
+5. `void writeObject(java.io.ObjectOutputStream out)`: This method is used for custom serialization.
+================================================================
+
+Sample: 46 StreamTokenizer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.StreamTokenizer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `StreamTokenizer.nextToken()`: This method reads the next token from the input stream.
+
+2. `StreamTokenizer.sval`: This field is the string value of the current token.
+
+3. `StreamTokenizer.ttype`: This field is the type of the current token.
+
+4. `StreamTokenizer.lineno`: This field is the current line number.
+
+5. `StreamTokenizer.wordCount`: This field is the number of words read.
+================================================================
+
+Sample: 47 StringBufferInputStream
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.StringBufferInputStream package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods with their return types and parameters for the `java.io.StringBufferInputStream` package:
+
+1. `int read()`: This method reads the next byte of data from the input stream. It returns the next byte of data, or -1 if the end of the stream is reached.
+
+2. `int read(byte[] b)`: This method reads some number of bytes from the input stream and stores them into the byte array `b`. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+3. `int read(byte[] b, int off, int len)`: This method reads up to `len` bytes of data from the input stream into an array of bytes `b` starting at index `off`. It returns the total number of bytes read into the array, or -1 if the end of the stream has been reached.
+
+4. `long skip(long n)`: This method skips and discards the next `n` bytes of data from the input stream. It returns the number of bytes actually skipped.
+
+5. `int available()`: This method returns an estimate of the number of bytes that can be read (or skipped over) from the input stream without blocking.
+================================================================
+
+Sample: 48 StringReader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.StringReader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods with their return types and parameters for the `java.io.StringReader` package:
+
+1. `int read()`: This method reads a single character. It returns the character read, or -1 if the end of the stream has been reached.
+
+2. `int read(char[] cbuf, int off, int len)`: This method reads characters into a portion of an array. It returns the number of characters read, or -1 if the end of the stream has been reached.
+
+3. `long skip(long n)`: This method skips characters. It returns the number of characters that were skipped.
+
+4. `boolean ready()`: This method tells whether this stream is ready to be read.
+
+5. `void close()`: This method closes the stream and releases any system resources associated with it.
+================================================================
+
+Sample: 49 StringWriter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.StringWriter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+Here is a list of useful methods from the `java.io.StringWriter` package:
+
+1. `StringWriter()`: This is the constructor of the `StringWriter` class. It initializes a new StringWriter that uses a default-sized output buffer.
+
+2. `StringWriter(int initialSize)`: This is the constructor of the `StringWriter` class. It initializes a new StringWriter that uses an output buffer of the specified size.
+
+3. `void write(int c)`: This method writes a single character.
+
+4. `void write(char[] cbuf)`: This method writes an array of characters.
+
+5. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+
+6. `void write(String str)`: This method writes a string.
+
+7. `void write(String str, int off, int len)`: This method writes a portion of a string.
+
+8. `StringWriter append(CharSequence csq)`: This method appends the specified character sequence to this writer.
+
+9. `StringWriter append(CharSequence csq, int start, int end)`: This method appends a subsequence of the specified character sequence to this writer.
+
+10. `StringWriter append(char c)`: This method appends the specified character to this writer.
+
+11. `String toString()`: This method returns the current contents of the character sequence being written to the `StringWriter`.
+
+12. `void flush()`: This method flushes the stream.
+
+13. `void close()`: This method closes the stream, flushing it first.
+
+14. `void write(int c)`: This method writes a single character.
+
+15. `void write(char[] cbuf)`: This method writes an array of characters.
+
+16. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+
+17. `void write(String str)`: This method writes a string.
+
+18. `void write(String str, int off, int len)`: This method writes a portion of a string.
+
+19. `StringWriter append(CharSequence csq)`: This method appends the specified character sequence to this writer.
+
+20. `StringWriter append(CharSequence csq, int start, int end)`: This method appends a subsequence of the specified character sequence to this writer.
+
+21. `StringWriter append(char c)`: This method appends the specified character to this writer.
+
+22. `String toString()`: This method returns the current contents of the character sequence being written to the `StringWriter`.
+
+23. `void flush()`: This method flushes the stream.
+
+24. `void close()`: This method closes the stream, flushing it first.
+================================================================
+
+Sample: 50 Writer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.io.Writer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void write(int c)`: This method writes a single character.
+2. `void write(char[] cbuf)`: This method writes an array of characters.
+3. `void write(char[] cbuf, int off, int len)`: This method writes a portion of an array of characters.
+4. `void write(String str)`: This method writes a string.
+5. `void write(String str, int off, int len)`: This method writes a portion of a string.
+6. `void flush()`: This method flushes the stream.
+7. `void close()`: This method closes the stream, flushing it first.
+================================================================
+

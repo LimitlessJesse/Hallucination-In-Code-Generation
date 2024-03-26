@@ -1,0 +1,94 @@
+Sample: 0 ValidationEventCollector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean hasEvents() from javax.xml.bind.util.ValidationEventCollector
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hasEvents()` method in `javax.xml.bind.util.ValidationEventCollector` is used to check if there are any validation events collected. It returns `true` if there are events, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.bind.ValidationEvent;
+import javax.xml.bind.util.ValidationEventCollector;
+
+public class Main {
+    public static void main(String[] args) {
+        ValidationEventCollector collector = new ValidationEventCollector();
+        // Add some validation events
+        collector.add(new ValidationEvent() {
+            @Override
+            public ValidationEventLocator getLocator() {
+                return null;
+            }
+
+            @Override
+            public String getMessage() {
+                return null;
+            }
+
+            @Override
+            public String getLinkedException() {
+                return null;
+            }
+
+            @Override
+            public SourceLocator getLocator() {
+                return null;
+            }
+
+            @Override
+            public Throwable getLinkedException() {
+                return null;
+            }
+
+            @Override
+            public boolean isFatal() {
+                return false;
+            }
+
+            @Override
+            public boolean isAssociated() {
+                return false;
+            }
+
+            @Override
+            public String toString() {
+                return null;
+            }
+        });
+
+        // Check if there are any events
+        boolean hasEvents = collector.hasEvents();
+        System.out.println("Has events: " + hasEvents);
+    }
+}
+```
+
+In this code, we create a `ValidationEventCollector` and add a dummy `ValidationEvent` to it. Then we check if there are any events using the `hasEvents()` method and print the result.
+================================================================
+

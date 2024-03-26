@@ -1,0 +1,444 @@
+Sample: 0 AtomicBoolean
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicBoolean package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicBoolean(boolean initialValue)`: This constructor creates an AtomicBoolean with the given initial value.
+
+2. `boolean compareAndSet(boolean expect, boolean update)`: This method atomically sets the value to the given updated value if the current value == the expected value.
+
+3. `boolean get()`: This method atomically gets the current value.
+
+4. `void set(boolean newValue)`: This method atomically sets to the given value.
+
+5. `boolean weakCompareAndSet(boolean expect, boolean update)`: This method is similar to compareAndSet, but does not establish a happens-before relationship with other actions on this AtomicBoolean.
+================================================================
+
+Sample: 1 AtomicInteger
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicInteger package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int incrementAndGet()`: This method atomically increments the current value by one and then returns the updated value.
+
+2. `int getAndIncrement()`: This method atomically increments the current value by one and then returns the previous value.
+
+3. `int getAndAdd(int delta)`: This method atomically adds the given value to the current value and then returns the updated value.
+
+4. `boolean compareAndSet(int expect, int update)`: This method atomically sets the value to the given updated value if the current value == the expected value.
+
+5. `int get()`: This method atomically returns the current value.
+================================================================
+
+Sample: 2 AtomicIntegerArray
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicIntegerArray package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicIntegerArray(int length)`: This method creates a new AtomicIntegerArray of the given length, with all elements initially zero.
+
+2. `int get(int i)`: This method atomically gets the value at index i.
+
+3. `int getAndSet(int i, int newValue)`: This method atomically sets the value at index i to the given value and returns the old value.
+
+4. `int getAndIncrement(int i)`: This method atomically increments by one the value at index i and returns the old value.
+
+5. `int getAndDecrement(int i)`: This method atomically decrements by one the value at index i and returns the old value.
+
+6. `int getAndAdd(int i, int delta)`: This method atomically adds the given value to the current value at index i and returns the old value.
+
+7. `void set(int i, int newValue)`: This method atomically sets the value at index i to the given value.
+
+8. `boolean compareAndSet(int i, int expect, int update)`: This method atomically sets the value at index i to the given updated value if the current value at index i is equal to the expected value.
+
+9. `void lazySet(int i, int newValue)`: This method atomically sets the value at index i to the given value, but if the current value equals the given value, no action is performed.
+
+10. `int incrementAndGet(int i)`: This method atomically increments by one the value at index i and then returns the new value.
+
+11. `int decrementAndGet(int i)`: This method atomically decrements by one the value at index i and then returns the new value.
+
+12. `int addAndGet(int i, int delta)`: This method atomically adds the given value to the current value at index i and then returns the new value.
+
+13. `boolean weakCompareAndSet(int i, int expect, int update)`: This method atomically sets the value at index i to the given updated value if the current value at index i is equal to the expected value. This method is similar to compareAndSet, but it does not establish a happens-before relationship with other actions.
+================================================================
+
+Sample: 3 AtomicIntegerFieldUpdater
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicIntegerFieldUpdater package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean compareAndSet(Object expect, Object update)`: This method atomically sets the value to the given updated value if the current value == the expected value.
+
+2. `boolean weakCompareAndSet(Object expect, Object update)`: This method is similar to `compareAndSet`, but it does not require a happens-before relationship to the action of another thread that modifies the same AtomicIntegerFieldUpdater instance.
+
+3. `void set(Object obj, int newValue)`: This method sets the value of the field to the given updated value.
+
+4. `int get(Object obj)`: This method returns the current value of the field.
+
+5. `int getAndSet(Object obj, int newValue)`: This method atomically sets to the given value and returns the previous value.
+================================================================
+
+Sample: 4 AtomicLong
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicLong package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicLong(long initialValue)`: This is the constructor of AtomicLong class. It initializes the value to the given int value.
+
+2. `long get()`: This method returns the current value.
+
+3. `long getAndSet(long newValue)`: This method atomically sets to the given value and returns the previous value.
+
+4. `long getAndIncrement()`: This method atomically increments by one the current value and returns the previous value.
+
+5. `long getAndDecrement()`: This method atomically decrements by one the current value and returns the previous value.
+
+6. `long incrementAndGet()`: This method atomically increments by one the current value and returns the updated value.
+
+7. `long decrementAndGet()`: This method atomically decrements by one the current value and returns the updated value.
+
+8. `void lazySet(long newValue)`: This method sets the value to the given updated value only if the current value == the expected value.
+
+9. `boolean compareAndSet(long expect, long update)`: This method atomically sets the value to the given updated value only if the current value == the expected value.
+
+10. `long addAndGet(long delta)`: This method atomically adds the given value to the current value.
+
+11. `long getAndAdd(long delta)`: This method atomically adds the given value to the current value and returns the previous value.
+
+12. `long getAndUpdate(LongUnaryOperator updateFunction)`: This method atomically updates the current value with the results of the given function applied to the current value.
+
+13. `long updateAndGet(LongUnaryOperator updateFunction)`: This method atomically updates the current value with the results of the given function applied to the current value and returns the updated value.
+
+14. `long getAndAccumulate(long x, LongBinaryOperator accumulatorFunction)`: This method atomically updates the current value with the results of the given function applied to the current value and the given value.
+
+15. `long accumulateAndGet(long x, LongBinaryOperator accumulatorFunction)`: This method atomically updates the current value with the results of the given function applied to the current value and the given value and returns the updated value.
+================================================================
+
+Sample: 5 AtomicLongArray
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicLongArray package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicLongArray(int length)`: This method creates a new AtomicLongArray of the given length.
+
+2. `AtomicLongArray(long[] array)`: This method creates a new AtomicLongArray populated with the given array.
+
+3. `long get(int index)`: This method atomically gets the value at the given index.
+
+4. `void set(int index, long newValue)`: This method atomically sets the value at the given index to the given updated value.
+
+5. `long getAndSet(int index, long newValue)`: This method atomically sets the value at the given index to the given updated value and returns the old value.
+================================================================
+
+Sample: 6 AtomicLongFieldUpdater
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicLongFieldUpdater package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicLongFieldUpdater<T> newUpdater(Class<T> tClass, String fieldName)`: This method creates a new AtomicLongFieldUpdater for the specified class and field.
+
+2. `boolean compareAndSet(T t, long expect, long update)`: This method atomically updates the field of the given object to the given value if the current value is equal to the expected value.
+
+3. `long get(T t)`: This method atomically reads the current value of the field.
+
+4. `void set(T t, long newValue)`: This method atomically sets the field to the given value.
+
+5. `long getAndSet(T t, long newValue)`: This method atomically sets the field to the given value and returns the old value.
+
+6. `long getAndIncrement(T t)`: This method atomically increments the field by one and returns the old value.
+
+7. `long getAndDecrement(T t)`: This method atomically decrements the field by one and returns the old value.
+
+8. `long getAndAdd(T t, long delta)`: This method atomically adds the given value to the field and returns the old value.
+
+9. `long incrementAndGet(T t)`: This method atomically increments the field by one and returns the new value.
+
+10. `long decrementAndGet(T t)`: This method atomically decrements the field by one and returns the new value.
+
+11. `long addAndGet(T t, long delta)`: This method atomically adds the given value to the field and returns the new value.
+================================================================
+
+Sample: 7 AtomicMarkableReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicMarkableReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicMarkableReference(V initialValue, boolean initialMark)`: This is the constructor of AtomicMarkableReference class. It takes two parameters, initialValue and initialMark.
+
+2. `V getReference()`: This method returns the current reference.
+
+3. `boolean isMarked()`: This method returns the current mark.
+
+4. `boolean compareAndSet(V expectedReference, V newReference, boolean expectedMark, boolean newMark)`: This method atomically sets the value to the given updated value and mark if the current value is equal to the expected value.
+
+5. `void set(V newReference, boolean newMark)`: This method atomically sets the value to the given updated value and mark.
+================================================================
+
+Sample: 8 AtomicReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicReference(V initialValue)`: This constructor creates an AtomicReference with the given initial value.
+
+2. `V get()`: This method atomically retrieves the current value.
+
+3. `V getAndSet(V newValue)`: This method atomically sets to the given value and returns the previous value.
+
+4. `boolean compareAndSet(V expect, V update)`: This method atomically sets the value to the given updated value if the current value == the expected value.
+
+5. `void lazySet(V newValue)`: This method atomically sets the value to the given updated value, but if the current thread is interrupted, the value remains unchanged.
+================================================================
+
+Sample: 9 AtomicReferenceArray
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicReferenceArray package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicReferenceArray(int length)`: This is the constructor of AtomicReferenceArray class. It creates a new AtomicReferenceArray of the given length, with all elements initially null.
+
+2. `get(int index)`: This method returns the current value at the given index.
+
+3. `set(int index, V newValue)`: This method atomically sets the value at the given index to the given updated value.
+
+4. `lazySet(int index, V newValue)`: This method sets the value at the given index to the given updated value, and then returns the old value.
+
+5. `compareAndSet(int index, V expect, V update)`: This method atomically sets the value at the given index to the given update if the current value at that index is equal to the expected value.
+================================================================
+
+Sample: 10 AtomicReferenceFieldUpdater
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicReferenceFieldUpdater package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean compareAndSet(Object expect, Object update)`: This method atomically sets the value to the given updated value if the current value == the expected value.
+
+2. `boolean weakCompareAndSet(Object expect, Object update)`: This method is similar to `compareAndSet`, but it does not require a happens-before relationship to the action of another thread that modifies the same AtomicReference.
+
+3. `void set(Object newValue)`: This method sets the value of the AtomicReference to the given new value.
+
+4. `Object get()`: This method returns the current value of the AtomicReference.
+
+5. `Object getAndSet(Object newValue)`: This method atomically sets the value to the given updated value and returns the previous value.
+================================================================
+
+Sample: 11 AtomicStampedReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.AtomicStampedReference package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AtomicStampedReference(V initialRef, int initialStamp)`: This constructor initializes the reference and stamp to the given values.
+
+2. `boolean compareAndSet(V expectedReference, V newReference, int expectedStamp, int newStamp)`: This method atomically sets the reference and stamp to the given updated values if the current reference is equal to the expected reference and the stamp is equal to the expected stamp.
+
+3. `V getReference()`: This method atomically retrieves the current reference.
+
+4. `int getStamp()`: This method atomically retrieves the current stamp.
+
+5. `void set(V newReference, int newStamp)`: This method atomically sets the reference and stamp to the given values.
+================================================================
+
+Sample: 12 DoubleAccumulator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.DoubleAccumulator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DoubleAccumulator(DoubleBinaryOperator accumulatorFunction, double identity)`: This is the constructor of the DoubleAccumulator class. It takes two parameters: a DoubleBinaryOperator (a function that takes two doubles and returns a double) and a double (the identity of the accumulator function).
+
+2. `double get()`: This method returns the current value of the accumulator.
+
+3. `void accumulate(double x)`: This method accumulates the given value into the accumulator.
+
+4. `DoubleAccumulator combine(DoubleAccumulator other)`: This method combines the current accumulator with the given accumulator.
+
+5. `DoubleBinaryOperator getFunction()`: This method returns the accumulator function of the accumulator.
+================================================================
+
+Sample: 13 DoubleAdder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.DoubleAdder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DoubleAdder()`: This is the constructor of the DoubleAdder class. It initializes the value to 0.
+
+2. `void add(double x)`: This method adds the given double value to the current value.
+
+3. `void increment()`: This method increments the current value by 1.
+
+4. `void reset()`: This method resets the value to 0.
+
+5. `double sum()`: This method returns the current sum.
+================================================================
+
+Sample: 14 LongAccumulator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.LongAccumulator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LongAccumulator(LongBinaryOperator accumulatorFunction, long identity)`: This constructor creates a new LongAccumulator with the given accumulator function and identity.
+
+2. `void accumulate(long x)`: This method accumulates the given value into the accumulator.
+
+3. `long get()`: This method returns the current value of the accumulator.
+
+4. `void reset()`: This method resets the accumulator to its initial state.
+
+5. `LongBinaryOperator getFunction()`: This method returns the accumulator function of this accumulator.
+================================================================
+
+Sample: 15 LongAdder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.atomic.LongAdder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `LongAdder add(long x)`: This method adds the given value to this LongAdder.
+2. `long sum()`: This method returns the current sum.
+3. `void reset()`: This method resets the LongAdder to its initial state.
+4. `LongAdder increment()`: This method increments the LongAdder by one.
+5. `LongAdder add(long x)`: This method adds the given value to this LongAdder.
+================================================================
+

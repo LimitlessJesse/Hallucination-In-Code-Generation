@@ -1,0 +1,72 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,CallSite,1,CallSite call(),False
+0,CallSite,2,MethodType type(),True
+0,CallSite,3,MethodHandle asType(MethodType newType),False
+0,CallSite,4,MethodHandle asSpreader(),False
+0,CallSite,5,MethodHandle asCollector(),False
+0,CallSite,6,MethodHandle asVarArgsCollector(),False
+0,CallSite,7,MethodHandle asFixedArity(),False
+0,CallSite,8,MethodHandle asBridge(),False
+0,CallSite,9,MethodHandle asVarArgsBridge(),False
+0,CallSite,10,MethodHandle asExactly(MethodType newType),False
+0,CallSite,11,MethodHandle asSpreaderExactly(),False
+0,CallSite,12,MethodHandle asCollectorExactly(),False
+0,CallSite,13,MethodHandle asVarArgsCollectorExactly(),False
+0,CallSite,14,MethodHandle asFixedArityExactly(),False
+0,CallSite,15,MethodHandle asBridgeExactly(),False
+0,CallSite,16,MethodHandle asVarArgsBridgeExactly(),False
+1,ConstantCallSite,1,"ConstantCallSite(MethodHandle target, MethodType type)",False
+1,ConstantCallSite,2,MethodHandle getTarget(),True
+1,ConstantCallSite,3,MethodType getType(),False
+1,ConstantCallSite,4,Object invoke(Object... args),False
+1,ConstantCallSite,5,boolean isVarArgs(),False
+2,LambdaMetafactory,1,Object invoke(Object... args),False
+2,LambdaMetafactory,2,MethodType getLambdaMethodType(),False
+2,LambdaMetafactory,3,MethodHandle getLambdaFactory(),False
+2,LambdaMetafactory,4,MethodType getLambdaMetafactoryMethodType(),False
+2,LambdaMetafactory,5,MethodHandle getLambdaMetafactory(),False
+3,MethodHandle,1,boolean add(E e),False
+3,MethodHandle,2,"void add(int index, E element)",False
+3,MethodHandle,3,boolean addAll(Collection<? extends E> c),False
+3,MethodHandle,4,boolean remove(Object o),False
+3,MethodHandle,5,E remove(int index),False
+4,MethodHandleProxies,1,boolean add(E e),False
+4,MethodHandleProxies,2,"void add(int index, E element)",False
+4,MethodHandleProxies,3,boolean addAll(Collection<? extends E> c),False
+4,MethodHandleProxies,4,"boolean addAll(int index, Collection<? extends E> c)",False
+4,MethodHandleProxies,5,void clear(),False
+5,MethodHandles,1,MethodHandles.Lookup,False
+5,MethodHandles,2,MethodHandles.lookup(),False
+5,MethodHandles,3,MethodHandles.publicLookup(),False
+5,MethodHandles,4,"MethodHandles.privateLookupIn(Class<?>, Class<?>)",False
+5,MethodHandles,5,MethodHandles.filterReturnValue(),False
+6,MethodHandles.Lookup,1,MethodType lookupClass(),False
+6,MethodHandles.Lookup,2,MethodType lookupConstructor(Class<?>... parameterTypes),False
+6,MethodHandles.Lookup,3,"MethodHandle findStatic(Class<?> owner, String name, MethodType type)",True
+6,MethodHandles.Lookup,4,"MethodHandle findVirtual(Class<?> owner, String name, MethodType type)",True
+6,MethodHandles.Lookup,5,"MethodHandle findSpecial(Class<?> owner, String name, MethodType type, int special)",False
+7,MethodType,1,"MethodType.methodType(returnType, parameterTypes...)",False
+7,MethodType,2,"MethodType.methodType(returnType, varargParameterType)",False
+7,MethodType,3,MethodType.methodType(void.class),False
+7,MethodType,4,"MethodType.methodType(void.class, parameterTypes...)",False
+7,MethodType,5,"MethodType.methodType(void.class, varargParameterType)",False
+8,MutableCallSite,1,"MutableCallSite(MethodType methodType, MethodHandle target)",False
+8,MutableCallSite,2,MethodType getMethodType(),False
+8,MutableCallSite,3,MethodHandle getTarget(),True
+8,MutableCallSite,4,void setTarget(MethodHandle target),True
+8,MutableCallSite,5,Object call(Object... args),False
+9,SerializedLambda,1,getFunctionalInterface(),False
+9,SerializedLambda,2,getImplMethodName(),False
+9,SerializedLambda,3,getInstantiatedMethodType(),False
+9,SerializedLambda,4,getInstantiatedMethodType(),False
+9,SerializedLambda,5,getImplMethodName(),False
+10,SwitchPoint,1,boolean add(E e),False
+10,SwitchPoint,2,"void add(int index, E element)",False
+10,SwitchPoint,3,boolean addAll(Collection<? extends E> c),False
+10,SwitchPoint,4,"boolean addAll(int index, Collection<? extends E> c)",False
+10,SwitchPoint,5,void clear(),False
+11,VolatileCallSite,1,"VolatileCallSite(MethodHandles.Lookup lookup, MethodType type, MethodHandle target)",False
+11,VolatileCallSite,2,MethodType getType(),False
+11,VolatileCallSite,3,MethodHandle getTarget(),True
+11,VolatileCallSite,4,Object invokeExact(Object... args) throws Throwable,False
+11,VolatileCallSite,5,Object invokeWithArguments(Object... args) throws Throwable,False

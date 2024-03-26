@@ -1,0 +1,157 @@
+Sample: 0 MarshalledObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.MarshalledObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 Naming
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.Naming package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public static void bind(String name, Remote obj)`: This method binds the specified name to the specified remote object.
+
+2. `public static void unbind(String name)`: This method unbinds the specified name from the registry.
+
+3. `public static void rebind(String name, Remote obj)`: This method rebinds the specified name to the specified remote object.
+
+4. `public static String[] list(String name)`: This method returns an array of strings naming the entries in the registry.
+
+5. `public static Remote lookup(String name)`: This method looks up the object referenced by the specified name in the registry.
+================================================================
+
+Sample: 2 RMISecurityManager
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.RMISecurityManager package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setSecurityManager(RMISecurityManager s)`: Sets the security manager for this RMI registry.
+
+2. `RMISecurityManager getSecurityManager()`: Returns the security manager for this RMI registry.
+
+3. `void setLogPermissions(boolean b)`: Sets whether the RMI registry should log permission checks.
+
+4. `boolean getLogPermissions()`: Returns whether the RMI registry logs permission checks.
+
+5. `void setAlwaysUseCaller(boolean b)`: Sets whether the RMI registry should always use the caller's credentials.
+
+6. `boolean getAlwaysUseCaller()`: Returns whether the RMI registry always uses the caller's credentials.
+
+7. `void setAuthoritative(boolean b)`: Sets whether the RMI registry should be authoritative.
+
+8. `boolean getAuthoritative()`: Returns whether the RMI registry is authoritative.
+
+9. `void setStubPolicy(StubPolicy p)`: Sets the stub policy for this RMI registry.
+
+10. `StubPolicy getStubPolicy()`: Returns the stub policy for this RMI registry.
+
+11. `void setSocketFactory(SocketFactory sf)`: Sets the socket factory for this RMI registry.
+
+12. `SocketFactory getSocketFactory()`: Returns the socket factory for this RMI registry.
+
+13. `void setTcpNoDelay(boolean b)`: Sets whether TCP no-delay should be enabled for this RMI registry.
+
+14. `boolean getTcpNoDelay()`: Returns whether TCP no-delay is enabled for this RMI registry.
+
+15. `void setTcpKeepAlive(boolean b)`: Sets whether TCP keep-alive should be enabled for this RMI registry.
+
+16. `boolean getTcpKeepAlive()`: Returns whether TCP keep-alive is enabled for this RMI registry.
+
+17. `void setTcpKeepAliveTimeout(int timeout)`: Sets the TCP keep-alive timeout for this RMI registry.
+
+18. `int getTcpKeepAliveTimeout()`: Returns the TCP keep-alive timeout for this RMI registry.
+
+19. `void setTcpKeepAliveInterval(int interval)`: Sets the TCP keep-alive interval for this RMI registry.
+
+20. `int getTcpKeepAliveInterval()`: Returns the TCP keep-alive interval for this RMI registry.
+
+21. `void setServerSocketFactory(ServerSocketFactory sf)`: Sets the server socket factory for this RMI registry.
+
+22. `ServerSocketFactory getServerSocketFactory()`: Returns the server socket factory for this RMI registry.
+
+23. `void setPort(int port)`: Sets the port for this RMI registry.
+
+24. `int getPort()`: Returns the port for this RMI registry.
+
+25. `void setHost(String host)`: Sets the host for this RMI registry.
+
+26. `String getHost()`: Returns the host for this RMI registry.
+
+27. `void setBindAddress(String bindAddress)`: Sets the bind address for this RMI registry.
+
+28. `String getBindAddress()`: Returns the bind address for this RMI registry.
+
+29. `void setRegistryPort(int port)`: Sets the registry port for this RMI registry.
+
+30. `int getRegistryPort()`: Returns the registry port for this RMI registry.
+
+31. `void setRegistryHost(String host)`: Sets the registry host for this RMI registry.
+
+32. `String getRegistryHost()`: Returns the registry host for this RMI registry.
+
+33. `void setRegistryBindAddress(String bindAddress)`: Sets the registry bind address for this RMI registry.
+
+34. `String getRegistryBindAddress()`: Returns the registry bind address for this RMI registry.
+
+35. `void setRMIServerPort(int port)`: Sets the RMI server port for this RMI registry.
+
+36. `int getRMIServerPort()`: Returns the RMI server port for this RMI registry.
+
+37. `void setRMIServerHost(String host)`: Sets the RMI server host for this RMI registry.
+
+38. `String getRMIServerHost()`: Returns the RMI server host for this RMI registry.
+
+39. `void setRMIServerBindAddress(String bindAddress)`: Sets the RMI server bind address for this RMI registry.
+
+40. `String getRMIServerBindAddress()`: Returns the RMI server bind address for this RMI registry.
+
+41. `void setRMIServerSocketFactory(ServerSocketFactory sf)`: Sets the RMI server socket factory for this RMI registry.
+
+42. `ServerSocketFactory getRMIServerSocketFactory()`: Returns the RMI server socket factory for this RMI registry.
+
+43. `void setRMIServerSocketFactory(SocketFactory sf)`: Sets the RMI server socket factory for this RMI registry.
+
+44. `SocketFactory getRMIServerSocketFactory()`: Returns the RMI server socket factory for this RMI registry.
+
+45. `void setRMIServerTcpNoDelay(boolean b)`: Sets whether RMI server TCP no-delay should be enabled for this RMI registry.
+
+46. `boolean getRMIServerTcpNoDelay()`: Returns whether RMI server TCP no-delay is enabled for this RMI registry.
+
+47. `void setRMIServerTcpKeepAlive(boolean b)`: Sets whether RMI server TCP keep-alive should be enabled for this RMI registry.
+
+48. `boolean getRMIServerTcpKeepAlive()`: Returns whether RMI
+================================================================
+

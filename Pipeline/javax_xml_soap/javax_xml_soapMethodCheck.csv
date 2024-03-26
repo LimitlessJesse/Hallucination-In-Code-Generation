@@ -1,0 +1,71 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AttachmentPart,1,boolean add(E e),False
+0,AttachmentPart,2,"void add(int index, E element)",False
+0,AttachmentPart,3,boolean addAll(Collection<? extends E> c),False
+0,AttachmentPart,4,"boolean addAll(int index, Collection<? extends E> c)",False
+0,AttachmentPart,5,void clear(),False
+1,MessageFactory,1,SOAPMessage createMessage(),True
+1,MessageFactory,2,"SOAPMessage createMessage(MimeHeaders headers, SOAPPart body)",False
+1,MessageFactory,3,"SOAPMessage createMessage(MimeHeaders headers, SOAPPart body, SOAPEnvelope envelope)",False
+1,MessageFactory,4,SOAPMessage createMessage(SOAPPart body),False
+1,MessageFactory,5,"SOAPMessage createMessage(SOAPPart body, SOAPEnvelope envelope)",False
+2,MimeHeader,1,boolean add(E e),False
+2,MimeHeader,2,"void add(int index, E element)",False
+2,MimeHeader,3,boolean addAll(Collection<? extends E> c),False
+2,MimeHeader,4,"boolean addAll(int index, Collection<? extends E> c)",False
+2,MimeHeader,5,void clear(),False
+3,MimeHeaders,1,boolean add(E e),False
+3,MimeHeaders,2,"void add(int index, E element)",False
+3,MimeHeaders,3,boolean addAll(Collection<? extends E> c),False
+3,MimeHeaders,4,"boolean addAll(int index, Collection<? extends E> c)",False
+3,MimeHeaders,5,void clear(),False
+4,SAAJMetaFactory,1,boolean add(E e),False
+4,SAAJMetaFactory,2,"void add(int index, E element)",False
+4,SAAJMetaFactory,3,boolean addAll(Collection<? extends E> c),False
+4,SAAJMetaFactory,4,"boolean addAll(int index, Collection<? extends E> c)",False
+4,SAAJMetaFactory,5,void clear(),False
+5,SAAJResult,1,boolean add(E e),False
+5,SAAJResult,2,"void add(int index, E element)",False
+5,SAAJResult,3,boolean addAll(Collection<? extends E> c),False
+5,SAAJResult,4,"boolean addAll(int index, Collection<? extends E> c)",False
+5,SAAJResult,5,void clear(),False
+6,SOAPConnection,1,"SOAPConnection.call(SOAPMessage request, URL endpoint)",False
+6,SOAPConnection,2,"SOAPConnection.call(SOAPMessage request, URL endpoint, SOAPAction sp)",False
+6,SOAPConnection,3,SOAPConnection.sendReceive(SOAPMessage request),False
+6,SOAPConnection,4,"SOAPConnection.sendReceive(SOAPMessage request, URL endpoint)",False
+6,SOAPConnection,5,"SOAPConnection.sendReceive(SOAPMessage request, URL endpoint, SOAPAction sp)",False
+7,SOAPConnectionFactory,1,SOAPConnectionFactory newInstance(),True
+7,SOAPConnectionFactory,2,SOAPConnection createConnection(),True
+7,SOAPConnectionFactory,3,"SOAPConnection createConnection(String username, String password)",False
+7,SOAPConnectionFactory,4,"SOAPConnection createConnection(String username, String password, String nonce, String created, String digest)",False
+7,SOAPConnectionFactory,5,"SOAPConnection createConnection(String username, String password, String nonce, String created, String digest, String realm)",False
+8,SOAPElementFactory,1,SOAPElement create(QName qname),False
+8,SOAPElementFactory,2,"SOAPElement create(QName qname, String value)",False
+8,SOAPElementFactory,3,"SOAPElement create(QName qname, SOAPElement value)",False
+8,SOAPElementFactory,4,"SOAPElement create(QName qname, SOAPElement[] value)",False
+8,SOAPElementFactory,5,"SOAPElement create(QName qname, SOAPElement[] value, boolean isNil)",False
+9,SOAPFactory,1,SOAPFactory newInstance(),True
+9,SOAPFactory,2,SOAPMessage createMessage(),False
+9,SOAPFactory,3,SOAPElement createElement(QName qname),True
+9,SOAPFactory,4,"SOAPElement createElement(QName qname, String value)",False
+9,SOAPFactory,5,"SOAPElement createElement(QName qname, SOAPElement value)",False
+10,SOAPMessage,1,"SOAPMessage createMessage(SOAPPart part, SOAPEnvelope envelope)",False
+10,SOAPMessage,2,"SOAPMessage createMessage(SOAPPart part, SOAPEnvelope envelope, SOAPHeader header)",False
+10,SOAPMessage,3,"SOAPMessage createMessage(SOAPPart part, SOAPEnvelope envelope, SOAPHeader header, SOAPBody body)",False
+10,SOAPMessage,4,"SOAPMessage createMessage(SOAPPart part, SOAPEnvelope envelope, SOAPHeader header, SOAPBody body, SOAPFault fault)",False
+10,SOAPMessage,5,"SOAPMessage createMessage(SOAPPart part, SOAPEnvelope envelope, SOAPHeader header, SOAPBody body, SOAPFault fault, SOAPHeader blockHeader)",False
+11,SOAPPart,1,SOAPPart createInstance(),False
+11,SOAPPart,2,SOAPEnvelope getEnvelope(),True
+11,SOAPPart,3,SOAPEnvelope createEnvelope(),False
+11,SOAPPart,4,SOAPHeader getHeader(),False
+11,SOAPPart,5,SOAPHeader createHeader(),False
+11,SOAPPart,6,SOAPBody getBody(),False
+11,SOAPPart,7,SOAPBody createBody(),False
+11,SOAPPart,8,SOAPHeader getSOAPHeader(),False
+11,SOAPPart,9,SOAPHeader createSOAPHeader(),False
+11,SOAPPart,10,SOAPBody getSOAPBody(),False
+11,SOAPPart,11,SOAPBody createSOAPBody(),False
+11,SOAPPart,12,SOAPHeader getSOAPHeaderElement(),False
+11,SOAPPart,13,SOAPHeader createSOAPHeaderElement(),False
+11,SOAPPart,14,SOAPBody getSOAPBodyElement(),False
+11,SOAPPart,15,SOAPBody createSOAPBodyElement(),False

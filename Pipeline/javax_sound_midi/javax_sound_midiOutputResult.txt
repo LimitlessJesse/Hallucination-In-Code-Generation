@@ -1,0 +1,329 @@
+Sample: MetaMessage_1
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MetaMessage_1.java:6: error: no suitable constructor found for MetaMessage(byte[],int)
+            MetaMessage metaMessage = new MetaMessage(new byte[]{0x03, 0x00, 0x02, 0x00}, 3);
+                                      ^
+    constructor MetaMessage.MetaMessage() is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MetaMessage.MetaMessage(int,byte[],int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor MetaMessage.MetaMessage(byte[]) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_3
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_3.java:12: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_4
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_4.java:12: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_5
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_6
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_6.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_7
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_8
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_8.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_9
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_10
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_10.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_11
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_12
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_12.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_13
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_14
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_14.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_15
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_16
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_16.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_17
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_18
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_18.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: MidiDevice_Info_19
+----------------------------------------------------------------
+stdout:
+Software MIDI Synthesizer
+Software sequencer
+
+================================================================
+
+Sample: MidiDevice_Info_20
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/MidiDevice_Info_20.java:13: error: exception MidiUnavailableException is never thrown in body of corresponding try statement
+        } catch (MidiUnavailableException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: Patch_3
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/Patch_3.java:5: error: constructor Patch in class Patch cannot be applied to given types;
+        Patch patch = new Patch();
+                      ^
+  required: int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: Patch_4
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/Patch_4.java:10: error: cannot find symbol
+            int program = synth.getPatch().getProgram();
+                               ^
+  symbol:   method getPatch()
+  location: variable synth of type Synthesizer
+1 error
+
+
+================================================================
+
+Sample: Sequence_2
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/Sequence_2.java:8: error: no suitable method found for getSequence(String)
+            Sequence sequence = MidiSystem.getSequence("path_to_your_midi_file");
+                                          ^
+    method MidiSystem.getSequence(InputStream) is not applicable
+      (argument mismatch; String cannot be converted to InputStream)
+    method MidiSystem.getSequence(URL) is not applicable
+      (argument mismatch; String cannot be converted to URL)
+    method MidiSystem.getSequence(File) is not applicable
+      (argument mismatch; String cannot be converted to File)
+1 error
+
+
+================================================================
+
+Sample: Sequence_8
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/Sequence_8.java:8: error: cannot find symbol
+            System.out.println("Resolution: " + sequencer.getResolution());
+                                                         ^
+  symbol:   method getResolution()
+  location: variable sequencer of type Sequencer
+1 error
+
+
+================================================================
+
+Sample: ShortMessage_1
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/ShortMessage_1.java:13: error: cannot find symbol
+            synth.getChannels()[0].send(msg, 1);
+                                  ^
+  symbol:   method send(ShortMessage,int)
+  location: interface MidiChannel
+1 error
+
+
+================================================================
+
+Sample: ShortMessage_2
+----------------------------------------------------------------
+stdout:
+Command: 144
+
+================================================================
+
+Sample: ShortMessage_3
+----------------------------------------------------------------
+stdout:
+Channel: 0
+
+================================================================
+
+Sample: ShortMessage_4
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/ShortMessage_4.java:6: error: unreported exception InvalidMidiDataException; must be caught or declared to be thrown
+        msg.setMessage(ShortMessage.NOTE_ON, 1, 60, 100);
+                      ^
+1 error
+
+
+================================================================
+
+Sample: ShortMessage_5
+----------------------------------------------------------------
+stdout:
+Data2: 100
+
+================================================================
+
+Sample: ShortMessage_6
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/ShortMessage_6.java:13: error: cannot find symbol
+            synth.getChannels()[0].send(msg, 1);
+                                  ^
+  symbol:   method send(ShortMessage,int)
+  location: interface MidiChannel
+1 error
+
+
+================================================================
+
+Sample: SysexMessage_1
+----------------------------------------------------------------
+output:
+./javax_sound_midi/javaFiles/SysexMessage_1.java:9: error: incompatible types: possible lossy conversion from int to byte
+            SysexMessage sysexMessage = new SysexMessage(new byte[]{0xF0, 0x41, 0x10, 0x42, 0x12, 0x34, 0x56, 0x78, 0xF7}, 0, 9);
+                                                                    ^
+./javax_sound_midi/javaFiles/SysexMessage_1.java:9: error: incompatible types: possible lossy conversion from int to byte
+            SysexMessage sysexMessage = new SysexMessage(new byte[]{0xF0, 0x41, 0x10, 0x42, 0x12, 0x34, 0x56, 0x78, 0xF7}, 0, 9);
+                                                                                                                    ^
+./javax_sound_midi/javaFiles/SysexMessage_1.java:9: error: incompatible types: byte[] cannot be converted to int
+            SysexMessage sysexMessage = new SysexMessage(new byte[]{0xF0, 0x41, 0x10, 0x42, 0x12, 0x34, 0x56, 0x78, 0xF7}, 0, 9);
+                                                         ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: Track_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+

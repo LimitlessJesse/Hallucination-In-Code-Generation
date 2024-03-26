@@ -1,0 +1,177 @@
+Sample: 0 ChoiceCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.ChoiceCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean getSelectedIndex()`: This method returns the index of the selected choice.
+
+2. `void setSelectedIndex(int index)`: This method sets the index of the selected choice.
+
+3. `String[] getChoices()`: This method returns an array of the choices available to the user.
+
+4. `String getPrompt()`: This method returns the prompt for the user.
+
+5. `void setPrompt(String prompt)`: This method sets the prompt for the user.
+================================================================
+
+Sample: 1 ConfirmationCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.ConfirmationCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean confirm(DialogType dialogType)`: This method is used to confirm the dialog.
+
+2. `void setConfirmationResult(boolean result)`: This method is used to set the result of the confirmation.
+
+3. `String getMessage()`: This method is used to get the message to be displayed in the dialog.
+
+4. `String getPrompt()`: This method is used to get the prompt to be displayed in the dialog.
+
+5. `String getLabel()`: This method is used to get the label to be displayed in the dialog.
+================================================================
+
+Sample: 2 LanguageCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.LanguageCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean setLanguage(String language)`: This method sets the language to be used for the callback.
+
+2. `String getLanguage()`: This method returns the language that was set for the callback.
+
+3. `String getDefaultLanguage()`: This method returns the default language for the callback.
+
+4. `String[] getSupportedLanguages()`: This method returns an array of the languages supported by the callback.
+
+5. `String getLanguage()`: This method returns the language that was set for the callback.
+================================================================
+
+Sample: 3 NameCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.NameCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getName()`: This method returns the name that was set by the user.
+
+2. `setName(String name)`: This method sets the name that will be returned by the getName() method.
+
+3. `getPrompt()`: This method returns the prompt that was set by the user.
+
+4. `setPrompt(String prompt)`: This method sets the prompt that will be returned by the getPrompt() method.
+
+5. `getDefaultName()`: This method returns the default name that was set by the user.
+
+6. `setDefaultName(String defaultName)`: This method sets the default name that will be returned by the getDefaultName() method.
+================================================================
+
+Sample: 4 PasswordCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.PasswordCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void setPassword(char[] password)`: This method sets the password.
+
+2. `char[] getPassword()`: This method returns the password.
+
+3. `void clearPassword()`: This method clears the password.
+
+4. `void setNewPassword(char[] newPassword)`: This method sets the new password.
+
+5. `char[] getNewPassword()`: This method returns the new password.
+================================================================
+
+Sample: 5 TextInputCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.TextInputCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TextInputCallback()`: This is a constructor. It creates a new TextInputCallback with the specified prompt and echoOn.
+
+2. `getText()`: This method returns the text input by the user.
+
+3. `setPrompt(String prompt)`: This method sets the prompt to be displayed to the user.
+
+4. `setEchoOn(boolean echoOn)`: This method sets whether the text input by the user should be echoed to the console.
+
+5. `getTextInput(int promptCount)`: This method returns the text input by the user. It also returns the promptCount.
+================================================================
+
+Sample: 6 TextOutputCallback
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.callback.TextOutputCallback package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `TextOutputCallback()`: Constructs a TextOutputCallback with no message.
+
+2. `TextOutputCallback(String message)`: Constructs a TextOutputCallback with the specified message.
+
+3. `void setMessage(String message)`: Sets the message to be displayed.
+
+4. `String getMessage()`: Returns the message to be displayed.
+
+5. `void setRequestDenialOnly(boolean requestDenialOnly)`: Sets whether this callback is used only for denial of the request.
+================================================================
+

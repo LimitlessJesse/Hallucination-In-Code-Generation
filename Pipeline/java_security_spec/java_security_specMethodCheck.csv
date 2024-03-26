@@ -1,0 +1,196 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,DSAGenParameterSpec,1,int getL(),False
+0,DSAGenParameterSpec,2,BigInteger getP(),False
+0,DSAGenParameterSpec,3,BigInteger getQ(),False
+0,DSAGenParameterSpec,4,BigInteger getG(),False
+0,DSAGenParameterSpec,5,DSAParameterSpec getParams(),False
+1,DSAParameterSpec,1,"DSAParameterSpec(BigInteger p, BigInteger q, BigInteger g)",False
+1,DSAParameterSpec,2,BigInteger getG(),True
+1,DSAParameterSpec,3,BigInteger getP(),True
+1,DSAParameterSpec,4,BigInteger getQ(),True
+1,DSAParameterSpec,5,int getL(),False
+2,DSAPrivateKeySpec,1,"DSAPrivateKeySpec(BigInteger x, BigInteger p, BigInteger q, BigInteger g)",False
+2,DSAPrivateKeySpec,2,BigInteger getX(),True
+2,DSAPrivateKeySpec,3,BigInteger getP(),True
+2,DSAPrivateKeySpec,4,BigInteger getQ(),True
+2,DSAPrivateKeySpec,5,BigInteger getG(),True
+3,DSAPublicKeySpec,1,"DSAPublicKeySpec(BigInteger g, BigInteger p, BigInteger q, BigInteger y)",False
+3,DSAPublicKeySpec,2,BigInteger getG(),True
+3,DSAPublicKeySpec,3,BigInteger getP(),True
+3,DSAPublicKeySpec,4,BigInteger getQ(),True
+3,DSAPublicKeySpec,5,BigInteger getY(),True
+4,ECFieldF2m,1,"ECFieldF2m(int m, int n)",False
+4,ECFieldF2m,2,"ECFieldF2m(int m, int n, BigInteger p)",False
+4,ECFieldF2m,3,"ECFieldF2m(int m, int n, BigInteger p, BigInteger a)",False
+4,ECFieldF2m,4,"ECFieldF2m(int m, int n, BigInteger p, BigInteger a, BigInteger b)",False
+4,ECFieldF2m,5,"ECFieldF2m(int m, int n, BigInteger p, BigInteger a, BigInteger b, BigInteger c)",False
+5,ECFieldFp,1,"ECFieldFp(BigInteger p, int m, int k)",False
+5,ECFieldFp,2,"ECFieldFp(BigInteger p, int m, int k, BigInteger a)",False
+5,ECFieldFp,3,"ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b)",False
+5,ECFieldFp,4,"ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b, BigInteger n)",False
+5,ECFieldFp,5,"ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b, BigInteger n, BigInteger h)",False
+6,ECGenParameterSpec,1,ECGenParameterSpec(String name),False
+6,ECGenParameterSpec,2,String getName(),True
+6,ECGenParameterSpec,3,ECParameterSpec getParams(),False
+6,ECGenParameterSpec,4,ECPoint getGenerator(),False
+6,ECGenParameterSpec,5,BigInteger getOrder(),False
+7,ECParameterSpec,1,"ECParameterSpec(BigInteger m, BigInteger n, BigInteger a, BigInteger b, BigInteger gx, BigInteger gy, BigInteger order, BigInteger cofactor)",False
+7,ECParameterSpec,2,BigInteger getM(),False
+7,ECParameterSpec,3,BigInteger getN(),False
+7,ECParameterSpec,4,BigInteger getA(),False
+7,ECParameterSpec,5,BigInteger getB(),False
+7,ECParameterSpec,6,BigInteger getGx(),False
+7,ECParameterSpec,7,BigInteger getGy(),False
+7,ECParameterSpec,8,BigInteger getOrder(),True
+7,ECParameterSpec,9,BigInteger getCofactor(),False
+7,ECParameterSpec,10,ECPoint getGenerator(),True
+8,ECPoint,1,ECPoint getW(),False
+8,ECPoint,2,ECPoint getX(),False
+8,ECPoint,3,ECPoint getY(),False
+8,ECPoint,4,ECPoint getZ(),False
+8,ECPoint,5,ECPoint getField(),False
+9,ECPrivateKeySpec,1,BigInteger getS(),True
+9,ECPrivateKeySpec,2,ECParameterSpec getParams(),True
+9,ECPrivateKeySpec,3,ECPoint getW(),False
+9,ECPrivateKeySpec,4,ECPoint getQ(),False
+9,ECPrivateKeySpec,5,ECPoint getG(),False
+10,ECPublicKeySpec,1,"ECPublicKeySpec(BigInteger s, BigInteger x, BigInteger y)",False
+10,ECPublicKeySpec,2,BigInteger getW(),False
+10,ECPublicKeySpec,3,BigInteger getX(),False
+10,ECPublicKeySpec,4,BigInteger getY(),False
+10,ECPublicKeySpec,5,BigInteger getS(),False
+11,EllipticCurve,1,EllipticCurve getW(),False
+11,EllipticCurve,2,BigInteger getM(),False
+11,EllipticCurve,3,BigInteger getA1(),False
+11,EllipticCurve,4,BigInteger getA2(),False
+11,EllipticCurve,5,BigInteger getB(),True
+11,EllipticCurve,6,BigInteger getSeed(),False
+11,EllipticCurve,7,BigInteger getCofactor(),False
+11,EllipticCurve,8,ECPoint getG(),False
+11,EllipticCurve,9,ECPoint getGenerator(),False
+11,EllipticCurve,10,ECPoint getOrder(),False
+11,EllipticCurve,11,ECPoint getSeed(),False
+11,EllipticCurve,12,ECPoint getCofactor(),False
+11,EllipticCurve,13,ECPoint getGenerator(),False
+11,EllipticCurve,14,ECPoint getOrder(),False
+11,EllipticCurve,15,ECPoint getSeed(),False
+11,EllipticCurve,16,ECPoint getCofactor(),False
+11,EllipticCurve,17,ECPoint getGenerator(),False
+11,EllipticCurve,18,ECPoint getOrder(),False
+11,EllipticCurve,19,ECPoint getSeed(),False
+11,EllipticCurve,20,ECPoint getCofactor(),False
+12,EncodedKeySpec,1,EncodedKeySpec(byte[] encodedKey),False
+12,EncodedKeySpec,2,byte[] getEncoded(),True
+12,EncodedKeySpec,3,String getFormat(),True
+12,EncodedKeySpec,4,int getKeySize(),False
+12,EncodedKeySpec,5,int getType(),False
+13,MGF1ParameterSpec,1,MGF1ParameterSpec(int maskLen),False
+13,MGF1ParameterSpec,2,int getMaskLen(),False
+13,MGF1ParameterSpec,3,Object clone(),False
+13,MGF1ParameterSpec,4,boolean equals(Object obj),False
+13,MGF1ParameterSpec,5,int hashCode(),False
+14,PKCS8EncodedKeySpec,1,PKCS8EncodedKeySpec(byte[] encoded),False
+14,PKCS8EncodedKeySpec,2,byte[] getEncoded(),True
+14,PKCS8EncodedKeySpec,3,String getFormat(),True
+14,PKCS8EncodedKeySpec,4,String getAlgorithm(),False
+14,PKCS8EncodedKeySpec,5,String getProvider(),False
+15,PSSParameterSpec,1,boolean isSaltLengthSupported(int saltLen),False
+15,PSSParameterSpec,2,boolean isTrailerFieldSupported(byte[] trailerField),False
+15,PSSParameterSpec,3,int getTrailerField(),True
+15,PSSParameterSpec,4,int getSaltLength(),True
+15,PSSParameterSpec,5,int getDigestAlgorithm(),False
+16,RSAKeyGenParameterSpec,1,"RSAKeyGenParameterSpec(int keysize, BigInteger publicExponent)",False
+16,RSAKeyGenParameterSpec,2,BigInteger getPublicExponent(),True
+16,RSAKeyGenParameterSpec,3,int getKeysize(),True
+16,RSAKeyGenParameterSpec,4,void setPublicExponent(BigInteger publicExponent),False
+16,RSAKeyGenParameterSpec,5,void setKeysize(int keysize),False
+17,RSAMultiPrimePrivateCrtKeySpec,1,BigInteger getModulus(),False
+17,RSAMultiPrimePrivateCrtKeySpec,2,BigInteger getPublicExponent(),True
+17,RSAMultiPrimePrivateCrtKeySpec,3,BigInteger[] getPrimes(),False
+17,RSAMultiPrimePrivateCrtKeySpec,4,BigInteger[] getExponents(),False
+17,RSAMultiPrimePrivateCrtKeySpec,5,BigInteger[] getCoefficients(),False
+17,RSAMultiPrimePrivateCrtKeySpec,6,BigInteger getPrivateExponent(),False
+17,RSAMultiPrimePrivateCrtKeySpec,7,BigInteger getPrimeExponentP(),True
+17,RSAMultiPrimePrivateCrtKeySpec,8,BigInteger getPrimeExponentQ(),True
+17,RSAMultiPrimePrivateCrtKeySpec,9,BigInteger getPrimeExponentDP(),False
+17,RSAMultiPrimePrivateCrtKeySpec,10,BigInteger getPrimeExponentDQ(),False
+17,RSAMultiPrimePrivateCrtKeySpec,11,BigInteger getCrtCoefficient(),True
+18,RSAOtherPrimeInfo,1,BigInteger getCrtCoefficient(),True
+18,RSAOtherPrimeInfo,2,BigInteger getExponent(),True
+18,RSAOtherPrimeInfo,3,BigInteger getPrime(),True
+18,RSAOtherPrimeInfo,4,BigInteger getPrimeExponentP(),False
+18,RSAOtherPrimeInfo,5,BigInteger getPrimeExponentQ(),False
+18,RSAOtherPrimeInfo,6,BigInteger getPrimeP(),False
+18,RSAOtherPrimeInfo,7,BigInteger getPrimeQ(),False
+18,RSAOtherPrimeInfo,8,BigInteger getPrimeExponent(),False
+18,RSAOtherPrimeInfo,9,BigInteger getCrtCoefficientP(),False
+18,RSAOtherPrimeInfo,10,BigInteger getCrtCoefficientQ(),False
+19,RSAPrivateCrtKeySpec,1,"RSAPrivateCrtKeySpec(BigInteger modulus, BigInteger publicExponent, BigInteger privateExponent, BigInteger primeP, BigInteger primeQ, BigInteger primeExponentP, BigInteger primeExponentQ, BigInteger crtCoefficient)",False
+19,RSAPrivateCrtKeySpec,2,BigInteger getModulus(),False
+19,RSAPrivateCrtKeySpec,3,BigInteger getPublicExponent(),True
+19,RSAPrivateCrtKeySpec,4,BigInteger getPrivateExponent(),False
+19,RSAPrivateCrtKeySpec,5,BigInteger getPrimeP(),True
+19,RSAPrivateCrtKeySpec,6,BigInteger getPrimeQ(),True
+19,RSAPrivateCrtKeySpec,7,BigInteger getPrimeExponentP(),True
+19,RSAPrivateCrtKeySpec,8,BigInteger getPrimeExponentQ(),True
+19,RSAPrivateCrtKeySpec,9,BigInteger getCrtCoefficient(),True
+20,RSAPrivateKeySpec,1,"RSAPrivateKeySpec(BigInteger modulus, BigInteger privateExponent)",False
+20,RSAPrivateKeySpec,2,BigInteger getModulus(),True
+20,RSAPrivateKeySpec,3,BigInteger getPrivateExponent(),True
+20,RSAPrivateKeySpec,4,int hashCode(),False
+20,RSAPrivateKeySpec,5,boolean equals(Object obj),False
+21,RSAPublicKeySpec,1,"RSAPublicKeySpec(BigInteger modulus, BigInteger publicExponent)",False
+21,RSAPublicKeySpec,2,BigInteger getModulus(),True
+21,RSAPublicKeySpec,3,BigInteger getPublicExponent(),True
+21,RSAPublicKeySpec,4,int hashCode(),False
+21,RSAPublicKeySpec,5,boolean equals(Object obj),False
+22,X509EncodedKeySpec,1,X509EncodedKeySpec(byte[] encoded),False
+22,X509EncodedKeySpec,2,byte[] getEncoded(),True
+22,X509EncodedKeySpec,3,String getFormat(),True
+22,X509EncodedKeySpec,4,KeySpec getKeySpec(),False
+22,X509EncodedKeySpec,5,PublicKey getPublicKey(),False
+22,X509EncodedKeySpec,6,PrivateKey getPrivateKey(),False
+22,X509EncodedKeySpec,7,Key getKey(),False
+22,X509EncodedKeySpec,8,AlgorithmParameterSpec getParams(),False
+22,X509EncodedKeySpec,9,String getAlgorithm(),False
+22,X509EncodedKeySpec,10,String getProvider(),False
+22,X509EncodedKeySpec,11,String getType(),False
+22,X509EncodedKeySpec,12,String getSynopsis(),False
+22,X509EncodedKeySpec,13,String getName(),False
+22,X509EncodedKeySpec,14,String getValue(),False
+22,X509EncodedKeySpec,15,String getDescription(),False
+22,X509EncodedKeySpec,16,String getConstraints(),False
+22,X509EncodedKeySpec,17,String getPermissions(),False
+22,X509EncodedKeySpec,18,String getUsage(),False
+22,X509EncodedKeySpec,19,String getWrappingMethod(),False
+22,X509EncodedKeySpec,20,String getWrappingData(),False
+22,X509EncodedKeySpec,21,String getWrappingType(),False
+22,X509EncodedKeySpec,22,String getWrappingProvider(),False
+22,X509EncodedKeySpec,23,String getWrappingAlgorithm(),False
+22,X509EncodedKeySpec,24,String getWrappingKeySpec(),False
+22,X509EncodedKeySpec,25,String getWrappingKey(),False
+22,X509EncodedKeySpec,26,String getWrappingKeyName(),False
+22,X509EncodedKeySpec,27,String getWrappingKeyValue(),False
+22,X509EncodedKeySpec,28,String getWrappingKeyDescription(),False
+22,X509EncodedKeySpec,29,String getWrappingKeyConstraints(),False
+22,X509EncodedKeySpec,30,String getWrappingKeyPermissions(),False
+22,X509EncodedKeySpec,31,String getWrappingKeyUsage(),False
+22,X509EncodedKeySpec,32,String getWrappingKeySynopsis(),False
+22,X509EncodedKeySpec,33,String getWrappingKeyNameAlgorithm(),False
+22,X509EncodedKeySpec,34,String getWrappingKeyProviderAlgorithm(),False
+22,X509EncodedKeySpec,35,String getWrappingKeyAlgorithmParameters(),False
+22,X509EncodedKeySpec,36,String getWrappingKeyAttributes(),False
+22,X509EncodedKeySpec,37,String getWrappingKeySecurityModels(),False
+22,X509EncodedKeySpec,38,String getWrappingKeySecurityCategories(),False
+22,X509EncodedKeySpec,39,String getWrappingKeySecurityLevels(),False
+22,X509EncodedKeySpec,40,String getWrappingKeySecurityServices(),False
+22,X509EncodedKeySpec,41,String getWrappingKeySecurityUsage(),False
+22,X509EncodedKeySpec,42,String getWrappingKeySecurityMarkings(),False
+22,X509EncodedKeySpec,43,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,44,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,45,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,46,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,47,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,48,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,49,String getWrappingKeySecurityProperties(),False
+22,X509EncodedKeySpec,50,String getWrappingKeySecurityProperties(),False

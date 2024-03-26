@@ -1,0 +1,50 @@
+Sample: 0 FileSystemProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.spi.FileSystemProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileSystem getFileSystem(URI uri)`: This method returns the FileSystem that is associated with the given URI.
+
+2. `Iterable<Path> getPaths(URI uri)`: This method returns an iterable over the paths in the file system that is associated with the given URI.
+
+3. `FileSystem newFileSystem(URI uri, Map<String,?> env)`: This method creates a new file system that is associated with the given URI.
+
+4. `FileSystemProvider getFileSystemProvider(URI uri)`: This method returns the FileSystemProvider that is associated with the given URI.
+
+5. `Iterable<FileSystem> getFileSystems()`: This method returns an iterable over the file systems that are currently registered with this provider.
+================================================================
+
+Sample: 1 FileTypeDetector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.file.spi.FileTypeDetector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public boolean probeContentType(Path path)`: This method attempts to probe the content type of the file referenced by the given path.
+
+2. `public boolean probeContentType(InputStream stream)`: This method attempts to probe the content type of the file referenced by the given input stream.
+
+3. `public boolean probeContentType(byte[] data)`: This method attempts to probe the content type of the file referenced by the given byte array.
+
+4. `public boolean probeContentType(String path)`: This method attempts to probe the content type of the file referenced by the given string path.
+
+5. `public boolean probeContentType(URI uri)`: This method attempts to probe the content type of the file referenced by the given URI.
+================================================================
+

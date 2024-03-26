@@ -1,0 +1,227 @@
+Sample: 0 AbstractOwnableSynchronizer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.AbstractOwnableSynchronizer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isHeldByCurrentThread()`: This method returns true if the current thread holds the lock, false otherwise.
+
+2. `void setOwner(Thread owner)`: This method sets the owner of this lock to the current thread.
+
+3. `Thread getOwner()`: This method returns the owner of this lock.
+
+4. `boolean tryAcquire(int arg)`: This method tries to acquire the lock.
+
+5. `void release(int arg)`: This method releases the lock.
+================================================================
+
+Sample: 1 AbstractQueuedLongSynchronizer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.AbstractQueuedLongSynchronizer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean compareAndSetState(int expect, int update)`: This method atomically sets the value of the protected int to the given updated value if the current value == the expected value.
+
+2. `void acquire(int arg)`: This method acquires in shared mode (shared = 1) if it is free and throws `RejectedExecutionException` if the current thread: (1) has not been interrupted; and (2) has not been unparked.
+
+3. `void acquireShared(int arg)`: This method acquires in shared mode (shared = 1) if it is free and throws `RejectedExecutionException` if the current thread: (1) has not been interrupted; and (2) has not been unparked.
+
+4. `boolean release(int arg)`: This method releases a permit, increasing the count of the permits by 1.
+
+5. `boolean releaseShared(int arg)`: This method releases a permit, increasing the count of the permits by 1.
+================================================================
+
+Sample: 2 AbstractQueuedSynchronizer
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.AbstractQueuedSynchronizer package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getState()`: This method returns the current state of the synchronization primitive.
+
+2. `boolean compareAndSetState(int expect, int update)`: This method atomically sets the state to the given updated value if the current state equals the expected value.
+
+3. `void setState(int newState)`: This method sets the state of the synchronization primitive to the given new value.
+
+4. `boolean tryAcquire(int arg)`: This method atomically tries to acquire the lock.
+
+5. `boolean tryRelease(int arg)`: This method atomically releases the lock.
+
+6. `int getExclusiveOwnerThread()`: This method returns the thread that currently owns the lock.
+
+7. `boolean isHeldExclusively()`: This method checks if the current thread holds the lock exclusively.
+
+8. `boolean hasQueuedThreads()`: This method checks if there are any queued threads.
+
+9. `int getQueueLength()`: This method returns the number of threads in the queue.
+
+10. `int getWaitQueueLength(Condition condition)`: This method returns the number of threads waiting on the given condition.
+================================================================
+
+Sample: 3 LockSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.LockSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void park()`: This method causes the current thread to wait until it is awakened, either by another thread invoking the unpark method, or by a specified timeout elapsing.
+
+2. `void parkNanos(long nanos)`: This method causes the current thread to wait until it is awakened, either by another thread invoking the unpark method, or by a specified timeout elapsing.
+
+3. `void parkUntil(long deadline)`: This method causes the current thread to wait until it is awakened, either by another thread invoking the unpark method, or by a specified timeout elapsing.
+
+4. `void unpark(Thread thread)`: This method awakens the specified thread.
+
+5. `boolean isParked(Thread thread)`: This method returns true if the specified thread is parked.
+================================================================
+
+Sample: 4 ReentrantLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.ReentrantLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean tryLock()`: This method tries to acquire the lock. If the lock is not available then it returns false immediately.
+
+2. `void lock()`: This method acquires the lock. If the lock is not available then the current thread becomes disabled for thread scheduling purposes and lies dormant until the lock has been acquired.
+
+3. `boolean isLocked()`: This method returns true if the lock is held by any thread.
+
+4. `boolean isHeldByCurrentThread()`: This method returns true if the current thread holds this lock.
+
+5. `void unlock()`: This method releases the lock.
+================================================================
+
+Sample: 5 ReentrantReadWriteLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.ReentrantReadWriteLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean tryLock()`: This method tries to acquire the write lock.
+2. `void lock()`: This method acquires the write lock.
+3. `boolean tryReadLock()`: This method tries to acquire the read lock.
+4. `void readLock()`: This method acquires the read lock.
+5. `void unlock()`: This method releases the lock.
+================================================================
+
+Sample: 6 ReentrantReadWriteLock.ReadLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean tryLock()`: This method tries to acquire the lock. If the lock is not available then it returns false immediately.
+
+2. `void lock()`: This method acquires the lock. If the lock is not available then the current thread becomes disabled for thread scheduling purposes and lies dormant until the lock has been acquired.
+
+3. `boolean tryLock(long timeout, TimeUnit unit)`: This method tries to acquire the lock. If the lock is not available then it waits for the specified timeout.
+
+4. `void unlock()`: This method releases the lock.
+
+5. `Condition newCondition()`: This method creates a new condition variable associated with this lock.
+================================================================
+
+Sample: 7 ReentrantReadWriteLock.WriteLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void lock()`: This method acquires the write lock.
+2. `boolean tryLock()`: This method attempts to acquire the write lock without blocking.
+3. `void unlock()`: This method releases the write lock.
+4. `Condition newCondition()`: This method creates a new condition variable associated with this lock.
+5. `boolean isHeldByCurrentThread()`: This method checks if the current thread holds the write lock.
+================================================================
+
+Sample: 8 StampedLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.util.concurrent.locks.StampedLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `long tryOptimisticRead()`: This method returns a stamp that can be used to check if the state of the lock has changed since the stamp was obtained.
+
+2. `long readLock()`: This method acquires a read lock. If the lock is not write locked and there are no writers waiting to write, then this method acquires the read lock and returns a stamp.
+
+3. `void unlockRead(long stamp)`: This method releases the read lock associated with the stamp.
+
+4. `long writeLock()`: This method acquires a write lock. If the lock is not read locked and there are no readers waiting to read, then this method acquires the write lock and returns a stamp.
+
+5. `boolean tryConvertToWriteLock(long stamp)`: This method attempts to convert the read lock associated with the stamp to a write lock. If the lock is not read locked or there are other threads waiting to read, then this method fails and returns false. Otherwise, it converts the lock and returns true.
+================================================================
+

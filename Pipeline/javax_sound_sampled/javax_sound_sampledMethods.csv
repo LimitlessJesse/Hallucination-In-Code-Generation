@@ -1,0 +1,133 @@
+ClassName,Method,Return Type
+AudioFileFormat,getByteLength(),int
+AudioFileFormat,getFormat(),AudioFormat
+AudioFileFormat,getFrameLength(),int
+AudioFileFormat,getProperty(String key),Object
+AudioFileFormat,getType(),AudioFileFormat.Type
+AudioFileFormat,properties(),"Map<String,Object>"
+AudioFileFormat,toString(),String
+AudioFileFormat.Type,equals(Object obj),boolean
+AudioFileFormat.Type,getExtension(),String
+AudioFileFormat.Type,hashCode(),int
+AudioFileFormat.Type,toString(),String
+AudioFormat,getChannels(),int
+AudioFormat,getEncoding(),AudioFormat.Encoding
+AudioFormat,getFrameRate(),float
+AudioFormat,getFrameSize(),int
+AudioFormat,getProperty(String key),Object
+AudioFormat,getSampleRate(),float
+AudioFormat,getSampleSizeInBits(),int
+AudioFormat,isBigEndian(),boolean
+AudioFormat,matches(AudioFormat format),boolean
+AudioFormat,properties(),"Map<String,Object>"
+AudioFormat,toString(),String
+AudioFormat.Encoding,equals(Object obj),boolean
+AudioFormat.Encoding,hashCode(),int
+AudioFormat.Encoding,toString(),String
+AudioInputStream,available(),int
+AudioInputStream,close(),void
+AudioInputStream,getFormat(),AudioFormat
+AudioInputStream,getFrameLength(),long
+AudioInputStream,mark(int readlimit),void
+AudioInputStream,markSupported(),boolean
+AudioInputStream,read(),int
+AudioInputStream,read(byte[] b),int
+AudioInputStream,"read(byte[] b, int off, int len)",int
+AudioInputStream,reset(),void
+AudioInputStream,skip(long n),long
+AudioSystem,getAudioFileFormat(File file),static AudioFileFormat
+AudioSystem,getAudioFileFormat(InputStream stream),static AudioFileFormat
+AudioSystem,getAudioFileFormat(URL url),static AudioFileFormat
+AudioSystem,getAudioFileTypes(),static AudioFileFormat.Type[]
+AudioSystem,getAudioFileTypes(AudioInputStream stream),static AudioFileFormat.Type[]
+AudioSystem,"getAudioInputStream(AudioFormat.Encoding targetEncoding, AudioInputStream sourceStream)",static AudioInputStream
+AudioSystem,"getAudioInputStream(AudioFormat targetFormat, AudioInputStream sourceStream)",static AudioInputStream
+AudioSystem,getAudioInputStream(File file),static AudioInputStream
+AudioSystem,getAudioInputStream(InputStream stream),static AudioInputStream
+AudioSystem,getAudioInputStream(URL url),static AudioInputStream
+AudioSystem,getClip(),static Clip
+AudioSystem,getClip(Mixer.Info mixerInfo),static Clip
+AudioSystem,getLine(Line.Info info),static Line
+AudioSystem,getMixer(Mixer.Info info),static Mixer
+AudioSystem,getMixerInfo(),static Mixer.Info[]
+AudioSystem,getSourceDataLine(AudioFormat format),static SourceDataLine
+AudioSystem,"getSourceDataLine(AudioFormat format, Mixer.Info mixerinfo)",static SourceDataLine
+AudioSystem,getSourceLineInfo(Line.Info info),static Line.Info[]
+AudioSystem,getTargetDataLine(AudioFormat format),static TargetDataLine
+AudioSystem,"getTargetDataLine(AudioFormat format, Mixer.Info mixerinfo)",static TargetDataLine
+AudioSystem,getTargetEncodings(AudioFormat.Encoding sourceEncoding),static AudioFormat.Encoding[]
+AudioSystem,getTargetEncodings(AudioFormat sourceFormat),static AudioFormat.Encoding[]
+AudioSystem,"getTargetFormats(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)",static AudioFormat[]
+AudioSystem,getTargetLineInfo(Line.Info info),static Line.Info[]
+AudioSystem,"isConversionSupported(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)",static boolean
+AudioSystem,"isConversionSupported(AudioFormat targetFormat, AudioFormat sourceFormat)",static boolean
+AudioSystem,isFileTypeSupported(AudioFileFormat.Type fileType),static boolean
+AudioSystem,"isFileTypeSupported(AudioFileFormat.Type fileType, AudioInputStream stream)",static boolean
+AudioSystem,isLineSupported(Line.Info info),static boolean
+AudioSystem,"write(AudioInputStream stream, AudioFileFormat.Type fileType, File out)",static int
+AudioSystem,"write(AudioInputStream stream, AudioFileFormat.Type fileType, OutputStream out)",static int
+BooleanControl,getStateLabel(boolean state),String
+BooleanControl,getValue(),boolean
+BooleanControl,setValue(boolean value),void
+BooleanControl,toString(),String
+CompoundControl,getMemberControls(),Control[]
+CompoundControl,toString(),String
+Control,getType(),Control.Type
+Control,toString(),String
+Control.Type,equals(Object obj),boolean
+Control.Type,hashCode(),int
+Control.Type,toString(),String
+DataLine.Info,getFormats(),AudioFormat[]
+DataLine.Info,getMaxBufferSize(),int
+DataLine.Info,getMinBufferSize(),int
+DataLine.Info,isFormatSupported(AudioFormat format),boolean
+DataLine.Info,matches(Line.Info info),boolean
+DataLine.Info,toString(),String
+EnumControl,getValue(),Object
+EnumControl,getValues(),Object[]
+EnumControl,setValue(Object value),void
+EnumControl,toString(),String
+FloatControl,getMaximum(),float
+FloatControl,getMaxLabel(),String
+FloatControl,getMidLabel(),String
+FloatControl,getMinimum(),float
+FloatControl,getMinLabel(),String
+FloatControl,getPrecision(),float
+FloatControl,getUnits(),String
+FloatControl,getUpdatePeriod(),int
+FloatControl,getValue(),float
+FloatControl,setValue(float newValue),void
+FloatControl,"shift(float from, float to, int microseconds)",void
+FloatControl,toString(),String
+Line.Info,getLineClass(),Class<?>
+Line.Info,matches(Line.Info info),boolean
+Line.Info,toString(),String
+LineEvent,getFramePosition(),long
+LineEvent,getLine(),Line
+LineEvent,getType(),LineEvent.Type
+LineEvent,toString(),String
+LineEvent.Type,equals(Object obj),boolean
+LineEvent.Type,hashCode(),int
+LineEvent.Type,toString(),String
+Mixer.Info,equals(Object obj),boolean
+Mixer.Info,getDescription(),String
+Mixer.Info,getName(),String
+Mixer.Info,getVendor(),String
+Mixer.Info,getVersion(),String
+Mixer.Info,hashCode(),int
+Mixer.Info,toString(),String
+Port.Info,equals(Object obj),boolean
+Port.Info,getName(),String
+Port.Info,hashCode(),int
+Port.Info,isSource(),boolean
+Port.Info,matches(Line.Info info),boolean
+Port.Info,toString(),String
+ReverbType,equals(Object obj),boolean
+ReverbType,getDecayTime(),int
+ReverbType,getEarlyReflectionDelay(),int
+ReverbType,getEarlyReflectionIntensity(),float
+ReverbType,getLateReflectionDelay(),int
+ReverbType,getLateReflectionIntensity(),float
+ReverbType,getName(),String
+ReverbType,hashCode(),int
+ReverbType,toString(),String

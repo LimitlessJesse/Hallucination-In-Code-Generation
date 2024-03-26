@@ -1,0 +1,127 @@
+Sample: 0 XPathFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XPathFactory newInstance() from javax.xml.xpath.XPathFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `XPathFactory.newInstance()` method is used to create a new instance of the XPathFactory class. This method is part of the javax.xml.xpath package and is used to create new instances of XPath objects.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.xpath.XPathFactory;
+
+public class Main {
+    public static void main(String[] args) {
+        XPathFactory xPathFactory = XPathFactory.newInstance();
+        System.out.println(xPathFactory);
+    }
+}
+```
+
+In this code snippet, we are creating a new instance of the XPathFactory class and printing it to the console. The `XPathFactory.newInstance()` method is used to create a new instance of the XPathFactory class. This method is part of the javax.xml.xpath package and is used to create new instances of XPath objects.
+================================================================
+
+Sample: 1 XPathFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use XPath newXPath() from javax.xml.xpath.XPathFactory
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a simple example of how to use the `newXPath()` method from `javax.xml.xpath.XPathFactory`:
+
+```java
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            // Create a new DocumentBuilderFactory
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+
+            // Parse an XML file into a Document
+            Document document = builder.parse(new File("path_to_your_xml_file.xml"));
+
+            // Create a new XPathFactory
+            XPathFactory xPathFactory = XPathFactory.newInstance();
+            XPath xPath = xPathFactory.newXPath();
+
+            // Create an XPath Expression
+            String expression = "/root/child";
+
+            // Evaluate the XPath Expression
+            NodeList nodeList = (NodeList) xPath.evaluate(expression, document, XPathConstants.NODESET);
+
+            // Print the Nodes
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                Node node = nodeList.item(i);
+                System.out.println(node.getTextContent());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+This code snippet creates a new `XPathFactory`, then uses the `newXPath()` method to create a new `XPath` object. It then creates an XPath expression, which is a string that specifies the nodes in the XML document to be selected. The `evaluate()` method is then used to evaluate the XPath expression, and the result is a `NodeList` of the selected nodes. Finally, the text content of each node in the `NodeList` is printed to the console.
+================================================================
+

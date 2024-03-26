@@ -1,0 +1,61 @@
+Sample: FormatConversionProvider_5
+----------------------------------------------------------------
+output:
+./javax_sound_sampled_spi/javaFiles/FormatConversionProvider_5.java:18: error: cannot find symbol
+            FormatConversionProvider provider = AudioSystem.getFormatConversionProvider();
+            ^
+  symbol:   class FormatConversionProvider
+  location: class FormatConversionProvider_5
+./javax_sound_sampled_spi/javaFiles/FormatConversionProvider_5.java:18: error: cannot find symbol
+            FormatConversionProvider provider = AudioSystem.getFormatConversionProvider();
+                                                           ^
+  symbol:   method getFormatConversionProvider()
+  location: class AudioSystem
+2 errors
+
+
+================================================================
+
+Sample: MixerProvider_2
+----------------------------------------------------------------
+output:
+./javax_sound_sampled_spi/javaFiles/MixerProvider_2.java:6: error: non-static method getMixerInfo() cannot be referenced from a static context
+        Mixer.Info[] mixerInfo = MixerProvider.getMixerInfo();
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: MixerProvider_3
+----------------------------------------------------------------
+output:
+./javax_sound_sampled_spi/javaFiles/MixerProvider_3.java:7: error: <anonymous MixerProvider_3$1> is not abstract and does not override abstract method getMixerInfo() in MixerProvider
+        MixerProvider mixerProvider = new MixerProvider() {
+                                                          ^
+./javax_sound_sampled_spi/javaFiles/MixerProvider_3.java:14: error: constructor Info in class Info cannot be applied to given types;
+        Info info = new Info("Mixer Name", "Mixer Type", "Mixer Description");
+                    ^
+  required: String,String,String,String
+  found:    String,String,String
+  reason: actual and formal argument lists differ in length
+2 errors
+
+
+================================================================
+
+Sample: MixerProvider_4
+----------------------------------------------------------------
+output:
+./javax_sound_sampled_spi/javaFiles/MixerProvider_4.java:6: error: <anonymous MixerProvider_4$1> is not abstract and does not override abstract method getMixer(Info) in MixerProvider
+        MixerProvider provider = new MixerProvider() {
+                                                     ^
+./javax_sound_sampled_spi/javaFiles/MixerProvider_4.java:11: error: incompatible types: boolean cannot be converted to String
+        Mixer.Info info = new Mixer.Info("Test Mixer", "Test Mixer", true, false);
+                                                                     ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+

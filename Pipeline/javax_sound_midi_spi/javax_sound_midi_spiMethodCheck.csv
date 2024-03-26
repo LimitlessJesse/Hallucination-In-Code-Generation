@@ -1,0 +1,21 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,MidiDeviceProvider,1,boolean hasMoreDevices(),False
+0,MidiDeviceProvider,2,MidiDevice getDevice(Info info),False
+0,MidiDeviceProvider,3,MidiDeviceInfo[] getDeviceInfo(),False
+0,MidiDeviceProvider,4,"void setDeviceConfiguration(Transmitter transmitter, Receiver receiver)",False
+0,MidiDeviceProvider,5,void close(),False
+1,MidiFileReader,1,boolean accept(File file),False
+1,MidiFileReader,2,void setController(Controller controller),False
+1,MidiFileReader,3,"Sequence getSequence(File file) throws IOException, InvalidMidiDataException",True
+1,MidiFileReader,4,"Sequence getSequence(InputStream stream, String format) throws IOException, InvalidMidiDataException",False
+1,MidiFileReader,5,"Sequence getSequence(URL url) throws IOException, InvalidMidiDataException",True
+2,MidiFileWriter,1,boolean add(E e),False
+2,MidiFileWriter,2,"void add(int index, E element)",False
+2,MidiFileWriter,3,boolean addAll(Collection<? extends E> c),False
+2,MidiFileWriter,4,"boolean addAll(int index, Collection<? extends E> c)",False
+2,MidiFileWriter,5,void clear(),False
+3,SoundbankReader,1,boolean canReadBank(URL url),False
+3,SoundbankReader,2,Soundbank getBank(URL url),False
+3,SoundbankReader,3,"Soundbank getBank(URL url, MidiChannel channel)",False
+3,SoundbankReader,4,"Soundbank getBank(URL url, MidiChannel channel, MidiDevice device)",False
+3,SoundbankReader,5,"Soundbank getBank(URL url, MidiChannel channel, MidiDevice device, boolean force)",False

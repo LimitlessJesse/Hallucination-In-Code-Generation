@@ -1,0 +1,34 @@
+Sample: AclEntry_Builder_6
+----------------------------------------------------------------
+output:
+./java_nio_file_attribute/javaFiles/AclEntry_Builder_6.java:11: error: incompatible types: UserPrincipal cannot be converted to AclEntry
+        Builder builder = AclEntry.newBuilder(userPrincipal);
+                                              ^
+./java_nio_file_attribute/javaFiles/AclEntry_Builder_6.java:12: error: cannot find symbol
+        builder.setType(AclEntry.Type.ALLOW);
+                                ^
+  symbol:   variable Type
+  location: class AclEntry
+./java_nio_file_attribute/javaFiles/AclEntry_Builder_6.java:13: error: cannot find symbol
+        builder.setPermissions(EnumSet.of(AclEntryPermission.READ, AclEntryPermission.WRITE));
+                                                            ^
+  symbol:   variable READ
+  location: class AclEntryPermission
+./java_nio_file_attribute/javaFiles/AclEntry_Builder_6.java:13: error: cannot find symbol
+        builder.setPermissions(EnumSet.of(AclEntryPermission.READ, AclEntryPermission.WRITE));
+                                                                                     ^
+  symbol:   variable WRITE
+  location: class AclEntryPermission
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+
+
+================================================================
+
+Sample: PosixFilePermissions_10
+----------------------------------------------------------------
+stdout:
+[OWNER_READ, OWNER_WRITE, OWNER_EXECUTE, GROUP_READ, GROUP_EXECUTE, OTHERS_READ, OTHERS_EXECUTE]
+
+================================================================
+

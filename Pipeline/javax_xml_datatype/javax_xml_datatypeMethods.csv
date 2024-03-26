@@ -1,0 +1,91 @@
+ClassName,Method,Return Type
+DatatypeConstants.Field,getId(),int
+DatatypeConstants.Field,toString(),String
+DatatypeFactory,"newDuration(boolean isPositive, BigInteger years, BigInteger months, BigInteger days, BigInteger hours, BigInteger minutes, BigDecimal seconds)",abstract Duration
+DatatypeFactory,"newDuration(boolean isPositive, int years, int months, int days, int hours, int minutes, int seconds)",Duration
+DatatypeFactory,newDuration(long durationInMilliSeconds),abstract Duration
+DatatypeFactory,newDuration(String lexicalRepresentation),abstract Duration
+DatatypeFactory,"newDurationDayTime(boolean isPositive, BigInteger day, BigInteger hour, BigInteger minute, BigInteger second)",Duration
+DatatypeFactory,"newDurationDayTime(boolean isPositive, int day, int hour, int minute, int second)",Duration
+DatatypeFactory,newDurationDayTime(long durationInMilliseconds),Duration
+DatatypeFactory,newDurationDayTime(String lexicalRepresentation),Duration
+DatatypeFactory,"newDurationYearMonth(boolean isPositive, BigInteger year, BigInteger month)",Duration
+DatatypeFactory,"newDurationYearMonth(boolean isPositive, int year, int month)",Duration
+DatatypeFactory,newDurationYearMonth(long durationInMilliseconds),Duration
+DatatypeFactory,newDurationYearMonth(String lexicalRepresentation),Duration
+DatatypeFactory,newInstance(),static DatatypeFactory
+DatatypeFactory,"newInstance(String factoryClassName, ClassLoader classLoader)",static DatatypeFactory
+DatatypeFactory,newXMLGregorianCalendar(),abstract XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendar(BigInteger year, int month, int day, int hour, int minute, int second, BigDecimal fractionalSecond, int timezone)",abstract XMLGregorianCalendar
+DatatypeFactory,newXMLGregorianCalendar(GregorianCalendar cal),abstract XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendar(int year, int month, int day, int hour, int minute, int second, int millisecond, int timezone)",XMLGregorianCalendar
+DatatypeFactory,newXMLGregorianCalendar(String lexicalRepresentation),abstract XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendarDate(int year, int month, int day, int timezone)",XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendarTime(int hours, int minutes, int seconds, BigDecimal fractionalSecond, int timezone)",XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendarTime(int hours, int minutes, int seconds, int timezone)",XMLGregorianCalendar
+DatatypeFactory,"newXMLGregorianCalendarTime(int hours, int minutes, int seconds, int milliseconds, int timezone)",XMLGregorianCalendar
+Duration,add(Duration rhs),abstract Duration
+Duration,addTo(Calendar calendar),abstract void
+Duration,addTo(Date date),void
+Duration,compare(Duration duration),abstract int
+Duration,equals(Object duration),boolean
+Duration,getDays(),int
+Duration,getField(DatatypeConstants.Field field),abstract Number
+Duration,getHours(),int
+Duration,getMinutes(),int
+Duration,getMonths(),int
+Duration,getSeconds(),int
+Duration,getSign(),abstract int
+Duration,getTimeInMillis(Calendar startInstant),long
+Duration,getTimeInMillis(Date startInstant),long
+Duration,getXMLSchemaType(),QName
+Duration,getYears(),int
+Duration,hashCode(),abstract int
+Duration,isLongerThan(Duration duration),boolean
+Duration,isSet(DatatypeConstants.Field field),abstract boolean
+Duration,isShorterThan(Duration duration),boolean
+Duration,multiply(BigDecimal factor),abstract Duration
+Duration,multiply(int factor),Duration
+Duration,negate(),abstract Duration
+Duration,normalizeWith(Calendar startTimeInstant),abstract Duration
+Duration,subtract(Duration rhs),Duration
+Duration,toString(),String
+XMLGregorianCalendar,add(Duration duration),abstract void
+XMLGregorianCalendar,clear(),abstract void
+XMLGregorianCalendar,clone(),abstract Object
+XMLGregorianCalendar,compare(XMLGregorianCalendar xmlGregorianCalendar),abstract int
+XMLGregorianCalendar,equals(Object obj),boolean
+XMLGregorianCalendar,getDay(),abstract int
+XMLGregorianCalendar,getEon(),abstract BigInteger
+XMLGregorianCalendar,getEonAndYear(),abstract BigInteger
+XMLGregorianCalendar,getFractionalSecond(),abstract BigDecimal
+XMLGregorianCalendar,getHour(),abstract int
+XMLGregorianCalendar,getMillisecond(),int
+XMLGregorianCalendar,getMinute(),abstract int
+XMLGregorianCalendar,getMonth(),abstract int
+XMLGregorianCalendar,getSecond(),abstract int
+XMLGregorianCalendar,getTimezone(),abstract int
+XMLGregorianCalendar,getTimeZone(int defaultZoneoffset),abstract TimeZone
+XMLGregorianCalendar,getXMLSchemaType(),abstract QName
+XMLGregorianCalendar,getYear(),abstract int
+XMLGregorianCalendar,hashCode(),int
+XMLGregorianCalendar,isValid(),abstract boolean
+XMLGregorianCalendar,normalize(),abstract XMLGregorianCalendar
+XMLGregorianCalendar,reset(),abstract void
+XMLGregorianCalendar,setDay(int day),abstract void
+XMLGregorianCalendar,setFractionalSecond(BigDecimal fractional),abstract void
+XMLGregorianCalendar,setHour(int hour),abstract void
+XMLGregorianCalendar,setMillisecond(int millisecond),abstract void
+XMLGregorianCalendar,setMinute(int minute),abstract void
+XMLGregorianCalendar,setMonth(int month),abstract void
+XMLGregorianCalendar,setSecond(int second),abstract void
+XMLGregorianCalendar,"setTime(int hour, int minute, int second)",void
+XMLGregorianCalendar,"setTime(int hour, int minute, int second, BigDecimal fractional)",void
+XMLGregorianCalendar,"setTime(int hour, int minute, int second, int millisecond)",void
+XMLGregorianCalendar,setTimezone(int offset),abstract void
+XMLGregorianCalendar,setYear(BigInteger year),abstract void
+XMLGregorianCalendar,setYear(int year),abstract void
+XMLGregorianCalendar,toGregorianCalendar(),abstract GregorianCalendar
+XMLGregorianCalendar,"toGregorianCalendar(TimeZone timezone, Locale aLocale, XMLGregorianCalendar defaults)",abstract GregorianCalendar
+XMLGregorianCalendar,toString(),String
+XMLGregorianCalendar,toXMLFormat(),abstract String

@@ -1,0 +1,167 @@
+Sample: 0 LocateRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Registry getRegistry(String host, int port) from java.rmi.registry.LocateRegistry
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getRegistry(String host, int port)` method from `java.rmi.registry.LocateRegistry` is used to get a reference to a remote object registry.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.getRegistry("localhost", 1099);
+            System.out.println("Registry found: " + registry);
+        } catch (Exception e) {
+            System.err.println("Registry not found: " + e);
+        }
+    }
+}
+```
+
+In this code snippet, we are trying to get a registry from the host "localhost" and port 1099. If the registry is found, it will print the registry. If the registry is not found, it will print an error message.
+
+Please replace "localhost" and 1099 with your actual host and port.
+
+Note: This code assumes that the RMI registry is running on the specified host and port. If the RMI registry is not running, this code will throw an exception.
+================================================================
+
+Sample: 1 LocateRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Registry createRegistry(int port) from java.rmi.registry.LocateRegistry
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `createRegistry(int port)` method is a static method of the `LocateRegistry` class, which is part of the Java Remote Method Invocation (RMI) framework. This method creates a new Registry object and binds it to the specified port.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.createRegistry(1099);
+            System.out.println("Registry created successfully at port 1099");
+        } catch (Exception e) {
+            System.out.println("Failed to create Registry: " + e.getMessage());
+        }
+    }
+}
+```
+
+In this code snippet, we are creating a Registry object and binding it to the port 1099. If the Registry creation fails for any reason, an exception will be caught and the error message will be printed.
+
+Please note that the port number 1099 is just an example. You can use any available port number.
+================================================================
+
+Sample: 2 LocateRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Registry getRegistry(int port) from java.rmi.registry.LocateRegistry
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getRegistry(int port)` method in `java.rmi.registry.LocateRegistry` is used to get a reference to the RMI registry on the specified port.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.getRegistry(1099);
+            System.out.println("Registry found on port 1099");
+        } catch (Exception e) {
+            System.out.println("Registry not found on port 1099");
+        }
+    }
+}
+```
+
+In this code snippet, we are trying to get a registry on port 1099. If the registry is found, it will print "Registry found on port 1099". If the registry is not found, it will print "Registry not found on port 1099".
+
+Please note that the port number 1099 is the default port for RMI registry. If you are using a different port, you need to replace 1099 with your port number.
+================================================================
+

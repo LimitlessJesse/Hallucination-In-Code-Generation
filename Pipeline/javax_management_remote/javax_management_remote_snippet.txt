@@ -1,0 +1,162 @@
+Sample: 0 JMXPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object o) from javax.management.remote.JMXPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object o)` method in `JMXPrincipal` class is used to compare the equality of two `JMXPrincipal` objects. It checks if the given object is an instance of `JMXPrincipal` and if it is, it compares the `name` and `password` fields of the two `JMXPrincipal` objects.
+
+Here is the complete code snippet:
+
+```java
+import javax.management.remote.JMXPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        JMXPrincipal principal1 = new JMXPrincipal("user1", "password1".toCharArray());
+        JMXPrincipal principal2 = new JMXPrincipal("user1", "password1".toCharArray());
+        JMXPrincipal principal3 = new JMXPrincipal("user2", "password2".toCharArray());
+
+        System.out.println(principal1.equals(principal2)); // true
+        System.out.println(principal1.equals(principal3)); // false
+    }
+}
+```
+
+In the above code, `principal1` and `principal2` are equal because they have the same `name` and `password`. `principal1` and `principal3` are not equal because they have different `name` and `password`.
+================================================================
+
+Sample: 1 JMXPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String toString() from javax.management.remote.JMXPrincipal
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `toString()` method in `JMXPrincipal` class is used to return a string representation of the object.
+
+Here is a complete code snippet of the `toString()` method:
+
+```java
+import javax.management.remote.JMXPrincipal;
+
+public class Main {
+    public static void main(String[] args) {
+        JMXPrincipal principal = new JMXPrincipal("username");
+        System.out.println(principal.toString());
+    }
+}
+```
+
+In this code, we create a new `JMXPrincipal` object with the username "username". Then we call the `toString()` method on this object and print the result.
+
+The output of this code will be:
+
+```
+username
+```
+
+This is the string representation of the `JMXPrincipal` object.
+================================================================
+
+Sample: 2 JMXServiceURL
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object o) from javax.management.remote.JMXServiceURL
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object o)` method in `JMXServiceURL` class is used to compare the current object with the specified object. It returns true if the objects are equal and false otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.management.remote.JMXServiceURL;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            JMXServiceURL url1 = new JMXServiceURL("service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi");
+            JMXServiceURL url2 = new JMXServiceURL("service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi");
+
+            System.out.println(url1.equals(url2)); // Output: true
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code, two `JMXServiceURL` objects are created and compared using the `equals()` method. The output will be `true` because the two URLs are identical.
+================================================================
+

@@ -1,0 +1,53 @@
+ClassName,Method,Return Type
+AbstractScriptEngine,eval(Reader reader),Object
+AbstractScriptEngine,"eval(Reader reader, Bindings bindings)",Object
+AbstractScriptEngine,eval(String script),Object
+AbstractScriptEngine,"eval(String script, Bindings bindings)",Object
+AbstractScriptEngine,get(String key),Object
+AbstractScriptEngine,getBindings(int scope),Bindings
+AbstractScriptEngine,getContext(),ScriptContext
+AbstractScriptEngine,getScriptContext(Bindings nn),protected ScriptContext
+AbstractScriptEngine,"put(String key, Object value)",void
+AbstractScriptEngine,"setBindings(Bindings bindings, int scope)",void
+AbstractScriptEngine,setContext(ScriptContext ctxt),void
+CompiledScript,eval(),Object
+CompiledScript,eval(Bindings bindings),Object
+CompiledScript,eval(ScriptContext context),abstract Object
+CompiledScript,getEngine(),abstract ScriptEngine
+ScriptEngineManager,get(String key),Object
+ScriptEngineManager,getBindings(),Bindings
+ScriptEngineManager,getEngineByExtension(String extension),ScriptEngine
+ScriptEngineManager,getEngineByMimeType(String mimeType),ScriptEngine
+ScriptEngineManager,getEngineByName(String shortName),ScriptEngine
+ScriptEngineManager,getEngineFactories(),List<ScriptEngineFactory>
+ScriptEngineManager,"put(String key, Object value)",void
+ScriptEngineManager,"registerEngineExtension(String extension, ScriptEngineFactory factory)",void
+ScriptEngineManager,"registerEngineMimeType(String type, ScriptEngineFactory factory)",void
+ScriptEngineManager,"registerEngineName(String name, ScriptEngineFactory factory)",void
+ScriptEngineManager,setBindings(Bindings bindings),void
+SimpleBindings,clear(),void
+SimpleBindings,containsKey(Object key),boolean
+SimpleBindings,containsValue(Object value),boolean
+SimpleBindings,entrySet(),"Set<Map.Entry<String,Object>>"
+SimpleBindings,get(Object key),Object
+SimpleBindings,isEmpty(),boolean
+SimpleBindings,keySet(),Set<String>
+SimpleBindings,"put(String name, Object value)",Object
+SimpleBindings,"putAll(Map<? extends String,? extends Object> toMerge)",void
+SimpleBindings,remove(Object key),Object
+SimpleBindings,size(),int
+SimpleBindings,values(),Collection<Object>
+SimpleScriptContext,getAttribute(String name),Object
+SimpleScriptContext,"getAttribute(String name, int scope)",Object
+SimpleScriptContext,getAttributesScope(String name),int
+SimpleScriptContext,getBindings(int scope),Bindings
+SimpleScriptContext,getErrorWriter(),Writer
+SimpleScriptContext,getReader(),Reader
+SimpleScriptContext,getScopes(),List<Integer>
+SimpleScriptContext,getWriter(),Writer
+SimpleScriptContext,"removeAttribute(String name, int scope)",Object
+SimpleScriptContext,"setAttribute(String name, Object value, int scope)",void
+SimpleScriptContext,"setBindings(Bindings bindings, int scope)",void
+SimpleScriptContext,setErrorWriter(Writer writer),void
+SimpleScriptContext,setReader(Reader reader),void
+SimpleScriptContext,setWriter(Writer writer),void

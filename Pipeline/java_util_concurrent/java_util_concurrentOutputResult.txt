@@ -1,0 +1,1018 @@
+Sample: ArrayBlockingQueue_1
+----------------------------------------------------------------
+stdout:
+Add operation was successful: true
+
+================================================================
+
+Sample: ArrayBlockingQueue_2
+----------------------------------------------------------------
+stdout:
+Element added to queue: true
+
+================================================================
+
+Sample: ArrayBlockingQueue_3
+----------------------------------------------------------------
+stdout:
+Element: Hello
+
+================================================================
+
+Sample: ArrayBlockingQueue_4
+----------------------------------------------------------------
+stdout:
+Retrieved and removed element: Element 1
+Queue after poll(): [Element 2, Element 3]
+
+================================================================
+
+Sample: ArrayBlockingQueue_5
+----------------------------------------------------------------
+stdout:
+Hello
+Hello
+
+================================================================
+
+Sample: CompletableFuture_1
+----------------------------------------------------------------
+stdout:
+Hello from the asynchronous task!
+Main thread is done!
+
+================================================================
+
+Sample: CompletableFuture_2
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: CompletableFuture_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: CompletableFuture_5
+----------------------------------------------------------------
+stdout:
+An exception occurred: java.lang.RuntimeException: Oops, something went wrong!
+Default value
+
+stderr:
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: Oops, something went wrong!
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at CompletableFuture_5.main(CompletableFuture_5.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+Caused by: java.lang.RuntimeException: Oops, something went wrong!
+	at CompletableFuture_5.lambda$main$0(CompletableFuture_5.java:8)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+================================================================
+
+Sample: ConcurrentHashMap_2
+----------------------------------------------------------------
+stdout:
+{One=1, Two=2}
+
+================================================================
+
+Sample: ConcurrentHashMap_3
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: ConcurrentHashMap_4
+----------------------------------------------------------------
+stdout:
+Initial map: {One=1, Two=2, Three=3}
+Removed value: 2
+Updated map: {One=1, Three=3}
+
+================================================================
+
+Sample: ConcurrentHashMap_5
+----------------------------------------------------------------
+stdout:
+Before replace: {key1=value1, key2=value2}
+Replaced key1? true
+After replace: {key1=newValue1, key2=value2}
+Replaced key2? false
+After replace: {key1=newValue1, key2=value2}
+
+================================================================
+
+Sample: ConcurrentHashMap_KeySetView_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ConcurrentLinkedDeque_1
+----------------------------------------------------------------
+stdout:
+true
+[Hello]
+
+================================================================
+
+Sample: ConcurrentLinkedDeque_4
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: ConcurrentLinkedDeque_5
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: ConcurrentLinkedQueue_1
+----------------------------------------------------------------
+stdout:
+Add operation was successful: true
+
+================================================================
+
+Sample: ConcurrentLinkedQueue_2
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: ConcurrentLinkedQueue_3
+----------------------------------------------------------------
+stdout:
+Hello
+[]
+
+================================================================
+
+Sample: ConcurrentLinkedQueue_4
+----------------------------------------------------------------
+stdout:
+Hello
+Hello
+
+================================================================
+
+Sample: ConcurrentLinkedQueue_5
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[World]
+
+================================================================
+
+Sample: ConcurrentSkipListMap_2
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ConcurrentSkipListMap_3
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: ConcurrentSkipListMap_4
+----------------------------------------------------------------
+stdout:
+{One=1, Three=3, Two=2}
+
+================================================================
+
+Sample: ConcurrentSkipListMap_5
+----------------------------------------------------------------
+stdout:
+Before removal: {One=1, Three=3, Two=2}
+After removal: {One=1, Three=3}
+
+================================================================
+
+Sample: ConcurrentSkipListSet_1
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ConcurrentSkipListSet_2
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: ConcurrentSkipListSet_3
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ConcurrentSkipListSet_4
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[World]
+
+================================================================
+
+Sample: ConcurrentSkipListSet_5
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: CopyOnWriteArrayList_1
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: CopyOnWriteArrayList_2
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: CopyOnWriteArrayList_3
+----------------------------------------------------------------
+stdout:
+[World]
+
+================================================================
+
+Sample: CopyOnWriteArrayList_4
+----------------------------------------------------------------
+stdout:
+[Hello, Java, World]
+
+================================================================
+
+Sample: CopyOnWriteArrayList_5
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[World]
+
+================================================================
+
+Sample: CopyOnWriteArraySet_1
+----------------------------------------------------------------
+stdout:
+[Hello]
+
+================================================================
+
+Sample: CopyOnWriteArraySet_3
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: CopyOnWriteArraySet_4
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: CopyOnWriteArraySet_5
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: CountDownLatch_2
+----------------------------------------------------------------
+stdout:
+Thread 1 finished
+Thread 2 finished
+Thread 3 finished
+All threads finished
+
+================================================================
+
+Sample: CountDownLatch_3
+----------------------------------------------------------------
+stdout:
+Thread 1 finished
+Thread 2 finished
+Thread 3 finished
+All threads finished
+
+================================================================
+
+Sample: CountDownLatch_4
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: CyclicBarrier_2
+----------------------------------------------------------------
+stdout:
+Thread 1 is waiting at the barrier
+Thread 2 is waiting at the barrier
+Thread 3 is waiting at the barrier
+All parties have arrived at the barrier
+Thread 3 has crossed the barrier
+Thread 1 has crossed the barrier
+Thread 2 has crossed the barrier
+
+================================================================
+
+Sample: CyclicBarrier_3
+----------------------------------------------------------------
+stdout:
+Thread 1 is waiting
+Thread 2 is waiting
+Thread 3 is waiting
+Thread 2 is released
+Thread 1 is released
+Thread 3 is released
+
+================================================================
+
+Sample: CyclicBarrier_4
+----------------------------------------------------------------
+stdout:
+Number of threads waiting at the barrier: 0
+
+================================================================
+
+Sample: CyclicBarrier_5
+----------------------------------------------------------------
+stdout:
+Number of parties: 3
+
+================================================================
+
+Sample: DelayQueue_1
+----------------------------------------------------------------
+stdout:
+Element added: true
+
+================================================================
+
+Sample: DelayQueue_2
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: DelayQueue_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DelayQueue_4
+----------------------------------------------------------------
+stdout:
+Head of the DelayQueue: Element 1
+
+================================================================
+
+Sample: Exchanger_4
+----------------------------------------------------------------
+output:
+./java_util_concurrent/javaFiles/Exchanger_4.java:12: error: cannot find symbol
+            } catch (InterruptedException | TimeoutException e) {
+                                            ^
+  symbol:   class TimeoutException
+  location: class Exchanger_4
+1 error
+
+
+================================================================
+
+Sample: Exchanger_5
+----------------------------------------------------------------
+stdout:
+Thread 1 received: World
+Thread 2 received: Hello
+
+================================================================
+
+Sample: Executors_1
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ForkJoinTask_1
+----------------------------------------------------------------
+stdout:
+Result: 1
+
+================================================================
+
+Sample: ForkJoinTask_2
+----------------------------------------------------------------
+stdout:
+null
+
+================================================================
+
+Sample: ForkJoinTask_3
+----------------------------------------------------------------
+output:
+./java_util_concurrent/javaFiles/ForkJoinTask_3.java:22: error: setRawResult(V) has protected access in ForkJoinTask
+        task.setRawResult(null);
+            ^
+  where V is a type-variable:
+    V extends Object declared in class ForkJoinTask
+1 error
+
+
+================================================================
+
+Sample: ForkJoinTask_4
+----------------------------------------------------------------
+stdout:
+Is task cancelled? true
+
+================================================================
+
+Sample: ForkJoinWorkerThread_3
+----------------------------------------------------------------
+output:
+./java_util_concurrent/javaFiles/ForkJoinWorkerThread_3.java:7: error: cannot find symbol
+        ForkJoinWorkerThread worker = pool.getForkJoinWorkerThread(null);
+                                          ^
+  symbol:   method getForkJoinWorkerThread(<null>)
+  location: variable pool of type ForkJoinPool
+1 error
+
+
+================================================================
+
+Sample: FutureTask_1
+----------------------------------------------------------------
+stdout:
+Hello
+Task cancelled: false
+
+================================================================
+
+Sample: FutureTask_2
+----------------------------------------------------------------
+stdout:
+Task is cancelled: false
+
+================================================================
+
+Sample: FutureTask_3
+----------------------------------------------------------------
+stdout:
+Is task done? true
+
+================================================================
+
+Sample: FutureTask_4
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: FutureTask_5
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: LinkedBlockingDeque_1
+----------------------------------------------------------------
+stdout:
+Add operation was successful: true
+
+================================================================
+
+Sample: LinkedBlockingDeque_2
+----------------------------------------------------------------
+stdout:
+Element added: true
+
+================================================================
+
+Sample: LinkedBlockingDeque_3
+----------------------------------------------------------------
+stdout:
+Element added: true
+Deque: [Hello]
+
+================================================================
+
+Sample: LinkedBlockingDeque_4
+----------------------------------------------------------------
+stdout:
+Element added: true
+
+================================================================
+
+Sample: LinkedBlockingDeque_5
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[World]
+
+================================================================
+
+Sample: LinkedBlockingDeque_6
+----------------------------------------------------------------
+stdout:
+Hello
+World
+null
+
+================================================================
+
+Sample: LinkedBlockingDeque_7
+----------------------------------------------------------------
+stdout:
+Deque: [First, Second, Third]
+Removed first element: First
+Updated Deque: [Second, Third]
+
+================================================================
+
+Sample: LinkedBlockingDeque_8
+----------------------------------------------------------------
+stdout:
+World
+Hello
+null
+
+================================================================
+
+Sample: LinkedBlockingDeque_9
+----------------------------------------------------------------
+stdout:
+First element: First
+
+================================================================
+
+Sample: LinkedBlockingDeque_10
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: LinkedBlockingDeque_11
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: LinkedBlockingDeque_12
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: LinkedBlockingDeque_13
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: LinkedBlockingDeque_14
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World, Hello]
+After removal: [World, Hello]
+
+================================================================
+
+Sample: LinkedBlockingDeque_15
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World, Hello]
+After removal: [Hello, World]
+
+================================================================
+
+Sample: LinkedBlockingDeque_16
+----------------------------------------------------------------
+stdout:
+Before removal: [Hello, World, Hello]
+After removal: [World, Hello]
+
+================================================================
+
+Sample: LinkedBlockingDeque_17
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: LinkedBlockingDeque_18
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: LinkedBlockingDeque_20
+----------------------------------------------------------------
+stdout:
+[Hello, World]
+[]
+
+================================================================
+
+Sample: LinkedBlockingQueue_3
+----------------------------------------------------------------
+stdout:
+Element added to queue: true
+
+================================================================
+
+Sample: LinkedBlockingQueue_4
+----------------------------------------------------------------
+stdout:
+Hello
+World
+null
+
+================================================================
+
+Sample: LinkedBlockingQueue_5
+----------------------------------------------------------------
+stdout:
+Hello
+Hello
+
+================================================================
+
+Sample: LinkedTransferQueue_1
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: LinkedTransferQueue_2
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: LinkedTransferQueue_3
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: LinkedTransferQueue_4
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: LinkedTransferQueue_5
+----------------------------------------------------------------
+stdout:
+2
+
+================================================================
+
+Sample: Phaser_1
+----------------------------------------------------------------
+stdout:
+Registered id: 0
+
+================================================================
+
+Sample: Phaser_2
+----------------------------------------------------------------
+stdout:
+Phase: 0
+Phase: 1
+
+================================================================
+
+Sample: Phaser_3
+----------------------------------------------------------------
+stdout:
+Thread 1: Beginning
+Thread 2: Beginning
+Thread 1: End
+All threads have completed
+Thread 2: End
+
+================================================================
+
+Sample: Phaser_4
+----------------------------------------------------------------
+stdout:
+Thread 1 is registered
+Thread 1 is deregistered
+All threads have arrived
+Thread 2 is registered
+Thread 2 is deregistered
+
+================================================================
+
+Sample: PriorityBlockingQueue_1
+----------------------------------------------------------------
+stdout:
+Element added successfully: true
+
+================================================================
+
+Sample: PriorityBlockingQueue_2
+----------------------------------------------------------------
+stdout:
+Hello
+World
+null
+
+================================================================
+
+Sample: PriorityBlockingQueue_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PriorityBlockingQueue_4
+----------------------------------------------------------------
+stdout:
+Queue before removal: [Hello, World, Hello]
+Queue after removal: [Hello, World]
+
+================================================================
+
+Sample: PriorityBlockingQueue_5
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: ScheduledThreadPoolExecutor_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ScheduledThreadPoolExecutor_4
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ScheduledThreadPoolExecutor_5
+----------------------------------------------------------------
+stdout:
+Task executed
+
+================================================================
+
+Sample: Semaphore_2
+----------------------------------------------------------------
+stdout:
+Thread 1 acquired the permit
+Thread 2 is waiting for the permit
+Thread 1 is releasing the permit
+Thread 2 acquired the permit
+Thread 2 is releasing the permit
+
+================================================================
+
+Sample: Semaphore_3
+----------------------------------------------------------------
+stdout:
+Critical section is accessed
+
+================================================================
+
+Sample: Semaphore_4
+----------------------------------------------------------------
+stdout:
+Critical section is executing...
+
+================================================================
+
+Sample: Semaphore_5
+----------------------------------------------------------------
+stdout:
+Critical section is executing
+
+================================================================
+
+Sample: Semaphore_6
+----------------------------------------------------------------
+stdout:
+Available permits: 1
+
+================================================================
+
+Sample: Semaphore_7
+----------------------------------------------------------------
+stdout:
+Semaphore acquired
+
+================================================================
+
+Sample: Semaphore_8
+----------------------------------------------------------------
+stdout:
+Thread 1 is waiting for a permit...
+Thread 1 gets a permit!
+Thread 2 is waiting for a permit...
+Thread 2 could not get a permit!
+Thread 1 releases the permit!
+
+================================================================
+
+Sample: Semaphore_9
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Semaphore_10
+----------------------------------------------------------------
+stdout:
+Thread 1 is waiting for a permit
+Thread 1 gets a permit
+Thread 2 is waiting for a permit
+Thread 1 is performing operation 1
+Thread 1 is performing operation 2
+Thread 1 is performing operation 3
+Thread 1 is performing operation 4
+Thread 1 is performing operation 5
+Thread 1 releases the permit
+Thread 2 gets a permit
+Thread 2 is performing operation 1
+Thread 2 is performing operation 2
+Thread 2 is performing operation 3
+Thread 2 is performing operation 4
+Thread 2 is performing operation 5
+Thread 2 releases the permit
+
+================================================================
+
+Sample: SynchronousQueue_1
+----------------------------------------------------------------
+================================================================
+
+Sample: SynchronousQueue_2
+----------------------------------------------------------------
+stdout:
+Received message: Hello
+
+================================================================
+
+Sample: SynchronousQueue_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalStateException: Queue full
+	at java.base/java.util.AbstractQueue.add(AbstractQueue.java:98)
+	at SynchronousQueue_3.main(SynchronousQueue_3.java:8)
+
+================================================================
+
+Sample: SynchronousQueue_4
+----------------------------------------------------------------
+stdout:
+true
+true
+
+================================================================
+
+Sample: SynchronousQueue_5
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ThreadLocalRandom_1
+----------------------------------------------------------------
+stdout:
+Random number: -1649895263
+
+================================================================
+
+Sample: ThreadLocalRandom_2
+----------------------------------------------------------------
+stdout:
+Random Long: -7895353192969391144
+
+================================================================
+
+Sample: ThreadLocalRandom_3
+----------------------------------------------------------------
+stdout:
+Random double: 0.9788652825812131
+
+================================================================
+
+Sample: ThreadLocalRandom_4
+----------------------------------------------------------------
+stdout:
+false
+
+================================================================
+
+Sample: ThreadLocalRandom_5
+----------------------------------------------------------------
+stdout:
+Random number: 0.7323117189512307
+
+================================================================
+
+Sample: ThreadPoolExecutor_1
+----------------------------------------------------------------
+stdout:
+Core Pool Size: 5
+
+================================================================
+
+Sample: ThreadPoolExecutor_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.concurrent.ThreadPoolExecutor.<init>(ThreadPoolExecutor.java:1305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.<init>(ThreadPoolExecutor.java:1189)
+	at ThreadPoolExecutor_2.main(ThreadPoolExecutor_2.java:6)
+
+================================================================
+
+Sample: ThreadPoolExecutor_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.concurrent.ThreadPoolExecutor.<init>(ThreadPoolExecutor.java:1305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.<init>(ThreadPoolExecutor.java:1189)
+	at ThreadPoolExecutor_3.main(ThreadPoolExecutor_3.java:6)
+
+================================================================
+
+Sample: ThreadPoolExecutor_4
+----------------------------------------------------------------
+stdout:
+Active Threads: 5
+
+================================================================
+
+Sample: ThreadPoolExecutor_5
+----------------------------------------------------------------
+stdout:
+Task executed by thread: pool-1-thread-1
+
+================================================================
+

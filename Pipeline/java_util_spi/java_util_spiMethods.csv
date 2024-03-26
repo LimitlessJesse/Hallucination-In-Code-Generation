@@ -1,0 +1,15 @@
+ClassName,Method,Return Type
+CalendarDataProvider,getFirstDayOfWeek(Locale locale),abstract int
+CalendarDataProvider,getMinimalDaysInFirstWeek(Locale locale),abstract int
+CalendarNameProvider,"getDisplayName(String calendarType, int field, int value, int style, Locale locale)",abstract String
+CalendarNameProvider,"getDisplayNames(String calendarType, int field, int style, Locale locale)","abstract Map<String,Integer>"
+CurrencyNameProvider,"getDisplayName(String currencyCode, Locale locale)",String
+CurrencyNameProvider,"getSymbol(String currencyCode, Locale locale)",abstract String
+LocaleNameProvider,"getDisplayCountry(String countryCode, Locale locale)",abstract String
+LocaleNameProvider,"getDisplayLanguage(String languageCode, Locale locale)",abstract String
+LocaleNameProvider,"getDisplayScript(String scriptCode, Locale locale)",String
+LocaleNameProvider,"getDisplayVariant(String variant, Locale locale)",abstract String
+LocaleServiceProvider,getAvailableLocales(),abstract Locale[]
+LocaleServiceProvider,isSupportedLocale(Locale locale),boolean
+TimeZoneNameProvider,"getDisplayName(String ID, boolean daylight, int style, Locale locale)",abstract String
+TimeZoneNameProvider,"getGenericDisplayName(String ID, int style, Locale locale)",String

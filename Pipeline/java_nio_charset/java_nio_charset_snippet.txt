@@ -1,0 +1,483 @@
+Sample: 0 CharsetDecoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Charset charset() from java.nio.charset.CharsetDecoder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `charset()` method in `CharsetDecoder` class is used to get the charset of the decoder.
+
+Here is the complete code snippet:
+
+```java
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+
+public class Main {
+    public static void main(String[] args) {
+        CharsetDecoder decoder = Charset.forName("UTF-8").newDecoder();
+        System.out.println(decoder.charset());
+    }
+}
+```
+
+In this code snippet, we are creating a new decoder for the "UTF-8" charset and then calling the `charset()` method on it. The `charset()` method returns the charset of the decoder, which in this case is "UTF-8".
+================================================================
+
+Sample: 1 CharsetDecoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use CoderResult decode(ByteBuffer in, CharBuffer out, boolean endOfInput) from java.nio.charset.CharsetDecoder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `decode(ByteBuffer in, CharBuffer out, boolean endOfInput)` method from `java.nio.charset.CharsetDecoder`:
+
+```java
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CoderResult;
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "Hello, World!";
+        Charset charset = Charset.forName("UTF-8");
+        CharsetDecoder decoder = charset.newDecoder();
+        ByteBuffer byteBuffer = ByteBuffer.wrap(input.getBytes());
+        CharBuffer charBuffer = CharBuffer.allocate(input.length());
+        CoderResult result = decoder.decode(byteBuffer, charBuffer, true);
+        charBuffer.flip();
+        System.out.println(charBuffer.toString());
+    }
+}
+```
+
+This code snippet creates a `CharsetDecoder` for the "UTF-8" charset, then it creates a `ByteBuffer` from the string "Hello, World!" and a `CharBuffer`. It then decodes the `ByteBuffer` into the `CharBuffer` using the `CharsetDecoder`. Finally, it prints the contents of the `CharBuffer`.
+
+Please note that the `decode(ByteBuffer in, CharBuffer out, boolean endOfInput)` method is used to decode a sequence of bytes into a sequence of characters. The `ByteBuffer` contains the bytes to be decoded, the `CharBuffer` is where the decoded characters will be stored, and the `endOfInput` parameter indicates whether the input is complete.
+================================================================
+
+Sample: 2 CharsetDecoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use CoderResult flush(CharBuffer out) from java.nio.charset.CharsetDecoder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `CharsetDecoder.flush(CharBuffer out)` method is used to flush the decoder's internal state. It is used when the input data is not a complete unit of data.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.*;
+import java.nio.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Charset charset = Charset.forName("UTF-8");
+        CharsetDecoder decoder = charset.newDecoder();
+        CharBuffer charBuffer = CharBuffer.allocate(1024);
+        CoderResult result = decoder.flush(charBuffer);
+        if (result.isUnderflow()) {
+            System.out.println("Underflow occurred");
+        } else if (result.isOverflow()) {
+            System.out.println("Overflow occurred");
+        } else if (result.isError()) {
+            System.out.println("Error occurred");
+        }
+    }
+}
+```
+
+In this code snippet, we first create a `Charset` object for UTF-8 encoding. Then we create a `CharsetDecoder` object using the `newDecoder()` method of the `Charset` object. We then allocate a `CharBuffer` of size 1024.
+
+The `flush(CharBuffer out)` method is then called on the `CharsetDecoder` object, passing the `CharBuffer`. The `CoderResult` returned by this method is checked to see if it is an underflow, overflow, or an error. If it is an underflow, it means that the decoder's internal state is empty and there is no more data to flush. If it is an overflow, it means that the `CharBuffer` is full and there is no more space to flush the data. If it is an error, it means that an error occurred during the flush operation.
+
+Please note that the `CharsetDecoder.flush(CharBuffer out)` method is used when the input data is not a complete unit of data. If the input data is complete, you should not use this method.
+================================================================
+
+Sample: 3 CharsetEncoder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isLegalReplacement(byte[] bytes) from java.nio.charset.CharsetEncoder
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isLegalReplacement(byte[] bytes)` method in `java.nio.charset.CharsetEncoder` checks whether the given byte array can be used as a replacement for the last byte sequence that was encoded by this encoder.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+
+public class Main {
+    public static void main(String[] args) {
+        Charset charset = Charset.forName("UTF-8");
+        CharsetEncoder encoder = charset.newEncoder();
+
+        byte[] bytes = "Hello".getBytes();
+        boolean isLegal = encoder.isLegalReplacement(bytes);
+
+        System.out.println("Is legal replacement: " + isLegal);
+    }
+}
+```
+
+In this code snippet, we first get the UTF-8 charset and create a new encoder for it. Then we create a byte array from the string "Hello". Finally, we check if this byte array can be used as a replacement for the last byte sequence that was encoded by the encoder. The result is printed to the console.
+================================================================
+
+Sample: 4 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isError() from java.nio.charset.CoderResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isError()` method in `java.nio.charset.CoderResult` is used to check if there was an error during the encoding or decoding process. It returns `true` if there was an error, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.*;
+
+public class Main {
+    public static void main(String[] args) {
+        CharsetEncoder encoder = Charset.forName("UTF-8").newEncoder();
+        CoderResult result = encoder.encode(CharBuffer.wrap("Hello"));
+        boolean isError = result.isError();
+        System.out.println("Is there an error? " + isError);
+    }
+}
+```
+
+In this code snippet, we are using `Charset.forName("UTF-8").newEncoder()` to get a `CharsetEncoder`. We then use this `CharsetEncoder` to encode a `CharBuffer` containing the string "Hello". The `CoderResult` returned by the `encode()` method is stored in the `result` variable.
+
+Finally, we call the `isError()` method on the `result` variable, which returns `true` if there was an error during the encoding process and `false` otherwise. The result is then printed to the console.
+================================================================
+
+Sample: 5 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isMalformed() from java.nio.charset.CoderResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isMalformed()` method in `java.nio.charset.CoderResult` is used to check if the CoderResult represents a malformed input. It returns true if the CoderResult represents a malformed input, and false otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.CoderResult;
+
+public class Main {
+    public static void main(String[] args) {
+        CoderResult coderResult = CoderResult.malformedForLength(10);
+        boolean isMalformed = coderResult.isMalformed();
+        System.out.println("Is malformed: " + isMalformed);
+    }
+}
+```
+
+In this code snippet, we create a `CoderResult` object with `malformedForLength(10)`, which represents a malformed input of length 10. Then we call the `isMalformed()` method on this `CoderResult` object, and print the result.
+
+The output of this code snippet will be:
+
+```
+Is malformed: true
+```
+
+This is because the `CoderResult` represents a malformed input, so the `isMalformed()` method returns true.
+================================================================
+
+Sample: 6 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isUnmappable() from java.nio.charset.CoderResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isUnmappable()` method in `java.nio.charset.CoderResult` class is used to check if the CoderResult represents an unmappable character.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.CoderResult;
+
+public class Main {
+    public static void main(String[] args) {
+        CoderResult coderResult = CoderResult.OVERFLOW;
+        boolean isUnmappable = coderResult.isUnmappable();
+        System.out.println("Is unmappable: " + isUnmappable);
+    }
+}
+```
+
+In this code snippet, we create a `CoderResult` object with `CoderResult.OVERFLOW`. Then we call the `isUnmappable()` method on this `CoderResult` object and store the result in the `isUnmappable` variable. Finally, we print the result.
+
+Please note that the `isUnmappable()` method is used in conjunction with other methods in the `java.nio.charset` package, such as `CharsetDecoder.decode()` and `CharsetEncoder.encode()`, to handle errors and exceptions that may occur during character encoding and decoding operations.
+================================================================
+
+Sample: 7 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isUnderflow() from java.nio.charset.CoderResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isUnderflow()` method in `java.nio.charset.CoderResult` is used to check if the CoderResult represents an underflow condition. An underflow condition occurs when the input data is not sufficient to complete the operation.
+
+Here is a complete code snippet of the `isUnderflow()` method:
+
+```java
+import java.nio.charset.CoderResult;
+
+public class Main {
+    public static void main(String[] args) {
+        CoderResult coderResult = CoderResult.OVERFLOW;
+        boolean isUnderflow = coderResult.isUnderflow();
+        System.out.println("Is underflow: " + isUnderflow);
+    }
+}
+```
+
+In this code snippet, we create a `CoderResult` object and set it to `CoderResult.OVERFLOW`. Then we call the `isUnderflow()` method on the `CoderResult` object and store the result in the `isUnderflow` variable. Finally, we print the result.
+
+Please note that the `isUnderflow()` method is a part of the `java.nio.charset.CoderResult` class and it is not a part of the `ArrayList` class. The `ArrayList` class does not have a `isUnderflow()` method.
+================================================================
+
+Sample: 8 CoderResult
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean isOverflow() from java.nio.charset.CoderResult
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `isOverflow()` method in `java.nio.charset.CoderResult` is used to check if the CoderResult is an overflow. It returns true if the CoderResult is an overflow, false otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.nio.charset.CoderResult;
+
+public class Main {
+    public static void main(String[] args) {
+        CoderResult coderResult = CoderResult.OVERFLOW;
+        boolean isOverflow = coderResult.isOverflow();
+        System.out.println("Is overflow: " + isOverflow);
+    }
+}
+```
+
+In this code snippet, we create a `CoderResult` object and set it to `CoderResult.OVERFLOW`. Then we call the `isOverflow()` method on this `CoderResult` object and print the result. The output will be `Is overflow: true` because `CoderResult.OVERFLOW` is an overflow.
+================================================================
+

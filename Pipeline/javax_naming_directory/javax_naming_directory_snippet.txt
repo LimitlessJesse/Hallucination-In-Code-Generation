@@ -1,0 +1,324 @@
+Sample: 0 BasicAttribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from javax.naming.directory.BasicAttribute
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void clear()` method in `javax.naming.directory.BasicAttribute` is used to remove all of the elements from this attribute.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttribute;
+import javax.naming.directory.BasicAttributes;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttribute attribute = new BasicAttribute("attr");
+        attribute.add("value1");
+        attribute.add("value2");
+        System.out.println("Before clear: " + attribute);
+        attribute.clear();
+        System.out.println("After clear: " + attribute);
+    }
+}
+```
+
+In this code snippet, we first create a new `BasicAttribute` object with the name "attr". We then add two values to this attribute using the `add()` method. After that, we print the attribute before and after calling the `clear()` method. As expected, after calling `clear()`, the attribute is empty.
+================================================================
+
+Sample: 1 BasicAttribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean contains(Object o) from javax.naming.directory.BasicAttribute
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `contains(Object o)` method in `BasicAttribute` class checks if the attribute contains the specified value. It returns `true` if the attribute contains the value, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttribute;
+import javax.naming.directory.BasicAttributes;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttribute attr = new BasicAttribute("attrName");
+        attr.add("value1");
+        attr.add("value2");
+
+        System.out.println(attr.contains("value1")); // prints: true
+        System.out.println(attr.contains("value3")); // prints: false
+    }
+}
+```
+
+In this code snippet, we create a new `BasicAttribute` object and add some values to it. Then we use the `contains(Object o)` method to check if the attribute contains certain values.
+================================================================
+
+Sample: 2 BasicAttribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean equals(Object o) from javax.naming.directory.BasicAttribute
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `equals(Object o)` method in `BasicAttribute` class is used to compare the specified object with this attribute for equality.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttribute;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttribute attr1 = new BasicAttribute("cn");
+        attr1.add("John Doe");
+
+        BasicAttribute attr2 = new BasicAttribute("cn");
+        attr2.add("John Doe");
+
+        System.out.println(attr1.equals(attr2)); // Output: true
+    }
+}
+```
+
+In this code, we create two `BasicAttribute` objects with the same attribute name and value. We then call the `equals()` method on these objects, which compares their contents for equality. The output of this code will be `true`, indicating that the two attributes are equal.
+================================================================
+
+Sample: 3 BasicAttribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean remove(Object o) from javax.naming.directory.BasicAttribute
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `remove(Object o)` method in `BasicAttribute` class is used to remove the first occurrence of the specified element from this attribute. If the attribute does not contain the element, it remains unchanged.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttribute;
+import javax.naming.directory.BasicAttributes;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttribute attribute = new BasicAttribute("attributeName");
+        attribute.add("value1");
+        attribute.add("value2");
+        attribute.add("value3");
+
+        System.out.println("Before removing: " + attribute);
+
+        boolean isRemoved = attribute.remove("value2");
+
+        System.out.println("After removing: " + attribute);
+        System.out.println("Is removed? " + isRemoved);
+    }
+}
+```
+
+In this code snippet, we first create a `BasicAttribute` object and add some values to it. Then we print the attribute before removing any value. After that, we call the `remove(Object o)` method and pass the value we want to remove. After the method call, we print the attribute again to see the changes and also print whether the value was removed or not.
+================================================================
+
+Sample: 4 BasicAttribute
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from javax.naming.directory.BasicAttribute
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `BasicAttribute` class of `javax.naming.directory` package returns the number of values associated with the attribute.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttribute;
+import javax.naming.directory.BasicAttributes;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttribute attr = new BasicAttribute("attrName");
+        attr.add("value1");
+        attr.add("value2");
+        attr.add("value3");
+
+        int size = attr.size();
+        System.out.println("Size of attribute: " + size);
+    }
+}
+```
+
+In this code snippet, we create a new `BasicAttribute` object with the name "attrName". We then add three values to the attribute. Finally, we call the `size()` method on the attribute, which returns the number of values associated with the attribute. The result is printed to the console.
+================================================================
+
+Sample: 5 BasicAttributes
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int size() from javax.naming.directory.BasicAttributes
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `size()` method in `javax.naming.directory.BasicAttributes` is used to get the number of attributes in the directory entry.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.naming.directory.BasicAttributes;
+
+public class Main {
+    public static void main(String[] args) {
+        BasicAttributes attributes = new BasicAttributes();
+        attributes.put("name", "John");
+        attributes.put("age", "30");
+        attributes.put("city", "New York");
+
+        int size = attributes.size();
+        System.out.println("Number of attributes: " + size);
+    }
+}
+```
+
+In this code, we create a `BasicAttributes` object and add some attributes to it. Then we call the `size()` method to get the number of attributes in the directory entry. The result is printed to the console.
+================================================================
+

@@ -1,0 +1,735 @@
+Sample: 0 DSAGenParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.DSAGenParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getL()`: This method returns the length of the prime number l.
+
+2. `BigInteger getP()`: This method returns the prime number p.
+
+3. `BigInteger getQ()`: This method returns the prime number q.
+
+4. `BigInteger getG()`: This method returns the base g.
+
+5. `DSAParameterSpec getParams()`: This method returns the DSAParameterSpec object.
+================================================================
+
+Sample: 1 DSAParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.DSAParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DSAParameterSpec(BigInteger p, BigInteger q, BigInteger g)`: This constructor creates a new DSAParameterSpec with the specified parameters.
+
+2. `BigInteger getG()`: This method returns the generator g.
+
+3. `BigInteger getP()`: This method returns the prime number p.
+
+4. `BigInteger getQ()`: This method returns the prime number q.
+
+5. `int getL()`: This method returns the length in bits of the prime numbers p and q.
+================================================================
+
+Sample: 2 DSAPrivateKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.DSAPrivateKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DSAPrivateKeySpec(BigInteger x, BigInteger p, BigInteger q, BigInteger g)`: This constructor creates a new DSAPrivateKeySpec with the specified parameters.
+
+2. `BigInteger getX()`: This method returns the private key value x.
+
+3. `BigInteger getP()`: This method returns the prime number p.
+
+4. `BigInteger getQ()`: This method returns the prime number q.
+
+5. `BigInteger getG()`: This method returns the base g.
+================================================================
+
+Sample: 3 DSAPublicKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.DSAPublicKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DSAPublicKeySpec(BigInteger g, BigInteger p, BigInteger q, BigInteger y)`: This constructor creates a new DSAPublicKeySpec with the specified parameters.
+
+2. `BigInteger getG()`: This method returns the value of the public key's g parameter.
+
+3. `BigInteger getP()`: This method returns the value of the public key's p parameter.
+
+4. `BigInteger getQ()`: This method returns the value of the public key's q parameter.
+
+5. `BigInteger getY()`: This method returns the value of the public key's y parameter.
+================================================================
+
+Sample: 4 ECFieldF2m
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECFieldF2m package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECFieldF2m(int m, int n)`: This constructor creates a new field of size m by n.
+
+2. `ECFieldF2m(int m, int n, BigInteger p)`: This constructor creates a new field of size m by n with modulus p.
+
+3. `ECFieldF2m(int m, int n, BigInteger p, BigInteger a)`: This constructor creates a new field of size m by n with modulus p and generator a.
+
+4. `ECFieldF2m(int m, int n, BigInteger p, BigInteger a, BigInteger b)`: This constructor creates a new field of size m by n with modulus p, generator a, and discriminant b.
+
+5. `ECFieldF2m(int m, int n, BigInteger p, BigInteger a, BigInteger b, BigInteger c)`: This constructor creates a new field of size m by n with modulus p, generator a, discriminant b, and characteristic c.
+================================================================
+
+Sample: 5 ECFieldFp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECFieldFp package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECFieldFp(BigInteger p, int m, int k)`: This constructor creates a new field of size p with m bits and k subfields.
+
+2. `ECFieldFp(BigInteger p, int m, int k, BigInteger a)`: This constructor creates a new field of size p with m bits and k subfields, with the specified a value.
+
+3. `ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b)`: This constructor creates a new field of size p with m bits and k subfields, with the specified a and b values.
+
+4. `ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b, BigInteger n)`: This constructor creates a new field of size p with m bits and k subfields, with the specified a, b, and n values.
+
+5. `ECFieldFp(BigInteger p, int m, int k, BigInteger a, BigInteger b, BigInteger n, BigInteger h)`: This constructor creates a new field of size p with m bits and k subfields, with the specified a, b, n, and h values.
+================================================================
+
+Sample: 6 ECGenParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECGenParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECGenParameterSpec(String name)`: This constructor creates a new ECGenParameterSpec object with the specified name.
+
+2. `String getName()`: This method returns the name of the elliptic curve.
+
+3. `ECParameterSpec getParams()`: This method returns the ECParameterSpec object associated with this ECGenParameterSpec object.
+
+4. `ECPoint getGenerator()`: This method returns the generator point of the elliptic curve.
+
+5. `BigInteger getOrder()`: This method returns the order of the elliptic curve.
+================================================================
+
+Sample: 7 ECParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECParameterSpec(BigInteger m, BigInteger n, BigInteger a, BigInteger b, BigInteger gx, BigInteger gy, BigInteger order, BigInteger cofactor)`: This constructor creates a new ECParameterSpec with the specified parameters.
+
+2. `BigInteger getM()`: This method returns the m parameter of the elliptic curve.
+
+3. `BigInteger getN()`: This method returns the n parameter of the elliptic curve.
+
+4. `BigInteger getA()`: This method returns the a parameter of the elliptic curve.
+
+5. `BigInteger getB()`: This method returns the b parameter of the elliptic curve.
+
+6. `BigInteger getGx()`: This method returns the x-coordinate of the base point of the elliptic curve.
+
+7. `BigInteger getGy()`: This method returns the y-coordinate of the base point of the elliptic curve.
+
+8. `BigInteger getOrder()`: This method returns the order of the base point of the elliptic curve.
+
+9. `BigInteger getCofactor()`: This method returns the cofactor of the base point of the elliptic curve.
+
+10. `ECPoint getGenerator()`: This method returns the generator of the elliptic curve.
+================================================================
+
+Sample: 8 ECPoint
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECPoint package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECPoint getW()`: This method returns the point W.
+
+2. `ECPoint getX()`: This method returns the point X.
+
+3. `ECPoint getY()`: This method returns the point Y.
+
+4. `ECPoint getZ()`: This method returns the point Z.
+
+5. `ECPoint getField()`: This method returns the field of the point.
+================================================================
+
+Sample: 9 ECPrivateKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECPrivateKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigInteger getS()`: This method returns the private key value s for the elliptic curve private key.
+
+2. `ECParameterSpec getParams()`: This method returns the parameter set for the elliptic curve.
+
+3. `ECPoint getW()`: This method returns the public key point w for the elliptic curve public key.
+
+4. `ECPoint getQ()`: This method returns the public key point q for the elliptic curve public key.
+
+5. `ECPoint getG()`: This method returns the base point g for the elliptic curve.
+================================================================
+
+Sample: 10 ECPublicKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.ECPublicKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ECPublicKeySpec(BigInteger s, BigInteger x, BigInteger y)`: This constructor creates a new ECPublicKeySpec with the specified x and y coordinates.
+
+2. `BigInteger getW()`: This method returns the x coordinate of the public key.
+
+3. `BigInteger getX()`: This method returns the x coordinate of the public key.
+
+4. `BigInteger getY()`: This method returns the y coordinate of the public key.
+
+5. `BigInteger getS()`: This method returns the s value of the public key.
+================================================================
+
+Sample: 11 EllipticCurve
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.EllipticCurve package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `EllipticCurve getW()`: This method returns the elliptic curve's base point.
+
+2. `BigInteger getM()`: This method returns the elliptic curve's order.
+
+3. `BigInteger getA1()`: This method returns the elliptic curve's coefficient a1.
+
+4. `BigInteger getA2()`: This method returns the elliptic curve's coefficient a2.
+
+5. `BigInteger getB()`: This method returns the elliptic curve's coefficient b.
+
+6. `BigInteger getSeed()`: This method returns the elliptic curve's seed.
+
+7. `BigInteger getCofactor()`: This method returns the elliptic curve's cofactor.
+
+8. `ECPoint getG()`: This method returns the elliptic curve's base point.
+
+9. `ECPoint getGenerator()`: This method returns the elliptic curve's generator.
+
+10. `ECPoint getOrder()`: This method returns the elliptic curve's order.
+
+11. `ECPoint getSeed()`: This method returns the elliptic curve's seed.
+
+12. `ECPoint getCofactor()`: This method returns the elliptic curve's cofactor.
+
+13. `ECPoint getGenerator()`: This method returns the elliptic curve's generator.
+
+14. `ECPoint getOrder()`: This method returns the elliptic curve's order.
+
+15. `ECPoint getSeed()`: This method returns the elliptic curve's seed.
+
+16. `ECPoint getCofactor()`: This method returns the elliptic curve's cofactor.
+
+17. `ECPoint getGenerator()`: This method returns the elliptic curve's generator.
+
+18. `ECPoint getOrder()`: This method returns the elliptic curve's order.
+
+19. `ECPoint getSeed()`: This method returns the elliptic curve's seed.
+
+20. `ECPoint getCofactor()`: This method returns the elliptic curve's cofactor.
+================================================================
+
+Sample: 12 EncodedKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.EncodedKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `EncodedKeySpec(byte[] encodedKey)`: This constructor creates a new `EncodedKeySpec` from the given byte array.
+
+2. `byte[] getEncoded()`: This method returns the encoded form of this key.
+
+3. `String getFormat()`: This method returns the name of the encoding format of the key.
+
+4. `int getKeySize()`: This method returns the size of the key in bits.
+
+5. `int getType()`: This method returns the type of the key.
+================================================================
+
+Sample: 13 MGF1ParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.MGF1ParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `MGF1ParameterSpec(int maskLen)`: This constructor creates a new MGF1ParameterSpec with the specified mask length.
+
+2. `int getMaskLen()`: This method returns the mask length.
+
+3. `Object clone()`: This method creates and returns a copy of this object.
+
+4. `boolean equals(Object obj)`: This method compares this object against the specified object.
+
+5. `int hashCode()`: This method returns a hash code value for this object.
+================================================================
+
+Sample: 14 PKCS8EncodedKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.PKCS8EncodedKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PKCS8EncodedKeySpec(byte[] encoded)`: This constructor creates a new PKCS8EncodedKeySpec with the given encoded key.
+
+2. `byte[] getEncoded()`: This method returns the encoded key.
+
+3. `String getFormat()`: This method returns the format of the encoded key.
+
+4. `String getAlgorithm()`: This method returns the algorithm of the encoded key.
+
+5. `String getProvider()`: This method returns the provider of the encoded key.
+================================================================
+
+Sample: 15 PSSParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.PSSParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isSaltLengthSupported(int saltLen)`: This method returns true if the specified salt length is supported by this PSSParameterSpec object.
+
+2. `boolean isTrailerFieldSupported(byte[] trailerField)`: This method returns true if the specified trailer field is supported by this PSSParameterSpec object.
+
+3. `int getTrailerField()`: This method returns the trailer field of this PSSParameterSpec object.
+
+4. `int getSaltLength()`: This method returns the salt length of this PSSParameterSpec object.
+
+5. `int getDigestAlgorithm()`: This method returns the digest algorithm of this PSSParameterSpec object.
+================================================================
+
+Sample: 16 RSAKeyGenParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAKeyGenParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RSAKeyGenParameterSpec(int keysize, BigInteger publicExponent)`: This constructor creates a new RSAKeyGenParameterSpec with the specified keysize and publicExponent.
+
+2. `BigInteger getPublicExponent()`: This method returns the public exponent.
+
+3. `int getKeysize()`: This method returns the keysize.
+
+4. `void setPublicExponent(BigInteger publicExponent)`: This method sets the public exponent.
+
+5. `void setKeysize(int keysize)`: This method sets the keysize.
+================================================================
+
+Sample: 17 RSAMultiPrimePrivateCrtKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAMultiPrimePrivateCrtKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigInteger getModulus()`: This method returns the modulus of the RSA key.
+
+2. `BigInteger getPublicExponent()`: This method returns the public exponent of the RSA key.
+
+3. `BigInteger[] getPrimes()`: This method returns the primes of the RSA key.
+
+4. `BigInteger[] getExponents()`: This method returns the exponents of the RSA key.
+
+5. `BigInteger[] getCoefficients()`: This method returns the coefficients of the RSA key.
+
+6. `BigInteger getPrivateExponent()`: This method returns the private exponent of the RSA key.
+
+7. `BigInteger getPrimeExponentP()`: This method returns the prime exponent P of the RSA key.
+
+8. `BigInteger getPrimeExponentQ()`: This method returns the prime exponent Q of the RSA key.
+
+9. `BigInteger getPrimeExponentDP()`: This method returns the prime exponent DP of the RSA key.
+
+10. `BigInteger getPrimeExponentDQ()`: This method returns the prime exponent DQ of the RSA key.
+
+11. `BigInteger getCrtCoefficient()`: This method returns the CRT coefficient of the RSA key.
+================================================================
+
+Sample: 18 RSAOtherPrimeInfo
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAOtherPrimeInfo package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigInteger getCrtCoefficient()`: This method returns the Chinese Remainder Theorem (CRT) coefficient.
+
+2. `BigInteger getExponent()`: This method returns the exponent.
+
+3. `BigInteger getPrime()`: This method returns the prime.
+
+4. `BigInteger getPrimeExponentP()`: This method returns the prime exponent P.
+
+5. `BigInteger getPrimeExponentQ()`: This method returns the prime exponent Q.
+
+6. `BigInteger getPrimeP()`: This method returns the prime P.
+
+7. `BigInteger getPrimeQ()`: This method returns the prime Q.
+
+8. `BigInteger getPrimeExponent()`: This method returns the prime exponent.
+
+9. `BigInteger getCrtCoefficientP()`: This method returns the Chinese Remainder Theorem (CRT) coefficient P.
+
+10. `BigInteger getCrtCoefficientQ()`: This method returns the Chinese Remainder Theorem (CRT) coefficient Q.
+================================================================
+
+Sample: 19 RSAPrivateCrtKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAPrivateCrtKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RSAPrivateCrtKeySpec(BigInteger modulus, BigInteger publicExponent, BigInteger privateExponent, BigInteger primeP, BigInteger primeQ, BigInteger primeExponentP, BigInteger primeExponentQ, BigInteger crtCoefficient)`: This constructor creates a new RSAPrivateCrtKeySpec with the specified modulus, publicExponent, privateExponent, primeP, primeQ, primeExponentP, primeExponentQ, and crtCoefficient.
+
+2. `BigInteger getModulus()`: This method returns the modulus.
+
+3. `BigInteger getPublicExponent()`: This method returns the publicExponent.
+
+4. `BigInteger getPrivateExponent()`: This method returns the privateExponent.
+
+5. `BigInteger getPrimeP()`: This method returns the primeP.
+
+6. `BigInteger getPrimeQ()`: This method returns the primeQ.
+
+7. `BigInteger getPrimeExponentP()`: This method returns the primeExponentP.
+
+8. `BigInteger getPrimeExponentQ()`: This method returns the primeExponentQ.
+
+9. `BigInteger getCrtCoefficient()`: This method returns the crtCoefficient.
+================================================================
+
+Sample: 20 RSAPrivateKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAPrivateKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RSAPrivateKeySpec(BigInteger modulus, BigInteger privateExponent)`: This constructor creates a new RSAPrivateKeySpec with the specified modulus and privateExponent.
+
+2. `BigInteger getModulus()`: This method returns the modulus of this RSAPrivateKeySpec.
+
+3. `BigInteger getPrivateExponent()`: This method returns the privateExponent of this RSAPrivateKeySpec.
+
+4. `int hashCode()`: This method returns the hash code value for this RSAPrivateKeySpec.
+
+5. `boolean equals(Object obj)`: This method compares the specified object with this RSAPrivateKeySpec for equality.
+================================================================
+
+Sample: 21 RSAPublicKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.RSAPublicKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RSAPublicKeySpec(BigInteger modulus, BigInteger publicExponent)`: This constructor creates a new RSAPublicKeySpec with the specified modulus and publicExponent.
+
+2. `BigInteger getModulus()`: This method returns the modulus of this RSAPublicKeySpec.
+
+3. `BigInteger getPublicExponent()`: This method returns the publicExponent of this RSAPublicKeySpec.
+
+4. `int hashCode()`: This method returns the hash code value for this RSAPublicKeySpec.
+
+5. `boolean equals(Object obj)`: This method compares the specified object with this RSAPublicKeySpec for equality.
+================================================================
+
+Sample: 22 X509EncodedKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.security.spec.X509EncodedKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `X509EncodedKeySpec(byte[] encoded)`: This constructor creates a new X509EncodedKeySpec with the specified encoded key.
+
+2. `byte[] getEncoded()`: This method returns the encoded form of this key.
+
+3. `String getFormat()`: This method returns the name of the encoding format of the key.
+
+4. `KeySpec getKeySpec()`: This method returns the KeySpec for this key.
+
+5. `PublicKey getPublicKey()`: This method returns the public key represented by this key.
+
+6. `PrivateKey getPrivateKey()`: This method returns the private key represented by this key.
+
+7. `Key getKey()`: This method returns the key represented by this key.
+
+8. `AlgorithmParameterSpec getParams()`: This method returns the parameters for this key.
+
+9. `String getAlgorithm()`: This method returns the algorithm name of this key.
+
+10. `String getProvider()`: This method returns the provider name of this key.
+
+11. `String getType()`: This method returns the type of this key.
+
+12. `String getSynopsis()`: This method returns a synopsis of this key.
+
+13. `String getName()`: This method returns the name of this key.
+
+14. `String getValue()`: This method returns the value of this key.
+
+15. `String getDescription()`: This method returns the description of this key.
+
+16. `String getConstraints()`: This method returns the constraints of this key.
+
+17. `String getPermissions()`: This method returns the permissions of this key.
+
+18. `String getUsage()`: This method returns the usage of this key.
+
+19. `String getWrappingMethod()`: This method returns the wrapping method of this key.
+
+20. `String getWrappingData()`: This method returns the wrapping data of this key.
+
+21. `String getWrappingType()`: This method returns the wrapping type of this key.
+
+22. `String getWrappingProvider()`: This method returns the wrapping provider of this key.
+
+23. `String getWrappingAlgorithm()`: This method returns the wrapping algorithm of this key.
+
+24. `String getWrappingKeySpec()`: This method returns the wrapping key spec of this key.
+
+25. `String getWrappingKey()`: This method returns the wrapping key of this key.
+
+26. `String getWrappingKeyName()`: This method returns the wrapping key name of this key.
+
+27. `String getWrappingKeyValue()`: This method returns the wrapping key value of this key.
+
+28. `String getWrappingKeyDescription()`: This method returns the wrapping key description of this key.
+
+29. `String getWrappingKeyConstraints()`: This method returns the wrapping key constraints of this key.
+
+30. `String getWrappingKeyPermissions()`: This method returns the wrapping key permissions of this key.
+
+31. `String getWrappingKeyUsage()`: This method returns the wrapping key usage of this key.
+
+32. `String getWrappingKeySynopsis()`: This method returns the wrapping key synopsis of this key.
+
+33. `String getWrappingKeyNameAlgorithm()`: This method returns the wrapping key name algorithm of this key.
+
+34. `String getWrappingKeyProviderAlgorithm()`: This method returns the wrapping key provider algorithm of this key.
+
+35. `String getWrappingKeyAlgorithmParameters()`: This method returns the wrapping key algorithm parameters of this key.
+
+36. `String getWrappingKeyAttributes()`: This method returns the wrapping key attributes of this key.
+
+37. `String getWrappingKeySecurityModels()`: This method returns the wrapping key security models of this key.
+
+38. `String getWrappingKeySecurityCategories()`: This method returns the wrapping key security categories of this key.
+
+39. `String getWrappingKeySecurityLevels()`: This method returns the wrapping key security levels of this key.
+
+40. `String getWrappingKeySecurityServices()`: This method returns the wrapping key security services of this key.
+
+41. `String getWrappingKeySecurityUsage()`: This method returns the wrapping key security usage of this key.
+
+42. `String getWrappingKeySecurityMarkings()`: This method returns the wrapping key security markings of this key.
+
+43. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+44. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+45. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+46. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+47. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+48. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+49. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+
+50. `String getWrappingKeySecurityProperties()`: This method returns the wrapping key security properties of this key.
+================================================================
+

@@ -1,0 +1,339 @@
+Sample: MetalBorders_ButtonBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_ButtonBorder_4.main(MetalBorders_ButtonBorder_4.java:11)
+
+================================================================
+
+Sample: MetalBorders_ButtonBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_ButtonBorder_5.java:10: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_Flush3DBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_Flush3DBorder_4.main(MetalBorders_Flush3DBorder_4.java:7)
+
+================================================================
+
+Sample: MetalBorders_Flush3DBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_Flush3DBorder_5.java:11: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_InternalFrameBorder_2
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_InternalFrameBorder_2.main(MetalBorders_InternalFrameBorder_2.java:9)
+
+================================================================
+
+Sample: MetalBorders_MenuBarBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_MenuBarBorder_4.main(MetalBorders_MenuBarBorder_4.java:7)
+
+================================================================
+
+Sample: MetalBorders_MenuBarBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_MenuBarBorder_5.java:13: error: cannot find symbol
+        menuBar.setUI(new MetalBorders.MenuBarBorderUI());
+                                      ^
+  symbol:   class MenuBarBorderUI
+  location: class MetalBorders
+./javax_swing_plaf_metal/javaFiles/MetalBorders_MenuBarBorder_5.java:15: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+./javax_swing_plaf_metal/javaFiles/MetalBorders_MenuBarBorder_5.java:16: error: cannot find symbol
+        menuBar.getUI().getBorderInsets(menuBar, insets);
+                       ^
+  symbol:   method getBorderInsets(JMenuBar,Insets)
+  location: class MenuBarUI
+3 errors
+
+
+================================================================
+
+Sample: MetalBorders_MenuItemBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_MenuItemBorder_4.main(MetalBorders_MenuItemBorder_4.java:7)
+
+================================================================
+
+Sample: MetalBorders_MenuItemBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_MenuItemBorder_5.java:15: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_OptionDialogBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.awt.Graphics.translate(int, int)" because "g" is null
+	at java.desktop/javax.swing.plaf.metal.MetalBorders$OptionDialogBorder.paintBorder(MetalBorders.java:525)
+	at MetalBorders_OptionDialogBorder_4$1.paint(MetalBorders_OptionDialogBorder_4.java:16)
+	at MetalBorders_OptionDialogBorder_4.main(MetalBorders_OptionDialogBorder_4.java:21)
+
+================================================================
+
+Sample: MetalBorders_OptionDialogBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_OptionDialogBorder_5.java:16: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_PaletteBorder_4
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_PaletteBorder_4.java:11: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_PaletteBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_PaletteBorder_5.java:21: error: constructor PaletteBorder in class PaletteBorder cannot be applied to given types;
+                PaletteBorder border = new PaletteBorder(Color.BLACK, 10, 10, 10, 10);
+                                       ^
+  required: no arguments
+  found:    Color,int,int,int,int
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_ScrollPaneBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_ScrollPaneBorder_4.main(MetalBorders_ScrollPaneBorder_4.java:7)
+
+================================================================
+
+Sample: MetalBorders_ScrollPaneBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_ScrollPaneBorder_5.java:12: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalBorders_TableHeaderBorder_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalBorders_TableHeaderBorder_4.main(MetalBorders_TableHeaderBorder_4.java:7)
+
+================================================================
+
+Sample: MetalBorders_TableHeaderBorder_5
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalBorders_TableHeaderBorder_5.java:10: error: constructor InsetsUIResource in class InsetsUIResource cannot be applied to given types;
+        Insets insets = new InsetsUIResource();
+                        ^
+  required: int,int,int,int
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+1 error
+
+
+================================================================
+
+Sample: MetalPopupMenuSeparatorUI_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:166)
+	at java.desktop/java.awt.Window.<init>(Window.java:553)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
+	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
+	at MetalPopupMenuSeparatorUI_1.main(MetalPopupMenuSeparatorUI_1.java:15)
+
+================================================================
+
+Sample: MetalScrollBarUI_2
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalScrollBarUI_2.java:9: error: cannot find symbol
+        scrollBarUI.paintThumb(scrollBar.getGraphics(), scrollBar, scrollBar.getThumbBounds());
+                                                                            ^
+  symbol:   method getThumbBounds()
+  location: variable scrollBar of type JScrollBar
+1 error
+
+
+================================================================
+
+Sample: MetalSeparatorUI_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.awt.Graphics.setColor(java.awt.Color)" because "g" is null
+	at java.desktop/javax.swing.plaf.metal.MetalSeparatorUI.paint(MetalSeparatorUI.java:91)
+	at MetalSeparatorUI_1.main(MetalSeparatorUI_1.java:9)
+
+================================================================
+
+Sample: MetalSliderUI_2
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:11: error: cannot find symbol
+        slider.setUI(new MetalSliderUI() {
+                         ^
+  symbol:   class MetalSliderUI
+  location: class MetalSliderUI_2
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:12: error: method does not override or implement a method from a supertype
+            @Override
+            ^
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:16: error: cannot find symbol
+                g.fillRect(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
+                           ^
+  symbol: variable thumbRect
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:16: error: cannot find symbol
+                g.fillRect(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
+                                        ^
+  symbol: variable thumbRect
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:16: error: cannot find symbol
+                g.fillRect(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
+                                                     ^
+  symbol: variable thumbRect
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_2.java:16: error: cannot find symbol
+                g.fillRect(thumbRect.x, thumbRect.y, thumbRect.width, thumbRect.height);
+                                                                      ^
+  symbol: variable thumbRect
+6 errors
+
+
+================================================================
+
+Sample: MetalSliderUI_3
+----------------------------------------------------------------
+output:
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_3.java:8: error: constructor MetalSliderUI in class MetalSliderUI cannot be applied to given types;
+        MetalSliderUI sliderUI = new MetalSliderUI(slider);
+                                 ^
+  required: no arguments
+  found:    JSlider
+  reason: actual and formal argument lists differ in length
+./javax_swing_plaf_metal/javaFiles/MetalSliderUI_3.java:9: error: cannot find symbol
+        sliderUI.getTrack().paintTrack(new JComponent() {
+                ^
+  symbol:   method getTrack()
+  location: variable sliderUI of type MetalSliderUI
+2 errors
+
+
+================================================================
+

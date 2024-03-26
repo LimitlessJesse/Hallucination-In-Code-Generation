@@ -1,0 +1,57 @@
+ClassName,Method,Return Type
+ZoneOffsetTransition,compareTo(ZoneOffsetTransition transition),int
+ZoneOffsetTransition,equals(Object other),boolean
+ZoneOffsetTransition,getDateTimeAfter(),LocalDateTime
+ZoneOffsetTransition,getDateTimeBefore(),LocalDateTime
+ZoneOffsetTransition,getDuration(),Duration
+ZoneOffsetTransition,getInstant(),Instant
+ZoneOffsetTransition,getOffsetAfter(),ZoneOffset
+ZoneOffsetTransition,getOffsetBefore(),ZoneOffset
+ZoneOffsetTransition,hashCode(),int
+ZoneOffsetTransition,isGap(),boolean
+ZoneOffsetTransition,isOverlap(),boolean
+ZoneOffsetTransition,isValidOffset(ZoneOffset offset),boolean
+ZoneOffsetTransition,"of(LocalDateTime transition, ZoneOffset offsetBefore, ZoneOffset offsetAfter)",static ZoneOffsetTransition
+ZoneOffsetTransition,toEpochSecond(),long
+ZoneOffsetTransition,toString(),String
+ZoneOffsetTransitionRule,createTransition(int year),ZoneOffsetTransition
+ZoneOffsetTransitionRule,equals(Object otherRule),boolean
+ZoneOffsetTransitionRule,getDayOfMonthIndicator(),int
+ZoneOffsetTransitionRule,getDayOfWeek(),DayOfWeek
+ZoneOffsetTransitionRule,getLocalTime(),LocalTime
+ZoneOffsetTransitionRule,getMonth(),Month
+ZoneOffsetTransitionRule,getOffsetAfter(),ZoneOffset
+ZoneOffsetTransitionRule,getOffsetBefore(),ZoneOffset
+ZoneOffsetTransitionRule,getStandardOffset(),ZoneOffset
+ZoneOffsetTransitionRule,getTimeDefinition(),ZoneOffsetTransitionRule.TimeDefinition
+ZoneOffsetTransitionRule,hashCode(),int
+ZoneOffsetTransitionRule,isMidnightEndOfDay(),boolean
+ZoneOffsetTransitionRule,"of(Month month, int dayOfMonthIndicator, DayOfWeek dayOfWeek, LocalTime time, boolean timeEndOfDay, ZoneOffsetTransitionRule.TimeDefinition timeDefnition, ZoneOffset standardOffset, ZoneOffset offsetBefore, ZoneOffset offsetAfter)",static ZoneOffsetTransitionRule
+ZoneOffsetTransitionRule,toString(),String
+ZoneRules,equals(Object otherRules),boolean
+ZoneRules,getDaylightSavings(Instant instant),Duration
+ZoneRules,getOffset(Instant instant),ZoneOffset
+ZoneRules,getOffset(LocalDateTime localDateTime),ZoneOffset
+ZoneRules,getStandardOffset(Instant instant),ZoneOffset
+ZoneRules,getTransition(LocalDateTime localDateTime),ZoneOffsetTransition
+ZoneRules,getTransitionRules(),List<ZoneOffsetTransitionRule>
+ZoneRules,getTransitions(),List<ZoneOffsetTransition>
+ZoneRules,getValidOffsets(LocalDateTime localDateTime),List<ZoneOffset>
+ZoneRules,hashCode(),int
+ZoneRules,isDaylightSavings(Instant instant),boolean
+ZoneRules,isFixedOffset(),boolean
+ZoneRules,"isValidOffset(LocalDateTime localDateTime, ZoneOffset offset)",boolean
+ZoneRules,nextTransition(Instant instant),ZoneOffsetTransition
+ZoneRules,of(ZoneOffset offset),static ZoneRules
+ZoneRules,"of(ZoneOffset baseStandardOffset, ZoneOffset baseWallOffset, List<ZoneOffsetTransition> standardOffsetTransitionList, List<ZoneOffsetTransition> transitionList, List<ZoneOffsetTransitionRule> lastRules)",static ZoneRules
+ZoneRules,previousTransition(Instant instant),ZoneOffsetTransition
+ZoneRules,toString(),String
+ZoneRulesProvider,getAvailableZoneIds(),static Set<String>
+ZoneRulesProvider,"getRules(String zoneId, boolean forCaching)",static ZoneRules
+ZoneRulesProvider,getVersions(String zoneId),"static NavigableMap<String,ZoneRules>"
+ZoneRulesProvider,provideRefresh(),protected boolean
+ZoneRulesProvider,"provideRules(String zoneId, boolean forCaching)",protected abstract ZoneRules
+ZoneRulesProvider,provideVersions(String zoneId),"protected abstract NavigableMap<String,ZoneRules>"
+ZoneRulesProvider,provideZoneIds(),protected abstract Set<String>
+ZoneRulesProvider,refresh(),static boolean
+ZoneRulesProvider,registerProvider(ZoneRulesProvider provider),static void

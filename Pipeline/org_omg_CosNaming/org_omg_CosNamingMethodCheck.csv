@@ -1,0 +1,161 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,_BindingIteratorImplBase,1,boolean hasNext(),False
+0,_BindingIteratorImplBase,2,E next(),False
+0,_BindingIteratorImplBase,3,void remove(),False
+0,_BindingIteratorImplBase,4,void reset(),False
+0,_BindingIteratorImplBase,5,void destroy(),False
+1,_BindingIteratorStub,1,boolean hasNext(),False
+1,_BindingIteratorStub,2,org.omg.CORBA.Object next(),False
+1,_BindingIteratorStub,3,void remove(),False
+1,_BindingIteratorStub,4,void reset(),False
+1,_BindingIteratorStub,5,void destroy(),True
+2,_NamingContextExtStub,1,ObjectName resolve_str(String name),False
+2,_NamingContextExtStub,2,"void rebind(String name, Object obj)",False
+2,_NamingContextExtStub,3,"void rebind_context(String name, Object obj)",False
+2,_NamingContextExtStub,4,void unbind(String name),False
+2,_NamingContextExtStub,5,void unbind_context(String name),False
+3,_NamingContextImplBase,1,ObjectName name(),False
+3,_NamingContextImplBase,2,"void rebind(String name, Object obj)",False
+3,_NamingContextImplBase,3,"void rebinding_notification(int type, ObjectName name)",False
+3,_NamingContextImplBase,4,Object lookup(String name),False
+3,_NamingContextImplBase,5,void unbind(String name),False
+4,_NamingContextStub,1,ObjectName name(),False
+4,_NamingContextStub,2,"void rebind(String name, Object obj)",False
+4,_NamingContextStub,3,"void rebind(ObjectName name, Object obj)",False
+4,_NamingContextStub,4,void unbind(String name),False
+4,_NamingContextStub,5,void unbind(ObjectName name),False
+5,Binding,1,boolean add(E e),False
+5,Binding,2,E get(int index),False
+5,Binding,3,E remove(int index),False
+5,Binding,4,"E set(int index, E element)",False
+5,Binding,5,int size(),False
+6,BindingHelper,1,boolean add(E e),False
+6,BindingHelper,2,E get(int index),False
+6,BindingHelper,3,E remove(int index),False
+6,BindingHelper,4,"E set(int index, E element)",False
+6,BindingHelper,5,int size(),False
+7,BindingHolder,1,void set_binding(org.omg.CORBA.Object obj),False
+7,BindingHolder,2,org.omg.CORBA.Object get_binding(),False
+7,BindingHolder,3,void set_address(String address),False
+7,BindingHolder,4,String get_address(),False
+7,BindingHolder,5,void set_type(String type),False
+7,BindingHolder,6,String get_type(),False
+8,BindingIteratorHelper,1,boolean hasNext(),False
+8,BindingIteratorHelper,2,org.omg.CosNaming.Binding next(),False
+8,BindingIteratorHelper,3,void remove(),False
+8,BindingIteratorHelper,4,void reset(),False
+8,BindingIteratorHelper,5,boolean hasMoreElements(),False
+8,BindingIteratorHelper,6,org.omg.CosNaming.Binding nextElement(),False
+9,BindingIteratorHolder,1,boolean hasNext(),False
+9,BindingIteratorHolder,2,org.omg.CosNaming.Binding next(),False
+9,BindingIteratorHolder,3,void remove(),False
+9,BindingIteratorHolder,4,void reset(),False
+9,BindingIteratorHolder,5,void set_done(boolean done),False
+10,BindingIteratorPOA,1,boolean hasNext(),False
+10,BindingIteratorPOA,2,org.omg.CosNaming.Binding next(),False
+10,BindingIteratorPOA,3,void remove(),False
+10,BindingIteratorPOA,4,void reset(),False
+10,BindingIteratorPOA,5,boolean hasMoreElements(),False
+10,BindingIteratorPOA,6,org.omg.CosNaming.Binding nextElement(),False
+10,BindingIteratorPOA,7,void removeElement(),False
+10,BindingIteratorPOA,8,void resetElements(),False
+10,BindingIteratorPOA,9,boolean hasMore(),False
+10,BindingIteratorPOA,10,org.omg.CosNaming.Binding nextBinding(),False
+10,BindingIteratorPOA,11,void removeBinding(),False
+10,BindingIteratorPOA,12,void resetBindings(),False
+10,BindingIteratorPOA,13,boolean hasMoreBindings(),False
+10,BindingIteratorPOA,14,org.omg.CosNaming.Binding nextBindingElement(),False
+10,BindingIteratorPOA,15,void removeBindingElement(),False
+10,BindingIteratorPOA,16,void resetBindingElements(),False
+10,BindingIteratorPOA,17,boolean hasMoreBindingElements(),False
+10,BindingIteratorPOA,18,org.omg.CosNaming.Binding nextBindingElement(),False
+10,BindingIteratorPOA,19,void removeBindingElement(),False
+10,BindingIteratorPOA,20,void resetBindingElements(),False
+11,BindingListHelper,1,boolean add(E e),False
+11,BindingListHelper,2,"void add(int index, E element)",False
+11,BindingListHelper,3,boolean addAll(Collection<? extends E> c),False
+11,BindingListHelper,4,boolean remove(Object o),False
+11,BindingListHelper,5,E remove(int index),False
+12,BindingListHolder,1,boolean add(E e),False
+12,BindingListHolder,2,"void add(int index, E element)",False
+12,BindingListHolder,3,boolean addAll(Collection<? extends E> c),False
+12,BindingListHolder,4,boolean remove(Object o),False
+12,BindingListHolder,5,E remove(int index),False
+13,BindingType,1,boolean add(E e),False
+13,BindingType,2,E get(int index),False
+13,BindingType,3,E remove(int index),False
+13,BindingType,4,"E set(int index, E element)",False
+13,BindingType,5,int size(),False
+14,BindingTypeHelper,1,boolean equals(Object o),False
+14,BindingTypeHelper,2,int hashCode(),False
+14,BindingTypeHelper,3,E getName(),False
+14,BindingTypeHelper,4,E getType(),False
+14,BindingTypeHelper,5,E getObject(),False
+15,BindingTypeHolder,1,boolean is_default(),False
+15,BindingTypeHolder,2,void set_default(boolean default_val),False
+15,BindingTypeHolder,3,String name(),False
+15,BindingTypeHolder,4,void set_name(String name),False
+15,BindingTypeHolder,5,String type(),False
+15,BindingTypeHolder,6,void set_type(String type),False
+16,IstringHelper,1,boolean equals(Object o),False
+16,IstringHelper,2,int hashCode(),False
+16,IstringHelper,3,String toString(),False
+16,IstringHelper,4,int compareTo(String anotherString),False
+16,IstringHelper,5,String[] split(String regex),False
+17,NameComponent,1,boolean add(E e),False
+17,NameComponent,2,E get(int index),False
+17,NameComponent,3,E remove(int index),False
+17,NameComponent,4,"E set(int index, E element)",False
+17,NameComponent,5,int size(),False
+18,NameComponentHelper,1,"NameComponentHelper.newNameComponent(String id, String kind)",False
+18,NameComponentHelper,2,"NameComponentHelper.newNameComponent(String id, String kind, String encoding)",False
+18,NameComponentHelper,3,"NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address)",False
+18,NameComponentHelper,4,"NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address, String port)",False
+18,NameComponentHelper,5,"NameComponentHelper.newNameComponent(String id, String kind, String encoding, String address, String port, String type)",False
+19,NameComponentHolder,1,void set_id(String id),False
+19,NameComponentHolder,2,String get_id(),False
+19,NameComponentHolder,3,void set_kind(String kind),False
+19,NameComponentHolder,4,String get_kind(),False
+19,NameComponentHolder,5,void set_name(String name),False
+19,NameComponentHolder,6,String get_name(),False
+20,NameHelper,1,"String to_string(org.omg.CosNaming.NamingContextExt nc, org.omg.CosNaming.Name name)",False
+20,NameHelper,2,org.omg.CosNaming.Name string_to_name(String name),False
+20,NameHelper,3,"org.omg.CosNaming.Name compose_name(org.omg.CosNaming.NamingContextExt nc, org.omg.CosNaming.Name name1, org.omg.CosNaming.Name name2)",False
+20,NameHelper,4,org.omg.CosNaming.Name parse_name(String name),False
+20,NameHelper,5,"org.omg.CosNaming.Name parse_name(String name, int start, int end)",False
+21,NameHolder,1,void set_name(org.omg.CORBA.Object obj),False
+21,NameHolder,2,org.omg.CORBA.Object get_name(),False
+21,NameHolder,3,void set_context(org.omg.CORBA.Object obj),False
+21,NameHolder,4,org.omg.CORBA.Object get_context(),False
+21,NameHolder,5,void set_type(org.omg.CORBA.TypeCode tc),False
+21,NameHolder,6,org.omg.CORBA.TypeCode get_type(),False
+22,NamingContextExtHelper,1,ObjectName name(),False
+22,NamingContextExtHelper,2,"void rebind(String name, Object obj)",False
+22,NamingContextExtHelper,3,"void rebind(ObjectName name, Object obj)",False
+22,NamingContextExtHelper,4,void unbind(String name),False
+22,NamingContextExtHelper,5,void unbind(ObjectName name),False
+23,NamingContextExtHolder,1,"void rebind(String name, Object obj)",False
+23,NamingContextExtHolder,2,"void rebind_url(String name, String url)",False
+23,NamingContextExtHolder,3,void unbind(String name),False
+23,NamingContextExtHolder,4,Object resolve_str(String name),False
+23,NamingContextExtHolder,5,"Object resolve_str(String name, org.omg.CORBA.Object obj)",False
+24,NamingContextExtPOA,1,ObjectName name(),False
+24,NamingContextExtPOA,2,"void rebind(String name, Object obj)",False
+24,NamingContextExtPOA,3,"void rebind(ObjectName name, Object obj)",False
+24,NamingContextExtPOA,4,void unbind(String name),False
+24,NamingContextExtPOA,5,void unbind(ObjectName name),False
+25,NamingContextHelper,1,org.omg.CosNaming.NamingContextHelper.string_to_url(String name),False
+25,NamingContextHelper,2,org.omg.CosNaming.NamingContextHelper.string_to_name(String name),False
+25,NamingContextHelper,3,org.omg.CosNaming.NamingContextHelper.string_to_namingcontext(String name),False
+25,NamingContextHelper,4,org.omg.CosNaming.NamingContextHelper.string_to_namingcontextext(String name),False
+25,NamingContextHelper,5,org.omg.CosNaming.NamingContextHelper.string_to_namingcontextid(String name),False
+26,NamingContextHolder,1,"void bind(String name, Object obj)",False
+26,NamingContextHolder,2,"void rebind(String name, Object obj)",False
+26,NamingContextHolder,3,void unbind(String name),False
+26,NamingContextHolder,4,Object resolve(String name),False
+26,NamingContextHolder,5,void destroy(),False
+27,NamingContextPOA,1,ObjectName name(),False
+27,NamingContextPOA,2,"void rebind(String name, Object obj)",False
+27,NamingContextPOA,3,"void rebinding_notification(int type, ObjectName name)",False
+27,NamingContextPOA,4,Object resolve_str(String name),False
+27,NamingContextPOA,5,void unbind(String name),False

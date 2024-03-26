@@ -1,0 +1,686 @@
+ClassName,Method,Return Type
+Clock,equals(Object obj),boolean
+Clock,"fixed(Instant fixedInstant, ZoneId zone)",static Clock
+Clock,getZone(),abstract ZoneId
+Clock,hashCode(),int
+Clock,instant(),abstract Instant
+Clock,millis(),long
+Clock,"offset(Clock baseClock, Duration offsetDuration)",static Clock
+Clock,system(ZoneId zone),static Clock
+Clock,systemDefaultZone(),static Clock
+Clock,systemUTC(),static Clock
+Clock,"tick(Clock baseClock, Duration tickDuration)",static Clock
+Clock,tickMinutes(ZoneId zone),static Clock
+Clock,tickSeconds(ZoneId zone),static Clock
+Clock,withZone(ZoneId zone),abstract Clock
+Duration,abs(),Duration
+Duration,addTo(Temporal temporal),Temporal
+Duration,"between(Temporal startInclusive, Temporal endExclusive)",static Duration
+Duration,compareTo(Duration otherDuration),int
+Duration,dividedBy(long divisor),Duration
+Duration,equals(Object otherDuration),boolean
+Duration,from(TemporalAmount amount),static Duration
+Duration,get(TemporalUnit unit),long
+Duration,getNano(),int
+Duration,getSeconds(),long
+Duration,getUnits(),List<TemporalUnit>
+Duration,hashCode(),int
+Duration,isNegative(),boolean
+Duration,isZero(),boolean
+Duration,minus(Duration duration),Duration
+Duration,"minus(long amountToSubtract, TemporalUnit unit)",Duration
+Duration,minusDays(long daysToSubtract),Duration
+Duration,minusHours(long hoursToSubtract),Duration
+Duration,minusMillis(long millisToSubtract),Duration
+Duration,minusMinutes(long minutesToSubtract),Duration
+Duration,minusNanos(long nanosToSubtract),Duration
+Duration,minusSeconds(long secondsToSubtract),Duration
+Duration,multipliedBy(long multiplicand),Duration
+Duration,negated(),Duration
+Duration,"of(long amount, TemporalUnit unit)",static Duration
+Duration,ofDays(long days),static Duration
+Duration,ofHours(long hours),static Duration
+Duration,ofMillis(long millis),static Duration
+Duration,ofMinutes(long minutes),static Duration
+Duration,ofNanos(long nanos),static Duration
+Duration,ofSeconds(long seconds),static Duration
+Duration,"ofSeconds(long seconds, long nanoAdjustment)",static Duration
+Duration,parse(CharSequence text),static Duration
+Duration,plus(Duration duration),Duration
+Duration,"plus(long amountToAdd, TemporalUnit unit)",Duration
+Duration,plusDays(long daysToAdd),Duration
+Duration,plusHours(long hoursToAdd),Duration
+Duration,plusMillis(long millisToAdd),Duration
+Duration,plusMinutes(long minutesToAdd),Duration
+Duration,plusNanos(long nanosToAdd),Duration
+Duration,plusSeconds(long secondsToAdd),Duration
+Duration,subtractFrom(Temporal temporal),Temporal
+Duration,toDays(),long
+Duration,toHours(),long
+Duration,toMillis(),long
+Duration,toMinutes(),long
+Duration,toNanos(),long
+Duration,toString(),String
+Duration,withNanos(int nanoOfSecond),Duration
+Duration,withSeconds(long seconds),Duration
+Instant,adjustInto(Temporal temporal),Temporal
+Instant,atOffset(ZoneOffset offset),OffsetDateTime
+Instant,atZone(ZoneId zone),ZonedDateTime
+Instant,compareTo(Instant otherInstant),int
+Instant,equals(Object otherInstant),boolean
+Instant,from(TemporalAccessor temporal),static Instant
+Instant,get(TemporalField field),int
+Instant,getEpochSecond(),long
+Instant,getLong(TemporalField field),long
+Instant,getNano(),int
+Instant,hashCode(),int
+Instant,isAfter(Instant otherInstant),boolean
+Instant,isBefore(Instant otherInstant),boolean
+Instant,isSupported(TemporalField field),boolean
+Instant,isSupported(TemporalUnit unit),boolean
+Instant,"minus(long amountToSubtract, TemporalUnit unit)",Instant
+Instant,minus(TemporalAmount amountToSubtract),Instant
+Instant,minusMillis(long millisToSubtract),Instant
+Instant,minusNanos(long nanosToSubtract),Instant
+Instant,minusSeconds(long secondsToSubtract),Instant
+Instant,now(),static Instant
+Instant,now(Clock clock),static Instant
+Instant,ofEpochMilli(long epochMilli),static Instant
+Instant,ofEpochSecond(long epochSecond),static Instant
+Instant,"ofEpochSecond(long epochSecond, long nanoAdjustment)",static Instant
+Instant,parse(CharSequence text),static Instant
+Instant,"plus(long amountToAdd, TemporalUnit unit)",Instant
+Instant,plus(TemporalAmount amountToAdd),Instant
+Instant,plusMillis(long millisToAdd),Instant
+Instant,plusNanos(long nanosToAdd),Instant
+Instant,plusSeconds(long secondsToAdd),Instant
+Instant,query(TemporalQuery<R> query),<R> R
+Instant,range(TemporalField field),ValueRange
+Instant,toEpochMilli(),long
+Instant,toString(),String
+Instant,truncatedTo(TemporalUnit unit),Instant
+Instant,"until(Temporal endExclusive, TemporalUnit unit)",long
+Instant,with(TemporalAdjuster adjuster),Instant
+Instant,"with(TemporalField field, long newValue)",Instant
+LocalDate,adjustInto(Temporal temporal),Temporal
+LocalDate,atStartOfDay(),LocalDateTime
+LocalDate,atStartOfDay(ZoneId zone),ZonedDateTime
+LocalDate,"atTime(int hour, int minute)",LocalDateTime
+LocalDate,"atTime(int hour, int minute, int second)",LocalDateTime
+LocalDate,"atTime(int hour, int minute, int second, int nanoOfSecond)",LocalDateTime
+LocalDate,atTime(LocalTime time),LocalDateTime
+LocalDate,atTime(OffsetTime time),OffsetDateTime
+LocalDate,compareTo(ChronoLocalDate other),int
+LocalDate,equals(Object obj),boolean
+LocalDate,format(DateTimeFormatter formatter),String
+LocalDate,from(TemporalAccessor temporal),static LocalDate
+LocalDate,get(TemporalField field),int
+LocalDate,getChronology(),IsoChronology
+LocalDate,getDayOfMonth(),int
+LocalDate,getDayOfWeek(),DayOfWeek
+LocalDate,getDayOfYear(),int
+LocalDate,getEra(),Era
+LocalDate,getLong(TemporalField field),long
+LocalDate,getMonth(),Month
+LocalDate,getMonthValue(),int
+LocalDate,getYear(),int
+LocalDate,hashCode(),int
+LocalDate,isAfter(ChronoLocalDate other),boolean
+LocalDate,isBefore(ChronoLocalDate other),boolean
+LocalDate,isEqual(ChronoLocalDate other),boolean
+LocalDate,isLeapYear(),boolean
+LocalDate,isSupported(TemporalField field),boolean
+LocalDate,isSupported(TemporalUnit unit),boolean
+LocalDate,lengthOfMonth(),int
+LocalDate,lengthOfYear(),int
+LocalDate,"minus(long amountToSubtract, TemporalUnit unit)",LocalDate
+LocalDate,minus(TemporalAmount amountToSubtract),LocalDate
+LocalDate,minusDays(long daysToSubtract),LocalDate
+LocalDate,minusMonths(long monthsToSubtract),LocalDate
+LocalDate,minusWeeks(long weeksToSubtract),LocalDate
+LocalDate,minusYears(long yearsToSubtract),LocalDate
+LocalDate,now(),static LocalDate
+LocalDate,now(Clock clock),static LocalDate
+LocalDate,now(ZoneId zone),static LocalDate
+LocalDate,"of(int year, int month, int dayOfMonth)",static LocalDate
+LocalDate,"of(int year, Month month, int dayOfMonth)",static LocalDate
+LocalDate,ofEpochDay(long epochDay),static LocalDate
+LocalDate,"ofYearDay(int year, int dayOfYear)",static LocalDate
+LocalDate,parse(CharSequence text),static LocalDate
+LocalDate,"parse(CharSequence text, DateTimeFormatter formatter)",static LocalDate
+LocalDate,"plus(long amountToAdd, TemporalUnit unit)",LocalDate
+LocalDate,plus(TemporalAmount amountToAdd),LocalDate
+LocalDate,plusDays(long daysToAdd),LocalDate
+LocalDate,plusMonths(long monthsToAdd),LocalDate
+LocalDate,plusWeeks(long weeksToAdd),LocalDate
+LocalDate,plusYears(long yearsToAdd),LocalDate
+LocalDate,query(TemporalQuery<R> query),<R> R
+LocalDate,range(TemporalField field),ValueRange
+LocalDate,toEpochDay(),long
+LocalDate,toString(),String
+LocalDate,until(ChronoLocalDate endDateExclusive),Period
+LocalDate,"until(Temporal endExclusive, TemporalUnit unit)",long
+LocalDate,with(TemporalAdjuster adjuster),LocalDate
+LocalDate,"with(TemporalField field, long newValue)",LocalDate
+LocalDate,withDayOfMonth(int dayOfMonth),LocalDate
+LocalDate,withDayOfYear(int dayOfYear),LocalDate
+LocalDate,withMonth(int month),LocalDate
+LocalDate,withYear(int year),LocalDate
+LocalDateTime,adjustInto(Temporal temporal),Temporal
+LocalDateTime,atOffset(ZoneOffset offset),OffsetDateTime
+LocalDateTime,atZone(ZoneId zone),ZonedDateTime
+LocalDateTime,compareTo(ChronoLocalDateTime<?> other),int
+LocalDateTime,equals(Object obj),boolean
+LocalDateTime,format(DateTimeFormatter formatter),String
+LocalDateTime,from(TemporalAccessor temporal),static LocalDateTime
+LocalDateTime,get(TemporalField field),int
+LocalDateTime,getDayOfMonth(),int
+LocalDateTime,getDayOfWeek(),DayOfWeek
+LocalDateTime,getDayOfYear(),int
+LocalDateTime,getHour(),int
+LocalDateTime,getLong(TemporalField field),long
+LocalDateTime,getMinute(),int
+LocalDateTime,getMonth(),Month
+LocalDateTime,getMonthValue(),int
+LocalDateTime,getNano(),int
+LocalDateTime,getSecond(),int
+LocalDateTime,getYear(),int
+LocalDateTime,hashCode(),int
+LocalDateTime,isAfter(ChronoLocalDateTime<?> other),boolean
+LocalDateTime,isBefore(ChronoLocalDateTime<?> other),boolean
+LocalDateTime,isEqual(ChronoLocalDateTime<?> other),boolean
+LocalDateTime,isSupported(TemporalField field),boolean
+LocalDateTime,isSupported(TemporalUnit unit),boolean
+LocalDateTime,"minus(long amountToSubtract, TemporalUnit unit)",LocalDateTime
+LocalDateTime,minus(TemporalAmount amountToSubtract),LocalDateTime
+LocalDateTime,minusDays(long days),LocalDateTime
+LocalDateTime,minusHours(long hours),LocalDateTime
+LocalDateTime,minusMinutes(long minutes),LocalDateTime
+LocalDateTime,minusMonths(long months),LocalDateTime
+LocalDateTime,minusNanos(long nanos),LocalDateTime
+LocalDateTime,minusSeconds(long seconds),LocalDateTime
+LocalDateTime,minusWeeks(long weeks),LocalDateTime
+LocalDateTime,minusYears(long years),LocalDateTime
+LocalDateTime,now(),static LocalDateTime
+LocalDateTime,now(Clock clock),static LocalDateTime
+LocalDateTime,now(ZoneId zone),static LocalDateTime
+LocalDateTime,"of(int year, int month, int dayOfMonth, int hour, int minute)",static LocalDateTime
+LocalDateTime,"of(int year, int month, int dayOfMonth, int hour, int minute, int second)",static LocalDateTime
+LocalDateTime,"of(int year, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond)",static LocalDateTime
+LocalDateTime,"of(int year, Month month, int dayOfMonth, int hour, int minute)",static LocalDateTime
+LocalDateTime,"of(int year, Month month, int dayOfMonth, int hour, int minute, int second)",static LocalDateTime
+LocalDateTime,"of(int year, Month month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond)",static LocalDateTime
+LocalDateTime,"of(LocalDate date, LocalTime time)",static LocalDateTime
+LocalDateTime,"ofEpochSecond(long epochSecond, int nanoOfSecond, ZoneOffset offset)",static LocalDateTime
+LocalDateTime,"ofInstant(Instant instant, ZoneId zone)",static LocalDateTime
+LocalDateTime,parse(CharSequence text),static LocalDateTime
+LocalDateTime,"parse(CharSequence text, DateTimeFormatter formatter)",static LocalDateTime
+LocalDateTime,"plus(long amountToAdd, TemporalUnit unit)",LocalDateTime
+LocalDateTime,plus(TemporalAmount amountToAdd),LocalDateTime
+LocalDateTime,plusDays(long days),LocalDateTime
+LocalDateTime,plusHours(long hours),LocalDateTime
+LocalDateTime,plusMinutes(long minutes),LocalDateTime
+LocalDateTime,plusMonths(long months),LocalDateTime
+LocalDateTime,plusNanos(long nanos),LocalDateTime
+LocalDateTime,plusSeconds(long seconds),LocalDateTime
+LocalDateTime,plusWeeks(long weeks),LocalDateTime
+LocalDateTime,plusYears(long years),LocalDateTime
+LocalDateTime,query(TemporalQuery<R> query),<R> R
+LocalDateTime,range(TemporalField field),ValueRange
+LocalDateTime,toLocalDate(),LocalDate
+LocalDateTime,toLocalTime(),LocalTime
+LocalDateTime,toString(),String
+LocalDateTime,truncatedTo(TemporalUnit unit),LocalDateTime
+LocalDateTime,"until(Temporal endExclusive, TemporalUnit unit)",long
+LocalDateTime,with(TemporalAdjuster adjuster),LocalDateTime
+LocalDateTime,"with(TemporalField field, long newValue)",LocalDateTime
+LocalDateTime,withDayOfMonth(int dayOfMonth),LocalDateTime
+LocalDateTime,withDayOfYear(int dayOfYear),LocalDateTime
+LocalDateTime,withHour(int hour),LocalDateTime
+LocalDateTime,withMinute(int minute),LocalDateTime
+LocalDateTime,withMonth(int month),LocalDateTime
+LocalDateTime,withNano(int nanoOfSecond),LocalDateTime
+LocalDateTime,withSecond(int second),LocalDateTime
+LocalDateTime,withYear(int year),LocalDateTime
+LocalTime,adjustInto(Temporal temporal),Temporal
+LocalTime,atDate(LocalDate date),LocalDateTime
+LocalTime,atOffset(ZoneOffset offset),OffsetTime
+LocalTime,compareTo(LocalTime other),int
+LocalTime,equals(Object obj),boolean
+LocalTime,format(DateTimeFormatter formatter),String
+LocalTime,from(TemporalAccessor temporal),static LocalTime
+LocalTime,get(TemporalField field),int
+LocalTime,getHour(),int
+LocalTime,getLong(TemporalField field),long
+LocalTime,getMinute(),int
+LocalTime,getNano(),int
+LocalTime,getSecond(),int
+LocalTime,hashCode(),int
+LocalTime,isAfter(LocalTime other),boolean
+LocalTime,isBefore(LocalTime other),boolean
+LocalTime,isSupported(TemporalField field),boolean
+LocalTime,isSupported(TemporalUnit unit),boolean
+LocalTime,"minus(long amountToSubtract, TemporalUnit unit)",LocalTime
+LocalTime,minus(TemporalAmount amountToSubtract),LocalTime
+LocalTime,minusHours(long hoursToSubtract),LocalTime
+LocalTime,minusMinutes(long minutesToSubtract),LocalTime
+LocalTime,minusNanos(long nanosToSubtract),LocalTime
+LocalTime,minusSeconds(long secondsToSubtract),LocalTime
+LocalTime,now(),static LocalTime
+LocalTime,now(Clock clock),static LocalTime
+LocalTime,now(ZoneId zone),static LocalTime
+LocalTime,"of(int hour, int minute)",static LocalTime
+LocalTime,"of(int hour, int minute, int second)",static LocalTime
+LocalTime,"of(int hour, int minute, int second, int nanoOfSecond)",static LocalTime
+LocalTime,ofNanoOfDay(long nanoOfDay),static LocalTime
+LocalTime,ofSecondOfDay(long secondOfDay),static LocalTime
+LocalTime,parse(CharSequence text),static LocalTime
+LocalTime,"parse(CharSequence text, DateTimeFormatter formatter)",static LocalTime
+LocalTime,"plus(long amountToAdd, TemporalUnit unit)",LocalTime
+LocalTime,plus(TemporalAmount amountToAdd),LocalTime
+LocalTime,plusHours(long hoursToAdd),LocalTime
+LocalTime,plusMinutes(long minutesToAdd),LocalTime
+LocalTime,plusNanos(long nanosToAdd),LocalTime
+LocalTime,plusSeconds(long secondstoAdd),LocalTime
+LocalTime,query(TemporalQuery<R> query),<R> R
+LocalTime,range(TemporalField field),ValueRange
+LocalTime,toNanoOfDay(),long
+LocalTime,toSecondOfDay(),int
+LocalTime,toString(),String
+LocalTime,truncatedTo(TemporalUnit unit),LocalTime
+LocalTime,"until(Temporal endExclusive, TemporalUnit unit)",long
+LocalTime,with(TemporalAdjuster adjuster),LocalTime
+LocalTime,"with(TemporalField field, long newValue)",LocalTime
+LocalTime,withHour(int hour),LocalTime
+LocalTime,withMinute(int minute),LocalTime
+LocalTime,withNano(int nanoOfSecond),LocalTime
+LocalTime,withSecond(int second),LocalTime
+MonthDay,adjustInto(Temporal temporal),Temporal
+MonthDay,atYear(int year),LocalDate
+MonthDay,compareTo(MonthDay other),int
+MonthDay,equals(Object obj),boolean
+MonthDay,format(DateTimeFormatter formatter),String
+MonthDay,from(TemporalAccessor temporal),static MonthDay
+MonthDay,get(TemporalField field),int
+MonthDay,getDayOfMonth(),int
+MonthDay,getLong(TemporalField field),long
+MonthDay,getMonth(),Month
+MonthDay,getMonthValue(),int
+MonthDay,hashCode(),int
+MonthDay,isAfter(MonthDay other),boolean
+MonthDay,isBefore(MonthDay other),boolean
+MonthDay,isSupported(TemporalField field),boolean
+MonthDay,isValidYear(int year),boolean
+MonthDay,now(),static MonthDay
+MonthDay,now(Clock clock),static MonthDay
+MonthDay,now(ZoneId zone),static MonthDay
+MonthDay,"of(int month, int dayOfMonth)",static MonthDay
+MonthDay,"of(Month month, int dayOfMonth)",static MonthDay
+MonthDay,parse(CharSequence text),static MonthDay
+MonthDay,"parse(CharSequence text, DateTimeFormatter formatter)",static MonthDay
+MonthDay,query(TemporalQuery<R> query),<R> R
+MonthDay,range(TemporalField field),ValueRange
+MonthDay,toString(),String
+MonthDay,with(Month month),MonthDay
+MonthDay,withDayOfMonth(int dayOfMonth),MonthDay
+MonthDay,withMonth(int month),MonthDay
+OffsetDateTime,adjustInto(Temporal temporal),Temporal
+OffsetDateTime,atZoneSameInstant(ZoneId zone),ZonedDateTime
+OffsetDateTime,atZoneSimilarLocal(ZoneId zone),ZonedDateTime
+OffsetDateTime,compareTo(OffsetDateTime other),int
+OffsetDateTime,equals(Object obj),boolean
+OffsetDateTime,format(DateTimeFormatter formatter),String
+OffsetDateTime,from(TemporalAccessor temporal),static OffsetDateTime
+OffsetDateTime,get(TemporalField field),int
+OffsetDateTime,getDayOfMonth(),int
+OffsetDateTime,getDayOfWeek(),DayOfWeek
+OffsetDateTime,getDayOfYear(),int
+OffsetDateTime,getHour(),int
+OffsetDateTime,getLong(TemporalField field),long
+OffsetDateTime,getMinute(),int
+OffsetDateTime,getMonth(),Month
+OffsetDateTime,getMonthValue(),int
+OffsetDateTime,getNano(),int
+OffsetDateTime,getOffset(),ZoneOffset
+OffsetDateTime,getSecond(),int
+OffsetDateTime,getYear(),int
+OffsetDateTime,hashCode(),int
+OffsetDateTime,isAfter(OffsetDateTime other),boolean
+OffsetDateTime,isBefore(OffsetDateTime other),boolean
+OffsetDateTime,isEqual(OffsetDateTime other),boolean
+OffsetDateTime,isSupported(TemporalField field),boolean
+OffsetDateTime,isSupported(TemporalUnit unit),boolean
+OffsetDateTime,"minus(long amountToSubtract, TemporalUnit unit)",OffsetDateTime
+OffsetDateTime,minus(TemporalAmount amountToSubtract),OffsetDateTime
+OffsetDateTime,minusDays(long days),OffsetDateTime
+OffsetDateTime,minusHours(long hours),OffsetDateTime
+OffsetDateTime,minusMinutes(long minutes),OffsetDateTime
+OffsetDateTime,minusMonths(long months),OffsetDateTime
+OffsetDateTime,minusNanos(long nanos),OffsetDateTime
+OffsetDateTime,minusSeconds(long seconds),OffsetDateTime
+OffsetDateTime,minusWeeks(long weeks),OffsetDateTime
+OffsetDateTime,minusYears(long years),OffsetDateTime
+OffsetDateTime,now(),static OffsetDateTime
+OffsetDateTime,now(Clock clock),static OffsetDateTime
+OffsetDateTime,now(ZoneId zone),static OffsetDateTime
+OffsetDateTime,"of(int year, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneOffset offset)",static OffsetDateTime
+OffsetDateTime,"of(LocalDate date, LocalTime time, ZoneOffset offset)",static OffsetDateTime
+OffsetDateTime,"of(LocalDateTime dateTime, ZoneOffset offset)",static OffsetDateTime
+OffsetDateTime,"ofInstant(Instant instant, ZoneId zone)",static OffsetDateTime
+OffsetDateTime,parse(CharSequence text),static OffsetDateTime
+OffsetDateTime,"parse(CharSequence text, DateTimeFormatter formatter)",static OffsetDateTime
+OffsetDateTime,"plus(long amountToAdd, TemporalUnit unit)",OffsetDateTime
+OffsetDateTime,plus(TemporalAmount amountToAdd),OffsetDateTime
+OffsetDateTime,plusDays(long days),OffsetDateTime
+OffsetDateTime,plusHours(long hours),OffsetDateTime
+OffsetDateTime,plusMinutes(long minutes),OffsetDateTime
+OffsetDateTime,plusMonths(long months),OffsetDateTime
+OffsetDateTime,plusNanos(long nanos),OffsetDateTime
+OffsetDateTime,plusSeconds(long seconds),OffsetDateTime
+OffsetDateTime,plusWeeks(long weeks),OffsetDateTime
+OffsetDateTime,plusYears(long years),OffsetDateTime
+OffsetDateTime,query(TemporalQuery<R> query),<R> R
+OffsetDateTime,range(TemporalField field),ValueRange
+OffsetDateTime,timeLineOrder(),static Comparator<OffsetDateTime>
+OffsetDateTime,toEpochSecond(),long
+OffsetDateTime,toInstant(),Instant
+OffsetDateTime,toLocalDate(),LocalDate
+OffsetDateTime,toLocalDateTime(),LocalDateTime
+OffsetDateTime,toLocalTime(),LocalTime
+OffsetDateTime,toOffsetTime(),OffsetTime
+OffsetDateTime,toString(),String
+OffsetDateTime,toZonedDateTime(),ZonedDateTime
+OffsetDateTime,truncatedTo(TemporalUnit unit),OffsetDateTime
+OffsetDateTime,"until(Temporal endExclusive, TemporalUnit unit)",long
+OffsetDateTime,with(TemporalAdjuster adjuster),OffsetDateTime
+OffsetDateTime,"with(TemporalField field, long newValue)",OffsetDateTime
+OffsetDateTime,withDayOfMonth(int dayOfMonth),OffsetDateTime
+OffsetDateTime,withDayOfYear(int dayOfYear),OffsetDateTime
+OffsetDateTime,withHour(int hour),OffsetDateTime
+OffsetDateTime,withMinute(int minute),OffsetDateTime
+OffsetDateTime,withMonth(int month),OffsetDateTime
+OffsetDateTime,withNano(int nanoOfSecond),OffsetDateTime
+OffsetDateTime,withOffsetSameInstant(ZoneOffset offset),OffsetDateTime
+OffsetDateTime,withOffsetSameLocal(ZoneOffset offset),OffsetDateTime
+OffsetDateTime,withSecond(int second),OffsetDateTime
+OffsetDateTime,withYear(int year),OffsetDateTime
+OffsetTime,adjustInto(Temporal temporal),Temporal
+OffsetTime,atDate(LocalDate date),OffsetDateTime
+OffsetTime,compareTo(OffsetTime other),int
+OffsetTime,equals(Object obj),boolean
+OffsetTime,format(DateTimeFormatter formatter),String
+OffsetTime,from(TemporalAccessor temporal),static OffsetTime
+OffsetTime,get(TemporalField field),int
+OffsetTime,getHour(),int
+OffsetTime,getLong(TemporalField field),long
+OffsetTime,getMinute(),int
+OffsetTime,getNano(),int
+OffsetTime,getOffset(),ZoneOffset
+OffsetTime,getSecond(),int
+OffsetTime,hashCode(),int
+OffsetTime,isAfter(OffsetTime other),boolean
+OffsetTime,isBefore(OffsetTime other),boolean
+OffsetTime,isEqual(OffsetTime other),boolean
+OffsetTime,isSupported(TemporalField field),boolean
+OffsetTime,isSupported(TemporalUnit unit),boolean
+OffsetTime,"minus(long amountToSubtract, TemporalUnit unit)",OffsetTime
+OffsetTime,minus(TemporalAmount amountToSubtract),OffsetTime
+OffsetTime,minusHours(long hours),OffsetTime
+OffsetTime,minusMinutes(long minutes),OffsetTime
+OffsetTime,minusNanos(long nanos),OffsetTime
+OffsetTime,minusSeconds(long seconds),OffsetTime
+OffsetTime,now(),static OffsetTime
+OffsetTime,now(Clock clock),static OffsetTime
+OffsetTime,now(ZoneId zone),static OffsetTime
+OffsetTime,"of(int hour, int minute, int second, int nanoOfSecond, ZoneOffset offset)",static OffsetTime
+OffsetTime,"of(LocalTime time, ZoneOffset offset)",static OffsetTime
+OffsetTime,"ofInstant(Instant instant, ZoneId zone)",static OffsetTime
+OffsetTime,parse(CharSequence text),static OffsetTime
+OffsetTime,"parse(CharSequence text, DateTimeFormatter formatter)",static OffsetTime
+OffsetTime,"plus(long amountToAdd, TemporalUnit unit)",OffsetTime
+OffsetTime,plus(TemporalAmount amountToAdd),OffsetTime
+OffsetTime,plusHours(long hours),OffsetTime
+OffsetTime,plusMinutes(long minutes),OffsetTime
+OffsetTime,plusNanos(long nanos),OffsetTime
+OffsetTime,plusSeconds(long seconds),OffsetTime
+OffsetTime,query(TemporalQuery<R> query),<R> R
+OffsetTime,range(TemporalField field),ValueRange
+OffsetTime,toLocalTime(),LocalTime
+OffsetTime,toString(),String
+OffsetTime,truncatedTo(TemporalUnit unit),OffsetTime
+OffsetTime,"until(Temporal endExclusive, TemporalUnit unit)",long
+OffsetTime,with(TemporalAdjuster adjuster),OffsetTime
+OffsetTime,"with(TemporalField field, long newValue)",OffsetTime
+OffsetTime,withHour(int hour),OffsetTime
+OffsetTime,withMinute(int minute),OffsetTime
+OffsetTime,withNano(int nanoOfSecond),OffsetTime
+OffsetTime,withOffsetSameInstant(ZoneOffset offset),OffsetTime
+OffsetTime,withOffsetSameLocal(ZoneOffset offset),OffsetTime
+OffsetTime,withSecond(int second),OffsetTime
+Period,addTo(Temporal temporal),Temporal
+Period,"between(LocalDate startDateInclusive, LocalDate endDateExclusive)",static Period
+Period,equals(Object obj),boolean
+Period,from(TemporalAmount amount),static Period
+Period,get(TemporalUnit unit),long
+Period,getChronology(),IsoChronology
+Period,getDays(),int
+Period,getMonths(),int
+Period,getUnits(),List<TemporalUnit>
+Period,getYears(),int
+Period,hashCode(),int
+Period,isNegative(),boolean
+Period,isZero(),boolean
+Period,minus(TemporalAmount amountToSubtract),Period
+Period,minusDays(long daysToSubtract),Period
+Period,minusMonths(long monthsToSubtract),Period
+Period,minusYears(long yearsToSubtract),Period
+Period,multipliedBy(int scalar),Period
+Period,negated(),Period
+Period,normalized(),Period
+Period,"of(int years, int months, int days)",static Period
+Period,ofDays(int days),static Period
+Period,ofMonths(int months),static Period
+Period,ofWeeks(int weeks),static Period
+Period,ofYears(int years),static Period
+Period,parse(CharSequence text),static Period
+Period,plus(TemporalAmount amountToAdd),Period
+Period,plusDays(long daysToAdd),Period
+Period,plusMonths(long monthsToAdd),Period
+Period,plusYears(long yearsToAdd),Period
+Period,subtractFrom(Temporal temporal),Temporal
+Period,toString(),String
+Period,toTotalMonths(),long
+Period,withDays(int days),Period
+Period,withMonths(int months),Period
+Period,withYears(int years),Period
+Year,adjustInto(Temporal temporal),Temporal
+Year,atDay(int dayOfYear),LocalDate
+Year,atMonth(int month),YearMonth
+Year,atMonth(Month month),YearMonth
+Year,atMonthDay(MonthDay monthDay),LocalDate
+Year,compareTo(Year other),int
+Year,equals(Object obj),boolean
+Year,format(DateTimeFormatter formatter),String
+Year,from(TemporalAccessor temporal),static Year
+Year,get(TemporalField field),int
+Year,getLong(TemporalField field),long
+Year,getValue(),int
+Year,hashCode(),int
+Year,isAfter(Year other),boolean
+Year,isBefore(Year other),boolean
+Year,isLeap(),boolean
+Year,isLeap(long year),static boolean
+Year,isSupported(TemporalField field),boolean
+Year,isSupported(TemporalUnit unit),boolean
+Year,isValidMonthDay(MonthDay monthDay),boolean
+Year,length(),int
+Year,"minus(long amountToSubtract, TemporalUnit unit)",Year
+Year,minus(TemporalAmount amountToSubtract),Year
+Year,minusYears(long yearsToSubtract),Year
+Year,now(),static Year
+Year,now(Clock clock),static Year
+Year,now(ZoneId zone),static Year
+Year,of(int isoYear),static Year
+Year,parse(CharSequence text),static Year
+Year,"parse(CharSequence text, DateTimeFormatter formatter)",static Year
+Year,"plus(long amountToAdd, TemporalUnit unit)",Year
+Year,plus(TemporalAmount amountToAdd),Year
+Year,plusYears(long yearsToAdd),Year
+Year,query(TemporalQuery<R> query),<R> R
+Year,range(TemporalField field),ValueRange
+Year,toString(),String
+Year,"until(Temporal endExclusive, TemporalUnit unit)",long
+Year,with(TemporalAdjuster adjuster),Year
+Year,"with(TemporalField field, long newValue)",Year
+YearMonth,adjustInto(Temporal temporal),Temporal
+YearMonth,atDay(int dayOfMonth),LocalDate
+YearMonth,atEndOfMonth(),LocalDate
+YearMonth,compareTo(YearMonth other),int
+YearMonth,equals(Object obj),boolean
+YearMonth,format(DateTimeFormatter formatter),String
+YearMonth,from(TemporalAccessor temporal),static YearMonth
+YearMonth,get(TemporalField field),int
+YearMonth,getLong(TemporalField field),long
+YearMonth,getMonth(),Month
+YearMonth,getMonthValue(),int
+YearMonth,getYear(),int
+YearMonth,hashCode(),int
+YearMonth,isAfter(YearMonth other),boolean
+YearMonth,isBefore(YearMonth other),boolean
+YearMonth,isLeapYear(),boolean
+YearMonth,isSupported(TemporalField field),boolean
+YearMonth,isSupported(TemporalUnit unit),boolean
+YearMonth,isValidDay(int dayOfMonth),boolean
+YearMonth,lengthOfMonth(),int
+YearMonth,lengthOfYear(),int
+YearMonth,"minus(long amountToSubtract, TemporalUnit unit)",YearMonth
+YearMonth,minus(TemporalAmount amountToSubtract),YearMonth
+YearMonth,minusMonths(long monthsToSubtract),YearMonth
+YearMonth,minusYears(long yearsToSubtract),YearMonth
+YearMonth,now(),static YearMonth
+YearMonth,now(Clock clock),static YearMonth
+YearMonth,now(ZoneId zone),static YearMonth
+YearMonth,"of(int year, int month)",static YearMonth
+YearMonth,"of(int year, Month month)",static YearMonth
+YearMonth,parse(CharSequence text),static YearMonth
+YearMonth,"parse(CharSequence text, DateTimeFormatter formatter)",static YearMonth
+YearMonth,"plus(long amountToAdd, TemporalUnit unit)",YearMonth
+YearMonth,plus(TemporalAmount amountToAdd),YearMonth
+YearMonth,plusMonths(long monthsToAdd),YearMonth
+YearMonth,plusYears(long yearsToAdd),YearMonth
+YearMonth,query(TemporalQuery<R> query),<R> R
+YearMonth,range(TemporalField field),ValueRange
+YearMonth,toString(),String
+YearMonth,"until(Temporal endExclusive, TemporalUnit unit)",long
+YearMonth,with(TemporalAdjuster adjuster),YearMonth
+YearMonth,"with(TemporalField field, long newValue)",YearMonth
+YearMonth,withMonth(int month),YearMonth
+YearMonth,withYear(int year),YearMonth
+ZonedDateTime,equals(Object obj),boolean
+ZonedDateTime,format(DateTimeFormatter formatter),String
+ZonedDateTime,from(TemporalAccessor temporal),static ZonedDateTime
+ZonedDateTime,get(TemporalField field),int
+ZonedDateTime,getDayOfMonth(),int
+ZonedDateTime,getDayOfWeek(),DayOfWeek
+ZonedDateTime,getDayOfYear(),int
+ZonedDateTime,getHour(),int
+ZonedDateTime,getLong(TemporalField field),long
+ZonedDateTime,getMinute(),int
+ZonedDateTime,getMonth(),Month
+ZonedDateTime,getMonthValue(),int
+ZonedDateTime,getNano(),int
+ZonedDateTime,getOffset(),ZoneOffset
+ZonedDateTime,getSecond(),int
+ZonedDateTime,getYear(),int
+ZonedDateTime,getZone(),ZoneId
+ZonedDateTime,hashCode(),int
+ZonedDateTime,isSupported(TemporalField field),boolean
+ZonedDateTime,isSupported(TemporalUnit unit),boolean
+ZonedDateTime,"minus(long amountToSubtract, TemporalUnit unit)",ZonedDateTime
+ZonedDateTime,minus(TemporalAmount amountToSubtract),ZonedDateTime
+ZonedDateTime,minusDays(long days),ZonedDateTime
+ZonedDateTime,minusHours(long hours),ZonedDateTime
+ZonedDateTime,minusMinutes(long minutes),ZonedDateTime
+ZonedDateTime,minusMonths(long months),ZonedDateTime
+ZonedDateTime,minusNanos(long nanos),ZonedDateTime
+ZonedDateTime,minusSeconds(long seconds),ZonedDateTime
+ZonedDateTime,minusWeeks(long weeks),ZonedDateTime
+ZonedDateTime,minusYears(long years),ZonedDateTime
+ZonedDateTime,now(),static ZonedDateTime
+ZonedDateTime,now(Clock clock),static ZonedDateTime
+ZonedDateTime,now(ZoneId zone),static ZonedDateTime
+ZonedDateTime,"of(int year, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,"of(LocalDate date, LocalTime time, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,"of(LocalDateTime localDateTime, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,"ofInstant(Instant instant, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,"ofInstant(LocalDateTime localDateTime, ZoneOffset offset, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,"ofLocal(LocalDateTime localDateTime, ZoneId zone, ZoneOffset preferredOffset)",static ZonedDateTime
+ZonedDateTime,"ofStrict(LocalDateTime localDateTime, ZoneOffset offset, ZoneId zone)",static ZonedDateTime
+ZonedDateTime,parse(CharSequence text),static ZonedDateTime
+ZonedDateTime,"parse(CharSequence text, DateTimeFormatter formatter)",static ZonedDateTime
+ZonedDateTime,"plus(long amountToAdd, TemporalUnit unit)",ZonedDateTime
+ZonedDateTime,plus(TemporalAmount amountToAdd),ZonedDateTime
+ZonedDateTime,plusDays(long days),ZonedDateTime
+ZonedDateTime,plusHours(long hours),ZonedDateTime
+ZonedDateTime,plusMinutes(long minutes),ZonedDateTime
+ZonedDateTime,plusMonths(long months),ZonedDateTime
+ZonedDateTime,plusNanos(long nanos),ZonedDateTime
+ZonedDateTime,plusSeconds(long seconds),ZonedDateTime
+ZonedDateTime,plusWeeks(long weeks),ZonedDateTime
+ZonedDateTime,plusYears(long years),ZonedDateTime
+ZonedDateTime,query(TemporalQuery<R> query),<R> R
+ZonedDateTime,range(TemporalField field),ValueRange
+ZonedDateTime,toLocalDate(),LocalDate
+ZonedDateTime,toLocalDateTime(),LocalDateTime
+ZonedDateTime,toLocalTime(),LocalTime
+ZonedDateTime,toOffsetDateTime(),OffsetDateTime
+ZonedDateTime,toString(),String
+ZonedDateTime,truncatedTo(TemporalUnit unit),ZonedDateTime
+ZonedDateTime,"until(Temporal endExclusive, TemporalUnit unit)",long
+ZonedDateTime,with(TemporalAdjuster adjuster),ZonedDateTime
+ZonedDateTime,"with(TemporalField field, long newValue)",ZonedDateTime
+ZonedDateTime,withDayOfMonth(int dayOfMonth),ZonedDateTime
+ZonedDateTime,withDayOfYear(int dayOfYear),ZonedDateTime
+ZonedDateTime,withEarlierOffsetAtOverlap(),ZonedDateTime
+ZonedDateTime,withFixedOffsetZone(),ZonedDateTime
+ZonedDateTime,withHour(int hour),ZonedDateTime
+ZonedDateTime,withLaterOffsetAtOverlap(),ZonedDateTime
+ZonedDateTime,withMinute(int minute),ZonedDateTime
+ZonedDateTime,withMonth(int month),ZonedDateTime
+ZonedDateTime,withNano(int nanoOfSecond),ZonedDateTime
+ZonedDateTime,withSecond(int second),ZonedDateTime
+ZonedDateTime,withYear(int year),ZonedDateTime
+ZonedDateTime,withZoneSameInstant(ZoneId zone),ZonedDateTime
+ZonedDateTime,withZoneSameLocal(ZoneId zone),ZonedDateTime
+ZoneId,equals(Object obj),boolean
+ZoneId,from(TemporalAccessor temporal),static ZoneId
+ZoneId,getAvailableZoneIds(),static Set<String>
+ZoneId,"getDisplayName(TextStyle style, Locale locale)",String
+ZoneId,getId(),abstract String
+ZoneId,getRules(),abstract ZoneRules
+ZoneId,hashCode(),int
+ZoneId,normalized(),ZoneId
+ZoneId,of(String zoneId),static ZoneId
+ZoneId,"of(String zoneId, Map<String,String> aliasMap)",static ZoneId
+ZoneId,"ofOffset(String prefix, ZoneOffset offset)",static ZoneId
+ZoneId,systemDefault(),static ZoneId
+ZoneId,toString(),String
+ZoneOffset,adjustInto(Temporal temporal),Temporal
+ZoneOffset,compareTo(ZoneOffset other),int
+ZoneOffset,equals(Object obj),boolean
+ZoneOffset,from(TemporalAccessor temporal),static ZoneOffset
+ZoneOffset,get(TemporalField field),int
+ZoneOffset,getId(),String
+ZoneOffset,getLong(TemporalField field),long
+ZoneOffset,getRules(),ZoneRules
+ZoneOffset,getTotalSeconds(),int
+ZoneOffset,hashCode(),int
+ZoneOffset,isSupported(TemporalField field),boolean
+ZoneOffset,of(String offsetId),static ZoneOffset
+ZoneOffset,ofHours(int hours),static ZoneOffset
+ZoneOffset,"ofHoursMinutes(int hours, int minutes)",static ZoneOffset
+ZoneOffset,"ofHoursMinutesSeconds(int hours, int minutes, int seconds)",static ZoneOffset
+ZoneOffset,ofTotalSeconds(int totalSeconds),static ZoneOffset
+ZoneOffset,query(TemporalQuery<R> query),<R> R
+ZoneOffset,range(TemporalField field),ValueRange
+ZoneOffset,toString(),String

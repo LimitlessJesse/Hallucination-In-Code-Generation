@@ -1,0 +1,197 @@
+Sample: 0 SerialArray
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialArray package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 SerialBlob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialBlob package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public Blob getBlob()`: This method returns the Blob object.
+2. `public void setBlob(Blob blob)`: This method sets the Blob object.
+3. `public void truncate(long len)`: This method truncates the Blob object to the specified length.
+4. `public void free()`: This method frees the resources associated with the Blob object.
+5. `public InputStream getBinaryStream()`: This method returns an InputStream for reading the Blob object.
+================================================================
+
+Sample: 2 SerialClob
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialClob package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public void setString(String str)`: This method sets the character content of the CLOB to the specified string.
+
+2. `public String getString()`: This method returns the character content of the CLOB as a String.
+
+3. `public Reader getCharacterStream()`: This method returns a Reader object that can be used to read the content of the CLOB.
+
+4. `public Writer setCharacterStream(Reader reader)`: This method sets the content of the CLOB to the content of the specified Reader.
+
+5. `public void truncate(long len)`: This method truncates the CLOB to the specified length.
+================================================================
+
+Sample: 3 SerialDatalink
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialDatalink package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `E get(int index)`: This method returns the element at the specified position in this list.
+3. `E remove(int index)`: This method removes the element at the specified position in this list.
+4. `int size()`: This method returns the number of elements in this list.
+5. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 4 SerialJavaObject
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialJavaObject package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+================================================================
+
+Sample: 5 SerialRef
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialRef package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+================================================================
+
+Sample: 6 SerialStruct
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SerialStruct package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void clear()`: This method removes all of the elements from this list.
+3. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+4. `E get(int index)`: This method returns the element at the specified position in this list.
+5. `int indexOf(Object o)`: This method returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+================================================================
+
+Sample: 7 SQLInputImpl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SQLInputImpl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean read()`: This method reads the next row of data from the input stream.
+
+2. `boolean read(int rowNumber)`: This method reads the specified row of data from the input stream.
+
+3. `boolean read(int rowNumber, int columnNumber)`: This method reads the specified cell of data from the input stream.
+
+4. `boolean read(int rowNumber, int columnNumber, int length)`: This method reads the specified cell of data from the input stream.
+
+5. `boolean read(int rowNumber, int columnNumber, int length, int offset)`: This method reads the specified cell of data from the input stream.
+================================================================
+
+Sample: 8 SQLOutputImpl
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.sql.rowset.serial.SQLOutputImpl package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void writeArray(SQLOutput out, String table, String col)`: This method writes the array to the output stream.
+3. `void writeArray(SQLOutput out, String table, String col, int start, int length)`: This method writes the array to the output stream.
+4. `void writeRow(SQLOutput out)`: This method writes the current row to the output stream.
+5. `void writeRow(SQLOutput out, int start, int length)`: This method writes the current row to the output stream.
+================================================================
+

@@ -1,0 +1,298 @@
+Sample: 0 Date
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTime(long time) from java.sql.Date
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `setTime(long time)` method in `java.sql.Date` class is used to set the time value in milliseconds since January 1, 1970, 00:00:00 GMT represented by this `Date` object.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.sql.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        Date date = new Date(0);
+        date.setTime(1609459200000L); // 01/01/2021 @ 00:00:00
+        System.out.println(date);
+    }
+}
+```
+
+In this code, we first create a new `Date` object with the time set to 0. Then we call the `setTime(long time)` method to set the time to January 1, 2021, 00:00:00 GMT. The `System.out.println(date)` will print the date in the format `yyyy-MM-dd`.
+================================================================
+
+Sample: 1 Date
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String toString() from java.sql.Date
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `toString()` method in `java.sql.Date` class is used to return a string that represents the date.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.sql.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        Date date = new Date(System.currentTimeMillis());
+        System.out.println(date.toString());
+    }
+}
+```
+
+In this code snippet, we create a new `Date` object and pass the current time in milliseconds to its constructor. Then we call the `toString()` method on this `Date` object and print the result.
+
+The `toString()` method returns a string in the format "yyyy-mm-dd hh:mm:ss.fffffffff" where:
+
+- yyyy is the year
+- mm is the month
+- dd is the day
+- hh is the hour
+- mm is the minute
+- ss is the second
+- ffffffffff is the fraction of a second
+================================================================
+
+Sample: 2 Date
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Date valueOf(String s) from java.sql.Date
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `Date.valueOf(String s)` method is used to convert a string into a `Date` object. The string should be in the format "yyyy-[m]m-[d]d". Here is a complete code snippet:
+
+```java
+import java.sql.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        String s = "2022-01-01";
+        Date date = Date.valueOf(s);
+        System.out.println(date);
+    }
+}
+```
+
+In this code, we first import the `java.sql.Date` class. Then, we create a string `s` with the date in the format "yyyy-[m]m-[d]d". We then call the `Date.valueOf(String s)` method to convert this string into a `Date` object. Finally, we print out the date.
+================================================================
+
+Sample: 3 Time
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void setTime(long time) from java.sql.Time
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `setTime(long time)` method from `java.sql.Time`:
+
+```java
+import java.sql.Time;
+
+public class Main {
+    public static void main(String[] args) {
+        Time time = new Time(0);
+        time.setTime(123456789);
+        System.out.println(time);
+    }
+}
+```
+
+In this code snippet, we first create a new `Time` object with an initial time of 0. Then we use the `setTime(long time)` method to set the time to 123456789. Finally, we print the time to the console.
+
+Please note that the `setTime(long time)` method is a deprecated method in Java. The recommended way to set the time in a `Time` object is to use the `Time` constructor that takes a `long` value representing the time in milliseconds since the epoch (00:00:00 GMT, January 1, 1970).
+================================================================
+
+Sample: 4 Time
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String toString() from java.sql.Time
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a code snippet that uses the `toString()` method from `java.sql.Time`:
+
+```java
+import java.sql.Time;
+
+public class Main {
+    public static void main(String[] args) {
+        Time time = new Time(12, 30, 0);
+        System.out.println(time.toString());
+    }
+}
+```
+
+In this code snippet, we create a new `Time` object with the current time (12:30:00), and then we print the string representation of this time using the `toString()` method. The output will be something like "12:30:00".
+================================================================
+
+Sample: 5 Timestamp
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use long getTime() from java.sql.Timestamp
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `long getTime()` method in `java.sql.Timestamp` class returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this `Timestamp` object.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.sql.Timestamp;
+
+public class Main {
+    public static void main(String[] args) {
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        long time = timestamp.getTime();
+        System.out.println("Time in milliseconds: " + time);
+    }
+}
+```
+
+In this code snippet, we create a new `Timestamp` object with the current time in milliseconds. Then we call the `getTime()` method on this `Timestamp` object, which returns the number of milliseconds since January 1, 1970, 00:00:00 GMT. Finally, we print this time to the console.
+================================================================
+

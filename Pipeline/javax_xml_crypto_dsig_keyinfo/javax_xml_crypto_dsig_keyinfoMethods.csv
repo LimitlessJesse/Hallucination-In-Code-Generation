@@ -1,0 +1,21 @@
+ClassName,Method,Return Type
+KeyInfoFactory,getInstance(),static KeyInfoFactory
+KeyInfoFactory,getInstance(String mechanismType),static KeyInfoFactory
+KeyInfoFactory,"getInstance(String mechanismType, Provider provider)",static KeyInfoFactory
+KeyInfoFactory,"getInstance(String mechanismType, String provider)",static KeyInfoFactory
+KeyInfoFactory,getMechanismType(),String
+KeyInfoFactory,getProvider(),Provider
+KeyInfoFactory,getURIDereferencer(),abstract URIDereferencer
+KeyInfoFactory,isFeatureSupported(String feature),abstract boolean
+KeyInfoFactory,newKeyInfo(List content),abstract KeyInfo
+KeyInfoFactory,"newKeyInfo(List content, String id)",abstract KeyInfo
+KeyInfoFactory,newKeyName(String name),abstract KeyName
+KeyInfoFactory,newKeyValue(PublicKey key),abstract KeyValue
+KeyInfoFactory,newPGPData(byte[] keyId),abstract PGPData
+KeyInfoFactory,"newPGPData(byte[] keyId, byte[] keyPacket, List other)",abstract PGPData
+KeyInfoFactory,"newPGPData(byte[] keyPacket, List other)",abstract PGPData
+KeyInfoFactory,newRetrievalMethod(String uri),abstract RetrievalMethod
+KeyInfoFactory,"newRetrievalMethod(String uri, String type, List transforms)",abstract RetrievalMethod
+KeyInfoFactory,newX509Data(List content),abstract X509Data
+KeyInfoFactory,"newX509IssuerSerial(String issuerName, BigInteger serialNumber)",abstract X509IssuerSerial
+KeyInfoFactory,unmarshalKeyInfo(XMLStructure xmlStructure),abstract KeyInfo

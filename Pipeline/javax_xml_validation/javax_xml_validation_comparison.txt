@@ -1,0 +1,171 @@
+Sample: 0 Schema
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.Schema package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+21. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+22. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+23. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+24. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+25. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+26. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+27. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+28. `Object clone()`: This method returns a shallow copy of this AbstractList instance.
+29. `void forEach(Consumer<? super E> action)`: This method performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception.
+30. `Spliterator<E> spliterator()`: This method creates a late-binding and fail-fast Spliterator over the elements in this list.
+================================================================
+
+Sample: 1 SchemaFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.SchemaFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SchemaFactory newInstance(String schemaLanguage)`: This method creates a new instance of the SchemaFactory for the specified schema language.
+
+2. `Schema newSchema(Source schemaSource)`: This method creates a new Schema instance from the specified source.
+
+3. `Schema newSchema(URL schemaURL)`: This method creates a new Schema instance from the specified URL.
+
+4. `Schema newSchema(File schemaFile)`: This method creates a new Schema instance from the specified file.
+
+5. `Schema newSchema(Reader schemaReader)`: This method creates a new Schema instance from the specified reader.
+================================================================
+
+Sample: 2 SchemaFactoryLoader
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.SchemaFactoryLoader package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SchemaFactoryLoader.newInstance(String factoryClassName)`: This method creates a new instance of the specified schema factory class.
+
+2. `SchemaFactoryLoader.newInstance(String factoryClassName, ClassLoader classLoader)`: This method creates a new instance of the specified schema factory class using the specified class loader.
+
+3. `SchemaFactoryLoader.newInstance(String factoryClassName, ClassLoader classLoader, ClassLoader classLoaderForSchema)`: This method creates a new instance of the specified schema factory class using the specified class loader for the factory class and the specified class loader for the schema.
+
+4. `SchemaFactoryLoader.newInstance(String factoryClassName, ClassLoader classLoader, ClassLoader classLoaderForSchema, ClassLoader classLoaderForSchemaLanguage)`: This method creates a new instance of the specified schema factory class using the specified class loaders for the factory class, the schema, and the schema language.
+
+5. `SchemaFactoryLoader.newInstance(String factoryClassName, ClassLoader classLoader, ClassLoader classLoaderForSchema, ClassLoader classLoaderForSchemaLanguage, ClassLoader classLoaderForSchemaLanguageDTD)`: This method creates a new instance of the specified schema factory class using the specified class loaders for the factory class, the schema, the schema language, and the schema language DTD.
+================================================================
+
+Sample: 3 TypeInfoProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.TypeInfoProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isDerivedFrom(TypeInfo typeInfo)`: This method checks if the type represented by this TypeInfo is derived from the specified type.
+
+2. `boolean isAssignableFrom(TypeInfo typeInfo)`: This method checks if the type represented by this TypeInfo is assignable from the specified type.
+
+3. `boolean isSubstitutableBy(TypeInfo typeInfo)`: This method checks if the type represented by this TypeInfo is substitutable by the specified type.
+
+4. `boolean isIdenticalTo(TypeInfo typeInfo)`: This method checks if the type represented by this TypeInfo is identical to the specified type.
+
+5. `boolean isSubtypeOf(TypeInfo typeInfo)`: This method checks if the type represented by this TypeInfo is a subtype of the specified type.
+================================================================
+
+Sample: 4 Validator
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.Validator package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean validate(Source source)`: This method validates the source against the schema.
+
+2. `boolean validate(Source source, Result result)`: This method validates the source against the schema and writes the validation result to the result object.
+
+3. `boolean validate(Source source, Result result, boolean recover)`: This method validates the source against the schema and writes the validation result to the result object. If recover is true, it will attempt to recover from any validation errors.
+
+4. `boolean validate(Source source, Result result, boolean recover, boolean validationErrorListener)`: This method validates the source against the schema and writes the validation result to the result object. If recover is true, it will attempt to recover from any validation errors. If validationErrorListener is true, it will use a ValidationErrorListener to handle validation errors.
+
+5. `boolean validate(Source source, Result result, boolean recover, boolean validationErrorListener, boolean validationEventLocator)`: This method validates the source against the schema and writes the validation result to the result object. If recover is true, it will attempt to recover from any validation errors. If validationErrorListener is true, it will use a ValidationErrorListener to handle validation errors. If validationEventLocator is true, it will use a ValidationEventLocator to locate validation events.
+================================================================
+
+Sample: 5 ValidatorHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.validation.ValidatorHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean handleEvent(ValidationEvent event)`: This method is called when a new event is available.
+
+2. `void characters(char[] ch, int start, int length)`: This method is called when a new chunk of characters is available.
+
+3. `void ignorableWhitespace(char[] ch, int start, int length)`: This method is called when a new chunk of ignorable whitespace is available.
+
+4. `void processingInstruction(String target, String data)`: This method is called when a new processing instruction is available.
+
+5. `void setDocumentLocator(Locator locator)`: This method is called when a new document locator is available.
+================================================================
+

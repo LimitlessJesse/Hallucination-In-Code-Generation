@@ -1,0 +1,74 @@
+ClassName,Method,Return Type
+XMLEventFactory,"createAttribute(QName name, String value)",abstract Attribute
+XMLEventFactory,"createAttribute(String localName, String value)",abstract Attribute
+XMLEventFactory,"createAttribute(String prefix, String namespaceURI, String localName, String value)",abstract Attribute
+XMLEventFactory,createCData(String content),abstract Characters
+XMLEventFactory,createCharacters(String content),abstract Characters
+XMLEventFactory,createComment(String text),abstract Comment
+XMLEventFactory,createDTD(String dtd),abstract DTD
+XMLEventFactory,createEndDocument(),abstract EndDocument
+XMLEventFactory,"createEndElement(QName name, Iterator namespaces)",abstract EndElement
+XMLEventFactory,"createEndElement(String prefix, String namespaceUri, String localName)",abstract EndElement
+XMLEventFactory,"createEndElement(String prefix, String namespaceUri, String localName, Iterator namespaces)",abstract EndElement
+XMLEventFactory,"createEntityReference(String name, EntityDeclaration declaration)",abstract EntityReference
+XMLEventFactory,createIgnorableSpace(String content),abstract Characters
+XMLEventFactory,createNamespace(String namespaceURI),abstract Namespace
+XMLEventFactory,"createNamespace(String prefix, String namespaceUri)",abstract Namespace
+XMLEventFactory,"createProcessingInstruction(String target, String data)",abstract ProcessingInstruction
+XMLEventFactory,createSpace(String content),abstract Characters
+XMLEventFactory,createStartDocument(),abstract StartDocument
+XMLEventFactory,createStartDocument(String encoding),abstract StartDocument
+XMLEventFactory,"createStartDocument(String encoding, String version)",abstract StartDocument
+XMLEventFactory,"createStartDocument(String encoding, String version, boolean standalone)",abstract StartDocument
+XMLEventFactory,"createStartElement(QName name, Iterator attributes, Iterator namespaces)",abstract StartElement
+XMLEventFactory,"createStartElement(String prefix, String namespaceUri, String localName)",abstract StartElement
+XMLEventFactory,"createStartElement(String prefix, String namespaceUri, String localName, Iterator attributes, Iterator namespaces)",abstract StartElement
+XMLEventFactory,"createStartElement(String prefix, String namespaceUri, String localName, Iterator attributes, Iterator namespaces, NamespaceContext context)",abstract StartElement
+XMLEventFactory,newFactory(),static XMLEventFactory
+XMLEventFactory,"newFactory(String factoryId, ClassLoader classLoader)",static XMLEventFactory
+XMLEventFactory,newInstance(),static XMLEventFactory
+XMLEventFactory,"newInstance(String factoryId, ClassLoader classLoader)",static XMLEventFactory
+XMLEventFactory,setLocation(Location location),abstract void
+XMLInputFactory,"createFilteredReader(XMLEventReader reader, EventFilter filter)",abstract XMLEventReader
+XMLInputFactory,"createFilteredReader(XMLStreamReader reader, StreamFilter filter)",abstract XMLStreamReader
+XMLInputFactory,createXMLEventReader(InputStream stream),abstract XMLEventReader
+XMLInputFactory,"createXMLEventReader(InputStream stream, String encoding)",abstract XMLEventReader
+XMLInputFactory,createXMLEventReader(Reader reader),abstract XMLEventReader
+XMLInputFactory,createXMLEventReader(Source source),abstract XMLEventReader
+XMLInputFactory,"createXMLEventReader(String systemId, InputStream stream)",abstract XMLEventReader
+XMLInputFactory,"createXMLEventReader(String systemId, Reader reader)",abstract XMLEventReader
+XMLInputFactory,createXMLEventReader(XMLStreamReader reader),abstract XMLEventReader
+XMLInputFactory,createXMLStreamReader(InputStream stream),abstract XMLStreamReader
+XMLInputFactory,"createXMLStreamReader(InputStream stream, String encoding)",abstract XMLStreamReader
+XMLInputFactory,createXMLStreamReader(Reader reader),abstract XMLStreamReader
+XMLInputFactory,createXMLStreamReader(Source source),abstract XMLStreamReader
+XMLInputFactory,"createXMLStreamReader(String systemId, InputStream stream)",abstract XMLStreamReader
+XMLInputFactory,"createXMLStreamReader(String systemId, Reader reader)",abstract XMLStreamReader
+XMLInputFactory,getEventAllocator(),abstract XMLEventAllocator
+XMLInputFactory,getProperty(String name),abstract Object
+XMLInputFactory,getXMLReporter(),abstract XMLReporter
+XMLInputFactory,getXMLResolver(),abstract XMLResolver
+XMLInputFactory,isPropertySupported(String name),abstract boolean
+XMLInputFactory,newFactory(),static XMLInputFactory
+XMLInputFactory,"newFactory(String factoryId, ClassLoader classLoader)",static XMLInputFactory
+XMLInputFactory,newInstance(),static XMLInputFactory
+XMLInputFactory,"newInstance(String factoryId, ClassLoader classLoader)",static XMLInputFactory
+XMLInputFactory,setEventAllocator(XMLEventAllocator allocator),abstract void
+XMLInputFactory,"setProperty(String name, Object value)",abstract void
+XMLInputFactory,setXMLReporter(XMLReporter reporter),abstract void
+XMLInputFactory,setXMLResolver(XMLResolver resolver),abstract void
+XMLOutputFactory,createXMLEventWriter(OutputStream stream),abstract XMLEventWriter
+XMLOutputFactory,"createXMLEventWriter(OutputStream stream, String encoding)",abstract XMLEventWriter
+XMLOutputFactory,createXMLEventWriter(Result result),abstract XMLEventWriter
+XMLOutputFactory,createXMLEventWriter(Writer stream),abstract XMLEventWriter
+XMLOutputFactory,createXMLStreamWriter(OutputStream stream),abstract XMLStreamWriter
+XMLOutputFactory,"createXMLStreamWriter(OutputStream stream, String encoding)",abstract XMLStreamWriter
+XMLOutputFactory,createXMLStreamWriter(Result result),abstract XMLStreamWriter
+XMLOutputFactory,createXMLStreamWriter(Writer stream),abstract XMLStreamWriter
+XMLOutputFactory,getProperty(String name),abstract Object
+XMLOutputFactory,isPropertySupported(String name),abstract boolean
+XMLOutputFactory,newFactory(),static XMLOutputFactory
+XMLOutputFactory,"newFactory(String factoryId, ClassLoader classLoader)",static XMLOutputFactory
+XMLOutputFactory,newInstance(),static XMLOutputFactory
+XMLOutputFactory,"newInstance(String factoryId, ClassLoader classLoader)",static XMLInputFactory
+XMLOutputFactory,"setProperty(String name, Object value)",abstract void

@@ -1,0 +1,1923 @@
+Sample: BufferedInputStream_1
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at BufferedInputStream_1.main(BufferedInputStream_1.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BufferedInputStream_3
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at BufferedInputStream_3.main(BufferedInputStream_3.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BufferedInputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at BufferedInputStream_4.main(BufferedInputStream_4.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: BufferedInputStream_5
+----------------------------------------------------------------
+stdout:
+Available bytes before reading: 5
+Available bytes after reading: 4
+
+================================================================
+
+Sample: BufferedOutputStream_2
+----------------------------------------------------------------
+================================================================
+
+Sample: BufferedOutputStream_4
+----------------------------------------------------------------
+================================================================
+
+Sample: BufferedOutputStream_5
+----------------------------------------------------------------
+stdout:
+Data has been written to the file successfully.
+
+================================================================
+
+Sample: BufferedReader_1
+----------------------------------------------------------------
+stdout:
+in case
+================================================================
+
+Sample: BufferedReader_3
+----------------------------------------------------------------
+stdout:
+Enter a line of text:
+You entered: in case
+
+================================================================
+
+Sample: BufferedReader_4
+----------------------------------------------------------------
+stdout:
+World!
+================================================================
+
+Sample: BufferedReader_5
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: BufferedWriter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: BufferedWriter_3
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/BufferedWriter_3.java:8: error: empty character literal
+            char[] array = {'H', 'e', 'l', 'l', 'o','', 'W', 'o', 'r', 'l', 'd', '!'};
+                                                    ^
+./java_io/javaFiles/BufferedWriter_3.java:10: error: illegal start of type
+        } catch (IOException e) {
+          ^
+./java_io/javaFiles/BufferedWriter_3.java:10: error: ';' expected
+        } catch (IOException e) {
+                              ^
+./java_io/javaFiles/BufferedWriter_3.java:14: error: class, interface, enum, or record expected
+}
+^
+4 errors
+
+
+================================================================
+
+Sample: BufferedWriter_4
+----------------------------------------------------------------
+================================================================
+
+Sample: BufferedWriter_5
+----------------------------------------------------------------
+================================================================
+
+Sample: ByteArrayOutputStream_1
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/ByteArrayOutputStream_1.java:11: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: ByteArrayOutputStream_4
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: ByteArrayOutputStream_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/ByteArrayOutputStream_5.java:9: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: CharArrayReader_1
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/CharArrayReader_1.java:6: error: empty character literal
+        char[] array = {'H', 'e', 'l', 'l', 'o','', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+                                                ^
+./java_io/javaFiles/CharArrayReader_1.java:9: error: illegal start of type
+        try {
+        ^
+./java_io/javaFiles/CharArrayReader_1.java:13: error: illegal start of type
+        } catch (IOException e) {
+          ^
+./java_io/javaFiles/CharArrayReader_1.java:13: error: ';' expected
+        } catch (IOException e) {
+                              ^
+./java_io/javaFiles/CharArrayReader_1.java:17: error: class, interface, enum, or record expected
+}
+^
+5 errors
+
+
+================================================================
+
+Sample: CharArrayReader_2
+----------------------------------------------------------------
+stdout:
+Hello
+================================================================
+
+Sample: CharArrayReader_3
+----------------------------------------------------------------
+stdout:
+Skipping 5 characters...
+fghij
+================================================================
+
+Sample: CharArrayReader_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/CharArrayReader_4.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+        System.out.println("Is there any data available? " + reader.ready());
+                                                                         ^
+./java_io/javaFiles/CharArrayReader_4.java:12: error: unreported exception IOException; must be caught or declared to be thrown
+        while ((data = reader.read())!= -1) {
+                                  ^
+./java_io/javaFiles/CharArrayReader_4.java:16: error: unreported exception IOException; must be caught or declared to be thrown
+        System.out.println("\nIs there any data available? " + reader.ready());
+                                                                           ^
+3 errors
+
+
+================================================================
+
+Sample: CharArrayReader_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/CharArrayReader_5.java:19: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException e) {
+              ^
+1 error
+
+
+================================================================
+
+Sample: CharArrayWriter_2
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/CharArrayWriter_2.java:13: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: CharArrayWriter_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/CharArrayWriter_4.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: CharArrayWriter_5
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: Console_2
+----------------------------------------------------------------
+stdout:
+Console is not available
+
+================================================================
+
+Sample: Console_3
+----------------------------------------------------------------
+stdout:
+Console is not available.
+
+================================================================
+
+Sample: DataInputStream_2
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at DataInputStream_2.main(DataInputStream_2.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DataInputStream_3
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at DataInputStream_3.main(DataInputStream_3.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DataInputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readFully(DataInputStream.java:203)
+	at java.base/java.io.DataInputStream.readUTF(DataInputStream.java:602)
+	at java.base/java.io.DataInputStream.readUTF(DataInputStream.java:558)
+	at DataInputStream_4.main(DataInputStream_4.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: DataOutputStream_1
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_2
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_3
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_4
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_5
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_6
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_7
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_8
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_9
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_10
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_11
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_12
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_13
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_14
+----------------------------------------------------------------
+================================================================
+
+Sample: DataOutputStream_15
+----------------------------------------------------------------
+================================================================
+
+Sample: File_1
+----------------------------------------------------------------
+stdout:
+File created: path_to_your_file
+The file can be read.
+
+================================================================
+
+Sample: File_2
+----------------------------------------------------------------
+stdout:
+Can write: true
+
+================================================================
+
+Sample: File_3
+----------------------------------------------------------------
+stdout:
+File created successfully
+
+================================================================
+
+Sample: File_4
+----------------------------------------------------------------
+stdout:
+Failed to delete the file
+
+================================================================
+
+Sample: FileDescriptor_3
+----------------------------------------------------------------
+stderr:
+java.io.SyncFailedException: sync failed
+	at java.base/java.io.FileDescriptor.sync(Native Method)
+	at FileDescriptor_3.main(FileDescriptor_3.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: FileInputStream_3
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at FileInputStream_3.main(FileInputStream_3.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: FileInputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at FileInputStream_4.main(FileInputStream_4.java:6)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: FileInputStream_5
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at FileInputStream_5.main(FileInputStream_5.java:6)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: FileInputStream_6
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: file.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at FileInputStream_6.main(FileInputStream_6.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: FileOutputStream_5
+----------------------------------------------------------------
+stdout:
+Successfully wrote to the file.
+
+================================================================
+
+Sample: FileOutputStream_6
+----------------------------------------------------------------
+================================================================
+
+Sample: FileOutputStream_7
+----------------------------------------------------------------
+================================================================
+
+Sample: FileOutputStream_9
+----------------------------------------------------------------
+stdout:
+Successfully wrote to the file.
+
+================================================================
+
+Sample: FilePermission_2
+----------------------------------------------------------------
+stdout:
+Does the FilePermission imply the Permission? true
+
+================================================================
+
+Sample: FilePermission_3
+----------------------------------------------------------------
+stdout:
+Are the permissions equal? true
+
+================================================================
+
+Sample: FilePermission_4
+----------------------------------------------------------------
+stdout:
+Hash code: -1235114839
+
+================================================================
+
+Sample: FilePermission_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/FilePermission_5.java:10: error: cannot find symbol
+            System.out.println(permissionCollection.getActions());
+                                                   ^
+  symbol:   method getActions()
+  location: variable permissionCollection of type PermissionCollection
+1 error
+
+
+================================================================
+
+Sample: FilterInputStream_2
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/FilterInputStream_2.java:16: error: unreported exception IOException; must be caught or declared to be thrown
+        int bytesRead = inputStream.read(buffer);
+                                        ^
+1 error
+
+
+================================================================
+
+Sample: FilterInputStream_3
+----------------------------------------------------------------
+================================================================
+
+Sample: FilterOutputStream_1
+----------------------------------------------------------------
+stdout:
+Hi
+
+================================================================
+
+Sample: FilterOutputStream_2
+----------------------------------------------------------------
+================================================================
+
+Sample: FilterOutputStream_3
+----------------------------------------------------------------
+================================================================
+
+Sample: FilterOutputStream_4
+----------------------------------------------------------------
+stdout:
+Hello, World!Flushing...
+
+================================================================
+
+Sample: FilterOutputStream_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/FilterOutputStream_5.java:8: error: incompatible types: FileOutputStream cannot be converted to FilterOutputStream
+            FilterOutputStream outputStream = new FileOutputStream("output.txt");
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: FilterReader_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: FilterReader_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/FilterReader_4.java:7: error: incompatible types: FileReader cannot be converted to FilterReader
+        try (FilterReader reader = new FileReader("file.txt")) {
+                                   ^
+1 error
+
+
+================================================================
+
+Sample: FilterWriter_1
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: InputStream_1
+----------------------------------------------------------------
+stdout:
+Data read: 105
+
+================================================================
+
+Sample: InputStream_2
+----------------------------------------------------------------
+stdout:
+in case
+================================================================
+
+Sample: InputStream_3
+----------------------------------------------------------------
+stdout:
+Read 7 bytes:
+in case
+================================================================
+
+Sample: InputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.IOException: Illegal seek
+	at java.base/java.io.FileInputStream.skip0(Native Method)
+	at java.base/java.io.FileInputStream.skip(FileInputStream.java:392)
+	at java.base/java.io.BufferedInputStream.skip(BufferedInputStream.java:375)
+	at InputStream_4.main(InputStream_4.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: InputStream_5
+----------------------------------------------------------------
+stdout:
+Available bytes: 7
+
+================================================================
+
+Sample: InputStreamReader_1
+----------------------------------------------------------------
+stdout:
+Read data: 105
+
+================================================================
+
+Sample: InputStreamReader_3
+----------------------------------------------------------------
+stdout:
+Read 7 characters: in case   
+
+================================================================
+
+Sample: InputStreamReader_5
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: LineNumberInputStream_3
+----------------------------------------------------------------
+stdout:
+Data read: 105
+
+stderr:
+Note: ./java_io/javaFiles/LineNumberInputStream_3.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: LineNumberInputStream_5
+----------------------------------------------------------------
+stdout:
+Bytes read: 13
+Line number: 0
+Data: Hello, World!
+
+stderr:
+Note: ./java_io/javaFiles/LineNumberInputStream_5.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: LineNumberReader_1
+----------------------------------------------------------------
+stdout:
+Line number: 1, Line: Hello
+Line number: 2, Line: World
+Line number: 3, Line: Java
+
+================================================================
+
+Sample: LineNumberReader_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: ObjectStreamClass_3
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/ObjectStreamClass_3.java:5: error: cannot find symbol
+        ObjectStreamClass osc = ObjectStreamClass.lookup(Main.class);
+                                                         ^
+  symbol:   class Main
+  location: class ObjectStreamClass_3
+1 error
+
+
+================================================================
+
+Sample: ObjectStreamClass_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/ObjectStreamClass_5.java:5: error: cannot find symbol
+        ObjectStreamClass osc = ObjectStreamClass.lookup(Main.class);
+                                                         ^
+  symbol:   class Main
+  location: class ObjectStreamClass_5
+./java_io/javaFiles/ObjectStreamClass_5.java:6: error: cannot find symbol
+        ObjectStreamField[] fields = osc.getFields();
+        ^
+  symbol:   class ObjectStreamField
+  location: class ObjectStreamClass_5
+./java_io/javaFiles/ObjectStreamClass_5.java:8: error: cannot find symbol
+        for (ObjectStreamField field : fields) {
+             ^
+  symbol:   class ObjectStreamField
+  location: class ObjectStreamClass_5
+3 errors
+
+
+================================================================
+
+Sample: ObjectStreamField_2
+----------------------------------------------------------------
+stdout:
+name
+age
+
+================================================================
+
+Sample: ObjectStreamField_3
+----------------------------------------------------------------
+stdout:
+Type of the field: java.lang.String
+
+================================================================
+
+Sample: OutputStream_1
+----------------------------------------------------------------
+================================================================
+
+Sample: OutputStream_2
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/OutputStream_2.java:9: error: unreported exception IOException; must be caught or declared to be thrown
+        outputStream.write(byteArray);
+                          ^
+1 error
+
+
+================================================================
+
+Sample: OutputStream_3
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: OutputStream_4
+----------------------------------------------------------------
+================================================================
+
+Sample: OutputStream_5
+----------------------------------------------------------------
+stdout:
+Successfully wrote to the file.
+
+================================================================
+
+Sample: OutputStreamWriter_1
+----------------------------------------------------------------
+stdout:
+Hi
+World
+
+================================================================
+
+Sample: OutputStreamWriter_3
+----------------------------------------------------------------
+stdout:
+Hello
+================================================================
+
+Sample: OutputStreamWriter_5
+----------------------------------------------------------------
+stdout:
+World
+================================================================
+
+Sample: PipedInputStream_1
+----------------------------------------------------------------
+stdout:
+Available bytes: 13
+
+================================================================
+
+Sample: PipedInputStream_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+stderr:
+java.io.IOException: Write end dead
+	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:310)
+	at PipedInputStream_2.lambda$main$1(PipedInputStream_2.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+================================================================
+
+Sample: PipedInputStream_3
+----------------------------------------------------------------
+================================================================
+
+Sample: PipedInputStream_5
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: PipedOutputStream_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PipedOutputStream_4
+----------------------------------------------------------------
+stderr:
+java.io.IOException: Pipe not connected
+	at java.base/java.io.PipedOutputStream.write(PipedOutputStream.java:120)
+	at PipedOutputStream_4.main(PipedOutputStream_4.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: PipedWriter_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+stderr:
+java.io.IOException: Write end dead
+	at java.base/java.io.PipedReader.read(PipedReader.java:241)
+	at PipedWriter_1.lambda$main$1(PipedWriter_1.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+================================================================
+
+Sample: PipedWriter_2
+----------------------------------------------------------------
+stderr:
+java.io.IOException: Pipe not connected
+	at java.base/java.io.PipedWriter.write(PipedWriter.java:152)
+	at java.base/java.io.Writer.write(Writer.java:290)
+	at java.base/java.io.Writer.write(Writer.java:249)
+	at PipedWriter_2.main(PipedWriter_2.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: PipedWriter_3
+----------------------------------------------------------------
+stderr:
+java.io.IOException: Pipe not connected
+	at java.base/java.io.PipedWriter.write(PipedWriter.java:122)
+	at PipedWriter_3.main(PipedWriter_3.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: PipedWriter_5
+----------------------------------------------------------------
+stderr:
+java.io.IOException: Pipe not connected
+	at java.base/java.io.PipedWriter.write(PipedWriter.java:152)
+	at PipedWriter_5.main(PipedWriter_5.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: PrintStream_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: PrintStream_2
+----------------------------------------------------------------
+stdout:
+Hello
+================================================================
+
+Sample: PrintStream_3
+----------------------------------------------------------------
+stdout:
+123
+================================================================
+
+Sample: PrintStream_4
+----------------------------------------------------------------
+stdout:
+123.456
+================================================================
+
+Sample: PrintStream_5
+----------------------------------------------------------------
+stdout:
+123.45
+================================================================
+
+Sample: PrintStream_6
+----------------------------------------------------------------
+stdout:
+true
+================================================================
+
+Sample: PrintStream_7
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/PrintStream_7.java:6: error: empty character literal
+        char[] charArray = {'H', 'e', 'l', 'l', 'o','', 'W', 'o', 'r', 'l', 'd', '!', '\n'};
+                                                    ^
+./java_io/javaFiles/PrintStream_7.java:7: error: <identifier> expected
+        printStream.print(charArray);
+                         ^
+./java_io/javaFiles/PrintStream_7.java:7: error: <identifier> expected
+        printStream.print(charArray);
+                                   ^
+./java_io/javaFiles/PrintStream_7.java:9: error: class, interface, enum, or record expected
+}
+^
+4 errors
+
+
+================================================================
+
+Sample: PrintStream_8
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: PrintStream_9
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintStream_10
+----------------------------------------------------------------
+stdout:
+H
+e
+l
+l
+o
+
+================================================================
+
+Sample: PrintStream_11
+----------------------------------------------------------------
+stdout:
+123
+
+================================================================
+
+Sample: PrintStream_12
+----------------------------------------------------------------
+stdout:
+123.456
+
+================================================================
+
+Sample: PrintStream_13
+----------------------------------------------------------------
+stdout:
+123.45
+
+================================================================
+
+Sample: PrintStream_14
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: PrintStream_15
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PrintStream_16
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintStream_17
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintWriter_1
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintWriter_2
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintWriter_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PrintWriter_4
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintWriter_5
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintWriter_6
+----------------------------------------------------------------
+================================================================
+
+Sample: PrintWriter_7
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintWriter_8
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintWriter_9
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: PrintWriter_10
+----------------------------------------------------------------
+stdout:
+H
+e
+l
+l
+o
+
+================================================================
+
+Sample: PrintWriter_11
+----------------------------------------------------------------
+stdout:
+123
+
+================================================================
+
+Sample: PrintWriter_12
+----------------------------------------------------------------
+stdout:
+123.456
+
+================================================================
+
+Sample: PrintWriter_13
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PrintWriter_14
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PrintWriter_15
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: PushbackInputStream_1
+----------------------------------------------------------------
+stdout:
+Read: i
+
+================================================================
+
+Sample: PushbackInputStream_3
+----------------------------------------------------------------
+stdout:
+Bytes read: 7
+Content: in case
+
+================================================================
+
+Sample: PushbackInputStream_4
+----------------------------------------------------------------
+stdout:
+Read: i
+
+================================================================
+
+Sample: PushbackInputStream_5
+----------------------------------------------------------------
+stdout:
+in case
+================================================================
+
+Sample: PushbackReader_1
+----------------------------------------------------------------
+stdout:
+h
+
+================================================================
+
+Sample: PushbackReader_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: PushbackReader_4
+----------------------------------------------------------------
+stdout:
+h
+
+================================================================
+
+Sample: PushbackReader_5
+----------------------------------------------------------------
+stdout:
+Hello
+
+stderr:
+java.io.IOException: Pushback buffer overflow
+	at java.base/java.io.PushbackReader.unread(PushbackReader.java:166)
+	at PushbackReader_5.main(PushbackReader_5.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: RandomAccessFile_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: RandomAccessFile_3
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_5
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_6
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_7
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_8
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: RandomAccessFile_9
+----------------------------------------------------------------
+stdout:
+Length of the file: 13 bytes
+
+================================================================
+
+Sample: RandomAccessFile_10
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_11
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_15
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_16
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_17
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_18
+----------------------------------------------------------------
+stderr:
+java.io.EOFException
+	at java.base/java.io.RandomAccessFile.readUnsignedShort(RandomAccessFile.java:784)
+	at java.base/java.io.DataInputStream.readUTF(DataInputStream.java:583)
+	at java.base/java.io.RandomAccessFile.readUTF(RandomAccessFile.java:1004)
+	at RandomAccessFile_18.main(RandomAccessFile_18.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_19
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: your_file_path (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at RandomAccessFile_19.main(RandomAccessFile_19.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_21
+----------------------------------------------------------------
+stdout:
+Value: 123456789
+
+================================================================
+
+Sample: RandomAccessFile_22
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_23
+----------------------------------------------------------------
+stdout:
+Value read: 1234567890
+
+================================================================
+
+Sample: RandomAccessFile_24
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_25
+----------------------------------------------------------------
+stdout:
+Read float value: 123.456
+
+================================================================
+
+Sample: RandomAccessFile_26
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_27
+----------------------------------------------------------------
+stdout:
+Value read from file: 123.456
+
+================================================================
+
+Sample: RandomAccessFile_28
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_29
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: RandomAccessFile_30
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_31
+----------------------------------------------------------------
+stdout:
+H
+
+================================================================
+
+Sample: RandomAccessFile_32
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_33
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: your_file_path (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at RandomAccessFile_33.main(RandomAccessFile_33.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_34
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_35
+----------------------------------------------------------------
+stdout:
+65
+
+================================================================
+
+Sample: RandomAccessFile_36
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_38
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_39
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_40
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_41
+----------------------------------------------------------------
+stderr:
+java.io.EOFException
+	at java.base/java.io.RandomAccessFile.readUnsignedShort(RandomAccessFile.java:784)
+	at java.base/java.io.DataInputStream.readUTF(DataInputStream.java:583)
+	at java.base/java.io.RandomAccessFile.readUTF(RandomAccessFile.java:1004)
+	at RandomAccessFile_41.main(RandomAccessFile_41.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_42
+----------------------------------------------------------------
+stderr:
+java.io.FileNotFoundException: your_file_path (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at RandomAccessFile_42.main(RandomAccessFile_42.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: RandomAccessFile_44
+----------------------------------------------------------------
+stdout:
+Value: 123456789
+
+================================================================
+
+Sample: RandomAccessFile_45
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_46
+----------------------------------------------------------------
+stdout:
+Value read: 1234567890
+
+================================================================
+
+Sample: RandomAccessFile_47
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_48
+----------------------------------------------------------------
+stdout:
+Read float value: 123.456
+
+================================================================
+
+Sample: RandomAccessFile_49
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_50
+----------------------------------------------------------------
+stdout:
+Value read from file: 123.456
+
+================================================================
+
+Sample: RandomAccessFile_51
+----------------------------------------------------------------
+================================================================
+
+Sample: RandomAccessFile_52
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Reader_1
+----------------------------------------------------------------
+stdout:
+Number of characters read: 10
+Characters read: Hello, Wor
+
+================================================================
+
+Sample: Reader_2
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: Reader_3
+----------------------------------------------------------------
+stdout:
+World!
+================================================================
+
+Sample: Reader_4
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: Reader_5
+----------------------------------------------------------------
+================================================================
+
+Sample: SequenceInputStream_4
+----------------------------------------------------------------
+stdout:
+HelloWorld
+================================================================
+
+Sample: SequenceInputStream_5
+----------------------------------------------------------------
+stdout:
+Hello
+World
+
+================================================================
+
+Sample: StringBufferInputStream_1
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringBufferInputStream_1.java:7: error: incompatible types: StringBuffer cannot be converted to String
+        StringBufferInputStream sbis = new StringBufferInputStream(sb);
+                                                                   ^
+Note: ./java_io/javaFiles/StringBufferInputStream_1.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: StringBufferInputStream_3
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringBufferInputStream_3.java:7: error: incompatible types: StringBuffer cannot be converted to String
+        StringBufferInputStream sbis = new StringBufferInputStream(sb);
+                                                                   ^
+Note: ./java_io/javaFiles/StringBufferInputStream_3.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: StringBufferInputStream_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringBufferInputStream_4.java:14: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+Note: ./java_io/javaFiles/StringBufferInputStream_4.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error
+
+
+================================================================
+
+Sample: StringBufferInputStream_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringBufferInputStream_5.java:7: error: incompatible types: StringBuffer cannot be converted to String
+        StringBufferInputStream sbis = new StringBufferInputStream(sb);
+                                                                   ^
+Note: ./java_io/javaFiles/StringBufferInputStream_5.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: StringReader_1
+----------------------------------------------------------------
+stdout:
+Hello, World!
+================================================================
+
+Sample: StringReader_2
+----------------------------------------------------------------
+stdout:
+Chars read: 5
+Buffer content: Hello
+
+================================================================
+
+Sample: StringReader_3
+----------------------------------------------------------------
+stdout:
+World!
+================================================================
+
+Sample: StringReader_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringReader_4.java:6: error: unreported exception IOException; must be caught or declared to be thrown
+        System.out.println(reader.ready()); // Output: true
+                                       ^
+./java_io/javaFiles/StringReader_4.java:7: error: unreported exception IOException; must be caught or declared to be thrown
+        while (reader.ready()) {
+                           ^
+./java_io/javaFiles/StringReader_4.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+            System.out.print((char) reader.read());
+                                               ^
+3 errors
+
+
+================================================================
+
+Sample: StringReader_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringReader_5.java:18: error: exception IOException is never thrown in body of corresponding try statement
+            } catch (IOException e) {
+              ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_3
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: StringWriter_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_5.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_6
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_7
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_7.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_8
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_9
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: StringWriter_10
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: StringWriter_11
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_12
+----------------------------------------------------------------
+stdout:
+Hello, World!
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_13
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_13.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+        writer.close();
+                    ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_14
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: StringWriter_16
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_16.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_17
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_18
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_18.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: StringWriter_19
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_20
+----------------------------------------------------------------
+stdout:
+World
+
+================================================================
+
+Sample: StringWriter_21
+----------------------------------------------------------------
+stdout:
+Hello
+
+================================================================
+
+Sample: StringWriter_22
+----------------------------------------------------------------
+stdout:
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_23
+----------------------------------------------------------------
+stdout:
+Hello, World!
+Hello, World!
+
+================================================================
+
+Sample: StringWriter_24
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/StringWriter_24.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+        writer.close();
+                    ^
+1 error
+
+
+================================================================
+
+Sample: Writer_1
+----------------------------------------------------------------
+stdout:
+Hi
+World
+
+================================================================
+
+Sample: Writer_2
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/Writer_2.java:8: error: unreported exception IOException; must be caught or declared to be thrown
+        writer.write(chars);
+                    ^
+1 error
+
+
+================================================================
+
+Sample: Writer_3
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/Writer_3.java:11: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: Writer_4
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/Writer_4.java:10: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: Writer_5
+----------------------------------------------------------------
+output:
+./java_io/javaFiles/Writer_5.java:11: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: Writer_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "java.io.Writer.write(String)" because "<local1>" is null
+	at Writer_6.main(Writer_6.java:8)
+
+================================================================
+
+Sample: Writer_7
+----------------------------------------------------------------
+================================================================
+

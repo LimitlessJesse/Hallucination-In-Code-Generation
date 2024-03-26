@@ -1,0 +1,127 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,Clock,1,Clock.systemDefaultZone(),False
+0,Clock,2,Clock.systemUTC(),False
+0,Clock,3,Clock.tickSeconds(Duration duration),False
+0,Clock,4,"Clock.fixed(Instant instant, ZoneId zone)",False
+0,Clock,5,"Clock.offset(Clock baseClock, Duration offset)",False
+1,Duration,1,"Duration duration = Duration.between(start, end);",False
+1,Duration,2,long toDays(),True
+1,Duration,3,long toHours(),True
+1,Duration,4,long toMinutes(),True
+1,Duration,5,long toSeconds(),False
+1,Duration,6,long toMillis(),True
+1,Duration,7,long toNanos(),True
+1,Duration,8,long toDaysPart(),False
+1,Duration,9,long toHoursPart(),False
+1,Duration,10,long toMinutesPart(),False
+1,Duration,11,long toSecondsPart(),False
+1,Duration,12,long toMillisPart(),False
+1,Duration,13,long toNanosPart(),False
+1,Duration,14,Duration plus(Duration duration),True
+1,Duration,15,Duration minus(Duration duration),True
+1,Duration,16,Duration multipliedBy(long factor),True
+1,Duration,17,Duration dividedBy(long divisor),True
+1,Duration,18,Duration abs(),True
+1,Duration,19,Duration negated(),True
+1,Duration,20,int compareTo(Duration other),True
+2,Instant,1,Instant.now(),False
+2,Instant,2,Instant.ofEpochSecond(long epochSecond),False
+2,Instant,3,Instant.ofEpochMilli(long epochMilli),False
+2,Instant,4,"Instant.ofEpochSecond(long epochSecond, long nanoAdjustment)",False
+2,Instant,5,"Instant.ofEpochSecond(long epochSecond, int nanoAdjustment)",False
+3,LocalDate,1,LocalDate now(),True
+3,LocalDate,2,"LocalDate of(int year, int month, int dayOfMonth)",True
+3,LocalDate,3,int getYear(),True
+3,LocalDate,4,Month getMonth(),True
+3,LocalDate,5,int getDayOfMonth(),True
+3,LocalDate,6,DayOfWeek getDayOfWeek(),True
+3,LocalDate,7,LocalDate plusDays(long days),True
+3,LocalDate,8,LocalDate minusDays(long days),True
+3,LocalDate,9,LocalDate plusWeeks(long weeks),True
+3,LocalDate,10,LocalDate minusWeeks(long weeks),True
+3,LocalDate,11,LocalDate plusMonths(long months),True
+3,LocalDate,12,LocalDate minusMonths(long months),True
+3,LocalDate,13,LocalDate plusYears(long years),True
+3,LocalDate,14,LocalDate minusYears(long years),True
+3,LocalDate,15,"long until(Temporal endExclusive, TemporalUnit unit)",True
+3,LocalDate,16,boolean isBefore(LocalDate other),False
+3,LocalDate,17,boolean isAfter(LocalDate other),False
+3,LocalDate,18,boolean isLeapYear(),True
+3,LocalDate,19,int lengthOfMonth(),True
+3,LocalDate,20,int lengthOfYear(),True
+3,LocalDate,21,boolean isSupported(TemporalField field),True
+3,LocalDate,22,long getLong(TemporalField field),True
+3,LocalDate,23,LocalDate with(TemporalAdjuster adjuster),True
+3,LocalDate,24,LocalDate with(TemporalAdjusters adjuster),False
+3,LocalDate,25,"LocalDate with(TemporalField field, long newValue)",True
+4,LocalDateTime,1,LocalDateTime now(),True
+4,LocalDateTime,2,"LocalDateTime of(int year, int month, int dayOfMonth, int hour, int minute)",True
+4,LocalDateTime,3,"LocalDateTime parse(CharSequence text, DateTimeFormatter formatter)",True
+4,LocalDateTime,4,LocalDateTime plusDays(long days),True
+4,LocalDateTime,5,int getDayOfMonth(),True
+5,LocalTime,1,LocalTime now(),True
+5,LocalTime,2,"LocalTime of(int hour, int minute)",True
+5,LocalTime,3,LocalTime parse(CharSequence text),True
+5,LocalTime,4,int getHour(),True
+5,LocalTime,5,int getMinute(),True
+6,MonthDay,1,"MonthDay.of(int month, int dayOfMonth)",False
+6,MonthDay,2,MonthDay.from(TemporalAccessor temporal),False
+6,MonthDay,3,MonthDay.now(),False
+6,MonthDay,4,MonthDay.parse(CharSequence text),False
+6,MonthDay,5,MonthDay.now(Clock clock),False
+7,OffsetDateTime,1,OffsetDateTime parse(CharSequence text),True
+7,OffsetDateTime,2,OffsetDateTime plusYears(long years),True
+7,OffsetDateTime,3,OffsetDateTime plusMonths(long months),True
+7,OffsetDateTime,4,OffsetDateTime plusWeeks(long weeks),True
+7,OffsetDateTime,5,OffsetDateTime plusDays(long days),True
+7,OffsetDateTime,6,OffsetDateTime plusHours(long hours),True
+7,OffsetDateTime,7,OffsetDateTime plusMinutes(long minutes),True
+7,OffsetDateTime,8,OffsetDateTime plusSeconds(long seconds),True
+7,OffsetDateTime,9,OffsetDateTime plusNanos(long nanos),True
+7,OffsetDateTime,10,OffsetDateTime plus(TemporalAmount amountToAdd),True
+7,OffsetDateTime,11,OffsetDateTime minusYears(long years),True
+7,OffsetDateTime,12,OffsetDateTime minusMonths(long months),True
+7,OffsetDateTime,13,OffsetDateTime minusWeeks(long weeks),True
+7,OffsetDateTime,14,OffsetDateTime minusDays(long days),True
+7,OffsetDateTime,15,OffsetDateTime minusHours(long hours),True
+7,OffsetDateTime,16,OffsetDateTime minusMinutes(long minutes),True
+7,OffsetDateTime,17,OffsetDateTime minusSeconds(long seconds),True
+7,OffsetDateTime,18,OffsetDateTime minusNanos(long nanos),True
+7,OffsetDateTime,19,OffsetDateTime minus(TemporalAmount amountToSubtract),True
+7,OffsetDateTime,20,OffsetDateTime withOffsetSameInstant(ZoneOffset newOffset),True
+8,OffsetTime,1,"OffsetTime.of(int hour, int minute, int second, int nanoOfSecond, ZoneOffset offset)",False
+8,OffsetTime,2,OffsetTime.parse(CharSequence text),False
+8,OffsetTime,3,OffsetTime.now(),False
+8,OffsetTime,4,OffsetTime.now(ZoneId zone),False
+8,OffsetTime,5,OffsetTime.from(TemporalAccessor temporal),False
+9,Period,1,Period getYears(),False
+9,Period,2,Period getMonths(),False
+9,Period,3,Period getDays(),False
+9,Period,4,Period plusYears(long yearsToAdd),True
+9,Period,5,Period plusMonths(long monthsToAdd),True
+9,Period,6,Period plusDays(long daysToAdd),True
+10,Year,1,Year.now(),False
+10,Year,2,Year.of(int year),False
+10,Year,3,Year.parse(CharSequence text),False
+10,Year,4,Year.isLeap(),False
+10,Year,5,Year.length(),False
+11,YearMonth,1,"YearMonth.of(int year, int month)",False
+11,YearMonth,2,YearMonth.now(),False
+11,YearMonth,3,YearMonth.from(TemporalAccessor temporal),False
+11,YearMonth,4,YearMonth.plusMonths(long monthsToAdd),False
+11,YearMonth,5,YearMonth.minusMonths(long monthsToSubtract),False
+12,ZonedDateTime,1,ZonedDateTime now(),True
+12,ZonedDateTime,2,"ZonedDateTime of(int year, int month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond, ZoneId zone)",True
+12,ZonedDateTime,3,ZonedDateTime withYear(int year),True
+12,ZonedDateTime,4,ZonedDateTime withMonth(int month),True
+12,ZonedDateTime,5,ZonedDateTime withDayOfMonth(int dayOfMonth),True
+13,ZoneId,1,ZoneId.getAvailableZoneIds(),False
+13,ZoneId,2,ZoneId.of(String id),False
+13,ZoneId,3,ZoneId.systemDefault(),False
+13,ZoneId,4,"ZoneId.of(String id, ZoneOffset offset)",False
+13,ZoneId,5,"ZoneId.of(String id, ZoneOffset offset, String description)",False
+14,ZoneOffset,1,of(String offsetId),False
+14,ZoneOffset,2,ofHours(int hours),False
+14,ZoneOffset,3,"ofHoursMinutes(int hours, int minutes)",False
+14,ZoneOffset,4,ofTotalSeconds(long seconds),False
+14,ZoneOffset,5,"ofTotalSeconds(long seconds, int nanoAdjustment)",False

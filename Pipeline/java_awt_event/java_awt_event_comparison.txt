@@ -1,0 +1,654 @@
+Sample: 0 ActionEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ActionEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ActionEvent(Object source, int id)`: This constructor creates an ActionEvent object with the specified source and id.
+
+2. `ActionEvent(Object source, int id, String command)`: This constructor creates an ActionEvent object with the specified source, id, and command.
+
+3. `ActionEvent(Object source, int id, String command, long when)`: This constructor creates an ActionEvent object with the specified source, id, command, and when.
+
+4. `ActionEvent(Object source, int id, String command, long when, int modifiers)`: This constructor creates an ActionEvent object with the specified source, id, command, when, and modifiers.
+
+5. `ActionEvent(Object source, int id, String command, long when, int modifiers, InputEvent e)`: This constructor creates an ActionEvent object with the specified source, id, command, when, modifiers, and e.
+================================================================
+
+Sample: 1 AdjustmentEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.AdjustmentEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getAdjustmentType()`: This method returns the type of adjustment that occurred.
+
+2. `int getValue()`: This method returns the value of the adjustment.
+
+3. `int getValueIsAdjusting()`: This method returns whether the value is being adjusted.
+
+4. `int getAdjustmentPerformed()`: This method returns the amount of adjustment that was performed.
+
+5. `int getAdjustmentType()`: This method returns the type of adjustment that occurred.
+================================================================
+
+Sample: 2 AWTEventListenerProxy
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.AWTEventListenerProxy package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 ComponentAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ComponentAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void componentHidden(ComponentEvent e)`: This method is called when a component becomes hidden.
+
+2. `void componentMoved(ComponentEvent e)`: This method is called when a component is moved.
+
+3. `void componentResized(ComponentEvent e)`: This method is called when a component is resized.
+
+4. `void componentShown(ComponentEvent e)`: This method is called when a component becomes visible.
+
+5. `void componentMoved(ContainerEvent e)`: This method is called when a container is moved.
+
+6. `void componentRemoved(ContainerEvent e)`: This method is called when a component is removed from a container.
+
+7. `void componentMoved(HierarchyEvent e)`: This method is called when a component is moved within the hierarchy.
+
+8. `void hierarchyChanged(HierarchyEvent e)`: This method is called when a component's hierarchy changes.
+
+9. `void ancestorMoved(HierarchyEvent e)`: This method is called when an ancestor of a component is moved.
+
+10. `void ancestorAdded(HierarchyEvent e)`: This method is called when an ancestor of a component is added.
+
+11. `void ancestorRemoved(HierarchyEvent e)`: This method is called when an ancestor of a component is removed.
+================================================================
+
+Sample: 4 ComponentEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ComponentEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ComponentEvent(Component source, int id)`: This constructor is used to create a new ComponentEvent object.
+
+2. `Component getSource()`: This method returns the component that originated the event.
+
+3. `int getID()`: This method returns the identifier for this event.
+
+4. `void setSource(Component source)`: This method sets the source of the event.
+
+5. `void setID(int id)`: This method sets the identifier for this event.
+================================================================
+
+Sample: 5 ContainerAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ContainerAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void componentAdded(ComponentEvent e)`: This method is called when a component is added to the container.
+
+2. `void componentRemoved(ComponentEvent e)`: This method is called when a component is removed from the container.
+
+3. `void componentMoved(ComponentEvent e)`: This method is called when a component is moved to a new location.
+
+4. `void componentShown(ComponentEvent e)`: This method is called when a component is made visible.
+
+5. `void componentHidden(ComponentEvent e)`: This method is called when a component is made invisible.
+================================================================
+
+Sample: 6 ContainerEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ContainerEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addChild(Component child)`: This method adds the specified component to the container.
+
+2. `void addChild(Component child, Object constraints)`: This method adds the specified component to the container with the specified constraints.
+
+3. `void addNotify()`: This method is called when the component becomes visible.
+
+4. `void addNotify()`: This method is called when the component becomes visible.
+
+5. `void removeNotify()`: This method is called when the component becomes invisible.
+================================================================
+
+Sample: 7 FocusAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.FocusAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void focusGained(FocusEvent e)`: This method is called when a component gains the focus.
+
+2. `void focusLost(FocusEvent e)`: This method is called when a component loses the focus.
+
+3. `void focusGained(FocusEvent e)`: This method is called when a component gains the focus.
+
+4. `void focusLost(FocusEvent e)`: This method is called when a component loses the focus.
+
+5. `void focusGained(FocusEvent e)`: This method is called when a component gains the focus.
+
+6. `void focusLost(FocusEvent e)`: This method is called when a component loses the focus.
+================================================================
+
+Sample: 8 FocusEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.FocusEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getSource()`: This method returns the object that is the source of the event.
+
+2. `getOldFocusOwner()`: This method returns the component that had the focus before the event occurred.
+
+3. `getNewFocusOwner()`: This method returns the component that now has the focus.
+
+4. `getID()`: This method returns the ID of the event.
+
+5. `getWhen()`: This method returns the time when the event occurred.
+================================================================
+
+Sample: 9 HierarchyBoundsAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.HierarchyBoundsAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 10 HierarchyEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.HierarchyEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public int getChangeFlags()`: This method returns the change flags for this event.
+2. `public Component getChangedParent()`: This method returns the parent component that has changed.
+3. `public Component[] getChangedSubtree()`: This method returns an array of components that have changed.
+4. `public Component getID()`: This method returns the ID of the component that has changed.
+5. `public int getID(Component c)`: This method returns the ID of the specified component.
+================================================================
+
+Sample: 11 InputEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.InputEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isMetaDown()`: This method returns true if the Meta key is down.
+
+2. `boolean isAltDown()`: This method returns true if the Alt key is down.
+
+3. `boolean isControlDown()`: This method returns true if the Control key is down.
+
+4. `boolean isShiftDown()`: This method returns true if the Shift key is down.
+
+5. `boolean isButton1Down()`: This method returns true if the primary mouse button is down.
+
+6. `boolean isButton2Down()`: This method returns true if the secondary mouse button is down.
+
+7. `boolean isButton3Down()`: This method returns true if the tertiary mouse button is down.
+
+8. `boolean isButton4Down()`: This method returns true if the fourth mouse button is down.
+
+9. `boolean isButton5Down()`: This method returns true if the fifth mouse button is down.
+
+10. `boolean isButtonPressed(int button)`: This method returns true if the specified mouse button is pressed.
+
+11. `boolean isButtonReleased(int button)`: This method returns true if the specified mouse button is released.
+
+12. `boolean isMetaMaskDown()`: This method returns true if the Meta key is down.
+
+13. `boolean isAltMaskDown()`: This method returns true if the Alt key is down.
+
+14. `boolean isControlMaskDown()`: This method returns true if the Control key is down.
+
+15. `boolean isShiftMaskDown()`: This method returns true if the Shift key is down.
+
+16. `boolean isButton1MaskDown()`: This method returns true if the primary mouse button is down.
+
+17. `boolean isButton2MaskDown()`: This method returns true if the secondary mouse button is down.
+
+18. `boolean isButton3MaskDown()`: This method returns true if the tertiary mouse button is down.
+
+19. `boolean isButton4MaskDown()`: This method returns true if the fourth mouse button is down.
+
+20. `boolean isButton5MaskDown()`: This method returns true if the fifth mouse button is down.
+
+21. `boolean isButton1Masked(int mask)`: This method returns true if the specified mouse button is masked.
+
+22. `boolean isButton2Masked(int mask)`: This method returns true if the specified mouse button is masked.
+
+23. `boolean isButton3Masked(int mask)`: This method returns true if the specified mouse button is masked.
+
+24. `boolean isButton4Masked(int mask)`: This method returns true if the specified mouse button is masked.
+
+25. `boolean isButton5Masked(int mask)`: This method returns true if the specified mouse button is masked.
+================================================================
+
+Sample: 12 InputMethodEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.InputMethodEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean commitString(String str)`: This method commits the specified string to the input method editor.
+
+2. `boolean deleteSurroundingText(int offset, int length)`: This method deletes the specified number of characters from the input method editor.
+
+3. `boolean endProcessing()`: This method ends the current input method editor processing.
+
+4. `boolean insertString(int offset, String str, AttributeSet attr)`: This method inserts the specified string at the specified offset into the input method editor.
+
+5. `boolean sendKeyEvent(KeyEvent e)`: This method sends the specified key event to the input method editor.
+================================================================
+
+Sample: 13 InvocationEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.InvocationEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void addListener(InvocationListener l)`: This method adds the specified listener to the list of listeners for this event source.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+================================================================
+
+Sample: 14 ItemEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.ItemEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 15 KeyAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.KeyAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void keyPressed(KeyEvent e)`: This method is called when a key is pressed.
+2. `void keyReleased(KeyEvent e)`: This method is called when a key is released.
+3. `void keyTyped(KeyEvent e)`: This method is called when a key is typed.
+4. `void keyEntered(KeyEvent e)`: This method is called when a key is entered.
+5. `void keyExited(KeyEvent e)`: This method is called when a key is exited.
+================================================================
+
+Sample: 16 KeyEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.KeyEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getKeyCode()`: This method returns the integer value representing the physical key that was pressed.
+
+2. `int getKeyLocation()`: This method returns the location of the key on the keyboard.
+
+3. `boolean isAltDown()`: This method returns true if the ALT key is down.
+
+4. `boolean isControlDown()`: This method returns true if the CTRL key is down.
+
+5. `boolean isMetaDown()`: This method returns true if the META key is down.
+
+6. `boolean isShiftDown()`: This method returns true if the SHIFT key is down.
+
+7. `boolean isAltGraphDown()`: This method returns true if the ALT GRAPH key is down.
+
+8. `boolean isExtendedKey()`: This method returns true if the key is an extended key.
+
+9. `boolean isKeyDown(int keyCode)`: This method returns true if the specified key is down.
+
+10. `boolean isKeyLocation(int keyLocation)`: This method returns true if the key is located at the specified location.
+================================================================
+
+Sample: 17 MouseAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.MouseAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void mouseClicked(MouseEvent e)`: This method is called when the mouse button has been clicked (pressed and released) on a component.
+
+2. `void mousePressed(MouseEvent e)`: This method is called when a mouse button has been pressed on a component.
+
+3. `void mouseReleased(MouseEvent e)`: This method is called when a mouse button has been released on a component.
+
+4. `void mouseEntered(MouseEvent e)`: This method is called when the mouse cursor enters a component.
+
+5. `void mouseExited(MouseEvent e)`: This method is called when the mouse cursor exits a component.
+================================================================
+
+Sample: 18 MouseEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.MouseEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getX()`: This method returns the x-coordinate of the mouse pointer relative to the origin of the component.
+
+2. `int getY()`: This method returns the y-coordinate of the mouse pointer relative to the origin of the component.
+
+3. `int getClickCount()`: This method returns the number of times the mouse button was clicked.
+
+4. `int getButton()`: This method returns the button that was pressed when the mouse event occurred.
+
+5. `int getModifiers()`: This method returns the modifier keys that were pressed when the mouse event occurred.
+================================================================
+
+Sample: 19 MouseMotionAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.MouseMotionAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void mouseDragged(MouseEvent e)`: This method is called when the mouse is dragged.
+2. `void mouseMoved(MouseEvent e)`: This method is called when the mouse cursor has been moved to a new location.
+3. `void mouseEntered(MouseEvent e)`: This method is called when the mouse cursor has entered a component.
+4. `void mouseExited(MouseEvent e)`: This method is called when the mouse cursor has exited a component.
+5. `void mouseClicked(MouseEvent e)`: This method is called when a mouse button has been clicked (pressed and released).
+================================================================
+
+Sample: 20 MouseWheelEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.MouseWheelEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getScrollType()`: This method returns the type of scroll event.
+2. `int getUnitsToScroll()`: This method returns the number of clicks the mouse wheel was rotated.
+3. `int getWheelRotation()`: This method returns the rotation of the mouse wheel.
+4. `int getScrollAmount()`: This method returns the amount of scrolling.
+5. `int getID()`: This method returns the identifier of the event.
+================================================================
+
+Sample: 21 PaintEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.PaintEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void addPaintListener(PaintListener l)`: This method adds a PaintListener to the list of listeners for this PaintEvent.
+
+2. `void removePaintListener(PaintListener l)`: This method removes a PaintListener from the list of listeners for this PaintEvent.
+
+3. `PaintEvent getPaintEvent()`: This method returns the PaintEvent associated with this PaintEvent.
+
+4. `Graphics getGraphics()`: This method returns the Graphics object associated with this PaintEvent.
+
+5. `Rectangle getUpdateRect()`: This method returns the Rectangle that represents the area of the component that needs to be repainted.
+================================================================
+
+Sample: 22 TextEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.TextEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void remove(int index)`: This method removes the element at the specified position in this list.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `boolean removeAll(Collection<?> c)`: This method removes all of the elements of this list that are contained in the specified collection.
+================================================================
+
+Sample: 23 WindowAdapter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.WindowAdapter package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void windowActivated(WindowEvent e)`: This method is called when the window is activated.
+2. `void windowClosed(WindowEvent e)`: This method is called when the user attempts to close the window from the window's system menu.
+3. `void windowClosing(WindowEvent e)`: This method is called when the user attempts to close the window from the window's own system menu.
+4. `void windowDeactivated(WindowEvent e)`: This method is called when the window is deactivated.
+5. `void windowDeiconified(WindowEvent e)`: This method is called when the window is made non-minimized.
+6. `void windowIconified(WindowEvent e)`: This method is called when the window is made minimized.
+7. `void windowOpened(WindowEvent e)`: This method is called when the window is opened.
+8. `void windowGainedFocus(WindowEvent e)`: This method is called when the window gets the keyboard focus.
+9. `void windowLostFocus(WindowEvent e)`: This method is called when the window loses the keyboard focus.
+10. `void windowStateChanged(WindowEvent e)`: This method is called when the window's state changes.
+================================================================
+
+Sample: 24 WindowEvent
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java_awt_event.WindowEvent package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `WindowEvent(int id)`: This constructor creates a new WindowEvent object with the specified id.
+
+2. `int getID()`: This method returns the id of this WindowEvent.
+
+3. `void consume()`: This method sets the consumed flag of this WindowEvent to true.
+
+4. `boolean isConsumed()`: This method returns the consumed flag of this WindowEvent.
+
+5. `void setParam(Object param)`: This method sets the parameter of this WindowEvent to the specified Object.
+================================================================
+

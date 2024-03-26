@@ -1,0 +1,207 @@
+ClassName,Method,Return Type
+CertPathTrustManagerParameters,getParameters(),CertPathParameters
+ExtendedSSLSession,getLocalSupportedSignatureAlgorithms(),abstract String[]
+ExtendedSSLSession,getPeerSupportedSignatureAlgorithms(),abstract String[]
+ExtendedSSLSession,getRequestedServerNames(),List<SNIServerName>
+HandshakeCompletedEvent,getCipherSuite(),String
+HandshakeCompletedEvent,getLocalCertificates(),Certificate[]
+HandshakeCompletedEvent,getLocalPrincipal(),Principal
+HandshakeCompletedEvent,getPeerCertificateChain(),X509Certificate[]
+HandshakeCompletedEvent,getPeerCertificates(),Certificate[]
+HandshakeCompletedEvent,getPeerPrincipal(),Principal
+HandshakeCompletedEvent,getSession(),SSLSession
+HandshakeCompletedEvent,getSocket(),SSLSocket
+HttpsURLConnection,getCipherSuite(),abstract String
+HttpsURLConnection,getDefaultHostnameVerifier(),static HostnameVerifier
+HttpsURLConnection,getDefaultSSLSocketFactory(),static SSLSocketFactory
+HttpsURLConnection,getHostnameVerifier(),HostnameVerifier
+HttpsURLConnection,getLocalCertificates(),abstract Certificate[]
+HttpsURLConnection,getLocalPrincipal(),Principal
+HttpsURLConnection,getPeerPrincipal(),Principal
+HttpsURLConnection,getServerCertificates(),abstract Certificate[]
+HttpsURLConnection,getSSLSocketFactory(),SSLSocketFactory
+HttpsURLConnection,setDefaultHostnameVerifier(HostnameVerifier v),static void
+HttpsURLConnection,setDefaultSSLSocketFactory(SSLSocketFactory sf),static void
+HttpsURLConnection,setHostnameVerifier(HostnameVerifier v),void
+HttpsURLConnection,setSSLSocketFactory(SSLSocketFactory sf),void
+KeyManagerFactory,getAlgorithm(),String
+KeyManagerFactory,getDefaultAlgorithm(),static String
+KeyManagerFactory,getInstance(String algorithm),static KeyManagerFactory
+KeyManagerFactory,"getInstance(String algorithm, Provider provider)",static KeyManagerFactory
+KeyManagerFactory,"getInstance(String algorithm, String provider)",static KeyManagerFactory
+KeyManagerFactory,getKeyManagers(),KeyManager[]
+KeyManagerFactory,getProvider(),Provider
+KeyManagerFactory,"init(KeyStore ks, char[] password)",void
+KeyManagerFactory,init(ManagerFactoryParameters spec),void
+KeyManagerFactorySpi,engineGetKeyManagers(),protected abstract KeyManager[]
+KeyManagerFactorySpi,"engineInit(KeyStore ks, char[] password)",protected abstract void
+KeyManagerFactorySpi,engineInit(ManagerFactoryParameters spec),protected abstract void
+KeyStoreBuilderParameters,getParameters(),List<KeyStore.Builder>
+SNIHostName,createSNIMatcher(String regex),static SNIMatcher
+SNIHostName,equals(Object other),boolean
+SNIHostName,getAsciiName(),String
+SNIHostName,hashCode(),int
+SNIHostName,toString(),String
+SNIMatcher,getType(),int
+SNIMatcher,matches(SNIServerName serverName),abstract boolean
+SNIServerName,equals(Object other),boolean
+SNIServerName,getEncoded(),byte[]
+SNIServerName,getType(),int
+SNIServerName,hashCode(),int
+SNIServerName,toString(),String
+SSLContext,createSSLEngine(),SSLEngine
+SSLContext,"createSSLEngine(String peerHost, int peerPort)",SSLEngine
+SSLContext,getClientSessionContext(),SSLSessionContext
+SSLContext,getDefault(),static SSLContext
+SSLContext,getDefaultSSLParameters(),SSLParameters
+SSLContext,getInstance(String protocol),static SSLContext
+SSLContext,"getInstance(String protocol, Provider provider)",static SSLContext
+SSLContext,"getInstance(String protocol, String provider)",static SSLContext
+SSLContext,getProtocol(),String
+SSLContext,getProvider(),Provider
+SSLContext,getServerSessionContext(),SSLSessionContext
+SSLContext,getServerSocketFactory(),SSLServerSocketFactory
+SSLContext,getSocketFactory(),SSLSocketFactory
+SSLContext,getSupportedSSLParameters(),SSLParameters
+SSLContext,"init(KeyManager[] km, TrustManager[] tm, SecureRandom random)",void
+SSLContext,setDefault(SSLContext context),static void
+SSLContextSpi,engineCreateSSLEngine(),protected abstract SSLEngine
+SSLContextSpi,"engineCreateSSLEngine(String host, int port)",protected abstract SSLEngine
+SSLContextSpi,engineGetClientSessionContext(),protected abstract SSLSessionContext
+SSLContextSpi,engineGetDefaultSSLParameters(),protected SSLParameters
+SSLContextSpi,engineGetServerSessionContext(),protected abstract SSLSessionContext
+SSLContextSpi,engineGetServerSocketFactory(),protected abstract SSLServerSocketFactory
+SSLContextSpi,engineGetSocketFactory(),protected abstract SSLSocketFactory
+SSLContextSpi,engineGetSupportedSSLParameters(),protected SSLParameters
+SSLContextSpi,"engineInit(KeyManager[] km, TrustManager[] tm, SecureRandom sr)",protected abstract void
+SSLEngine,beginHandshake(),abstract void
+SSLEngine,closeInbound(),abstract void
+SSLEngine,closeOutbound(),abstract void
+SSLEngine,getApplicationProtocol(),String
+SSLEngine,getDelegatedTask(),abstract Runnable
+SSLEngine,getEnabledCipherSuites(),abstract String[]
+SSLEngine,getEnabledProtocols(),abstract String[]
+SSLEngine,getEnableSessionCreation(),abstract boolean
+SSLEngine,getHandshakeApplicationProtocol(),String
+SSLEngine,getHandshakeApplicationProtocolSelector(),"BiFunction<SSLEngine,List<String>,String>"
+SSLEngine,getHandshakeSession(),SSLSession
+SSLEngine,getHandshakeStatus(),abstract SSLEngineResult.HandshakeStatus
+SSLEngine,getNeedClientAuth(),abstract boolean
+SSLEngine,getPeerHost(),String
+SSLEngine,getPeerPort(),int
+SSLEngine,getSession(),abstract SSLSession
+SSLEngine,getSSLParameters(),SSLParameters
+SSLEngine,getSupportedCipherSuites(),abstract String[]
+SSLEngine,getSupportedProtocols(),abstract String[]
+SSLEngine,getUseClientMode(),abstract boolean
+SSLEngine,getWantClientAuth(),abstract boolean
+SSLEngine,isInboundDone(),abstract boolean
+SSLEngine,isOutboundDone(),abstract boolean
+SSLEngine,setEnabledCipherSuites(String[] suites),abstract void
+SSLEngine,setEnabledProtocols(String[] protocols),abstract void
+SSLEngine,setEnableSessionCreation(boolean flag),abstract void
+SSLEngine,"setHandshakeApplicationProtocolSelector(BiFunction<SSLEngine,List<String>,String> selector)",void
+SSLEngine,setNeedClientAuth(boolean need),abstract void
+SSLEngine,setSSLParameters(SSLParameters params),void
+SSLEngine,setUseClientMode(boolean mode),abstract void
+SSLEngine,setWantClientAuth(boolean want),abstract void
+SSLEngine,"unwrap(ByteBuffer src, ByteBuffer dst)",SSLEngineResult
+SSLEngine,"unwrap(ByteBuffer src, ByteBuffer[] dsts)",SSLEngineResult
+SSLEngine,"unwrap(ByteBuffer src, ByteBuffer[] dsts, int offset, int length)",abstract SSLEngineResult
+SSLEngine,"wrap(ByteBuffer[] srcs, ByteBuffer dst)",SSLEngineResult
+SSLEngine,"wrap(ByteBuffer[] srcs, int offset, int length, ByteBuffer dst)",abstract SSLEngineResult
+SSLEngine,"wrap(ByteBuffer src, ByteBuffer dst)",SSLEngineResult
+SSLEngineResult,bytesConsumed(),int
+SSLEngineResult,bytesProduced(),int
+SSLEngineResult,getHandshakeStatus(),SSLEngineResult.HandshakeStatus
+SSLEngineResult,getStatus(),SSLEngineResult.Status
+SSLEngineResult,toString(),String
+SSLParameters,getAlgorithmConstraints(),AlgorithmConstraints
+SSLParameters,getApplicationProtocols(),String[]
+SSLParameters,getCipherSuites(),String[]
+SSLParameters,getEndpointIdentificationAlgorithm(),String
+SSLParameters,getNeedClientAuth(),boolean
+SSLParameters,getProtocols(),String[]
+SSLParameters,getServerNames(),List<SNIServerName>
+SSLParameters,getSNIMatchers(),Collection<SNIMatcher>
+SSLParameters,getUseCipherSuitesOrder(),boolean
+SSLParameters,getWantClientAuth(),boolean
+SSLParameters,setAlgorithmConstraints(AlgorithmConstraints constraints),void
+SSLParameters,setApplicationProtocols(String[] protocols),void
+SSLParameters,setCipherSuites(String[] cipherSuites),void
+SSLParameters,setEndpointIdentificationAlgorithm(String algorithm),void
+SSLParameters,setNeedClientAuth(boolean needClientAuth),void
+SSLParameters,setProtocols(String[] protocols),void
+SSLParameters,setServerNames(List<SNIServerName> serverNames),void
+SSLParameters,setSNIMatchers(Collection<SNIMatcher> matchers),void
+SSLParameters,setUseCipherSuitesOrder(boolean honorOrder),void
+SSLParameters,setWantClientAuth(boolean wantClientAuth),void
+SSLServerSocket,getEnabledCipherSuites(),abstract String[]
+SSLServerSocket,getEnabledProtocols(),abstract String[]
+SSLServerSocket,getEnableSessionCreation(),abstract boolean
+SSLServerSocket,getNeedClientAuth(),abstract boolean
+SSLServerSocket,getSSLParameters(),SSLParameters
+SSLServerSocket,getSupportedCipherSuites(),abstract String[]
+SSLServerSocket,getSupportedProtocols(),abstract String[]
+SSLServerSocket,getUseClientMode(),abstract boolean
+SSLServerSocket,getWantClientAuth(),abstract boolean
+SSLServerSocket,setEnabledCipherSuites(String[] suites),abstract void
+SSLServerSocket,setEnabledProtocols(String[] protocols),abstract void
+SSLServerSocket,setEnableSessionCreation(boolean flag),abstract void
+SSLServerSocket,setNeedClientAuth(boolean need),abstract void
+SSLServerSocket,setSSLParameters(SSLParameters params),void
+SSLServerSocket,setUseClientMode(boolean mode),abstract void
+SSLServerSocket,setWantClientAuth(boolean want),abstract void
+SSLServerSocketFactory,getDefault(),static ServerSocketFactory
+SSLServerSocketFactory,getDefaultCipherSuites(),abstract String[]
+SSLServerSocketFactory,getSupportedCipherSuites(),abstract String[]
+SSLSessionBindingEvent,getName(),String
+SSLSessionBindingEvent,getSession(),SSLSession
+SSLSocket,addHandshakeCompletedListener(HandshakeCompletedListener listener),abstract void
+SSLSocket,getApplicationProtocol(),String
+SSLSocket,getEnabledCipherSuites(),abstract String[]
+SSLSocket,getEnabledProtocols(),abstract String[]
+SSLSocket,getEnableSessionCreation(),abstract boolean
+SSLSocket,getHandshakeApplicationProtocol(),String
+SSLSocket,getHandshakeApplicationProtocolSelector(),"BiFunction<SSLSocket,List<String>,String>"
+SSLSocket,getHandshakeSession(),SSLSession
+SSLSocket,getNeedClientAuth(),abstract boolean
+SSLSocket,getSession(),abstract SSLSession
+SSLSocket,getSSLParameters(),SSLParameters
+SSLSocket,getSupportedCipherSuites(),abstract String[]
+SSLSocket,getSupportedProtocols(),abstract String[]
+SSLSocket,getUseClientMode(),abstract boolean
+SSLSocket,getWantClientAuth(),abstract boolean
+SSLSocket,removeHandshakeCompletedListener(HandshakeCompletedListener listener),abstract void
+SSLSocket,setEnabledCipherSuites(String[] suites),abstract void
+SSLSocket,setEnabledProtocols(String[] protocols),abstract void
+SSLSocket,setEnableSessionCreation(boolean flag),abstract void
+SSLSocket,"setHandshakeApplicationProtocolSelector(BiFunction<SSLSocket,List<String>,String> selector)",void
+SSLSocket,setNeedClientAuth(boolean need),abstract void
+SSLSocket,setSSLParameters(SSLParameters params),void
+SSLSocket,setUseClientMode(boolean mode),abstract void
+SSLSocket,setWantClientAuth(boolean want),abstract void
+SSLSocket,startHandshake(),abstract void
+SSLSocketFactory,"createSocket(Socket s, InputStream consumed, boolean autoClose)",Socket
+SSLSocketFactory,"createSocket(Socket s, String host, int port, boolean autoClose)",abstract Socket
+SSLSocketFactory,getDefault(),static SocketFactory
+SSLSocketFactory,getDefaultCipherSuites(),abstract String[]
+SSLSocketFactory,getSupportedCipherSuites(),abstract String[]
+TrustManagerFactory,getAlgorithm(),String
+TrustManagerFactory,getDefaultAlgorithm(),static String
+TrustManagerFactory,getInstance(String algorithm),static TrustManagerFactory
+TrustManagerFactory,"getInstance(String algorithm, Provider provider)",static TrustManagerFactory
+TrustManagerFactory,"getInstance(String algorithm, String provider)",static TrustManagerFactory
+TrustManagerFactory,getProvider(),Provider
+TrustManagerFactory,getTrustManagers(),TrustManager[]
+TrustManagerFactory,init(KeyStore ks),void
+TrustManagerFactory,init(ManagerFactoryParameters spec),void
+TrustManagerFactorySpi,engineGetTrustManagers(),protected abstract TrustManager[]
+TrustManagerFactorySpi,engineInit(KeyStore ks),protected abstract void
+TrustManagerFactorySpi,engineInit(ManagerFactoryParameters spec),protected abstract void
+X509ExtendedKeyManager,"chooseEngineClientAlias(String[] keyType, Principal[] issuers, SSLEngine engine)",String
+X509ExtendedKeyManager,"chooseEngineServerAlias(String keyType, Principal[] issuers, SSLEngine engine)",String
+X509ExtendedTrustManager,"checkClientTrusted(X509Certificate[] chain, String authType, Socket socket)",abstract void
+X509ExtendedTrustManager,"checkClientTrusted(X509Certificate[] chain, String authType, SSLEngine engine)",abstract void
+X509ExtendedTrustManager,"checkServerTrusted(X509Certificate[] chain, String authType, Socket socket)",abstract void
+X509ExtendedTrustManager,"checkServerTrusted(X509Certificate[] chain, String authType, SSLEngine engine)",abstract void

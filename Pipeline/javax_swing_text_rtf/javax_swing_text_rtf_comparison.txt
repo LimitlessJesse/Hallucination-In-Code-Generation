@@ -1,0 +1,25 @@
+Sample: 0 RTFEditorKit
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.swing.text.rtf.RTFEditorKit package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `void read(Reader in, Element root, ContentHandler handler)`: This method reads the RTF data from the specified Reader and adds the resulting content to the specified root Element.
+
+2. `void write(Writer out, Object element)`: This method writes the specified Object to the specified Writer.
+
+3. `void addView(View view)`: This method adds the specified View to the list of views.
+
+4. `void removeView(View view)`: This method removes the specified View from the list of views.
+
+5. `ViewFactory getViewFactory()`: This method returns the ViewFactory associated with this RTFEditorKit.
+================================================================
+

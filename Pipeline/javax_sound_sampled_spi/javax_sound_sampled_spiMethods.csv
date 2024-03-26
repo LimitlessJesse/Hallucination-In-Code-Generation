@@ -1,0 +1,26 @@
+ClassName,Method,Return Type
+AudioFileReader,getAudioFileFormat(File file),abstract AudioFileFormat
+AudioFileReader,getAudioFileFormat(InputStream stream),abstract AudioFileFormat
+AudioFileReader,getAudioFileFormat(URL url),abstract AudioFileFormat
+AudioFileReader,getAudioInputStream(File file),abstract AudioInputStream
+AudioFileReader,getAudioInputStream(InputStream stream),abstract AudioInputStream
+AudioFileReader,getAudioInputStream(URL url),abstract AudioInputStream
+AudioFileWriter,getAudioFileTypes(),abstract AudioFileFormat.Type[]
+AudioFileWriter,getAudioFileTypes(AudioInputStream stream),abstract AudioFileFormat.Type[]
+AudioFileWriter,isFileTypeSupported(AudioFileFormat.Type fileType),boolean
+AudioFileWriter,"isFileTypeSupported(AudioFileFormat.Type fileType, AudioInputStream stream)",boolean
+AudioFileWriter,"write(AudioInputStream stream, AudioFileFormat.Type fileType, File out)",abstract int
+AudioFileWriter,"write(AudioInputStream stream, AudioFileFormat.Type fileType, OutputStream out)",abstract int
+FormatConversionProvider,"getAudioInputStream(AudioFormat.Encoding targetEncoding, AudioInputStream sourceStream)",abstract AudioInputStream
+FormatConversionProvider,"getAudioInputStream(AudioFormat targetFormat, AudioInputStream sourceStream)",abstract AudioInputStream
+FormatConversionProvider,getSourceEncodings(),abstract AudioFormat.Encoding[]
+FormatConversionProvider,getTargetEncodings(),abstract AudioFormat.Encoding[]
+FormatConversionProvider,getTargetEncodings(AudioFormat sourceFormat),abstract AudioFormat.Encoding[]
+FormatConversionProvider,"getTargetFormats(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)",abstract AudioFormat[]
+FormatConversionProvider,"isConversionSupported(AudioFormat.Encoding targetEncoding, AudioFormat sourceFormat)",boolean
+FormatConversionProvider,"isConversionSupported(AudioFormat targetFormat, AudioFormat sourceFormat)",boolean
+FormatConversionProvider,isSourceEncodingSupported(AudioFormat.Encoding sourceEncoding),boolean
+FormatConversionProvider,isTargetEncodingSupported(AudioFormat.Encoding targetEncoding),boolean
+MixerProvider,getMixer(Mixer.Info info),abstract Mixer
+MixerProvider,getMixerInfo(),abstract Mixer.Info[]
+MixerProvider,isMixerSupported(Mixer.Info info),boolean

@@ -1,0 +1,166 @@
+Sample: 0 BreakIteratorProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.BreakIteratorProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isBoundary(int offset)`: This method returns true if the specified offset is a boundary.
+
+2. `int following(int offset)`: This method returns the offset of the first character following the specified offset.
+
+3. `int preceding(int offset)`: This method returns the offset of the last character preceding the specified offset.
+
+4. `int first()`: This method returns the offset of the first character.
+
+5. `int last()`: This method returns the offset of the last character.
+
+6. `int next(int offset)`: This method returns the offset of the first character following the specified offset.
+
+7. `int next()`: This method returns the offset of the first character following the current position.
+
+8. `int previous()`: This method returns the offset of the last character preceding the current position.
+
+9. `int previous(int offset)`: This method returns the offset of the last character preceding the specified offset.
+
+10. `int following(int offset)`: This method returns the offset of the first character following the specified offset.
+================================================================
+
+Sample: 1 CollatorProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.CollatorProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean equals(Object anObject)`: Compares this provider with the specified object for equality.
+2. `int hashCode()`: Returns a hash code value for this object.
+3. `Collator getInstance(Locale locale)`: Returns a Collator for the specified locale.
+4. `Collator getInstance(Locale locale, String variant)`: Returns a Collator for the specified locale and variant.
+5. `Collator getInstance(Locale locale, String variant, String options)`: Returns a Collator for the specified locale, variant, and options.
+================================================================
+
+Sample: 2 DateFormatProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.DateFormatProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DateFormatProvider getInstance()`: This method returns a DateFormatProvider object.
+
+2. `List<Locale> getAvailableLocales()`: This method returns a list of all the locales for which this provider can supply date format instances.
+
+3. `DateFormat getDateInstance(int style, Locale locale)`: This method returns a DateFormat instance for the specified style and locale.
+
+4. `DateFormat getTimeInstance(int style, Locale locale)`: This method returns a DateFormat instance for the specified style and locale.
+
+5. `DateFormat getDateTimeInstance(int dateStyle, int timeStyle, Locale locale)`: This method returns a DateFormat instance for the specified date and time styles and locale.
+================================================================
+
+Sample: 3 DateFormatSymbolsProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.DateFormatSymbolsProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getMonths()`: This method returns an array of strings representing the names of the months in the current locale.
+
+   `String[] getMonths()`
+
+2. `getShortMonths()`: This method returns an array of strings representing the abbreviated names of the months in the current locale.
+
+   `String[] getShortMonths()`
+
+3. `getWeekdays()`: This method returns an array of strings representing the names of the weekdays in the current locale.
+
+   `String[] getWeekdays()`
+
+4. `getShortWeekdays()`: This method returns an array of strings representing the abbreviated names of the weekdays in the current locale.
+
+   `String[] getShortWeekdays()`
+
+5. `getEras()`: This method returns an array of strings representing the names of the eras in the current locale.
+
+   `String[] getEras()`
+================================================================
+
+Sample: 4 DecimalFormatSymbolsProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.DecimalFormatSymbolsProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `getAvailableLocales()`: This method returns an array of all the locales for which this provider can supply DecimalFormatSymbols instances.
+
+2. `getInstance(Locale locale)`: This method returns a DecimalFormatSymbols instance for the specified locale.
+
+3. `getPropertyNames()`: This method returns an array of all the property names for which this provider can supply values.
+
+4. `getProperty(String name)`: This method returns the value of the specified property.
+
+5. `getProperties()`: This method returns a map of all the properties for which this provider can supply values.
+================================================================
+
+Sample: 5 NumberFormatProvider
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.text.spi.NumberFormatProvider package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isPadded()`: This method returns true if the number format provider is padded.
+
+2. `boolean isGroupingUsed()`: This method returns true if the number format provider is grouping used.
+
+3. `boolean isParseIntegerOnly()`: This method returns true if the number format provider is parse integer only.
+
+4. `boolean isLenient()`: This method returns true if the number format provider is lenient.
+
+5. `NumberFormat getCurrencyInstance()`: This method returns a currency instance of the number format provider.
+================================================================
+

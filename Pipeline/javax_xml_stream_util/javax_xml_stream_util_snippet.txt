@@ -1,0 +1,319 @@
+Sample: 0 EventReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean hasNext() from javax.xml.stream.util.EventReaderDelegate
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hasNext()` method in `EventReaderDelegate` is used to check if there are more events in the event reader. It returns `true` if there are more events, and `false` otherwise.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.stream.util.EventReaderDelegate;
+
+public class Main {
+    public static void main(String[] args) {
+        EventReaderDelegate eventReader = new EventReaderDelegate() {
+            // Implementation of EventReaderDelegate is not necessary for this example
+        };
+
+        boolean hasNext = eventReader.hasNext();
+        System.out.println("Has next event: " + hasNext);
+    }
+}
+```
+
+In this code snippet, we create an instance of `EventReaderDelegate` and call the `hasNext()` method. The result is then printed to the console.
+
+Please note that the actual implementation of `EventReaderDelegate` is not necessary for this example. It is just used to demonstrate the usage of the `hasNext()` method.
+================================================================
+
+Sample: 1 StreamReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean hasNext() from javax.xml.stream.util.StreamReaderDelegate
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `hasNext()` method in `StreamReaderDelegate` is used to check if there are more elements in the stream. It returns `true` if there are more elements, and `false` if there are no more elements.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.util.StreamReaderDelegate;
+
+public class Main {
+    public static void main(String[] args) throws XMLStreamException {
+        XMLStreamReader reader = new StreamReaderDelegate() {
+            @Override
+            public boolean hasNext() {
+                // Implement the logic to check if there are more elements in the stream
+                // This is a placeholder, you need to replace it with your actual logic
+                return false;
+            }
+        };
+
+        // Use the hasNext() method
+        if (reader.hasNext()) {
+            System.out.println("There are more elements in the stream");
+        } else {
+            System.out.println("There are no more elements in the stream");
+        }
+    }
+}
+```
+
+In the above code, we are creating a `StreamReaderDelegate` object and overriding the `hasNext()` method. The actual logic to check if there are more elements in the stream is not provided here, you need to replace it with your own logic.
+
+The `hasNext()` method is used in a loop to iterate over the elements in the stream, like this:
+
+```java
+while (reader.hasNext()) {
+    // Process the next element
+}
+```
+================================================================
+
+Sample: 2 StreamReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int nextTag() from javax.xml.stream.util.StreamReaderDelegate
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `nextTag()` method in `StreamReaderDelegate` is used to get the next tag in the XML document. It returns an integer value representing the type of the next tag.
+
+Here is a complete code snippet of the `nextTag()` method:
+
+```java
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+
+public class Main {
+    public static void main(String[] args) {
+        XMLInputFactory factory = XMLInputFactory.newInstance();
+        try {
+            XMLStreamReader reader = factory.createXMLStreamReader(new java.io.StringReader("<root><element>Content</element></root>"));
+            while (reader.hasNext()) {
+                int event = reader.next();
+                if (event == XMLStreamReader.START_ELEMENT) {
+                    System.out.println("Start element: " + reader.getLocalName());
+                } else if (event == XMLStreamReader.END_ELEMENT) {
+                    System.out.println("End element: " + reader.getLocalName());
+                } else if (event == XMLStreamReader.CHARACTERS) {
+                    System.out.println("Characters: " + reader.getText());
+                }
+            }
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this code snippet, we are creating an XMLStreamReader using an XMLInputFactory. We then loop through the XML document, printing the type of each event (start element, end element, or characters). The `nextTag()` method is used to get the next tag in the XML document.
+================================================================
+
+Sample: 3 StreamReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getText() from javax.xml.stream.util.StreamReaderDelegate
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getText()` method in `javax.xml.stream.util.StreamReaderDelegate` is used to get the text content of the current event. It is a part of the StAX (Streaming API for XML) API in Java.
+
+Here is a simple example of how to use it:
+
+```java
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamConstants;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+import java.io.StringReader;
+
+public class Main {
+    public static void main(String[] args) throws XMLStreamException {
+        String xml = "<root><element>Hello, World!</element></root>";
+        XMLInputFactory factory = XMLInputFactory.newInstance();
+        XMLStreamReader reader = factory.createXMLStreamReader(new StringReader(xml));
+
+        while (reader.hasNext()) {
+            int event = reader.next();
+            if (event == XMLStreamConstants.START_ELEMENT) {
+                if (reader.getLocalName().equals("element")) {
+                    System.out.println(reader.getElementText());
+                }
+            }
+        }
+    }
+}
+```
+
+In this example, we are creating an XMLStreamReader that reads from a String. We then loop through the events in the XML, and when we find a START_ELEMENT event with a local name of "element", we print out the text content of the element.
+
+Please note that you need to have the correct imports and dependencies in your project to use this method. Also, this is a very basic example and may not cover all possible scenarios.
+================================================================
+
+Sample: 4 StreamReaderDelegate
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use int getAttributeCount() from javax.xml.stream.util.StreamReaderDelegate
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getAttributeCount()` method in `StreamReaderDelegate` is used to get the number of attributes in the current event.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.util.StreamReaderDelegate;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        XMLInputFactory factory = XMLInputFactory.newInstance();
+        XMLStreamReader reader = factory.createXMLStreamReader(new java.io.StringReader("<root attr1='val1' attr2='val2' />"));
+        StreamReaderDelegate delegate = new StreamReaderDelegate(reader) {
+            @Override
+            public int getAttributeCount() {
+                return super.getAttributeCount();
+            }
+        };
+
+        while (delegate.hasNext()) {
+            int event = delegate.next();
+            if (event == XMLStreamReader.START_ELEMENT) {
+                System.out.println("Start element: " + delegate.getLocalName());
+                System.out.println("Attribute count: " + delegate.getAttributeCount());
+            }
+        }
+    }
+}
+```
+
+In this code snippet, we create a `StreamReaderDelegate` that overrides the `getAttributeCount()` method. We then use this delegate to parse an XML document, printing the number of attributes in each start element.
+
+Please note that this code snippet is a simple example and may not work as expected if the XML document has a different structure.
+================================================================
+

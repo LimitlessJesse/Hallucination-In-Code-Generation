@@ -1,0 +1,127 @@
+Sample: 0 DocumentBuilder
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.parsers.DocumentBuilder package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DocumentBuilderFactory newInstance()`: This method creates a new instance of the DocumentBuilderFactory.
+
+2. `DocumentBuilder newDocumentBuilder()`: This method creates a new DocumentBuilder.
+
+3. `Document parse(InputSource input)`: This method parses the specified InputSource, which is a URL, InputStream, or Reader, to construct a new Document.
+
+4. `Document parse(String systemId)`: This method parses the specified systemId to construct a new Document.
+
+5. `Document parse(URL source)`: This method parses the specified URL to construct a new Document.
+
+6. `Document parse(File file)`: This method parses the specified File to construct a new Document.
+
+7. `Document parse(InputStream stream)`: This method parses the specified InputStream to construct a new Document.
+
+8. `Document parse(Reader reader)`: This method parses the specified Reader to construct a new Document.
+================================================================
+
+Sample: 1 DocumentBuilderFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.parsers.DocumentBuilderFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DocumentBuilderFactory newInstance()`: This method creates a new instance of DocumentBuilderFactory.
+
+2. `DocumentBuilder newDocumentBuilder()`: This method creates a new DocumentBuilder.
+
+3. `void setFeature(String name, boolean value)`: This method sets a feature of the DocumentBuilderFactory.
+
+4. `boolean getFeature(String name)`: This method gets a feature of the DocumentBuilderFactory.
+
+5. `void setAttribute(String name, Object value)`: This method sets an attribute of the DocumentBuilderFactory.
+================================================================
+
+Sample: 2 SAXParser
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.parsers.SAXParser package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `E get(int index)`: This method returns the element at the specified position in this list.
+7. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+8. `boolean isEmpty()`: This method returns true if this list contains no elements.
+9. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+10. `E remove(int index)`: This method removes the element at the specified position in this list.
+11. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+12. `boolean removeAll(Collection<?> c)`: This method removes from this list all of its elements that are contained in the specified collection.
+13. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+14. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+15. `int size()`: This method returns the number of elements in this list.
+16. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+17. `Object[] toArray()`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element).
+18. `<T> T[] toArray(T[] a)`: This method returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.
+19. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+20. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list at the specified position.
+================================================================
+
+Sample: 3 SAXParserFactory
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.xml.parsers.SAXParserFactory package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();`
+
+This method creates a new instance of SAXParserFactory.
+
+2. `saxParserFactory.setNamespaceAware(boolean awareness);`
+
+This method sets the namespace awareness flag.
+
+3. `saxParserFactory.setFeature(String name, boolean value);`
+
+This method sets a feature of the SAXParserFactory.
+
+4. `saxParserFactory.setXIncludeAware(boolean awareness);`
+
+This method sets the XInclude awareness flag.
+
+5. `saxParserFactory.setValidating(boolean validating);`
+
+This method sets the validating flag.
+================================================================
+

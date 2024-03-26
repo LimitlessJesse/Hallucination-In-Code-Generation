@@ -1,0 +1,294 @@
+Sample: AsynchronousChannelGroup_2
+----------------------------------------------------------------
+================================================================
+
+Sample: AsynchronousChannelGroup_6
+----------------------------------------------------------------
+================================================================
+
+Sample: AsynchronousChannelGroup_7
+----------------------------------------------------------------
+================================================================
+
+Sample: AsynchronousChannelGroup_8
+----------------------------------------------------------------
+stdout:
+false
+true
+
+================================================================
+
+Sample: AsynchronousChannelGroup_9
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_9.java:10: error: cannot find symbol
+            group.execute(() -> {
+                 ^
+  symbol:   method execute(()->{ try [...]; } })
+  location: variable group of type AsynchronousChannelGroup
+1 error
+
+
+================================================================
+
+Sample: AsynchronousChannelGroup_10
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:6: error: cannot find symbol
+        AsynchronousChannelGroup group = AsynchronousChannelGroup.withThreadPool(Executors.newFixedThreadPool(10));
+                                                                                 ^
+  symbol:   variable Executors
+  location: class AsynchronousChannelGroup_10
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:9: error: cannot find symbol
+        AsynchronousChannel channel1 = AsynchronousChannel.open(group);
+        ^
+  symbol:   class AsynchronousChannel
+  location: class AsynchronousChannelGroup_10
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:9: error: cannot find symbol
+        AsynchronousChannel channel1 = AsynchronousChannel.open(group);
+                                       ^
+  symbol:   variable AsynchronousChannel
+  location: class AsynchronousChannelGroup_10
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:10: error: cannot find symbol
+        AsynchronousChannel channel2 = AsynchronousChannel.open(group);
+        ^
+  symbol:   class AsynchronousChannel
+  location: class AsynchronousChannelGroup_10
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:10: error: cannot find symbol
+        AsynchronousChannel channel2 = AsynchronousChannel.open(group);
+                                       ^
+  symbol:   variable AsynchronousChannel
+  location: class AsynchronousChannelGroup_10
+./java_nio_channels/javaFiles/AsynchronousChannelGroup_10.java:22: error: cannot find symbol
+        group.close();
+             ^
+  symbol:   method close()
+  location: variable group of type AsynchronousChannelGroup
+6 errors
+
+
+================================================================
+
+Sample: AsynchronousFileChannel_3
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/AsynchronousFileChannel_3.java:11: error: incompatible types: long cannot be converted to Future<Long>
+        Future<Long> sizeFuture = channel.size();
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: AsynchronousFileChannel_4
+----------------------------------------------------------------
+================================================================
+
+Sample: AsynchronousServerSocketChannel_1
+----------------------------------------------------------------
+================================================================
+
+Sample: AsynchronousSocketChannel_1
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramChannel_1
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramChannel_2
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramChannel_3
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.DatagramChannelImpl.beginRead(DatagramChannelImpl.java:495)
+	at java.base/sun.nio.ch.DatagramChannelImpl.read(DatagramChannelImpl.java:939)
+	at DatagramChannel_3.main(DatagramChannel_3.java:14)
+
+================================================================
+
+Sample: DatagramChannel_4
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramChannel_5
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/DatagramChannel_5.java:15: error: incompatible types: ByteBuffer[] cannot be converted to ByteBuffer
+        channel.receive(buffers);
+                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+
+Sample: DatagramChannel_6
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Range [0, 0 + 13) out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromIndexSize(Preconditions.java:82)
+	at java.base/jdk.internal.util.Preconditions.checkFromIndexSize(Preconditions.java:361)
+	at java.base/java.util.Objects.checkFromIndexSize(Objects.java:413)
+	at java.base/sun.nio.ch.DatagramChannelImpl.write(DatagramChannelImpl.java:1072)
+	at DatagramChannel_6.main(DatagramChannel_6.java:14)
+
+================================================================
+
+Sample: DatagramChannel_7
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: FileLock_2
+----------------------------------------------------------------
+================================================================
+
+Sample: FileLock_3
+----------------------------------------------------------------
+stdout:
+Lock is shared: false
+
+================================================================
+
+Sample: FileLock_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.channels.NonWritableChannelException
+	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1273)
+	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+	at FileLock_4.main(FileLock_4.java:11)
+
+================================================================
+
+Sample: FileLock_5
+----------------------------------------------------------------
+stdout:
+Lock size: 9223372036854775807
+
+================================================================
+
+Sample: MembershipKey_1
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/MembershipKey_1.java:9: error: cannot find symbol
+        MulticastChannel channel = MulticastChannel.open();
+                                                   ^
+  symbol:   method open()
+  location: interface MulticastChannel
+./java_nio_channels/javaFiles/MembershipKey_1.java:18: error: incompatible types: InetSocketAddress cannot be converted to InetAddress
+        MembershipKey membershipKey = channel.join(new InetSocketAddress("224.0.0.1", 5007), networkInterface);
+                                                   ^
+./java_nio_channels/javaFiles/MembershipKey_1.java:26: error: cannot find symbol
+        channel.leave(membershipKey);
+               ^
+  symbol:   method leave(MembershipKey)
+  location: variable channel of type MulticastChannel
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: Pipe_1
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/Pipe_1.java:8: error: cannot find symbol
+        WritableByteChannel outChannel = pipe.sink().channel();
+                                                    ^
+  symbol:   method channel()
+  location: class SinkChannel
+./java_nio_channels/javaFiles/Pipe_1.java:9: error: cannot find symbol
+        ReadableByteChannel inChannel = pipe.source().channel();
+                                                     ^
+  symbol:   method channel()
+  location: class SourceChannel
+./java_nio_channels/javaFiles/Pipe_1.java:14: error: incompatible types: byte[] cannot be converted to ByteBuffer
+        int bytesRead = inChannel.read(buffer);
+                                       ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+3 errors
+
+
+================================================================
+
+Sample: Pipe_2
+----------------------------------------------------------------
+================================================================
+
+Sample: SelectionKey_1
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.channels.NotYetBoundException
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.begin(ServerSocketChannelImpl.java:354)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:390)
+	at SelectionKey_1.main(SelectionKey_1.java:24)
+
+================================================================
+
+Sample: SelectionKey_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: SelectionKey_4
+----------------------------------------------------------------
+output:
+./java_nio_channels/javaFiles/SelectionKey_4.java:29: error: cannot find symbol
+        SelectionKey asyncServerKey = asyncServerSocketChannel.register(null, SelectionKey.OP_ACCEPT);
+                                                              ^
+  symbol:   method register(<null>,int)
+  location: variable asyncServerSocketChannel of type AsynchronousServerSocketChannel
+./java_nio_channels/javaFiles/SelectionKey_4.java:32: error: cannot find symbol
+        SelectionKey asyncSocketKey = asyncSocketChannel.register(null, SelectionKey.OP_CONNECT);
+                                                        ^
+  symbol:   method register(<null>,int)
+  location: variable asyncSocketChannel of type AsynchronousSocketChannel
+2 errors
+
+
+================================================================
+
+Sample: SelectionKey_5
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: SelectionKey_6
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: SelectionKey_7
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.channels.NotYetBoundException
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.begin(ServerSocketChannelImpl.java:354)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:390)
+	at SelectionKey_7.main(SelectionKey_7.java:15)
+
+================================================================
+
+Sample: SelectionKey_8
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ServerSocketChannel_1
+----------------------------------------------------------------
+stdout:
+Server is listening on port 8080
+
+================================================================
+
+Sample: ServerSocketChannel_2
+----------------------------------------------------------------
+stdout:
+Server is listening on port 8080
+
+================================================================
+

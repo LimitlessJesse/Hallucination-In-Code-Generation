@@ -1,0 +1,54 @@
+Sample: ConstantCallSite_2
+----------------------------------------------------------------
+output:
+./java_lang_invoke/javaFiles/ConstantCallSite_2.java:13: error: cannot find symbol
+        ConstantCallSite callSite = ConstantCallSite.create(methodHandle);
+                                                    ^
+  symbol:   method create(MethodHandle)
+  location: class ConstantCallSite
+1 error
+
+
+================================================================
+
+Sample: MethodHandles_Lookup_3
+----------------------------------------------------------------
+output:
+./java_lang_invoke/javaFiles/MethodHandles_Lookup_3.java:9: error: cannot find symbol
+            MethodHandles.StaticMethodHandle handle = lookup.findStatic(System.class, "out", type.insertArgument(0, String.class));
+                         ^
+  symbol:   class StaticMethodHandle
+  location: class MethodHandles
+./java_lang_invoke/javaFiles/MethodHandles_Lookup_3.java:9: error: cannot find symbol
+            MethodHandles.StaticMethodHandle handle = lookup.findStatic(System.class, "out", type.insertArgument(0, String.class));
+                                                                                                 ^
+  symbol:   method insertArgument(int,Class<String>)
+  location: variable type of type MethodType
+2 errors
+
+
+================================================================
+
+Sample: MethodHandles_Lookup_4
+----------------------------------------------------------------
+output:
+./java_lang_invoke/javaFiles/MethodHandles_Lookup_4.java:9: error: cannot find symbol
+        MethodHandle handle = lookup.findVirtual(ArrayList.class, "add", type);
+        ^
+  symbol:   class MethodHandle
+  location: class MethodHandles_Lookup_4
+1 error
+
+
+================================================================
+
+Sample: MutableCallSite_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.invoke.WrongMethodTypeException: expected (ArrayList,Object)boolean but found (ArrayList,String)void
+	at java.base/java.lang.invoke.Invokers.newWrongMethodTypeException(Invokers.java:523)
+	at java.base/java.lang.invoke.Invokers.checkExactType(Invokers.java:532)
+	at MutableCallSite_4.main(MutableCallSite_4.java:14)
+
+================================================================
+

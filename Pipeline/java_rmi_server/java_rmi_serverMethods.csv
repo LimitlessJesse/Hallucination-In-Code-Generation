@@ -1,0 +1,57 @@
+ClassName,Method,Return Type
+LogStream,getDefaultStream(),static PrintStream
+LogStream,getOutputStream(),OutputStream
+LogStream,log(String name),static LogStream
+LogStream,parseLevel(String s),static int
+LogStream,setDefaultStream(PrintStream newDefault),static void
+LogStream,setOutputStream(OutputStream out),void
+LogStream,toString(),String
+LogStream,"write(byte[] b, int off, int len)",void
+LogStream,write(int b),void
+ObjID,equals(Object obj),boolean
+ObjID,hashCode(),int
+ObjID,read(ObjectInput in),static ObjID
+ObjID,toString(),String
+ObjID,write(ObjectOutput out),void
+Operation,getOperation(),String
+Operation,toString(),String
+RemoteObject,equals(Object obj),boolean
+RemoteObject,getRef(),RemoteRef
+RemoteObject,hashCode(),int
+RemoteObject,toString(),String
+RemoteObject,toStub(Remote obj),static Remote
+RemoteObjectInvocationHandler,"invoke(Object proxy, Method method, Object[] args)",Object
+RemoteServer,getClientHost(),static String
+RemoteServer,getLog(),static PrintStream
+RemoteServer,setLog(OutputStream out),static void
+RemoteStub,"setRef(RemoteStub stub, RemoteRef ref)",protected static void
+RMIClassLoader,getClassAnnotation(Class<?> cl),static String
+RMIClassLoader,getClassLoader(String codebase),static ClassLoader
+RMIClassLoader,getDefaultProviderInstance(),static RMIClassLoaderSpi
+RMIClassLoader,getSecurityContext(ClassLoader loader),static Object
+RMIClassLoader,loadClass(String name),static Class<?>
+RMIClassLoader,"loadClass(String codebase, String name)",static Class<?>
+RMIClassLoader,"loadClass(String codebase, String name, ClassLoader defaultLoader)",static Class<?>
+RMIClassLoader,"loadClass(URL codebase, String name)",static Class<?>
+RMIClassLoader,"loadProxyClass(String codebase, String[] interfaces, ClassLoader defaultLoader)",static Class<?>
+RMIClassLoaderSpi,getClassAnnotation(Class<?> cl),abstract String
+RMIClassLoaderSpi,getClassLoader(String codebase),abstract ClassLoader
+RMIClassLoaderSpi,"loadClass(String codebase, String name, ClassLoader defaultLoader)",abstract Class<?>
+RMIClassLoaderSpi,"loadProxyClass(String codebase, String[] interfaces, ClassLoader defaultLoader)",abstract Class<?>
+RMISocketFactory,createServerSocket(int port),abstract ServerSocket
+RMISocketFactory,"createSocket(String host, int port)",abstract Socket
+RMISocketFactory,getDefaultSocketFactory(),static RMISocketFactory
+RMISocketFactory,getFailureHandler(),static RMIFailureHandler
+RMISocketFactory,getSocketFactory(),static RMISocketFactory
+RMISocketFactory,setFailureHandler(RMIFailureHandler fh),static void
+RMISocketFactory,setSocketFactory(RMISocketFactory fac),static void
+UID,equals(Object obj),boolean
+UID,hashCode(),int
+UID,read(DataInput in),static UID
+UID,toString(),String
+UID,write(DataOutput out),void
+UnicastRemoteObject,clone(),Object
+UnicastRemoteObject,exportObject(Remote obj),static RemoteStub
+UnicastRemoteObject,"exportObject(Remote obj, int port)",static Remote
+UnicastRemoteObject,"exportObject(Remote obj, int port, RMIClientSocketFactory csf, RMIServerSocketFactory ssf)",static Remote
+UnicastRemoteObject,"unexportObject(Remote obj, boolean force)",static boolean

@@ -1,0 +1,34 @@
+Sample: Applet_2
+----------------------------------------------------------------
+stderr:
+./java_applet/javaFiles/Applet_2.java:5: warning: [removal] Applet in java.applet has been deprecated and marked for removal
+        Applet applet = new Applet() {
+        ^
+./java_applet/javaFiles/Applet_2.java:5: warning: [removal] Applet in java.applet has been deprecated and marked for removal
+        Applet applet = new Applet() {
+                            ^
+2 warnings
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+	at java.desktop/java.applet.Applet.<init>(Applet.java:81)
+	at Applet_2$1.<init>(Applet_2.java:5)
+	at Applet_2.main(Applet_2.java:5)
+
+================================================================
+
+Sample: Applet_3
+----------------------------------------------------------------
+output:
+./java_applet/javaFiles/Applet_3.java:4: error: class MyApplet is public, should be declared in a file named MyApplet.java
+public class MyApplet extends Applet {
+       ^
+./java_applet/javaFiles/Applet_3.java:4: warning: [removal] Applet in java.applet has been deprecated and marked for removal
+public class MyApplet extends Applet {
+                              ^
+1 error
+1 warning
+
+
+================================================================
+

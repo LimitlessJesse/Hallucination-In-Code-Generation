@@ -1,0 +1,271 @@
+ClassName,Method,Return Type
+Certificate,equals(Object other),boolean
+Certificate,getEncoded(),abstract byte[]
+Certificate,getPublicKey(),abstract PublicKey
+Certificate,getType(),String
+Certificate,hashCode(),int
+Certificate,toString(),abstract String
+Certificate,verify(PublicKey key),abstract void
+Certificate,"verify(PublicKey key, Provider sigProvider)",void
+Certificate,"verify(PublicKey key, String sigProvider)",abstract void
+Certificate,writeReplace(),protected Object
+Certificate.CertificateRep,readResolve(),protected Object
+CertificateFactory,generateCertificate(InputStream inStream),Certificate
+CertificateFactory,generateCertificates(InputStream inStream),Collection<? extends Certificate>
+CertificateFactory,generateCertPath(InputStream inStream),CertPath
+CertificateFactory,"generateCertPath(InputStream inStream, String encoding)",CertPath
+CertificateFactory,generateCertPath(List<? extends Certificate> certificates),CertPath
+CertificateFactory,generateCRL(InputStream inStream),CRL
+CertificateFactory,generateCRLs(InputStream inStream),Collection<? extends CRL>
+CertificateFactory,getCertPathEncodings(),Iterator<String>
+CertificateFactory,getInstance(String type),static CertificateFactory
+CertificateFactory,"getInstance(String type, Provider provider)",static CertificateFactory
+CertificateFactory,"getInstance(String type, String provider)",static CertificateFactory
+CertificateFactory,getProvider(),Provider
+CertificateFactory,getType(),String
+CertificateFactorySpi,engineGenerateCertificate(InputStream inStream),abstract Certificate
+CertificateFactorySpi,engineGenerateCertificates(InputStream inStream),abstract Collection<? extends Certificate>
+CertificateFactorySpi,engineGenerateCertPath(InputStream inStream),CertPath
+CertificateFactorySpi,"engineGenerateCertPath(InputStream inStream, String encoding)",CertPath
+CertificateFactorySpi,engineGenerateCertPath(List<? extends Certificate> certificates),CertPath
+CertificateFactorySpi,engineGenerateCRL(InputStream inStream),abstract CRL
+CertificateFactorySpi,engineGenerateCRLs(InputStream inStream),abstract Collection<? extends CRL>
+CertificateFactorySpi,engineGetCertPathEncodings(),Iterator<String>
+CertPath,equals(Object other),boolean
+CertPath,getCertificates(),abstract List<? extends Certificate>
+CertPath,getEncoded(),abstract byte[]
+CertPath,getEncoded(String encoding),abstract byte[]
+CertPath,getEncodings(),abstract Iterator<String>
+CertPath,getType(),String
+CertPath,hashCode(),int
+CertPath,toString(),String
+CertPath,writeReplace(),protected Object
+CertPath.CertPathRep,readResolve(),protected Object
+CertPathBuilder,build(CertPathParameters params),CertPathBuilderResult
+CertPathBuilder,getAlgorithm(),String
+CertPathBuilder,getDefaultType(),static String
+CertPathBuilder,getInstance(String algorithm),static CertPathBuilder
+CertPathBuilder,"getInstance(String algorithm, Provider provider)",static CertPathBuilder
+CertPathBuilder,"getInstance(String algorithm, String provider)",static CertPathBuilder
+CertPathBuilder,getProvider(),Provider
+CertPathBuilder,getRevocationChecker(),CertPathChecker
+CertPathBuilderSpi,engineBuild(CertPathParameters params),abstract CertPathBuilderResult
+CertPathBuilderSpi,engineGetRevocationChecker(),CertPathChecker
+CertPathValidator,getAlgorithm(),String
+CertPathValidator,getDefaultType(),static String
+CertPathValidator,getInstance(String algorithm),static CertPathValidator
+CertPathValidator,"getInstance(String algorithm, Provider provider)",static CertPathValidator
+CertPathValidator,"getInstance(String algorithm, String provider)",static CertPathValidator
+CertPathValidator,getProvider(),Provider
+CertPathValidator,getRevocationChecker(),CertPathChecker
+CertPathValidator,"validate(CertPath certPath, CertPathParameters params)",CertPathValidatorResult
+CertPathValidatorSpi,engineGetRevocationChecker(),CertPathChecker
+CertPathValidatorSpi,"engineValidate(CertPath certPath, CertPathParameters params)",abstract CertPathValidatorResult
+CertStore,getCertificates(CertSelector selector),Collection<? extends Certificate>
+CertStore,getCertStoreParameters(),CertStoreParameters
+CertStore,getCRLs(CRLSelector selector),Collection<? extends CRL>
+CertStore,getDefaultType(),static String
+CertStore,"getInstance(String type, CertStoreParameters params)",static CertStore
+CertStore,"getInstance(String type, CertStoreParameters params, Provider provider)",static CertStore
+CertStore,"getInstance(String type, CertStoreParameters params, String provider)",static CertStore
+CertStore,getProvider(),Provider
+CertStore,getType(),String
+CertStoreSpi,engineGetCertificates(CertSelector selector),abstract Collection<? extends Certificate>
+CertStoreSpi,engineGetCRLs(CRLSelector selector),abstract Collection<? extends CRL>
+CollectionCertStoreParameters,clone(),Object
+CollectionCertStoreParameters,getCollection(),Collection<?>
+CollectionCertStoreParameters,toString(),String
+CRL,getType(),String
+CRL,isRevoked(Certificate cert),abstract boolean
+CRL,toString(),abstract String
+LDAPCertStoreParameters,clone(),Object
+LDAPCertStoreParameters,getPort(),int
+LDAPCertStoreParameters,getServerName(),String
+LDAPCertStoreParameters,toString(),String
+PKIXBuilderParameters,getMaxPathLength(),int
+PKIXBuilderParameters,setMaxPathLength(int maxPathLength),void
+PKIXBuilderParameters,toString(),String
+PKIXCertPathBuilderResult,getCertPath(),CertPath
+PKIXCertPathBuilderResult,toString(),String
+PKIXCertPathChecker,check(Certificate cert),void
+PKIXCertPathChecker,"check(Certificate cert, Collection<String> unresolvedCritExts)",abstract void
+PKIXCertPathChecker,clone(),Object
+PKIXCertPathChecker,getSupportedExtensions(),abstract Set<String>
+PKIXCertPathChecker,init(boolean forward),abstract void
+PKIXCertPathChecker,isForwardCheckingSupported(),abstract boolean
+PKIXCertPathValidatorResult,clone(),Object
+PKIXCertPathValidatorResult,getPolicyTree(),PolicyNode
+PKIXCertPathValidatorResult,getPublicKey(),PublicKey
+PKIXCertPathValidatorResult,getTrustAnchor(),TrustAnchor
+PKIXCertPathValidatorResult,toString(),String
+PKIXParameters,addCertPathChecker(PKIXCertPathChecker checker),void
+PKIXParameters,addCertStore(CertStore store),void
+PKIXParameters,clone(),Object
+PKIXParameters,getCertPathCheckers(),List<PKIXCertPathChecker>
+PKIXParameters,getCertStores(),List<CertStore>
+PKIXParameters,getDate(),Date
+PKIXParameters,getInitialPolicies(),Set<String>
+PKIXParameters,getPolicyQualifiersRejected(),boolean
+PKIXParameters,getSigProvider(),String
+PKIXParameters,getTargetCertConstraints(),CertSelector
+PKIXParameters,getTrustAnchors(),Set<TrustAnchor>
+PKIXParameters,isAnyPolicyInhibited(),boolean
+PKIXParameters,isExplicitPolicyRequired(),boolean
+PKIXParameters,isPolicyMappingInhibited(),boolean
+PKIXParameters,isRevocationEnabled(),boolean
+PKIXParameters,setAnyPolicyInhibited(boolean val),void
+PKIXParameters,setCertPathCheckers(List<PKIXCertPathChecker> checkers),void
+PKIXParameters,setCertStores(List<CertStore> stores),void
+PKIXParameters,setDate(Date date),void
+PKIXParameters,setExplicitPolicyRequired(boolean val),void
+PKIXParameters,setInitialPolicies(Set<String> initialPolicies),void
+PKIXParameters,setPolicyMappingInhibited(boolean val),void
+PKIXParameters,setPolicyQualifiersRejected(boolean qualifiersRejected),void
+PKIXParameters,setRevocationEnabled(boolean val),void
+PKIXParameters,setSigProvider(String sigProvider),void
+PKIXParameters,setTargetCertConstraints(CertSelector selector),void
+PKIXParameters,setTrustAnchors(Set<TrustAnchor> trustAnchors),void
+PKIXParameters,toString(),String
+PKIXRevocationChecker,clone(),PKIXRevocationChecker
+PKIXRevocationChecker,getOcspExtensions(),List<Extension>
+PKIXRevocationChecker,getOcspResponder(),URI
+PKIXRevocationChecker,getOcspResponderCert(),X509Certificate
+PKIXRevocationChecker,getOcspResponses(),"Map<X509Certificate,byte[]>"
+PKIXRevocationChecker,getOptions(),Set<PKIXRevocationChecker.Option>
+PKIXRevocationChecker,getSoftFailExceptions(),abstract List<CertPathValidatorException>
+PKIXRevocationChecker,setOcspExtensions(List<Extension> extensions),void
+PKIXRevocationChecker,setOcspResponder(URI uri),void
+PKIXRevocationChecker,setOcspResponderCert(X509Certificate cert),void
+PKIXRevocationChecker,"setOcspResponses(Map<X509Certificate,byte[]> responses)",void
+PKIXRevocationChecker,setOptions(Set<PKIXRevocationChecker.Option> options),void
+PolicyQualifierInfo,getEncoded(),byte[]
+PolicyQualifierInfo,getPolicyQualifier(),byte[]
+PolicyQualifierInfo,getPolicyQualifierId(),String
+PolicyQualifierInfo,toString(),String
+TrustAnchor,getCA(),X500Principal
+TrustAnchor,getCAName(),String
+TrustAnchor,getCAPublicKey(),PublicKey
+TrustAnchor,getNameConstraints(),byte[]
+TrustAnchor,getTrustedCert(),X509Certificate
+TrustAnchor,toString(),String
+X509Certificate,checkValidity(),abstract void
+X509Certificate,checkValidity(Date date),abstract void
+X509Certificate,getBasicConstraints(),abstract int
+X509Certificate,getExtendedKeyUsage(),List<String>
+X509Certificate,getIssuerAlternativeNames(),Collection<List<?>>
+X509Certificate,getIssuerDN(),abstract Principal
+X509Certificate,getIssuerUniqueID(),abstract boolean[]
+X509Certificate,getIssuerX500Principal(),X500Principal
+X509Certificate,getKeyUsage(),abstract boolean[]
+X509Certificate,getNotAfter(),abstract Date
+X509Certificate,getNotBefore(),abstract Date
+X509Certificate,getSerialNumber(),abstract BigInteger
+X509Certificate,getSigAlgName(),abstract String
+X509Certificate,getSigAlgOID(),abstract String
+X509Certificate,getSigAlgParams(),abstract byte[]
+X509Certificate,getSignature(),abstract byte[]
+X509Certificate,getSubjectAlternativeNames(),Collection<List<?>>
+X509Certificate,getSubjectDN(),abstract Principal
+X509Certificate,getSubjectUniqueID(),abstract boolean[]
+X509Certificate,getSubjectX500Principal(),X500Principal
+X509Certificate,getTBSCertificate(),abstract byte[]
+X509Certificate,getVersion(),abstract int
+X509Certificate,"verify(PublicKey key, Provider sigProvider)",void
+X509CertSelector,"addPathToName(int type, byte[] name)",void
+X509CertSelector,"addPathToName(int type, String name)",void
+X509CertSelector,"addSubjectAlternativeName(int type, byte[] name)",void
+X509CertSelector,"addSubjectAlternativeName(int type, String name)",void
+X509CertSelector,clone(),Object
+X509CertSelector,getAuthorityKeyIdentifier(),byte[]
+X509CertSelector,getBasicConstraints(),int
+X509CertSelector,getCertificate(),X509Certificate
+X509CertSelector,getCertificateValid(),Date
+X509CertSelector,getExtendedKeyUsage(),Set<String>
+X509CertSelector,getIssuer(),X500Principal
+X509CertSelector,getIssuerAsBytes(),byte[]
+X509CertSelector,getIssuerAsString(),String
+X509CertSelector,getKeyUsage(),boolean[]
+X509CertSelector,getMatchAllSubjectAltNames(),boolean
+X509CertSelector,getNameConstraints(),byte[]
+X509CertSelector,getPathToNames(),Collection<List<?>>
+X509CertSelector,getPolicy(),Set<String>
+X509CertSelector,getPrivateKeyValid(),Date
+X509CertSelector,getSerialNumber(),BigInteger
+X509CertSelector,getSubject(),X500Principal
+X509CertSelector,getSubjectAlternativeNames(),Collection<List<?>>
+X509CertSelector,getSubjectAsBytes(),byte[]
+X509CertSelector,getSubjectAsString(),String
+X509CertSelector,getSubjectKeyIdentifier(),byte[]
+X509CertSelector,getSubjectPublicKey(),PublicKey
+X509CertSelector,getSubjectPublicKeyAlgID(),String
+X509CertSelector,match(Certificate cert),boolean
+X509CertSelector,setAuthorityKeyIdentifier(byte[] authorityKeyID),void
+X509CertSelector,setBasicConstraints(int minMaxPathLen),void
+X509CertSelector,setCertificate(X509Certificate cert),void
+X509CertSelector,setCertificateValid(Date certValid),void
+X509CertSelector,setExtendedKeyUsage(Set<String> keyPurposeSet),void
+X509CertSelector,setIssuer(byte[] issuerDN),void
+X509CertSelector,setIssuer(String issuerDN),void
+X509CertSelector,setIssuer(X500Principal issuer),void
+X509CertSelector,setKeyUsage(boolean[] keyUsage),void
+X509CertSelector,setMatchAllSubjectAltNames(boolean matchAllNames),void
+X509CertSelector,setNameConstraints(byte[] bytes),void
+X509CertSelector,setPathToNames(Collection<List<?>> names),void
+X509CertSelector,setPolicy(Set<String> certPolicySet),void
+X509CertSelector,setPrivateKeyValid(Date privateKeyValid),void
+X509CertSelector,setSerialNumber(BigInteger serial),void
+X509CertSelector,setSubject(byte[] subjectDN),void
+X509CertSelector,setSubject(String subjectDN),void
+X509CertSelector,setSubject(X500Principal subject),void
+X509CertSelector,setSubjectAlternativeNames(Collection<List<?>> names),void
+X509CertSelector,setSubjectKeyIdentifier(byte[] subjectKeyID),void
+X509CertSelector,setSubjectPublicKey(byte[] key),void
+X509CertSelector,setSubjectPublicKey(PublicKey key),void
+X509CertSelector,setSubjectPublicKeyAlgID(String oid),void
+X509CertSelector,toString(),String
+X509CRL,equals(Object other),boolean
+X509CRL,getEncoded(),abstract byte[]
+X509CRL,getIssuerDN(),abstract Principal
+X509CRL,getIssuerX500Principal(),X500Principal
+X509CRL,getNextUpdate(),abstract Date
+X509CRL,getRevokedCertificate(BigInteger serialNumber),abstract X509CRLEntry
+X509CRL,getRevokedCertificate(X509Certificate certificate),X509CRLEntry
+X509CRL,getRevokedCertificates(),abstract Set<? extends X509CRLEntry>
+X509CRL,getSigAlgName(),abstract String
+X509CRL,getSigAlgOID(),abstract String
+X509CRL,getSigAlgParams(),abstract byte[]
+X509CRL,getSignature(),abstract byte[]
+X509CRL,getTBSCertList(),abstract byte[]
+X509CRL,getThisUpdate(),abstract Date
+X509CRL,getVersion(),abstract int
+X509CRL,hashCode(),int
+X509CRL,verify(PublicKey key),abstract void
+X509CRL,"verify(PublicKey key, Provider sigProvider)",void
+X509CRL,"verify(PublicKey key, String sigProvider)",abstract void
+X509CRLEntry,equals(Object other),boolean
+X509CRLEntry,getCertificateIssuer(),X500Principal
+X509CRLEntry,getEncoded(),abstract byte[]
+X509CRLEntry,getRevocationDate(),abstract Date
+X509CRLEntry,getRevocationReason(),CRLReason
+X509CRLEntry,getSerialNumber(),abstract BigInteger
+X509CRLEntry,hasExtensions(),abstract boolean
+X509CRLEntry,hashCode(),int
+X509CRLEntry,toString(),abstract String
+X509CRLSelector,addIssuer(X500Principal issuer),void
+X509CRLSelector,addIssuerName(byte[] name),void
+X509CRLSelector,addIssuerName(String name),void
+X509CRLSelector,clone(),Object
+X509CRLSelector,getCertificateChecking(),X509Certificate
+X509CRLSelector,getDateAndTime(),Date
+X509CRLSelector,getIssuerNames(),Collection<Object>
+X509CRLSelector,getIssuers(),Collection<X500Principal>
+X509CRLSelector,getMaxCRL(),BigInteger
+X509CRLSelector,getMinCRL(),BigInteger
+X509CRLSelector,match(CRL crl),boolean
+X509CRLSelector,setCertificateChecking(X509Certificate cert),void
+X509CRLSelector,setDateAndTime(Date dateAndTime),void
+X509CRLSelector,setIssuerNames(Collection<?> names),void
+X509CRLSelector,setIssuers(Collection<X500Principal> issuers),void
+X509CRLSelector,setMaxCRLNumber(BigInteger maxCRL),void
+X509CRLSelector,setMinCRLNumber(BigInteger minCRL),void
+X509CRLSelector,toString(),String

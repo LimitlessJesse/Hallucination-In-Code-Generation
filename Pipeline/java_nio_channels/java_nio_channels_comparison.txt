@@ -1,0 +1,483 @@
+Sample: 0 AsynchronousChannelGroup
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.AsynchronousChannelGroup package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AsynchronousChannelGroup newInstance()`: This method creates a new instance of AsynchronousChannelGroup.
+
+2. `AsynchronousChannelGroup withThreadPool(ExecutorService executor)`: This method creates a new instance of AsynchronousChannelGroup using the specified ExecutorService.
+
+3. `AsynchronousChannelGroup withThreadPool(ExecutorService executor, int initialSize, int maximumSize)`: This method creates a new instance of AsynchronousChannelGroup using the specified ExecutorService, initialSize and maximumSize.
+
+4. `AsynchronousChannelGroup withCachedThreadPool()`: This method creates a new instance of AsynchronousChannelGroup using a cached thread pool.
+
+5. `AsynchronousChannelGroup withFixedThreadPool(int nThreads)`: This method creates a new instance of AsynchronousChannelGroup using a fixed thread pool with the specified number of threads.
+
+6. `void shutdown()`: This method shuts down this group.
+
+7. `void shutdownNow()`: This method shuts down this group and attempts to cancel all tasks.
+
+8. `boolean isShutdown()`: This method returns true if this group has been shut down.
+
+9. `boolean isTerminated()`: This method returns true if all tasks have completed following shut down.
+
+10. `boolean awaitTermination(long timeout, TimeUnit unit)`: This method waits for this group to be terminated.
+
+11. `<T> Future<T> submit(Runnable task, T result)`: This method submits a task to this group.
+
+12. `<T> Future<T> submit(Runnable task, T result, Executor executor)`: This method submits a task to this group using the specified Executor.
+
+13. `<T> Future<T> submit(Callable<T> task)`: This method submits a task to this group.
+
+14. `<T> Future<T> submit(Runnable task, T result, Executor executor, long timeout, TimeUnit unit)`: This method submits a task to this group using the specified Executor and timeout.
+
+15. `<T> Future<T> submit(Callable<T> task, long timeout, TimeUnit unit)`: This method submits a task to this group with a timeout.
+================================================================
+
+Sample: 1 AsynchronousFileChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.AsynchronousFileChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int read(ByteBuffer dst, long position)`: This method reads bytes from this channel's file into the given buffer.
+
+2. `int write(ByteBuffer src, long position)`: This method writes bytes from the given buffer into this channel's file.
+
+3. `long size()`: This method returns the size of the file denoted by this channel.
+
+4. `void force(boolean metaData)`: This method forces any write to the file's metadata out to storage.
+
+5. `void close()`: This method closes this channel.
+================================================================
+
+Sample: 2 AsynchronousServerSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.AsynchronousServerSocketChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AsynchronousServerSocketChannel open()`: This method opens a new AsynchronousServerSocketChannel.
+
+2. `void bind(SocketAddress local, Handler<AsynchronousChannel> handler)`: This method binds this channel's socket to a local address and attaches a handler to it.
+
+3. `void accept(Handler<AsynchronousSocketChannel> handler)`: This method accepts a connection made to this channel's socket and attaches a handler to it.
+
+4. `void close()`: This method closes this channel.
+
+5. `void setOption(SocketOption<T> name, T value)`: This method sets the given socket option to the given value on this channel.
+================================================================
+
+Sample: 3 AsynchronousSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.AsynchronousSocketChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `AsynchronousSocketChannel open()`: This method opens a new asynchronous socket channel.
+
+2. `void bind(SocketAddress local)`: This method binds this channel's socket to a local address.
+
+3. `void connect(SocketAddress remote)`: This method initiates a connection to a remote address.
+
+4. `void read(ByteBuffer dst, A attachment, CompletionHandler<Integer,? super A> handler)`: This method initiates a read operation on this channel's socket.
+
+5. `void write(ByteBuffer src, A attachment, CompletionHandler<Integer,? super A> handler)`: This method initiates a write operation on this channel's socket.
+================================================================
+
+Sample: 4 Channels
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.Channels package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileChannel.map(FileChannel.MapMode mode, long position, long size)`: This method maps a region of this channel's file into memory.
+
+2. `FileChannel.transferTo(long position, long count, WritableByteChannel target)`: This method transfers bytes from this channel's file to the given target channel.
+
+3. `FileChannel.transferFrom(ReadableByteChannel src, long position, long count)`: This method transfers bytes from the given source channel into this channel's file.
+
+4. `FileChannel.force(boolean metaData)`: This method forces any metadata updates needed for this channel's file to be written out to the storage device.
+
+5. `FileChannel.position(long newPosition)`: This method sets the file-pointer of this channel.
+================================================================
+
+Sample: 5 DatagramChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.DatagramChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `public DatagramChannel open()`: This method opens a new datagram channel.
+
+2. `public DatagramChannel bind(SocketAddress local)`: This method binds the channel's socket to a local address.
+
+3. `public int read(ByteBuffer dst)`: This method reads a sequence of bytes from this channel into the given buffer.
+
+4. `public int write(ByteBuffer src)`: This method writes a sequence of bytes to this channel from the given buffer.
+
+5. `public long read(ByteBuffer[] dsts, int offset, int length)`: This method reads bytes from this channel into the given buffers.
+
+6. `public long write(ByteBuffer[] srcs, int offset, int length)`: This method writes bytes to this channel from the given buffers.
+
+7. `public SocketAddress receive(ByteBuffer dst)`: This method receives a datagram packet and stores it in the given buffer.
+
+8. `public SocketAddress send(ByteBuffer src, SocketAddress target)`: This method sends a datagram packet from the given buffer to the specified target address.
+
+9. `public long read(ByteBuffer dst, SocketAddress target)`: This method reads a datagram packet from this channel and stores it in the given buffer.
+
+10. `public long write(ByteBuffer src, SocketAddress target)`: This method writes a datagram packet to this channel from the given buffer.
+================================================================
+
+Sample: 6 FileChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.FileChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileChannel.position(long newPosition)`: This method sets the position of this channel's file pointer.
+
+2. `FileChannel.size()`: This method returns the size of this channel's file.
+
+3. `FileChannel.truncate(long size)`: This method truncates this channel's file to the given size.
+
+4. `FileChannel.read(ByteBuffer dst)`: This method reads bytes from this channel into the given buffer.
+
+5. `FileChannel.write(ByteBuffer src)`: This method writes bytes from the given buffer into this channel.
+================================================================
+
+Sample: 7 FileChannel.MapMode
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.FileChannel.MapMode package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileChannel.map(FileChannel.MapMode mode, long position, long size)`: This method creates a new mapped byte buffer.
+
+2. `FileChannel.force(boolean metaData)`: This method forces any metadata updates to the storage device.
+
+3. `FileChannel.position(long newPosition)`: This method sets the current position in this channel's file.
+
+4. `FileChannel.size()`: This method returns the size of this channel's file.
+
+5. `FileChannel.truncate(long size)`: This method truncates this channel's file to the given size.
+================================================================
+
+Sample: 8 FileLock
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.FileLock package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `FileLock tryLock(long position, long size, boolean shared)`: This method attempts to place a lock at the given position in the file.
+
+2. `void release()`: This method releases this lock.
+
+3. `boolean isShared()`: This method returns true if this lock is shared.
+
+4. `long position()`: This method returns the position of this lock.
+
+5. `long size()`: This method returns the size of this lock.
+================================================================
+
+Sample: 9 MembershipKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.MembershipKey package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isValid()`: This method returns true if the key is valid.
+
+2. `boolean drop()`: This method drops the membership key.
+
+3. `InetAddress getAddress()`: This method returns the address of the interface.
+
+4. `NetworkInterface getInterface()`: This method returns the network interface.
+
+5. `byte[] getKey()`: This method returns the key.
+================================================================
+
+Sample: 10 Pipe
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.Pipe package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Pipe.SourceChannel source()`: This method returns the source channel of this pipe.
+2. `Pipe.SinkChannel sink()`: This method returns the sink channel of this pipe.
+3. `void closeSource()`: This method closes the source channel of this pipe.
+4. `void closeSink()`: This method closes the sink channel of this pipe.
+5. `void source().setReadMode(ReadMode mode)`: This method sets the read mode of the source channel of this pipe.
+6. `void sink().setWriteMode(WriteMode mode)`: This method sets the write mode of the sink channel of this pipe.
+================================================================
+
+Sample: 11 Pipe.SinkChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.Pipe.SinkChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Pipe.SinkChannel.open()`: This method opens a new pipe sink channel.
+
+2. `Pipe.SinkChannel.write(ByteBuffer src)`: This method writes bytes from the given buffer into this channel's file.
+
+3. `Pipe.SinkChannel.finishWriting()`: This method signals that no more bytes will be written to this channel's file.
+
+4. `Pipe.SinkChannel.close()`: This method closes this channel.
+
+5. `Pipe.SinkChannel.validOps()`: This method returns a set of valid operations for this channel.
+================================================================
+
+Sample: 12 Pipe.SourceChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.Pipe.SourceChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Pipe.SourceChannel.open()`: This method opens a new pipe source channel.
+
+2. `Pipe.SourceChannel.read(ByteBuffer dst)`: This method attempts to read bytes from this channel into the given buffer.
+
+3. `Pipe.SourceChannel.read(ByteBuffer dst, long position)`: This method attempts to read bytes from this channel into the given buffer at the given position.
+
+4. `Pipe.SourceChannel.read(ByteBuffer[] dsts)`: This method attempts to read bytes from this channel into the given buffers.
+
+5. `Pipe.SourceChannel.read(ByteBuffer[] dsts, int offset, int length)`: This method attempts to read bytes from this channel into the given buffers at the given offset and length.
+================================================================
+
+Sample: 13 SelectableChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.SelectableChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Selector openSelector()`: This method opens a new selector.
+2. `SelectorProvider provider()`: This method returns the provider of this channel.
+3. `void configureBlocking(boolean block)`: This method configures this channel for blocking mode or non-blocking mode.
+4. `void register(Selector sel, int ops, Selector.Watcher w)`: This method registers this channel with the given selector.
+5. `SelectionKey register(Selector sel, int ops)`: This method registers this channel with the given selector.
+================================================================
+
+Sample: 14 SelectionKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.SelectionKey package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int interestOps()`: This method returns the operations that are currently enabled for this key.
+
+2. `void interestOps(int ops)`: This method sets the operations that are currently enabled for this key.
+
+3. `boolean isAcceptable()`: This method returns true if this key's channel is ready for accept operations.
+
+4. `boolean isConnectable()`: This method returns true if this key's channel is ready for connect operations.
+
+5. `boolean isReadable()`: This method returns true if this key's channel is ready for read operations.
+
+6. `boolean isWritable()`: This method returns true if this key's channel is ready for write operations.
+
+7. `void cancel()`: This method cancels this key.
+
+8. `SelectableChannel channel()`: This method returns the channel that is associated with this key.
+
+9. `Selector selector()`: This method returns the selector that is associated with this key.
+
+10. `void cancel(Selector sel)`: This method cancels this key on the specified selector.
+================================================================
+
+Sample: 15 Selector
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.Selector package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Selector.open()`: This method opens a new selector.
+
+2. `Selector.select()`: This method waits for one or more of the registered channels to be ready for I/O operations.
+
+3. `Selector.selectNow()`: This method is similar to `select()`, but it does not block.
+
+4. `Selector.wakeup()`: This method wakes up a selector that is in blocking mode.
+
+5. `Selector.select(long timeout)`: This method waits for one or more of the registered channels to be ready for I/O operations, or until the given timeout expires.
+================================================================
+
+Sample: 16 ServerSocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.ServerSocketChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `ServerSocketChannel open()`: This method opens a new ServerSocketChannel.
+
+2. `ServerSocketChannel bind(SocketAddress local)`: This method binds this channel's socket to a local address.
+
+3. `SelectionKey register(Selector sel, int ops, Object att)`: This method registers this channel with the given selector.
+
+4. `ServerSocketChannel accept()`: This method accepts a connection made to this channel's socket.
+
+5. `void close()`: This method closes this channel.
+================================================================
+
+Sample: 17 SocketChannel
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.nio.channels.SocketChannel package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SocketChannel.open()`: This method opens a new socket channel.
+
+2. `SocketChannel.connect(SocketAddress remote)`: This method initiates a connection to a remote address.
+
+3. `SocketChannel.read(ByteBuffer dst)`: This method reads bytes from this channel into the given buffer.
+
+4. `SocketChannel.write(ByteBuffer src)`: This method writes bytes from the given buffer into this channel.
+
+5. `SocketChannel.close()`: This method closes this channel.
+================================================================
+

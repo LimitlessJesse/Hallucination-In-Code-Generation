@@ -1,0 +1,43 @@
+ClassName,Method,Return Type
+ColorSpace,fromCIEXYZ(float[] colorvalue),abstract float[]
+ColorSpace,fromRGB(float[] rgbvalue),abstract float[]
+ColorSpace,getInstance(int colorspace),static ColorSpace
+ColorSpace,getMaxValue(int component),float
+ColorSpace,getMinValue(int component),float
+ColorSpace,getName(int idx),String
+ColorSpace,getNumComponents(),int
+ColorSpace,getType(),int
+ColorSpace,isCS_sRGB(),boolean
+ColorSpace,toCIEXYZ(float[] colorvalue),abstract float[]
+ColorSpace,toRGB(float[] colorvalue),abstract float[]
+ICC_ColorSpace,fromCIEXYZ(float[] colorvalue),float[]
+ICC_ColorSpace,fromRGB(float[] rgbvalue),float[]
+ICC_ColorSpace,getMaxValue(int component),float
+ICC_ColorSpace,getMinValue(int component),float
+ICC_ColorSpace,getProfile(),ICC_Profile
+ICC_ColorSpace,toCIEXYZ(float[] colorvalue),float[]
+ICC_ColorSpace,toRGB(float[] colorvalue),float[]
+ICC_Profile,finalize(),protected void
+ICC_Profile,getColorSpaceType(),int
+ICC_Profile,getData(),byte[]
+ICC_Profile,getData(int tagSignature),byte[]
+ICC_Profile,getInstance(byte[] data),static ICC_Profile
+ICC_Profile,getInstance(InputStream s),static ICC_Profile
+ICC_Profile,getInstance(int cspace),static ICC_Profile
+ICC_Profile,getInstance(String fileName),static ICC_Profile
+ICC_Profile,getMajorVersion(),int
+ICC_Profile,getMinorVersion(),int
+ICC_Profile,getNumComponents(),int
+ICC_Profile,getPCSType(),int
+ICC_Profile,getProfileClass(),int
+ICC_Profile,readResolve(),protected Object
+ICC_Profile,"setData(int tagSignature, byte[] tagData)",void
+ICC_Profile,write(OutputStream s),void
+ICC_Profile,write(String fileName),void
+ICC_ProfileGray,getGamma(),float
+ICC_ProfileGray,getMediaWhitePoint(),float[]
+ICC_ProfileGray,getTRC(),short[]
+ICC_ProfileRGB,getGamma(int component),float
+ICC_ProfileRGB,getMatrix(),float[][]
+ICC_ProfileRGB,getMediaWhitePoint(),float[]
+ICC_ProfileRGB,getTRC(int component),short[]

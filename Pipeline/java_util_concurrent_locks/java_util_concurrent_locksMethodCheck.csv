@@ -1,0 +1,51 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractOwnableSynchronizer,1,boolean isHeldByCurrentThread(),False
+0,AbstractOwnableSynchronizer,2,void setOwner(Thread owner),False
+0,AbstractOwnableSynchronizer,3,Thread getOwner(),False
+0,AbstractOwnableSynchronizer,4,boolean tryAcquire(int arg),False
+0,AbstractOwnableSynchronizer,5,void release(int arg),False
+1,AbstractQueuedLongSynchronizer,1,"boolean compareAndSetState(int expect, int update)",False
+1,AbstractQueuedLongSynchronizer,2,void acquire(int arg),False
+1,AbstractQueuedLongSynchronizer,3,void acquireShared(int arg),False
+1,AbstractQueuedLongSynchronizer,4,boolean release(int arg),False
+1,AbstractQueuedLongSynchronizer,5,boolean releaseShared(int arg),False
+2,AbstractQueuedSynchronizer,1,int getState(),True
+2,AbstractQueuedSynchronizer,2,"boolean compareAndSetState(int expect, int update)",True
+2,AbstractQueuedSynchronizer,3,void setState(int newState),True
+2,AbstractQueuedSynchronizer,4,boolean tryAcquire(int arg),True
+2,AbstractQueuedSynchronizer,5,boolean tryRelease(int arg),True
+2,AbstractQueuedSynchronizer,6,int getExclusiveOwnerThread(),False
+2,AbstractQueuedSynchronizer,7,boolean isHeldExclusively(),True
+2,AbstractQueuedSynchronizer,8,boolean hasQueuedThreads(),True
+2,AbstractQueuedSynchronizer,9,int getQueueLength(),True
+2,AbstractQueuedSynchronizer,10,int getWaitQueueLength(Condition condition),False
+3,LockSupport,1,void park(),True
+3,LockSupport,2,void parkNanos(long nanos),True
+3,LockSupport,3,void parkUntil(long deadline),True
+3,LockSupport,4,void unpark(Thread thread),True
+3,LockSupport,5,boolean isParked(Thread thread),False
+4,ReentrantLock,1,boolean tryLock(),True
+4,ReentrantLock,2,void lock(),True
+4,ReentrantLock,3,boolean isLocked(),True
+4,ReentrantLock,4,boolean isHeldByCurrentThread(),True
+4,ReentrantLock,5,void unlock(),True
+5,ReentrantReadWriteLock,1,boolean tryLock(),False
+5,ReentrantReadWriteLock,2,void lock(),False
+5,ReentrantReadWriteLock,3,boolean tryReadLock(),False
+5,ReentrantReadWriteLock,4,void readLock(),False
+5,ReentrantReadWriteLock,5,void unlock(),False
+6,ReentrantReadWriteLock.ReadLock,1,boolean tryLock(),True
+6,ReentrantReadWriteLock.ReadLock,2,void lock(),True
+6,ReentrantReadWriteLock.ReadLock,3,"boolean tryLock(long timeout, TimeUnit unit)",True
+6,ReentrantReadWriteLock.ReadLock,4,void unlock(),True
+6,ReentrantReadWriteLock.ReadLock,5,Condition newCondition(),True
+7,ReentrantReadWriteLock.WriteLock,1,void lock(),True
+7,ReentrantReadWriteLock.WriteLock,2,boolean tryLock(),True
+7,ReentrantReadWriteLock.WriteLock,3,void unlock(),True
+7,ReentrantReadWriteLock.WriteLock,4,Condition newCondition(),True
+7,ReentrantReadWriteLock.WriteLock,5,boolean isHeldByCurrentThread(),True
+8,StampedLock,1,long tryOptimisticRead(),True
+8,StampedLock,2,long readLock(),True
+8,StampedLock,3,void unlockRead(long stamp),True
+8,StampedLock,4,long writeLock(),True
+8,StampedLock,5,boolean tryConvertToWriteLock(long stamp),False

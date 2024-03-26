@@ -1,0 +1,128 @@
+Sample: 0 FileFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use boolean accept(File f) from javax.swing.filechooser.FileFilter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+Here is a complete code snippet of the `accept(File f)` method from `javax.swing.filechooser.FileFilter`:
+
+```java
+import javax.swing.filechooser.FileFilter;
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        FileFilter fileFilter = new FileFilter() {
+            @Override
+            public boolean accept(File f) {
+                if (f.isDirectory()) {
+                    return true;
+                }
+
+                String name = f.getName().toLowerCase();
+
+                return name.endsWith(".txt") || name.endsWith(".doc");
+            }
+
+            @Override
+            public String getDescription() {
+                return "Text and Document files";
+            }
+        };
+
+        File file = new File("test.txt");
+        System.out.println(fileFilter.accept(file));
+    }
+}
+```
+
+In this code snippet, we create a `FileFilter` that accepts `File` objects if they are directories or if their names end with `.txt` or `.doc`. The `getDescription` method returns a string that describes the filter.
+
+In the `main` method, we create a `File` object with the name "test.txt". We then call the `accept` method of the `FileFilter`, passing the `File` object. The `accept` method returns `true` if the `File` object is accepted by the `FileFilter`, and `false` otherwise.
+================================================================
+
+Sample: 1 FileFilter
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use String getDescription() from javax.swing.filechooser.FileFilter
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `getDescription()` method from `javax.swing.filechooser.FileFilter` is used to get the description of the file filter. It returns a string that describes the file filter.
+
+Here is a complete code snippet of this method:
+
+```java
+import javax.swing.filechooser.FileFilter;
+
+public class Main {
+    public static void main(String[] args) {
+        FileFilter fileFilter = new FileFilter() {
+            @Override
+            public boolean accept(java.io.File file) {
+                return file.getName().endsWith(".txt");
+            }
+
+            @Override
+            public String getDescription() {
+                return "Text files (*.txt)";
+            }
+        };
+
+        System.out.println(fileFilter.getDescription());
+    }
+}
+```
+
+In this code snippet, we create a `FileFilter` object and override the `accept()` and `getDescription()` methods. The `accept()` method checks if the file name ends with ".txt", and the `getDescription()` method returns the description "Text files (*.txt)".
+
+When you run this code, it will print "Text files (*.txt)" to the console.
+================================================================
+

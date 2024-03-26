@@ -1,0 +1,36 @@
+Sample: RMIConnectorServer_3
+----------------------------------------------------------------
+output:
+./javax_management_remote_rmi/javaFiles/RMIConnectorServer_3.java:9: error: no suitable constructor found for RMIConnectorServer(no arguments)
+            RMIConnectorServer rmiConnectorServer = new RMIConnectorServer();
+                                                    ^
+    constructor RMIConnectorServer.RMIConnectorServer(JMXServiceURL,Map<String,?>) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor RMIConnectorServer.RMIConnectorServer(JMXServiceURL,Map<String,?>,MBeanServer) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor RMIConnectorServer.RMIConnectorServer(JMXServiceURL,Map<String,?>,RMIServerImpl,MBeanServer) is not applicable
+      (actual and formal argument lists differ in length)
+1 error
+
+
+================================================================
+
+Sample: RMIConnectorServer_4
+----------------------------------------------------------------
+output:
+./javax_management_remote_rmi/javaFiles/RMIConnectorServer_4.java:10: error: incompatible types: RMIServerSocketFactory cannot be converted to JMXServiceURL
+        RMIConnectorServer rmiConnectorServer = new RMIConnectorServer(ssFactory, sFactory);
+                                                                       ^
+./javax_management_remote_rmi/javaFiles/RMIConnectorServer_4.java:11: error: no suitable method found for exportObject(RMIConnectorServer,int)
+        UnicastRemoteObject.exportObject(rmiConnectorServer, 0);
+                           ^
+    method UnicastRemoteObject.exportObject(Remote,int) is not applicable
+      (argument mismatch; RMIConnectorServer cannot be converted to Remote)
+    method UnicastRemoteObject.exportObject(Remote,UnicastServerRef) is not applicable
+      (argument mismatch; RMIConnectorServer cannot be converted to Remote)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+
+
+================================================================
+

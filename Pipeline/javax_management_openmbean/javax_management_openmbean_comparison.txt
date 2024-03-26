@@ -1,0 +1,488 @@
+Sample: 0 ArrayType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.ArrayType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 1 CompositeDataInvocationHandler
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.CompositeDataInvocationHandler package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+5. `E remove(int index)`: This method removes the element at the specified position in this list.
+================================================================
+
+Sample: 2 CompositeDataSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.CompositeDataSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 3 CompositeType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.CompositeType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `E get(int index)`: This method returns the element at the specified position in this list.
+================================================================
+
+Sample: 4 OpenMBeanAttributeInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenMBeanAttributeInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadable()`: This method returns true if the attribute is readable.
+
+2. `boolean isWritable()`: This method returns true if the attribute is writable.
+
+3. `boolean isIs()`: This method returns true if the attribute is an identifier.
+
+4. `boolean isCollection()`: This method returns true if the attribute is a collection.
+
+5. `boolean isCompositeType()`: This method returns true if the attribute is a composite type.
+================================================================
+
+Sample: 5 OpenMBeanConstructorInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenMBeanConstructorInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OpenMBeanConstructorInfoSupport(String name, String description, String signature, String[] exceptions)`: This constructor creates a new OpenMBeanConstructorInfoSupport object with the specified name, description, signature, and exceptions.
+
+2. `getConstructorInfo()`: This method returns the constructor information for this object.
+
+3. `getConstructorSignature()`: This method returns the signature of the constructor.
+
+4. `getExceptions()`: This method returns the exceptions that can be thrown by the constructor.
+
+5. `getName()`: This method returns the name of the constructor.
+
+6. `getDescription()`: This method returns the description of the constructor.
+
+7. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+8. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+9. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+10. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+11. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+12. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+13. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+14. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+15. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+16. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+17. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+18. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+19. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+20. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+21. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+22. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+23. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+24. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+25. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+26. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+27. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+28. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+29. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+30. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+31. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+32. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+33. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+34. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+35. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+36. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+37. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+38. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+39. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+40. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+41. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+42. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+43. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+44. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+45. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+46. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+47. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+48. `getParameterType(String name)`: This method returns the type of the parameter with the specified name.
+
+49. `getParameterDescription(String name)`: This method returns the description of the parameter with the specified name.
+
+50. `getParameterNames()`: This method returns the names of the parameters of the constructor.
+
+51. `getParameterTypes()`: This method returns the types of the parameters of the constructor.
+
+52. `getParameterIndex(String name)`: This method returns the index of the parameter with the specified name.
+
+53. `getParameterType(String name)`: This method returns the type of the
+================================================================
+
+Sample: 6 OpenMBeanInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenMBeanInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadOnly()`: This method returns true if this MBean is read-only.
+
+2. `boolean isWritable()`: This method returns true if this MBean is writable.
+
+3. `boolean isIs()`: This method returns true if this MBean is an instance.
+
+4. `boolean isCollection()`: This method returns true if this MBean is a collection.
+
+5. `boolean isCompositeType()`: This method returns true if this MBean is a composite type.
+================================================================
+
+Sample: 7 OpenMBeanOperationInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenMBeanOperationInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadable()`: This method returns true if the operation is readable.
+
+2. `boolean isWritable()`: This method returns true if the operation is writable.
+
+3. `boolean isIs()`: This method returns true if the operation is an is operation.
+
+4. `boolean isSet()`: This method returns true if the operation is a set operation.
+
+5. `boolean isAdd()`: This method returns true if the operation is an add operation.
+
+6. `boolean isRemove()`: This method returns true if the operation is a remove operation.
+
+7. `boolean isClear()`: This method returns true if the operation is a clear operation.
+
+8. `boolean isContains()`: This method returns true if the operation is a contains operation.
+
+9. `boolean isContainsAll()`: This method returns true if the operation is a containsAll operation.
+
+10. `boolean isAddAll()`: This method returns true if the operation is an addAll operation.
+
+11. `boolean isRemoveAll()`: This method returns true if the operation is a removeAll operation.
+
+12. `boolean isRetainAll()`: This method returns true if the operation is a retainAll operation.
+
+13. `boolean isSetAll()`: This method returns true if the operation is a setAll operation.
+
+14. `boolean isClearAll()`: This method returns true if the operation is a clearAll operation.
+
+15. `boolean isEquals()`: This method returns true if the operation is an equals operation.
+
+16. `boolean isHashCode()`: This method returns true if the operation is a hashCode operation.
+
+17. `boolean isToString()`: This method returns true if the operation is a toString operation.
+
+18. `boolean isNotify()`: This method returns true if the operation is a notify operation.
+
+19. `boolean isNotifyAll()`: This method returns true if the operation is a notifyAll operation.
+
+20. `boolean isWait()`: This method returns true if the operation is a wait operation.
+
+21. `boolean isFinalize()`: This method returns true if the operation is a finalize operation.
+
+22. `boolean isClone()`: This method returns true if the operation is a clone operation.
+
+23. `boolean isWait(long timeout)`: This method returns true if the operation is a wait operation with a timeout.
+
+24. `boolean isWait(long timeout, int nanos)`: This method returns true if the operation is a wait operation with a timeout and nanoseconds.
+
+25. `boolean isFinalize()`: This method returns true if the operation is a finalize operation.
+================================================================
+
+Sample: 8 OpenMBeanParameterInfoSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenMBeanParameterInfoSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isReadable()`: This method returns true if the parameter is readable.
+
+2. `boolean isWritable()`: This method returns true if the parameter is writable.
+
+3. `boolean isIs()`: This method returns true if the parameter is an instance of the class.
+
+4. `boolean isCollection()`: This method returns true if the parameter is a collection.
+
+5. `boolean isReference()`: This method returns true if the parameter is a reference.
+================================================================
+
+Sample: 9 OpenType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.OpenType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+3. `void clear()`: This method removes all of the elements from this list.
+4. `boolean contains(Object o)`: This method returns true if this list contains the specified element.
+5. `boolean containsAll(Collection<?> c)`: This method returns true if this list contains all of the elements of the specified collection.
+6. `boolean equals(Object o)`: This method compares the specified object with this list for equality.
+7. `E get(int index)`: This method returns the element at the specified position in this list.
+8. `int indexOf(Object o)`: This method returns the index in this list of the first occurrence of the specified element, or -1 if this list does not contain this element.
+9. `boolean isEmpty()`: This method returns true if this list contains no elements.
+10. `Iterator<E> iterator()`: This method returns an iterator over the elements in this list in proper sequence.
+11. `int lastIndexOf(Object o)`: This method returns the index in this list of the last occurrence of the specified element, or -1 if this list does not contain this element.
+12. `ListIterator<E> listIterator()`: This method returns a list-iterator of the elements in this list (in proper sequence).
+13. `ListIterator<E> listIterator(int index)`: This method returns a list-iterator of the elements in this list (in proper sequence), starting at the specified position in the list.
+14. `boolean remove(Object o)`: This method removes the first occurrence of the specified element from this list, if it is present.
+15. `E remove(int index)`: This method removes the element at the specified position in this list.
+16. `boolean removeAll(Collection<?> c)`: This method removes all of this list's elements that are also contained in the specified collection.
+17. `boolean retainAll(Collection<?> c)`: This method retains only the elements in this list that are contained in the specified collection.
+18. `E set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+19. `int size()`: This method returns the number of elements in this list.
+20. `List<E> subList(int fromIndex, int toIndex)`: This method returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+================================================================
+
+Sample: 10 SimpleType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.SimpleType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isComparable()`: This method returns true if this type is comparable.
+
+2. `boolean isEnumerable()`: This method returns true if this type is enumerable.
+
+3. `boolean isInstance(Object value)`: This method returns true if the specified value is an instance of this type.
+
+4. `boolean isNumeric()`: This method returns true if this type is numeric.
+
+5. `boolean isStruct()`: This method returns true if this type is a struct.
+
+6. `boolean isType(Object value)`: This method returns true if the specified value is of this type.
+
+7. `boolean isValue(Object value)`: This method returns true if the specified value is a valid value for this type.
+
+8. `boolean isValueComparable()`: This method returns true if this type's values are comparable.
+
+9. `boolean isValueEnumerable()`: This method returns true if this type's values are enumerable.
+
+10. `boolean isValueNumeric()`: This method returns true if this type's values are numeric.
+
+11. `boolean isValueStruct()`: This method returns true if this type's values are a struct.
+
+12. `boolean isValueType(Object value)`: This method returns true if the specified value is of this type's value.
+
+13. `boolean isValueValid(Object value)`: This method returns true if the specified value is a valid value for this type's value.
+
+14. `boolean isValueComparable()`: This method returns true if this type's values are comparable.
+
+15. `boolean isValueEnumerable()`: This method returns true if this type's values are enumerable.
+
+16. `boolean isValueNumeric()`: This method returns true if this type's values are numeric.
+
+17. `boolean isValueStruct()`: This method returns true if this type's values are a struct.
+
+18. `boolean isValueType(Object value)`: This method returns true if the specified value is of this type's value.
+
+19. `boolean isValueValid(Object value)`: This method returns true if the specified value is a valid value for this type's value.
+
+20. `boolean isValueComparable()`: This method returns true if this type's values are comparable.
+
+21. `boolean isValueEnumerable()`: This method returns true if this type's values are enumerable.
+
+22. `boolean isValueNumeric()`: This method returns true if this type's values are numeric.
+
+23. `boolean isValueStruct()`: This method returns true if this type's values are a struct.
+
+24. `boolean isValueType(Object value)`: This method returns true if the specified value is of this type's value.
+
+25. `boolean isValueValid(Object value)`: This method returns true if the specified value is a valid value for this type's value.
+================================================================
+
+Sample: 11 TabularDataSupport
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.TabularDataSupport package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 12 TabularType
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.management.openmbean.TabularType package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+

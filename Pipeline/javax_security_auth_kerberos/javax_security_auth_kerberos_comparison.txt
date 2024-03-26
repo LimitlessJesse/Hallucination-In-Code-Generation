@@ -1,0 +1,146 @@
+Sample: 0 DelegationPermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.DelegationPermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean hasDelegationPermission(Principal principal, String targetName)`: This method checks if the principal has the delegation permission for the targetName.
+
+2. `boolean hasDelegationPermission(Principal principal, String targetName, String serviceName)`: This method checks if the principal has the delegation permission for the targetName and serviceName.
+
+3. `boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName)`: This method checks if the principal has the delegation permission for the targetName, serviceName, and instanceName.
+
+4. `boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName, String targetRealm)`: This method checks if the principal has the delegation permission for the targetName, serviceName, instanceName, and targetRealm.
+
+5. `boolean hasDelegationPermission(Principal principal, String targetName, String serviceName, String instanceName, String targetRealm, String targetHost)`: This method checks if the principal has the delegation permission for the targetName, serviceName, instanceName, targetRealm, and targetHost.
+================================================================
+
+Sample: 1 KerberosKey
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.KerberosKey package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean add(E e)`: This method appends the specified element to the end of this list.
+2. `void add(int index, E element)`: This method inserts the specified element at the specified position in this list.
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+4. `boolean addAll(int index, Collection<? extends E> c)`: This method inserts all of the elements in the specified collection into this list, starting at the specified position.
+5. `void clear()`: This method removes all of the elements from this list.
+================================================================
+
+Sample: 2 KerberosPrincipal
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.KerberosPrincipal package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `KerberosPrincipal(String name)`: This constructor creates a new KerberosPrincipal with the specified name.
+
+2. `String getName()`: This method returns the name of this principal.
+
+3. `String getRealm()`: This method returns the realm of this principal.
+
+4. `boolean equals(Object another)`: This method compares this principal to the specified object.
+
+5. `int hashCode()`: This method returns the hash code value for this principal.
+================================================================
+
+Sample: 3 KerberosTicket
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.KerberosTicket package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isValid()`: This method checks if the ticket is valid.
+
+2. `long getEndTime()`: This method returns the end time of the ticket.
+
+3. `long getRenewTill()`: This method returns the renew till time of the ticket.
+
+4. `long getStartTime()`: This method returns the start time of the ticket.
+
+5. `byte[] getTicket()`: This method returns the ticket in byte array format.
+================================================================
+
+Sample: 4 KeyTab
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.KeyTab package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isValid()`: This method checks if the keytab is valid.
+
+2. `Principal[] getPrincipals()`: This method returns an array of principals stored in the keytab.
+
+3. `KeyEntry[] getKeyEntries(Principal principal)`: This method returns an array of key entries for the specified principal.
+
+4. `KeyEntry getKeyEntry(Principal principal, Date time)`: This method returns a key entry for the specified principal at the specified time.
+
+5. `KeyEntry getKeyEntry(Principal principal, Date time, boolean forward)`: This method returns a key entry for the specified principal at the specified time, considering forward search.
+================================================================
+
+Sample: 5 ServicePermission
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.security.auth.kerberos.ServicePermission package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean implies(Principal p)`: This method checks if the specified principal implies this permission.
+
+2. `boolean equals(Object obj)`: This method compares this permission with the specified object.
+
+3. `int hashCode()`: This method returns the hash code value for this object.
+
+4. `String getActions()`: This method returns the actions of this permission.
+
+5. `String toString()`: This method returns a string representation of this permission.
+================================================================
+

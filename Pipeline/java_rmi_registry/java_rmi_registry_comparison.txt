@@ -1,0 +1,25 @@
+Sample: 0 LocateRegistry
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use java.rmi.registry.LocateRegistry package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `Registry getRegistry(String host, int port)`: This method returns a reference to the RMI registry on the specified host and port.
+
+2. `Registry createRegistry(int port)`: This method creates a new RMI registry on the specified port.
+
+3. `Registry getRegistry(int port)`: This method returns a reference to the RMI registry on the specified port.
+
+4. `void list(String name)`: This method lists all the names in the registry.
+
+5. `void rebind(String name, Remote obj)`: This method binds the specified name to the specified remote object.
+================================================================
+

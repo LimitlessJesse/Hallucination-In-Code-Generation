@@ -1,0 +1,38 @@
+ClassName,Method,Return Type
+ChannelBinding,equals(Object obj),boolean
+ChannelBinding,getAcceptorAddress(),InetAddress
+ChannelBinding,getApplicationData(),byte[]
+ChannelBinding,getInitiatorAddress(),InetAddress
+ChannelBinding,hashCode(),int
+GSSManager,"addProviderAtEnd(Provider p, Oid mech)",abstract void
+GSSManager,"addProviderAtFront(Provider p, Oid mech)",abstract void
+GSSManager,createContext(byte[] interProcessToken),abstract GSSContext
+GSSManager,createContext(GSSCredential myCred),abstract GSSContext
+GSSManager,"createContext(GSSName peer, Oid mech, GSSCredential myCred, int lifetime)",abstract GSSContext
+GSSManager,"createCredential(GSSName name, int lifetime, Oid[] mechs, int usage)",abstract GSSCredential
+GSSManager,"createCredential(GSSName name, int lifetime, Oid mech, int usage)",abstract GSSCredential
+GSSManager,createCredential(int usage),abstract GSSCredential
+GSSManager,"createName(byte[] name, Oid nameType)",abstract GSSName
+GSSManager,"createName(byte[] name, Oid nameType, Oid mech)",abstract GSSName
+GSSManager,"createName(String nameStr, Oid nameType)",abstract GSSName
+GSSManager,"createName(String nameStr, Oid nameType, Oid mech)",abstract GSSName
+GSSManager,getInstance(),static GSSManager
+GSSManager,getMechs(),abstract Oid[]
+GSSManager,getMechsForName(Oid nameType),abstract Oid[]
+GSSManager,getNamesForMech(Oid mech),abstract Oid[]
+MessageProp,getMinorStatus(),int
+MessageProp,getMinorString(),String
+MessageProp,getPrivacy(),boolean
+MessageProp,getQOP(),int
+MessageProp,isDuplicateToken(),boolean
+MessageProp,isGapToken(),boolean
+MessageProp,isOldToken(),boolean
+MessageProp,isUnseqToken(),boolean
+MessageProp,setPrivacy(boolean privState),void
+MessageProp,setQOP(int qop),void
+MessageProp,"setSupplementaryStates(boolean duplicate, boolean old, boolean unseq, boolean gap, int minorStatus, String minorString)",void
+Oid,containedIn(Oid[] oids),boolean
+Oid,equals(Object other),boolean
+Oid,getDER(),byte[]
+Oid,hashCode(),int
+Oid,toString(),String

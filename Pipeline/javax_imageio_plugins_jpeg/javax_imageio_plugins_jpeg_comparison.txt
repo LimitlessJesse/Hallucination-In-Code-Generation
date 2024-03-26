@@ -1,0 +1,100 @@
+Sample: 0 JPEGHuffmanTable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.plugins.jpeg.JPEGHuffmanTable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isProgressive()`: This method returns true if the JPEG image is progressive.
+
+2. `int getTableClass()`: This method returns the table class of the Huffman table.
+
+3. `int getTableID()`: This method returns the table ID of the Huffman table.
+
+4. `int getEntryCount()`: This method returns the number of entries in the Huffman table.
+
+5. `int getValue(int index)`: This method returns the value of the Huffman table entry at the specified index.
+================================================================
+
+Sample: 1 JPEGImageReadParam
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.plugins.jpeg.JPEGImageReadParam package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setDestinationOffset(Rectangle destOffset)`: This method sets the destination offset.
+
+2. `setSourceCropArea(Rectangle sourceCropArea)`: This method sets the source crop area.
+
+3. `setSourceSubsampling(int x, int y, int width, int height)`: This method sets the source subsampling.
+
+4. `setDestinationSamplePixelSize(int x, int y)`: This method sets the destination sample pixel size.
+
+5. `setDestinationColor(boolean destinationColor)`: This method sets the destination color.
+================================================================
+
+Sample: 2 JPEGImageWriteParam
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.plugins.jpeg.JPEGImageWriteParam package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `setCompressionMode(int mode)`: This method sets the compression mode.
+
+2. `setCompressionQuality(float quality)`: This method sets the compression quality.
+
+3. `setProgressiveMode(int mode)`: This method sets the progressive mode.
+
+4. `setDestination(RenderedImage im)`: This method sets the destination image.
+
+5. `setSource(RenderedImage im)`: This method sets the source image.
+================================================================
+
+Sample: 3 JPEGQTable
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.imageio.plugins.jpeg.JPEGQTable package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean isProgressive()`: This method returns true if the JPEG image is progressive.
+
+2. `boolean isRestartIntervalPresent()`: This method returns true if the restart interval is present.
+
+3. `int getRestartInterval()`: This method returns the restart interval.
+
+4. `int getQTable(int band)`: This method returns the quantization table for the specified band.
+
+5. `int getQTable(int band, int[] qTable)`: This method copies the quantization table for the specified band into the provided array.
+================================================================
+

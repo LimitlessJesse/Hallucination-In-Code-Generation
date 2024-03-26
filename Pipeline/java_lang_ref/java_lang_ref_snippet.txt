@@ -1,0 +1,117 @@
+Sample: 0 Reference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void clear() from java.lang.ref.Reference
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `clear()` method in `java.lang.ref.Reference` is used to remove all the elements from the ReferenceQueue. It does not remove the actual objects from the ReferenceQueue, it just removes the references to those objects.
+
+Here is a complete code snippet of the `clear()` method:
+
+```java
+import java.lang.ref.Reference;
+import java.lang.ref.ReferenceQueue;
+
+public class Main {
+    public static void main(String[] args) {
+        ReferenceQueue<Object> queue = new ReferenceQueue<>();
+        Reference<Object> ref = new Reference<>(new Object(), queue);
+        queue.add(ref);
+        System.out.println("Before clear: " + queue);
+        queue.clear();
+        System.out.println("After clear: " + queue);
+    }
+}
+```
+
+In this code snippet, we first create a `ReferenceQueue` and a `Reference` to an object. We then add the reference to the queue. After that, we print the queue before and after calling the `clear()` method. As you can see, the queue is empty after the `clear()` method is called.
+================================================================
+
+Sample: 1 SoftReference
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use T get() from java.lang.ref.SoftReference
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `get()` method in `SoftReference` class is used to get the object that the `SoftReference` is referencing. If the object has been garbage collected, it will return `null`.
+
+Here is a complete code snippet of this method:
+
+```java
+import java.lang.ref.SoftReference;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        SoftReference<String> softRef = new SoftReference<>(str);
+
+        // Get the object
+        String obj = softRef.get();
+
+        // Print the object
+        System.out.println(obj);
+
+        // Garbage collect the object
+        str = null;
+        System.gc();
+
+        // Get the object again
+        obj = softRef.get();
+
+        // Print the object
+        System.out.println(obj);
+    }
+}
+```
+
+In this code snippet, we first create a `SoftReference` object that references a `String` object. We then get the object using the `get()` method and print it. After that, we garbage collect the `String` object and get the object again. Since the `String` object has been garbage collected, the `get()` method will return `null`.
+================================================================
+

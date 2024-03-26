@@ -1,0 +1,26 @@
+Sample Number,ClassName,Snippet Number,Method,Exist
+0,AbstractScriptEngine,1,boolean compile(String script),False
+0,AbstractScriptEngine,2,Object eval(String script),True
+0,AbstractScriptEngine,3,"Object eval(String script, ScriptContext context)",False
+0,AbstractScriptEngine,4,"Object invokeMethod(Object thiz, String name, Object... args)",False
+0,AbstractScriptEngine,5,"Object invokeFunction(String name, Object... args)",False
+1,CompiledScript,1,CompiledScript compile(String script),False
+1,CompiledScript,2,Object eval(Object... args),False
+1,CompiledScript,3,Object call(Object... args),False
+1,CompiledScript,4,Bindings getBindings(),False
+1,CompiledScript,5,ScriptEngine getEngine(),True
+2,ScriptEngineManager,1,ScriptEngineManager(),False
+2,ScriptEngineManager,2,getEngineByName(String engineName),False
+2,ScriptEngineManager,3,getEngineByExtension(String extension),False
+2,ScriptEngineManager,4,getEngineByMimeType(String mimeType),False
+2,ScriptEngineManager,5,getAllEngines(),False
+3,SimpleBindings,1,boolean contains(Object o),False
+3,SimpleBindings,2,boolean remove(Object o),False
+3,SimpleBindings,3,int size(),True
+3,SimpleBindings,4,Object get(int index),False
+3,SimpleBindings,5,"void put(String name, Object value)",False
+4,SimpleScriptContext,1,boolean contains(Object o),False
+4,SimpleScriptContext,2,boolean remove(Object o),False
+4,SimpleScriptContext,3,boolean addAll(Collection<? extends E> c),False
+4,SimpleScriptContext,4,boolean removeAll(Collection<?> c),False
+4,SimpleScriptContext,5,boolean retainAll(Collection<?> c),False

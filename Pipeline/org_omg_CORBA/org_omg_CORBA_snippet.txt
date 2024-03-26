@@ -1,0 +1,162 @@
+Sample: 0 ORB
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void destroy() from org.omg.CORBA.ORB
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `void destroy()` method in the `org.omg.CORBA.ORB` interface is used to destroy the ORB instance. It is important to note that once the ORB instance is destroyed, all the resources associated with it are also released.
+
+Here is a complete code snippet of the `void destroy()` method:
+
+```java
+import org.omg.CORBA.ORB;
+
+public class Main {
+    public static void main(String[] args) {
+        ORB orb = ORB.init(args, null);
+        orb.destroy();
+    }
+}
+```
+
+In this code snippet, we first initialize the ORB instance using the `ORB.init(args, null)` method. Then we call the `destroy()` method on the ORB instance to release all the resources associated with it.
+
+Please note that you need to have the necessary CORBA libraries in your classpath to compile and run this code. Also, the `ORB.init(args, null)` method is a static method, so you don't need to create an instance of `ORB` to call this method.
+================================================================
+
+Sample: 1 ORB
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use Object resolve_initial_references(String name) from org.omg.CORBA.ORB
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `resolve_initial_references` method is not part of the `org.omg.CORBA.ORB` interface. It is part of the `org.omg.CORBA.NamingContextExt` interface.
+
+Here is a simple example of how you can use the `resolve_initial_references` method from `org.omg.CORBA.NamingContextExt`:
+
+```java
+import org.omg.CORBA.ORB;
+import org.omg.CORBA.ORBPackage.InvalidName;
+import org.omg.CORBA.Object;
+import org.omg.CORBA.ORBPackage.NameValuePair;
+import org.omg.CORBA.NamingContextExt;
+
+public class Main {
+    public static void main(String[] args) {
+        ORB orb = ORB.init(args, null);
+        NamingContextExt namingContext = (NamingContextExt) orb.resolve_initial_references("NameService");
+        try {
+            Object obj = namingContext.resolve_str("Hello");
+            System.out.println(obj);
+        } catch (InvalidName e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+In this example, we are resolving the initial reference to the "NameService" and then resolving a string "Hello".
+
+Please note that you need to have the necessary CORBA libraries in your classpath and you need to have the necessary permissions to access the CORBA service.
+
+Also, the `resolve_initial_references` method is not part of the `org.omg.CORBA.ORB` interface. It is part of the `org.omg.CORBA.NamingContextExt` interface.
+================================================================
+
+Sample: 2 ORB
+----------------------------------------------------------------
+
+@@ Instruction
+I want to learn how to use void shutdown(boolean wait_for_completion) from org.omg.CORBA.ORB
+Generate a complete code snippet of this method. The code snippet needs to be executable with import statement and put the method and code snippet in the format below:
+
+Code snippet:
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+Code snippet:
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Hello");
+        System.out.println(list);
+    }
+}
+
+@@ Response
+The `shutdown(boolean wait_for_completion)` method in the `org.omg.CORBA.ORB` class is used to shut down the CORBA ORB. It takes a boolean parameter `wait_for_completion` which determines whether the ORB should wait for all outstanding requests to complete before shutting down.
+
+Here is a complete code snippet of this method:
+
+```java
+import org.omg.CORBA.ORB;
+
+public class Main {
+    public static void main(String[] args) {
+        ORB orb = ORB.init(args, null);
+        orb.shutdown(true);
+    }
+}
+```
+
+In this code snippet, we first initialize the ORB using the `ORB.init(args, null)` method. Then we call the `shutdown(true)` method on the ORB instance, which shuts down the ORB and waits for all outstanding requests to complete.
+
+Please note that you need to have the necessary CORBA libraries and dependencies in your classpath to be able to use the `org.omg.CORBA.ORB` class. Also, this code snippet assumes that you are running in a CORBA environment.
+================================================================
+

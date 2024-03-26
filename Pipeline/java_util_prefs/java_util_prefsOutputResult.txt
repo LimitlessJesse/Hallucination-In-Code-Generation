@@ -1,0 +1,177 @@
+Sample: AbstractPreferences_3
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/AbstractPreferences_3.java:5: error: constructor AbstractPreferences in class AbstractPreferences cannot be applied to given types;
+        AbstractPreferences prefs = new AbstractPreferences() {
+                                    ^
+  required: AbstractPreferences,String
+  found:    no arguments
+  reason: actual and formal argument lists differ in length
+./java_util_prefs/javaFiles/AbstractPreferences_3.java:5: error: <anonymous AbstractPreferences_3$1> is not abstract and does not override abstract method flushSpi() in AbstractPreferences
+        AbstractPreferences prefs = new AbstractPreferences() {
+                                                              ^
+./java_util_prefs/javaFiles/AbstractPreferences_3.java:7: error: keys() in <anonymous AbstractPreferences_3$1> cannot override keys() in Preferences
+            protected String[] keys() {
+                               ^
+  attempting to assign weaker access privileges; was public
+3 errors
+
+
+================================================================
+
+Sample: Preferences_1
+----------------------------------------------------------------
+stdout:
+true
+
+stderr:
+Mar. 08, 2024 11:27:16 P.M. java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+
+================================================================
+
+Sample: Preferences_2
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_3
+----------------------------------------------------------------
+stdout:
+value
+
+================================================================
+
+Sample: Preferences_4
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_5
+----------------------------------------------------------------
+stdout:
+10
+
+================================================================
+
+Sample: Preferences_6
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_7
+----------------------------------------------------------------
+stdout:
+1234567890
+
+================================================================
+
+Sample: Preferences_8
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_9
+----------------------------------------------------------------
+stdout:
+1.23
+
+================================================================
+
+Sample: Preferences_10
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_11
+----------------------------------------------------------------
+stdout:
+123.45
+
+================================================================
+
+Sample: Preferences_12
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_13
+----------------------------------------------------------------
+stdout:
+[B@49e202ad
+
+================================================================
+
+Sample: Preferences_14
+----------------------------------------------------------------
+================================================================
+
+Sample: Preferences_17
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_17.java:10: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        System.out.println("Before removal: " + prefs.keys());
+                                                          ^
+./java_util_prefs/javaFiles/Preferences_17.java:14: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        System.out.println("After removal: " + prefs.keys());
+                                                         ^
+2 errors
+
+
+================================================================
+
+Sample: Preferences_18
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_18.java:8: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        System.out.println("Before clear: " + prefs.keys());
+                                                        ^
+./java_util_prefs/javaFiles/Preferences_18.java:9: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        prefs.clear();
+                   ^
+./java_util_prefs/javaFiles/Preferences_18.java:10: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        System.out.println("After clear: " + prefs.keys());
+                                                       ^
+3 errors
+
+
+================================================================
+
+Sample: Preferences_20
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_20.java:9: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+            prefs.exportSubtree(new FileOutputStream("myPrefs.dat"));
+                               ^
+1 error
+
+
+================================================================
+
+Sample: Preferences_22
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_22.java:9: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+            prefs.exportNode(new FileOutputStream("myPrefs.dat"));
+                            ^
+1 error
+
+
+================================================================
+
+Sample: Preferences_24
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_24.java:7: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        prefs.sync();
+                  ^
+1 error
+
+
+================================================================
+
+Sample: Preferences_25
+----------------------------------------------------------------
+output:
+./java_util_prefs/javaFiles/Preferences_25.java:7: error: unreported exception BackingStoreException; must be caught or declared to be thrown
+        prefs.flush();
+                   ^
+1 error
+
+
+================================================================
+

@@ -1,0 +1,148 @@
+ClassName,Method,Return Type
+ConsoleHandler,close(),void
+ConsoleHandler,publish(LogRecord record),void
+ErrorManager,"error(String msg, Exception ex, int code)",void
+FileHandler,close(),void
+FileHandler,publish(LogRecord record),void
+Formatter,format(LogRecord record),abstract String
+Formatter,formatMessage(LogRecord record),String
+Formatter,getHead(Handler h),String
+Formatter,getTail(Handler h),String
+Handler,close(),abstract void
+Handler,flush(),abstract void
+Handler,getEncoding(),String
+Handler,getErrorManager(),ErrorManager
+Handler,getFilter(),Filter
+Handler,getFormatter(),Formatter
+Handler,getLevel(),Level
+Handler,isLoggable(LogRecord record),boolean
+Handler,publish(LogRecord record),abstract void
+Handler,"reportError(String msg, Exception ex, int code)",protected void
+Handler,setEncoding(String encoding),void
+Handler,setErrorManager(ErrorManager em),void
+Handler,setFilter(Filter newFilter),void
+Handler,setFormatter(Formatter newFormatter),void
+Handler,setLevel(Level newLevel),void
+Level,equals(Object ox),boolean
+Level,getLocalizedName(),String
+Level,getName(),String
+Level,getResourceBundleName(),String
+Level,hashCode(),int
+Level,intValue(),int
+Level,parse(String name),static Level
+Level,toString(),String
+Logger,addHandler(Handler handler),void
+Logger,config(String msg),void
+Logger,config(Supplier<String> msgSupplier),void
+Logger,"entering(String sourceClass, String sourceMethod)",void
+Logger,"entering(String sourceClass, String sourceMethod, Object param1)",void
+Logger,"entering(String sourceClass, String sourceMethod, Object[] params)",void
+Logger,"exiting(String sourceClass, String sourceMethod)",void
+Logger,"exiting(String sourceClass, String sourceMethod, Object result)",void
+Logger,fine(String msg),void
+Logger,fine(Supplier<String> msgSupplier),void
+Logger,finer(String msg),void
+Logger,finer(Supplier<String> msgSupplier),void
+Logger,finest(String msg),void
+Logger,finest(Supplier<String> msgSupplier),void
+Logger,getAnonymousLogger(),static Logger
+Logger,getAnonymousLogger(String resourceBundleName),static Logger
+Logger,getFilter(),Filter
+Logger,getGlobal(),static Logger
+Logger,getHandlers(),Handler[]
+Logger,getLevel(),Level
+Logger,getLogger(String name),static Logger
+Logger,"getLogger(String name, String resourceBundleName)",static Logger
+Logger,getName(),String
+Logger,getParent(),Logger
+Logger,getResourceBundle(),ResourceBundle
+Logger,getResourceBundleName(),String
+Logger,getUseParentHandlers(),boolean
+Logger,info(String msg),void
+Logger,info(Supplier<String> msgSupplier),void
+Logger,isLoggable(Level level),boolean
+Logger,"log(Level level, String msg)",void
+Logger,"log(Level level, String msg, Object param1)",void
+Logger,"log(Level level, String msg, Object[] params)",void
+Logger,"log(Level level, String msg, Throwable thrown)",void
+Logger,"log(Level level, Supplier<String> msgSupplier)",void
+Logger,"log(Level level, Throwable thrown, Supplier<String> msgSupplier)",void
+Logger,log(LogRecord record),void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, String msg)",void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, String msg, Object param1)",void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, String msg, Object[] params)",void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, String msg, Throwable thrown)",void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, Supplier<String> msgSupplier)",void
+Logger,"logp(Level level, String sourceClass, String sourceMethod, Throwable thrown, Supplier<String> msgSupplier)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, ResourceBundle bundle, String msg, Object... params)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, ResourceBundle bundle, String msg, Throwable thrown)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, String bundleName, String msg)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, String bundleName, String msg, Object param1)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, String bundleName, String msg, Object[] params)",void
+Logger,"logrb(Level level, String sourceClass, String sourceMethod, String bundleName, String msg, Throwable thrown)",void
+Logger,removeHandler(Handler handler),void
+Logger,setFilter(Filter newFilter),void
+Logger,setLevel(Level newLevel),void
+Logger,setParent(Logger parent),void
+Logger,setResourceBundle(ResourceBundle bundle),void
+Logger,setUseParentHandlers(boolean useParentHandlers),void
+Logger,severe(String msg),void
+Logger,severe(Supplier<String> msgSupplier),void
+Logger,"throwing(String sourceClass, String sourceMethod, Throwable thrown)",void
+Logger,warning(String msg),void
+Logger,warning(Supplier<String> msgSupplier),void
+LogManager,addLogger(Logger logger),boolean
+LogManager,addPropertyChangeListener(PropertyChangeListener l),void
+LogManager,checkAccess(),void
+LogManager,getLogger(String name),Logger
+LogManager,getLoggerNames(),Enumeration<String>
+LogManager,getLoggingMXBean(),static LoggingMXBean
+LogManager,getLogManager(),static LogManager
+LogManager,getProperty(String name),String
+LogManager,readConfiguration(),void
+LogManager,readConfiguration(InputStream ins),void
+LogManager,removePropertyChangeListener(PropertyChangeListener l),void
+LogManager,reset(),void
+LogRecord,getLevel(),Level
+LogRecord,getLoggerName(),String
+LogRecord,getMessage(),String
+LogRecord,getMillis(),long
+LogRecord,getParameters(),Object[]
+LogRecord,getResourceBundle(),ResourceBundle
+LogRecord,getResourceBundleName(),String
+LogRecord,getSequenceNumber(),long
+LogRecord,getSourceClassName(),String
+LogRecord,getSourceMethodName(),String
+LogRecord,getThreadID(),int
+LogRecord,getThrown(),Throwable
+LogRecord,setLevel(Level level),void
+LogRecord,setLoggerName(String name),void
+LogRecord,setMessage(String message),void
+LogRecord,setMillis(long millis),void
+LogRecord,setParameters(Object[] parameters),void
+LogRecord,setResourceBundle(ResourceBundle bundle),void
+LogRecord,setResourceBundleName(String name),void
+LogRecord,setSequenceNumber(long seq),void
+LogRecord,setSourceClassName(String sourceClassName),void
+LogRecord,setSourceMethodName(String sourceMethodName),void
+LogRecord,setThreadID(int threadID),void
+LogRecord,setThrown(Throwable thrown),void
+MemoryHandler,close(),void
+MemoryHandler,flush(),void
+MemoryHandler,getPushLevel(),Level
+MemoryHandler,isLoggable(LogRecord record),boolean
+MemoryHandler,publish(LogRecord record),void
+MemoryHandler,push(),void
+MemoryHandler,setPushLevel(Level newLevel),void
+SimpleFormatter,format(LogRecord record),String
+SocketHandler,close(),void
+SocketHandler,publish(LogRecord record),void
+StreamHandler,close(),void
+StreamHandler,flush(),void
+StreamHandler,isLoggable(LogRecord record),boolean
+StreamHandler,publish(LogRecord record),void
+StreamHandler,setEncoding(String encoding),void
+StreamHandler,setOutputStream(OutputStream out),protected void
+XMLFormatter,format(LogRecord record),String
+XMLFormatter,getHead(Handler h),String
+XMLFormatter,getTail(Handler h),String

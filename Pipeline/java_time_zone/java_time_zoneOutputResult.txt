@@ -1,0 +1,25 @@
+Sample: ZoneRules_2
+----------------------------------------------------------------
+output:
+./java_time_zone/javaFiles/ZoneRules_2.java:9: error: cannot find symbol
+        ZoneRules zoneRules = zoneId.getRules();
+        ^
+  symbol:   class ZoneRules
+  location: class ZoneRules_2
+1 error
+
+
+================================================================
+
+Sample: ZoneRules_3
+----------------------------------------------------------------
+output:
+./java_time_zone/javaFiles/ZoneRules_3.java:8: error: incompatible types: String cannot be converted to ZoneOffset
+        ZoneRules zoneRules = ZoneRules.of("America/New_York");
+                                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+
+
+================================================================
+

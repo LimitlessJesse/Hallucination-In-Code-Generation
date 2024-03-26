@@ -1,0 +1,227 @@
+Sample: AbstractQueuedSynchronizer_1
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_1.java:12: error: tryAcquireShared(int) has protected access in AbstractQueuedSynchronizer
+        int state = synchronizer.tryAcquireShared(1);
+                                ^
+1 error
+
+
+================================================================
+
+Sample: AbstractQueuedSynchronizer_2
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_2.java:7: error: compareAndSetState(int,int) in <anonymous AbstractQueuedSynchronizer_2$1> cannot override compareAndSetState(int,int) in AbstractQueuedSynchronizer
+            protected boolean compareAndSetState(int expect, int update) {
+                              ^
+  overridden method is final
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_2.java:14: error: compareAndSetState(int,int) has protected access in AbstractQueuedSynchronizer
+        boolean result = aqs.compareAndSetState(expect, update);
+                            ^
+2 errors
+
+
+================================================================
+
+Sample: AbstractQueuedSynchronizer_3
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_3.java:12: error: setState(int) has protected access in AbstractQueuedSynchronizer
+        synchronizer.setState(1);
+                    ^
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_3.java:13: error: getState() has protected access in AbstractQueuedSynchronizer
+        System.out.println("State: " + synchronizer.getState());
+                                                   ^
+2 errors
+
+
+================================================================
+
+Sample: AbstractQueuedSynchronizer_4
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_4.java:12: error: tryAcquire(int) has protected access in AbstractQueuedSynchronizer
+        boolean acquired = sync.tryAcquire(1);
+                               ^
+1 error
+
+
+================================================================
+
+Sample: AbstractQueuedSynchronizer_5
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/AbstractQueuedSynchronizer_5.java:16: error: tryRelease(int) has protected access in AbstractQueuedSynchronizer
+        boolean released = sync.tryRelease(1);
+                               ^
+1 error
+
+
+================================================================
+
+Sample: AbstractQueuedSynchronizer_8
+----------------------------------------------------------------
+stdout:
+Has queued threads: false
+
+================================================================
+
+Sample: LockSupport_1
+----------------------------------------------------------------
+stdout:
+Thread is going to sleep
+Main thread is going to unpark the thread
+Thread is awakened
+
+================================================================
+
+Sample: LockSupport_2
+----------------------------------------------------------------
+stdout:
+Thread is going to sleep
+Thread is woken up
+Main thread is going to unpark the thread
+
+================================================================
+
+Sample: LockSupport_3
+----------------------------------------------------------------
+stdout:
+Thread is going to sleep
+Main thread is going to unpark the thread
+Thread is woken up
+
+================================================================
+
+Sample: LockSupport_4
+----------------------------------------------------------------
+stdout:
+Thread is waiting...
+Thread is unparked!
+
+================================================================
+
+Sample: ReentrantLock_1
+----------------------------------------------------------------
+stdout:
+Lock acquired. Performing operations...
+
+================================================================
+
+Sample: ReentrantLock_2
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantLock_3
+----------------------------------------------------------------
+stdout:
+Is the lock locked? false
+Is the lock locked? true
+Is the lock locked? false
+
+================================================================
+
+Sample: ReentrantLock_4
+----------------------------------------------------------------
+stdout:
+false
+true
+false
+
+================================================================
+
+Sample: ReentrantLock_5
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantReadWriteLock_ReadLock_1
+----------------------------------------------------------------
+stdout:
+Lock is acquired and read operation is performed
+
+================================================================
+
+Sample: ReentrantReadWriteLock_ReadLock_2
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantReadWriteLock_ReadLock_3
+----------------------------------------------------------------
+stdout:
+Lock acquired
+
+================================================================
+
+Sample: ReentrantReadWriteLock_ReadLock_4
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantReadWriteLock_ReadLock_5
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/ReentrantReadWriteLock_ReadLock_5.java:7: error: cannot find symbol
+        ReentrantReadWriteLock.Condition condition = readLock.newCondition();
+                              ^
+  symbol:   class Condition
+  location: class ReentrantReadWriteLock
+1 error
+
+
+================================================================
+
+Sample: ReentrantReadWriteLock_WriteLock_1
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantReadWriteLock_WriteLock_2
+----------------------------------------------------------------
+stdout:
+Write lock acquired
+
+================================================================
+
+Sample: ReentrantReadWriteLock_WriteLock_3
+----------------------------------------------------------------
+================================================================
+
+Sample: ReentrantReadWriteLock_WriteLock_5
+----------------------------------------------------------------
+stdout:
+Is write lock held by current thread? false
+
+================================================================
+
+Sample: StampedLock_1
+----------------------------------------------------------------
+stdout:
+Read operation performed successfully
+
+================================================================
+
+Sample: StampedLock_2
+----------------------------------------------------------------
+================================================================
+
+Sample: StampedLock_3
+----------------------------------------------------------------
+================================================================
+
+Sample: StampedLock_4
+----------------------------------------------------------------
+output:
+./java_util_concurrent_locks/javaFiles/StampedLock_4.java:16: error: cannot find symbol
+        Main main = new Main();
+        ^
+  symbol:   class Main
+  location: class StampedLock_4
+./java_util_concurrent_locks/javaFiles/StampedLock_4.java:16: error: cannot find symbol
+        Main main = new Main();
+                        ^
+  symbol:   class Main
+  location: class StampedLock_4
+2 errors
+
+
+================================================================
+

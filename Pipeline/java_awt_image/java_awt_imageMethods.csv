@@ -1,0 +1,600 @@
+ClassName,Method,Return Type
+AffineTransformOp,"createCompatibleDestImage(BufferedImage src, ColorModel destCM)",BufferedImage
+AffineTransformOp,createCompatibleDestRaster(Raster src),WritableRaster
+AffineTransformOp,"filter(BufferedImage src, BufferedImage dst)",BufferedImage
+AffineTransformOp,"filter(Raster src, WritableRaster dst)",WritableRaster
+AffineTransformOp,getBounds2D(BufferedImage src),Rectangle2D
+AffineTransformOp,getBounds2D(Raster src),Rectangle2D
+AffineTransformOp,getInterpolationType(),int
+AffineTransformOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+AffineTransformOp,getRenderingHints(),RenderingHints
+AffineTransformOp,getTransform(),AffineTransform
+AreaAveragingScaleFilter,setHints(int hints),void
+AreaAveragingScaleFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+AreaAveragingScaleFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+BandCombineOp,createCompatibleDestRaster(Raster src),WritableRaster
+BandCombineOp,"filter(Raster src, WritableRaster dst)",WritableRaster
+BandCombineOp,getBounds2D(Raster src),Rectangle2D
+BandCombineOp,getMatrix(),float[][]
+BandCombineOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+BandCombineOp,getRenderingHints(),RenderingHints
+BandedSampleModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+BandedSampleModel,createDataBuffer(),DataBuffer
+BandedSampleModel,createSubsetSampleModel(int[] bands),SampleModel
+BandedSampleModel,"getDataElements(int x, int y, Object obj, DataBuffer data)",Object
+BandedSampleModel,"getPixel(int x, int y, int[] iArray, DataBuffer data)",int[]
+BandedSampleModel,"getPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",int[]
+BandedSampleModel,"getSample(int x, int y, int b, DataBuffer data)",int
+BandedSampleModel,"getSampleDouble(int x, int y, int b, DataBuffer data)",double
+BandedSampleModel,"getSampleFloat(int x, int y, int b, DataBuffer data)",float
+BandedSampleModel,"getSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",int[]
+BandedSampleModel,hashCode(),int
+BandedSampleModel,"setDataElements(int x, int y, Object obj, DataBuffer data)",void
+BandedSampleModel,"setPixel(int x, int y, int[] iArray, DataBuffer data)",void
+BandedSampleModel,"setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",void
+BandedSampleModel,"setSample(int x, int y, int b, double s, DataBuffer data)",void
+BandedSampleModel,"setSample(int x, int y, int b, float s, DataBuffer data)",void
+BandedSampleModel,"setSample(int x, int y, int b, int s, DataBuffer data)",void
+BandedSampleModel,"setSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",void
+BufferedImage,addTileObserver(TileObserver to),void
+BufferedImage,coerceData(boolean isAlphaPremultiplied),void
+BufferedImage,copyData(WritableRaster outRaster),WritableRaster
+BufferedImage,createGraphics(),Graphics2D
+BufferedImage,getAlphaRaster(),WritableRaster
+BufferedImage,getColorModel(),ColorModel
+BufferedImage,getData(),Raster
+BufferedImage,getData(Rectangle rect),Raster
+BufferedImage,getGraphics(),Graphics
+BufferedImage,getHeight(),int
+BufferedImage,getHeight(ImageObserver observer),int
+BufferedImage,getMinTileX(),int
+BufferedImage,getMinTileY(),int
+BufferedImage,getMinX(),int
+BufferedImage,getMinY(),int
+BufferedImage,getNumXTiles(),int
+BufferedImage,getNumYTiles(),int
+BufferedImage,getProperty(String name),Object
+BufferedImage,"getProperty(String name, ImageObserver observer)",Object
+BufferedImage,getPropertyNames(),String[]
+BufferedImage,getRaster(),WritableRaster
+BufferedImage,"getRGB(int x, int y)",int
+BufferedImage,"getRGB(int startX, int startY, int w, int h, int[] rgbArray, int offset, int scansize)",int[]
+BufferedImage,getSampleModel(),SampleModel
+BufferedImage,getSource(),ImageProducer
+BufferedImage,getSources(),Vector<RenderedImage>
+BufferedImage,"getSubimage(int x, int y, int w, int h)",BufferedImage
+BufferedImage,"getTile(int tileX, int tileY)",Raster
+BufferedImage,getTileGridXOffset(),int
+BufferedImage,getTileGridYOffset(),int
+BufferedImage,getTileHeight(),int
+BufferedImage,getTileWidth(),int
+BufferedImage,getTransparency(),int
+BufferedImage,getType(),int
+BufferedImage,getWidth(),int
+BufferedImage,getWidth(ImageObserver observer),int
+BufferedImage,"getWritableTile(int tileX, int tileY)",WritableRaster
+BufferedImage,getWritableTileIndices(),Point[]
+BufferedImage,hasTileWriters(),boolean
+BufferedImage,isAlphaPremultiplied(),boolean
+BufferedImage,"isTileWritable(int tileX, int tileY)",boolean
+BufferedImage,"releaseWritableTile(int tileX, int tileY)",void
+BufferedImage,removeTileObserver(TileObserver to),void
+BufferedImage,setData(Raster r),void
+BufferedImage,"setRGB(int x, int y, int rgb)",void
+BufferedImage,"setRGB(int startX, int startY, int w, int h, int[] rgbArray, int offset, int scansize)",void
+BufferedImage,toString(),String
+BufferedImageFilter,getBufferedImageOp(),BufferedImageOp
+BufferedImageFilter,imageComplete(int status),void
+BufferedImageFilter,setColorModel(ColorModel model),void
+BufferedImageFilter,"setDimensions(int width, int height)",void
+BufferedImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+BufferedImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+BufferStrategy,contentsLost(),abstract boolean
+BufferStrategy,contentsRestored(),abstract boolean
+BufferStrategy,dispose(),void
+BufferStrategy,getCapabilities(),abstract BufferCapabilities
+BufferStrategy,getDrawGraphics(),abstract Graphics
+BufferStrategy,show(),abstract void
+ByteLookupTable,getTable(),byte[][]
+ByteLookupTable,"lookupPixel(byte[] src, byte[] dst)",byte[]
+ByteLookupTable,"lookupPixel(int[] src, int[] dst)",int[]
+ColorConvertOp,"createCompatibleDestImage(BufferedImage src, ColorModel destCM)",BufferedImage
+ColorConvertOp,createCompatibleDestRaster(Raster src),WritableRaster
+ColorConvertOp,"filter(BufferedImage src, BufferedImage dest)",BufferedImage
+ColorConvertOp,"filter(Raster src, WritableRaster dest)",WritableRaster
+ColorConvertOp,getBounds2D(BufferedImage src),Rectangle2D
+ColorConvertOp,getBounds2D(Raster src),Rectangle2D
+ColorConvertOp,getICC_Profiles(),ICC_Profile[]
+ColorConvertOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+ColorConvertOp,getRenderingHints(),RenderingHints
+ColorModel,"coerceData(WritableRaster raster, boolean isAlphaPremultiplied)",ColorModel
+ColorModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+ColorModel,"createCompatibleWritableRaster(int w, int h)",WritableRaster
+ColorModel,equals(Object obj),boolean
+ColorModel,finalize(),void
+ColorModel,getAlpha(int pixel),abstract int
+ColorModel,getAlpha(Object inData),int
+ColorModel,getAlphaRaster(WritableRaster raster),WritableRaster
+ColorModel,getBlue(int pixel),abstract int
+ColorModel,getBlue(Object inData),int
+ColorModel,getColorSpace(),ColorSpace
+ColorModel,"getComponents(int pixel, int[] components, int offset)",int[]
+ColorModel,"getComponents(Object pixel, int[] components, int offset)",int[]
+ColorModel,getComponentSize(),int[]
+ColorModel,getComponentSize(int componentIdx),int
+ColorModel,"getDataElement(float[] normComponents, int normOffset)",int
+ColorModel,"getDataElement(int[] components, int offset)",int
+ColorModel,"getDataElements(float[] normComponents, int normOffset, Object obj)",Object
+ColorModel,"getDataElements(int[] components, int offset, Object obj)",Object
+ColorModel,"getDataElements(int rgb, Object pixel)",Object
+ColorModel,getGreen(int pixel),abstract int
+ColorModel,getGreen(Object inData),int
+ColorModel,"getNormalizedComponents(int[] components, int offset, float[] normComponents, int normOffset)",float[]
+ColorModel,"getNormalizedComponents(Object pixel, float[] normComponents, int normOffset)",float[]
+ColorModel,getNumColorComponents(),int
+ColorModel,getNumComponents(),int
+ColorModel,getPixelSize(),int
+ColorModel,getRed(int pixel),abstract int
+ColorModel,getRed(Object inData),int
+ColorModel,getRGB(int pixel),int
+ColorModel,getRGB(Object inData),int
+ColorModel,getRGBdefault(),static ColorModel
+ColorModel,getTransferType(),int
+ColorModel,getTransparency(),int
+ColorModel,"getUnnormalizedComponents(float[] normComponents, int normOffset, int[] components, int offset)",int[]
+ColorModel,hasAlpha(),boolean
+ColorModel,hashCode(),int
+ColorModel,isAlphaPremultiplied(),boolean
+ColorModel,isCompatibleRaster(Raster raster),boolean
+ColorModel,isCompatibleSampleModel(SampleModel sm),boolean
+ColorModel,toString(),String
+ComponentColorModel,"coerceData(WritableRaster raster, boolean isAlphaPremultiplied)",ColorModel
+ComponentColorModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+ComponentColorModel,"createCompatibleWritableRaster(int w, int h)",WritableRaster
+ComponentColorModel,equals(Object obj),boolean
+ComponentColorModel,getAlpha(int pixel),int
+ComponentColorModel,getAlpha(Object inData),int
+ComponentColorModel,getAlphaRaster(WritableRaster raster),WritableRaster
+ComponentColorModel,getBlue(int pixel),int
+ComponentColorModel,getBlue(Object inData),int
+ComponentColorModel,"getComponents(int pixel, int[] components, int offset)",int[]
+ComponentColorModel,"getComponents(Object pixel, int[] components, int offset)",int[]
+ComponentColorModel,"getDataElement(float[] normComponents, int normOffset)",int
+ComponentColorModel,"getDataElement(int[] components, int offset)",int
+ComponentColorModel,"getDataElements(float[] normComponents, int normOffset, Object obj)",Object
+ComponentColorModel,"getDataElements(int[] components, int offset, Object obj)",Object
+ComponentColorModel,"getDataElements(int rgb, Object pixel)",Object
+ComponentColorModel,getGreen(int pixel),int
+ComponentColorModel,getGreen(Object inData),int
+ComponentColorModel,"getNormalizedComponents(int[] components, int offset, float[] normComponents, int normOffset)",float[]
+ComponentColorModel,"getNormalizedComponents(Object pixel, float[] normComponents, int normOffset)",float[]
+ComponentColorModel,getRed(int pixel),int
+ComponentColorModel,getRed(Object inData),int
+ComponentColorModel,getRGB(int pixel),int
+ComponentColorModel,getRGB(Object inData),int
+ComponentColorModel,"getUnnormalizedComponents(float[] normComponents, int normOffset, int[] components, int offset)",int[]
+ComponentColorModel,isCompatibleRaster(Raster raster),boolean
+ComponentColorModel,isCompatibleSampleModel(SampleModel sm),boolean
+ComponentSampleModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+ComponentSampleModel,createDataBuffer(),DataBuffer
+ComponentSampleModel,createSubsetSampleModel(int[] bands),SampleModel
+ComponentSampleModel,equals(Object o),boolean
+ComponentSampleModel,getBandOffsets(),int[]
+ComponentSampleModel,getBankIndices(),int[]
+ComponentSampleModel,"getDataElements(int x, int y, Object obj, DataBuffer data)",Object
+ComponentSampleModel,getNumDataElements(),int
+ComponentSampleModel,"getOffset(int x, int y)",int
+ComponentSampleModel,"getOffset(int x, int y, int b)",int
+ComponentSampleModel,"getPixel(int x, int y, int[] iArray, DataBuffer data)",int[]
+ComponentSampleModel,"getPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",int[]
+ComponentSampleModel,getPixelStride(),int
+ComponentSampleModel,"getSample(int x, int y, int b, DataBuffer data)",int
+ComponentSampleModel,"getSampleDouble(int x, int y, int b, DataBuffer data)",double
+ComponentSampleModel,"getSampleFloat(int x, int y, int b, DataBuffer data)",float
+ComponentSampleModel,"getSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",int[]
+ComponentSampleModel,getSampleSize(),int[]
+ComponentSampleModel,getSampleSize(int band),int
+ComponentSampleModel,getScanlineStride(),int
+ComponentSampleModel,hashCode(),int
+ComponentSampleModel,"setDataElements(int x, int y, Object obj, DataBuffer data)",void
+ComponentSampleModel,"setPixel(int x, int y, int[] iArray, DataBuffer data)",void
+ComponentSampleModel,"setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",void
+ComponentSampleModel,"setSample(int x, int y, int b, double s, DataBuffer data)",void
+ComponentSampleModel,"setSample(int x, int y, int b, float s, DataBuffer data)",void
+ComponentSampleModel,"setSample(int x, int y, int b, int s, DataBuffer data)",void
+ComponentSampleModel,"setSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",void
+ConvolveOp,"createCompatibleDestImage(BufferedImage src, ColorModel destCM)",BufferedImage
+ConvolveOp,createCompatibleDestRaster(Raster src),WritableRaster
+ConvolveOp,"filter(BufferedImage src, BufferedImage dst)",BufferedImage
+ConvolveOp,"filter(Raster src, WritableRaster dst)",WritableRaster
+ConvolveOp,getBounds2D(BufferedImage src),Rectangle2D
+ConvolveOp,getBounds2D(Raster src),Rectangle2D
+ConvolveOp,getEdgeCondition(),int
+ConvolveOp,getKernel(),Kernel
+ConvolveOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+ConvolveOp,getRenderingHints(),RenderingHints
+CropImageFilter,"setDimensions(int w, int h)",void
+CropImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+CropImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+CropImageFilter,"setProperties(Hashtable<?,?> props)",void
+DataBuffer,getDataType(),int
+DataBuffer,getDataTypeSize(int type),static int
+DataBuffer,getElem(int i),int
+DataBuffer,"getElem(int bank, int i)",abstract int
+DataBuffer,getElemDouble(int i),double
+DataBuffer,"getElemDouble(int bank, int i)",double
+DataBuffer,getElemFloat(int i),float
+DataBuffer,"getElemFloat(int bank, int i)",float
+DataBuffer,getNumBanks(),int
+DataBuffer,getOffset(),int
+DataBuffer,getOffsets(),int[]
+DataBuffer,getSize(),int
+DataBuffer,"setElem(int i, int val)",void
+DataBuffer,"setElem(int bank, int i, int val)",abstract void
+DataBuffer,"setElemDouble(int i, double val)",void
+DataBuffer,"setElemDouble(int bank, int i, double val)",void
+DataBuffer,"setElemFloat(int i, float val)",void
+DataBuffer,"setElemFloat(int bank, int i, float val)",void
+DataBufferByte,getBankData(),byte[][]
+DataBufferByte,getData(),byte[]
+DataBufferByte,getData(int bank),byte[]
+DataBufferByte,getElem(int i),int
+DataBufferByte,"getElem(int bank, int i)",int
+DataBufferByte,"setElem(int i, int val)",void
+DataBufferByte,"setElem(int bank, int i, int val)",void
+DataBufferDouble,getBankData(),double[][]
+DataBufferDouble,getData(),double[]
+DataBufferDouble,getData(int bank),double[]
+DataBufferDouble,getElem(int i),int
+DataBufferDouble,"getElem(int bank, int i)",int
+DataBufferDouble,getElemDouble(int i),double
+DataBufferDouble,"getElemDouble(int bank, int i)",double
+DataBufferDouble,getElemFloat(int i),float
+DataBufferDouble,"getElemFloat(int bank, int i)",float
+DataBufferDouble,"setElem(int i, int val)",void
+DataBufferDouble,"setElem(int bank, int i, int val)",void
+DataBufferDouble,"setElemDouble(int i, double val)",void
+DataBufferDouble,"setElemDouble(int bank, int i, double val)",void
+DataBufferDouble,"setElemFloat(int i, float val)",void
+DataBufferDouble,"setElemFloat(int bank, int i, float val)",void
+DataBufferFloat,getBankData(),float[][]
+DataBufferFloat,getData(),float[]
+DataBufferFloat,getData(int bank),float[]
+DataBufferFloat,getElem(int i),int
+DataBufferFloat,"getElem(int bank, int i)",int
+DataBufferFloat,getElemDouble(int i),double
+DataBufferFloat,"getElemDouble(int bank, int i)",double
+DataBufferFloat,getElemFloat(int i),float
+DataBufferFloat,"getElemFloat(int bank, int i)",float
+DataBufferFloat,"setElem(int i, int val)",void
+DataBufferFloat,"setElem(int bank, int i, int val)",void
+DataBufferFloat,"setElemDouble(int i, double val)",void
+DataBufferFloat,"setElemDouble(int bank, int i, double val)",void
+DataBufferFloat,"setElemFloat(int i, float val)",void
+DataBufferFloat,"setElemFloat(int bank, int i, float val)",void
+DataBufferInt,getBankData(),int[][]
+DataBufferInt,getData(),int[]
+DataBufferInt,getData(int bank),int[]
+DataBufferInt,getElem(int i),int
+DataBufferInt,"getElem(int bank, int i)",int
+DataBufferInt,"setElem(int i, int val)",void
+DataBufferInt,"setElem(int bank, int i, int val)",void
+DataBufferShort,getBankData(),short[][]
+DataBufferShort,getData(),short[]
+DataBufferShort,getData(int bank),short[]
+DataBufferShort,getElem(int i),int
+DataBufferShort,"getElem(int bank, int i)",int
+DataBufferShort,"setElem(int i, int val)",void
+DataBufferShort,"setElem(int bank, int i, int val)",void
+DataBufferUShort,getBankData(),short[][]
+DataBufferUShort,getData(),short[]
+DataBufferUShort,getData(int bank),short[]
+DataBufferUShort,getElem(int i),int
+DataBufferUShort,"getElem(int bank, int i)",int
+DataBufferUShort,"setElem(int i, int val)",void
+DataBufferUShort,"setElem(int bank, int i, int val)",void
+DirectColorModel,"coerceData(WritableRaster raster, boolean isAlphaPremultiplied)",ColorModel
+DirectColorModel,"createCompatibleWritableRaster(int w, int h)",WritableRaster
+DirectColorModel,getAlpha(int pixel),int
+DirectColorModel,getAlpha(Object inData),int
+DirectColorModel,getAlphaMask(),int
+DirectColorModel,getBlue(int pixel),int
+DirectColorModel,getBlue(Object inData),int
+DirectColorModel,getBlueMask(),int
+DirectColorModel,"getComponents(int pixel, int[] components, int offset)",int[]
+DirectColorModel,"getComponents(Object pixel, int[] components, int offset)",int[]
+DirectColorModel,"getDataElement(int[] components, int offset)",int
+DirectColorModel,"getDataElements(int[] components, int offset, Object obj)",Object
+DirectColorModel,"getDataElements(int rgb, Object pixel)",Object
+DirectColorModel,getGreen(int pixel),int
+DirectColorModel,getGreen(Object inData),int
+DirectColorModel,getGreenMask(),int
+DirectColorModel,getRed(int pixel),int
+DirectColorModel,getRed(Object inData),int
+DirectColorModel,getRedMask(),int
+DirectColorModel,getRGB(int pixel),int
+DirectColorModel,getRGB(Object inData),int
+DirectColorModel,isCompatibleRaster(Raster raster),boolean
+DirectColorModel,toString(),String
+FilteredImageSource,addConsumer(ImageConsumer ic),void
+FilteredImageSource,isConsumer(ImageConsumer ic),boolean
+FilteredImageSource,removeConsumer(ImageConsumer ic),void
+FilteredImageSource,requestTopDownLeftRightResend(ImageConsumer ic),void
+FilteredImageSource,startProduction(ImageConsumer ic),void
+ImageFilter,clone(),Object
+ImageFilter,getFilterInstance(ImageConsumer ic),ImageFilter
+ImageFilter,imageComplete(int status),void
+ImageFilter,resendTopDownLeftRight(ImageProducer ip),void
+ImageFilter,setColorModel(ColorModel model),void
+ImageFilter,"setDimensions(int width, int height)",void
+ImageFilter,setHints(int hints),void
+ImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+ImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+ImageFilter,"setProperties(Hashtable<?,?> props)",void
+IndexColorModel,"convertToIntDiscrete(Raster raster, boolean forceARGB)",BufferedImage
+IndexColorModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+IndexColorModel,"createCompatibleWritableRaster(int w, int h)",WritableRaster
+IndexColorModel,finalize(),void
+IndexColorModel,getAlpha(int pixel),int
+IndexColorModel,getAlphas(byte[] a),void
+IndexColorModel,getBlue(int pixel),int
+IndexColorModel,getBlues(byte[] b),void
+IndexColorModel,"getComponents(int pixel, int[] components, int offset)",int[]
+IndexColorModel,"getComponents(Object pixel, int[] components, int offset)",int[]
+IndexColorModel,getComponentSize(),int[]
+IndexColorModel,"getDataElement(int[] components, int offset)",int
+IndexColorModel,"getDataElements(int[] components, int offset, Object pixel)",Object
+IndexColorModel,"getDataElements(int rgb, Object pixel)",Object
+IndexColorModel,getGreen(int pixel),int
+IndexColorModel,getGreens(byte[] g),void
+IndexColorModel,getMapSize(),int
+IndexColorModel,getRed(int pixel),int
+IndexColorModel,getReds(byte[] r),void
+IndexColorModel,getRGB(int pixel),int
+IndexColorModel,getRGBs(int[] rgb),void
+IndexColorModel,getTransparency(),int
+IndexColorModel,getTransparentPixel(),int
+IndexColorModel,getValidPixels(),BigInteger
+IndexColorModel,isCompatibleRaster(Raster raster),boolean
+IndexColorModel,isCompatibleSampleModel(SampleModel sm),boolean
+IndexColorModel,isValid(),boolean
+IndexColorModel,isValid(int pixel),boolean
+IndexColorModel,toString(),String
+Kernel,clone(),Object
+Kernel,getHeight(),int
+Kernel,getKernelData(float[] data),float[]
+Kernel,getWidth(),int
+Kernel,getXOrigin(),int
+Kernel,getYOrigin(),int
+LookupOp,"createCompatibleDestImage(BufferedImage src, ColorModel destCM)",BufferedImage
+LookupOp,createCompatibleDestRaster(Raster src),WritableRaster
+LookupOp,"filter(BufferedImage src, BufferedImage dst)",BufferedImage
+LookupOp,"filter(Raster src, WritableRaster dst)",WritableRaster
+LookupOp,getBounds2D(BufferedImage src),Rectangle2D
+LookupOp,getBounds2D(Raster src),Rectangle2D
+LookupOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+LookupOp,getRenderingHints(),RenderingHints
+LookupOp,getTable(),LookupTable
+LookupTable,getNumComponents(),int
+LookupTable,getOffset(),int
+LookupTable,"lookupPixel(int[] src, int[] dest)",abstract int[]
+MemoryImageSource,addConsumer(ImageConsumer ic),void
+MemoryImageSource,isConsumer(ImageConsumer ic),boolean
+MemoryImageSource,newPixels(),void
+MemoryImageSource,"newPixels(byte[] newpix, ColorModel newmodel, int offset, int scansize)",void
+MemoryImageSource,"newPixels(int[] newpix, ColorModel newmodel, int offset, int scansize)",void
+MemoryImageSource,"newPixels(int x, int y, int w, int h)",void
+MemoryImageSource,"newPixels(int x, int y, int w, int h, boolean framenotify)",void
+MemoryImageSource,removeConsumer(ImageConsumer ic),void
+MemoryImageSource,requestTopDownLeftRightResend(ImageConsumer ic),void
+MemoryImageSource,setAnimated(boolean animated),void
+MemoryImageSource,setFullBufferUpdates(boolean fullbuffers),void
+MemoryImageSource,startProduction(ImageConsumer ic),void
+MultiPixelPackedSampleModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+MultiPixelPackedSampleModel,createDataBuffer(),DataBuffer
+MultiPixelPackedSampleModel,createSubsetSampleModel(int[] bands),SampleModel
+MultiPixelPackedSampleModel,equals(Object o),boolean
+MultiPixelPackedSampleModel,getBitOffset(int x),int
+MultiPixelPackedSampleModel,getDataBitOffset(),int
+MultiPixelPackedSampleModel,"getDataElements(int x, int y, Object obj, DataBuffer data)",Object
+MultiPixelPackedSampleModel,getNumDataElements(),int
+MultiPixelPackedSampleModel,"getOffset(int x, int y)",int
+MultiPixelPackedSampleModel,"getPixel(int x, int y, int[] iArray, DataBuffer data)",int[]
+MultiPixelPackedSampleModel,getPixelBitStride(),int
+MultiPixelPackedSampleModel,"getSample(int x, int y, int b, DataBuffer data)",int
+MultiPixelPackedSampleModel,getSampleSize(),int[]
+MultiPixelPackedSampleModel,getSampleSize(int band),int
+MultiPixelPackedSampleModel,getScanlineStride(),int
+MultiPixelPackedSampleModel,getTransferType(),int
+MultiPixelPackedSampleModel,hashCode(),int
+MultiPixelPackedSampleModel,"setDataElements(int x, int y, Object obj, DataBuffer data)",void
+MultiPixelPackedSampleModel,"setPixel(int x, int y, int[] iArray, DataBuffer data)",void
+MultiPixelPackedSampleModel,"setSample(int x, int y, int b, int s, DataBuffer data)",void
+PackedColorModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+PackedColorModel,equals(Object obj),boolean
+PackedColorModel,getAlphaRaster(WritableRaster raster),WritableRaster
+PackedColorModel,getMask(int index),int
+PackedColorModel,getMasks(),int[]
+PackedColorModel,isCompatibleSampleModel(SampleModel sm),boolean
+PixelGrabber,abortGrabbing(),void
+PixelGrabber,getColorModel(),ColorModel
+PixelGrabber,getHeight(),int
+PixelGrabber,getPixels(),Object
+PixelGrabber,getStatus(),int
+PixelGrabber,getWidth(),int
+PixelGrabber,grabPixels(),boolean
+PixelGrabber,grabPixels(long ms),boolean
+PixelGrabber,imageComplete(int status),void
+PixelGrabber,setColorModel(ColorModel model),void
+PixelGrabber,"setDimensions(int width, int height)",void
+PixelGrabber,setHints(int hints),void
+PixelGrabber,"setPixels(int srcX, int srcY, int srcW, int srcH, ColorModel model, byte[] pixels, int srcOff, int srcScan)",void
+PixelGrabber,"setPixels(int srcX, int srcY, int srcW, int srcH, ColorModel model, int[] pixels, int srcOff, int srcScan)",void
+PixelGrabber,"setProperties(Hashtable<?,?> props)",void
+PixelGrabber,startGrabbing(),void
+PixelGrabber,status(),int
+PixelInterleavedSampleModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+PixelInterleavedSampleModel,createSubsetSampleModel(int[] bands),SampleModel
+PixelInterleavedSampleModel,hashCode(),int
+Raster,"createBandedRaster(DataBuffer dataBuffer, int w, int h, int scanlineStride, int[] bankIndices, int[] bandOffsets, Point location)",static WritableRaster
+Raster,"createBandedRaster(int dataType, int w, int h, int scanlineStride, int[] bankIndices, int[] bandOffsets, Point location)",static WritableRaster
+Raster,"createBandedRaster(int dataType, int w, int h, int bands, Point location)",static WritableRaster
+Raster,"createChild(int parentX, int parentY, int width, int height, int childMinX, int childMinY, int[] bandList)",Raster
+Raster,createCompatibleWritableRaster(),WritableRaster
+Raster,"createCompatibleWritableRaster(int w, int h)",WritableRaster
+Raster,"createCompatibleWritableRaster(int x, int y, int w, int h)",WritableRaster
+Raster,createCompatibleWritableRaster(Rectangle rect),WritableRaster
+Raster,"createInterleavedRaster(DataBuffer dataBuffer, int w, int h, int scanlineStride, int pixelStride, int[] bandOffsets, Point location)",static WritableRaster
+Raster,"createInterleavedRaster(int dataType, int w, int h, int scanlineStride, int pixelStride, int[] bandOffsets, Point location)",static WritableRaster
+Raster,"createInterleavedRaster(int dataType, int w, int h, int bands, Point location)",static WritableRaster
+Raster,"createPackedRaster(DataBuffer dataBuffer, int w, int h, int scanlineStride, int[] bandMasks, Point location)",static WritableRaster
+Raster,"createPackedRaster(DataBuffer dataBuffer, int w, int h, int bitsPerPixel, Point location)",static WritableRaster
+Raster,"createPackedRaster(int dataType, int w, int h, int[] bandMasks, Point location)",static WritableRaster
+Raster,"createPackedRaster(int dataType, int w, int h, int bands, int bitsPerBand, Point location)",static WritableRaster
+Raster,"createRaster(SampleModel sm, DataBuffer db, Point location)",static Raster
+Raster,"createTranslatedChild(int childMinX, int childMinY)",Raster
+Raster,"createWritableRaster(SampleModel sm, DataBuffer db, Point location)",static WritableRaster
+Raster,"createWritableRaster(SampleModel sm, Point location)",static WritableRaster
+Raster,getBounds(),Rectangle
+Raster,getDataBuffer(),DataBuffer
+Raster,"getDataElements(int x, int y, int w, int h, Object outData)",Object
+Raster,"getDataElements(int x, int y, Object outData)",Object
+Raster,getHeight(),int
+Raster,getMinX(),int
+Raster,getMinY(),int
+Raster,getNumBands(),int
+Raster,getNumDataElements(),int
+Raster,getParent(),Raster
+Raster,"getPixel(int x, int y, double[] dArray)",double[]
+Raster,"getPixel(int x, int y, float[] fArray)",float[]
+Raster,"getPixel(int x, int y, int[] iArray)",int[]
+Raster,"getPixels(int x, int y, int w, int h, double[] dArray)",double[]
+Raster,"getPixels(int x, int y, int w, int h, float[] fArray)",float[]
+Raster,"getPixels(int x, int y, int w, int h, int[] iArray)",int[]
+Raster,"getSample(int x, int y, int b)",int
+Raster,"getSampleDouble(int x, int y, int b)",double
+Raster,"getSampleFloat(int x, int y, int b)",float
+Raster,getSampleModel(),SampleModel
+Raster,getSampleModelTranslateX(),int
+Raster,getSampleModelTranslateY(),int
+Raster,"getSamples(int x, int y, int w, int h, int b, double[] dArray)",double[]
+Raster,"getSamples(int x, int y, int w, int h, int b, float[] fArray)",float[]
+Raster,"getSamples(int x, int y, int w, int h, int b, int[] iArray)",int[]
+Raster,getTransferType(),int
+Raster,getWidth(),int
+ReplicateScaleFilter,"setDimensions(int w, int h)",void
+ReplicateScaleFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+ReplicateScaleFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+ReplicateScaleFilter,"setProperties(Hashtable<?,?> props)",void
+RescaleOp,"createCompatibleDestImage(BufferedImage src, ColorModel destCM)",BufferedImage
+RescaleOp,createCompatibleDestRaster(Raster src),WritableRaster
+RescaleOp,"filter(BufferedImage src, BufferedImage dst)",BufferedImage
+RescaleOp,"filter(Raster src, WritableRaster dst)",WritableRaster
+RescaleOp,getBounds2D(BufferedImage src),Rectangle2D
+RescaleOp,getBounds2D(Raster src),Rectangle2D
+RescaleOp,getNumFactors(),int
+RescaleOp,getOffsets(float[] offsets),float[]
+RescaleOp,"getPoint2D(Point2D srcPt, Point2D dstPt)",Point2D
+RescaleOp,getRenderingHints(),RenderingHints
+RescaleOp,getScaleFactors(float[] scaleFactors),float[]
+RGBImageFilter,filterIndexColorModel(IndexColorModel icm),IndexColorModel
+RGBImageFilter,"filterRGB(int x, int y, int rgb)",abstract int
+RGBImageFilter,"filterRGBPixels(int x, int y, int w, int h, int[] pixels, int off, int scansize)",void
+RGBImageFilter,setColorModel(ColorModel model),void
+RGBImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, byte[] pixels, int off, int scansize)",void
+RGBImageFilter,"setPixels(int x, int y, int w, int h, ColorModel model, int[] pixels, int off, int scansize)",void
+RGBImageFilter,"substituteColorModel(ColorModel oldcm, ColorModel newcm)",void
+SampleModel,"createCompatibleSampleModel(int w, int h)",abstract SampleModel
+SampleModel,createDataBuffer(),abstract DataBuffer
+SampleModel,createSubsetSampleModel(int[] bands),abstract SampleModel
+SampleModel,"getDataElements(int x, int y, int w, int h, Object obj, DataBuffer data)",Object
+SampleModel,"getDataElements(int x, int y, Object obj, DataBuffer data)",abstract Object
+SampleModel,getDataType(),int
+SampleModel,getHeight(),int
+SampleModel,getNumBands(),int
+SampleModel,getNumDataElements(),abstract int
+SampleModel,"getPixel(int x, int y, double[] dArray, DataBuffer data)",double[]
+SampleModel,"getPixel(int x, int y, float[] fArray, DataBuffer data)",float[]
+SampleModel,"getPixel(int x, int y, int[] iArray, DataBuffer data)",int[]
+SampleModel,"getPixels(int x, int y, int w, int h, double[] dArray, DataBuffer data)",double[]
+SampleModel,"getPixels(int x, int y, int w, int h, float[] fArray, DataBuffer data)",float[]
+SampleModel,"getPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",int[]
+SampleModel,"getSample(int x, int y, int b, DataBuffer data)",abstract int
+SampleModel,"getSampleDouble(int x, int y, int b, DataBuffer data)",double
+SampleModel,"getSampleFloat(int x, int y, int b, DataBuffer data)",float
+SampleModel,"getSamples(int x, int y, int w, int h, int b, double[] dArray, DataBuffer data)",double[]
+SampleModel,"getSamples(int x, int y, int w, int h, int b, float[] fArray, DataBuffer data)",float[]
+SampleModel,"getSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",int[]
+SampleModel,getSampleSize(),abstract int[]
+SampleModel,getSampleSize(int band),abstract int
+SampleModel,getTransferType(),int
+SampleModel,getWidth(),int
+SampleModel,"setDataElements(int x, int y, int w, int h, Object obj, DataBuffer data)",void
+SampleModel,"setDataElements(int x, int y, Object obj, DataBuffer data)",abstract void
+SampleModel,"setPixel(int x, int y, double[] dArray, DataBuffer data)",void
+SampleModel,"setPixel(int x, int y, float[] fArray, DataBuffer data)",void
+SampleModel,"setPixel(int x, int y, int[] iArray, DataBuffer data)",void
+SampleModel,"setPixels(int x, int y, int w, int h, double[] dArray, DataBuffer data)",void
+SampleModel,"setPixels(int x, int y, int w, int h, float[] fArray, DataBuffer data)",void
+SampleModel,"setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",void
+SampleModel,"setSample(int x, int y, int b, double s, DataBuffer data)",void
+SampleModel,"setSample(int x, int y, int b, float s, DataBuffer data)",void
+SampleModel,"setSample(int x, int y, int b, int s, DataBuffer data)",abstract void
+SampleModel,"setSamples(int x, int y, int w, int h, int b, double[] dArray, DataBuffer data)",void
+SampleModel,"setSamples(int x, int y, int w, int h, int b, float[] fArray, DataBuffer data)",void
+SampleModel,"setSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",void
+ShortLookupTable,getTable(),short[][]
+ShortLookupTable,"lookupPixel(int[] src, int[] dst)",int[]
+ShortLookupTable,"lookupPixel(short[] src, short[] dst)",short[]
+SinglePixelPackedSampleModel,"createCompatibleSampleModel(int w, int h)",SampleModel
+SinglePixelPackedSampleModel,createDataBuffer(),DataBuffer
+SinglePixelPackedSampleModel,createSubsetSampleModel(int[] bands),SampleModel
+SinglePixelPackedSampleModel,equals(Object o),boolean
+SinglePixelPackedSampleModel,getBitMasks(),int[]
+SinglePixelPackedSampleModel,getBitOffsets(),int[]
+SinglePixelPackedSampleModel,"getDataElements(int x, int y, Object obj, DataBuffer data)",Object
+SinglePixelPackedSampleModel,getNumDataElements(),int
+SinglePixelPackedSampleModel,"getOffset(int x, int y)",int
+SinglePixelPackedSampleModel,"getPixel(int x, int y, int[] iArray, DataBuffer data)",int[]
+SinglePixelPackedSampleModel,"getPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",int[]
+SinglePixelPackedSampleModel,"getSample(int x, int y, int b, DataBuffer data)",int
+SinglePixelPackedSampleModel,"getSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",int[]
+SinglePixelPackedSampleModel,getSampleSize(),int[]
+SinglePixelPackedSampleModel,getSampleSize(int band),int
+SinglePixelPackedSampleModel,getScanlineStride(),int
+SinglePixelPackedSampleModel,hashCode(),int
+SinglePixelPackedSampleModel,"setDataElements(int x, int y, Object obj, DataBuffer data)",void
+SinglePixelPackedSampleModel,"setPixel(int x, int y, int[] iArray, DataBuffer data)",void
+SinglePixelPackedSampleModel,"setPixels(int x, int y, int w, int h, int[] iArray, DataBuffer data)",void
+SinglePixelPackedSampleModel,"setSample(int x, int y, int b, int s, DataBuffer data)",void
+SinglePixelPackedSampleModel,"setSamples(int x, int y, int w, int h, int b, int[] iArray, DataBuffer data)",void
+VolatileImage,contentsLost(),abstract boolean
+VolatileImage,createGraphics(),abstract Graphics2D
+VolatileImage,getCapabilities(),abstract ImageCapabilities
+VolatileImage,getGraphics(),Graphics
+VolatileImage,getHeight(),abstract int
+VolatileImage,getSnapshot(),abstract BufferedImage
+VolatileImage,getSource(),ImageProducer
+VolatileImage,getTransparency(),int
+VolatileImage,getWidth(),abstract int
+VolatileImage,validate(GraphicsConfiguration gc),abstract int
+WritableRaster,"createWritableChild(int parentX, int parentY, int w, int h, int childMinX, int childMinY, int[] bandList)",WritableRaster
+WritableRaster,"createWritableTranslatedChild(int childMinX, int childMinY)",WritableRaster
+WritableRaster,getWritableParent(),WritableRaster
+WritableRaster,"setDataElements(int x, int y, int w, int h, Object inData)",void
+WritableRaster,"setDataElements(int x, int y, Object inData)",void
+WritableRaster,"setDataElements(int x, int y, Raster inRaster)",void
+WritableRaster,"setPixel(int x, int y, double[] dArray)",void
+WritableRaster,"setPixel(int x, int y, float[] fArray)",void
+WritableRaster,"setPixel(int x, int y, int[] iArray)",void
+WritableRaster,"setPixels(int x, int y, int w, int h, double[] dArray)",void
+WritableRaster,"setPixels(int x, int y, int w, int h, float[] fArray)",void
+WritableRaster,"setPixels(int x, int y, int w, int h, int[] iArray)",void
+WritableRaster,"setRect(int dx, int dy, Raster srcRaster)",void
+WritableRaster,setRect(Raster srcRaster),void
+WritableRaster,"setSample(int x, int y, int b, double s)",void
+WritableRaster,"setSample(int x, int y, int b, float s)",void
+WritableRaster,"setSample(int x, int y, int b, int s)",void
+WritableRaster,"setSamples(int x, int y, int w, int h, int b, double[] dArray)",void
+WritableRaster,"setSamples(int x, int y, int w, int h, int b, float[] fArray)",void
+WritableRaster,"setSamples(int x, int y, int w, int h, int b, int[] iArray)",void

@@ -1,0 +1,1551 @@
+Sample: Authenticator_1
+----------------------------------------------------------------
+================================================================
+
+Sample: Authenticator_2
+----------------------------------------------------------------
+================================================================
+
+Sample: Authenticator_4
+----------------------------------------------------------------
+================================================================
+
+Sample: CacheRequest_4
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/CacheRequest_4.java:5: error: <anonymous CacheRequest_4$1> is not abstract and does not override abstract method getBody() in CacheRequest
+        CacheRequest request = new CacheRequest() {
+                                                  ^
+1 error
+
+
+================================================================
+
+Sample: CookieHandler_1
+----------------------------------------------------------------
+stdout:
+null
+
+================================================================
+
+Sample: CookieHandler_2
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramPacket_5
+----------------------------------------------------------------
+stdout:
+Length of the data in the datagram packet: 1024
+
+================================================================
+
+Sample: DatagramPacket_6
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: DatagramPacket_7
+----------------------------------------------------------------
+stdout:
+IP Address: 142.251.41.36
+
+================================================================
+
+Sample: DatagramPacket_8
+----------------------------------------------------------------
+stdout:
+Port number: 1234
+
+================================================================
+
+Sample: DatagramPacket_11
+----------------------------------------------------------------
+================================================================
+
+Sample: DatagramPacket_12
+----------------------------------------------------------------
+stdout:
+New port number: 4446
+
+================================================================
+
+Sample: HttpCookie_1
+----------------------------------------------------------------
+stdout:
+Cookie Name: name
+
+================================================================
+
+Sample: HttpCookie_2
+----------------------------------------------------------------
+stdout:
+Cookie value: value
+
+================================================================
+
+Sample: HttpCookie_3
+----------------------------------------------------------------
+stdout:
+This is a comment
+
+================================================================
+
+Sample: HttpCookie_4
+----------------------------------------------------------------
+stdout:
+example.com
+
+================================================================
+
+Sample: HttpURLConnection_1
+----------------------------------------------------------------
+================================================================
+
+Sample: HttpURLConnection_2
+----------------------------------------------------------------
+stdout:
+Response Code: 200
+
+================================================================
+
+Sample: HttpURLConnection_4
+----------------------------------------------------------------
+stdout:
+Response Code: 200
+
+================================================================
+
+Sample: HttpURLConnection_10
+----------------------------------------------------------------
+stdout:
+Response Code: 200
+
+================================================================
+
+Sample: IDN_1
+----------------------------------------------------------------
+stdout:
+example.com
+
+================================================================
+
+Sample: IDN_2
+----------------------------------------------------------------
+stdout:
+example.com
+
+================================================================
+
+Sample: IDN_3
+----------------------------------------------------------------
+stdout:
+example.com
+
+================================================================
+
+Sample: IDN_4
+----------------------------------------------------------------
+stdout:
+example.com
+
+================================================================
+
+Sample: InetAddress_1
+----------------------------------------------------------------
+stdout:
+Host Name: www.google.com
+IP Address: 142.251.41.36
+
+================================================================
+
+Sample: InetAddress_2
+----------------------------------------------------------------
+stdout:
+My IP Address is: 127.0.1.1
+
+================================================================
+
+Sample: InetAddress_3
+----------------------------------------------------------------
+stdout:
+Host Name: wrybill
+
+================================================================
+
+Sample: InetAddress_4
+----------------------------------------------------------------
+stdout:
+IP Address: 142.251.41.36
+
+================================================================
+
+Sample: InetAddress_5
+----------------------------------------------------------------
+stdout:
+Is reachable: false
+
+================================================================
+
+Sample: InetSocketAddress_2
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/InetSocketAddress_2.java:11: error: exception IOException is never thrown in body of corresponding try statement
+        } catch (IOException e) {
+          ^
+1 error
+
+
+================================================================
+
+Sample: InetSocketAddress_3
+----------------------------------------------------------------
+stdout:
+Port: 8080
+
+================================================================
+
+Sample: InetSocketAddress_5
+----------------------------------------------------------------
+stdout:
+Host Name: www.example.com
+
+================================================================
+
+Sample: InterfaceAddress_2
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/InterfaceAddress_2.java:15: error: cannot find symbol
+                for (InetAddress address : Collections.list(networkInterface.getInetAddresses())) {
+                                           ^
+  symbol:   variable Collections
+  location: class InterfaceAddress_2
+1 error
+
+
+================================================================
+
+Sample: JarURLConnection_2
+----------------------------------------------------------------
+stdout:
+file:/path/to/your.jar
+
+================================================================
+
+Sample: JarURLConnection_3
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:92)
+	at JarURLConnection_3.main(JarURLConnection_3.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: JarURLConnection_4
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class sun.net.www.protocol.http.HttpURLConnection cannot be cast to class java.net.JarURLConnection (sun.net.www.protocol.http.HttpURLConnection and java.net.JarURLConnection are in module java.base of loader 'bootstrap')
+	at JarURLConnection_4.main(JarURLConnection_4.java:8)
+
+================================================================
+
+Sample: JarURLConnection_5
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarEntry(JarURLConnection.java:97)
+	at JarURLConnection_5.main(JarURLConnection_5.java:12)
+
+================================================================
+
+Sample: JarURLConnection_8
+----------------------------------------------------------------
+stdout:
+file:/path/to/your.jar
+
+================================================================
+
+Sample: JarURLConnection_9
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:92)
+	at JarURLConnection_9.main(JarURLConnection_9.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: JarURLConnection_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class sun.net.www.protocol.http.HttpURLConnection cannot be cast to class java.net.JarURLConnection (sun.net.www.protocol.http.HttpURLConnection and java.net.JarURLConnection are in module java.base of loader 'bootstrap')
+	at JarURLConnection_10.main(JarURLConnection_10.java:8)
+
+================================================================
+
+Sample: JarURLConnection_11
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarEntry(JarURLConnection.java:97)
+	at JarURLConnection_11.main(JarURLConnection_11.java:12)
+
+================================================================
+
+Sample: JarURLConnection_14
+----------------------------------------------------------------
+stdout:
+file:/path/to/your.jar
+
+================================================================
+
+Sample: JarURLConnection_15
+----------------------------------------------------------------
+stderr:
+java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:92)
+	at JarURLConnection_15.main(JarURLConnection_15.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: JarURLConnection_16
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.ClassCastException: class sun.net.www.protocol.http.HttpURLConnection cannot be cast to class java.net.JarURLConnection (sun.net.www.protocol.http.HttpURLConnection and java.net.JarURLConnection are in module java.base of loader 'bootstrap')
+	at JarURLConnection_16.main(JarURLConnection_16.java:8)
+
+================================================================
+
+Sample: JarURLConnection_17
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.nio.file.NoSuchFileException: /path/to/your.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:148)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1428)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:718)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:252)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:181)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:346)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:103)
+	at java.base/sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:72)
+	at java.base/sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:153)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:131)
+	at java.base/sun.net.www.protocol.jar.JarURLConnection.getJarEntry(JarURLConnection.java:97)
+	at JarURLConnection_17.main(JarURLConnection_17.java:12)
+
+================================================================
+
+Sample: JarURLConnection_20
+----------------------------------------------------------------
+stdout:
+file:/path/to/your.jar
+
+================================================================
+
+Sample: MulticastSocket_3
+----------------------------------------------------------------
+stderr:
+Note: ./java_net/javaFiles/MulticastSocket_3.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: MulticastSocket_4
+----------------------------------------------------------------
+stderr:
+Note: ./java_net/javaFiles/MulticastSocket_4.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+================================================================
+
+Sample: MulticastSocket_5
+----------------------------------------------------------------
+================================================================
+
+Sample: Proxy_8
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: Proxy_10
+----------------------------------------------------------------
+stderr:
+Exception in thread "main" java.lang.IllegalArgumentException: type HTTP is not compatible with address null
+	at java.base/java.net.Proxy.<init>(Proxy.java:95)
+	at Proxy_10.main(Proxy_10.java:5)
+
+================================================================
+
+Sample: ProxySelector_1
+----------------------------------------------------------------
+stdout:
+sun.net.spi.DefaultProxySelector@4e718207
+
+================================================================
+
+Sample: ProxySelector_2
+----------------------------------------------------------------
+stdout:
+DIRECT: null
+
+================================================================
+
+Sample: ProxySelector_3
+----------------------------------------------------------------
+================================================================
+
+Sample: ServerSocket_4
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: ServerSocket_5
+----------------------------------------------------------------
+================================================================
+
+Sample: ServerSocket_6
+----------------------------------------------------------------
+stdout:
+IP Address: 0.0.0.0
+
+================================================================
+
+Sample: ServerSocket_7
+----------------------------------------------------------------
+stdout:
+Local port: 37967
+
+================================================================
+
+Sample: ServerSocket_8
+----------------------------------------------------------------
+stdout:
+Receive Buffer Size: 65536
+
+================================================================
+
+Sample: ServerSocket_10
+----------------------------------------------------------------
+stdout:
+IP Address: 0.0.0.0
+
+================================================================
+
+Sample: ServerSocket_12
+----------------------------------------------------------------
+stdout:
+Receive buffer size set to: 1152
+
+================================================================
+
+Sample: ServerSocket_14
+----------------------------------------------------------------
+stdout:
+Server is listening on port 8080
+
+================================================================
+
+Sample: ServerSocket_17
+----------------------------------------------------------------
+================================================================
+
+Sample: ServerSocket_18
+----------------------------------------------------------------
+stdout:
+SoTimeout: 0
+
+================================================================
+
+Sample: ServerSocket_19
+----------------------------------------------------------------
+stdout:
+ServerSocket is set to reuse address
+
+================================================================
+
+Sample: ServerSocket_20
+----------------------------------------------------------------
+stdout:
+Reuse Address: true
+
+================================================================
+
+Sample: Socket_3
+----------------------------------------------------------------
+timeout: process took too long
+================================================================
+
+Sample: Socket_4
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_4.main(Socket_4.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_5
+----------------------------------------------------------------
+================================================================
+
+Sample: Socket_6
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at Socket_6.main(Socket_6.java:9)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_7
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at Socket_7.main(Socket_7.java:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_8
+----------------------------------------------------------------
+stdout:
+Socket is bound to localhost on port 8080
+
+================================================================
+
+Sample: Socket_9
+----------------------------------------------------------------
+stdout:
+IP Address: 142.251.41.36
+
+================================================================
+
+Sample: Socket_10
+----------------------------------------------------------------
+stdout:
+Port number: 80
+
+================================================================
+
+Sample: Socket_11
+----------------------------------------------------------------
+================================================================
+
+Sample: Socket_12
+----------------------------------------------------------------
+stdout:
+Timeout value: 0
+
+================================================================
+
+Sample: Socket_13
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_13.main(Socket_13.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_14
+----------------------------------------------------------------
+stdout:
+TCP_NODELAY is disabled
+
+================================================================
+
+Sample: Socket_15
+----------------------------------------------------------------
+================================================================
+
+Sample: Socket_16
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/Socket_16.java:6: error: unreported exception SocketException; must be caught or declared to be thrown
+        boolean reuseAddress = socket.getReuseAddress();
+                                                     ^
+1 error
+
+
+================================================================
+
+Sample: Socket_17
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_17.main(Socket_17.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_18
+----------------------------------------------------------------
+stdout:
+Keep Alive: false
+
+================================================================
+
+Sample: Socket_19
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_19.main(Socket_19.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_20
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_20.main(Socket_20.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_21
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_21.main(Socket_21.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_22
+----------------------------------------------------------------
+stdout:
+Send buffer size: 23040
+
+================================================================
+
+Sample: Socket_23
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_23.main(Socket_23.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_24
+----------------------------------------------------------------
+stdout:
+Receive buffer size: 65536
+
+================================================================
+
+Sample: Socket_25
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_25.main(Socket_25.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_26
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/Socket_26.java:5: error: non-static method setPerformancePreferences(int,int,int) cannot be referenced from a static context
+        Socket.setPerformancePreferences(1, 2, 1);
+              ^
+1 error
+
+
+================================================================
+
+Sample: Socket_27
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_27.main(Socket_27.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_28
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_28.main(Socket_28.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_29
+----------------------------------------------------------------
+stdout:
+Traffic class set successfully!
+
+================================================================
+
+Sample: Socket_30
+----------------------------------------------------------------
+stdout:
+Traffic class: 0
+
+================================================================
+
+Sample: Socket_33
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_33.main(Socket_33.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_35
+----------------------------------------------------------------
+================================================================
+
+Sample: Socket_36
+----------------------------------------------------------------
+stdout:
+Timeout value: 0
+
+================================================================
+
+Sample: Socket_37
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_37.main(Socket_37.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_38
+----------------------------------------------------------------
+stdout:
+TCP_NODELAY is disabled
+
+================================================================
+
+Sample: Socket_39
+----------------------------------------------------------------
+================================================================
+
+Sample: Socket_40
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/Socket_40.java:6: error: unreported exception SocketException; must be caught or declared to be thrown
+        boolean reuseAddress = socket.getReuseAddress();
+                                                     ^
+1 error
+
+
+================================================================
+
+Sample: Socket_41
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_41.main(Socket_41.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_42
+----------------------------------------------------------------
+stdout:
+Keep Alive: false
+
+================================================================
+
+Sample: Socket_43
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_43.main(Socket_43.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_44
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_44.main(Socket_44.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_45
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_45.main(Socket_45.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_46
+----------------------------------------------------------------
+stdout:
+Send buffer size: 23040
+
+================================================================
+
+Sample: Socket_47
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_47.main(Socket_47.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_48
+----------------------------------------------------------------
+stdout:
+Receive buffer size: 65536
+
+================================================================
+
+Sample: Socket_49
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/Socket_49.java:5: error: non-static method setPerformancePreferences(int,int,int) cannot be referenced from a static context
+        Socket.setPerformancePreferences(1, 2, 1);
+              ^
+1 error
+
+
+================================================================
+
+Sample: Socket_50
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_50.main(Socket_50.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: Socket_51
+----------------------------------------------------------------
+stderr:
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at Socket_51.main(Socket_51.java:7)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.execute(Main.java:419)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.run(Main.java:192)
+	at jdk.compiler/com.sun.tools.javac.launcher.Main.main(Main.java:132)
+
+================================================================
+
+Sample: SocketImpl_3
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/SocketImpl_3.java:7: error: getInetAddress() has protected access in SocketImpl
+            InetAddress localHost = SocketImpl.getInetAddress();
+                                              ^
+1 error
+
+
+================================================================
+
+Sample: SocketPermission_14
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: SocketPermission_15
+----------------------------------------------------------------
+stdout:
+true
+true
+
+================================================================
+
+Sample: SocketPermission_17
+----------------------------------------------------------------
+stdout:
+connect,resolve
+
+================================================================
+
+Sample: URL_3
+----------------------------------------------------------------
+================================================================
+
+Sample: URL_4
+----------------------------------------------------------------
+stdout:
+http://www.example.com
+
+================================================================
+
+Sample: URLConnection_1
+----------------------------------------------------------------
+stdout:
+Connection established successfully
+
+================================================================
+
+Sample: URLConnection_2
+----------------------------------------------------------------
+stdout:
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+================================================================
+
+Sample: URLConnection_3
+----------------------------------------------------------------
+================================================================
+
+Sample: URLConnection_4
+----------------------------------------------------------------
+stdout:
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+================================================================
+
+Sample: URLConnection_5
+----------------------------------------------------------------
+stdout:
+Content Type: text/html; charset=UTF-8
+
+================================================================
+
+Sample: URLDecoder_1
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/URLDecoder_1.java:7: error: unreported exception UnsupportedEncodingException; must be caught or declared to be thrown
+        String decoded = URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+                                          ^
+1 error
+
+
+================================================================
+
+Sample: URLDecoder_5
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: URLDecoder_6
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/URLDecoder_6.java:7: error: unreported exception UnsupportedEncodingException; must be caught or declared to be thrown
+        String decoded = URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+                                          ^
+1 error
+
+
+================================================================
+
+Sample: URLDecoder_8
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: URLDecoder_10
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/URLDecoder_10.java:7: error: unreported exception UnsupportedEncodingException; must be caught or declared to be thrown
+        String decoded = URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+                                          ^
+1 error
+
+
+================================================================
+
+Sample: URLDecoder_12
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: URLDecoder_14
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/URLDecoder_14.java:7: error: unreported exception UnsupportedEncodingException; must be caught or declared to be thrown
+        String decoded = URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+                                          ^
+1 error
+
+
+================================================================
+
+Sample: URLDecoder_16
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: URLDecoder_18
+----------------------------------------------------------------
+output:
+./java_net/javaFiles/URLDecoder_18.java:7: error: unreported exception UnsupportedEncodingException; must be caught or declared to be thrown
+        String decoded = URLDecoder.decode(s, StandardCharsets.UTF_8.name());
+                                          ^
+1 error
+
+
+================================================================
+
+Sample: URLDecoder_20
+----------------------------------------------------------------
+stdout:
+Hello World
+
+================================================================
+
+Sample: URLEncoder_1
+----------------------------------------------------------------
+stdout:
+Hello+World%21
+
+================================================================
+
+Sample: URLEncoder_2
+----------------------------------------------------------------
+stdout:
+Hello+World%21
+
+================================================================
+
+Sample: URLPermission_1
+----------------------------------------------------------------
+stdout:
+true
+
+================================================================
+
+Sample: URLPermission_2
+----------------------------------------------------------------
+stdout:
+true
+false
+
+================================================================
+
+Sample: URLPermission_3
+----------------------------------------------------------------
+stdout:
+Hash code: -1875034328
+
+================================================================
+
+Sample: URLPermission_4
+----------------------------------------------------------------
+stdout:
+Actions: CONNECT,RESOLVE:
+
+================================================================
+

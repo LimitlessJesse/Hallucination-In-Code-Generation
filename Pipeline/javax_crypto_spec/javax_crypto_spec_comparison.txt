@@ -1,0 +1,438 @@
+Sample: 0 DESedeKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DESedeKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DESedeKeySpec(byte[] key)`: This constructor creates a new DESedeKeySpec with the specified key.
+
+2. `byte[] getKey()`: This method returns the key.
+
+3. `int getKeyLength()`: This method returns the length of the key in bytes.
+
+4. `String getAlgorithm()`: This method returns the name of the algorithm associated with this key spec.
+
+5. `String getFormat()`: This method returns the name of the format associated with this key spec.
+================================================================
+
+Sample: 1 DESKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DESKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DESKeySpec(byte[] key, int offset, int len)`: This constructor creates a new DESKeySpec with the specified key data.
+
+2. `byte[] getKey()`: This method returns the key data.
+
+3. `int getKeyLength()`: This method returns the length of the key data.
+
+4. `int getOffset()`: This method returns the offset into the key data.
+
+5. `int getLength()`: This method returns the length of the key data.
+================================================================
+
+Sample: 2 DHGenParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DHGenParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DHGenParameterSpec(int strength)`: This constructor creates a new DHGenParameterSpec with the specified key strength.
+
+2. `DHGenParameterSpec(BigInteger p, BigInteger g)`: This constructor creates a new DHGenParameterSpec with the specified prime and base.
+
+3. `BigInteger getP()`: This method returns the prime modulus.
+
+4. `BigInteger getG()`: This method returns the base.
+
+5. `int getStrength()`: This method returns the key strength.
+================================================================
+
+Sample: 3 DHParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DHParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DHParameterSpec(BigInteger p, BigInteger g)`: This constructor creates a new DHParameterSpec with the specified prime and base.
+
+2. `BigInteger getP()`: This method returns the prime modulus.
+
+3. `BigInteger getG()`: This method returns the base.
+
+4. `int getL()`: This method returns the length in bits of the prime modulus.
+
+5. `int getN()`: This method returns the length in bits of the prime modulus minus one.
+
+6. `int getM()`: This method returns the length in bits of the prime modulus minus two.
+
+7. `int getJ()`: This method returns the length in bits of the prime modulus minus three.
+
+8. `int getK()`: This method returns the length in bits of the prime modulus minus four.
+
+9. `int getQ()`: This method returns the length in bits of the prime modulus minus five.
+
+10. `int getS()`: This method returns the length in bits of the prime modulus minus six.
+
+11. `int getT()`: This method returns the length in bits of the prime modulus minus seven.
+
+12. `int getU()`: This method returns the length in bits of the prime modulus minus eight.
+
+13. `int getV()`: This method returns the length in bits of the prime modulus minus nine.
+
+14. `int getW()`: This method returns the length in bits of the prime modulus minus ten.
+
+15. `int getX()`: This method returns the length in bits of the prime modulus minus eleven.
+
+16. `int getY()`: This method returns the length in bits of the prime modulus minus twelve.
+
+17. `int getZ()`: This method returns the length in bits of the prime modulus minus thirteen.
+
+18. `int getR()`: This method returns the length in bits of the prime modulus minus fourteen.
+
+19. `int getA()`: This method returns the length in bits of the prime modulus minus fifteen.
+
+20. `int getB()`: This method returns the length in bits of the prime modulus minus sixteen.
+================================================================
+
+Sample: 4 DHPrivateKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DHPrivateKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `BigInteger getX()`: This method returns the private value x for this Diffie-Hellman key.
+
+2. `BigInteger getP()`: This method returns the prime modulus p for this Diffie-Hellman key.
+
+3. `BigInteger getG()`: This method returns the base g for this Diffie-Hellman key.
+
+4. `BigInteger getL()`: This method returns the private value l for this Diffie-Hellman key.
+
+5. `BigInteger getQ()`: This method returns the group order q for this Diffie-Hellman key.
+
+6. `BigInteger getY()`: This method returns the public value y for this Diffie-Hellman key.
+
+7. `BigInteger getJ()`: This method returns the private value j for this Diffie-Hellman key.
+
+8. `BigInteger getV()`: This method returns the private value v for this Diffie-Hellman key.
+
+9. `BigInteger getR()`: This method returns the private value r for this Diffie-Hellman key.
+
+10. `BigInteger getS()`: This method returns the private value s for this Diffie-Hellman key.
+================================================================
+
+Sample: 5 DHPublicKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.DHPublicKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `DHPublicKeySpec(BigInteger y, BigInteger p, BigInteger g)`: This constructor creates a new DHPublicKeySpec with the specified y, p, and g values.
+
+2. `BigInteger getG()`: This method returns the g value of this DHPublicKeySpec.
+
+3. `BigInteger getP()`: This method returns the p value of this DHPublicKeySpec.
+
+4. `BigInteger getY()`: This method returns the y value of this DHPublicKeySpec.
+
+5. `boolean equals(Object obj)`: This method compares this DHPublicKeySpec with the specified object for equality.
+
+6. `int hashCode()`: This method returns the hash code value for this DHPublicKeySpec.
+================================================================
+
+Sample: 6 GCMParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.GCMParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `GCMParameterSpec(int tLen, byte[] iv)`: This constructor creates a new GCMParameterSpec with the specified tag length and initialization vector.
+
+2. `byte[] getIV()`: This method returns the initialization vector used in this GCMParameterSpec.
+
+3. `int getTLen()`: This method returns the tag length used in this GCMParameterSpec.
+
+4. `boolean equals(Object obj)`: This method compares the specified object with this GCMParameterSpec for equality.
+
+5. `int hashCode()`: This method returns the hash code value for this GCMParameterSpec.
+================================================================
+
+Sample: 7 IvParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.IvParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `IvParameterSpec(byte[] iv)`: This constructor creates an IvParameterSpec with the specified initialization vector.
+
+2. `byte[] getIV()`: This method returns the initialization vector.
+
+3. `int hashCode()`: This method returns the hash code value for this object.
+
+4. `boolean equals(Object obj)`: This method compares this IvParameterSpec with the specified object.
+
+5. `String toString()`: This method returns a string representation of this IvParameterSpec.
+================================================================
+
+Sample: 8 OAEPParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.OAEPParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `OAEPParameterSpec(String mgfAlgorithm, String maskAlgorithm)`: This constructor creates a new OAEPParameterSpec with the specified mask generation function (MGF) algorithm and mask algorithm.
+
+2. `String getMGFAlgorithm()`: This method returns the mask generation function (MGF) algorithm.
+
+3. `String getMaskAlgorithm()`: This method returns the mask algorithm.
+
+4. `boolean equals(Object obj)`: This method compares this OAEPParameterSpec with the specified object.
+
+5. `int hashCode()`: This method returns the hash code value for this OAEPParameterSpec.
+================================================================
+
+Sample: 9 PBEKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.PBEKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PBEKeySpec(char[] password, byte[] salt, int iterationCount, int keyLength)`: This constructor creates a new PBEKeySpec with the specified password, salt, iteration count, and key length.
+
+2. `byte[] getSalt()`: This method returns the salt used in this PBEKeySpec.
+
+3. `int getIterationCount()`: This method returns the iteration count used in this PBEKeySpec.
+
+4. `int getKeyLength()`: This method returns the key length used in this PBEKeySpec.
+
+5. `char[] getPassword()`: This method returns the password used in this PBEKeySpec.
+================================================================
+
+Sample: 10 PBEParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.PBEParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `int getIterationCount()`: This method returns the iteration count.
+2. `byte[] getSalt()`: This method returns the salt.
+3. `int getKeyLength()`: This method returns the key length.
+4. `byte[] getIV()`: This method returns the initialization vector.
+5. `byte[] getPassword()`: This method returns the password.
+================================================================
+
+Sample: 11 PSource
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.PSource package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `PSource.PSpecified`: This method returns a new `PSource.PSpecified` instance.
+
+2. `PSource.PSalted`: This method returns a new `PSource.PSalted` instance.
+
+3. `PSource.PStored`: This method returns a new `PSource.PStored` instance.
+
+4. `PSource.PGenerate`: This method returns a new `PSource.PGenerate` instance.
+
+5. `PSource.PVerified`: This method returns a new `PSource.PVerified` instance.
+================================================================
+
+Sample: 12 PSource.PSpecified
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.PSource.PSpecified package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `boolean set(int index, E element)`: This method replaces the element at the specified position in this list with the specified element.
+
+2. `E remove(int index)`: This method removes the element at the specified position in this list.
+
+3. `boolean addAll(Collection<? extends E> c)`: This method appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator.
+
+4. `void clear()`: This method removes all of the elements from this list.
+
+5. `E get(int index)`: This method returns the element at the specified position in this list.
+================================================================
+
+Sample: 13 RC2ParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.RC2ParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RC2ParameterSpec(int keySize, int rounds)`: This constructor creates a new RC2ParameterSpec object with the specified key size and number of rounds.
+
+2. `int getKeySize()`: This method returns the key size.
+
+3. `int getRounds()`: This method returns the number of rounds.
+
+4. `boolean equals(Object obj)`: This method compares this RC2ParameterSpec object with the specified object.
+
+5. `int hashCode()`: This method returns a hash code for this RC2ParameterSpec object.
+================================================================
+
+Sample: 14 RC5ParameterSpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.RC5ParameterSpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `RC5ParameterSpec(int rounds, byte[] key)`: This constructor creates a new RC5ParameterSpec object with the specified number of rounds and key.
+
+2. `int getRounds()`: This method returns the number of rounds used in the RC5 algorithm.
+
+3. `byte[] getKey()`: This method returns the key used in the RC5 algorithm.
+
+4. `int getEffectiveKeyBits()`: This method returns the effective key size in bits.
+
+5. `int getBlockSize()`: This method returns the block size in bytes.
+================================================================
+
+Sample: 15 SecretKeySpec
+----------------------------------------------------------------
+
+@@ Instruction
+I want to use javax.crypto.spec.SecretKeySpec package from Java
+recommend a list of useful with at most 5 apis for this package, exlclude method inherent from its parent class
+For each api method specify its return type and parameters in the below format
+
+format: return_type method_name()
+
+For example:
+`boolean add(E e)`: This method appends the specified element to the end of this list.
+
+@@ Response
+1. `SecretKeySpec(byte[] key, String algorithm)`: This constructor creates a new SecretKeySpec with the specified key data and algorithm name.
+
+2. `byte[] getEncoded()`: This method returns the key material represented by this key.
+
+3. `String getAlgorithm()`: This method returns the name of the primary algorithm this key is used with.
+
+4. `String getFormat()`: This method returns the name of the encoding format of the key.
+
+5. `String getProvider()`: This method returns the name of the provider that generated this key.
+================================================================
+

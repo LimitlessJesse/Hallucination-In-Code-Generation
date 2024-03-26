@@ -1,0 +1,90 @@
+Sample: ORB_1
+----------------------------------------------------------------
+output:
+./org_omg_CORBA/javaFiles/ORB_1.java:1: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.ORB;
+                    ^
+./org_omg_CORBA/javaFiles/ORB_1.java:5: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+        ^
+  symbol:   class ORB
+  location: class ORB_1
+./org_omg_CORBA/javaFiles/ORB_1.java:5: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+                  ^
+  symbol:   variable ORB
+  location: class ORB_1
+3 errors
+
+
+================================================================
+
+Sample: ORB_3
+----------------------------------------------------------------
+output:
+./org_omg_CORBA/javaFiles/ORB_3.java:1: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.ORB;
+                    ^
+./org_omg_CORBA/javaFiles/ORB_3.java:2: error: package org.omg.CORBA.ORBPackage does not exist
+import org.omg.CORBA.ORBPackage.InvalidName;
+                               ^
+./org_omg_CORBA/javaFiles/ORB_3.java:3: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.Object;
+                    ^
+./org_omg_CORBA/javaFiles/ORB_3.java:4: error: package org.omg.CORBA.ORBPackage does not exist
+import org.omg.CORBA.ORBPackage.NameValuePair;
+                               ^
+./org_omg_CORBA/javaFiles/ORB_3.java:5: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.NamingContextExt;
+                    ^
+./org_omg_CORBA/javaFiles/ORB_3.java:9: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+        ^
+  symbol:   class ORB
+  location: class ORB_3
+./org_omg_CORBA/javaFiles/ORB_3.java:9: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+                  ^
+  symbol:   variable ORB
+  location: class ORB_3
+./org_omg_CORBA/javaFiles/ORB_3.java:10: error: cannot find symbol
+        NamingContextExt namingContext = (NamingContextExt) orb.resolve_initial_references("NameService");
+        ^
+  symbol:   class NamingContextExt
+  location: class ORB_3
+./org_omg_CORBA/javaFiles/ORB_3.java:10: error: cannot find symbol
+        NamingContextExt namingContext = (NamingContextExt) orb.resolve_initial_references("NameService");
+                                          ^
+  symbol:   class NamingContextExt
+  location: class ORB_3
+./org_omg_CORBA/javaFiles/ORB_3.java:14: error: cannot find symbol
+        } catch (InvalidName e) {
+                 ^
+  symbol:   class InvalidName
+  location: class ORB_3
+10 errors
+
+
+================================================================
+
+Sample: ORB_5
+----------------------------------------------------------------
+output:
+./org_omg_CORBA/javaFiles/ORB_5.java:1: error: package org.omg.CORBA does not exist
+import org.omg.CORBA.ORB;
+                    ^
+./org_omg_CORBA/javaFiles/ORB_5.java:5: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+        ^
+  symbol:   class ORB
+  location: class ORB_5
+./org_omg_CORBA/javaFiles/ORB_5.java:5: error: cannot find symbol
+        ORB orb = ORB.init(args, null);
+                  ^
+  symbol:   variable ORB
+  location: class ORB_5
+3 errors
+
+
+================================================================
+

@@ -1,0 +1,36 @@
+ClassName,Method,Return Type
+JMXConnectionNotification,getConnectionId(),String
+JMXConnectorFactory,connect(JMXServiceURL serviceURL),static JMXConnector
+JMXConnectorFactory,"connect(JMXServiceURL serviceURL, Map<String,?> environment)",static JMXConnector
+JMXConnectorFactory,"newJMXConnector(JMXServiceURL serviceURL, Map<String,?> environment)",static JMXConnector
+JMXConnectorServer,"connectionClosed(String connectionId, String message, Object userData)",protected void
+JMXConnectorServer,"connectionFailed(String connectionId, String message, Object userData)",protected void
+JMXConnectorServer,"connectionOpened(String connectionId, String message, Object userData)",protected void
+JMXConnectorServer,getConnectionIds(),String[]
+JMXConnectorServer,getMBeanServer(),MBeanServer
+JMXConnectorServer,getNotificationInfo(),MBeanNotificationInfo[]
+JMXConnectorServer,postDeregister(),void
+JMXConnectorServer,postRegister(Boolean registrationDone),void
+JMXConnectorServer,preDeregister(),void
+JMXConnectorServer,"preRegister(MBeanServer mbs, ObjectName name)",ObjectName
+JMXConnectorServer,setMBeanServerForwarder(MBeanServerForwarder mbsf),void
+JMXConnectorServer,"toJMXConnector(Map<String,?> env)",JMXConnector
+JMXConnectorServerFactory,"newJMXConnectorServer(JMXServiceURL serviceURL, Map<String,?> environment, MBeanServer mbeanServer)",static JMXConnectorServer
+JMXPrincipal,equals(Object o),boolean
+JMXPrincipal,getName(),String
+JMXPrincipal,hashCode(),int
+JMXPrincipal,toString(),String
+JMXServiceURL,equals(Object obj),boolean
+JMXServiceURL,getHost(),String
+JMXServiceURL,getPort(),int
+JMXServiceURL,getProtocol(),String
+JMXServiceURL,getURLPath(),String
+JMXServiceURL,hashCode(),int
+JMXServiceURL,toString(),String
+NotificationResult,getEarliestSequenceNumber(),long
+NotificationResult,getNextSequenceNumber(),long
+NotificationResult,getTargetedNotifications(),TargetedNotification[]
+NotificationResult,toString(),String
+TargetedNotification,getListenerID(),Integer
+TargetedNotification,getNotification(),Notification
+TargetedNotification,toString(),String

@@ -1,0 +1,259 @@
+ClassName,Method,Return Type
+IIOImage,getMetadata(),IIOMetadata
+IIOImage,getNumThumbnails(),int
+IIOImage,getRaster(),Raster
+IIOImage,getRenderedImage(),RenderedImage
+IIOImage,getThumbnail(int index),BufferedImage
+IIOImage,getThumbnails(),List<? extends BufferedImage>
+IIOImage,hasRaster(),boolean
+IIOImage,setMetadata(IIOMetadata metadata),void
+IIOImage,setRaster(Raster raster),void
+IIOImage,setRenderedImage(RenderedImage image),void
+IIOImage,setThumbnails(List<? extends BufferedImage> thumbnails),void
+IIOParam,activateController(),boolean
+IIOParam,getController(),IIOParamController
+IIOParam,getDefaultController(),IIOParamController
+IIOParam,getDestinationOffset(),Point
+IIOParam,getDestinationType(),ImageTypeSpecifier
+IIOParam,getSourceBands(),int[]
+IIOParam,getSourceRegion(),Rectangle
+IIOParam,getSourceXSubsampling(),int
+IIOParam,getSourceYSubsampling(),int
+IIOParam,getSubsamplingXOffset(),int
+IIOParam,getSubsamplingYOffset(),int
+IIOParam,hasController(),boolean
+IIOParam,setController(IIOParamController controller),void
+IIOParam,setDestinationOffset(Point destinationOffset),void
+IIOParam,setDestinationType(ImageTypeSpecifier destinationType),void
+IIOParam,setSourceBands(int[] sourceBands),void
+IIOParam,setSourceRegion(Rectangle sourceRegion),void
+IIOParam,"setSourceSubsampling(int sourceXSubsampling, int sourceYSubsampling, int subsamplingXOffset, int subsamplingYOffset)",void
+ImageIO,createImageInputStream(Object input),static ImageInputStream
+ImageIO,createImageOutputStream(Object output),static ImageOutputStream
+ImageIO,getCacheDirectory(),static File
+ImageIO,getImageReader(ImageWriter writer),static ImageReader
+ImageIO,getImageReaders(Object input),static Iterator<ImageReader>
+ImageIO,getImageReadersByFormatName(String formatName),static Iterator<ImageReader>
+ImageIO,getImageReadersByMIMEType(String MIMEType),static Iterator<ImageReader>
+ImageIO,getImageReadersBySuffix(String fileSuffix),static Iterator<ImageReader>
+ImageIO,"getImageTranscoders(ImageReader reader, ImageWriter writer)",static Iterator<ImageTranscoder>
+ImageIO,getImageWriter(ImageReader reader),static ImageWriter
+ImageIO,"getImageWriters(ImageTypeSpecifier type, String formatName)",static Iterator<ImageWriter>
+ImageIO,getImageWritersByFormatName(String formatName),static Iterator<ImageWriter>
+ImageIO,getImageWritersByMIMEType(String MIMEType),static Iterator<ImageWriter>
+ImageIO,getImageWritersBySuffix(String fileSuffix),static Iterator<ImageWriter>
+ImageIO,getReaderFileSuffixes(),static String[]
+ImageIO,getReaderFormatNames(),static String[]
+ImageIO,getReaderMIMETypes(),static String[]
+ImageIO,getUseCache(),static boolean
+ImageIO,getWriterFileSuffixes(),static String[]
+ImageIO,getWriterFormatNames(),static String[]
+ImageIO,getWriterMIMETypes(),static String[]
+ImageIO,read(File input),static BufferedImage
+ImageIO,read(ImageInputStream stream),static BufferedImage
+ImageIO,read(InputStream input),static BufferedImage
+ImageIO,read(URL input),static BufferedImage
+ImageIO,scanForPlugins(),static void
+ImageIO,setCacheDirectory(File cacheDirectory),static void
+ImageIO,setUseCache(boolean useCache),static void
+ImageIO,"write(RenderedImage im, String formatName, File output)",static boolean
+ImageIO,"write(RenderedImage im, String formatName, ImageOutputStream output)",static boolean
+ImageIO,"write(RenderedImage im, String formatName, OutputStream output)",static boolean
+ImageReader,abort(),void
+ImageReader,abortRequested(),protected boolean
+ImageReader,addIIOReadProgressListener(IIOReadProgressListener listener),void
+ImageReader,addIIOReadUpdateListener(IIOReadUpdateListener listener),void
+ImageReader,addIIOReadWarningListener(IIOReadWarningListener listener),void
+ImageReader,canReadRaster(),boolean
+ImageReader,"checkReadParamBandSettings(ImageReadParam param, int numSrcBands, int numDstBands)",protected static void
+ImageReader,clearAbortRequest(),protected void
+ImageReader,"computeRegions(ImageReadParam param, int srcWidth, int srcHeight, BufferedImage image, Rectangle srcRegion, Rectangle destRegion)",protected static void
+ImageReader,dispose(),void
+ImageReader,getAspectRatio(int imageIndex),float
+ImageReader,getAvailableLocales(),Locale[]
+ImageReader,getDefaultReadParam(),ImageReadParam
+ImageReader,"getDestination(ImageReadParam param, Iterator<ImageTypeSpecifier> imageTypes, int width, int height)",protected static BufferedImage
+ImageReader,getFormatName(),String
+ImageReader,getHeight(int imageIndex),abstract int
+ImageReader,getImageMetadata(int imageIndex),abstract IIOMetadata
+ImageReader,"getImageMetadata(int imageIndex, String formatName, Set<String> nodeNames)",IIOMetadata
+ImageReader,getImageTypes(int imageIndex),abstract Iterator<ImageTypeSpecifier>
+ImageReader,getInput(),Object
+ImageReader,getLocale(),Locale
+ImageReader,getMinIndex(),int
+ImageReader,getNumImages(boolean allowSearch),abstract int
+ImageReader,getNumThumbnails(int imageIndex),int
+ImageReader,getOriginatingProvider(),ImageReaderSpi
+ImageReader,getRawImageType(int imageIndex),ImageTypeSpecifier
+ImageReader,"getSourceRegion(ImageReadParam param, int srcWidth, int srcHeight)",protected static Rectangle
+ImageReader,getStreamMetadata(),abstract IIOMetadata
+ImageReader,"getStreamMetadata(String formatName, Set<String> nodeNames)",IIOMetadata
+ImageReader,"getThumbnailHeight(int imageIndex, int thumbnailIndex)",int
+ImageReader,"getThumbnailWidth(int imageIndex, int thumbnailIndex)",int
+ImageReader,getTileGridXOffset(int imageIndex),int
+ImageReader,getTileGridYOffset(int imageIndex),int
+ImageReader,getTileHeight(int imageIndex),int
+ImageReader,getTileWidth(int imageIndex),int
+ImageReader,getWidth(int imageIndex),abstract int
+ImageReader,hasThumbnails(int imageIndex),boolean
+ImageReader,isIgnoringMetadata(),boolean
+ImageReader,isImageTiled(int imageIndex),boolean
+ImageReader,isRandomAccessEasy(int imageIndex),boolean
+ImageReader,isSeekForwardOnly(),boolean
+ImageReader,processImageComplete(),protected void
+ImageReader,processImageProgress(float percentageDone),protected void
+ImageReader,processImageStarted(int imageIndex),protected void
+ImageReader,"processImageUpdate(BufferedImage theImage, int minX, int minY, int width, int height, int periodX, int periodY, int[] bands)",protected void
+ImageReader,processPassComplete(BufferedImage theImage),protected void
+ImageReader,"processPassStarted(BufferedImage theImage, int pass, int minPass, int maxPass, int minX, int minY, int periodX, int periodY, int[] bands)",protected void
+ImageReader,processReadAborted(),protected void
+ImageReader,processSequenceComplete(),protected void
+ImageReader,processSequenceStarted(int minIndex),protected void
+ImageReader,processThumbnailComplete(),protected void
+ImageReader,processThumbnailPassComplete(BufferedImage theThumbnail),protected void
+ImageReader,"processThumbnailPassStarted(BufferedImage theThumbnail, int pass, int minPass, int maxPass, int minX, int minY, int periodX, int periodY, int[] bands)",protected void
+ImageReader,processThumbnailProgress(float percentageDone),protected void
+ImageReader,"processThumbnailStarted(int imageIndex, int thumbnailIndex)",protected void
+ImageReader,"processThumbnailUpdate(BufferedImage theThumbnail, int minX, int minY, int width, int height, int periodX, int periodY, int[] bands)",protected void
+ImageReader,processWarningOccurred(String warning),protected void
+ImageReader,"processWarningOccurred(String baseName, String keyword)",protected void
+ImageReader,read(int imageIndex),BufferedImage
+ImageReader,"read(int imageIndex, ImageReadParam param)",abstract BufferedImage
+ImageReader,"readAll(int imageIndex, ImageReadParam param)",IIOImage
+ImageReader,readAll(Iterator<? extends ImageReadParam> params),Iterator<IIOImage>
+ImageReader,"readAsRenderedImage(int imageIndex, ImageReadParam param)",RenderedImage
+ImageReader,readerSupportsThumbnails(),boolean
+ImageReader,"readRaster(int imageIndex, ImageReadParam param)",Raster
+ImageReader,"readThumbnail(int imageIndex, int thumbnailIndex)",BufferedImage
+ImageReader,"readTile(int imageIndex, int tileX, int tileY)",BufferedImage
+ImageReader,"readTileRaster(int imageIndex, int tileX, int tileY)",Raster
+ImageReader,removeAllIIOReadProgressListeners(),void
+ImageReader,removeAllIIOReadUpdateListeners(),void
+ImageReader,removeAllIIOReadWarningListeners(),void
+ImageReader,removeIIOReadProgressListener(IIOReadProgressListener listener),void
+ImageReader,removeIIOReadUpdateListener(IIOReadUpdateListener listener),void
+ImageReader,removeIIOReadWarningListener(IIOReadWarningListener listener),void
+ImageReader,reset(),void
+ImageReader,setInput(Object input),void
+ImageReader,"setInput(Object input, boolean seekForwardOnly)",void
+ImageReader,"setInput(Object input, boolean seekForwardOnly, boolean ignoreMetadata)",void
+ImageReader,setLocale(Locale locale),void
+ImageReadParam,canSetSourceRenderSize(),boolean
+ImageReadParam,getDestination(),BufferedImage
+ImageReadParam,getDestinationBands(),int[]
+ImageReadParam,getSourceMaxProgressivePass(),int
+ImageReadParam,getSourceMinProgressivePass(),int
+ImageReadParam,getSourceNumProgressivePasses(),int
+ImageReadParam,getSourceRenderSize(),Dimension
+ImageReadParam,setDestination(BufferedImage destination),void
+ImageReadParam,setDestinationBands(int[] destinationBands),void
+ImageReadParam,setDestinationType(ImageTypeSpecifier destinationType),void
+ImageReadParam,"setSourceProgressivePasses(int minPass, int numPasses)",void
+ImageReadParam,setSourceRenderSize(Dimension size),void
+ImageTypeSpecifier,"createBanded(ColorSpace colorSpace, int[] bankIndices, int[] bandOffsets, int dataType, boolean hasAlpha, boolean isAlphaPremultiplied)",static ImageTypeSpecifier
+ImageTypeSpecifier,"createBufferedImage(int width, int height)",BufferedImage
+ImageTypeSpecifier,createFromBufferedImageType(int bufferedImageType),static ImageTypeSpecifier
+ImageTypeSpecifier,createFromRenderedImage(RenderedImage image),static ImageTypeSpecifier
+ImageTypeSpecifier,"createGrayscale(int bits, int dataType, boolean isSigned)",static ImageTypeSpecifier
+ImageTypeSpecifier,"createGrayscale(int bits, int dataType, boolean isSigned, boolean isAlphaPremultiplied)",static ImageTypeSpecifier
+ImageTypeSpecifier,"createIndexed(byte[] redLUT, byte[] greenLUT, byte[] blueLUT, byte[] alphaLUT, int bits, int dataType)",static ImageTypeSpecifier
+ImageTypeSpecifier,"createInterleaved(ColorSpace colorSpace, int[] bandOffsets, int dataType, boolean hasAlpha, boolean isAlphaPremultiplied)",static ImageTypeSpecifier
+ImageTypeSpecifier,"createPacked(ColorSpace colorSpace, int redMask, int greenMask, int blueMask, int alphaMask, int transferType, boolean isAlphaPremultiplied)",static ImageTypeSpecifier
+ImageTypeSpecifier,equals(Object o),boolean
+ImageTypeSpecifier,getBitsPerBand(int band),int
+ImageTypeSpecifier,getBufferedImageType(),int
+ImageTypeSpecifier,getColorModel(),ColorModel
+ImageTypeSpecifier,getNumBands(),int
+ImageTypeSpecifier,getNumComponents(),int
+ImageTypeSpecifier,getSampleModel(),SampleModel
+ImageTypeSpecifier,"getSampleModel(int width, int height)",SampleModel
+ImageTypeSpecifier,hashCode(),int
+ImageWriteParam,canOffsetTiles(),boolean
+ImageWriteParam,canWriteCompressed(),boolean
+ImageWriteParam,canWriteProgressive(),boolean
+ImageWriteParam,canWriteTiles(),boolean
+ImageWriteParam,getBitRate(float quality),float
+ImageWriteParam,getCompressionMode(),int
+ImageWriteParam,getCompressionQuality(),float
+ImageWriteParam,getCompressionQualityDescriptions(),String[]
+ImageWriteParam,getCompressionQualityValues(),float[]
+ImageWriteParam,getCompressionType(),String
+ImageWriteParam,getCompressionTypes(),String[]
+ImageWriteParam,getLocale(),Locale
+ImageWriteParam,getLocalizedCompressionTypeName(),String
+ImageWriteParam,getPreferredTileSizes(),Dimension[]
+ImageWriteParam,getProgressiveMode(),int
+ImageWriteParam,getTileGridXOffset(),int
+ImageWriteParam,getTileGridYOffset(),int
+ImageWriteParam,getTileHeight(),int
+ImageWriteParam,getTileWidth(),int
+ImageWriteParam,getTilingMode(),int
+ImageWriteParam,isCompressionLossless(),boolean
+ImageWriteParam,setCompressionMode(int mode),void
+ImageWriteParam,setCompressionQuality(float quality),void
+ImageWriteParam,setCompressionType(String compressionType),void
+ImageWriteParam,setProgressiveMode(int mode),void
+ImageWriteParam,"setTiling(int tileWidth, int tileHeight, int tileGridXOffset, int tileGridYOffset)",void
+ImageWriteParam,setTilingMode(int mode),void
+ImageWriteParam,unsetCompression(),void
+ImageWriteParam,unsetTiling(),void
+ImageWriter,abort(),void
+ImageWriter,abortRequested(),protected boolean
+ImageWriter,addIIOWriteProgressListener(IIOWriteProgressListener listener),void
+ImageWriter,addIIOWriteWarningListener(IIOWriteWarningListener listener),void
+ImageWriter,canInsertEmpty(int imageIndex),boolean
+ImageWriter,canInsertImage(int imageIndex),boolean
+ImageWriter,canRemoveImage(int imageIndex),boolean
+ImageWriter,canReplaceImageMetadata(int imageIndex),boolean
+ImageWriter,canReplacePixels(int imageIndex),boolean
+ImageWriter,canReplaceStreamMetadata(),boolean
+ImageWriter,canWriteEmpty(),boolean
+ImageWriter,canWriteRasters(),boolean
+ImageWriter,canWriteSequence(),boolean
+ImageWriter,clearAbortRequest(),protected void
+ImageWriter,"convertImageMetadata(IIOMetadata inData, ImageTypeSpecifier imageType, ImageWriteParam param)",abstract IIOMetadata
+ImageWriter,"convertStreamMetadata(IIOMetadata inData, ImageWriteParam param)",abstract IIOMetadata
+ImageWriter,dispose(),void
+ImageWriter,endInsertEmpty(),void
+ImageWriter,endReplacePixels(),void
+ImageWriter,endWriteEmpty(),void
+ImageWriter,endWriteSequence(),void
+ImageWriter,getAvailableLocales(),Locale[]
+ImageWriter,"getDefaultImageMetadata(ImageTypeSpecifier imageType, ImageWriteParam param)",abstract IIOMetadata
+ImageWriter,getDefaultStreamMetadata(ImageWriteParam param),abstract IIOMetadata
+ImageWriter,getDefaultWriteParam(),ImageWriteParam
+ImageWriter,getLocale(),Locale
+ImageWriter,"getNumThumbnailsSupported(ImageTypeSpecifier imageType, ImageWriteParam param, IIOMetadata streamMetadata, IIOMetadata imageMetadata)",int
+ImageWriter,getOriginatingProvider(),ImageWriterSpi
+ImageWriter,getOutput(),Object
+ImageWriter,"getPreferredThumbnailSizes(ImageTypeSpecifier imageType, ImageWriteParam param, IIOMetadata streamMetadata, IIOMetadata imageMetadata)",Dimension[]
+ImageWriter,"prepareInsertEmpty(int imageIndex, ImageTypeSpecifier imageType, int width, int height, IIOMetadata imageMetadata, List<? extends BufferedImage> thumbnails, ImageWriteParam param)",void
+ImageWriter,"prepareReplacePixels(int imageIndex, Rectangle region)",void
+ImageWriter,"prepareWriteEmpty(IIOMetadata streamMetadata, ImageTypeSpecifier imageType, int width, int height, IIOMetadata imageMetadata, List<? extends BufferedImage> thumbnails, ImageWriteParam param)",void
+ImageWriter,prepareWriteSequence(IIOMetadata streamMetadata),void
+ImageWriter,processImageComplete(),protected void
+ImageWriter,processImageProgress(float percentageDone),protected void
+ImageWriter,processImageStarted(int imageIndex),protected void
+ImageWriter,processThumbnailComplete(),protected void
+ImageWriter,processThumbnailProgress(float percentageDone),protected void
+ImageWriter,"processThumbnailStarted(int imageIndex, int thumbnailIndex)",protected void
+ImageWriter,"processWarningOccurred(int imageIndex, String warning)",protected void
+ImageWriter,"processWarningOccurred(int imageIndex, String baseName, String keyword)",protected void
+ImageWriter,processWriteAborted(),protected void
+ImageWriter,removeAllIIOWriteProgressListeners(),void
+ImageWriter,removeAllIIOWriteWarningListeners(),void
+ImageWriter,removeIIOWriteProgressListener(IIOWriteProgressListener listener),void
+ImageWriter,removeIIOWriteWarningListener(IIOWriteWarningListener listener),void
+ImageWriter,removeImage(int imageIndex),void
+ImageWriter,"replaceImageMetadata(int imageIndex, IIOMetadata imageMetadata)",void
+ImageWriter,"replacePixels(Raster raster, ImageWriteParam param)",void
+ImageWriter,"replacePixels(RenderedImage image, ImageWriteParam param)",void
+ImageWriter,replaceStreamMetadata(IIOMetadata streamMetadata),void
+ImageWriter,reset(),void
+ImageWriter,setLocale(Locale locale),void
+ImageWriter,setOutput(Object output),void
+ImageWriter,write(IIOImage image),void
+ImageWriter,"write(IIOMetadata streamMetadata, IIOImage image, ImageWriteParam param)",abstract void
+ImageWriter,write(RenderedImage image),void
+ImageWriter,"writeInsert(int imageIndex, IIOImage image, ImageWriteParam param)",void
+ImageWriter,"writeToSequence(IIOImage image, ImageWriteParam param)",void

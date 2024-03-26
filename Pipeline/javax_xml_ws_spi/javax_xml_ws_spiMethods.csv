@@ -1,0 +1,34 @@
+ClassName,Method,Return Type
+Invoker,inject(WebServiceContext webServiceContext),abstract void
+Invoker,"invoke(Method m, Object... args)",abstract Object
+Provider,"createAndPublishEndpoint(String address, Object implementor)",abstract Endpoint
+Provider,"createAndPublishEndpoint(String address, Object implementor, WebServiceFeature... features)",Endpoint
+Provider,"createEndpoint(String bindingId, Class<?> implementorClass, Invoker invoker, WebServiceFeature... features)",Endpoint
+Provider,"createEndpoint(String bindingId, Object implementor)",abstract Endpoint
+Provider,"createEndpoint(String bindingId, Object implementor, WebServiceFeature... features)",Endpoint
+Provider,"createServiceDelegate(URL wsdlDocumentLocation, QName serviceName, Class<? extends Service> serviceClass)",abstract ServiceDelegate
+Provider,"createServiceDelegate(URL wsdlDocumentLocation, QName serviceName, Class<? extends Service> serviceClass, WebServiceFeature... features)",ServiceDelegate
+Provider,"createW3CEndpointReference(String address, QName serviceName, QName portName, List<Element> metadata, String wsdlDocumentLocation, List<Element> referenceParameters)",abstract W3CEndpointReference
+Provider,"createW3CEndpointReference(String address, QName interfaceName, QName serviceName, QName portName, List<Element> metadata, String wsdlDocumentLocation, List<Element> referenceParameters, List<Element> elements, Map<QName,String> attributes)",W3CEndpointReference
+Provider,"getPort(EndpointReference endpointReference, Class<T> serviceEndpointInterface, WebServiceFeature... features)",abstract <T> T
+Provider,provider(),static Provider
+Provider,readEndpointReference(Source eprInfoset),abstract EndpointReference
+ServiceDelegate,"addPort(QName portName, String bindingId, String endpointAddress)",abstract void
+ServiceDelegate,"createDispatch(EndpointReference endpointReference, Class<T> type, Service.Mode mode, WebServiceFeature... features)",abstract <T> Dispatch<T>
+ServiceDelegate,"createDispatch(EndpointReference endpointReference, JAXBContext context, Service.Mode mode, WebServiceFeature... features)",abstract Dispatch<Object>
+ServiceDelegate,"createDispatch(QName portName, Class<T> type, Service.Mode mode)",abstract <T> Dispatch<T>
+ServiceDelegate,"createDispatch(QName portName, Class<T> type, Service.Mode mode, WebServiceFeature... features)",abstract <T> Dispatch<T>
+ServiceDelegate,"createDispatch(QName portName, JAXBContext context, Service.Mode mode)",abstract Dispatch<Object>
+ServiceDelegate,"createDispatch(QName portName, JAXBContext context, Service.Mode mode, WebServiceFeature... features)",abstract Dispatch<Object>
+ServiceDelegate,getExecutor(),abstract Executor
+ServiceDelegate,getHandlerResolver(),abstract HandlerResolver
+ServiceDelegate,getPort(Class<T> serviceEndpointInterface),abstract <T> T
+ServiceDelegate,"getPort(Class<T> serviceEndpointInterface, WebServiceFeature... features)",abstract <T> T
+ServiceDelegate,"getPort(EndpointReference endpointReference, Class<T> serviceEndpointInterface, WebServiceFeature... features)",abstract <T> T
+ServiceDelegate,"getPort(QName portName, Class<T> serviceEndpointInterface)",abstract <T> T
+ServiceDelegate,"getPort(QName portName, Class<T> serviceEndpointInterface, WebServiceFeature... features)",abstract <T> T
+ServiceDelegate,getPorts(),abstract Iterator<QName>
+ServiceDelegate,getServiceName(),abstract QName
+ServiceDelegate,getWSDLDocumentLocation(),abstract URL
+ServiceDelegate,setExecutor(Executor executor),abstract void
+ServiceDelegate,setHandlerResolver(HandlerResolver handlerResolver),abstract void
